@@ -16,7 +16,7 @@ npm start
 
 ## Prima pubblicazione su Vercel
 
-`vercel.json` pubblica l'export della parte pubblica da `dist/client`. Il comando `npm run build:preview` costruisce le pagine Astro e fotografa il catalogo pubblico. I push su `main` avviano il deploy del progetto Vercel collegato.
+`vercel.json` pubblica l'export Astro statico della parte pubblica da `dist`. `npm run build:static` costruisce esclusivamente le pagine pubbliche, senza avviare server durante il build e senza dipendere da SQLite. Il catalogo iniziale non contiene prodotti inventati. I push su `main` avviano il deploy del progetto Vercel collegato. Il comando `build:preview` resta disponibile per una fotografia locale della versione Node.
 
 La prima versione è intenzionalmente `noindex`: impostare `PUBLIC_SITE_URL` sul dominio finale e `PUBLIC_LAUNCH_READY=true` dopo aver completato i dati del negozio. Senza prodotti forniti, il catalogo mostra un messaggio veritiero e nessun articolo inventato. Recensioni e marchi vengono aggiunti solo da fonti approvate.
 

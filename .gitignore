@@ -1,6 +1,7 @@
 node_modules/
 dist/
 .astro/
+.static-export/
 .env
 .env.*
 !.env.example
