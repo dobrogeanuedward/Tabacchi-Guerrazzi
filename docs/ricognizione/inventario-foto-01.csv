@@ -1,0 +1,86 @@
+﻿id,categoria,voce_osservata,marchio_o_dicitura,foto,evidenza,da_confermare
+GF01-001,Cartoleria,Quaderni e blocchi a spirale,Notami; altre marche da leggere,5261,Diretta: tipologia visibile,"Formati, rigature, modelli"
+GF01-002,Cartoleria,Carta per stampa A4,Copy & Print,5261,Diretta: confezioni leggibili,Grammature e quantità
+GF01-003,Cartoleria,Cartelline e portadocumenti colorati,Da confermare,5261,Diretta: tipologia visibile,Tipo di chiusura e formato
+GF01-004,Cartoleria,Buste e cartelline in plastica,Da confermare,5256;5257;5261,Parziale: tipologia da dettagliare,"Distinguere buste, copertine e raccoglitori"
+GF01-005,Cartoleria,Carta e cartoncini colorati,Da confermare,5261,Diretta: fogli visibili,Dimensioni e grammature
+GF01-006,Cartoleria,Penne a sfera,BIC; altre marche da leggere,5261,Diretta: BIC Cristal su confezione visibile,Colori e modelli singoli
+GF01-007,Cartoleria,Evidenziatori fluorescenti,STABILO; altre marche da leggere,5261,Diretta: marchio leggibile e strumenti visibili,Linee e colori
+GF01-008,Cartoleria,Correttore a nastro,Marca da leggere,5256;5257,Diretta: correzione a nastro visibile,Larghezza e modello
+GF01-009,Cartoleria,Correttore liquido o penna correttore,Marca da leggere,5256;5257,Parziale: blister e flaconi da dettagliare,Confermare ciascun articolo
+GF01-010,Cartoleria,Etichette autoadesive,Notami Labels,5256;5257,Diretta: dicitura e marchio leggibili,Formati delle etichette
+GF01-011,Cartoleria,Forbici,Marca da leggere,5256;5257;5261,Diretta: tipologia visibile,Misure e uso consigliato
+GF01-012,Cartoleria,Strumenti da disegno e geometria,Marca da leggere,5256;5257,Diretta: squadre e strumenti visibili,Elenco dei singoli pezzi
+GF01-013,Cartoleria,Cucitrici e accessori da ufficio,Marca da leggere,5256;5257,Parziale: confezioni da ingrandire,Confermare cucitrice e punti
+GF01-014,Cartoleria,Colla stick,Pritt,5256;5257,Diretta: marchio leggibile,Peso delle confezioni
+GF01-015,Cartoleria,Colla vinilica,Pritt Vinil,5256;5257,Diretta: dicitura leggibile,Formato
+GF01-016,Cartoleria,Portapenne a rete,Marca da leggere,5261,Diretta: tipologia visibile,Varianti
+GF01-017,Cartoleria,Articoli con dicitura Monocromo,"Monocromo, linea da attribuire",5261,Diretta: nome leggibile; articolo preciso incerto,Marchio e tipo di prodotto
+GF01-018,Cartoleria,Articoli con marchio Bastardidentro,Bastardidentro,5261,Diretta: marchio leggibile; modello incerto,Identificare prodotto della confezione
+GF01-019,Auguri e feste,Biglietti di compleanno illustrati,Marchio non leggibile,5262,Diretta: testi e tipologia visibili,"Formati, buste incluse, altre occasioni"
+GF01-020,Auguri e feste,Biglietti augurali con applicazioni,Marchio non leggibile,5262,Diretta: dicitura con applicazione visibile,Assortimento
+GF01-021,Auguri e feste,Buste e shopper regalo,Marchio non leggibile,5256;5257,Diretta: buste grandi con manici visibili,Misure e materiali
+GF01-022,Auguri e feste,Fiocchi e coccarde regalo,Marchio non leggibile,5261,Diretta: tipologia visibile,Colori e confezioni
+GF01-023,Auguri e feste,Candeline numeriche per torta,Marchio da leggere,5256;5257,Diretta: numeri visibili,Cifre presenti e formati
+GF01-024,Auguri e feste,Candele scintillanti da festa,Confezioni Candele Magiche,5256;5257,Diretta: dicitura leggibile,Modelli e istruzioni della confezione
+GF01-025,Auguri e feste,Palloncini,Marchio da leggere,5256;5257,Diretta: tipologia visibile,Colori e formati
+GF01-026,Telefono e accessori,Power bank tascabile 2200 mAh,Teknee,5256;5257,Diretta: marchio e capacità leggibili,Connettori e modello
+GF01-027,Telefono e accessori,Cavi USB di ricarica,Teknee,5256;5257,Diretta: USB charging cable leggibile,Connettore finale e compatibilità
+GF01-028,Telefono e accessori,Cavo bianco confezionato,Marca da leggere,5256;5257,Diretta: cavo visibile; tipo incerto,Non dedurre funzione telefonica o elettrica
+GF01-029,Telefono e accessori,Adattatore da viaggio,Confezione Plug travel visibile,5256;5257,Diretta: dicitura leggibile,Spine supportate e caratteristiche
+GF01-030,Piccole necessità,Lucchetti,Magnum; altri marchi da leggere,5256;5257,Diretta: oggetti e marchio leggibili,Misure e tipo di chiusura
+GF01-031,Piccole necessità,Nastro adesivo trasparente,Marchio da leggere,5256;5257,Diretta: tipologia visibile,Misure
+GF01-032,Piccole necessità,Nastro di carta,Marchio da leggere,5256;5257,Diretta: tipologia visibile,Misure
+GF01-033,Piccole necessità,Nastro per imballaggi,Marchio da leggere,5256;5257,Diretta: rotoli e confezioni visibili,Misure e colori
+GF01-034,Piccole necessità,Elastici da ufficio,Marchio da leggere,5256;5257;5261,Diretta: tipologia visibile,Confezioni
+GF01-035,Piccole necessità,Colla istantanea,Loctite Super Attak,5256;5257,Diretta: marchio e linea leggibili,Varianti e formato
+GF01-036,Piccole necessità,Cordame e spago,Marchio da leggere,5256;5257,Parziale: gomitoli o matasse visibili,Materiale e lunghezza
+GF01-037,Piccole necessità,Guanti domestici,Marchio da leggere,5256;5257,Diretta: guanti rosa visibili,Taglie e materiale
+GF01-038,Piccole necessità,Spugne e panni per pulizia,Marchio da leggere,5256;5257,Parziale: confezioni da dettagliare,Identificare tipi
+GF01-039,Piccole necessità,Prodotti antitarme o profumazione armadi,Spira; altri da leggere,5256;5257,Parziale: marchio leggibile; destinazione da confermare,Leggere diciture complete
+GF01-040,Piccole necessità,Collari o accessori per animali,Marchio da leggere,5256;5257,Parziale: confezione con cane e accessori visibili,Tipo preciso
+GF01-041,Difesa personale,Spray in confezione Ultima Difesa,Ultima Difesa,5256;5257,Diretta: dicitura leggibile; caratteristiche da confermare,Identificare modello prima di uso editoriale
+GF01-042,Cura personale,Cerotti assortiti e soft,Confiderm,5256;5257,Diretta: marchio e diciture leggibili,Formati e quantità
+GF01-043,Cura personale,Lime e accessori manicure,Marca da leggere,5256;5257,Parziale: blister da dettagliare,Identificare articolo esatto
+GF01-044,Cura personale,Pinzette,Trim,5258,Diretta: marchio e dicitura leggibili,Varianti
+GF01-045,Cura personale,Mollette e fermagli per capelli,Marca da leggere,5258,Diretta: tipologia visibile,Tipi e confezioni
+GF01-046,Cura personale,Elastici e scrunchie per capelli,Marca da leggere,5258,Diretta: accessori nel cestino visibili,Confezioni e colori
+GF01-047,Cura personale,Specchi da appoggio,Marca da leggere,5258,Diretta: tipologia visibile,Ingrandimento e diametro
+GF01-048,Cura personale,Balsamo labbra,Labello,5258,Diretta: marchio leggibile,Varianti
+GF01-049,Cura personale,Gel per capelli,L’Oréal Studio Line Invisi Fix,5258,Diretta: marchio e linea leggibili,Formato e grado di fissaggio
+GF01-050,Cura personale,Talco classico,Felce Azzurra,5259,Diretta: etichetta leggibile,Formato
+GF01-051,Cura personale,Deodoranti spray,Malizia; Neutro Roberts,5258;5259,Diretta: marchi leggibili,Varianti e formati
+GF01-052,Cura personale,Crema per mani,Glysolid,5259,Diretta: marchio leggibile,Formato e variante
+GF01-053,Cura personale,Assorbenti e prodotti igiene intima,Nuvenia,5258;5259,Diretta: marchio e confezioni leggibili,"Distinguere assorbenti, salvaslip e varianti"
+GF01-054,Cura personale,Spray detergente mani,Avilea,5259,Diretta: dicitura e marchio leggibili,Formato
+GF01-055,Cura personale,Liquido per igiene personale,Arkalia,5259,Diretta: marchio leggibile; prodotto esatto incerto,Leggere etichetta prima di chiamarlo collutorio
+GF01-056,Cura personale,Prodotti repellenti per insetti,VAPE Derm,5258,Diretta: marchio leggibile,Varianti e destinazione
+GF01-057,Cura personale,Creme in barattoli blu,Possibile Nivea,5258;5259,Parziale: verificare marchio e prodotto,Non usare come marca confermata
+GF01-058,Dolciumi,Caramelle gommose Roller Filled,Fini,5254,Diretta: confezione leggibile,Varianti e formato
+GF01-059,Dolciumi,Caramelle in barattolo Mini Squiz,"Mini Squiz, marchio da attribuire",5261,Diretta: dicitura leggibile,Produttore e formato
+GF01-060,Dolciumi,Dolciumi confezionati vari,Marchi da leggere,5254;5261,Diretta: categoria visibile,Elenco completo da dettagli
+GF01-061,Tabacchi e accessori,Filtri Pink Active 6 mm,Gizeh,5261,Diretta: marchio e misura leggibili,Confermare confezione attuale
+GF01-062,Tabacchi e accessori,"Filtri e cartine, confezioni varie",Gizeh; altri da leggere,5258;5259;5261,Parziale: verificare ciascuna confezione,"Tipo, misura e quantità"
+GF01-063,Tabacchi e accessori,Accendini,Marchi da leggere,5256;5257,Parziale: oggetti compatibili visibili,Identificare modelli con dettaglio
+GF01-064,Tabacchi e accessori,Sigari Extravecchio,Toscano,5254,Diretta: nome leggibile,Solo inventario informativo
+GF01-065,Tabacchi e accessori,Sigari Garibaldi; Il Grande,Toscano,5254,Diretta: nomi leggibili,Verificare nome completo e formati
+GF01-066,Tabacchi e accessori,Sigari Il Bracco; Aquila,Toscano,5254,Diretta: nomi leggibili,Varianti e confezioni
+GF01-067,Tabacchi e accessori,Sigari Classico; Leggendario,Toscano,5254,Diretta: nomi leggibili,Varianti e confezioni
+GF01-068,Tabacchi e accessori,Sigari Terre; Maremmano,Toscano,5254,Diretta: nomi leggibili,Varianti e confezioni
+GF01-069,Tabacchi e accessori,Sigari Puccini; Soldati,Toscano,5254,Diretta: nomi leggibili,Varianti e confezioni
+GF01-070,Tabacchi e accessori,Sigari Originale; Antico; Toscanello,Toscano,5254,Diretta: nomi leggibili,Distinguere tutte le linee e varianti
+GF01-071,Tabacchi e accessori,Sigari Arcano; Il Lustro,Tornabuoni,5255,Diretta: nomi leggibili,Verificare marchio con confezione frontale
+GF01-072,Tabacchi e accessori,Sigari Long Riserva; Long Filler,Tornabuoni,5255,Diretta: nomi leggibili,Verificare marchio e varianti
+GF01-073,Tabacchi e accessori,Sigari Galante; Cacciatore maremmano,Tornabuoni,5255,Diretta: nomi leggibili,Verificare confezione completa
+GF01-074,Tabacchi e accessori,Sigari Affinato; Zeffiro; Levante; Scorciato,Tornabuoni,5255,Parziale: alcune etichette parziali,Rileggere i nomi prima dell’inventario definitivo
+GF01-075,Tabacchi e accessori,Sigari Nazionale; Talco; Fermentato; Classico,Marchi da attribuire,5255,Parziale: nomi parzialmente leggibili,Non attribuire al produttore vicino
+GF01-076,Tabacchi e accessori,Confezioni sigari,Zino,5264;5265,Diretta: nome sulle scatole leggibile,Linee specifiche
+GF01-077,Tabacchi e accessori,Cartello di marca per cartine,RAW,5264,Diretta: cartello leggibile; stock non dimostrato,Verificare quali prodotti siano presenti
+GF01-078,Ricevitoria,Lotto e 10eLotto,Materiali Lotto,5264;5265,Diretta: materiale esposto; operatività da confermare,Servizi attivi e modalità
+GF01-079,Ricevitoria,Simbolotto,Materiali Lotto,5264,Diretta: dicitura visibile; operatività da confermare,Servizio attuale
+GF01-080,Ricevitoria,MillionDAY e MillionDAY Extra,Modulistica visibile,5265,Diretta: materiale esposto; operatività da confermare,Servizi attuali
+GF01-081,Ricevitoria,Fai 3 e Fai 4,Modulistica visibile,5264,Diretta: materiale esposto; operatività da confermare,Servizi attuali
+GF01-082,Ricevitoria,SuperEnalotto e SuperStar,Sisal,5264;5265,Diretta: materiale esposto; operatività da confermare,Servizi attuali
+GF01-083,Ricevitoria,SiVinceTutto,Sisal,5264,Diretta: pannello visibile; operatività da confermare,Servizio attuale
+GF01-084,Ricevitoria,Eurojackpot,Sisal,5264;5265,Diretta: materiale esposto; operatività da confermare,Servizio attuale
+GF01-085,Ricevitoria,VinciCasa e Win for Life,Sisal,5264;5265,Diretta: materiale esposto; operatività da confermare,Varianti e servizi attuali

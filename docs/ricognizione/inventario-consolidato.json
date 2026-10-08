@@ -1,0 +1,1217 @@
+{
+  "updated": "2026-10-08",
+  "uniqueStorePhotos": 21,
+  "records": [
+    {
+      "id": "GF01-001",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Quaderni e blocchi a spirale",
+      "marchio_o_dicitura": "Notami; altre marche da leggere",
+      "foto": "5261",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Formati, rigature, modelli"
+    },
+    {
+      "id": "GF01-002",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Carta per stampa A4",
+      "marchio_o_dicitura": "Copy & Print",
+      "foto": "5261",
+      "evidenza": "Diretta: confezioni leggibili",
+      "da_confermare": "Grammature e quantità"
+    },
+    {
+      "id": "GF01-003",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Cartelline e portadocumenti colorati",
+      "marchio_o_dicitura": "Da confermare",
+      "foto": "5261",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Tipo di chiusura e formato"
+    },
+    {
+      "id": "GF01-004",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Buste e cartelline in plastica",
+      "marchio_o_dicitura": "Da confermare",
+      "foto": "5256;5257;5261",
+      "evidenza": "Parziale: tipologia da dettagliare",
+      "da_confermare": "Distinguere buste, copertine e raccoglitori"
+    },
+    {
+      "id": "GF01-005",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Carta e cartoncini colorati",
+      "marchio_o_dicitura": "Da confermare",
+      "foto": "5261",
+      "evidenza": "Diretta: fogli visibili",
+      "da_confermare": "Dimensioni e grammature"
+    },
+    {
+      "id": "GF01-006",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Penne a sfera",
+      "marchio_o_dicitura": "BIC; altre marche da leggere",
+      "foto": "5261",
+      "evidenza": "Diretta: BIC Cristal su confezione visibile",
+      "da_confermare": "Colori e modelli singoli"
+    },
+    {
+      "id": "GF01-007",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Evidenziatori fluorescenti",
+      "marchio_o_dicitura": "STABILO; altre marche da leggere",
+      "foto": "5261",
+      "evidenza": "Diretta: marchio leggibile e strumenti visibili",
+      "da_confermare": "Linee e colori"
+    },
+    {
+      "id": "GF01-008",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Correttore a nastro",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: correzione a nastro visibile",
+      "da_confermare": "Larghezza e modello"
+    },
+    {
+      "id": "GF01-009",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Correttore liquido o penna correttore",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: blister e flaconi da dettagliare",
+      "da_confermare": "Confermare ciascun articolo"
+    },
+    {
+      "id": "GF01-010",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Etichette autoadesive",
+      "marchio_o_dicitura": "Notami Labels",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: dicitura e marchio leggibili",
+      "da_confermare": "Formati delle etichette"
+    },
+    {
+      "id": "GF01-011",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Forbici",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257;5261",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Misure e uso consigliato"
+    },
+    {
+      "id": "GF01-012",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Strumenti da disegno e geometria",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: squadre e strumenti visibili",
+      "da_confermare": "Elenco dei singoli pezzi"
+    },
+    {
+      "id": "GF01-013",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Cucitrici e accessori da ufficio",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: confezioni da ingrandire",
+      "da_confermare": "Confermare cucitrice e punti"
+    },
+    {
+      "id": "GF01-014",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Colla stick",
+      "marchio_o_dicitura": "Pritt",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: marchio leggibile",
+      "da_confermare": "Peso delle confezioni"
+    },
+    {
+      "id": "GF01-015",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Colla vinilica",
+      "marchio_o_dicitura": "Pritt Vinil",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: dicitura leggibile",
+      "da_confermare": "Formato"
+    },
+    {
+      "id": "GF01-016",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Portapenne a rete",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5261",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Varianti"
+    },
+    {
+      "id": "GF01-017",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Articoli con dicitura Monocromo",
+      "marchio_o_dicitura": "Monocromo, linea da attribuire",
+      "foto": "5261",
+      "evidenza": "Diretta: nome leggibile; articolo preciso incerto",
+      "da_confermare": "Marchio e tipo di prodotto"
+    },
+    {
+      "id": "GF01-018",
+      "categoria": "Cartoleria",
+      "voce_osservata": "Articoli con marchio Bastardidentro",
+      "marchio_o_dicitura": "Bastardidentro",
+      "foto": "5261",
+      "evidenza": "Diretta: marchio leggibile; modello incerto",
+      "da_confermare": "Identificare prodotto della confezione"
+    },
+    {
+      "id": "GF01-019",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Biglietti di compleanno illustrati",
+      "marchio_o_dicitura": "Marchio non leggibile",
+      "foto": "5262",
+      "evidenza": "Diretta: testi e tipologia visibili",
+      "da_confermare": "Formati, buste incluse, altre occasioni"
+    },
+    {
+      "id": "GF01-020",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Biglietti augurali con applicazioni",
+      "marchio_o_dicitura": "Marchio non leggibile",
+      "foto": "5262",
+      "evidenza": "Diretta: dicitura con applicazione visibile",
+      "da_confermare": "Assortimento"
+    },
+    {
+      "id": "GF01-021",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Buste e shopper regalo",
+      "marchio_o_dicitura": "Marchio non leggibile",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: buste grandi con manici visibili",
+      "da_confermare": "Misure e materiali"
+    },
+    {
+      "id": "GF01-022",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Fiocchi e coccarde regalo",
+      "marchio_o_dicitura": "Marchio non leggibile",
+      "foto": "5261",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Colori e confezioni"
+    },
+    {
+      "id": "GF01-023",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Candeline numeriche per torta",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: numeri visibili",
+      "da_confermare": "Cifre presenti e formati"
+    },
+    {
+      "id": "GF01-024",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Candele scintillanti da festa",
+      "marchio_o_dicitura": "Confezioni Candele Magiche",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: dicitura leggibile",
+      "da_confermare": "Modelli e istruzioni della confezione"
+    },
+    {
+      "id": "GF01-025",
+      "categoria": "Auguri e feste",
+      "voce_osservata": "Palloncini",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Colori e formati"
+    },
+    {
+      "id": "GF01-026",
+      "categoria": "Telefono e accessori",
+      "voce_osservata": "Power bank tascabile 2200 mAh",
+      "marchio_o_dicitura": "Teknee",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: marchio e capacità leggibili",
+      "da_confermare": "Connettori e modello"
+    },
+    {
+      "id": "GF01-027",
+      "categoria": "Telefono e accessori",
+      "voce_osservata": "Cavi USB di ricarica",
+      "marchio_o_dicitura": "Teknee",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: USB charging cable leggibile",
+      "da_confermare": "Connettore finale e compatibilità"
+    },
+    {
+      "id": "GF01-028",
+      "categoria": "Telefono e accessori",
+      "voce_osservata": "Cavo bianco confezionato",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: cavo visibile; tipo incerto",
+      "da_confermare": "Non dedurre funzione telefonica o elettrica"
+    },
+    {
+      "id": "GF01-029",
+      "categoria": "Telefono e accessori",
+      "voce_osservata": "Adattatore da viaggio",
+      "marchio_o_dicitura": "Confezione Plug travel visibile",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: dicitura leggibile",
+      "da_confermare": "Spine supportate e caratteristiche"
+    },
+    {
+      "id": "GF01-030",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Lucchetti",
+      "marchio_o_dicitura": "Magnum; altri marchi da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: oggetti e marchio leggibili",
+      "da_confermare": "Misure e tipo di chiusura"
+    },
+    {
+      "id": "GF01-031",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Nastro adesivo trasparente",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Misure"
+    },
+    {
+      "id": "GF01-032",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Nastro di carta",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Misure"
+    },
+    {
+      "id": "GF01-033",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Nastro per imballaggi",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: rotoli e confezioni visibili",
+      "da_confermare": "Misure e colori"
+    },
+    {
+      "id": "GF01-034",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Elastici da ufficio",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257;5261",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Confezioni"
+    },
+    {
+      "id": "GF01-035",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Colla istantanea",
+      "marchio_o_dicitura": "Loctite Super Attak",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: marchio e linea leggibili",
+      "da_confermare": "Varianti e formato"
+    },
+    {
+      "id": "GF01-036",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Cordame e spago",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: gomitoli o matasse visibili",
+      "da_confermare": "Materiale e lunghezza"
+    },
+    {
+      "id": "GF01-037",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Guanti domestici",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: guanti rosa visibili",
+      "da_confermare": "Taglie e materiale"
+    },
+    {
+      "id": "GF01-038",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Spugne e panni per pulizia",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: confezioni da dettagliare",
+      "da_confermare": "Identificare tipi"
+    },
+    {
+      "id": "GF01-039",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Prodotti antitarme o profumazione armadi",
+      "marchio_o_dicitura": "Spira; altri da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: marchio leggibile; destinazione da confermare",
+      "da_confermare": "Leggere diciture complete"
+    },
+    {
+      "id": "GF01-040",
+      "categoria": "Piccole necessità",
+      "voce_osservata": "Collari o accessori per animali",
+      "marchio_o_dicitura": "Marchio da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: confezione con cane e accessori visibili",
+      "da_confermare": "Tipo preciso"
+    },
+    {
+      "id": "GF01-041",
+      "categoria": "Difesa personale",
+      "voce_osservata": "Spray in confezione Ultima Difesa",
+      "marchio_o_dicitura": "Ultima Difesa",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: dicitura leggibile; caratteristiche da confermare",
+      "da_confermare": "Identificare modello prima di uso editoriale"
+    },
+    {
+      "id": "GF01-042",
+      "categoria": "Cura personale",
+      "voce_osservata": "Cerotti assortiti e soft",
+      "marchio_o_dicitura": "Confiderm",
+      "foto": "5256;5257",
+      "evidenza": "Diretta: marchio e diciture leggibili",
+      "da_confermare": "Formati e quantità"
+    },
+    {
+      "id": "GF01-043",
+      "categoria": "Cura personale",
+      "voce_osservata": "Lime e accessori manicure",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: blister da dettagliare",
+      "da_confermare": "Identificare articolo esatto"
+    },
+    {
+      "id": "GF01-044",
+      "categoria": "Cura personale",
+      "voce_osservata": "Pinzette",
+      "marchio_o_dicitura": "Trim",
+      "foto": "5258",
+      "evidenza": "Diretta: marchio e dicitura leggibili",
+      "da_confermare": "Varianti"
+    },
+    {
+      "id": "GF01-045",
+      "categoria": "Cura personale",
+      "voce_osservata": "Mollette e fermagli per capelli",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5258",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Tipi e confezioni"
+    },
+    {
+      "id": "GF01-046",
+      "categoria": "Cura personale",
+      "voce_osservata": "Elastici e scrunchie per capelli",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5258",
+      "evidenza": "Diretta: accessori nel cestino visibili",
+      "da_confermare": "Confezioni e colori"
+    },
+    {
+      "id": "GF01-047",
+      "categoria": "Cura personale",
+      "voce_osservata": "Specchi da appoggio",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5258",
+      "evidenza": "Diretta: tipologia visibile",
+      "da_confermare": "Ingrandimento e diametro"
+    },
+    {
+      "id": "GF01-048",
+      "categoria": "Cura personale",
+      "voce_osservata": "Balsamo labbra",
+      "marchio_o_dicitura": "Labello",
+      "foto": "5258",
+      "evidenza": "Diretta: marchio leggibile",
+      "da_confermare": "Varianti"
+    },
+    {
+      "id": "GF01-049",
+      "categoria": "Cura personale",
+      "voce_osservata": "Gel per capelli",
+      "marchio_o_dicitura": "L’Oréal Studio Line Invisi Fix",
+      "foto": "5258",
+      "evidenza": "Diretta: marchio e linea leggibili",
+      "da_confermare": "Formato e grado di fissaggio"
+    },
+    {
+      "id": "GF01-050",
+      "categoria": "Cura personale",
+      "voce_osservata": "Talco classico",
+      "marchio_o_dicitura": "Felce Azzurra",
+      "foto": "5259",
+      "evidenza": "Diretta: etichetta leggibile",
+      "da_confermare": "Formato"
+    },
+    {
+      "id": "GF01-051",
+      "categoria": "Cura personale",
+      "voce_osservata": "Deodoranti spray",
+      "marchio_o_dicitura": "Malizia; Neutro Roberts",
+      "foto": "5258;5259",
+      "evidenza": "Diretta: marchi leggibili",
+      "da_confermare": "Varianti e formati"
+    },
+    {
+      "id": "GF01-052",
+      "categoria": "Cura personale",
+      "voce_osservata": "Crema per mani",
+      "marchio_o_dicitura": "Glysolid",
+      "foto": "5259",
+      "evidenza": "Diretta: marchio leggibile",
+      "da_confermare": "Formato e variante"
+    },
+    {
+      "id": "GF01-053",
+      "categoria": "Cura personale",
+      "voce_osservata": "Assorbenti e prodotti igiene intima",
+      "marchio_o_dicitura": "Nuvenia",
+      "foto": "5258;5259",
+      "evidenza": "Diretta: marchio e confezioni leggibili",
+      "da_confermare": "Distinguere assorbenti, salvaslip e varianti"
+    },
+    {
+      "id": "GF01-054",
+      "categoria": "Cura personale",
+      "voce_osservata": "Spray detergente mani",
+      "marchio_o_dicitura": "Avilea",
+      "foto": "5259",
+      "evidenza": "Diretta: dicitura e marchio leggibili",
+      "da_confermare": "Formato"
+    },
+    {
+      "id": "GF01-055",
+      "categoria": "Cura personale",
+      "voce_osservata": "Liquido per igiene personale",
+      "marchio_o_dicitura": "Arkalia",
+      "foto": "5259",
+      "evidenza": "Diretta: marchio leggibile; prodotto esatto incerto",
+      "da_confermare": "Leggere etichetta prima di chiamarlo collutorio"
+    },
+    {
+      "id": "GF01-056",
+      "categoria": "Cura personale",
+      "voce_osservata": "Prodotti repellenti per insetti",
+      "marchio_o_dicitura": "VAPE Derm",
+      "foto": "5258",
+      "evidenza": "Diretta: marchio leggibile",
+      "da_confermare": "Varianti e destinazione"
+    },
+    {
+      "id": "GF01-057",
+      "categoria": "Cura personale",
+      "voce_osservata": "Creme in barattoli blu",
+      "marchio_o_dicitura": "Possibile Nivea",
+      "foto": "5258;5259",
+      "evidenza": "Parziale: verificare marchio e prodotto",
+      "da_confermare": "Non usare come marca confermata"
+    },
+    {
+      "id": "GF01-058",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Caramelle gommose Roller Filled",
+      "marchio_o_dicitura": "Fini",
+      "foto": "5254",
+      "evidenza": "Diretta: confezione leggibile",
+      "da_confermare": "Varianti e formato"
+    },
+    {
+      "id": "GF01-059",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Caramelle in barattolo Mini Squiz",
+      "marchio_o_dicitura": "Mini Squiz, marchio da attribuire",
+      "foto": "5261",
+      "evidenza": "Diretta: dicitura leggibile",
+      "da_confermare": "Produttore e formato"
+    },
+    {
+      "id": "GF01-060",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Dolciumi confezionati vari",
+      "marchio_o_dicitura": "Marchi da leggere",
+      "foto": "5254;5261",
+      "evidenza": "Diretta: categoria visibile",
+      "da_confermare": "Elenco completo da dettagli"
+    },
+    {
+      "id": "GF01-061",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Filtri Pink Active 6 mm",
+      "marchio_o_dicitura": "Gizeh",
+      "foto": "5261",
+      "evidenza": "Diretta: marchio e misura leggibili",
+      "da_confermare": "Confermare confezione attuale"
+    },
+    {
+      "id": "GF01-062",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Filtri e cartine, confezioni varie",
+      "marchio_o_dicitura": "Gizeh; altri da leggere",
+      "foto": "5258;5259;5261",
+      "evidenza": "Parziale: verificare ciascuna confezione",
+      "da_confermare": "Tipo, misura e quantità"
+    },
+    {
+      "id": "GF01-063",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Accendini",
+      "marchio_o_dicitura": "Marchi da leggere",
+      "foto": "5256;5257",
+      "evidenza": "Parziale: oggetti compatibili visibili",
+      "da_confermare": "Identificare modelli con dettaglio"
+    },
+    {
+      "id": "GF01-064",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Extravecchio",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nome leggibile",
+      "da_confermare": "Solo inventario informativo"
+    },
+    {
+      "id": "GF01-065",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Garibaldi; Il Grande",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Verificare nome completo e formati"
+    },
+    {
+      "id": "GF01-066",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Il Bracco; Aquila",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Varianti e confezioni"
+    },
+    {
+      "id": "GF01-067",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Classico; Leggendario",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Varianti e confezioni"
+    },
+    {
+      "id": "GF01-068",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Terre; Maremmano",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Varianti e confezioni"
+    },
+    {
+      "id": "GF01-069",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Puccini; Soldati",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Varianti e confezioni"
+    },
+    {
+      "id": "GF01-070",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Originale; Antico; Toscanello",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5254",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Distinguere tutte le linee e varianti"
+    },
+    {
+      "id": "GF01-071",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Arcano; Il Lustro",
+      "marchio_o_dicitura": "Tornabuoni",
+      "foto": "5255",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Verificare marchio con confezione frontale"
+    },
+    {
+      "id": "GF01-072",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Long Riserva; Long Filler",
+      "marchio_o_dicitura": "Tornabuoni",
+      "foto": "5255",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Verificare marchio e varianti"
+    },
+    {
+      "id": "GF01-073",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Galante; Cacciatore maremmano",
+      "marchio_o_dicitura": "Tornabuoni",
+      "foto": "5255",
+      "evidenza": "Diretta: nomi leggibili",
+      "da_confermare": "Verificare confezione completa"
+    },
+    {
+      "id": "GF01-074",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Affinato; Zeffiro; Levante; Scorciato",
+      "marchio_o_dicitura": "Tornabuoni",
+      "foto": "5255",
+      "evidenza": "Parziale: alcune etichette parziali",
+      "da_confermare": "Rileggere i nomi prima dell’inventario definitivo"
+    },
+    {
+      "id": "GF01-075",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Sigari Nazionale; Talco; Fermentato; Classico",
+      "marchio_o_dicitura": "Marchi da attribuire",
+      "foto": "5255",
+      "evidenza": "Parziale: nomi parzialmente leggibili",
+      "da_confermare": "Non attribuire al produttore vicino"
+    },
+    {
+      "id": "GF01-076",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Confezioni sigari",
+      "marchio_o_dicitura": "Zino",
+      "foto": "5264;5265",
+      "evidenza": "Diretta: nome sulle scatole leggibile",
+      "da_confermare": "Linee specifiche"
+    },
+    {
+      "id": "GF01-077",
+      "categoria": "Tabacchi e accessori",
+      "voce_osservata": "Cartello di marca per cartine",
+      "marchio_o_dicitura": "RAW",
+      "foto": "5264",
+      "evidenza": "Cartello visibile nella prima serie; confezioni RAW riconoscibili anche in IMG_5241 e IMG_5250",
+      "da_confermare": "Misure e varianti dei prodotti"
+    },
+    {
+      "id": "GF01-078",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "Lotto e 10eLotto",
+      "marchio_o_dicitura": "Materiali Lotto",
+      "foto": "5264;5265",
+      "evidenza": "Diretta: materiale esposto; operatività da confermare",
+      "da_confermare": "Servizi attivi e modalità"
+    },
+    {
+      "id": "GF01-079",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "Simbolotto",
+      "marchio_o_dicitura": "Materiali Lotto",
+      "foto": "5264",
+      "evidenza": "Diretta: dicitura visibile; operatività da confermare",
+      "da_confermare": "Servizio attuale"
+    },
+    {
+      "id": "GF01-080",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "MillionDAY e MillionDAY Extra",
+      "marchio_o_dicitura": "Modulistica visibile",
+      "foto": "5265",
+      "evidenza": "Diretta: materiale esposto; operatività da confermare",
+      "da_confermare": "Servizi attuali"
+    },
+    {
+      "id": "GF01-081",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "Fai 3 e Fai 4",
+      "marchio_o_dicitura": "Modulistica visibile",
+      "foto": "5264",
+      "evidenza": "Diretta: materiale esposto; operatività da confermare",
+      "da_confermare": "Servizi attuali"
+    },
+    {
+      "id": "GF01-082",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "SuperEnalotto e SuperStar",
+      "marchio_o_dicitura": "Sisal",
+      "foto": "5264;5265",
+      "evidenza": "Diretta: materiale esposto; operatività da confermare",
+      "da_confermare": "Servizi attuali"
+    },
+    {
+      "id": "GF01-083",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "SiVinceTutto",
+      "marchio_o_dicitura": "Sisal",
+      "foto": "5264",
+      "evidenza": "Diretta: pannello visibile; operatività da confermare",
+      "da_confermare": "Servizio attuale"
+    },
+    {
+      "id": "GF01-084",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "Eurojackpot",
+      "marchio_o_dicitura": "Sisal",
+      "foto": "5264;5265",
+      "evidenza": "Diretta: materiale esposto; operatività da confermare",
+      "da_confermare": "Servizio attuale"
+    },
+    {
+      "id": "GF01-085",
+      "categoria": "Ricevitoria",
+      "voce_osservata": "VinciCasa e Win for Life",
+      "marchio_o_dicitura": "Sisal",
+      "foto": "5264;5265",
+      "evidenza": "Diretta: materiale esposto; operatività da confermare",
+      "da_confermare": "Varianti e servizi attuali"
+    },
+    {
+      "id": "GF02-001",
+      "categoria": "Souvenir",
+      "voce_osservata": "Calamite con torri e monumenti di Bologna",
+      "marchio_o_dicitura": "Soggetti Bologna",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Grafiche e disponibilità"
+    },
+    {
+      "id": "GF02-002",
+      "categoria": "Souvenir",
+      "voce_osservata": "Calamite con scritta Bologna",
+      "marchio_o_dicitura": "Soggetti Bologna",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti"
+    },
+    {
+      "id": "GF02-003",
+      "categoria": "Souvenir",
+      "voce_osservata": "Calamite con auto, moto e mezzi",
+      "marchio_o_dicitura": "Marchi da leggere",
+      "foto": "5241",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Distinguere soggetti decorativi e marchi"
+    },
+    {
+      "id": "GF02-004",
+      "categoria": "Piccoli regali",
+      "voce_osservata": "Portachiavi con torri",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5250",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti"
+    },
+    {
+      "id": "GF02-005",
+      "categoria": "Piccoli regali",
+      "voce_osservata": "Candele profumate confezionate",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5250",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Marchio, fragranze e formato"
+    },
+    {
+      "id": "GF02-006",
+      "categoria": "Piccoli regali",
+      "voce_osservata": "Lenti di ingrandimento",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5250",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Misure"
+    },
+    {
+      "id": "GF02-007",
+      "categoria": "Decorazione",
+      "voce_osservata": "Mappamondi neri con dettagli dorati",
+      "marchio_o_dicitura": "Non leggibile",
+      "foto": "5242",
+      "evidenza": "Oggetto visibile; vendita non confermata",
+      "da_confermare": "Non considerarli merce in vendita senza conferma"
+    },
+    {
+      "id": "GF02-008",
+      "categoria": "Decorazione",
+      "voce_osservata": "Statuine decorative",
+      "marchio_o_dicitura": "Non leggibile",
+      "foto": "5241;5242",
+      "evidenza": "Oggetto visibile; vendita non confermata",
+      "da_confermare": "Vendita o arredo da confermare"
+    },
+    {
+      "id": "GF02-009",
+      "categoria": "Giochi",
+      "voce_osservata": "Palloni colorati",
+      "marchio_o_dicitura": "Marca da leggere",
+      "foto": "5241;5242;5249",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Età e materiali da confezione"
+    },
+    {
+      "id": "GF02-010",
+      "categoria": "Accendini",
+      "voce_osservata": "Accendini tascabili",
+      "marchio_o_dicitura": "BIC",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Modelli e varianti"
+    },
+    {
+      "id": "GF02-011",
+      "categoria": "Accendini",
+      "voce_osservata": "Accendini tascabili e mini tube",
+      "marchio_o_dicitura": "Clipper",
+      "foto": "5241;5242;5250;5251;5252",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Singole confezioni"
+    },
+    {
+      "id": "GF02-012",
+      "categoria": "Accendini",
+      "voce_osservata": "Accendini serie Goldrake",
+      "marchio_o_dicitura": "CIAO",
+      "foto": "5244",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Inventario neutro, non promozione legata ai bambini"
+    },
+    {
+      "id": "GF02-013",
+      "categoria": "Accendini",
+      "voce_osservata": "Accendini multiuso e flessibili",
+      "marchio_o_dicitura": "PROF; BIC EZ Reach",
+      "foto": "5252",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Istruzioni e modelli"
+    },
+    {
+      "id": "GF02-014",
+      "categoria": "Accessori",
+      "voce_osservata": "Cartine e filtri",
+      "marchio_o_dicitura": "RAW",
+      "foto": "5241;5250",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Stock fotografato conferma oltre al vecchio cartello"
+    },
+    {
+      "id": "GF02-015",
+      "categoria": "Accessori",
+      "voce_osservata": "Cartine e filtri",
+      "marchio_o_dicitura": "Smoking",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Misure e quantità"
+    },
+    {
+      "id": "GF02-016",
+      "categoria": "Accessori",
+      "voce_osservata": "Cartine e filtri",
+      "marchio_o_dicitura": "OCB",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Misure e varianti"
+    },
+    {
+      "id": "GF02-017",
+      "categoria": "Accessori",
+      "voce_osservata": "Cartine e filtri",
+      "marchio_o_dicitura": "Rizla",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Misure e varianti"
+    },
+    {
+      "id": "GF02-018",
+      "categoria": "Accessori",
+      "voce_osservata": "Cartine e filtri",
+      "marchio_o_dicitura": "Gizeh",
+      "foto": "5241;5242",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Misure e varianti"
+    },
+    {
+      "id": "GF02-019",
+      "categoria": "Accessori",
+      "voce_osservata": "Filter Tips Slim",
+      "marchio_o_dicitura": "Cartel",
+      "foto": "5241",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Confezioni"
+    },
+    {
+      "id": "GF02-020",
+      "categoria": "Accessori",
+      "voce_osservata": "Confezioni con dicitura Energy",
+      "marchio_o_dicitura": "Dicitura Energy",
+      "foto": "5241",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Non attribuire marchio senza lettura completa"
+    },
+    {
+      "id": "GF02-021",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Caramelle Rotella",
+      "marchio_o_dicitura": "Haribo",
+      "foto": "5241",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Formati"
+    },
+    {
+      "id": "GF02-022",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Lecca-lecca",
+      "marchio_o_dicitura": "Chupa Chups",
+      "foto": "5241",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Gusti e formati"
+    },
+    {
+      "id": "GF02-023",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Caramelle confezionate",
+      "marchio_o_dicitura": "Dietorelle",
+      "foto": "5244",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Gusti e formati"
+    },
+    {
+      "id": "GF02-024",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Pocket Coffee; Rocher",
+      "marchio_o_dicitura": "Ferrero",
+      "foto": "5244",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Formati"
+    },
+    {
+      "id": "GF02-025",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Caramelle confezionate",
+      "marchio_o_dicitura": "Saila",
+      "foto": "5249",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti"
+    },
+    {
+      "id": "GF02-026",
+      "categoria": "Dolciumi",
+      "voce_osservata": "Confezioni di caramelle",
+      "marchio_o_dicitura": "Goleador",
+      "foto": "5249;5253",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Singole linee"
+    },
+    {
+      "id": "GF02-027",
+      "categoria": "Alimentari",
+      "voce_osservata": "Sale dolce di Cervia e vasetti",
+      "marchio_o_dicitura": "Dicitura Sale di Cervia",
+      "foto": "5251",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Produttore esatto e formati"
+    },
+    {
+      "id": "GF02-028",
+      "categoria": "Sigari",
+      "voce_osservata": "Sigari Nicaragua",
+      "marchio_o_dicitura": "Zino",
+      "foto": "5247;5249",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Solo registro interno informativo"
+    },
+    {
+      "id": "GF02-029",
+      "categoria": "Sigari",
+      "voce_osservata": "Sigari 107 ed Escogidos",
+      "marchio_o_dicitura": "La Aurora",
+      "foto": "5247;5249",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Leggere tutte le linee; interno"
+    },
+    {
+      "id": "GF02-030",
+      "categoria": "Sigari",
+      "voce_osservata": "Confezioni con dicitura Alma",
+      "marchio_o_dicitura": "Plasencia",
+      "foto": "5247;5249",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Variante completa; interno"
+    },
+    {
+      "id": "GF02-031",
+      "categoria": "Sigari",
+      "voce_osservata": "Scatole con marchio",
+      "marchio_o_dicitura": "Villa Zamorano",
+      "foto": "5247",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Linea completa; interno"
+    },
+    {
+      "id": "GF02-032",
+      "categoria": "Sigari",
+      "voce_osservata": "Confezioni di sigari",
+      "marchio_o_dicitura": "Parcero",
+      "foto": "5247",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Linea completa; interno"
+    },
+    {
+      "id": "GF02-033",
+      "categoria": "Sigari",
+      "voce_osservata": "Toscanello varie linee",
+      "marchio_o_dicitura": "Toscano",
+      "foto": "5245",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Bianco, Blu, Rosso, XXL da dettagliare; interno"
+    },
+    {
+      "id": "GF02-034",
+      "categoria": "Sigari",
+      "voce_osservata": "Amarcord e Allegro",
+      "marchio_o_dicitura": "Tornabuoni",
+      "foto": "5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti; interno"
+    },
+    {
+      "id": "GF02-035",
+      "categoria": "Sigari",
+      "voce_osservata": "Sigari confezionati",
+      "marchio_o_dicitura": "Italico",
+      "foto": "5242;5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti; interno"
+    },
+    {
+      "id": "GF02-036",
+      "categoria": "Sigari",
+      "voce_osservata": "Cannaregio e Foscari",
+      "marchio_o_dicitura": "Nostrano",
+      "foto": "5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti; interno"
+    },
+    {
+      "id": "GF02-037",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Rich, Original e altre varianti",
+      "marchio_o_dicitura": "Amphora",
+      "foto": "5245",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Nomi completi; interno"
+    },
+    {
+      "id": "GF02-038",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Regular, Mixture, Navy, Sungold",
+      "marchio_o_dicitura": "Skandinavik",
+      "foto": "5245",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Nomi completi; interno"
+    },
+    {
+      "id": "GF02-039",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Tabacco da pipa confezionato",
+      "marchio_o_dicitura": "Clan",
+      "foto": "5245",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Variante; interno"
+    },
+    {
+      "id": "GF02-040",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Original Choice, Mixture, Golden Blend",
+      "marchio_o_dicitura": "Mac Baren",
+      "foto": "5242;5243;5245",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Nomi completi; interno"
+    },
+    {
+      "id": "GF02-041",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Golden Flake",
+      "marchio_o_dicitura": "Stanwell",
+      "foto": "5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Variante; interno"
+    },
+    {
+      "id": "GF02-042",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Mixture",
+      "marchio_o_dicitura": "Erinmore",
+      "foto": "5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Variante; interno"
+    },
+    {
+      "id": "GF02-043",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Sunday’s Fantasy",
+      "marchio_o_dicitura": "Dicitura Sunday’s Fantasy",
+      "foto": "5245",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Produttore e variante; interno"
+    },
+    {
+      "id": "GF02-044",
+      "categoria": "Tabacchi da pipa",
+      "voce_osservata": "Classico Riserva",
+      "marchio_o_dicitura": "Cellini",
+      "foto": "5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Variante; interno"
+    },
+    {
+      "id": "GF02-045",
+      "categoria": "Prodotti con nicotina",
+      "voce_osservata": "Confezioni di dispositivi",
+      "marchio_o_dicitura": "RELX; FUYL; Air Bar; ELFBAR; VEEV",
+      "foto": "5242;5243;5244;5251",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Identificare ogni modello; nessuna pubblicazione commerciale"
+    },
+    {
+      "id": "GF02-046",
+      "categoria": "Prodotti con nicotina",
+      "voce_osservata": "Pouches confezionate",
+      "marchio_o_dicitura": "ZYN; VELO",
+      "foto": "5243;5244",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Varianti da leggere; registro interno"
+    },
+    {
+      "id": "GF02-047",
+      "categoria": "Prodotti con nicotina",
+      "voce_osservata": "Insegna e materiale Ploom",
+      "marchio_o_dicitura": "Ploom",
+      "foto": "5243;5244",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Espositore non prova scorte attuali"
+    },
+    {
+      "id": "GF02-048",
+      "categoria": "Sigaretti",
+      "voce_osservata": "Confezioni confezionate",
+      "marchio_o_dicitura": "Moods; Principes",
+      "foto": "5242;5243",
+      "evidenza": "Diretta: confezione o tipologia riconoscibile",
+      "da_confermare": "Linee da identificare; interno"
+    },
+    {
+      "id": "GF02-049",
+      "categoria": "Servizi",
+      "voce_osservata": "Deposito bagagli",
+      "marchio_o_dicitura": "Bounce",
+      "foto": "5249",
+      "evidenza": "Foto, conferma cliente e fonte ufficiale",
+      "da_confermare": "Confermato anche dal cliente; prenotazione su https://bounce.com/stores/bologna/7ZRpUp"
+    }
+  ],
+  "notes": [
+    "Record di tipologie, marche o gruppi: non è una conta degli SKU.",
+    "Le foto documentano l'assortimento al momento dello scatto; non lo stock in tempo reale.",
+    "Articoli e servizi parzialmente leggibili restano da confermare."
+  ]
+}

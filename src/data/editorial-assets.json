@@ -1,0 +1,82 @@
+{
+  "cartoleria": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "auguri": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "necessita": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "souvenir": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "bottega": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 1067
+    }
+  },
+  "dolciumi": {
+    "mobile": {
+      "width": 960,
+      "height": 1708
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "cura": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 900
+    }
+  },
+  "regali": {
+    "mobile": {
+      "width": 960,
+      "height": 1706
+    },
+    "desktop": {
+      "width": 1600,
+      "height": 1067
+    }
+  }
+}

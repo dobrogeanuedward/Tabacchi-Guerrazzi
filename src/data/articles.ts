@@ -4,6 +4,34 @@ export const clusters = [
  {id:'giochi',label:'Giochi e giocattoli',parent:'giochi-e-giocattoli',theme:'gioco'},
  {id:'quartiere',label:'Negozio e quartiere',parent:'il-negozio',theme:'bottega'},
 ];
+const evidenceAdditions:Record<string,[string,string]>={
+ 'ricarica-telefonica-cosa-preparare':['Ricarica del credito o della batteria?','Sono richieste diverse. Se ti serve credito telefonico, porta numero e operatore e verifica il servizio; se ti manca un cavo, confronta il connettore nella sezione accessori per telefono. Sugli scaffali sono esposti anche accessori Teknee: compatibilità e caratteristiche dipendono dal singolo modello.'],
+ 'avviso-pagamento-documenti':['Una verifica del servizio, non del marchio esposto.','I materiali Lotto e Sisal documentano una zona di ricevitoria. Non dimostrano da soli che un particolare avviso possa essere pagato. Descrivi il documento al negozio prima della visita; una conferma precisa è più utile di una generica ricerca di una tabaccheria.'],
+ 'servizi-negozio-organizzare-visita':['Se la commissione è lasciare le valigie.','Per il deposito bagagli Guerrazzi usa Bounce. La scheda Palazzo Ercolani indica Via Guerrazzi 10/F: scegli data e bagagli sulla piattaforma, controlla gli orari di deposito e ritiro e conserva la conferma. La pagina dedicata sul sito collega direttamente alla prenotazione ufficiale.'],
+ 'regalo-compleanno-da-dove-partire':['Il biglietto fa parte del pensiero.','L’espositore di Guerrazzi comprende biglietti di compleanno illustrati, anche con applicazioni. Puoi scegliere un soggetto che richiami gli interessi della persona e aggiungere le tue parole. Controlla il formato e la presenza della busta; per la torta sono esposte anche candeline numeriche, con cifre da verificare.'],
+ 'piccolo-pensiero-occasione':['Un ricordo della città.','Se il pensiero nasce da un viaggio a Bologna, guarda l’espositore di calamite: ci sono soggetti con torri, monumenti e scritte della città. La forma e il disegno si confrontano dal vivo. È un percorso diverso dal regalo di compleanno, ma può accompagnare un biglietto o un piccolo ringraziamento.'],
+ 'scegliere-regalo-ultimi-minuti':['Guarda una categoria concreta.','Da Guerrazzi puoi orientarti fra giochi, cartoleria, calamite di Bologna e biglietti augurali. Parti dalla persona: scrive e studia, sta visitando la città oppure festeggia un compleanno? Una categoria limita la ricerca; non sostituisce la verifica della variante che vorresti comprare.'],
+ 'gioco-regalo-eta-interessi':['Non confondere le categorie.','Giochi e giocattoli, articoli per feste e ricevitoria sono sezioni diverse del negozio. I palloncini e le candeline richiedono istruzioni proprie; la ricevitoria non appartiene alla selezione di passatempi per bambini. Scegli sempre leggendo la confezione del prodotto, non solo il nome della sezione.'],
+ 'giochi-viaggio-piccoli-passatempi':['Una sosta a Bologna con meno ingombro.','Se stai visitando Bologna con le valigie, il deposito Bounce di Guerrazzi è una richiesta distinta dalla scelta di un gioco. Prenota dalla scheda ufficiale e organizza il ritiro; per un passatempo da viaggio confronta invece confezione, componenti e utilizzo del singolo articolo.'],
+ 'scegliere-gioco-insieme':['Quando il gioco accompagna un compleanno.','Dopo avere controllato età e avvertenze, puoi cercare un biglietto di auguri nell’espositore e confrontare shopper e fiocchi disponibili. Questi dettagli completano il pensiero senza cambiare l’idoneità del gioco: le indicazioni del produttore restano il primo riferimento.'],
+ 'guerrazzi-via-guerrazzi-bologna':['Lo stesso indirizzo, anche su Bounce.','Per il deposito bagagli la scheda Bounce si chiama Palazzo Ercolani, ma l’indirizzo è Via Guerrazzi 10/F. Controlla questa corrispondenza prima della prenotazione; non dedurre un’altra sede dal nome della scheda. Per il percorso usa l’indirizzo completo, senza affidarti a tempi di percorrenza non aggiornati.'],
+ 'vetrina-guerrazzi-piccole-scelte':['Il negozio continua oltre la vetrina.','Le foto degli interni documentano scaffali di cartoleria, un espositore di auguri, calamite di Bologna e piccoli articoli pratici. Nel sito questi gruppi hanno percorsi distinti: puoi trovare la categoria che ti serve e arrivare con una domanda più precisa, anziché cercare fra oggetti diversi.'],
+ 'angela-attenzione-negozio':['Le domande cambiano con quello che cerchi.','Per un quaderno sono utili formato e rigatura; per un cavo, le due estremità e il dispositivo; per una calamita, il soggetto. Organizzare l’assortimento in categorie non sostituisce l’attenzione al banco: aiuta a capire quali dettagli portare con te.']
+};
+export const articleCategoryLinks:Record<string,string[]>={
+ 'ricarica-telefonica-cosa-preparare':['accessori-telefono'],
+ 'avviso-pagamento-documenti':['ricevitoria'],
+ 'servizi-negozio-organizzare-visita':['deposito-bagagli'],
+ 'regalo-compleanno-da-dove-partire':['feste-e-compleanni'],
+ 'piccolo-pensiero-occasione':['souvenir-bologna'],
+ 'scegliere-regalo-ultimi-minuti':['cartoleria','souvenir-bologna'],
+ 'gioco-regalo-eta-interessi':['feste-e-compleanni'],
+ 'giochi-viaggio-piccoli-passatempi':['deposito-bagagli'],
+ 'scegliere-gioco-insieme':['feste-e-compleanni'],
+ 'guerrazzi-via-guerrazzi-bologna':['deposito-bagagli'],
+ 'vetrina-guerrazzi-piccole-scelte':['cartoleria','piccole-necessita'],
+ 'angela-attenzione-negozio':['accessori-telefono','cartoleria']
+};
 export const articles = [
  {slug:'ricarica-telefonica-cosa-preparare',cluster:'servizi',title:'Ricarica telefonica in centro: cosa preparare prima di passare.',summary:'Numero, operatore e importo. Una piccola preparazione evita dubbi al banco.',guide:'ricariche-telefoniche',sections:[
  ['Parti dal numero giusto.','Quando devi fare una ricarica, la prima informazione è il numero di telefono completo. Se la ricarica è per un’altra persona, chiedile di inviartelo per iscritto: sarà più semplice controllarlo. Prima di confermare l’operazione, rileggi tutte le cifre.'],
@@ -54,3 +82,4 @@ export const articles = [
  ['Informazioni prima di tutto.','Un incontro utile parte da una domanda concreta. Per un gioco contano età e interessi; per un servizio, documento e disponibilità. Il sito raccoglie questi percorsi per aiutare chi arriva a preparare la visita.'],
  ['La prossima volta che passi.','Puoi partire dal catalogo o dalle schede di approfondimento. Se cerchi qualcosa di preciso, verifica con il negozio. Guerrazzi si trova in Via Guerrazzi 10/F, Bologna: apri le indicazioni per scegliere il percorso dalla tua posizione.']]},
 ];
+for(const a of articles){const addition=evidenceAdditions[a.slug];if(addition)a.sections.push(addition);}

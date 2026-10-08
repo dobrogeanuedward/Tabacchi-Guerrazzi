@@ -1,0 +1,14 @@
+---
+import {text,type Lang} from '../data/shop';
+import editorialAssets from '../data/editorial-assets.json';
+const {name,alt,lang='it',caption=true,wide=false}=Astro.props as {name:string;alt:string;lang:Lang;caption?:boolean;wide?:boolean};
+const dimensions=(editorialAssets as Record<string,{mobile:{width:number;height:number};desktop:{width:number;height:number}}>)[name];
+---
+<figure class="editorial-photo">
+ <picture>
+  <source media="(max-width: 680px)" srcset={`/images/editorial/${name}-mobile-480.webp 480w, /images/editorial/${name}-mobile.webp 960w`} sizes="calc(100vw - 40px)" width={dimensions.mobile.width} height={dimensions.mobile.height}/>
+  <source srcset={`/images/editorial/${name}-desktop-800.webp 800w, /images/editorial/${name}-desktop.webp 1600w`} sizes={wide?'calc(100vw - 70px)':'(max-width: 960px) 50vw, 650px'} width={dimensions.desktop.width} height={dimensions.desktop.height}/>
+  <img src={`/images/editorial/${name}-desktop.webp`} width={dimensions.desktop.width} height={dimensions.desktop.height} loading="lazy" decoding="async" alt={alt}/>
+ </picture>
+ {caption&&<figcaption>{text(lang,'Ricreazione editoriale basata sulle foto del negozio.','Editorial recreation based on shop photographs.')}</figcaption>}
+</figure>

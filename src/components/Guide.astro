@@ -1,5 +1,5 @@
 ---
-import Base from '../layouts/Base.astro';import {guides} from '../data/pages';import {shop,pathFor,text} from '../data/shop';
+import Base from '../layouts/Base.astro';import {guides} from '../data/pages';import {pathFor,text} from '../data/shop';
 const {slug,lang='it'}=Astro.props;const g=guides[slug];const l=lang==='it'?0:1;
 ---
 <Base title={g.title[l]} description={g.intro[l]} lang={lang} slug={`schede/${slug}`}>

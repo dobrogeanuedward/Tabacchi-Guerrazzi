@@ -1,6 +1,6 @@
 # Tabaccheria Guerrazzi di Angela
 
-Sito Astro del pacchetto Autorità. Identità ripresa dalla proposta: cobalto, avorio, Bodoni e Manrope; tre fotografie fornite per la sezione giochi e sei asset editoriali generati e ottimizzati in WebP. Font locali.
+Sito Astro del pacchetto Autorità, con nuove categorie predisposte per il lavoro continuativo. Identità ripresa dalla proposta: cobalto, avorio, Bodoni e Manrope. Font locali, illustrazioni UI ImageGen e immagini editoriali ottimizzate in WebP. Le nuove scene del negozio hanno composizioni generate distintamente per mobile e desktop.
 
 ## Sviluppo
 
@@ -35,12 +35,16 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 
 ## Contenuti
 
-- 12 pagine principali in italiano e inglese.
+- 21 pagine principali in italiano e inglese, comprese le nove nuove categorie.
 - 6 guide in italiano e inglese.
 - 12 articoli italiani nei cluster servizi pratici, idee regalo, giochi e giocattoli, negozio e quartiere.
-- Schema strutturato, canonical/hreflang e sitemap abilitati a conferma dei dati.
+- Store, WebPage, BreadcrumbList e FAQ visibili coesistono nei dati strutturati; Service per il deposito bagagli. Canonical/hreflang e sitemap sono condizionati alla configurazione di lancio.
+- Deposito bagagli Bounce: scheda ufficiale Palazzo Ercolani, stesso indirizzo del negozio; prezzi e orari restano sulla piattaforma.
+- Ricognizione di 21 foto uniche, 134 osservazioni con marche e livelli di certezza in `docs/ricognizione/`.
 
-I dati verificabili sono centralizzati in `src/data/shop.ts`. Telefono, orari, dati fiscali, recensioni, marchi specifici e video attendono il materiale del negozio. Le immagini editoriali non rappresentano disponibilità di prodotti.
+I dati dell’attività sono centralizzati in `src/data/shop.ts`; categorie in `src/data/assortment.ts`. Telefono, orari, dati fiscali e recensioni attendono conferma. Marchi riconoscibili sono documentati nelle foto originali, non dedotti dalle immagini AI. Le immagini editoriali non rappresentano disponibilità di prodotti; le foto originali degli interni restano solo riferimenti, non sono servite dal sito.
+
+Prompt completi, fonti e selezione delle immagini sono in `docs/identita/`. Gli asset consumati sono in `public/brand/ui/` e `public/images/editorial/`. Lo script `scripts/prepare-editorial-assets.mjs` genera le varianti WebP e le dimensioni per il componente `EditorialPhoto`; selezione delle fotografie verticali/orizzontali tramite `picture/source`, non solo ritagli CSS.
 
 ## R2 DOGO
 

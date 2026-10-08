@@ -1,0 +1,39 @@
+{
+  "method": "built-in ImageGen",
+  "purpose": "Decorative editorial UI illustrations, not product photographs",
+  "outputDirectory": "public/brand/ui",
+  "variants": [
+    320,
+    600,
+    960
+  ],
+  "selectedSources": {
+    "stationery-ink": "exec-89ad0b06-c3c4-4897-8093-b8e1b96656f9.png",
+    "souvenir-ink": "exec-fe3f31d8-cbca-438b-bb69-1dc013792d04.png",
+    "essentials-ink": "exec-86d9dff9-fa5b-41a7-ae25-c470fa91befe.png",
+    "luggage-ink": "exec-444adccd-d284-420a-b58c-f1b1f8fd5889.png",
+    "phone-ink": "exec-3fe01fb8-aa7c-472c-9d9a-933582b547dd.png",
+    "party-ink": "exec-d6c1012f-acbc-47f0-9ab5-1d286685b8a7.png",
+    "sweets-ink": "exec-3f78313f-752c-42a1-a9c1-ebfa759fec1e.png"
+  },
+  "prompts": {
+    "stationery-ink": "Use case: illustration-story. Asset type: transparent editorial illustration for Guerrazzi's stationery category UI. A carefully composed small stack of two school notebooks, one writing pen, one fluorescent marker and one paper folder. Sophisticated original Italian printmaking and dry brush ink illustration, mostly cobalt #0645c0 with ivory highlights and one tiny vivid yellow marker accent. Lightly imperfect lithograph contours, restrained genuine paper-print character, coherent family with cobalt linocut gifts and portico artwork. Beautiful legible silhouette at 120px, centered generous transparent margins, no cast shadow. No writing, no brand labels, no logos, no photography, no 3D, no cartoon, no surrounding UI. Genuine transparent background.",
+    "souvenir-ink": "Use case: illustration-story. Asset type: transparent editorial illustration for Bologna souvenir category UI. A small elegant cluster of two souvenir magnets and one simple metal keyring: one magnet shows the recognizable silhouette of Bologna's two towers, another one a modest portico arch motif. Artistic illustrative motifs not precise reproductions of merchandise. Original cobalt #0645c0 printmaking contours with ivory highlights, tiny terracotta accent, charming but grown-up Italian editorial illustration. Dry brush and linocut grain, legible compact silhouette, generous transparent margins, same sophisticated ink family as a gift and a spinning top. No text, no lettering, no logo, no map, no photography, no cartoon, no 3D, no surrounding UI. Genuine transparent background.",
+    "essentials-ink": "Use case: illustration-story. Asset type: transparent editorial illustration for practical everyday items category UI. An elegant compact composition of one coiled simple USB cable with visible connectors, a small brass padlock and a roll of clear tape. Original sophisticated cobalt #0645c0 ink contours, ivory highlights and tiny warm brass-ochre accent on padlock, dry brush linocut texture and graceful editorial line work. Objects spaced naturally with generous transparent margin, readable at small UI size, restrained authentic printmaking. No text, no labels, no logos, no cast shadow, no photography, no glossy 3D, no cartoon, no surrounding UI. Genuine transparent background.",
+    "luggage-ink": "Use case: illustration-story. Asset type: transparent editorial illustration for a Bologna shop's luggage storage service page. One upright compact wheeled suitcase with extended handle and a small soft travel bag resting beside it. A plain blank tag attached to the handle. Sophisticated cobalt #0645c0 dry-brush linocut / lithograph artwork with ivory highlights and one tiny warm terracotta accent, refined Italian editorial printmaking consistent with illustrations of stationery, souvenirs, wrapped gifts and portico arches. Strong readable silhouette, generous transparent margins, charming natural proportions, no cast shadow. No words, no letters, no Bounce logo or invented branding, no photograph, no 3D, no cartoon, no interface. Genuine transparent background.",
+    "phone-ink": "Use case: illustration-story. Asset type: transparent bespoke editorial UI illustration for Guerrazzi, Bologna. Sophisticated original cobalt #0645c0 dry-brush linocut/lithograph artwork with ivory highlights, delicate handmade contours, restrained paper print character consistent with the stationery, gift and luggage illustrations. Strong readable silhouette at 100px, generous genuine transparent margins. No words, no letters, no price, no logos, no photography, no 3D, no cartoon, no UI, no cast shadow or colored background haze. Subject: a simple compact power bank with a short coiled USB charging cable and visible generic connectors, one tiny warm yellow accent. Elegant composition, no invented charging specification or phone brand.",
+    "party-ink": "Use case: illustration-story. Asset type: transparent bespoke editorial UI illustration for Guerrazzi, Bologna. Sophisticated original cobalt #0645c0 dry-brush linocut/lithograph artwork with ivory highlights, delicate handmade contours, restrained paper print character consistent with the stationery, gift and luggage illustrations. Strong readable silhouette at 100px, generous genuine transparent margins. No words, no letters, no price, no logos, no photography, no 3D, no cartoon, no UI, no cast shadow or colored background haze. Subject: a closed illustrated greeting card with a simple floral motif, one blank gift bag with handles and a small party candle, no printed number or text. One tiny warm terracotta accent. Graceful restrained print illustration, not an actual SKU depiction.",
+    "sweets-ink": "Use case: logo-brand. Asset type: clean TRANSPARENT die-cut editorial illustration for a website UI. Draw two round lollipops in wrappers and one small twist-wrapped sweet as a simple FLAT 2D PRINT illustration. Cobalt #0645c0 and ivory ink with tiny terracotta and yellow accents. Handmade linocut contours and print grain INSIDE the object silhouettes only. The background is COMPLETELY EMPTY TRANSPARENT ALPHA. Hard clean cutout contours. No atmospheric effect of any kind: absolutely NO glow, shadow, halo, vignette, colored haze, aura, gradients, lighting, reflection, smoke, backdrop or texture outside the objects. Think isolated vintage ink stamp objects, not a lit scene. No words, brands, logos, interface, photography, 3D or cartoon. Center the small group with ample transparent margin."
+  },
+  "iterations": [
+    {
+      "id": "sweets-ink-v1",
+      "prompt": "Use case: illustration-story. Asset type: transparent bespoke editorial UI illustration for Guerrazzi, Bologna. Sophisticated original cobalt #0645c0 dry-brush linocut/lithograph artwork with ivory highlights, delicate handmade contours, restrained paper print character consistent with the stationery, gift and luggage illustrations. Strong readable silhouette at 100px, generous genuine transparent margins. No words, no letters, no price, no logos, no photography, no 3D, no cartoon, no UI, no cast shadow or colored background haze. Subject: two small round wrapped lollipops and one twist-wrapped sweet, subtle yellow and terracotta accents on the wrappers. Charming adult editorial printmaking, no candy brand or text, genuinely transparent background."
+    },
+    {
+      "id": "sweets-ink-v2",
+      "prompt": "Use case: background-extraction. Edit target: attached cobalt printmaking sweets illustration. Remove ONLY the entire soft blue/grey/yellow background glow and haze surrounding the three wrapped sweets. Keep the exact three objects, their shapes, paper-print texture, colors, scale and placement unchanged. All pixels outside the solid illustrated objects must be truly transparent alpha, with a clean natural edge. No shadow, no halo, no colored wash. Do not redraw or add objects. Preserve authentic interior ivory areas and existing cobalt, terracotta and yellow artwork. Transparent background."
+    }
+  ],
+  "note": "Preserve generated alpha. Illustrations are decorative, not functional icons or product specifications."
+}

@@ -1,0 +1,259 @@
+{
+  "method": "built-in ImageGen",
+  "date": "2026-10-08",
+  "policy": "Original store photographs are references only. Individually generated portrait/mobile and landscape/desktop compositions, not cropped substitutes or SKU representations.",
+  "selected": [
+    {
+      "name": "cartoleria",
+      "orientation": "mobile",
+      "id": "cartoleria-editoriale",
+      "sourceFile": "exec-361f3bc3-b7a4-4b19-a3f3-5e14786bf954.png",
+      "output": "public/images/editorial/cartoleria-mobile.webp"
+    },
+    {
+      "name": "cartoleria",
+      "orientation": "desktop",
+      "id": "cartoleria-desktop",
+      "sourceFile": "exec-e855c753-13f7-4c98-a6cc-83a2214e57d4.png",
+      "output": "public/images/editorial/cartoleria-desktop.webp"
+    },
+    {
+      "name": "auguri",
+      "orientation": "mobile",
+      "id": "auguri-editoriali",
+      "sourceFile": "exec-cb205d72-d9f2-4647-a3da-06a9fbf4c81b.png",
+      "output": "public/images/editorial/auguri-mobile.webp"
+    },
+    {
+      "name": "auguri",
+      "orientation": "desktop",
+      "id": "auguri-desktop",
+      "sourceFile": "exec-08ff17eb-2d65-4b9d-9a84-ce0fb4695f1e.png",
+      "output": "public/images/editorial/auguri-desktop.webp"
+    },
+    {
+      "name": "necessita",
+      "orientation": "mobile",
+      "id": "necessita-editoriali",
+      "sourceFile": "exec-2c37ef54-daa2-4064-af86-d155db6efe7b.png",
+      "output": "public/images/editorial/necessita-mobile.webp"
+    },
+    {
+      "name": "necessita",
+      "orientation": "desktop",
+      "id": "necessita-desktop",
+      "sourceFile": "exec-dfa1618f-c63d-4c05-9f1e-3ad047d44843.png",
+      "output": "public/images/editorial/necessita-desktop.webp"
+    },
+    {
+      "name": "souvenir",
+      "orientation": "mobile",
+      "id": "souvenir-editoriali",
+      "sourceFile": "exec-f4e83527-adf8-42d9-b440-7094b9c59881.png",
+      "output": "public/images/editorial/souvenir-mobile.webp"
+    },
+    {
+      "name": "souvenir",
+      "orientation": "desktop",
+      "id": "souvenir-desktop",
+      "sourceFile": "exec-cb1380a9-11b3-4477-83c0-9c578fa14ddb.png",
+      "output": "public/images/editorial/souvenir-desktop.webp"
+    },
+    {
+      "name": "bottega",
+      "orientation": "mobile",
+      "id": "bottega-mobile",
+      "sourceFile": "exec-1fcfe28b-9e29-4bf3-8b18-cfc0548b8d2e.png",
+      "output": "public/images/editorial/bottega-mobile.webp"
+    },
+    {
+      "name": "bottega",
+      "orientation": "desktop",
+      "id": "bottega-editoriale",
+      "sourceFile": "exec-5a65432f-c4b7-4d76-a82f-d73c139baecc.png",
+      "output": "public/images/editorial/bottega-desktop.webp"
+    },
+    {
+      "name": "dolciumi",
+      "orientation": "mobile",
+      "id": "dolciumi-mobile-v2",
+      "sourceFile": "exec-d8d09992-61ee-411a-a254-58e320f22693.png",
+      "output": "public/images/editorial/dolciumi-mobile.webp"
+    },
+    {
+      "name": "dolciumi",
+      "orientation": "desktop",
+      "id": "dolciumi-desktop-v2",
+      "sourceFile": "exec-36bd5c08-5689-4430-adff-64067e0317ff.png",
+      "output": "public/images/editorial/dolciumi-desktop.webp"
+    },
+    {
+      "name": "cura",
+      "orientation": "mobile",
+      "id": "cura-editoriale",
+      "sourceFile": "exec-197357be-b0b1-4dc0-8d04-7ec816ef93c2.png",
+      "output": "public/images/editorial/cura-mobile.webp"
+    },
+    {
+      "name": "cura",
+      "orientation": "desktop",
+      "id": "cura-desktop",
+      "sourceFile": "exec-94e9f264-93ab-4c22-8c68-d34462512acb.png",
+      "output": "public/images/editorial/cura-desktop.webp"
+    },
+    {
+      "name": "regali",
+      "orientation": "mobile",
+      "id": "regali-mobile",
+      "sourceFile": "exec-2d7b50b3-0cff-41d1-8a99-781b3484e4ab.png",
+      "output": "public/images/editorial/regali-mobile.webp"
+    },
+    {
+      "name": "regali",
+      "orientation": "desktop",
+      "id": "regali-editoriali",
+      "sourceFile": "exec-c30451ff-05ba-4cde-8850-c11be2c4504f.png",
+      "output": "public/images/editorial/regali-desktop.webp"
+    }
+  ],
+  "rejected": [
+    {
+      "id": "dolciumi-editoriali",
+      "reason": "Undocumented loose candy bins"
+    },
+    {
+      "id": "dolciumi-desktop",
+      "reason": "Undocumented loose candy bins"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "cartoleria-editoriale",
+      "references": [
+        "IMG_5261.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a brand new premium editorial photograph, using the attached actual shop photograph only as the spatial and merchandise-type reference, not as a retouching target. Italian independent neighborhood shop in Bologna, intimate and authentic, beautifully observed, cinematic 35mm film realism, gentle warm afternoon light, natural creamy highlights and rich but readable shadows, subtle photographic grain, true tactile materials, refined commercial editorial composition without luxury-store reinvention. No people. Do not invent services, merchandise models or a new shop layout. No advertising, price tags, legible brand logos or promotional copy: packaging faces should be softly out of focus or naturally turned away, not fabricated text. No extra marble, parquet, polished boutique shelves, plants, props or neon. The image is interpretive editorial imagery, not a SKU product photo. Portrait composition suitable for a responsive website, entire image edge to edge, no frame, watermark, collage or text overlay. Subject: the characteristic paired white stationery shelving with softly rounded rectangular openings. Preserve white molded shelf rails, horizontal stacks of school notebooks, colored folders, pen cups and fluorescent highlighters. Choose a closer professionally composed view focused on notebooks and a pen cup, with the recognizable modular white shelf pattern receding behind. 50mm lens, f/2.8, beautiful tactile paper edges, accurate natural whites, color accents restrained and believable."
+    },
+    {
+      "id": "auguri-editoriali",
+      "references": [
+        "IMG_5262.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a brand new premium editorial photograph, using the attached actual shop photograph only as the spatial and merchandise-type reference, not as a retouching target. Italian independent neighborhood shop in Bologna, intimate and authentic, beautifully observed, cinematic 35mm film realism, gentle warm afternoon light, natural creamy highlights and rich but readable shadows, subtle photographic grain, true tactile materials, refined commercial editorial composition without luxury-store reinvention. No people. Do not invent services, merchandise models or a new shop layout. No advertising, price tags, legible brand logos or promotional copy: packaging faces should be softly out of focus or naturally turned away, not fabricated text. No extra marble, parquet, polished boutique shelves, plants, props or neon. The image is interpretive editorial imagery, not a SKU product photo. Portrait composition suitable for a responsive website, entire image edge to edge, no frame, watermark, collage or text overlay. Subject: illustrated birthday greeting cards in the real silver wire pocket display. Retain individually sleeved cards, pastel balloons, a small illustrated bicycle with flowers and a few layered colorful birthday designs. Frame upright, eye-level rather than tilted smartphone perspective, cards as charming physical objects. No legible words or prices: focus on paper texture and motifs, depth of field softly obscures lettering. 85mm editorial lens, softly lit highlights on cellophane, beautifully controlled reflections."
+    },
+    {
+      "id": "necessita-editoriali",
+      "references": [
+        "IMG_5256.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a brand new premium editorial photograph, using the attached actual shop photograph only as the spatial and merchandise-type reference, not as a retouching target. Italian independent neighborhood shop in Bologna, intimate and authentic, beautifully observed, cinematic 35mm film realism, gentle warm afternoon light, natural creamy highlights and rich but readable shadows, subtle photographic grain, true tactile materials, refined commercial editorial composition without luxury-store reinvention. No people. Do not invent services, merchandise models or a new shop layout. No advertising, price tags, legible brand logos or promotional copy: packaging faces should be softly out of focus or naturally turned away, not fabricated text. No extra marble, parquet, polished boutique shelves, plants, props or neon. The image is interpretive editorial imagery, not a SKU product photo. Portrait composition suitable for a responsive website, entire image edge to edge, no frame, watermark, collage or text overlay. Subject: the real dense white perforated pegboard of practical household and stationery essentials. Preserve hanging blister packs, rolls of masking and packing tape, a small brass padlock, glue, scissors, packaged charging cables, orange and pink gift bags near the lower-right. Select a coherent tight view of tape, cable and padlock with layered products softly receding, not the entire chaotic wall. Elegant observed everyday usefulness, white pegboard remains physically recognizable, 50mm f/2.8."
+    },
+    {
+      "id": "souvenir-editoriali",
+      "references": [
+        "IMG_5241.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a brand new premium editorial photograph, using the attached actual shop photograph only as the spatial and merchandise-type reference, not as a retouching target. Italian independent neighborhood shop in Bologna, intimate and authentic, beautifully observed, cinematic 35mm film realism, gentle warm afternoon light, natural creamy highlights and rich but readable shadows, subtle photographic grain, true tactile materials, refined commercial editorial composition without luxury-store reinvention. No people. Do not invent services, merchandise models or a new shop layout. No advertising, price tags, legible brand logos or promotional copy: packaging faces should be softly out of focus or naturally turned away, not fabricated text. No extra marble, parquet, polished boutique shelves, plants, props or neon. The image is interpretive editorial imagery, not a SKU product photo. Portrait composition suitable for a responsive website, entire image edge to edge, no frame, watermark, collage or text overlay. Subject: a close editorial composition of the actual Bologna souvenir magnet pegboard at the left of the reference, preserving its white perforated backing and a dense but orderly assortment of colorful magnets showing Bologna's towers and small architectural silhouettes. Exclude tobacco, lighters and their packaging entirely by focusing only on the souvenir panel. The towers and city souvenirs are the subject, not an invented souvenir table. Slight oblique depth, 85mm lens, f/2.8, subtle terracotta, yellow and blue accents with natural warm side light."
+    },
+    {
+      "id": "bottega-editoriale",
+      "references": [
+        "IMG_5249.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a new cinematic editorial photograph inspired by the attached real Bologna neighborhood shop images. They are spatial and object-type references, not images to simply filter. Preserve the real modest shop character: white walls, white or grey-wood shelving, glass displays with warm LED edges, diagonal pale grey tiled floor where visible. Premium natural photographic quality, subtle 35mm film grain, warm afternoon ambience, beautifully controlled glass reflections, no boutique reinvention, no marble or parquet, no advertising or prices, no new legible labels or fabricated brands, no people. Existing packaging can be softly out of focus or turned away; no legible tobacco promotion. Edge-to-edge photographic image, no overlays or watermark. Subject: the shop interior as an architectural detail, focusing on the actual double white-framed glass cabinet with warm wooden inner drawers and brass-toned light, and the slim illuminated glass column to its left. Preserve their adjacency, the dark aluminium window frame to the right and the pale diagonal floor. Avoid all people and make stocked box labels unreadable with depth of field. A gently oblique eye-level 35mm photograph, warm sense of a lived-in local bottega. Landscape 3:2 composition, understated and authentic."
+    },
+    {
+      "id": "dolciumi-editoriali",
+      "references": [
+        "IMG_5241.jpeg",
+        "IMG_5249.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a new cinematic editorial photograph inspired by the attached real Bologna neighborhood shop images. They are spatial and object-type references, not images to simply filter. Preserve the real modest shop character: white walls, white or grey-wood shelving, glass displays with warm LED edges, diagonal pale grey tiled floor where visible. Premium natural photographic quality, subtle 35mm film grain, warm afternoon ambience, beautifully controlled glass reflections, no boutique reinvention, no marble or parquet, no advertising or prices, no new legible labels or fabricated brands, no people. Existing packaging can be softly out of focus or turned away; no legible tobacco promotion. Edge-to-edge photographic image, no overlays or watermark. Subject: a close editorial detail of the actual candy displays, wrapped lollipops and packets of gummy sweets in the neighborhood shop, with layered colorful wrappers, naturally soft unreadable packaging text and no price stickers. Frame only sweets, not adjacent tobacco merchandise. Warm reds and small yellow and blue accents, little glass and shelf details consistent with reference, 85mm lens and shallow depth of field. Portrait 4:5 photograph."
+    },
+    {
+      "id": "cura-editoriale",
+      "references": [
+        "IMG_5258.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a new cinematic editorial photograph inspired by the attached real Bologna neighborhood shop images. They are spatial and object-type references, not images to simply filter. Preserve the real modest shop character: white walls, white or grey-wood shelving, glass displays with warm LED edges, diagonal pale grey tiled floor where visible. Premium natural photographic quality, subtle 35mm film grain, warm afternoon ambience, beautifully controlled glass reflections, no boutique reinvention, no marble or parquet, no advertising or prices, no new legible labels or fabricated brands, no people. Existing packaging can be softly out of focus or turned away; no legible tobacco promotion. Edge-to-edge photographic image, no overlays or watermark. Subject: the actual white-framed glass personal-care cabinet, silver circular ring door handle, small red wicker basket of scrunchies, hair clips on a light card, round tabletop mirrors behind glass on the lower shelf. Preserve these observed objects and the real cabinet, no new cosmetic brands. Close portrait editorial photograph, focus on tactile scrunchies and the silver door ring, rich warm reflections and clean highlights, 85mm f/2.8."
+    },
+    {
+      "id": "regali-editoriali",
+      "references": [
+        "IMG_5250.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a new cinematic editorial photograph inspired by the attached real Bologna neighborhood shop images. They are spatial and object-type references, not images to simply filter. Preserve the real modest shop character: white walls, white or grey-wood shelving, glass displays with warm LED edges, diagonal pale grey tiled floor where visible. Premium natural photographic quality, subtle 35mm film grain, warm afternoon ambience, beautifully controlled glass reflections, no boutique reinvention, no marble or parquet, no advertising or prices, no new legible labels or fabricated brands, no people. Existing packaging can be softly out of focus or turned away; no legible tobacco promotion. Edge-to-edge photographic image, no overlays or watermark. Subject: the actual small scented candles in rounded clear glass vessels and the hanging tower-themed keyrings inside the reference glass cabinet. Crop conceptually to a close view of these objects only; no lighters, tobacco or promotional signs. Preserve simple glass shelves and white vertical LED light, soft warm color in candle wax. Natural intimate editorial still life as found in a real shop, not a tabletop product advertising setup. Landscape 3:2."
+    },
+    {
+      "id": "cartoleria-desktop",
+      "references": [
+        "IMG_5261.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Landscape 16:9 wide composition for DESKTOP. Paired white molded stationery shelving with distinctive rounded rectangular openings, stacked notebooks, colored folders and mesh pen cup with neon highlighters. Focus on paper edges and pens with layered shelf pattern across the horizontal frame. 50mm f/2.8, no unnatural horizontal stretching."
+    },
+    {
+      "id": "auguri-desktop",
+      "references": [
+        "IMG_5262.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Landscape 16:9 wide composition for DESKTOP. Silver wire-pocket rack with individually sleeved illustrated birthday cards: small bicycle and flowers, pastel balloons, playful birthday illustrations. Recompose at eye level rather than smartphone tilt. Paper and tasteful cellophane highlights in focus, soft unreadable lettering, shelf depth across width. 85mm f/2.8."
+    },
+    {
+      "id": "necessita-desktop",
+      "references": [
+        "IMG_5256.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Landscape 16:9 wide composition for DESKTOP. White perforated pegboard close view with rolls of masking tape, a packaged brass padlock, charging cable, glue and colorful scissors, real layered blister pack character. Orange gift bag just entering one edge. Focus only on these objects, shallow depth of field avoids illegible pseudo-labels. 50mm f/2.8."
+    },
+    {
+      "id": "souvenir-desktop",
+      "references": [
+        "IMG_5241.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Landscape 16:9 wide composition for DESKTOP. Focus exclusively on the white souvenir magnet pegboard with Bologna tower motifs, local architectural silhouettes, small colorful magnets. No lighters or tobacco in frame. Oblique focus plane along a handful of magnets, warm terracotta details and small blue/yellow accents, 85mm f/2.8."
+    },
+    {
+      "id": "bottega-mobile",
+      "references": [
+        "IMG_5249.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Portrait 9:16 composition for MOBILE. Architectural view of the actual white double glass cabinet with warm wood drawers and slim illuminated glass column immediately beside it, dark aluminium window frame at the right. Eye-level photograph, preserve adjacency, no readable tobacco packaging. Beautiful vertical LED reflections, intimate real shop ambience, 35mm lens. No people."
+    },
+    {
+      "id": "dolciumi-desktop",
+      "references": [
+        "IMG_5241.jpeg",
+        "IMG_5249.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Landscape 16:9 wide composition for DESKTOP. Close detail of actual candy display: wrapped colorful lollipops and gummy sweet packets on a simple shop shelf. Warm reds, little yellow and blue accents, shallow depth of field, packaging turned away or text unreadable. No tobacco, no new luxury candy counter, 85mm lens."
+    },
+    {
+      "id": "cura-desktop",
+      "references": [
+        "IMG_5258.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Landscape 16:9 wide composition for DESKTOP. Close view of white-framed glass personal-care cabinet, silver ring door handle, real small red wicker basket of scrunchies and simple hair clips, small round tabletop mirror behind. Side light and controlled warm reflections on glass. No product labels in focus. 85mm lens, elegant and authentic."
+    },
+    {
+      "id": "regali-mobile",
+      "references": [
+        "IMG_5250.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Brand new editorial / cinematic 35mm photograph based on the attached real Bologna shop spatial reference. This is a professionally recomposed photograph, not a crop or filter. Preserve actual humble materials and observed kinds of objects: white walls, modest white or grey-wood shelves, glass with LED edges, pale grey diagonal floor if visible. Natural late-afternoon warm side light, rich readable shadows, creamy highlights, fine film grain, restrained cinematic color. No people, no new products or services, no luxury boutique redesign, no marble, parquet or invented decor, no advertising or prices, no legible brand logos or invented packaging text, no text overlays. Product labels softly out of focus or facing away. Portrait 9:16 composition for MOBILE. Close editorial view of rounded clear glass scented candles and tower-themed keyrings hanging in the actual glass display with simple shelves and white vertical LED edge. Frame only candles and keyrings, no tobacco or lighters. Warm wax colors and paper textures, subtle reflections, 85mm f/2.8."
+    },
+    {
+      "id": "dolciumi-mobile-v2",
+      "references": [
+        "IMG_5241.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a new premium cinematic editorial photograph of the SAME small Bologna shop's candy corner shown in attached reference IMG_5241. Preserve a simple GREY WOODEN shelf and the physically modest retail display. STRICT SUBJECT: commercially WRAPPED lollipops in a small red cylindrical counter holder, and SEALED bags of gummy candy resting on the shelf. All sweets must be individually wrapped or sealed in retail bags. There must be NO loose sweets, NO pick-and-mix, NO clear candy bins, NO candy scoops, NO bulk dispensers, NO newly invented candy counter. Do not add giant heart lollipops. Use normal small round wrapped lollipops with colorful wrapper designs, not readable brands. Exclude tobacco accessories and signage entirely. 85mm photography, warm side light with creamy highlights, subtle fine film grain, believable product scale, shallow background focus and gorgeous controlled cellophane reflections. No people, no words, no prices, no brand claims, no watermark or overlays. The original photo is the spatial and object reference; this is a new photographic composition, not a filter. Vertical portrait 9:16 MOBILE composition, a few wrapped lollipops in foreground and sealed gummy bags lower on the grey wooden shelf, tight coherent framing."
+    },
+    {
+      "id": "dolciumi-desktop-v2",
+      "references": [
+        "IMG_5241.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Generate a new premium cinematic editorial photograph of the SAME small Bologna shop's candy corner shown in attached reference IMG_5241. Preserve a simple GREY WOODEN shelf and the physically modest retail display. STRICT SUBJECT: commercially WRAPPED lollipops in a small red cylindrical counter holder, and SEALED bags of gummy candy resting on the shelf. All sweets must be individually wrapped or sealed in retail bags. There must be NO loose sweets, NO pick-and-mix, NO clear candy bins, NO candy scoops, NO bulk dispensers, NO newly invented candy counter. Do not add giant heart lollipops. Use normal small round wrapped lollipops with colorful wrapper designs, not readable brands. Exclude tobacco accessories and signage entirely. 85mm photography, warm side light with creamy highlights, subtle fine film grain, believable product scale, shallow background focus and gorgeous controlled cellophane reflections. No people, no words, no prices, no brand claims, no watermark or overlays. The original photo is the spatial and object reference; this is a new photographic composition, not a filter. Horizontal landscape 16:9 DESKTOP composition, a few wrapped lollipops and sealed gummy bags across the grey wooden shelf, layered depth."
+    }
+  ]
+}
