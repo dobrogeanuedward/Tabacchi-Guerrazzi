@@ -1,0 +1,1 @@
+export function GET(){const base=import.meta.env.PUBLIC_SITE_URL;const ready=import.meta.env.PUBLIC_LAUNCH_READY==='true'&&!!base;return new Response(ready?`User-agent: *\nDisallow: /admin/\nDisallow: /api/\nDisallow: /*?\nSitemap: ${new URL('/sitemap.xml',base).href}\n`:'User-agent: *\nDisallow: /\n',{headers:{'Content-Type':'text/plain'}});}

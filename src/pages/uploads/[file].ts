@@ -1,0 +1,2 @@
+import {readFile} from 'node:fs/promises';import {join} from 'node:path';import {dataDir} from '../../lib/store.mjs';
+export async function GET({params}:any){if(!/^[a-f0-9-]{36}\.webp$/.test(params.file))return new Response('Non trovato.',{status:404});try{return new Response(await readFile(join(dataDir,'uploads',params.file)),{headers:{'Content-Type':'image/webp','Cache-Control':'public, max-age=31536000, immutable','X-Content-Type-Options':'nosniff'}})}catch{return new Response('Non trovato.',{status:404})}}

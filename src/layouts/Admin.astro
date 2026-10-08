@@ -1,0 +1,6 @@
+---
+import '../styles/global.css';import Logo from '../components/Logo.astro';import {sessionValid} from '../lib/auth.mjs';
+const {title='Catalogo Guerrazzi',login=false}=Astro.props;
+if(!login&&!sessionValid(Astro.cookies))return Astro.redirect('/admin/login/');
+---
+<!doctype html><html lang="it"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="robots" content="noindex,nofollow"/><title>{title}</title><link rel="icon" href="/brand/favicon.svg"/></head><body class="admin-shell"><div class="admin-wrap">{!login&&<header class="admin-top"><a href="/admin/" aria-label="Catalogo Guerrazzi"><Logo/></a><div><a href="/admin/guida/">Guida</a><a href="/catalogo/" target="_blank" rel="noopener">Vedi il sito</a><form method="post" action="/api/logout"><button>Esci</button></form></div></header>}<slot/></div></body></html>

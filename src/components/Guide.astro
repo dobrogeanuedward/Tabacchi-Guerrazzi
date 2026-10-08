@@ -1,0 +1,9 @@
+---
+import Base from '../layouts/Base.astro';import {guides} from '../data/pages';import {shop,pathFor,text} from '../data/shop';
+const {slug,lang='it'}=Astro.props;const g=guides[slug];const l=lang==='it'?0:1;
+---
+<Base title={g.title[l]} description={g.intro[l]} lang={lang} slug={`schede/${slug}`}>
+<div class="breadcrumb wrap"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor(g.parent,lang)}>{text(lang,'Torna alla categoria','Back to category')}</a></div>
+<header class="article-head"><h1>{g.title[l]}</h1><p class="standfirst">{g.intro[l]}</p></header>
+<div class="article-body"><nav class="article-toc" aria-label={text(lang,'In questa pagina','On this page')}>{g.sections.map((s:any,i:number)=><a href={`#informazione-${i}`}>{s[0][l]}</a>)}</nav><article>{g.sections.map((s:any,i:number)=><section id={`informazione-${i}`}><h2>{s[0][l]}</h2><p>{s[1][l]}</p></section>)}<div class="article-related"><p>{text(lang,'Verifica la tua richiesta prima di passare.','Check your request before visiting.')}</p><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Informazioni per la visita','Plan your visit')}</a></div></article></div>
+</Base>

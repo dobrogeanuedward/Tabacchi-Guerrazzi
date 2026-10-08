@@ -1,0 +1,4 @@
+import {createInterface} from 'node:readline/promises';
+import {passwordHash} from '../src/lib/auth.mjs';import {db} from '../src/lib/store.mjs';
+const cli=createInterface({input:process.stdin,output:process.stdout});
+try{const username=process.env.ADMIN_USERNAME||await cli.question('Nome utente amministratore: ');console.log('Usa una password unica di almeno 14 caratteri. Non condividerla in chat.');const password=process.env.ADMIN_PASSWORD||await cli.question('Password (visibile in questo terminale privato): ');if(password.length<14)throw new Error('Password troppo breve.');if(!username.trim())throw new Error('Nome utente richiesto.');db.prepare('INSERT INTO admin VALUES (1,?,?) ON CONFLICT(id) DO UPDATE SET username=excluded.username,password=excluded.password').run(username.trim(),passwordHash(password));db.prepare('DELETE FROM sessions').run();console.log('Account amministratore configurato.');}finally{cli.close();db.close();}

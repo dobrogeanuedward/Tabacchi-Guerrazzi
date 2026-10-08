@@ -1,0 +1,5 @@
+---
+import Product from '../../../components/Product.astro';import {getProductBySlug} from '../../../lib/store.mjs';
+if(!getProductBySlug(Astro.params.slug))return new Response(null,{status:404});
+---
+<Product slug={Astro.params.slug} lang="en"/>

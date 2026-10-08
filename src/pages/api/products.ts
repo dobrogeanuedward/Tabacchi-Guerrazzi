@@ -1,0 +1,3 @@
+import {sessionValid,sameOrigin} from '../../lib/auth.mjs';import {saveProduct} from '../../lib/store.mjs';
+export async function POST({request,cookies}:any){if(!sessionValid(cookies))return new Response('Accesso richiesto.',{status:401});if(!sameOrigin(request))return new Response('Origine non valida.',{status:403});
+ try{const raw=await request.text();if(raw.length>25000)return new Response('Richiesta troppo grande.',{status:413});const result=saveProduct(JSON.parse(raw));return Response.json({ok:true,product:result});}catch(e:any){return Response.json({error:e.message||'Impossibile salvare.'},{status:400});}}

@@ -1,0 +1,32 @@
+{
+  "name": "tabacchi-guerrazzi",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "astro dev --host 0.0.0.0",
+    "build": "astro build",
+    "preview": "astro preview --host 0.0.0.0",
+    "start": "node dist/server/entry.mjs",
+    "admin:setup": "node scripts/setup-admin.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "build:preview": "node scripts/build-preview.mjs",
+    "check": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/node": "^9.0.0",
+    "@aws-sdk/client-s3": "^3.1147.0",
+    "@fontsource/bodoni-moda": "^5.3.0",
+    "@fontsource/manrope": "^5.3.0",
+    "astro": "^5.0.0",
+    "sharp": "^0.34.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.0",
+    "@types/node": "^26.6.4",
+    "typescript": "^5.0.0"
+  }
+}

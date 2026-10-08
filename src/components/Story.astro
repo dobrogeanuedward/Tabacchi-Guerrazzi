@@ -1,0 +1,8 @@
+---
+import {story,type Lang,text} from '../data/shop';
+const {lang='it',full=true}=Astro.props as {lang:Lang;full:boolean};
+---
+<section class="story-section wrap">
+ <div class="section-opening"><h2>{text(lang,'Le cose belle cominciano con poco.','Good things start small.')}</h2><p>{text(lang,'Uno sguardo alla vetrina. Una domanda. Angela che porta il gioco giusto.','A glance at the window. A question. Angela bringing over the right toy.')}</p></div>
+ <div class="story-grid">{story.map((s,i)=><figure><div class="story-image"><img src={s.src} width="1122" height="1402" loading="lazy" alt={lang==='it'?s.altIt:s.altEn}/></div><figcaption><span class="story-number">{i+1}</span><p>{lang==='it'?s.it:s.en}</p></figcaption></figure>)}</div>
+</section>

@@ -1,0 +1,6 @@
+import {spawn} from 'node:child_process';import {mkdir,writeFile} from 'node:fs/promises';
+if (!process.env.PUBLIC_SITE_URL && process.env.VERCEL_PROJECT_PRODUCTION_URL) process.env.PUBLIC_SITE_URL=`https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`;
+const run=(cmd,args)=>new Promise((resolve,reject)=>{const p=spawn(cmd,args,{stdio:'inherit'});p.on('exit',code=>code===0?resolve():reject(new Error(`Build failed: ${code}`)));});
+await run('npm',['run','build']);
+const server=spawn(process.execPath,['dist/server/entry.mjs'],{env:{...process.env,HOST:'127.0.0.1',PORT:'4387'},stdio:'ignore'});
+try{let ready=false;for(let i=0;i<40;i++){try{const r=await fetch('http://127.0.0.1:4387/');if(r.ok){ready=true;break}}catch{}await new Promise(r=>setTimeout(r,250));}if(!ready)throw new Error('Preview server unavailable.');for(const path of ['/catalogo/','/en/catalogo/','/robots.txt','/sitemap.xml']){const r=await fetch(`http://127.0.0.1:4387${path}`);if(!r.ok)throw new Error(`Snapshot failed: ${path}`);const out=path.endsWith('/')?`dist/client${path}index.html`:`dist/client${path}`;await mkdir(out.slice(0,out.lastIndexOf('/')),{recursive:true});await writeFile(out,await r.text());}console.log('Public preview ready at dist/client. The reserved catalogue panel stays on the persistent Node runtime.');}finally{server.kill('SIGTERM');}

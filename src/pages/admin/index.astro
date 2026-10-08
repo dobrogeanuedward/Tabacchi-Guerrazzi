@@ -1,0 +1,6 @@
+---
+import Admin from '../../layouts/Admin.astro';import {sessionValid} from '../../lib/auth.mjs';import {getProducts} from '../../lib/store.mjs';
+if(!sessionValid(Astro.cookies))return Astro.redirect('/admin/login/');
+const products=getProducts();const labels={draft:'Bozza',published:'Pubblicato',archived:'Archiviato'};
+---
+<Admin><h1 class="admin-title">I prodotti del negozio.</h1><p>{products.length} schede · {products.filter((p:any)=>p.status==='published').length} pubblicate</p><div class="admin-toolbar"><a class="button primary" href="/admin/prodotto/">Aggiungi un prodotto</a><p>Le bozze restano nell’area riservata. Pubblica quando la scheda è pronta.</p></div><div class="admin-products">{products.map((p:any)=><div class="admin-product">{p.image?<img src={p.image} alt="" width="70" height="70"/>:<span></span>}<div><h2>{p.nameIt}</h2><p>{labels[p.status as keyof typeof labels]} · {p.category}</p></div><a href={`/admin/prodotto/?id=${p.id}`}>Modifica scheda</a></div>)}</div>{!products.length&&<div class="admin-panel"><h2>Cominciamo dalla prima scheda.</h2><p>Inserisci nome e categoria, poi aggiungi descrizioni e fotografie. Puoi salvare subito una bozza e completarla quando vuoi.</p></div>}</Admin>

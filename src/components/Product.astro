@@ -1,0 +1,13 @@
+---
+import Base from '../layouts/Base.astro';import {getProductBySlug} from '../lib/store.mjs';import {pathFor,text} from '../data/shop';
+const {slug,lang='it'}=Astro.props;const p=getProductBySlug(slug);
+if(!p)return Astro.redirect(pathFor('catalogo',lang),302);
+const name=lang==='it'?p.nameIt:p.nameEn;const description=lang==='it'?p.descriptionIt:p.descriptionEn;
+const images=[p.image,...p.gallery];
+const availabilityIt:Record<string,string>={available:'Disponibile in negozio',unavailable:'Attualmente non disponibile','on-request':'Disponibilità da verificare'};
+const availabilityEn:Record<string,string>={available:'Available in store',unavailable:'Currently unavailable','on-request':'Check availability'};
+---
+<Base title={name} description={description.slice(0,160)} lang={lang} slug={`catalogo/${slug}`}>
+<div class="wrap"><div class="breadcrumb"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor('catalogo',lang)}>{text(lang,'Catalogo','Catalogue')}</a><span>/</span><span>{name}</span></div><div class="product-detail"><div><img id="main-product-image" class="main-product-image" src={p.image} alt={name} width="900" height="900" fetchpriority="high"/>{images.length>1&&<div class="product-thumbs">{images.map((src:string,i:number)=><button data-product-src={src} aria-label={`${text(lang,'Visualizza immagine','View image')} ${i+1}`}><img src={src} alt="" width="150" height="150"/></button>)}</div>}</div><div>{p.brand&&<p>{p.brand}</p>}<h1>{name}</h1><p>{description}</p><p>{text(lang,availabilityIt[p.availability],availabilityEn[p.availability])}</p>{p.price!==null&&<p class="product-price">{new Intl.NumberFormat(lang==='it'?'it-IT':'en-GB',{style:'currency',currency:'EUR'}).format(p.price)}</p>}<a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Chiedi in negozio','Ask the shop')}</a><p style="margin-top:25px;font-size:.875rem">{text(lang,'Prima di passare per un articolo specifico, verifica la disponibilità. Gli acquisti si effettuano in negozio.','Check availability before visiting for a specific item. Purchases are made in store.')}</p></div></div></div>
+<script>const main=document.querySelector<HTMLImageElement>('#main-product-image');document.querySelectorAll<HTMLButtonElement>('[data-product-src]').forEach(b=>b.addEventListener('click',()=>{if(main&&b.dataset.productSrc)main.src=b.dataset.productSrc}));</script>
+</Base>
