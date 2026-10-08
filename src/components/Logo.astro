@@ -1,4 +1,4 @@
 ---
 const { large = false } = Astro.props;
 ---
-<img class:list={['brand-logo',{large}]} src="/brand/guerrazzi-logo.png" width="1968" height="768" alt="Tabaccheria Guerrazzi di Angela" decoding="async" />
+<img class:list={['brand-logo',{large}]} src="/brand/guerrazzi-logo.webp" width="1050" height="420" alt="Tabaccheria Guerrazzi di Angela" decoding="sync" fetchpriority={large?'auto':'high'} />
