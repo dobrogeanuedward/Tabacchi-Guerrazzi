@@ -11,3 +11,39 @@
 @media(max-width:680px){.menu-toggle{width:44px;height:44px;min-width:44px}.language{display:inline-flex;align-items:center;justify-content:center;min-width:44px;min-height:44px}.header-actions{gap:7px}.site-menu nav a{min-height:44px}.menu-top button{min-width:44px;min-height:44px}.category-tab{min-height:44px;display:inline-flex;align-items:center}}
 @media(max-width:370px){.site-header .brand-logo{width:142px}.site-header{gap:8px}.header-actions{gap:4px}}
 @media(max-width:370px){.article-head h1{font-size:2.85rem}}
+/* Ink illustrations follow the brand, while controls remain crisp and legible. */
+.button{position:relative;isolation:isolate;transition:background .18s,color .18s,box-shadow .18s,transform .18s}
+.button.primary:active,.button.light:active{transform:translateY(3px);box-shadow:0 2px 0 #003297}
+.button.light:active{box-shadow:0 2px 0 #f8f8f34d}
+.button.quiet:active{background:#dce6f6}
+.button:focus-visible{outline-offset:7px}
+.catalog-controls form{padding:5px;background:#fff;border:1px solid #b6c5df;border-radius:3px 22px 3px 3px}
+.catalog-controls input{border:0;background:transparent;min-width:0}
+.catalog-controls button{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 14px;white-space:nowrap;border-radius:3px 17px 3px 3px}
+.catalog-controls button:hover{background:#e7eef9}
+.category-tab:hover{border-color:var(--blue);background:#e7eef9}
+.category-tab[aria-current]:hover{background:#003297}
+.choice-notes{padding-block:0 15px}
+.choice-opening{display:grid;grid-template-columns:minmax(0,1fr) 240px;align-items:center;gap:65px;margin-bottom:40px}
+.choice-opening h2{font-size:clamp(2.8rem,4.1vw,4.8rem);max-width:850px;color:var(--accent);margin-bottom:24px}
+.choice-opening p{max-width:540px}
+.choice-art{width:240px;height:240px;object-fit:contain;pointer-events:none}
+.choice-list{margin:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.choice-list>div{border-top:2px solid var(--accent);padding-top:25px}
+.choice-list dt{font-family:var(--display);font-size:2.3rem;line-height:1.15;color:var(--accent);margin-bottom:20px;letter-spacing:-.03em}
+.choice-list dd{margin:0;line-height:1.75;max-width:430px}
+.visit-panel{position:relative;isolation:isolate;overflow:hidden}
+.visit-panel>p,.visit-panel>h2,.visit-panel>.button{position:relative;z-index:1}
+.visit-art{position:absolute;width:min(620px,60%);height:100%;object-fit:contain;object-position:bottom;right:-80px;bottom:-75px;opacity:.1;z-index:0;pointer-events:none}
+.catalog-empty img.catalog-empty-art{aspect-ratio:1;height:auto;max-height:400px;object-fit:contain;border-radius:0;padding:35px;background:#e7eef9}
+.faq summary{min-height:44px;align-items:center}
+.faq details[open]{padding-bottom:30px}
+.faq details[open] summary{color:var(--blue)}
+@media(max-width:960px){.choice-opening{grid-template-columns:minmax(0,1fr) 170px;gap:35px}.choice-art{width:170px;height:170px}.choice-list{gap:25px}.choice-list dt{font-size:1.9rem}}
+@media(max-width:680px){.choice-opening{grid-template-columns:minmax(0,1fr) 82px;gap:16px;align-items:start;margin-bottom:34px}.choice-opening h2{font-size:2.65rem;line-height:1.07;overflow-wrap:break-word}.choice-opening p{grid-column:1/-1}.choice-art{width:82px;height:100px;margin-top:8px}.choice-list{grid-template-columns:1fr;gap:28px}.choice-list>div{padding-top:21px}.choice-list dt{font-size:2.15rem;margin-bottom:12px}.choice-list dd{max-width:none}.visit-art{width:110%;right:-22%;bottom:-45px;opacity:.08}.catalog-empty img.catalog-empty-art{max-height:280px;padding:28px}.catalog-controls input{padding-inline:9px}.catalog-controls button{padding-inline:9px}.catalog-controls button svg{width:18px}}
+@media(max-width:370px){.choice-opening{grid-template-columns:1fr}.choice-art{display:none}.choice-opening h2{font-size:2.8rem}}
+.choice-notes{background-image:url('/brand/ui/ink-paper.webp');background-repeat:no-repeat;background-size:cover;padding:42px 40px 45px}
+.angela-block :focus-visible,.theme-notte .page-content :focus-visible{outline-color:var(--paper)}
+h1,h2,h3,dt,.site-menu nav a{overflow-wrap:anywhere}
+.hero-copy,.angela-copy,.category-banner>div,.catalog-empty>div,.choice-opening>div,.journal-list>a{min-width:0}
+@media(max-width:680px){.choice-notes{padding:25px 0 35px;background-position:center;background-image:linear-gradient(#f8f8f360,#f8f8f360),url('/brand/ui/ink-paper.webp')}}

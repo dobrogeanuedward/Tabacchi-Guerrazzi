@@ -1,0 +1,109 @@
+{
+  "brand": "Tabaccheria Guerrazzi di Angela",
+  "assets": [
+    {
+      "id": "portico-ink",
+      "type": "illustration",
+      "method": "ImageGen built-in",
+      "decorative": true,
+      "alt": "",
+      "usage": "Decorazione del pannello visita, mai una mappa",
+      "prompt": "Use case: illustration-story. Asset type: original decorative brand illustration with genuinely transparent background, no full page or UI. Create an exceptionally refined editorial cobalt ink line illustration of a rhythm of Bologna portico arches, interpreted loosely as a decorative motif, not a map and not an accurate building or shop rendering. Elegant sparse open negative space. Original hand-drawn architectural strokes, subtle editorial lithograph / dry-brush printmaking irregularity, beautiful restrained confident contours and a little tactile ink character. Entire drawing monochrome cobalt #0645c0. Wide horizontal composition with four arches receding slightly in perspective, readable at small scale, finely judged simple shapes. Sophisticated Italian editorial illustration, coherent identity family, no text, no typography, no labels, no logos, no border, no paper background. Transparent background throughout negative space and outside drawing. Avoid cartoon, clipart, stock icon look, photography, photorealism, rendered UI, 3D, gradients, shadow effects, busy hatching, too many thin details.",
+      "variants": [
+        {
+          "file": "/brand/ui/portico-ink-480.webp",
+          "width": 480,
+          "height": 240,
+          "bytes": 47334
+        },
+        {
+          "file": "/brand/ui/portico-ink.webp",
+          "width": 960,
+          "height": 480,
+          "bytes": 148684
+        },
+        {
+          "file": "/brand/ui/portico-ink-1536.webp",
+          "width": 1536,
+          "height": 768,
+          "bytes": 319158
+        }
+      ]
+    },
+    {
+      "id": "gift-ink",
+      "type": "illustration",
+      "method": "ImageGen built-in",
+      "decorative": true,
+      "alt": "",
+      "usage": "Guida alla scelta di un regalo e stato vuoto del catalogo",
+      "prompt": "Use case: illustration-story. Asset type: original decorative brand illustration with genuinely transparent background, no full page or UI. Create an exceptionally refined artful single wrapped gift box with a ribbon, illustrated in rich cobalt ink #0645c0 with minimal ink wash and linocut-like contour character. Sophisticated tactile Italian editorial printmaking, subtle hand-inked irregularity, confident simple shape readable at small scale, beautifully restrained. One gift only, charming but adult refined design, ribbon bow elegantly drawn, slightly three-quarter view. Compact near-square composition with breathing room around entire object, coherent family with sparse hand-drawn Bologna architectural ink illustration. Use transparent negative spaces through ink marks and truly transparent background outside object; no paper substrate. No typography, no text, no brands, no labels, no logos, no borders. No photographs, no rendered UI, no 3D, no gradients, no fake shadows, no cartoon or clipart styling, no busy detail.",
+      "variants": [
+        {
+          "file": "/brand/ui/gift-ink-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 56836
+        },
+        {
+          "file": "/brand/ui/gift-ink.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 186174
+        },
+        {
+          "file": "/brand/ui/gift-ink-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 406550
+        }
+      ]
+    },
+    {
+      "id": "play-ink",
+      "type": "illustration",
+      "method": "ImageGen built-in",
+      "decorative": true,
+      "alt": "",
+      "usage": "Guida alla scelta di un gioco e stato vuoto del catalogo giochi",
+      "prompt": "Use case: illustration-story. Asset type: original decorative brand illustration with genuinely transparent background, no full page or UI. Create an exceptionally refined small composition of a spinning top and exactly two wooden toy blocks, illustrated with cobalt ink #0645c0 and one tiny warm ochre accent. Sophisticated tactile Italian editorial printmaking, hand-inked linocut contour and subtle dry-brush irregularity, simple strong shapes readable at small scale, charming adult refined treatment. Top placed beside one square block and one simple rectangular block, compact near-square balanced composition with breathing room around entire motif. Coherent family with spare cobalt architectural ink and gift illustration. Transparent negative spaces through ink marks and genuinely transparent background outside objects, no paper substrate. No text, no typography, no letters or numbers on blocks, no brands, no logos, no border. Avoid cartoon, clipart, photography, photorealism, rendered UI, 3D, gradients, shadow effects, busy detail.",
+      "variants": [
+        {
+          "file": "/brand/ui/play-ink-320.webp",
+          "width": 320,
+          "height": 320,
+          "bytes": 20560
+        },
+        {
+          "file": "/brand/ui/play-ink.webp",
+          "width": 600,
+          "height": 600,
+          "bytes": 60194
+        },
+        {
+          "file": "/brand/ui/play-ink-960.webp",
+          "width": 960,
+          "height": 960,
+          "bytes": 137826
+        }
+      ]
+    },
+    {
+      "id": "ink-paper",
+      "type": "texture",
+      "method": "ImageGen built-in",
+      "decorative": true,
+      "alt": "",
+      "usage": "Fondo editoriale avorio con margine a inchiostro",
+      "prompt": "Use case: illustration-story. Asset type: nonphotographic abstract editorial website background. Create a sophisticated letterpress-inspired abstract surface in a wide 16:9 landscape composition. Matte nearly uniform ivory #f8f8f3 fills the frame with extremely subtle restrained print-paper grain. Tiny delicately irregular cobalt #0645c0 ink traces appear only very near the lower and right edges, sparse and gently broken, as abstract printmaking impressions rather than recognizable motifs. At least eighty-five percent of the image, including entire upper left and central area, remains almost uniform ivory to support dark text. Refined original Italian editorial art direction, understated tactile print character. No words, no letters, no typography, no icons, no objects, no photographs, no realistic paper sheet edges, no folds, no illustrated architecture, no rendered UI, no gradients, no 3D, no fake logos, no shadows, no busy decoration. Opaque ivory background.",
+      "variants": [
+        {
+          "file": "/brand/ui/ink-paper.webp",
+          "width": 960,
+          "height": 540,
+          "bytes": 15970
+        }
+      ]
+    }
+  ]
+}

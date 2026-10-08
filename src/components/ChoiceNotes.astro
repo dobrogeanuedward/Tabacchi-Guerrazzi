@@ -1,0 +1,18 @@
+---
+import {text, type Lang} from '../data/shop';
+const {kind, lang='it'} = Astro.props as {kind:'gift'|'play';lang:Lang};
+const gift=kind==='gift';
+const notes=gift ? [
+ ['Per chi è?','Who is it for?','Un interesse preciso è un buon inizio: cosa fa volentieri, cosa usa, cosa vorrebbe provare?','A specific interest is a good starting point: what do they enjoy, use or want to try?'],
+ ['Qual è l’occasione?','What is the occasion?','Un compleanno, un invito, un piccolo grazie. Raccontaci anche quando ti serve: aiuta a scegliere fra le proposte disponibili.','A birthday, an invitation, a little thank-you. Tell us when you need it, too, so we can focus on available options.'],
+ ['Quanto vuoi spendere?','What is your budget?','Dare una fascia di spesa rende la ricerca più semplice. Poi confrontiamo insieme dimensioni, uso e dettagli del regalo.','A price range makes the search easier. Then we can compare the size, use and details of your gift together.']
+] : [
+ ['Per quale età?','For which age?','Parti dall’età consigliata e dalle avvertenze del produttore. Poi considera quello che piace al bambino e ciò che sa già fare.','Start with the manufacturer’s age recommendation and warnings. Then consider the child’s interests and abilities.'],
+ ['Con chi si gioca?','Who will be playing?','Da soli, con fratelli e sorelle o con tutta la famiglia: numero di giocatori e regole cambiano l’esperienza.','Alone, with siblings or with the whole family: the number of players and the rules shape the experience.'],
+ ['Dove si giocherà?','Where will they play?','A casa o in viaggio? Controlla lo spazio necessario, i pezzi da portare e quanto dura una partita.','At home or on a trip? Check the space needed, the pieces to carry and how long a game lasts.']
+];
+---
+<section class:list={['choice-notes',gift?'choice-gift':'choice-play']} aria-labelledby="choice-title">
+ <div class="choice-opening"><div><h2 id="choice-title">{gift?text(lang,'Tre domande. Un pensiero più personale.','Three questions. A more personal gift.'):text(lang,'Prima della scatola, il modo di giocare.','Before the box, think about the play.')}</h2><p>{text(lang,'Porta con te qualche dettaglio. La scelta la facciamo insieme, in negozio.','Bring a few details with you. We can make the choice together in store.')}</p></div><img class="choice-art" src={`/brand/ui/${gift?'gift':'play'}-ink.webp`} srcset={`/brand/ui/${gift?'gift':'play'}-ink-320.webp 320w, /brand/ui/${gift?'gift':'play'}-ink.webp 600w`} sizes="(max-width: 680px) 82px, (max-width: 960px) 170px, 240px" width="600" height="600" alt="" loading="lazy" aria-hidden="true"/></div>
+ <dl class="choice-list">{notes.map(n=><div><dt>{n[lang==='it'?0:1]}</dt><dd>{n[lang==='it'?2:3]}</dd></div>)}</dl>
+</section>
