@@ -1,0 +1,17 @@
+---
+import {categoryAnswers,categoryPathways} from '../data/category-pathways';
+import {pathFor,text,type Lang} from '../data/shop';
+const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
+const l=lang==='it'?0:1;const answer=categoryAnswers[slug];const notes=categoryPathways[slug]||[];
+---
+{answer&&<aside class="category-answer" aria-label={text(lang,'In breve','At a glance')}><p>{answer[l]}</p></aside>}
+{notes.length>0&&<section class="category-pathways"><h2>{text(lang,'Una scelta porta alla prossima.','One choice leads to the next.')}</h2>{notes.map(n=><p>{n.lead[l]} <a href={pathFor(n.target,lang)}>{n.label[l]}</a>{n.after[l]}</p>)}</section>}
+<style>
+ .category-answer{border-left:3px solid var(--blue,#0645c0);padding:1rem 1.4rem;margin:0 0 2.8rem;max-width:72ch;background:rgba(6,69,192,.035)}
+ .category-answer p{margin:0;line-height:1.75}
+ .category-pathways{margin:3rem 0;max-width:72ch}
+ .category-pathways h2{font-size:clamp(1.6rem,3vw,2.5rem);margin-bottom:1.25rem}
+ .category-pathways p{line-height:1.8;margin:1rem 0}
+ .category-pathways a{text-decoration:underline;text-underline-offset:.2em}
+ @media(max-width:680px){.category-answer{padding:.9rem 1rem}.category-pathways{margin:2rem 0}}
+</style>
