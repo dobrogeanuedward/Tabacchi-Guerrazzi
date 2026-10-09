@@ -1,0 +1,6 @@
+---
+import {text} from '../data/shop';
+const {sources=[],lang='it'}=Astro.props;
+---
+{sources.length>0&&<aside class="official-sources"><h2>{text(lang,'Fonti ufficiali','Official sources')}</h2><p>{text(lang,'Testi pubblicati dagli enti indicati; le schede non sostituiscono il testo normativo vigente.','Texts published by the listed public bodies; these guides do not replace current legislation.')} {text(lang,'Verifica editoriale: 9 ottobre 2026.','Editorial check: 9 October 2026.')}</p><ul>{sources.map((s:any)=><li><a href={s.url} target="_blank" rel="noopener" lang="it">{s.label}</a></li>)}</ul></aside>}
+<style>.official-sources{margin:2.5rem 0;padding:1.5rem 0;border-top:1px solid #cad6e5;max-width:72ch}.official-sources p,.official-sources li{font-size:.9rem;line-height:1.75}.official-sources a{text-decoration:underline;text-underline-offset:.2em;overflow-wrap:anywhere}.official-sources li{margin:.7rem 0}</style>

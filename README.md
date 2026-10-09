@@ -18,7 +18,7 @@ npm start
 
 `vercel.json` pubblica l'export Astro statico della parte pubblica da `dist`. `npm run build:static` costruisce esclusivamente le pagine pubbliche, senza avviare server durante il build e senza dipendere da SQLite. Il catalogo iniziale non contiene prodotti inventati. I push su `main` avviano il deploy del progetto Vercel collegato. Il comando `build:preview` resta disponibile per una fotografia locale della versione Node.
 
-La prima versione è intenzionalmente `noindex`: impostare `PUBLIC_SITE_URL` sul dominio finale e `PUBLIC_LAUNCH_READY=true` dopo aver completato i dati del negozio. Senza prodotti forniti, il catalogo mostra un messaggio veritiero e nessun articolo inventato. Recensioni e marchi vengono aggiunti solo da fonti approvate.
+La prima versione è intenzionalmente `noindex`: impostare `PUBLIC_SITE_URL` sul dominio finale e `PUBLIC_LAUNCH_READY=true` dopo aver completato i dati del negozio. Il catalogo mostra 25 famiglie di articoli documentate dalle fotografie, senza simulare SKU, prezzi o stock. Ricerca e filtri funzionano anche nell’export statico. Recensioni e marchi vengono aggiunti solo da fonti approvate.
 
 ## Catalogo riservato
 
@@ -36,8 +36,10 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 ## Contenuti
 
 - 21 pagine principali in italiano e inglese, comprese le nove nuove categorie.
-- 6 guide in italiano e inglese.
-- 12 articoli italiani nei cluster servizi pratici, idee regalo, giochi e giocattoli, negozio e quartiere.
+- 9 guide in italiano e inglese.
+- 15 articoli italiani: i quattro cluster iniziali più Tabacco: informazioni e norme.
+- Conferma 18+ nelle sezioni pertinenti, con sessionStorage e uscita alla home; nessuna identità raccolta.
+- Area tabacco esclusivamente informativa, con fonti pubbliche: nessuna offerta, invito al consumo o ordine.
 - Store, WebPage, BreadcrumbList e FAQ visibili coesistono nei dati strutturati; Service per il deposito bagagli. Canonical/hreflang e sitemap sono condizionati alla configurazione di lancio.
 - Deposito bagagli Bounce: scheda ufficiale Palazzo Ercolani, stesso indirizzo del negozio; prezzi e orari restano sulla piattaforma.
 - Ricognizione di 21 foto uniche, 134 osservazioni con marche e livelli di certezza in `docs/ricognizione/`.

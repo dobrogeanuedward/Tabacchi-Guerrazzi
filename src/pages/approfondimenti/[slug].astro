@@ -1,5 +1,6 @@
 ---
 import Base from '../../layouts/Base.astro';import {articles,clusters,articleCategoryLinks} from '../../data/articles';import {guides,pages} from '../../data/pages';
+import OfficialSources from '../../components/OfficialSources.astro';import {mainPages} from '../../data/shop';
 export const prerender=true;
 export function getStaticPaths(){return articles.map(a=>({params:{slug:a.slug},props:{a}}))}
 const {a}=Astro.props;const c=clusters.find(c=>c.id===a.cluster)!;const domain=import.meta.env.PUBLIC_SITE_URL;
@@ -7,5 +8,5 @@ const schema={'@context':'https://schema.org','@type':'Article',headline:a.title
 ---
 <Base title={a.title} description={a.summary} slug={`approfondimenti/${a.slug}`} alternate={false} theme={c.theme} schema={schema}>
 <div class="breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/approfondimenti/">Il diario</a><span>/</span><a href={`/approfondimenti/#${c.id}`}>{c.label}</a></div>
-<header class="article-head"><p>{c.label}</p><h1>{a.title}</h1><p class="standfirst">{a.summary}</p></header><div class="article-body"><nav class="article-toc" aria-label="In questo articolo">{a.sections.map((s:any,i:number)=><a href={`#sezione-${i}`}>{s[0]}</a>)}</nav><article>{a.sections.map((s:any,i:number)=><section id={`sezione-${i}`}><h2>{s[0]}</h2><p>{s[1]}</p></section>)}<div class="article-related"><h2>Per continuare.</h2><a href={`/schede/${a.guide}/`}>{guides[a.guide].title[0]}</a><a href={`/${c.parent}/`}>Esplora {c.label.toLowerCase()}</a>{(articleCategoryLinks[a.slug]||[]).map(s=><a href={`/${s}/`}>{pages[s].label[0]}</a>)}{articles.filter(b=>b.cluster===a.cluster&&b.slug!==a.slug).map(b=><a href={`/approfondimenti/${b.slug}/`}>{b.title}</a>)}</div></article></div>
+<header class="article-head"><p>{c.label}</p><h1>{a.title}</h1><p class="standfirst">{a.summary}</p></header><div class="article-body"><nav class="article-toc" aria-label="In questo articolo">{a.sections.map((s:any,i:number)=><a href={`#sezione-${i}`}>{s[0]}</a>)}</nav><article>{a.sections.map((s:any,i:number)=><section id={`sezione-${i}`}><h2>{s[0]}</h2><p>{s[1]}</p></section>)}<OfficialSources sources={a.sources||[]} lang="it"/><div class="article-related"><h2>Per continuare.</h2><a href={`/schede/${a.guide}/`}>{guides[a.guide].title[0]}</a><a href={`/${c.parent}/`}>Esplora {c.label.toLowerCase()}</a>{(articleCategoryLinks[a.slug]||[]).map(s=><a href={`/${s}/`}>{mainPages.find(p=>p.slug===s)?.it||pages[s].title[0]}</a>)}{articles.filter(b=>b.cluster===a.cluster&&b.slug!==a.slug).map(b=><a href={`/approfondimenti/${b.slug}/`}>{b.title}</a>)}</div></article></div>
 </Base>

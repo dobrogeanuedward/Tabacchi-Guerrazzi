@@ -1,0 +1,25 @@
+---
+import {pathFor,text} from '../data/shop';
+const {lang='it'}=Astro.props;
+---
+<dialog id="age-confirmation" class="age-confirmation" aria-labelledby="age-title" aria-describedby="age-description">
+ <p class="age-number" aria-hidden="true">18+</p><h2 id="age-title">{text(lang,'Confermi di avere almeno 18 anni?','Are you at least 18 years old?')}</h2>
+ <p id="age-description">{text(lang,'Questa sezione contiene informazioni destinate agli adulti. La conferma non sostituisce la verifica dell’età al banco.','This section contains information for adults. Confirmation does not replace age checks in store.')}</p>
+ <div class="age-actions"><button type="button" class="button primary" data-age-accept>{text(lang,'Sì, ho almeno 18 anni','Yes, I am at least 18')}</button><a class="text-link" href={pathFor('',lang)}>{text(lang,'Non confermo: torno alla home','I do not confirm: return home')}</a></div>
+ <p class="age-storage">{text(lang,'Conserviamo solo questa scelta nella sessione del browser.','Only this choice is stored for the browser session.')}</p>
+</dialog>
+<noscript><style>#main{display:none}</style><div class="wrap"><h2>{text(lang,'Conferma 18+ richiesta','18+ confirmation required')}</h2><p>{text(lang,'Attiva JavaScript per confermare la maggiore età o torna alle altre sezioni.','Enable JavaScript to confirm your age or return to the other sections.')}</p><a href={pathFor('',lang)}>Home</a></div></noscript>
+<script>
+ const gate=document.querySelector<HTMLDialogElement>('#age-confirmation');const key='guerrazzi-adult-session-v1';
+ let confirmed=false;try{confirmed=sessionStorage.getItem(key)==='yes'}catch{}
+ const unlock=()=>{document.documentElement.classList.remove('age-pending');gate?.close();document.documentElement.style.overflow='';const heading=document.querySelector<HTMLElement>('#main h1');heading?.setAttribute('tabindex','-1');heading?.focus()};
+ if(!confirmed){gate?.showModal();document.documentElement.style.overflow='hidden';gate?.addEventListener('cancel',e=>e.preventDefault());gate?.querySelector('[data-age-accept]')?.addEventListener('click',()=>{try{sessionStorage.setItem(key,'yes')}catch{}unlock()})}else document.documentElement.classList.remove('age-pending');
+</script>
+<style>
+ .age-confirmation{border:0;border-radius:1rem 1rem 3rem 1rem;padding:clamp(1.3rem,4vw,3rem);width:min(580px,calc(100% - 30px));max-height:calc(100dvh - 30px);overflow:auto;color:#172431;background:#fff}
+ .age-confirmation::backdrop{background:rgba(10,25,45,.85);backdrop-filter:blur(8px)}
+ .age-number{font-family:'Bodoni Moda',serif;font-size:4rem;color:#0645c0;margin:0}
+ .age-confirmation h2{font-size:clamp(1.8rem,5vw,2.8rem);line-height:1.15;margin:.5rem 0 1rem}
+ .age-confirmation p{line-height:1.7}.age-actions{display:flex;flex-direction:column;align-items:stretch;gap:1.2rem;margin:1.5rem 0}.age-actions .button{white-space:normal;text-align:center}.age-storage{font-size:.8rem;color:#56616f}
+ :global(.age-pending #main){visibility:hidden}
+</style>

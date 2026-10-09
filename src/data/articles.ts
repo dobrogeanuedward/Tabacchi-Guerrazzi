@@ -1,3 +1,4 @@
+import {tobaccoArticles} from './tobacco-information';
 export const clusters = [
  {id:'servizi',label:'Servizi pratici',parent:'servizi',theme:'utility'},
  {id:'regali',label:'Idee regalo',parent:'idee-regalo',theme:'regalo'},
@@ -32,7 +33,8 @@ export const articleCategoryLinks:Record<string,string[]>={
  'vetrina-guerrazzi-piccole-scelte':['cartoleria','piccole-necessita'],
  'angela-attenzione-negozio':['accessori-telefono','cartoleria']
 };
-export const articles = [
+export type Article={slug:string;cluster:string;title:string;summary:string;guide:string;sections:string[][];sources?:{label:string;url:string}[]};
+export const articles:Article[] = [
  {slug:'ricarica-telefonica-cosa-preparare',cluster:'servizi',title:'Ricarica telefonica in centro: cosa preparare prima di passare.',summary:'Numero, operatore e importo. Una piccola preparazione evita dubbi al banco.',guide:'ricariche-telefoniche',sections:[
  ['Parti dal numero giusto.','Quando devi fare una ricarica, la prima informazione è il numero di telefono completo. Se la ricarica è per un’altra persona, chiedile di inviartelo per iscritto: sarà più semplice controllarlo. Prima di confermare l’operazione, rileggi tutte le cifre.'],
  ['Verifica operatore e importo.','Non dare per scontato che ogni operatore o taglio sia disponibile. Chiedi prima al negozio, soprattutto se hai una richiesta specifica. Anche le modalità di pagamento e le eventuali condizioni vanno confermate prima dell’operazione.'],
@@ -83,3 +85,7 @@ export const articles = [
  ['La prossima volta che passi.','Puoi partire dal catalogo o dalle schede di approfondimento. Se cerchi qualcosa di preciso, verifica con il negozio. Guerrazzi si trova in Via Guerrazzi 10/F, Bologna: apri le indicazioni per scegliere il percorso dalla tua posizione.']]},
 ];
 for(const a of articles){const addition=evidenceAdditions[a.slug];if(addition)a.sections.push(addition);}
+
+clusters.push({id:'informazione-tabacco',label:'Tabacco: informazioni e norme',parent:'sigari',theme:'cedro'});
+articles.push(...tobaccoArticles);
+for(const a of tobaccoArticles)articleCategoryLinks[a.slug]=['sigari','pipe-e-tabacchi-da-pipa'];

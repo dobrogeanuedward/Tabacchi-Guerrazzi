@@ -2,6 +2,6 @@
 import Base from '../../layouts/Base.astro';import {articles,clusters} from '../../data/articles';
 export const prerender=true;
 ---
-<Base title="Il diario di Guerrazzi" description="Idee regalo, giochi, servizi pratici e il negozio in Via Guerrazzi a Bologna: dodici approfondimenti per orientarti." alternate={false}>
+<Base title="Il diario di Guerrazzi" description="Idee regalo, giochi, servizi pratici, il negozio e informazioni sul tabacco: approfondimenti documentati da Guerrazzi a Bologna." slug="approfondimenti" alternate={false}>
 <div class="wrap"><header class="journal-heading"><h1>Il diario<br/>di Guerrazzi.</h1><p>Le piccole domande, le idee da portare con te.</p></header>{clusters.map(c=><section class="cluster-section" id={c.id}><h2>{c.label}</h2><div class="journal-list">{articles.filter(a=>a.cluster===c.id).map(a=><a href={`/approfondimenti/${a.slug}/`}><h3>{a.title}</h3><p>{a.summary}</p></a>)}</div></section>)}</div>
 </Base>
