@@ -1,0 +1,6 @@
+---
+import FamilyDetail from '../../components/FamilyDetail.astro';import {catalogAssortment} from '../../data/catalog-assortment';
+export const prerender=true;
+export function getStaticPaths(){return catalogAssortment.map(p=>({params:{slug:p.id}}))}
+---
+<FamilyDetail id={Astro.params.slug!} lang="it"/>

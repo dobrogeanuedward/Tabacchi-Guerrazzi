@@ -1,0 +1,6 @@
+---
+import {text,type Lang} from '../data/shop';
+const {lang='it',personal=false,light=false}=Astro.props as {lang?:Lang;personal?:boolean;light?:boolean};
+---
+<div class:list={['brand-signature',{light}]}><img src="/brand/guerrazzi-logo.webp" width="1050" height="420" alt="Tabaccheria Guerrazzi di Angela" loading="lazy"/>{personal&&<div><span>{text(lang,'Ci vediamo in Via Guerrazzi.','See you on Via Guerrazzi.')}</span><span class="angela-wordmark">Angela</span></div>}</div>
+<style>.brand-signature{display:flex;flex-wrap:wrap;align-items:center;gap:1.2rem;margin:2rem 0;color:var(--blue)}.brand-signature img{width:145px;height:auto}.brand-signature>div{border-left:1px solid currentColor;padding-left:1.2rem}.brand-signature span{display:block;font-size:.75rem}.brand-signature .angela-wordmark{font-family:var(--display);font-size:2.7rem;font-style:italic;line-height:1.3}.brand-signature.light{color:white}.light img{filter:brightness(0) invert(1)}@media(max-width:370px){.brand-signature img{width:120px}.brand-signature>div{padding-left:.8rem}}</style>

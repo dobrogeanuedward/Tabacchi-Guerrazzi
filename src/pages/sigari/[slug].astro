@@ -1,0 +1,6 @@
+---
+import CigarRecord from '../../components/CigarRecord.astro';import {cigarRecords} from '../../data/cigar-records';
+export const prerender=true;
+export function getStaticPaths(){return cigarRecords.map(record=>({params:{slug:record.slug},props:{record}}))}
+---
+<CigarRecord record={Astro.props.record} lang="it"/>
