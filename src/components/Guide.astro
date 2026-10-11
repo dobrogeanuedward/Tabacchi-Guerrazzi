@@ -1,33 +1,39 @@
 ---
-import Base from '../layouts/Base.astro';import {guides} from '../data/pages';import {pathFor,text} from '../data/shop';
+import Base from '../layouts/Base.astro';import {guides,pages} from '../data/pages';import {pathFor,text} from '../data/shop';
 import {guideCategoryLinks} from '../data/category-pathways';import {mainPages} from '../data/shop';
 import {tobaccoGuides} from '../data/tobacco-information';
 import {materialGuides} from '../data/materials-education';
 import OfficialSources from './OfficialSources.astro';
+import VisualStudy from './VisualStudy.astro';import type {VisualStudyId} from '../data/visual-studies';
 const {slug,lang='it'}=Astro.props;const g=guides[slug];const l=lang==='it'?0:1;
 const categories=(guideCategoryLinks[slug]||[]).map(s=>mainPages.find(p=>p.slug===s)).filter(Boolean);
 const researchGuide=Object.prototype.hasOwnProperty.call(materialGuides,slug);
 const informationGuide=researchGuide||Object.prototype.hasOwnProperty.call(tobaccoGuides,slug);
-const materialTheme=g.parent==='pipe-e-tabacchi-da-pipa'?'reference-radica':'reference-cedro';
+const theme=pages[g.parent]?.theme||'utility';
+const materialTheme=`reference-${theme}`;
+const study=({'radica-erica-arborea':'botanical-erica-study','schiuma-di-mare-sepiolite':'mineral-sepiolite-study'} as Record<string,VisualStudyId>)[slug];
+const guideImages:Record<string,string>={'ricariche-telefoniche':'/brand/ui/phone-ink.webp','bollettini-e-pagopa':'/brand/ui/stationery-ink.webp','scegliere-un-regalo':'/images/editorial/regali-desktop.webp','scegliere-un-gioco':'/images/games.webp','marchi-trattati':'/images/editorial/cartoleria-desktop.webp','raggiungere-il-negozio':'/images/hero/portico.webp'};
+const image=study?`/images/studies/${study}.webp`:informationGuide?`/images/materials/${theme==='radica'?'forest':'wood'}.webp`:guideImages[slug]||'/images/materials/paper.webp';
 const parentPage=mainPages.find(p=>p.slug===g.parent);
 const parentLabel=parentPage?(lang==='it'?parentPage.it:parentPage.en):text(lang,'Informazioni','Information');
 const domain=import.meta.env.PUBLIC_SITE_URL;
 const schema=informationGuide?{'@context':'https://schema.org','@type':'Article',headline:g.title[l],description:g.intro[l],inLanguage:lang,isAccessibleForFree:true,citation:(g.sources||[]).map((s:any)=>s.url),...(domain?{url:new URL(pathFor(`schede/${slug}`,lang),domain).href}:{}),author:{'@type':'Organization',name:'Tabaccheria Guerrazzi di Angela'}}:undefined;
 const readingMinutes=Math.max(1,Math.ceil([g.intro[l],...g.sections.flatMap((s:any)=>[s[0][l],s[1][l]])].join(' ').trim().split(/\s+/).length/190));
 ---
-<Base image={informationGuide?`/images/materials/${g.parent==='sigari'?'wood':'forest'}.webp`:undefined} schema={schema} title={g.title[l]} description={g.intro[l]} lang={lang} slug={`schede/${slug}`} theme={informationGuide?(g.parent==='sigari'?'cedro':'radica'):undefined}>
+<Base image={image} schema={schema} title={g.title[l]} description={g.intro[l]} lang={lang} slug={`schede/${slug}`} theme={theme}>
 <div class="breadcrumb wrap"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor(g.parent,lang)}>{text(lang,'Torna alla categoria','Back to category')}</a></div>
-<header class:list={['article-head','reference-guide-head',informationGuide?materialTheme:'reference-standard']}>
+<header class:list={['article-head','reference-guide-head',materialTheme]}>
  <p class="reference-kicker">{informationGuide?text(lang,'Guida informativa · 18+','Information guide · 18+'):text(lang,`Guida · ${parentLabel}`,`Guide · ${parentLabel}`)}</p>
  <h1>{g.title[l]}</h1>
  <div class="reference-summary"><span aria-hidden="true">↳</span><p class="standfirst">{g.intro[l]}</p></div>
  <div class="reference-meta"><span>{g.sections.length} {text(lang,'sezioni','sections')}</span><span>{text(lang,'Lettura stimata','Estimated reading time')}: {readingMinutes} min</span></div>
 </header>
-<div class:list={['article-body','reference-guide-body',informationGuide?materialTheme:'reference-standard']}>
+<div class:list={['article-body','reference-guide-body',materialTheme]}>
  <nav class="article-toc reference-index" aria-label={text(lang,'In questa pagina','On this page')}>
   <h2>{text(lang,'In questa guida','In this guide')}</h2><ol>{g.sections.map((s:any,i:number)=><li><a href={`#informazione-${i}`}><span aria-hidden="true">{String(i+1).padStart(2,'0')}</span><span>{s[0][l]}</span></a></li>)}</ol>
  </nav>
  <article>
+  {study&&<div class="study-figure"><VisualStudy id={study} lang={lang} variant="inset"/></div>}
   {g.sections.map((s:any,i:number)=><section id={`informazione-${i}`} class="reference-section">
    <span class="reference-section-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span>
    <h2>{s[0][l]}</h2><p>{s[1][l]}</p>
@@ -39,19 +45,23 @@ const readingMinutes=Math.max(1,Math.ceil([g.intro[l],...g.sections.flatMap((s:a
 </div>
 </Base>
 <style>
- .reference-guide-head,.reference-guide-body{--reference-tone:#57412f;--reference-muted:#786655;--reference-line:#d9cec0;--reference-surface:#eee8de;--accent:var(--reference-tone)}
- .reference-radica{--reference-tone:#35483c;--reference-muted:#617164;--reference-line:#cbd4ca;--reference-surface:#e9eee7}
- .reference-standard{--reference-tone:#0645c0;--reference-muted:#465b79;--reference-line:#cbd6e8;--reference-surface:#eef3fb}
+ .reference-guide-head,.reference-guide-body{--reference-tone:var(--accent);--reference-muted:#615d56;--reference-line:color-mix(in srgb,var(--accent) 25%,#eee8de);--reference-surface:var(--surface);--reference-material:url('/images/materials/paper-768.webp')}
+ .reference-cedro{--reference-material:url('/images/materials/wood-768.webp')}
+ .reference-radica{--reference-material:url('/images/materials/forest-768.webp')}
+ .reference-bottega{--reference-material:url('/images/materials/terracotta-768.webp')}
+ .reference-utility{--reference-material:url('/images/materials/blue-768.webp')}
+ .reference-notte{--reference-material:url('/images/materials/night-768.webp')}
  .reference-guide-head{padding-block:45px 38px;border-bottom:1px solid var(--reference-line)}
+ .reference-guide-head::before{content:'';display:block;width:112px;height:16px;margin-bottom:25px;background:var(--reference-material) center/cover;border-bottom:2px solid var(--reference-tone)}
  .reference-guide-head .reference-kicker{font-size:1rem;font-weight:600;letter-spacing:0;color:var(--reference-tone);margin-bottom:22px}
  .reference-guide-head h1{font-size:clamp(2.8rem,4.7vw,4.7rem);color:var(--reference-tone);max-width:21ch;margin-bottom:30px}
- .reference-summary{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;max-width:760px;padding:24px 28px;background:var(--reference-surface);border-left:2px solid var(--reference-tone)}
+ .reference-summary{display:grid;grid-template-columns:30px minmax(0,1fr);gap:16px;max-width:760px;padding:24px 28px;background:linear-gradient(#fbf8f0ed,#fbf8f0ed),var(--reference-material) center/cover;border-left:2px solid var(--reference-tone)}
  .reference-summary>span{font:400 2.1rem var(--display);line-height:1.2;color:var(--reference-muted)}
  .reference-summary .standfirst{color:var(--ink);font-size:1.12rem;line-height:1.8;max-width:65ch}
  .reference-meta{display:flex;flex-wrap:wrap;gap:12px 24px;margin-top:22px;color:var(--reference-muted);font-size:.85rem;line-height:1.6}
  .reference-meta>span+span{padding-left:24px;border-left:1px solid var(--reference-line)}
  .reference-guide-body{padding-top:38px;gap:55px;grid-template-columns:240px minmax(0,1fr)}
- .reference-index{align-self:start;padding:22px 20px;background:var(--reference-surface);border:1px solid var(--reference-line)}
+ .reference-index{align-self:start;padding:22px 20px;background:linear-gradient(#fbf8f0ed,#fbf8f0ed),url('/images/materials/paper-768.webp') center/cover;border:1px solid var(--reference-line)}
  .reference-index h2{font:600 .95rem var(--sans);line-height:1.6;margin-bottom:16px;color:var(--reference-tone)}
  .reference-index ol{list-style:none;margin:0;padding:0}
  .reference-index li+li{border-top:1px solid var(--reference-line)}
@@ -63,6 +73,7 @@ const readingMinutes=Math.max(1,Math.ceil([g.intro[l],...g.sections.flatMap((s:a
  .reference-section h2,.reference-section p{grid-column:2}
  .reference-guide-body article h2{font-size:clamp(2rem,3.2vw,2.8rem);color:var(--reference-tone);margin-bottom:20px}
  .reference-guide-body article p{line-height:1.9;max-width:68ch}
+ .study-figure{margin:0 0 40px;padding:22px;border:1px solid var(--reference-line);background:linear-gradient(#fbf8f0ed,#fbf8f0ed),url('/images/materials/paper-768.webp') center/cover;overflow:hidden}
  .reference-guide-body .article-related{border-color:var(--reference-line)}
  .reference-related-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:24px}
  .reference-guide-body .reference-related-grid a{display:flex;flex-direction:column;gap:14px;min-width:0;padding:22px;margin:0;border:1px solid var(--reference-line);background:var(--reference-surface);color:var(--reference-tone)}

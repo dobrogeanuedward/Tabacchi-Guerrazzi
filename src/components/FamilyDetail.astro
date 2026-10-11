@@ -1,58 +1,67 @@
 ---
 import Base from '../layouts/Base.astro';import {assortmentImage} from '../data/assortment-images';import BrandSignature from './BrandSignature.astro';import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';import {familyDetails} from '../data/family-details';import {shop,pathFor,text,type Lang} from '../data/shop';
+import {pages} from '../data/pages';
 const {id,lang='it'}=Astro.props as {id:string;lang:Lang};const item=catalogAssortment.find(p=>p.id===id)!;const d=familyDetails[id];const l=lang==='it'?0:1;const group=catalogGroups.find(g=>g.id===item.category)!;const label=lang==='it'?group.it:group.en;const siblings=catalogAssortment.filter(p=>p.page===item.page&&p.id!==id);
 const photo=({cartoleria:'cartoleria',souvenir:'souvenir',feste:'auguri',telefono:'necessita',necessita:['cerotti','labbra','capelli'].includes(id)?'cura':'necessita',dolciumi:'dolciumi',regali:'regali'} as Record<string,string>)[item.category];
+const theme=pages[item.page]?.theme||'utility';
+const material=({utility:'blue',bottega:'terracotta',regalo:'paper',gioco:'paper'} as Record<string,string>)[theme]||'paper';
 const faqs=[[d.question[l],d.answer[l]],[text(lang,'La pagina conferma modelli e disponibilità?','Does this page confirm models and availability?'),text(lang,'Le varianti e le confezioni possono cambiare. Per un articolo specifico, verifica la disponibilità prima di passare.','Variants and packs can change. Check availability before visiting for a specific item.')]];
 const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))};
 ---
-<Base lang={lang} slug={`assortimento/${id}`} title={`${item.name[l]} ${text(lang,'a Bologna','in Bologna')}`} description={text(lang,`${item.name[0]} da Guerrazzi, Via Guerrazzi 10/F, Bologna: dettagli pratici, domande e categoria di riferimento. Disponibilità da verificare in negozio.`,`${item.name[1]} at Guerrazzi, Via Guerrazzi 10/F, Bologna: practical details, questions and category links. Check availability in store.`)} schema={schema} image={photo?`/images/editorial/${photo}-desktop.webp`:'/images/games.webp'}>
+<Base lang={lang} slug={`assortimento/${id}`} title={`${item.name[l]} ${text(lang,'a Bologna','in Bologna')}`} description={text(lang,`${item.name[0]} da Guerrazzi, Via Guerrazzi 10/F, Bologna: dettagli pratici, domande e categoria di riferimento. Disponibilità da verificare in negozio.`,`${item.name[1]} at Guerrazzi, Via Guerrazzi 10/F, Bologna: practical details, questions and category links. Check availability in store.`)} schema={schema} theme={theme} image={photo?`/images/editorial/${photo}-desktop.webp`:'/images/games.webp'}>
+<div class="family-document" style={`--family-material: url('/images/materials/${material}-768.webp')`}>
 <div class="breadcrumb wrap"><a href={pathFor('catalogo',lang)}>{text(lang,'Catalogo','Catalogue')}</a><span>/</span><a href={pathFor(item.page,lang)}>{label}</a></div>
-<section class="family-hero wrap"><div class="family-hero-copy"><p class="family-type"><span>{text(lang,'Famiglia','Family')}</span>{label}</p><h1>{item.name[l]}</h1><p class="family-description">{item.description[l]}</p><div class="family-facts"><h2>{text(lang,'La scheda in breve','Record at a glance')}</h2><dl><div><dt>{text(lang,'Tipo di scheda','Record type')}</dt><dd>{text(lang,'Famiglia di articoli','Item family')}</dd></div><div><dt>{text(lang,'Categoria','Category')}</dt><dd>{label}</dd></div>{item.brand&&<div class="family-fact-wide"><dt>{text(lang,'Marchi citati','Brands mentioned')}</dt><dd>{item.brand}</dd></div>}</dl><p>{text(lang,'Questa pagina descrive una famiglia. Modelli, confezioni e disponibilità del singolo articolo vanno verificati.','This page describes a family. Check individual models, packs and availability.')}</p></div></div><figure class="family-image"><img src={assortmentImage(item.category,id)} width="800" height="500" alt="" aria-hidden="true" fetchpriority="high"/><figcaption><span>{text(lang,'Foto di ambientazione','Atmosphere image')}</span>{text(lang,'Illustra la famiglia; non identifica il singolo modello o la confezione.','Illustrates the family; does not identify an individual model or pack.')}</figcaption></figure></section>
+<section class="family-hero wrap"><div class="family-hero-copy"><p class="family-type"><span>{text(lang,'Famiglia','Family')}</span>{label}</p><h1>{item.name[l]}</h1><p class="family-description">{item.description[l]}</p><div class="family-facts"><div class="family-facts-opening"><h2>{text(lang,'La scheda in breve','Record at a glance')}</h2><img src={`/brand/ui/${item.art}-320.webp`} width="600" height="600" alt="" aria-hidden="true" loading="lazy"/></div><dl><div><dt>{text(lang,'Tipo di scheda','Record type')}</dt><dd>{text(lang,'Famiglia di articoli','Item family')}</dd></div><div><dt>{text(lang,'Categoria','Category')}</dt><dd>{label}</dd></div>{item.brand&&<div class="family-fact-wide"><dt>{text(lang,'Marchi citati','Brands mentioned')}</dt><dd>{item.brand}</dd></div>}</dl><p>{text(lang,'Questa pagina descrive una famiglia. Modelli, confezioni e disponibilità del singolo articolo vanno verificati.','This page describes a family. Check individual models, packs and availability.')}</p></div></div><figure class="family-image"><img src={assortmentImage(item.category,id)} srcset={photo?`${assortmentImage(item.category,id)} 800w, /images/editorial/${photo}-desktop.webp 1600w`:undefined} sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 960px) 45vw, 620px" width="800" height="500" alt="" aria-hidden="true" fetchpriority="high"/><figcaption><span>{text(lang,'Ambientazione editoriale · provvisoria','Editorial scene · provisional')}</span>{text(lang,'Immagine generata di categoria; non identifica il singolo modello, la confezione o l’allestimento reale del negozio.','Generated category image; it does not identify an individual model, pack or the actual shop layout.')}</figcaption></figure></section>
 <section class="family-checks wrap" aria-labelledby="family-checks-title"><div class="family-section-opening"><p class="family-section-label">{text(lang,'Dettagli da confrontare','Details to compare')}</p><h2 id="family-checks-title">{text(lang,'Cosa guardare sul singolo articolo.','What to check on an individual item.')}</h2></div><ol>{d.checks[l].map((c,i)=><li><span aria-hidden="true">0{i+1}</span><h3>{c}</h3></li>)}</ol></section>
 <section class="faq family-faq wrap"><div class="family-section-opening"><p class="family-section-label">FAQ</p><h2>{text(lang,'Domande e risposte.','Questions and answers.')}</h2></div>{faqs.map(([q,a])=><details><summary>{q}</summary><p>{a}</p></details>)}</section>
 {siblings.length>0&&<section class="family-siblings wrap"><div class="family-section-opening"><p class="family-section-label">{label}</p><h2>{text(lang,'Altre famiglie da esplorare.','More families to explore.')}</h2></div><div class="family-sibling-grid">{siblings.map(p=><a href={pathFor(`assortimento/${p.id}`,lang)}><span class="family-sibling-type">{text(lang,'Famiglia','Family')}</span><h3>{p.name[l]}</h3><span class="family-sibling-action">{text(lang,'Apri scheda','Open record')}<span aria-hidden="true">→</span></span></a>)}</div></section>}
 <section class="family-visit wrap"><div><BrandSignature lang={lang} personal/><p>{shop.address}, {shop.postcode} {shop.city}</p></div><div class="family-visit-actions"><a class="button quiet" href={pathFor(item.page,lang)}>{text(lang,'Torna alla categoria','Back to category')}</a><a class="button primary" href={shop.maps} target="_blank" rel="noopener">{text(lang,'Apri le indicazioni','Open directions')}<span aria-hidden="true">↗</span></a></div></section>
+</div>
 </Base>
 <style>
+ .family-document{--family-tone:var(--accent);--family-line:color-mix(in srgb,var(--accent) 25%,#e7dfd0);--family-surface:var(--surface);color:var(--ink)}
  .family-hero{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);align-items:start;gap:48px;padding:20px 0 52px}
  .family-type{display:flex;flex-wrap:wrap;align-items:center;gap:9px;font-size:.95rem;font-weight:600;line-height:1.6;color:#42516a;margin-bottom:18px}
- .family-type>span{padding:5px 8px;border-radius:2px;background:#e8effb;color:var(--blue)}
- .family-hero h1{font-family:var(--display);font-size:clamp(2.5rem,4.5vw,3.7rem);line-height:1.08;letter-spacing:-.035em;overflow-wrap:break-word;color:var(--blue);margin:0 0 23px}
+ .family-type>span{padding:5px 8px;border-radius:2px;background:var(--family-surface);color:var(--family-tone)}
+ .family-hero h1{font-family:var(--display);font-size:clamp(2.5rem,4.5vw,3.7rem);line-height:1.08;letter-spacing:-.035em;overflow-wrap:break-word;color:var(--family-tone);margin:0 0 23px}
  .family-description{font-size:1rem;line-height:1.8;max-width:58ch;color:#33435b;margin-bottom:27px}
- .family-facts{padding:24px 26px;border:1px solid #0645c02b;border-radius:3px;background:linear-gradient(#f6f1e7f2,#f6f1e7f2),url('/images/materials/paper.webp') center/cover}
- .family-facts h2{font-family:var(--sans);font-size:.95rem;font-weight:600;line-height:1.5;letter-spacing:0;color:var(--blue);margin-bottom:20px}
+ .family-facts{padding:22px 26px 24px;border:1px solid var(--family-line);border-top:3px solid var(--family-tone);border-radius:3px;background:linear-gradient(#fbf8f0ed,#fbf8f0ed),var(--family-material) center/cover}
+ .family-facts-opening{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:65px;margin-bottom:17px}
+ .family-facts-opening>img{width:68px;height:68px;object-fit:contain;mix-blend-mode:multiply}
+ .family-facts h2{font-family:var(--sans);font-size:.95rem;font-weight:600;line-height:1.5;letter-spacing:0;color:var(--family-tone);margin:0}
  .family-facts dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px 24px;padding:0;margin:0}
  .family-facts dt{font-size:.95rem;line-height:1.6;color:#5b6170;margin-bottom:5px}
  .family-facts dd{font-size:.95rem;line-height:1.75;color:#243b59;margin:0;overflow-wrap:break-word}
  .family-fact-wide{grid-column:1/-1}
- .family-facts>p{border-top:1px solid #0645c020;padding-top:17px;margin-top:20px;font-size:.95rem;line-height:1.8;color:#515b69}
- .family-image{overflow:hidden;border:1px solid #0645c02b;border-radius:3px;background:#fffefa}
- .family-image>img{width:100%;aspect-ratio:4/3;object-fit:cover}
- .family-image figcaption{padding:19px 22px;border-top:1px solid #0645c020;font-size:.95rem;line-height:1.8;color:#566070}
+ .family-facts>p{border-top:1px solid var(--family-line);padding-top:17px;margin-top:20px;font-size:.95rem;line-height:1.8;color:#515b69}
+ .family-image{overflow:hidden;padding-top:16px;border:1px solid var(--family-line);border-radius:3px;background:linear-gradient(#fbf8f0d9,#fbf8f0d9),var(--family-material) center/cover;box-shadow:0 5px 0 #34312108}
+ .family-image>img{width:calc(100% - 32px);margin:0 16px;aspect-ratio:4/3;object-fit:cover;border:1px solid var(--family-line)}
+ .family-image figcaption{padding:19px 22px;font-size:.95rem;line-height:1.8;color:#566070}
  .family-image figcaption>span{display:block;color:#33435b;font-weight:600;margin-bottom:5px}
  .family-section-opening{max-width:780px;margin-bottom:26px}
- .family-section-label{font-family:var(--sans);font-size:.95rem;font-weight:600;line-height:1.6;letter-spacing:.025em;color:var(--blue);margin-bottom:12px}
- .family-section-opening h2{font-family:var(--display);font-size:clamp(2rem,3vw,2.8rem);line-height:1.15;letter-spacing:-.03em;color:var(--blue);margin:0}
+ .family-section-label{font-family:var(--sans);font-size:.95rem;font-weight:600;line-height:1.6;letter-spacing:.025em;color:var(--family-tone);margin-bottom:12px}
+ .family-section-opening h2{font-family:var(--display);font-size:clamp(2rem,3vw,2.8rem);line-height:1.15;letter-spacing:-.03em;color:var(--family-tone);margin:0}
  .family-checks{padding-block:15px 0}
  .family-checks ol{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px;list-style:none;padding:0;margin:0}
- .family-checks li{min-width:0;border:1px solid #0645c02b;border-top:3px solid #0645c0;padding:24px;border-radius:3px;background:#edf2fc}
- .family-checks li>span{font-size:.95rem;font-variant-numeric:tabular-nums;color:#5973a0}
- .family-checks h3{font-family:var(--display);font-size:1.5rem;line-height:1.25;letter-spacing:-.02em;overflow-wrap:break-word;color:#183d79;margin-top:14px}
+ .family-checks li{min-width:0;border:1px solid var(--family-line);border-top:3px solid var(--family-tone);padding:24px;border-radius:3px;background:linear-gradient(#fbf8f0f0,#fbf8f0f0),url('/images/materials/paper-768.webp') center/cover}
+ .family-checks li>span{font-size:.95rem;font-variant-numeric:tabular-nums;color:var(--family-tone)}
+ .family-checks h3{font-family:var(--display);font-size:1.5rem;line-height:1.25;letter-spacing:-.02em;overflow-wrap:break-word;color:var(--family-tone);margin-top:14px}
  .family-faq{padding-block:52px}
- .family-faq details{padding:20px 24px;margin-top:12px;border:1px solid #0645c02b;border-radius:3px;background:#fffefa}
- .family-faq details:last-child{border-bottom:1px solid #0645c02b}
+ .family-faq details{padding:20px 24px;margin-top:12px;border:1px solid var(--family-line);border-radius:3px;background:#fffefa}
+ .family-faq details:last-child{border-bottom:1px solid var(--family-line)}
  .family-faq summary{font-size:.95rem;line-height:1.7;color:#243b59;gap:18px}
- .family-faq details[open]{background:#f3f6fc}
+ .family-faq details[open]{background:var(--family-surface)}
+ .family-faq summary::after{color:var(--family-tone)}
  .family-faq details p{font-size:.95rem;line-height:1.9;color:#3a4860;max-width:85ch;margin-top:18px}
  .family-siblings{padding-bottom:42px}
  .family-sibling-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
- .family-sibling-grid>a{display:flex;min-width:0;flex-direction:column;padding:23px;border:1px solid #0645c02b;border-radius:3px;background:#f6f1e7;transition:border-color .2s,background .2s}
+ .family-sibling-grid>a{display:flex;min-width:0;flex-direction:column;padding:23px;border:1px solid var(--family-line);border-radius:3px;background:linear-gradient(#fbf8f0ed,#fbf8f0ed),url('/images/materials/paper-768.webp') center/cover;transition:border-color .2s,background .2s}
  .family-sibling-type{font-size:.95rem;line-height:1.6;font-weight:600;color:#526077;margin-bottom:14px}
- .family-sibling-grid h3{font-size:1.6rem;line-height:1.2;color:var(--blue);margin-bottom:24px;overflow-wrap:break-word}
- .family-sibling-action{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;border-top:1px solid #0645c024;padding-top:16px;font-size:.95rem;font-weight:600;line-height:1.5;color:var(--blue)}
+ .family-sibling-grid h3{font-size:1.6rem;line-height:1.2;color:var(--family-tone);margin-bottom:24px;overflow-wrap:break-word}
+ .family-sibling-action{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:auto;border-top:1px solid var(--family-line);padding-top:16px;font-size:.95rem;font-weight:600;line-height:1.5;color:var(--family-tone)}
  .family-sibling-action>span{font-size:1.25rem}
- .family-sibling-grid>a:hover{background:#edf2fc;border-color:#0645c07a}
- .family-visit{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:26px;margin-bottom:65px;padding:28px 32px;border:1px solid #0645c030;border-radius:3px;background:#edf2fc}
+ .family-sibling-grid>a:hover{background:var(--family-surface);border-color:var(--family-tone)}
+ .family-visit{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:26px;margin-bottom:65px;padding:28px 32px;border:1px solid var(--family-line);border-radius:3px;background:linear-gradient(#fbf8f0ed,#fbf8f0ed),var(--family-material) center/cover}
  .family-visit>div>p{font-size:.95rem;line-height:1.75;color:#42516a;margin-top:12px}
  .family-visit-actions{display:flex;flex-wrap:wrap;gap:14px}
  .family-visit-actions .button{font-size:.95rem;min-height:46px;padding:12px 18px}

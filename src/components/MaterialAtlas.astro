@@ -4,9 +4,9 @@ import {pathFor,text,type Lang} from '../data/shop';
 
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
 const l=lang==='it'?0:1;
-const presentation:Record<string,{type:[string,string];texture:string}>={
- 'radica-erica-arborea':{type:['Botanica','Botany'],texture:'wood'},
- 'schiuma-di-mare-sepiolite':{type:['Materiali','Materials'],texture:'mineral'},
+const presentation:Record<string,{type:[string,string];texture:string;study?:string}>={
+ 'radica-erica-arborea':{type:['Botanica','Botany'],texture:'wood',study:'botanical-erica-study'},
+ 'schiuma-di-mare-sepiolite':{type:['Materiali','Materials'],texture:'mineral',study:'mineral-sepiolite-study'},
  'pipe-materiali-storia':{type:['Storia','History'],texture:'paper'},
  'sigaro-struttura-termini':{type:['Terminologia','Terminology'],texture:'paper'},
  'nicotiana-tabacum-botanica':{type:['Botanica','Botany'],texture:'forest'}
@@ -20,8 +20,8 @@ const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===s
   <p class="atlas-intro">{text(lang,'Botanica, storia e lessico: ogni guida parte da fonti verificabili.','Botany, history and terminology: each guide starts with verifiable sources.')}</p>
  </div>
  <div class:list={['atlas-grid',entries.length===1&&'atlas-single']}>
-  {entries.map(({key,guide,type,texture},index)=><a class="atlas-card" href={pathFor(`schede/${key}`,lang)}>
-   <div class="atlas-texture" aria-hidden="true"><img src={`/images/materials/${texture}.webp`} width="1536" height="1024" loading="lazy" alt="" aria-hidden="true"/></div>
+  {entries.map(({key,guide,type,texture,study},index)=><a class:list={['atlas-card',study&&'atlas-illustrated']} href={pathFor(`schede/${key}`,lang)}>
+   <div class="atlas-texture" aria-hidden="true"><img src={study?`/images/studies/${study}-768.webp`:`/images/materials/${texture}-768.webp`} width="768" height="512" loading="lazy" alt="" aria-hidden="true"/></div>
    <div class="atlas-card-top"><span>{text(lang,'Guida','Guide')} · {type[l]}</span><span class="atlas-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span></div>
    <div class="atlas-card-copy">
     <h3>{guide.title[l]}</h3>
@@ -30,7 +30,7 @@ const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===s
    </div>
   </a>)}
  </div>
- <p class="atlas-texture-note">{text(lang,'Texture decorative generate; non fotografie di esemplari.','Generated decorative textures; not photographs of specimens.')}</p>
+ <p class="atlas-texture-note">{text(lang,'Illustrazioni e texture generate; non fotografie di esemplari.','Generated illustrations and textures; not photographs of specimens.')}</p>
 </section>}
 
 <style>
@@ -59,7 +59,10 @@ const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===s
  .atlas-single h3{margin-bottom:0;max-width:27ch}
  .atlas-single .atlas-card-copy>p{margin-bottom:0;max-width:50ch}
  .atlas-single .atlas-card-action{grid-column:1/-1;margin-top:5px}
- .atlas-texture-note{margin-top:18px;font-size:.75rem;line-height:1.7;color:#686d62}
+ .atlas-texture-note{margin-top:18px;font-size:.95rem;line-height:1.7;color:#686d62}
+ .atlas-illustrated .atlas-texture{height:auto;max-height:none;aspect-ratio:2/1;background:#f7f0e3}
+ .atlas-illustrated .atlas-texture img{object-fit:cover;filter:none;opacity:1}
+ .atlas-card-top,.atlas-card-action,.atlas-card-copy>p{font-size:.95rem}
  @media(max-width:680px){
   .material-atlas{margin-block:0 48px}
   .atlas-opening{margin-bottom:24px}

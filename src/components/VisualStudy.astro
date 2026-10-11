@@ -1,0 +1,147 @@
+---
+import { visualStudies, type VisualStudyId, type VisualStudyLang } from '../data/visual-studies';
+
+interface Props {
+  id: VisualStudyId;
+  lang?: VisualStudyLang;
+  variant?: 'feature' | 'inset';
+  loading?: 'lazy' | 'eager';
+}
+
+const { id, lang = 'it', variant = 'feature', loading = 'lazy' } = Astro.props;
+const study = visualStudies[id];
+const sizes = variant === 'inset'
+  ? '(max-width: 680px) 100vw, (max-width: 1100px) 48vw, 560px'
+  : '(max-width: 680px) 100vw, (max-width: 1100px) 85vw, 1100px';
+---
+
+<figure class:list={['visual-study', `visual-study--${variant}`, `visual-study--${study.theme}`]} data-study={id}>
+  <div class="study-image">
+    <img
+      src={study.path}
+      srcset={`${study.preview} 768w, ${study.path} 1536w`}
+      sizes={sizes}
+      width={study.width}
+      height={study.height}
+      alt={study.alt[lang]}
+      aria-hidden={study.decorative ? 'true' : undefined}
+      loading={loading}
+      decoding="async"
+    />
+  </div>
+  <figcaption class="study-caption">
+    <span class="study-index" aria-hidden="true">{study.index}</span>
+    <div class="study-caption-copy">
+      <span class="study-label">{study.title[lang]} <span aria-hidden="true">/</span> {lang === 'it' ? 'Studio illustrativo' : 'Illustrative study'}</span>
+      <p>{study.caption[lang]}</p>
+    </div>
+  </figcaption>
+</figure>
+
+<style>
+  .visual-study {
+    --study-ink: #25332d;
+    --study-index: #62462f;
+    --study-rule: #0645c0;
+    min-width: 0;
+    margin: 0;
+    color: var(--study-ink);
+    isolation: isolate;
+  }
+
+  .visual-study--botanical { --study-index: #35483c; }
+  .visual-study--mineral { --study-index: #62675e; }
+  .visual-study--travel { --study-index: #0645c0; }
+  .visual-study--gifting { --study-index: #a1472e; }
+  .visual-study--stationery { --study-index: #132f61; }
+
+  .study-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 3 / 2;
+    overflow: hidden;
+  }
+
+  .study-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  .study-caption {
+    display: grid;
+    grid-template-columns: 58px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    padding: 20px 0 0;
+    margin-top: 16px;
+    border-top: 1px solid var(--study-rule);
+  }
+
+  .study-index {
+    display: block;
+    color: var(--study-index);
+    font: 400 2.65rem / .96 var(--display, 'Bodoni Moda', serif);
+    font-variant-numeric: lining-nums tabular-nums;
+    letter-spacing: -.05em;
+    padding-top: 2px;
+  }
+
+  .study-caption-copy { min-width: 0; }
+
+  .study-label {
+    display: block;
+    margin-bottom: 7px;
+    font: 600 .95rem / 1.5 var(--sans, 'Manrope', sans-serif);
+    color: var(--study-ink);
+  }
+
+  .study-label > span {
+    display: inline-block;
+    padding-inline: 8px;
+    color: var(--study-rule);
+    font-weight: 400;
+  }
+
+  .study-caption p {
+    max-width: 68ch;
+    margin: 0;
+    color: var(--study-ink);
+    font: 400 .95rem / 1.7 var(--sans, 'Manrope', sans-serif);
+    text-wrap: pretty;
+  }
+
+  .visual-study--inset .study-caption {
+    grid-template-columns: 40px minmax(0, 1fr);
+    gap: 16px;
+    padding-top: 16px;
+    margin-top: 12px;
+  }
+
+  .visual-study--inset .study-index { font-size: 2.15rem; }
+
+  @media (max-width: 680px) {
+    .study-caption {
+      grid-template-columns: 40px minmax(0, 1fr);
+      gap: 14px;
+      margin-top: 12px;
+      padding-top: 16px;
+    }
+
+    .study-index { font-size: 2.15rem; }
+    .study-label > span { padding-inline: 4px; }
+    .visual-study--inset .study-caption { gap: 14px; }
+  }
+
+  @media (max-width: 370px) {
+    .study-caption,
+    .visual-study--inset .study-caption {
+      grid-template-columns: 32px minmax(0, 1fr);
+      gap: 10px;
+    }
+
+    .study-index,
+    .visual-study--inset .study-index { font-size: 1.9rem; }
+  }
+</style>

@@ -3,14 +3,15 @@ import Base from '../../layouts/Base.astro';import {articles,clusters} from '../
 import {tobaccoArticles} from '../../data/tobacco-information';
 export const prerender=true;
 const adultArticleSlugs=new Set(tobaccoArticles.map(a=>a.slug));
+const clusterMaterials:Record<string,string>={utility:'blue',bottega:'terracotta',cedro:'wood',radica:'forest',regalo:'paper',gioco:'paper'};
 ---
-<Base title="Il diario di Guerrazzi" description="Idee regalo, giochi, servizi pratici, il negozio e informazioni sul tabacco: approfondimenti documentati da Guerrazzi a Bologna." slug="approfondimenti" alternate={false}>
+<Base title="Il diario di Guerrazzi" description="Idee regalo, giochi, servizi pratici, il negozio e informazioni sul tabacco: approfondimenti documentati da Guerrazzi a Bologna." slug="approfondimenti" alternate={false} theme="utility" image="/images/materials/paper.webp">
 <div class="wrap journal-shell">
  <header class="journal-heading"><p class="journal-kicker">Quaderni Guerrazzi</p><h1>Il diario</h1><p class="journal-intro">Storie e approfondimenti sul negozio, i servizi e i materiali. Scegli un argomento, poi apri l’articolo che ti interessa.</p></header>
  <nav class="journal-index" aria-label="Argomenti del diario"><p>Gli argomenti</p><div>{clusters.map(c=><a href={`#${c.id}`}>{c.label}<span aria-hidden="true">↓</span></a>)}</div></nav>
  {clusters.map(c=>{
   const entries=articles.filter(a=>a.cluster===c.id);
-  return <section class:list={['cluster-section','journal-cluster',`theme-${c.theme}`]} id={c.id} aria-labelledby={`cluster-${c.id}`}>
+  return <section class:list={['cluster-section','journal-cluster',`theme-${c.theme}`]} style={`--journal-material: url('/images/materials/${clusterMaterials[c.theme]||'paper'}-768.webp')`} id={c.id} aria-labelledby={`cluster-${c.id}`}>
    <div class="journal-cluster-heading"><h2 id={`cluster-${c.id}`}>{c.label}</h2><p>{entries.length} {entries.length===1?'articolo':'articoli'}</p></div>
    <div class="journal-list">{entries.map(a=><a class="journal-card" href={`/approfondimenti/${a.slug}/`}><p class="journal-card-type">Articolo · {c.label}{adultArticleSlugs.has(a.slug)&&<span>18+</span>}</p><h3>{a.title}</h3><p class="journal-card-summary">{a.summary}</p><span class="journal-card-action">Leggi l’articolo<span aria-hidden="true">→</span></span></a>)}</div>
   </section>
@@ -23,7 +24,7 @@ const adultArticleSlugs=new Set(tobaccoArticles.map(a=>a.slug));
  .journal-heading .journal-kicker{font:600 1rem/1.6 var(--sans);color:var(--blue);margin-bottom:20px}
  .journal-heading h1{font-size:clamp(3rem,5vw,4.7rem);color:var(--blue);margin-bottom:26px}
  .journal-intro{font-size:1.1rem;line-height:1.8;max-width:65ch;padding-left:22px;border-left:3px solid var(--blue)}
- .journal-index{padding:26px 28px;border:1px solid var(--line);background:#eef3fb;margin-bottom:65px}
+ .journal-index{padding:26px 28px;border:1px solid var(--line);background:linear-gradient(#fbf8f0ed,#fbf8f0ed),url('/images/materials/paper-768.webp') center/cover;margin-bottom:65px}
  .journal-index>p{font-size:1rem;font-weight:600;color:var(--blue);margin-bottom:16px}
  .journal-index>div{display:flex;flex-wrap:wrap;gap:10px}
  .journal-index a{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:44px;padding:10px 15px;border:1px solid #c3cfe3;background:var(--paper);font-size:.95rem;line-height:1.5;color:var(--blue)}
@@ -33,7 +34,8 @@ const adultArticleSlugs=new Set(tobaccoArticles.map(a=>a.slug));
  .journal-cluster-heading h2{font-size:clamp(2rem,3.2vw,3rem);color:var(--accent);max-width:26ch}
  .journal-cluster-heading>p{font-size:.9rem;color:#566176;white-space:nowrap}
  .journal-cluster .journal-list{grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
- .journal-list .journal-card{display:flex;flex-direction:column;min-width:0;gap:20px;padding:27px;border:1px solid #d3d8df;border-top:3px solid var(--accent);background:var(--paper);box-shadow:0 3px 0 #17243106}
+ .journal-list .journal-card{display:flex;flex-direction:column;min-width:0;gap:20px;padding:27px;border:1px solid color-mix(in srgb,var(--accent) 25%,#e7dfd0);border-top:3px solid var(--accent);background:linear-gradient(#fbf8f0f2,#fbf8f0f2),url('/images/materials/paper-768.webp') center/cover;box-shadow:0 3px 0 #17243106}
+ .journal-card::before{content:'';display:block;width:112px;height:16px;background:var(--journal-material) center/cover}
  .journal-card .journal-card-type{display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-size:.95rem;font-weight:600;line-height:1.6;color:var(--accent)}
  .journal-card-type>span{font-size:.8rem;line-height:1.3;border:1px solid currentColor;border-radius:20px;padding:2px 8px}
  .journal-card h3{font-size:clamp(1.6rem,2vw,1.95rem);line-height:1.22;color:var(--accent);margin:0;max-width:27ch}

@@ -55,6 +55,8 @@ I dati dell’attività sono centralizzati in `src/data/shop.ts`; categorie in `
 
 Prompt completi, fonti e selezione delle immagini sono in `docs/identita/`. Gli asset consumati sono in `public/brand/ui/`, `public/images/editorial/`, `public/images/hero/` e `public/images/materials/`. Lo script `scripts/prepare-editorial-assets.mjs` genera le varianti WebP e le dimensioni per il componente `EditorialPhoto`; selezione delle fotografie verticali/orizzontali tramite `picture/source`, non solo ritagli CSS.
 
+Il primo pack di sei tavole editoriali è in `public/images/studies/`: archivio, Erica, materia minerale, viaggio/portici, regali e carta. Il manifest `docs/identita/visual-pack-v1-manifest.json` conserva prompt integrali, riferimenti e originali; `VisualStudy.astro` applica immagini responsive e didascalie IT/EN. Non sono fotografie di articoli, esemplari autenticati o interni. Le 68 schede archivio ereditano il tema cedro; guide, famiglie e diario ricevono i materiali del proprio cluster. La mappa `docs/identita/asset-coverage-map.json` e il CSV omonimo coprono tutte le 210 route e distinguono applicazioni, lacune e riferimenti autentici richiesti. Rigenerare con `node scripts/build-asset-audit.mjs` dopo `npm run build:static`.
+
 ## R2 DOGO
 
 Il caricamento immagini è predisposto per il bucket `dogostudio`, pubblico su `pub-b39e5084f7324516a4fe99c212a65c5f.r2.dev`, esclusivamente nel prefisso `clients/guerrazzi/`. Le chiavi non devono entrare in Git. Il caricamento usa nomi unici, controlla formato e dimensioni e non sovrascrive oggetti esistenti.

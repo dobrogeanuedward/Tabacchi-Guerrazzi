@@ -3,10 +3,14 @@ import Base from '../../layouts/Base.astro';import {articles,clusters,articleCat
 import {materialArticles} from '../../data/materials-education';
 import {tobaccoArticles} from '../../data/tobacco-information';
 import OfficialSources from '../../components/OfficialSources.astro';import {mainPages} from '../../data/shop';
+import VisualStudy from '../../components/VisualStudy.astro';import type {VisualStudyId} from '../../data/visual-studies';
 export const prerender=true;
 export function getStaticPaths(){return articles.map(a=>({params:{slug:a.slug},props:{a}}))}
 const {a}=Astro.props as {a:Article};const c=clusters.find(c=>c.id===a.cluster)!;const domain=import.meta.env.PUBLIC_SITE_URL;
-const research=materialArticles.some(b=>b.slug===a.slug);const information=tobaccoArticles.some(b=>b.slug===a.slug);
+const research=materialArticles.some(b=>b.slug===a.slug);const information=research||tobaccoArticles.some(b=>b.slug===a.slug);
+const study=({'radica-non-semplice-radice':'botanical-erica-study','schiuma-mare-nome-minerale':'mineral-sepiolite-study'} as Record<string,VisualStudyId>)[a.slug];
+const articleImages:Record<string,string>={servizi:'/images/services.webp',regali:'/images/editorial/regali-desktop.webp',giochi:'/images/games.webp',quartiere:'/images/hero/portico.webp','informazione-tabacco':'/brand/ui/archive-reference.webp','materiali-e-storia':'/images/materials/forest.webp','lessico-e-fonti':'/images/materials/wood.webp'};
+const image=study?`/images/studies/${study}.webp`:articleImages[a.cluster]||'/images/materials/paper.webp';
 const schema={'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.summary,inLanguage:'it',citation:(a.sources||[]).map(s=>s.url),author:{'@type':'Organization',name:'Tabaccheria Guerrazzi di Angela'},...(domain?{url:new URL(`/approfondimenti/${a.slug}/`,domain).href}:{})};
 const readingMinutes=Math.max(1,Math.ceil([a.summary,...a.sections.flat()].join(' ').trim().split(/\s+/).length/190));
 const categoryTitle=(slug:string)=>mainPages.find(p=>p.slug===slug)?.it||pages[slug].title[0];
@@ -18,17 +22,18 @@ const continuation=[
  ...articles.filter(b=>b.cluster===a.cluster&&b.slug!==a.slug).map(b=>({href:`/approfondimenti/${b.slug}/`,kind:'Articolo',title:b.title,action:'Leggi l’articolo'}))
 ].filter((link,index,all)=>all.findIndex(item=>item.href===link.href)===index);
 ---
-<Base image={information?`/images/materials/${c.theme==='radica'?'forest':'wood'}.webp`:undefined} title={a.title} description={a.summary} slug={`approfondimenti/${a.slug}`} alternate={false} theme={c.theme} schema={schema}>
+<Base image={image} title={a.title} description={a.summary} slug={`approfondimenti/${a.slug}`} alternate={false} theme={c.theme} schema={schema}>
 <div class="breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/approfondimenti/">Il diario</a><span>/</span><a href={`/approfondimenti/#${c.id}`}>{c.label}</a></div>
-<header class:list={['article-head','editorial-article-head',information&&'information-article-head']}>
+<header class:list={['article-head','editorial-article-head',`editorial-theme-${c.theme}`,information&&'information-article-head']}>
  <p class="article-kind">Articolo · {c.label}{information&&<span>18+</span>}</p>
  <h1>{a.title}</h1>
  <p class="standfirst">{a.summary}</p>
  <div class="article-reading"><span>{a.sections.length} sezioni</span><span>Lettura stimata: {readingMinutes} min</span></div>
 </header>
-<div class:list={['article-body','editorial-article-body',information&&'information-article-body']}>
+<div class:list={['article-body','editorial-article-body',`editorial-theme-${c.theme}`,information&&'information-article-body']}>
  <nav class="article-toc editorial-index" aria-label="In questo articolo"><h2>In questo articolo</h2><ol>{a.sections.map((s,i)=><li><a href={`#sezione-${i}`}><span aria-hidden="true">{String(i+1).padStart(2,'0')}</span><span>{s[0]}</span></a></li>)}</ol></nav>
  <article>
+  {study&&<div class="study-figure"><VisualStudy id={study} lang="it" variant="inset"/></div>}
   {a.sections.map((s,i)=><section class="editorial-section" id={`sezione-${i}`}><span class="editorial-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><h2>{s[0]}</h2><p>{s[1]}</p></section>)}
   <OfficialSources sources={a.sources||[]} lang="it" research={research} checked={research?'11 ottobre 2026':undefined}/>
   <section class="article-related"><h2>Per continuare.</h2><div class="continuation-grid">{continuation.map(link=><a href={link.href}><span class="continuation-kind">{link.kind}</span><h3>{link.title}</h3><span class="continuation-action">{link.action}<span aria-hidden="true">→</span></span></a>)}</div></section>
@@ -37,21 +42,25 @@ const continuation=[
 </Base>
 
 <style>
- .editorial-article-head,.editorial-article-body{--editorial-line:#d6dbe2;--editorial-paper:#f0f3f8}
- .information-article-head,.information-article-body{--editorial-line:#d7d1c5;--editorial-paper:#f3eee3}
+ .editorial-article-head,.editorial-article-body{--editorial-line:color-mix(in srgb,var(--accent) 25%,#e7dfd0);--editorial-paper:var(--surface);--editorial-material:url('/images/materials/paper-768.webp')}
+ .editorial-theme-utility{--editorial-material:url('/images/materials/blue-768.webp')}
+ .editorial-theme-bottega{--editorial-material:url('/images/materials/terracotta-768.webp')}
+ .editorial-theme-cedro{--editorial-material:url('/images/materials/wood-768.webp')}
+ .editorial-theme-radica{--editorial-material:url('/images/materials/forest-768.webp')}
  .editorial-article-head{padding-block:45px 38px;border-bottom:1px solid var(--editorial-line)}
+ .editorial-article-head::before{content:'';display:block;width:112px;height:16px;margin-bottom:25px;background:var(--editorial-material) center/cover;border-bottom:2px solid var(--accent)}
  .editorial-article-head .article-kind{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;font:600 1rem/1.6 var(--sans);color:var(--accent);margin-bottom:22px}
  .article-kind>span{font-size:.8rem;border:1px solid currentColor;border-radius:20px;padding:2px 9px}
  .editorial-article-head h1{font-size:clamp(2.8rem,4.6vw,4.7rem);max-width:21ch;color:var(--accent);margin-bottom:28px}
- .editorial-article-head .standfirst{padding:24px 28px;border-left:3px solid var(--accent);background:var(--editorial-paper);max-width:70ch;font-size:1.1rem;line-height:1.8;color:var(--ink);margin-bottom:0}
+ .editorial-article-head .standfirst{padding:24px 28px;border-left:3px solid var(--accent);background:linear-gradient(#fbf8f0ed,#fbf8f0ed),var(--editorial-material) center/cover;max-width:70ch;font-size:1.1rem;line-height:1.8;color:var(--ink);margin-bottom:0}
  .article-reading{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:22px;font-size:.85rem;line-height:1.6;color:#546172}
  .article-reading>span+span{padding-left:24px;border-left:1px solid var(--editorial-line)}
  .editorial-article-body{padding-top:38px;grid-template-columns:240px minmax(0,1fr);gap:55px}
- .editorial-index{align-self:start;border:1px solid var(--editorial-line);background:var(--editorial-paper);padding:22px}
+ .editorial-index{align-self:start;border:1px solid var(--editorial-line);background:linear-gradient(#fbf8f0ed,#fbf8f0ed),url('/images/materials/paper-768.webp') center/cover;padding:22px}
  .editorial-index h2{font:600 .95rem/1.6 var(--sans);color:var(--accent);margin-bottom:16px}
  .editorial-index ol{list-style:none;padding:0;margin:0}
  .editorial-index li+li{border-top:1px solid var(--editorial-line)}
- .editorial-index li a{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;color:var(--accent);font-size:.9rem;line-height:1.65;min-height:44px;margin:0;padding-block:12px}
+ .editorial-index li a{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;color:var(--accent);font-size:.95rem;line-height:1.65;min-height:44px;margin:0;padding-block:12px}
  .editorial-index li a>span:first-child{font-size:.8rem;font-variant-numeric:tabular-nums;color:#637083;padding-top:2px}
  .editorial-index a:hover{text-decoration:underline;text-underline-offset:.2em}
  .editorial-article-body article .editorial-section{display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:18px;border-top:1px solid var(--editorial-line);padding-top:26px;margin-bottom:42px;scroll-margin-top:24px}
@@ -59,12 +68,13 @@ const continuation=[
  .editorial-section h2,.editorial-section p{grid-column:2}
  .editorial-article-body article h2{font-size:clamp(2rem,3vw,2.7rem);margin-bottom:20px}
  .editorial-article-body article p{line-height:1.9;max-width:68ch}
+ .study-figure{margin:0 0 40px;padding:22px;border:1px solid var(--editorial-line);background:linear-gradient(#fbf8f0ed,#fbf8f0ed),url('/images/materials/paper-768.webp') center/cover;overflow:hidden}
  .editorial-article-body .article-related{border-color:var(--editorial-line)}
  .continuation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}
  .editorial-article-body .continuation-grid a{display:flex;flex-direction:column;gap:16px;padding:22px;margin:0;border:1px solid var(--editorial-line);background:var(--editorial-paper);color:var(--accent);min-width:0}
  .continuation-kind{font-size:.95rem;font-weight:600;line-height:1.5}
  .continuation-grid h3{font-size:1.65rem;line-height:1.25;max-width:28ch}
- .continuation-action{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.85rem;line-height:1.6;font-weight:600;margin-top:auto}
+ .continuation-action{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.95rem;line-height:1.6;font-weight:600;margin-top:auto}
  .continuation-grid a:hover .continuation-action{text-decoration:underline;text-underline-offset:.2em}
  .editorial-index a:focus-visible,.continuation-grid a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
  @media(min-width:901px){.editorial-index{position:sticky;top:25px}}

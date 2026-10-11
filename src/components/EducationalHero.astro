@@ -1,12 +1,14 @@
 ---
 import {text,type Lang} from '../data/shop';
+import VisualStudy from './VisualStudy.astro';
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
 const pipe=slug==='pipe-e-tabacchi-da-pipa';
 ---
 <header class:list={['education-hero',pipe?'education-forest':'education-wood']}>
+ <div class="education-edition wrap"><span>{text(lang,'Quaderni Guerrazzi','Guerrazzi notebooks')}</span><span>{pipe?text(lang,'Botanica / materia / storia','Botany / materials / history'):text(lang,'Lessico / denominazioni / fonti','Terminology / names / sources')}</span></div>
  <div class="education-opening wrap">
   <div class="education-copy">
-   <p class="education-series">{text(lang,'Quaderni Guerrazzi','Guerrazzi notebooks')} <span>18+</span></p>
+   <p class="education-series">{text(lang,'Area informativa','Information area')} <span>18+</span></p>
    <h1>{pipe?text(lang,'Pipe e tabacco da pipa.','Pipes and pipe tobacco.'):text(lang,'Sigari.','Cigars.')}</h1>
    <p class="education-subtitle">{pipe?text(lang,'Materiali, botanica e storia.','Materials, botany and history.'):text(lang,'Struttura, termini e fonti.','Structure, terminology and sources.')}</p>
    <p class="education-intro">{pipe?text(lang,'Dall’Erica arborea alla sepiolite: guide brevi per leggere i materiali e distinguere l’oggetto dal suo contenuto.','From Erica arborea to sepiolite: concise guides to materials and the distinction between an object and its contents.'):text(lang,'Un percorso nel linguaggio: le parti, le denominazioni e le informazioni da verificare nelle fonti.','A path through the language: components, names and information to check against the sources.')}</p>
@@ -15,37 +17,27 @@ const pipe=slug==='pipe-e-tabacchi-da-pipa';
     <a href="#norme">{text(lang,'Norme e confezioni','Rules and packaging')} <span aria-hidden="true">↓</span></a>
    </nav>
   </div>
-  <figure class="education-material">
-   <div class="material-composition" aria-hidden="true">
-    <div class="material-cover"></div><div class="material-leaf"></div>
-    <svg viewBox="0 0 500 400" fill="none"><path d="M-10 310C90 285 120 370 225 290S360 220 380 110S430 60 510 80" stroke="#0645c0" stroke-width="2"/></svg>
-   </div>
-   <figcaption>{text(lang,'Carta e materia · studi visivi generati','Paper and material · generated visual studies')}</figcaption>
-  </figure>
+  <div class="education-material"><VisualStudy id={pipe?'botanical-erica-study':'archive-folio'} lang={lang} variant="inset" loading="eager"/></div>
  </div>
 </header>
 <style>
- .education-hero{--education-ink:#61422c;--education-border:#d8cabc;background-color:#f6f1e7;background-image:linear-gradient(#f6f1e7b3,#f6f1e7b3),url('/images/materials/paper.webp');background-position:center;background-size:auto,1000px;border-bottom:1px solid var(--education-border)}
- .education-forest{--education-ink:#263f33;--education-border:#c5cec3}
- .education-opening{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);align-items:center;gap:65px;padding-block:58px 62px}
- .education-series{display:flex;align-items:center;gap:18px;font:600 1.1rem var(--sans);color:var(--education-ink);margin-bottom:24px}
- .education-series span{font-size:.85rem;border:1px solid currentColor;border-radius:30px;padding:4px 10px;line-height:1.2}
- .education-copy h1{font-size:clamp(3.4rem,5.8vw,5.8rem);line-height:1.04;color:var(--education-ink);max-width:12ch;margin-bottom:18px;letter-spacing:-.035em}
- .education-subtitle{font:400 clamp(1.7rem,2.6vw,2.5rem)/1.25 var(--display);color:var(--education-ink);margin-bottom:24px}
- .education-intro{font-size:1rem;line-height:1.8;max-width:54ch;color:#354039}
- .education-paths{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
- .education-paths a{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:48px;padding:12px 18px;border:1px solid var(--education-ink);font-size:.9rem;font-weight:600;color:var(--education-ink);background:#fffaf3a6}
- .education-paths a:first-child{background:var(--education-ink);color:#fffaf3}
- .education-paths a:hover{text-decoration:underline;text-underline-offset:4px}
- .education-paths a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
- .education-material{margin:0;min-width:0}
- .material-composition{position:relative;isolation:isolate;aspect-ratio:1.15}
- .material-cover{position:absolute;inset:7% 7% 9% 5%;background:#805a3b url('/images/materials/wood.webp') center/cover;transform:rotate(-4deg);box-shadow:10px 14px 26px #281f1b26;border-radius:2px 12px 3px 2px}
- .education-forest .material-cover{background:#263f33 url('/images/materials/forest.webp') center/cover}
- .material-leaf{position:absolute;inset:23% 1% 0 27%;transform:rotate(7deg);background:#f4eddf url('/images/materials/mineral.webp') center/cover;box-shadow:4px 6px 18px #281f1b1c;clip-path:polygon(0 0,99% 0,100% 17%,99% 35%,100% 64%,99% 100%,0 100%,1% 80%,0 51%,1% 22%)}
- .education-wood .material-leaf{background-image:url('/images/materials/paper.webp')}
- .material-composition svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
- .education-material figcaption{font-size:.75rem;line-height:1.5;color:#62685f;text-align:right;margin-top:25px}
- @media(max-width:960px){.education-opening{gap:35px}.education-copy h1{font-size:4.1rem}.education-series{font-size:1rem}.education-subtitle{font-size:1.9rem}}
- @media(max-width:680px){.education-opening{grid-template-columns:1fr;gap:28px;padding-block:32px 38px}.education-copy h1{font-size:clamp(3.1rem,12vw,4.2rem);max-width:14ch}.education-subtitle{font-size:1.85rem}.education-series{margin-bottom:20px}.education-intro{font-size:.95rem}.education-paths{margin-top:24px}.education-paths a{font-size:.82rem;gap:12px;padding:12px 14px}.education-material{width:min(100%,390px);margin-inline:auto}.material-composition{aspect-ratio:1.6}.education-material figcaption{margin-top:20px;font-size:.7rem}}
+.education-hero{--education-ink:#5a402b;--education-border:#cbb99f;--education-material:url('/images/materials/wood-768.webp');background:#f5efe3 url('/images/materials/paper-768.webp') center/1100px;color:var(--education-ink);border-block:1px solid var(--education-border);position:relative;isolation:isolate}
+.education-hero:before{content:'';position:absolute;z-index:-1;inset:0 0 0 auto;width:24%;background:#765037 var(--education-material) center/cover}
+.education-forest{--education-ink:#294535;--education-border:#b9c4b0;--education-material:url('/images/materials/forest-768.webp')}
+.education-edition{display:flex;justify-content:space-between;gap:24px;padding-block:20px;border-bottom:1px solid var(--education-border);font:500 .95rem/1.5 var(--sans)}
+.education-edition>span:last-child{padding:3px 12px;background:#f5efe3}
+.education-opening{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(35px,5vw,80px);padding-block:46px 58px}
+.education-series{display:flex;align-items:center;gap:18px;font:600 1.05rem/1.5 var(--sans);margin-bottom:22px}
+.education-series span{font-size:.9rem;border:1px solid currentColor;border-radius:30px;padding:4px 10px;line-height:1.2}
+.education-copy h1{font-size:clamp(3.2rem,5.1vw,5.5rem);line-height:1.04;color:var(--education-ink);max-width:14ch;margin-bottom:22px;letter-spacing:-.04em;text-wrap:balance}
+.education-subtitle{font:400 clamp(1.6rem,2.4vw,2.35rem)/1.25 var(--display);margin-bottom:24px;max-width:24ch}
+.education-intro{font-size:1rem;line-height:1.8;max-width:54ch;color:#354039}
+.education-paths{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.education-paths a{display:inline-flex;align-items:center;justify-content:space-between;gap:20px;min-height:48px;padding:12px 18px;border:1px solid var(--education-ink);font-size:.95rem;font-weight:600;color:var(--education-ink);background:#fffaf3}
+.education-paths a:first-child{background:var(--education-ink);color:#fffaf3}
+.education-paths a:hover{text-decoration:underline;text-underline-offset:4px}
+.education-paths a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+.education-material{min-width:0;padding:26px;background:#fbf7ec;border:1px solid var(--education-border);box-shadow:9px 9px 0 #f5efe37a}
+@media(max-width:960px){.education-opening{gap:30px}.education-copy h1{font-size:clamp(3.1rem,5vw,4.5rem)}.education-material{padding:18px}.education-edition{font-size:.875rem}}
+@media(max-width:680px){.education-hero:before{width:8px}.education-edition{flex-direction:column;gap:4px;padding-block:16px}.education-edition>span:last-child{padding:0;background:none;font-size:.875rem}.education-opening{grid-template-columns:1fr;gap:30px;padding-block:28px 38px}.education-copy h1{font-size:clamp(3rem,11vw,4.2rem)}.education-subtitle{font-size:1.85rem}.education-series{margin-bottom:20px}.education-paths{margin-top:24px}.education-paths a{font-size:.9rem;gap:12px;padding:12px 14px}.education-material{width:100%;max-width:480px;margin-inline:auto;padding:16px;box-shadow:4px 4px 0 #d9ceba}}
 </style>

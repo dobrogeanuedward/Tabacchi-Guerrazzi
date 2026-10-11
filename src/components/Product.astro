@@ -8,7 +8,7 @@ const group=catalogGroups.find(g=>g.id===p.category);const categoryLabel=group?(
 const availabilityIt:Record<string,string>={available:'Disponibile in negozio',unavailable:'Attualmente non disponibile','on-request':'Disponibilità da verificare'};
 const availabilityEn:Record<string,string>={available:'Available in store',unavailable:'Currently unavailable','on-request':'Check availability'};
 ---
-<Base title={name} description={description.slice(0,160)} lang={lang} slug={`catalogo/${slug}`}>
+<Base title={name} description={description.slice(0,160)} lang={lang} slug={`catalogo/${slug}`} image={p.image||'/images/hero/portico.webp'}>
 <div class="wrap product-shell"><div class="breadcrumb"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor('catalogo',lang)}>{text(lang,'Catalogo','Catalogue')}</a><span>/</span><span>{name}</span></div>
  <header class="product-heading"><p class="product-record-label"><span>{text(lang,'Prodotto','Product')}</span>{categoryLabel}</p><h1>{name}</h1></header>
  <div class="product-detail">

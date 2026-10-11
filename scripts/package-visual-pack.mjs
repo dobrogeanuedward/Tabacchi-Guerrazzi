@@ -1,0 +1,104 @@
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import sharp from 'sharp';
+const repo=process.cwd(),out=path.resolve(repo,'../../outputs/visual-pack-v1'),entries=[
+  {
+    "id": "archive-folio",
+    "prompt": "Use case: illustration-story. Asset type: neutral archival editorial illustration for the Guerrazzi educational materials library. Primary request: a beautiful quiet still life of an OPEN BLANK archival folio with warm ivory cotton paper sheets, two narrow index tabs and a closed linen-bound reference notebook beside it. This is a visual about documentation and reading sources, NOT about any merchandise. Style: tactile cut-paper and delicate intaglio engraving, finely controlled paper grain, credible soft daylight, clean contemporary editorial composition. Palette: warm ivory, muted chestnut brown, a single fine cobalt blue curved thread. Landscape 3:2; compose the folio on the right two-thirds, allow generous calm ivory negative space on the left; avoid repeated flat stacks. Reference image 1 supplies only the illustration craftsmanship; reference image 2 only the quiet smooth wood palette. Keep background ivory, no shop interior. NO tobacco, cigars, pipes, smoke, brand marks, packaging, seals, gold, ornamental luxury styling, writing, letters or labels. No uncanny textures or knots.",
+    "refs": [
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp",
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/images/materials/wood-768.webp"
+    ],
+    "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-b33fde76-8987-419a-ae68-090595b08acd.png",
+    "tool": "image_gen.imagegen",
+    "generatedAt": "2026-10-11",
+    "web": "/images/studies/archive-folio.webp",
+    "preview": "/images/studies/archive-folio-768.webp",
+    "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop."
+  },
+  {
+    "id": "travel-bologna-map",
+    "prompt": "Use case: illustration-story. Asset type: editorial illustration for practical luggage storage information in central Bologna. Primary request: one simple cobalt-blue wheeled cabin suitcase in a clean two-point three-quarter view, beside a modest ivory travel notebook and a thin cobalt line that curves beneath them. Include one small abstract arc motif suggesting a portico, not an actual building, no location map, no invented route. Style must match the supplied finely stippled cobalt and ivory printed engraving; elegant tactile paper, restrained contours, beautiful broad negative space. Landscape 3:2, suitcase on left third, notebook lower centre, airy warm ivory background. Small terracotta luggage tag without letters, one yellow detail allowed. No logos, no words, no shop interior, no people, no product brand, no luggage claims. This is an illustration, not an evidence photograph. Keep the suitcase recognisable and structurally plausible, exactly two visible wheels, one telescopic handle.",
+    "refs": [
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp"
+    ],
+    "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-634ac2f7-f74e-4997-8a99-84771696fdcd.png",
+    "tool": "image_gen.imagegen",
+    "generatedAt": "2026-10-11",
+    "web": "/images/studies/travel-bologna-map.webp",
+    "preview": "/images/studies/travel-bologna-map-768.webp",
+    "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop."
+  },
+  {
+    "id": "botanical-erica-study",
+    "prompt": "Use case: scientific-educational. Asset type: clearly illustrative botanical plate, not a scientific specimen photograph. Create a restrained botanical editorial study inspired by Erica arborea, rendered as fine forest-green ink and muted gouache on clean warm ivory cotton paper. Landscape 3:2 with a tall asymmetrical botanical shoot occupying the right two-thirds: slender branches, tiny needle-like leaves in whorls of three to four and small hanging bell-shaped pale flowers. At the lower left, a separate small deliberately SCHEMATIC silhouette of the root-shoot transition shows a modest woody basal swelling connected to the stem and a few roots. This explanatory drawing must have NO invented internal anatomy, cutaways, measurements, identification marks, specimen labels or decorative calligraphy. Generous clean negative space, fine engraved contours, subtle matte tactile grain, a very thin cobalt printer-like rule near the lower edge. Reference 1 is craftsmanship only, reference 2 forest green tone only. No text, stamps, pots, people, shop interior, pipe, cigar or tobacco products. Elegant, airy, non-eerie.",
+    "refs": [
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp",
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/images/materials/forest-768.webp"
+    ],
+    "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-c1299d09-6439-4e78-a0b1-05de3529a5ad.png",
+    "tool": "image_gen.imagegen",
+    "generatedAt": "2026-10-11",
+    "web": "/images/studies/botanical-erica-study.webp",
+    "preview": "/images/studies/botanical-erica-study-768.webp",
+    "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop."
+  },
+  {
+    "id": "mineral-sepiolite-study",
+    "prompt": "Use case: illustration-story. Asset type: quiet educational material-study illustration, NOT a specimen photograph. Close LOW SIDE VIEW of one small irregular off-white mineral-like fragment resting on an ivory paper plinth, positioned left of centre. Chalky matte surface, subtle pale cream variation, understated porosity and softly broken edges. Fine cobalt ink contour and delicate opaque gouache in the printed engraving craftsmanship of reference 1; use reference 2 for pale mineral palette only, NOT marble. Thin cobalt vertical printed margin at far right gives editorial structure. Landscape 3:2, long low composition, ample clear warm ivory paper above, diffuse side light, restrained contact shadow. No crystals, gemstone facets, translucent glow, dramatic veins, skin-like pores, ocean foam, shells, carved pipe, tobacco, labels, measurements, origin claim or certification. Beautiful fine paper and controlled engraving, no dark holes or ugly roughness. This abstract illustrative fragment does not claim authenticated sepiolite.",
+    "refs": [
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp",
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/images/materials/mineral-768.webp"
+    ],
+    "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-be870bf8-54bf-47de-b7ad-7f4e12f6166b.png",
+    "tool": "image_gen.imagegen",
+    "generatedAt": "2026-10-11",
+    "web": "/images/studies/mineral-sepiolite-study.webp",
+    "preview": "/images/studies/mineral-sepiolite-study-768.webp",
+    "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop."
+  },
+  {
+    "id": "gifting-still-life",
+    "prompt": "Use case: illustration-story. Asset type: contemporary Italian editorial still life for gift ideas, not a shop stock photograph. View from a forty-five-degree angle just above a plain tabletop: a small closed unbranded gift box wrapped in ivory paper with a narrow cobalt ribbon sits towards back right; foreground has one generic smooth candle vessel and one simple metal keyring in a loose triangular arrangement. One folded BLANK greeting card stands partly open. Symbolic generic objects, not exact commercial products. Landscape 3:2. Opaque muted gouache and precise fine ink, finely stippled engraving matching reference, warm ivory paper texture, tiny restrained terracotta accent, beautiful soft daylight from left. Objects modest, separated and tactile. No shelves, shop interior, people, recognizable commercial design, prices, logos, writing, text, elaborate luxury packaging or top-down archive composition. At least25 percent clear paper space, no repeated notebook or pen from the reference image: reference is STYLE ONLY.",
+    "refs": [
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp"
+    ],
+    "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-c033eab2-2309-4291-b715-9faa1db16cb7.png",
+    "tool": "image_gen.imagegen",
+    "generatedAt": "2026-10-11",
+    "web": "/images/studies/gifting-still-life.webp",
+    "preview": "/images/studies/gifting-still-life-768.webp",
+    "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop."
+  },
+  {
+    "id": "stationery-paper-study",
+    "prompt": "Use case: illustration-story. Asset type: close editorial study of paper and writing materials. Very LOW TABLETOP ANGLE, almost level with paper edges. In the right half, a short stack of plain ivory sheets with crisp slightly irregular edges, one folded cobalt sheet leaning behind it, and the cropped end of a simple unbranded wooden pencil entering from the bottom edge. Concentrate on paper thickness, one beautiful clean fold, fine fibres and one subtle graphite line. Landscape3:2, large quiet ivory negative space in left half. Restrained cobalt ink and opaque gouache, very subtle warm wood accent, matte natural light, contemporary Italian editorial composition, finely controlled engraved stipple matching reference. Reference is STYLE ONLY: NO notebooks, index cards, folios or pens from reference. No writing, numbers, packaging, people, shop shelves, logos, rulers, scissors or commercial details. Beautiful assured craftsmanship, not a generic stock rendering.",
+    "refs": [
+      "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp"
+    ],
+    "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-edd376f5-f675-4212-915b-28658f0ca730.png",
+    "tool": "image_gen.imagegen",
+    "generatedAt": "2026-10-11",
+    "web": "/images/studies/stationery-paper-study.webp",
+    "preview": "/images/studies/stationery-paper-study-768.webp",
+    "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop."
+  }
+];
+await fs.mkdir(path.join(repo,'public/images/studies'),{recursive:true});
+await fs.mkdir(path.join(out,'originals'),{recursive:true});
+await fs.mkdir(path.join(out,'web'),{recursive:true});
+for(const entry of entries){
+ await fs.copyFile(entry.original,path.join(out,'originals',entry.id+'.png'));
+ for(const size of [1536,768]){
+ const file=entry.id+(size===768?'-768':'')+'.webp';
+ const dest=path.join(repo,'public/images/studies',file);
+ await sharp(entry.original).resize({width:size}).webp({quality:87,effort:6}).toFile(dest);
+ await fs.copyFile(dest,path.join(out,'web',file));
+ }
+ entry.bytes=(await fs.stat(path.join(repo,'public',entry.web))).size;
+}
+const manifest={version:1,date:'2026-10-11',generator:'image_gen.imagegen',entries};
+await fs.writeFile(path.join(repo,'docs/identita/visual-pack-v1-manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+await fs.writeFile(path.join(out,'manifest.json'),JSON.stringify(manifest,null,2)+'\n');
+console.log(JSON.stringify(entries.map(({id,bytes})=>({id,bytes}))));
+

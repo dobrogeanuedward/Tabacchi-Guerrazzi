@@ -4,7 +4,7 @@ import '../styles/editorial-ui.css';
 import Logo from '../components/Logo.astro';
 import AgeConfirmation from '../components/AgeConfirmation.astro';import {adultSectionSlugs} from '../data/tobacco-information';
 import {shop, mainPages, pathFor, text} from '../data/shop';
-const {title=shop.name,description='',lang='it',slug='',theme='',noindex=false,alternate=true,schema=null,image='/images/scelta.webp'}=Astro.props;
+const {title=shop.name,description='',lang='it',slug='',theme='',noindex=false,alternate=true,schema=null,image='/images/hero/portico.webp'}=Astro.props;
 const configured=import.meta.env.PUBLIC_SITE_URL||'';
 const ready=import.meta.env.PUBLIC_LAUNCH_READY==='true'&&!!configured;
 const canonical=configured?new URL(Astro.url.pathname,configured).href:null;
