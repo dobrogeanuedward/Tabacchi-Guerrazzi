@@ -3,9 +3,15 @@ import {assortmentImage} from '../data/assortment-images';
 import {assortmentPages} from '../data/assortment';
 import {pathFor,text,type Lang} from '../data/shop';
 const {lang='it',slugs=null,compact=false}=Astro.props as {lang:Lang;slugs?:string[]|null;compact?:boolean};
-const entries=slugs?slugs.map(s=>assortmentPages.find(p=>p.slug===s)).filter(Boolean):assortmentPages.filter(p=>!['ricevitoria','accendini-e-accessori','deposito-bagagli'].includes(p.slug));
+const fundamental=[
+ {slug:'idee-regalo',label:['Idee regalo','Gift ideas'],image:'/images/gifts.webp',description:['Piccoli pensieri, occasioni speciali','Little gifts, special occasions'],adult:false},
+ {slug:'giochi-e-giocattoli',label:['Giochi e giocattoli','Games and toys'],image:'/images/games.webp',description:['Una scoperta per ogni età','A discovery for every age'],adult:false},
+ {slug:'sigari',label:['Sigari','Cigars'],image:'',description:['Informazioni per adulti','Information for adults'],adult:true},
+ {slug:'pipe-e-tabacchi-da-pipa',label:['Pipe e tabacchi da pipa','Pipes and pipe tobacco'],image:'',description:['Area informativa 18+','18+ information area'],adult:true},
+];
+const entries=[...(!slugs?fundamental:[]),...(slugs?slugs.map(s=>assortmentPages.find(p=>p.slug===s)).filter(Boolean):assortmentPages.filter(p=>!['ricevitoria','accendini-e-accessori','deposito-bagagli'].includes(p.slug))).map(p=>({slug:p!.slug,label:p!.label,image:p!.art?assortmentImage(({ 'souvenir-bologna':'souvenir','feste-e-compleanni':'feste','accessori-telefono':'telefono','piccole-necessita':'necessita'} as Record<string,string>)[p!.slug]||p!.slug):'',description:[0,1].map(l=>p!.groups[0]?.items.slice(0,2).map(item=>item[l]).join(', ')||text(l===0?'it':'en','Scopri le informazioni','Read the information')),adult:['ricevitoria','accendini-e-accessori'].includes(p!.slug)}))];
 ---
 <section class:list={['assortment-nav',compact?'compact':'']} aria-label={text(lang,'Esplora l’assortimento','Explore the range')}>
- <div class="section-opening"><h2>{text(lang,'Anche per una piccola commissione.','For a little errand, too.')}</h2><p>{text(lang,'Quello che cerchi ha il suo posto.','There is a place for what you are looking for.')}</p></div>
- <div class="assortment-paths">{entries.map(p=>p&&<a href={pathFor(p.slug,lang)}>{p.art&&<img src={assortmentImage(({ 'souvenir-bologna':'souvenir','feste-e-compleanni':'feste','accessori-telefono':'telefono','piccole-necessita':'necessita'} as Record<string,string>)[p.slug]||p.slug)} width="320" height="320" loading="lazy" alt="" aria-hidden="true"/>}<div><h3>{p.label[lang==='it'?0:1]}</h3><p>{p.groups[0]?.items.slice(0,2).map(item=>item[lang==='it'?0:1]).join(', ')||text(lang,'Scopri le informazioni','Read the information')}</p></div><span class="path-arrow" aria-hidden="true">↗</span></a>)}</div>
+ <div class="section-opening"><h2>{text(lang,'Un indirizzo. Tante possibilità.','One address. Many possibilities.')}</h2><p>{text(lang,'Dai regali alle necessità di ogni giorno, orientati nel negozio.','From gifts to everyday essentials, find your way around the shop.')}</p></div>
+ <div class="assortment-paths">{entries.map(p=><a href={pathFor(p.slug,lang)}>{p.image?<img src={p.image} width="320" height="320" loading="lazy" alt="" aria-hidden="true"/>:<span class="category-information" aria-hidden="true">18+</span>}<div><h3>{p.label[lang==='it'?0:1]}{p.adult&&<small class="category-age">18+</small>}</h3><p>{p.description[lang==='it'?0:1]}</p></div><span class="path-arrow" aria-hidden="true">↗</span></a>)}</div>
 </section>

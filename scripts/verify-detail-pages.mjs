@@ -21,6 +21,14 @@ for(const prefix of ['', 'en'])for(const section of ['assortimento','sigari']){
 }
 for(const prefix of ['', 'en']){
  const home=await readFile(join('dist',prefix,'index.html'),'utf8');
- assert.match(home,/class="grouped-menu"/);assert.match(home,/class="quick-nav"/);assert.match(home,/class="angela-wordmark"/);assert.match(home,/location-label eyebrow/);
+ assert.match(home,/class="grouped-menu"/);assert.match(home,/centered-header/);assert.match(home,/class="category-menu"/);assert.doesNotMatch(home,/class="quick-nav"/);assert.match(home,/class="angela-wordmark"/);assert.match(home,/location-label eyebrow/);
+ assert.equal((home.match(/data-slide-to=/g)||[]).length,6);
+ const main=home.match(/<main[^>]*>([\s\S]*?)<\/main>/)[1];
+ assert.ok(main.indexOf('class="luggage-feature"')<main.indexOf('class="discover wrap"'));
+ for(const slug of ['idee-regalo','giochi-e-giocattoli','sigari','pipe-e-tabacchi-da-pipa'])assert.ok(main.includes(`href="${prefix?'/en':''}/${slug}/"`));
+ const luggage=await readFile(join('dist',prefix,'deposito-bagagli','index.html'),'utf8');
+ const graph=JSON.parse(luggage.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
+ const service=graph.find(s=>s['@type']==='Service');assert.equal(service.availableChannel.serviceUrl,'https://bounce.com/stores/bologna/7ZRpUp');
+ const faq=graph.find(s=>s['@type']==='FAQPage');for(const q of faq.mainEntity){assert.ok(luggage.includes(q.name));assert.ok(luggage.includes(q.acceptedAnswer.text));}
 }
 console.log(JSON.stringify({detailPages:total,faqMatchesVisibleContent:true,linksResolve:true,adultScope:true,groupedNavigation:true}));

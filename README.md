@@ -55,3 +55,5 @@ Il caricamento immagini è predisposto per il bucket `dogostudio`, pubblico su `
 L'accesso alle variabili del progetto DOGO non era disponibile in questa sessione: nessun oggetto è stato caricato su R2. Le immagini della prima versione sono servite dal sito.
 
 Le informative privacy e cookie sono bozze da completare con i dati del titolare. Non ci sono tracker, font remoti o mappe incorporate.
+
+Aggiornamento 11 ottobre 2026: header con logo centrale e singola navigazione desktop; hero a sei scene con copy dedicato; accessi a regali, giochi e aree informative 18+; deposito Bounce anticipato in home e servizi. Le sostituzioni fotografiche del secondo mandato sono registrate in `docs/identita/asset-replacement-register.json`, comprese le 25 famiglie del catalogo e le generazioni precedenti non ancora recuperate. Le immagini editoriali provvisorie non certificano configurazione degli interni, stock o servizi aggiuntivi.

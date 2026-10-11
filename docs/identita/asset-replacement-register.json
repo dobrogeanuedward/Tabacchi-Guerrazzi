@@ -1,0 +1,643 @@
+{
+  "version": 1,
+  "updated": "2026-10-11",
+  "scope": "Autorità",
+  "decision": "Utente approva per ora le generazioni attuali e rinvia tutte le sostituzioni al secondo mandato, con più asset reali. Non generare ulteriori interni alla cieca.",
+  "rules": [
+    "Foto reali dell’attività come fonte primaria.",
+    "Per interni servono più punti di vista: ingresso, banco, pareti e dettagli, senza modificare arredi, proporzioni o assortimento.",
+    "Non ripetere la stessa scena cambiando soltanto luce o soggetto.",
+    "Identità delle persone solo da riferimenti reali autorizzati; liberatorie per pubblicazione.",
+    "Le scene editoriali non provano articoli, stock, servizi aggiuntivi o condizioni di custodia.",
+    "Le illustrazioni grafiche di marca restano asset stilistici: non sostituirle automaticamente con foto."
+  ],
+  "referenceSources": [
+    {
+      "url": "https://bounce.com/stores/bologna/7ZRpUp",
+      "photo": "https://cdn.usebounce.com/f67e0c83-4519-4c45-b5b7-772fbc28bf30/-/scale_crop/722x370/center/-/enhance/",
+      "verified": "2026-10-11",
+      "use": "Solo riferimento architettonico; foto originale non ripubblicata nel sito."
+    },
+    {
+      "chatId": "6ac7c752-f454-83ed-b573-f76c6d8c41fc",
+      "title": "Creazione sito autorità",
+      "state": "Anteprime delle vecchie generazioni visibili, download originali non riuscito. NON dichiarate recuperate.",
+      "required": "Recuperare file originali e foto reali caricate dall’utente, poi confrontarli con il registro."
+    }
+  ],
+  "newHero": [
+    {
+      "id": "hero-portico",
+      "paths": [
+        "/images/hero/portico.webp",
+        "/images/hero/portico-960.webp"
+      ],
+      "reference": "Foto reale del portico nella scheda ufficiale Bounce",
+      "certainty": "Architettura derivata da riferimento reale; luce, passanti e dettagli restano generati.",
+      "shoot": "Grandangolo reale da più punti del portico, stessa ora luce, vetrina e insegna; composizioni orizzontali e verticali.",
+      "status": "provvisorio-approvato-da-utente",
+      "phase": 2,
+      "priority": "alta",
+      "replaceWith": "Fotografia reale o ricostruzione basata su più foto reali coerenti",
+      "usedIn": [
+        "Home IT/EN"
+      ]
+    },
+    {
+      "id": "hero-viaggiatrice",
+      "paths": [
+        "/images/hero/viaggiatrice.webp",
+        "/images/hero/viaggiatrice-960.webp"
+      ],
+      "reference": "Foto reale del portico nella scheda ufficiale Bounce",
+      "certainty": "Architettura referenziata; persona, valigia e interazione sono inventate.",
+      "shoot": "Persona adulta con trolley davanti all’ingresso reale, di profilo e da altra direzione, liberatoria; ripresa del check-in reale solo se autorizzata.",
+      "status": "provvisorio-approvato-da-utente",
+      "phase": 2,
+      "priority": "alta",
+      "replaceWith": "Fotografia reale o ricostruzione basata su più foto reali coerenti",
+      "usedIn": [
+        "Home IT/EN",
+        "Deposito bagagli IT/EN",
+        "Servizi IT/EN"
+      ]
+    },
+    {
+      "id": "hero-regalo",
+      "paths": [
+        "/images/hero/regalo.webp",
+        "/images/hero/regalo-960.webp"
+      ],
+      "reference": "Scena editoriale di regali già nel repository; NON una nuova fotografia reale degli interni.",
+      "certainty": "Banco, gesto di confezionamento, carta e articoli sono interpretati. Non costituisce prova di un servizio di confezionamento.",
+      "shoot": "Mani di Angela e oggetti realmente presenti sul banco reale; verificare prima se confeziona regali; overhead e laterale 45°.",
+      "status": "provvisorio-approvato-da-utente",
+      "phase": 2,
+      "priority": "alta",
+      "replaceWith": "Fotografia reale o ricostruzione basata su più foto reali coerenti",
+      "usedIn": [
+        "Home IT/EN"
+      ]
+    },
+    {
+      "id": "hero-cartoleria",
+      "paths": [
+        "/images/hero/cartoleria.webp",
+        "/images/hero/cartoleria-960.webp"
+      ],
+      "reference": "Scena editoriale di cartoleria già nel repository, derivata dal precedente rilievo.",
+      "certainty": "Materiali e scaffali ispirati al rilievo, disposizione interna e oggetti non verificati con foto originali in questa sessione.",
+      "shoot": "Scaffali reali IMG_5261, frontale, di tre quarti e dettaglio penne/quaderni, preservando proporzioni e inventario.",
+      "status": "provvisorio-approvato-da-utente",
+      "phase": 2,
+      "priority": "alta",
+      "replaceWith": "Fotografia reale o ricostruzione basata su più foto reali coerenti",
+      "usedIn": [
+        "Home IT/EN"
+      ]
+    }
+  ],
+  "editorial": [
+    {
+      "id": "editorial-cartoleria",
+      "paths": [
+        "/images/editorial/cartoleria-desktop-800.webp",
+        "/images/editorial/cartoleria-desktop.webp",
+        "/images/editorial/cartoleria-mobile-480.webp",
+        "/images/editorial/cartoleria-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5261.jpeg",
+      "shoot": "Ripresa delle due scaffalature bianche con aperture arrotondate, frontale e obliqua.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-auguri",
+      "paths": [
+        "/images/editorial/auguri-desktop-800.webp",
+        "/images/editorial/auguri-desktop.webp",
+        "/images/editorial/auguri-mobile-480.webp",
+        "/images/editorial/auguri-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5262.jpeg",
+      "shoot": "Espositore reale di biglietti: intero, singole tasche e dettagli.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-necessita",
+      "paths": [
+        "/images/editorial/necessita-desktop-800.webp",
+        "/images/editorial/necessita-desktop.webp",
+        "/images/editorial/necessita-mobile-480.webp",
+        "/images/editorial/necessita-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5256.jpeg",
+      "shoot": "Pannello reale di piccoli accessori, senza ricostruire posizione o marchi.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-souvenir",
+      "paths": [
+        "/images/editorial/souvenir-desktop-800.webp",
+        "/images/editorial/souvenir-desktop.webp",
+        "/images/editorial/souvenir-mobile-480.webp",
+        "/images/editorial/souvenir-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5250.jpeg",
+      "shoot": "Calamite e souvenir effettivamente presenti, frontale e dettaglio.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-bottega",
+      "paths": [
+        "/images/editorial/bottega-desktop-800.webp",
+        "/images/editorial/bottega-desktop.webp",
+        "/images/editorial/bottega-mobile-480.webp",
+        "/images/editorial/bottega-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5258.jpeg",
+      "shoot": "Grandangolo degli interni reali: banco, vetrine e percorso fino alla porta.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-dolciumi",
+      "paths": [
+        "/images/editorial/dolciumi-desktop-800.webp",
+        "/images/editorial/dolciumi-desktop.webp",
+        "/images/editorial/dolciumi-mobile-480.webp",
+        "/images/editorial/dolciumi-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5241.jpeg",
+      "shoot": "Scaffale reale di dolciumi con confezioni e formati presenti.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-cura",
+      "paths": [
+        "/images/editorial/cura-desktop-800.webp",
+        "/images/editorial/cura-desktop.webp",
+        "/images/editorial/cura-mobile-480.webp",
+        "/images/editorial/cura-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5258.jpeg",
+      "shoot": "Vetrinetta bianca, maniglie ad anello, accessori capelli e cura personale.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    },
+    {
+      "id": "editorial-regali",
+      "paths": [
+        "/images/editorial/regali-desktop-800.webp",
+        "/images/editorial/regali-desktop.webp",
+        "/images/editorial/regali-mobile-480.webp",
+        "/images/editorial/regali-mobile.webp"
+      ],
+      "status": "provvisorio-da-verificare-su-originali",
+      "phase": 2,
+      "priority": "alta",
+      "reference": "IMG_5250.jpeg",
+      "shoot": "Vetrina reale di candele e portachiavi: insieme e singoli articoli.",
+      "usedIn": [
+        "Categorie IT/EN",
+        "Catalogo e schede IT/EN dove associati",
+        "Home se usata dallo slider"
+      ],
+      "replaceWith": "Scatto reale del negozio; eventuale elaborazione mantiene geometrie, arredi e articoli verificati."
+    }
+  ],
+  "legacyScenes": {
+    "paths": [
+      "/images/games.webp",
+      "/images/gifts.webp",
+      "/images/incontro.webp",
+      "/images/paper.webp",
+      "/images/regalo.webp",
+      "/images/scelta.webp",
+      "/images/services.webp",
+      "/images/terracotta.webp",
+      "/images/wood.webp"
+    ],
+    "status": "da-verificare-e-sostituire-con-foto-reali",
+    "phase": 2,
+    "priority": "alta",
+    "usedIn": [
+      "Home, storia, pagine negozio/regali/giochi/servizi",
+      "Metadati social dove configurati"
+    ],
+    "shoot": "Angela reale al banco, famiglia solo con liberatorie; riprese vere di giochi e regali, servizi ed eventuali serrande. Verificare identità e contesto di ogni scena."
+  },
+  "catalogFamilies": [
+    {
+      "id": "quaderni",
+      "category": "cartoleria",
+      "label": "Quaderni e blocchi",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "penne",
+      "category": "cartoleria",
+      "label": "Penne a sfera",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "evidenziatori",
+      "category": "cartoleria",
+      "label": "Evidenziatori",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "colle",
+      "category": "cartoleria",
+      "label": "Colle per carta e piccoli lavori",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "cartelline",
+      "category": "cartoleria",
+      "label": "Cartelline e portadocumenti",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "etichette",
+      "category": "cartoleria",
+      "label": "Etichette e piccoli articoli da scrivania",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "calamite",
+      "category": "souvenir",
+      "label": "Calamite di Bologna",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "auguri",
+      "category": "feste",
+      "label": "Biglietti di compleanno",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "candeline",
+      "category": "feste",
+      "label": "Candeline numeriche",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "palloncini",
+      "category": "feste",
+      "label": "Palloncini",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "buste",
+      "category": "feste",
+      "label": "Buste regalo e fiocchi",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "cavi",
+      "category": "telefono",
+      "label": "Cavi USB di ricarica",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "power-bank",
+      "category": "telefono",
+      "label": "Power bank",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "nastri",
+      "category": "necessita",
+      "label": "Nastri adesivi",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "adesivi",
+      "category": "necessita",
+      "label": "Colle per piccoli interventi",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "lucchetti",
+      "category": "necessita",
+      "label": "Lucchetti",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "cerotti",
+      "category": "necessita",
+      "label": "Cerotti confezionati",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "labbra",
+      "category": "necessita",
+      "label": "Balsami labbra",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "capelli",
+      "category": "necessita",
+      "label": "Accessori capelli e pinzette",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "gommose",
+      "category": "dolciumi",
+      "label": "Caramelle gommose",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "lecca-lecca",
+      "category": "dolciumi",
+      "label": "Lecca-lecca",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "caramelle",
+      "category": "dolciumi",
+      "label": "Caramelle confezionate",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "cioccolatini",
+      "category": "dolciumi",
+      "label": "Cioccolatini",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "piccoli-regali",
+      "category": "regali",
+      "label": "Piccole candele e portachiavi",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "giochi",
+      "category": "giochi",
+      "label": "Giochi e passatempi",
+      "status": "foto-dedicata-originale-da-recuperare",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    }
+  ],
+  "nextShootChecklist": [
+    "Ingresso reale: frontale, dalla strada e lungo il portico in entrambe le direzioni.",
+    "Interno: panoramica da ingresso, centro e retro; arredi riconoscibili, illuminazione reale.",
+    "Banco e mani di Angela; gesti dei servizi realmente erogati.",
+    "Bagagli: arrivo, consegna, ritiro; non mostrare dati di prenotazioni o spazi riservati.",
+    "25 famiglie catalogo: insieme e dettaglio degli articoli presenti, colori e marchi reali.",
+    "Versioni landscape, portrait e dettagli con spazio per copy; originali ad alta risoluzione."
+  ]
+}
