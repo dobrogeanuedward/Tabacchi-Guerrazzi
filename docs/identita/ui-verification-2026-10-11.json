@@ -2,7 +2,7 @@
   "date": "2026-10-11",
   "scope": "Autorità",
   "site": "https://tabacchiguerrazzi.vercel.app",
-  "uiCommitVerified": "633918dfdbadbbf1c98ead199d8da3a6d69d4b14",
+  "uiCommitVerified": "6079cc5538405debbbe6f61b7249ad9d12a44594",
   "widths": [
     320,
     390,
@@ -58,5 +58,20 @@
     "confirmed phone, hours and legal owner data",
     "completed legal information and final domain before indexed launch"
   ],
-  "indexing": "noindex,nofollow remains active"
+  "indexing": "noindex,nofollow remains active",
+  "finalPolishVerified": {
+    "catalogueSingular": "1 scheda da esplorare",
+    "heroControlsDesktop": {
+      "bottom": 869,
+      "viewportHeight": 900
+    },
+    "homeNavigationTitles": "25.6px desktop",
+    "homeSmallestViewport": {
+      "clientWidth": 305,
+      "scrollWidth": 305
+    },
+    "heroManualScene": "Bounce link /deposito-bagagli/ and pause state true",
+    "viewportOverride": "reset"
+  },
+  "vercel": "Both connected projects reported success for 6079cc5"
 }
