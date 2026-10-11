@@ -6,9 +6,9 @@ const materialGuides=educationalGuides.slice(3);
 for(const prefix of ['', '/en']){
  const html=await readFile(join('dist',prefix,'catalogo/index.html'),'utf8');
  const cards=[...html.matchAll(/class="product-card assortment-card"[^>]+href="([^"]+)"/g)];
- assert.equal(cards.length,25);for(const [,href]of cards)await access(join('dist',href,'index.html'));
+ assert.equal(cards.length,26);for(const [,href]of cards)await access(join('dist',href,'index.html'));
  const graph=JSON.parse(html.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
- const list=graph.find(x=>x['@type']==='ItemList');assert.equal(list.itemListElement.length,25);
+ const list=graph.find(x=>x['@type']==='ItemList');assert.equal(list.itemListElement.length,26);
  assert.ok(!graph.some(x=>['Product','Offer'].includes(x['@type'])));
  for(const route of ['sigari','pipe-e-tabacchi-da-pipa',...educationalGuides.map(s=>`schede/${s}`)]){
   const page=await readFile(join('dist',prefix,route,'index.html'),'utf8');assert.match(page,/id="age-confirmation"/);assert.match(page,/class="official-sources"/);assert.ok(!page.includes('"@type":"Offer"'));
@@ -29,7 +29,7 @@ for(const prefix of ['', '/en']){
   assert.match(page,/atlas-card-action/);assert.match(page,/information-guides/);
   for(const [,href]of page.matchAll(/href="(\/(?:en\/)?schede\/[^"#]+)"/g))await access(join('dist',href,'index.html'));
  }
- for(const route of ['cartoleria','giochi-e-giocattoli','deposito-bagagli']){const page=await readFile(join('dist',prefix,route,'index.html'),'utf8');assert.ok(!page.includes('id="age-confirmation"'));}
+ for(const route of ['cartoleria','giochi-e-giocattoli','deposito-bagagli','profumi-raptus']){const page=await readFile(join('dist',prefix,route,'index.html'),'utf8');assert.ok(!page.includes('id="age-confirmation"'));}
 }
 for(const slug of ['radica-non-semplice-radice','schiuma-mare-nome-minerale','nomi-botanici-denominazioni-tabacco']){
  const page=await readFile(join('dist','approfondimenti',slug,'index.html'),'utf8');
@@ -37,4 +37,4 @@ for(const slug of ['radica-non-semplice-radice','schiuma-mare-nome-minerale','no
  assert.match(page,/class="official-sources"/);assert.ok(!page.includes('"@type":"Offer"'));
  for(const [,href]of page.matchAll(/href="(\/(?:schede|pipe-e-tabacchi-da-pipa|sigari|approfondimenti)[^"#]*)"/g))await access(join('dist',href,'index.html'));
 }
-console.log(JSON.stringify({catalogueFamilies:25,languages:2,informationGuides:educationalGuides.length*2,newEducationalArticles:3,ageScope:'passed',sourceLinks:'passed',noTobaccoOffers:true}));
+console.log(JSON.stringify({catalogueFamilies:26,languages:2,informationGuides:educationalGuides.length*2,newEducationalArticles:3,ageScope:'passed',sourceLinks:'passed',noTobaccoOffers:true}));

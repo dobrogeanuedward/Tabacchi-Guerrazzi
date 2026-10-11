@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-11T16:38:28.305Z",
-  "sourceCommit": "552d551727d069c4f6b19926f0bb5ca0d6fd127d",
+  "generatedAt": "2026-10-11T17:04:20.667Z",
+  "sourceCommit": "1a4c41aa6881f048df4c69ce825bde970489992a",
   "scope": "Autorità",
   "basis": {
     "export": "dist",
@@ -21,12 +21,13 @@
       "src/pages/approfondimenti/index.astro",
       "src/pages/approfondimenti/[slug].astro",
       "src/data/tobacco-information.ts",
+      "docs/ricognizione/raptus-sources.json",
       "src/data/catalog-assortment.ts",
       "src/data/cigar-records.ts",
       "src/data/materials-education.ts"
     ],
     "dataSourceBytes": {
-      "pages": 29046,
+      "pages": 29863,
       "articles": 19022,
       "shop": 2540,
       "guide": 11789
@@ -37,26 +38,30 @@
       "OG asset availability is separate from launch-gated metadata emission.",
       "No missing-image claim is made merely because an optional illustration is absent.",
       "No new tobacco product/brand photography or marketing assets are planned.",
-      "Original shop/product photos and external brand marks require originals and verification."
+      "Original shop/product photos and external brand marks require originals and verification.",
+      "This is minimum asset/slot coverage, not design-quality, usability, accessibility or Awwwards approval. A covered route can still require visual iteration and browser review.",
+      "The generic fragrance-paper-study does not represent a Raptus bottle, package, label or authentic product photograph. Brand image references are not publication rights."
     ],
+    "minimumSlotCoverageOnly": true,
+    "designQualityApproval": false,
     "gitReference": "baseCommit/sourceCommit identifies HEAD at generation time. workingTreeModified reports uncommitted or untracked files; the export can include those working-tree changes."
   },
   "counts": {
-    "htmlRoutes": 210,
-    "sharedAssetKeys": 116,
+    "htmlRoutes": 214,
+    "sharedAssetKeys": 118,
     "languages": {
-      "it": 116,
-      "en": 94
+      "it": 118,
+      "en": 96
     },
     "templates": {
       "Home": 2,
       "NotFound": 1,
       "AdultInformationPage": 4,
-      "AssortmentPage": 12,
+      "AssortmentPage": 14,
       "Journal": 1,
       "ArticlePractical": 12,
       "ArticleInformation": 6,
-      "FamilyDetail": 50,
+      "FamilyDetail": 52,
       "Catalog": 2,
       "Page": 16,
       "Legal": 2,
@@ -69,23 +74,23 @@
     },
     "statuses": {
       "covered-with-provisional-assets": 78,
-      "covered": 132
+      "covered": 136
     },
     "priorities": {
       "high": 78,
       "low": 3,
-      "medium": 129
+      "medium": 133
     },
-    "publicImageFiles": 111,
-    "publicImageFilesApplied": 96,
+    "publicImageFiles": 113,
+    "publicImageFilesApplied": 98,
     "publicImageFilesPresentNotApplied": 15,
     "generalMaterials": 7,
     "brandUIFiles": 33,
     "cigarRecordThemeMissing": 0,
     "brokenAssetReferences": 0,
-    "visualPackBaseAssets": 6,
-    "visualPackFiles": 12,
-    "secondMandateReferenceTasks": 46,
+    "visualPackBaseAssets": 7,
+    "visualPackFiles": 14,
+    "secondMandateReferenceTasks": 50,
     "blockingAssetGaps": 0
   },
   "templateSlotMatrix": {
@@ -669,6 +674,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -703,6 +709,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -716,6 +723,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -778,6 +786,7 @@
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
         "/privacy/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -879,6 +888,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -908,6 +918,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -917,6 +928,7 @@
         "/en/idee-regalo/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/schede/bollettini-e-pagopa/",
         "/en/schede/marchi-trattati/",
         "/en/schede/nicotiana-tabacum-botanica/",
@@ -972,6 +984,7 @@
         "/idee-regalo/",
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
+        "/profumi-raptus/",
         "/schede/bollettini-e-pagopa/",
         "/schede/marchi-trattati/",
         "/schede/nicotiana-tabacum-botanica/",
@@ -1711,7 +1724,8 @@
         "/schede/tabacco-confezioni-avvertenze/",
         "/schede/tabacco-minori-documenti/",
         "/storia-e-serrande/"
-      ]
+      ],
+      "requiresOriginalsRoutes": []
     },
     {
       "id": "botanical-erica-study",
@@ -1766,7 +1780,8 @@
         "/pipe-e-tabacchi-da-pipa/",
         "/schede/radica-erica-arborea/"
       ],
-      "availableNotAppliedRoutes": []
+      "availableNotAppliedRoutes": [],
+      "requiresOriginalsRoutes": []
     },
     {
       "id": "mineral-sepiolite-study",
@@ -1818,7 +1833,8 @@
         "/en/schede/schiuma-di-mare-sepiolite/",
         "/schede/schiuma-di-mare-sepiolite/"
       ],
-      "availableNotAppliedRoutes": []
+      "availableNotAppliedRoutes": [],
+      "requiresOriginalsRoutes": []
     },
     {
       "id": "travel-bologna-map",
@@ -1898,7 +1914,8 @@
         "/schede/raggiungere-il-negozio/",
         "/servizi/",
         "/souvenir-bologna/"
-      ]
+      ],
+      "requiresOriginalsRoutes": []
     },
     {
       "id": "gifting-still-life",
@@ -1974,7 +1991,8 @@
         "/feste-e-compleanni/",
         "/giochi-e-giocattoli/",
         "/schede/scegliere-un-regalo/"
-      ]
+      ],
+      "requiresOriginalsRoutes": []
     },
     {
       "id": "stationery-paper-study",
@@ -1997,6 +2015,7 @@
         "/assortimento/penne/",
         "/assortimento/quaderni/",
         "/cartoleria/",
+        "/catalogo/",
         "/en/",
         "/en/assortimento/cartelline/",
         "/en/assortimento/colle/",
@@ -2004,7 +2023,10 @@
         "/en/assortimento/evidenziatori/",
         "/en/assortimento/penne/",
         "/en/assortimento/quaderni/",
-        "/en/cartoleria/"
+        "/en/cartoleria/",
+        "/en/catalogo/",
+        "/en/marchi-e-competenze/",
+        "/marchi-e-competenze/"
       ],
       "sharedAssetKeys": [
         "/",
@@ -2014,7 +2036,9 @@
         "/assortimento/evidenziatori/",
         "/assortimento/penne/",
         "/assortimento/quaderni/",
-        "/cartoleria/"
+        "/cartoleria/",
+        "/catalogo/",
+        "/marchi-e-competenze/"
       ],
       "status": "asset-present-see-route-application",
       "generationProvenance": {
@@ -2050,14 +2074,96 @@
         "/assortimento/evidenziatori/",
         "/assortimento/penne/",
         "/assortimento/quaderni/",
+        "/catalogo/",
         "/en/",
         "/en/assortimento/cartelline/",
         "/en/assortimento/colle/",
         "/en/assortimento/etichette/",
         "/en/assortimento/evidenziatori/",
         "/en/assortimento/penne/",
-        "/en/assortimento/quaderni/"
-      ]
+        "/en/assortimento/quaderni/",
+        "/en/catalogo/",
+        "/en/marchi-e-competenze/",
+        "/marchi-e-competenze/"
+      ],
+      "requiresOriginalsRoutes": []
+    },
+    {
+      "id": "fragrance-paper-study",
+      "kind": "neutral-editorial-illustration",
+      "role": "Generic amber glass and paper scent blotter composition for the fragrance category",
+      "referenceNeeds": [
+        "brand-proposal"
+      ],
+      "constraint": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+      "existingPaths": [
+        "/images/studies/fragrance-paper-study-768.webp",
+        "/images/studies/fragrance-paper-study.webp"
+      ],
+      "routes": [
+        "/",
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/idee-regalo/",
+        "/en/il-negozio/",
+        "/en/marchi-e-competenze/",
+        "/en/profumi-raptus/",
+        "/idee-regalo/",
+        "/il-negozio/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
+      ],
+      "sharedAssetKeys": [
+        "/",
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/idee-regalo/",
+        "/il-negozio/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
+      ],
+      "status": "asset-present-see-route-application",
+      "generationProvenance": {
+        "manifest": "docs/identita/visual-pack-v1-manifest.json",
+        "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-93d852dd-077b-46fc-b8e5-78133cf8dafa.png",
+        "paths": [
+          "/images/studies/fragrance-paper-study.webp",
+          "/images/studies/fragrance-paper-study-768.webp"
+        ],
+        "scope": "Generic editorial study of amber glass and paper scent blotters. Not a Raptus product, perfume bottle, packaging or authenticated stock photograph.",
+        "generatedAt": "2026-10-11"
+      },
+      "requiresAuthenticOriginals": false,
+      "isAuthenticProductPhoto": false,
+      "isAuthenticBrandLogo": false,
+      "appliedRoutes": [
+        "/",
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/il-negozio/",
+        "/en/profumi-raptus/",
+        "/il-negozio/",
+        "/profumi-raptus/"
+      ],
+      "sourceReferencedRoutes": [
+        "/assortimento/profumi-raptus/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/profumi-raptus/",
+        "/profumi-raptus/"
+      ],
+      "availableNotAppliedRoutes": [
+        "/en/idee-regalo/",
+        "/en/marchi-e-competenze/",
+        "/idee-regalo/",
+        "/marchi-e-competenze/"
+      ],
+      "requiresOriginalsRoutes": []
     },
     {
       "id": "real-shop-photos",
@@ -2192,7 +2298,8 @@
       "isAuthenticBrandLogo": null,
       "appliedRoutes": [],
       "sourceReferencedRoutes": [],
-      "availableNotAppliedRoutes": [
+      "availableNotAppliedRoutes": [],
+      "requiresOriginalsRoutes": [
         "/",
         "/accessori-telefono/",
         "/assortimento/adesivi/",
@@ -2276,7 +2383,7 @@
     {
       "id": "real-family-photos",
       "kind": "real-reference-replacement",
-      "role": "Dedicated authentic photographs of the 25 non-tobacco item families and any future approved individual products",
+      "role": "Dedicated authentic photographs of the 26 non-tobacco item families and any future approved individual products",
       "constraint": "Needs actual original product photographs, exact models/variants, rights and approval. Generic illustrations never count as authentic product photographs, package fidelity, stock or availability evidence.",
       "existingPaths": [],
       "routes": [
@@ -2304,6 +2411,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/catalogo/",
         "/en/assortimento/adesivi/",
@@ -2330,6 +2438,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/catalogo/"
       ],
@@ -2358,6 +2467,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/catalogo/"
       ],
@@ -2367,7 +2477,8 @@
       "isAuthenticBrandLogo": null,
       "appliedRoutes": [],
       "sourceReferencedRoutes": [],
-      "availableNotAppliedRoutes": [
+      "availableNotAppliedRoutes": [],
+      "requiresOriginalsRoutes": [
         "/assortimento/adesivi/",
         "/assortimento/auguri/",
         "/assortimento/buste/",
@@ -2392,6 +2503,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/catalogo/",
         "/en/assortimento/adesivi/",
@@ -2418,6 +2530,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/catalogo/"
       ]
@@ -2442,6 +2555,7 @@
         "/assortimento/lecca-lecca/",
         "/assortimento/penne/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/en/assortimento/adesivi/",
         "/en/assortimento/capelli/",
@@ -2456,6 +2570,7 @@
         "/en/assortimento/lecca-lecca/",
         "/en/assortimento/penne/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/marchi-e-competenze/",
         "/en/schede/marchi-trattati/",
@@ -2476,6 +2591,7 @@
         "/assortimento/lecca-lecca/",
         "/assortimento/penne/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/marchi-e-competenze/",
         "/schede/marchi-trattati/"
@@ -2486,7 +2602,8 @@
       "isAuthenticBrandLogo": null,
       "appliedRoutes": [],
       "sourceReferencedRoutes": [],
-      "availableNotAppliedRoutes": [
+      "availableNotAppliedRoutes": [],
+      "requiresOriginalsRoutes": [
         "/assortimento/adesivi/",
         "/assortimento/capelli/",
         "/assortimento/caramelle/",
@@ -2500,6 +2617,7 @@
         "/assortimento/lecca-lecca/",
         "/assortimento/penne/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/en/assortimento/adesivi/",
         "/en/assortimento/capelli/",
@@ -2514,11 +2632,57 @@
         "/en/assortimento/lecca-lecca/",
         "/en/assortimento/penne/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/marchi-e-competenze/",
         "/en/schede/marchi-trattati/",
         "/marchi-e-competenze/",
         "/schede/marchi-trattati/"
+      ]
+    },
+    {
+      "id": "authentic-raptus-assets",
+      "kind": "original-artwork",
+      "role": "Authentic Raptus fragrance/bottle/packaging photographs and original Raptus brand artwork for the second mandate",
+      "constraint": "The user confirms all 28 personal fragrances: Raptus I–XXIII and five 50 ml names. This does not establish daily quantities, each available format, SKU/EAN or image/logo rights. Obtain real product originals or written permission for official reference images and logo; never pass the generic fragrance-paper-study off as a Raptus bottle or packaging.",
+      "existingPaths": [],
+      "routes": [
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/idee-regalo/",
+        "/en/marchi-e-competenze/",
+        "/en/profumi-raptus/",
+        "/idee-regalo/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
+      ],
+      "sharedAssetKeys": [
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/idee-regalo/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
+      ],
+      "status": "requires-originals-and-verification",
+      "requiresAuthenticOriginals": true,
+      "isAuthenticProductPhoto": null,
+      "isAuthenticBrandLogo": null,
+      "appliedRoutes": [],
+      "sourceReferencedRoutes": [],
+      "availableNotAppliedRoutes": [],
+      "requiresOriginalsRoutes": [
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/idee-regalo/",
+        "/en/marchi-e-competenze/",
+        "/en/profumi-raptus/",
+        "/idee-regalo/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
       ]
     }
   ],
@@ -2574,6 +2738,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -2608,6 +2773,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -2621,6 +2787,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -2683,6 +2850,7 @@
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
         "/privacy/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -2790,6 +2958,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -2823,6 +2992,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -2836,6 +3006,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -2897,6 +3068,7 @@
         "/marchi-e-competenze/",
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -2958,7 +3130,8 @@
         "mineral-sepiolite-study",
         "travel-bologna-map",
         "gifting-still-life",
-        "stationery-paper-study"
+        "stationery-paper-study",
+        "fragrance-paper-study"
       ]
     },
     {
@@ -3122,6 +3295,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -3153,6 +3327,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -3179,6 +3354,28 @@
         "real-shop-photos",
         "real-family-photos"
       ]
+    },
+    {
+      "requestID": "raptus-personal-fragrances",
+      "request": "Raptus personal fragrance category and family in IT/EN, with all 28 names confirmed by the user and no invented SKU or quantities",
+      "routes": [
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/idee-regalo/",
+        "/en/marchi-e-competenze/",
+        "/en/profumi-raptus/",
+        "/idee-regalo/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
+      ],
+      "assetPlanIDs": [
+        "fragrance-paper-study",
+        "authentic-raptus-assets"
+      ],
+      "evidence": "docs/ricognizione/raptus-sources.json",
+      "limits": "Generic illustration is not an authentic Raptus bottle or packaging. Product originals and brand logo rights remain second-mandate dependencies."
     }
   ],
   "realPhotoReplacementRegister": {
@@ -3238,6 +3435,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -3272,6 +3470,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -3285,6 +3484,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -3347,6 +3547,7 @@
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
         "/privacy/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -3463,6 +3664,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -3497,6 +3699,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -3510,6 +3713,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -3572,6 +3776,7 @@
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
         "/privacy/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -3874,6 +4079,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/servizi/",
@@ -3887,6 +4093,7 @@
         "/marchi-e-competenze/",
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/servizi/",
@@ -3922,6 +4129,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/servizi/",
@@ -3935,6 +4143,7 @@
         "/marchi-e-competenze/",
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/servizi/",
@@ -3970,6 +4179,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/servizi/",
@@ -3983,6 +4193,7 @@
         "/marchi-e-competenze/",
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/servizi/",
@@ -4827,6 +5038,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/en/assortimento/adesivi/",
         "/en/assortimento/auguri/",
@@ -4852,8 +5064,10 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/schede/bollettini-e-pagopa/",
         "/en/schede/marchi-trattati/",
         "/en/schede/nicotiana-tabacum-botanica/",
@@ -4904,6 +5118,7 @@
         "/en/sigari/villa-zamorano/",
         "/en/sigari/zino-nicaragua/",
         "/pipe-e-tabacchi-da-pipa/",
+        "/profumi-raptus/",
         "/schede/bollettini-e-pagopa/",
         "/schede/marchi-trattati/",
         "/schede/nicotiana-tabacum-botanica/",
@@ -5008,6 +5223,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -5042,6 +5258,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -5055,6 +5272,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -5117,6 +5335,7 @@
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
         "/privacy/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -5346,6 +5565,7 @@
         "/assortimento/penne/",
         "/assortimento/piccoli-regali/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/cartoleria/",
         "/catalogo/",
@@ -5380,6 +5600,7 @@
         "/en/assortimento/penne/",
         "/en/assortimento/piccoli-regali/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/cartoleria/",
         "/en/catalogo/",
@@ -5393,6 +5614,7 @@
         "/en/marchi-e-competenze/",
         "/en/piccole-necessita/",
         "/en/pipe-e-tabacchi-da-pipa/",
+        "/en/profumi-raptus/",
         "/en/recensioni/",
         "/en/ricevitoria/",
         "/en/schede/bollettini-e-pagopa/",
@@ -5455,6 +5677,7 @@
         "/piccole-necessita/",
         "/pipe-e-tabacchi-da-pipa/",
         "/privacy/",
+        "/profumi-raptus/",
         "/recensioni/",
         "/ricevitoria/",
         "/schede/bollettini-e-pagopa/",
@@ -5733,6 +5956,38 @@
       "status": "applied"
     },
     {
+      "path": "/images/studies/fragrance-paper-study-768.webp",
+      "bytes": 81294,
+      "kind": "generated-educational-editorial-illustration",
+      "appliedRoutes": [
+        "/",
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/il-negozio/",
+        "/en/profumi-raptus/",
+        "/il-negozio/",
+        "/profumi-raptus/"
+      ],
+      "status": "applied"
+    },
+    {
+      "path": "/images/studies/fragrance-paper-study.webp",
+      "bytes": 352780,
+      "kind": "generated-educational-editorial-illustration",
+      "appliedRoutes": [
+        "/",
+        "/assortimento/profumi-raptus/",
+        "/en/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/profumi-raptus/",
+        "/profumi-raptus/"
+      ],
+      "status": "applied"
+    },
+    {
       "path": "/images/studies/gifting-still-life-768.webp",
       "bytes": 60492,
       "kind": "generated-educational-editorial-illustration",
@@ -5907,6 +6162,8 @@
             "/images/editorial/souvenir-desktop-800.webp",
             "/images/gifts.webp",
             "/images/services.webp",
+            "/images/studies/fragrance-paper-study.webp",
+            "/images/studies/fragrance-paper-study-768.webp",
             "/images/incontro.webp",
             "/images/editorial/cartoleria-desktop-800.webp",
             "/images/editorial/necessita-desktop-800.webp",
@@ -6117,6 +6374,26 @@
           ]
         },
         {
+          "path": "/images/studies/fragrance-paper-study.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
           "path": "/images/incontro.webp",
           "exists": true,
           "roles": [
@@ -6291,6 +6568,11 @@
           "id": "brand-proposal",
           "need": "Generic non-tobacco illustration; no reconstructed packaging, SKU or invented brand mark.",
           "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
         }
       ],
       "assetPlanIDs": [
@@ -6298,6 +6580,7 @@
         "travel-bologna-map",
         "gifting-still-life",
         "stationery-paper-study",
+        "fragrance-paper-study",
         "real-shop-photos"
       ],
       "indexing": {
@@ -15554,6 +15837,223 @@
       "notes": []
     },
     {
+      "route": "/assortimento/profumi-raptus/",
+      "lang": "it",
+      "sharedAssetKey": "/assortimento/profumi-raptus/",
+      "htmlFile": "dist/assortimento/profumi-raptus/index.html",
+      "template": "FamilyDetail",
+      "templateSource": "src/components/FamilyDetail.astro",
+      "title": "Profumi Raptus a Bologna | Guerrazzi",
+      "heading": "Profumi Raptus",
+      "theme": "profumo",
+      "expectedTheme": "profumo",
+      "palette": {
+        "identity": "#0645c0",
+        "paper": "#f8f8f3",
+        "ink": "#171a22",
+        "secondary": "#132f61",
+        "accent": "#0645c0",
+        "surface": "#f8f8f3"
+      },
+      "role": "Non-tobacco item-family explanation, not an individual SKU",
+      "dataReference": {
+        "source": "src/data/catalog-assortment.ts",
+        "id": "profumi-raptus",
+        "category": "profumi",
+        "mentionedBrands": "Raptus",
+        "existingIllustration": "/brand/ui/gift-ink.webp"
+      },
+      "requiredSlots": [
+        {
+          "slot": "header-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "footer-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "favicon",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/favicon.svg"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "hero",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp",
+            "/images/studies/fragrance-paper-study-768.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp"
+          ],
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "texture",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/materials/paper-768.webp"
+          ],
+          "notes": "Seven general material textures already exist. A texture used only in navigation chrome does not satisfy the content texture slot. CSS matching is static and includes possible responsive states."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "assets": [],
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "existingAssets": [
+        {
+          "path": "/brand/guerrazzi-logo.webp",
+          "exists": true,
+          "roles": [
+            "header-logo",
+            "footer-logo",
+            "main-image",
+            "brand-signature"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper-768.webp",
+          "exists": true,
+          "roles": [
+            "texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/brand/favicon.svg",
+          "exists": true,
+          "roles": [
+            "favicon"
+          ],
+          "detectedBy": [
+            "favicon-link"
+          ]
+        }
+      ],
+      "availableButNotApplied": [],
+      "assetGaps": [
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "priority": "medium",
+      "status": "covered",
+      "referenceNeeds": [
+        {
+          "id": "actual-non-tobacco-family-photos",
+          "need": "Dedicated original photos of real articles/variants; no SKU, stock or packaging inferred from AI.",
+          "blocking": "dedicated-family-photo"
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "verified-brand-originals",
+          "need": "Any optional brand logo requires an authentic original file, rights and confirmed relationship. Existing textual names are not proof of logo rights. No reconstructed or generated mark.",
+          "blocking": "brand-artwork"
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
+        }
+      ],
+      "assetPlanIDs": [
+        "fragrance-paper-study",
+        "real-family-photos",
+        "verified-brand-originals",
+        "authentic-raptus-assets"
+      ],
+      "indexing": {
+        "robots": "noindex,nofollow",
+        "ogEmitted": false
+      },
+      "notes": []
+    },
+    {
       "route": "/assortimento/quaderni/",
       "lang": "it",
       "sharedAssetKey": "/assortimento/quaderni/",
@@ -16185,6 +16685,16 @@
           ]
         },
         {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
           "path": "/images/editorial/cartoleria-desktop-800.webp",
           "exists": true,
           "roles": [
@@ -16323,11 +16833,29 @@
           "id": "actual-non-tobacco-family-photos",
           "need": "Dedicated original photos of real articles/variants; no SKU, stock or packaging inferred from AI.",
           "blocking": "dedicated-family-photo"
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic non-tobacco illustration; no reconstructed packaging, SKU or invented brand mark.",
+          "blocking": false
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
         }
       ],
       "assetPlanIDs": [
+        "fragrance-paper-study",
+        "stationery-paper-study",
         "real-shop-photos",
-        "real-family-photos"
+        "real-family-photos",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -17266,6 +17794,8 @@
             "/images/editorial/souvenir-desktop-800.webp",
             "/images/gifts.webp",
             "/images/services.webp",
+            "/images/studies/fragrance-paper-study.webp",
+            "/images/studies/fragrance-paper-study-768.webp",
             "/images/incontro.webp",
             "/images/editorial/cartoleria-desktop-800.webp",
             "/images/editorial/necessita-desktop-800.webp",
@@ -17476,6 +18006,26 @@
           ]
         },
         {
+          "path": "/images/studies/fragrance-paper-study.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
           "path": "/images/incontro.webp",
           "exists": true,
           "roles": [
@@ -17650,6 +18200,11 @@
           "id": "brand-proposal",
           "need": "Generic non-tobacco illustration; no reconstructed packaging, SKU or invented brand mark.",
           "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
         }
       ],
       "assetPlanIDs": [
@@ -17657,6 +18212,7 @@
         "travel-bologna-map",
         "gifting-still-life",
         "stationery-paper-study",
+        "fragrance-paper-study",
         "real-shop-photos"
       ],
       "indexing": {
@@ -23539,6 +24095,223 @@
       "notes": []
     },
     {
+      "route": "/en/assortimento/profumi-raptus/",
+      "lang": "en",
+      "sharedAssetKey": "/assortimento/profumi-raptus/",
+      "htmlFile": "dist/en/assortimento/profumi-raptus/index.html",
+      "template": "FamilyDetail",
+      "templateSource": "src/components/FamilyDetail.astro",
+      "title": "Raptus perfumes in Bologna | Guerrazzi",
+      "heading": "Raptus perfumes",
+      "theme": "profumo",
+      "expectedTheme": "profumo",
+      "palette": {
+        "identity": "#0645c0",
+        "paper": "#f8f8f3",
+        "ink": "#171a22",
+        "secondary": "#132f61",
+        "accent": "#0645c0",
+        "surface": "#f8f8f3"
+      },
+      "role": "Non-tobacco item-family explanation, not an individual SKU",
+      "dataReference": {
+        "source": "src/data/catalog-assortment.ts",
+        "id": "profumi-raptus",
+        "category": "profumi",
+        "mentionedBrands": "Raptus",
+        "existingIllustration": "/brand/ui/gift-ink.webp"
+      },
+      "requiredSlots": [
+        {
+          "slot": "header-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "footer-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "favicon",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/favicon.svg"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "hero",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp",
+            "/images/studies/fragrance-paper-study-768.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp"
+          ],
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "texture",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/materials/paper-768.webp"
+          ],
+          "notes": "Seven general material textures already exist. A texture used only in navigation chrome does not satisfy the content texture slot. CSS matching is static and includes possible responsive states."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "assets": [],
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "existingAssets": [
+        {
+          "path": "/brand/guerrazzi-logo.webp",
+          "exists": true,
+          "roles": [
+            "header-logo",
+            "footer-logo",
+            "main-image",
+            "brand-signature"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper-768.webp",
+          "exists": true,
+          "roles": [
+            "texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/brand/favicon.svg",
+          "exists": true,
+          "roles": [
+            "favicon"
+          ],
+          "detectedBy": [
+            "favicon-link"
+          ]
+        }
+      ],
+      "availableButNotApplied": [],
+      "assetGaps": [
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "priority": "medium",
+      "status": "covered",
+      "referenceNeeds": [
+        {
+          "id": "actual-non-tobacco-family-photos",
+          "need": "Dedicated original photos of real articles/variants; no SKU, stock or packaging inferred from AI.",
+          "blocking": "dedicated-family-photo"
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "verified-brand-originals",
+          "need": "Any optional brand logo requires an authentic original file, rights and confirmed relationship. Existing textual names are not proof of logo rights. No reconstructed or generated mark.",
+          "blocking": "brand-artwork"
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
+        }
+      ],
+      "assetPlanIDs": [
+        "fragrance-paper-study",
+        "real-family-photos",
+        "verified-brand-originals",
+        "authentic-raptus-assets"
+      ],
+      "indexing": {
+        "robots": "noindex,nofollow",
+        "ogEmitted": false
+      },
+      "notes": []
+    },
+    {
       "route": "/en/assortimento/quaderni/",
       "lang": "en",
       "sharedAssetKey": "/assortimento/quaderni/",
@@ -24170,6 +24943,16 @@
           ]
         },
         {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
           "path": "/images/editorial/cartoleria-desktop-800.webp",
           "exists": true,
           "roles": [
@@ -24308,11 +25091,29 @@
           "id": "actual-non-tobacco-family-photos",
           "need": "Dedicated original photos of real articles/variants; no SKU, stock or packaging inferred from AI.",
           "blocking": "dedicated-family-photo"
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic non-tobacco illustration; no reconstructed packaging, SKU or invented brand mark.",
+          "blocking": false
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
         }
       ],
       "assetPlanIDs": [
+        "fragrance-paper-study",
+        "stationery-paper-study",
         "real-shop-photos",
-        "real-family-photos"
+        "real-family-photos",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -25977,11 +26778,23 @@
           "id": "brand-proposal",
           "need": "Generic non-tobacco illustration; no claim of exact stock, gift-wrapping service or brand affiliation.",
           "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
         }
       ],
       "assetPlanIDs": [
         "gifting-still-life",
-        "real-shop-photos"
+        "fragrance-paper-study",
+        "real-shop-photos",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -26059,6 +26872,7 @@
             "/images/editorial/bottega-desktop.webp",
             "/images/gifts.webp",
             "/images/games.webp",
+            "/images/studies/fragrance-paper-study-768.webp",
             "/images/editorial/cartoleria-desktop-800.webp",
             "/images/editorial/souvenir-desktop-800.webp",
             "/images/editorial/necessita-desktop-800.webp",
@@ -26177,6 +26991,16 @@
           "exists": true,
           "roles": [
             "main-image"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
           ],
           "detectedBy": [
             "img-or-source"
@@ -26361,9 +27185,15 @@
           "id": "original-shop-photos",
           "need": "Recover actual shop/people files and multiple angles; compare with asset-replacement-register.json before replacement.",
           "blocking": "photographic-replacement"
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
         }
       ],
       "assetPlanIDs": [
+        "fragrance-paper-study",
         "real-shop-photos"
       ],
       "indexing": {
@@ -26573,14 +27403,32 @@
           "blocking": false
         },
         {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic non-tobacco illustration; no reconstructed packaging, SKU or invented brand mark.",
+          "blocking": false
+        },
+        {
           "id": "verified-brand-originals",
           "need": "Any optional brand logo requires an authentic original file, rights and confirmed relationship. Existing textual names are not proof of logo rights. No reconstructed or generated mark.",
           "blocking": "brand-artwork"
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
         }
       ],
       "assetPlanIDs": [
         "archive-folio",
-        "verified-brand-originals"
+        "fragrance-paper-study",
+        "stationery-paper-study",
+        "verified-brand-originals",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -27214,6 +28062,261 @@
       "assetPlanIDs": [
         "botanical-erica-study",
         "mineral-sepiolite-study"
+      ],
+      "indexing": {
+        "robots": "noindex,nofollow",
+        "ogEmitted": false
+      },
+      "notes": []
+    },
+    {
+      "route": "/en/profumi-raptus/",
+      "lang": "en",
+      "sharedAssetKey": "/profumi-raptus/",
+      "htmlFile": "dist/en/profumi-raptus/index.html",
+      "template": "AssortmentPage",
+      "templateSource": "src/components/Page.astro",
+      "title": "Raptus perfumes in Bologna, Via Guerrazzi 10/F | Guerrazzi",
+      "heading": "Raptus perfumes.",
+      "theme": "profumo",
+      "expectedTheme": "profumo",
+      "palette": {
+        "identity": "#0645c0",
+        "paper": "#f8f8f3",
+        "ink": "#171a22",
+        "secondary": "#132f61",
+        "accent": "#0645c0",
+        "surface": "#f8f8f3"
+      },
+      "role": "Non-tobacco category orientation with item families and useful links",
+      "dataReference": null,
+      "requiredSlots": [
+        {
+          "slot": "header-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "footer-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "favicon",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/favicon.svg"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "hero",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp",
+            "/images/studies/fragrance-paper-study-768.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp"
+          ],
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "texture",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/materials/paper.webp",
+            "/images/materials/paper-768.webp"
+          ],
+          "notes": "Seven general material textures already exist. A texture used only in navigation chrome does not satisfy the content texture slot. CSS matching is static and includes possible responsive states."
+        },
+        {
+          "slot": "brand-illustration",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/ui/portico-ink.webp",
+            "/brand/ui/portico-ink-480.webp",
+            "/brand/ui/portico-ink-1536.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "real-shop-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "assets": [],
+          "notes": "Original shop files and consistent angles must be recovered; provisional generated scenes do not count as real photos."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "assets": [],
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "existingAssets": [
+        {
+          "path": "/brand/guerrazzi-logo.webp",
+          "exists": true,
+          "roles": [
+            "header-logo",
+            "footer-logo",
+            "main-image",
+            "brand-signature"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/brand/ui/portico-ink.webp",
+          "exists": true,
+          "roles": [
+            "brand-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/brand/ui/portico-ink-480.webp",
+          "exists": true,
+          "roles": [
+            "brand-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/brand/ui/portico-ink-1536.webp",
+          "exists": true,
+          "roles": [
+            "brand-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture",
+            "texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper-768.webp",
+          "exists": true,
+          "roles": [
+            "texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/brand/favicon.svg",
+          "exists": true,
+          "roles": [
+            "favicon"
+          ],
+          "detectedBy": [
+            "favicon-link"
+          ]
+        }
+      ],
+      "availableButNotApplied": [],
+      "assetGaps": [
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "real-shop-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "notes": "Original shop files and consistent angles must be recovered; provisional generated scenes do not count as real photos."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "priority": "medium",
+      "status": "covered",
+      "referenceNeeds": [
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
+        }
+      ],
+      "assetPlanIDs": [
+        "fragrance-paper-study",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -39595,11 +40698,23 @@
           "id": "brand-proposal",
           "need": "Generic non-tobacco illustration; no claim of exact stock, gift-wrapping service or brand affiliation.",
           "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
         }
       ],
       "assetPlanIDs": [
         "gifting-still-life",
-        "real-shop-photos"
+        "fragrance-paper-study",
+        "real-shop-photos",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -39677,6 +40792,7 @@
             "/images/editorial/bottega-desktop.webp",
             "/images/gifts.webp",
             "/images/games.webp",
+            "/images/studies/fragrance-paper-study-768.webp",
             "/images/editorial/cartoleria-desktop-800.webp",
             "/images/editorial/souvenir-desktop-800.webp",
             "/images/editorial/necessita-desktop-800.webp",
@@ -39795,6 +40911,16 @@
           "exists": true,
           "roles": [
             "main-image"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
           ],
           "detectedBy": [
             "img-or-source"
@@ -39979,9 +41105,15 @@
           "id": "original-shop-photos",
           "need": "Recover actual shop/people files and multiple angles; compare with asset-replacement-register.json before replacement.",
           "blocking": "photographic-replacement"
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
         }
       ],
       "assetPlanIDs": [
+        "fragrance-paper-study",
         "real-shop-photos"
       ],
       "indexing": {
@@ -40191,14 +41323,32 @@
           "blocking": false
         },
         {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "brand-proposal",
+          "need": "Generic non-tobacco illustration; no reconstructed packaging, SKU or invented brand mark.",
+          "blocking": false
+        },
+        {
           "id": "verified-brand-originals",
           "need": "Any optional brand logo requires an authentic original file, rights and confirmed relationship. Existing textual names are not proof of logo rights. No reconstructed or generated mark.",
           "blocking": "brand-artwork"
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
         }
       ],
       "assetPlanIDs": [
         "archive-folio",
-        "verified-brand-originals"
+        "fragrance-paper-study",
+        "stationery-paper-study",
+        "verified-brand-originals",
+        "authentic-raptus-assets"
       ],
       "indexing": {
         "robots": "noindex,nofollow",
@@ -40939,6 +42089,261 @@
       "status": "covered",
       "referenceNeeds": [],
       "assetPlanIDs": [],
+      "indexing": {
+        "robots": "noindex,nofollow",
+        "ogEmitted": false
+      },
+      "notes": []
+    },
+    {
+      "route": "/profumi-raptus/",
+      "lang": "it",
+      "sharedAssetKey": "/profumi-raptus/",
+      "htmlFile": "dist/profumi-raptus/index.html",
+      "template": "AssortmentPage",
+      "templateSource": "src/components/Page.astro",
+      "title": "Profumi Raptus a Bologna, Via Guerrazzi 10/F | Guerrazzi",
+      "heading": "Profumi Raptus.",
+      "theme": "profumo",
+      "expectedTheme": "profumo",
+      "palette": {
+        "identity": "#0645c0",
+        "paper": "#f8f8f3",
+        "ink": "#171a22",
+        "secondary": "#132f61",
+        "accent": "#0645c0",
+        "surface": "#f8f8f3"
+      },
+      "role": "Non-tobacco category orientation with item families and useful links",
+      "dataReference": null,
+      "requiredSlots": [
+        {
+          "slot": "header-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "footer-logo",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/guerrazzi-logo.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "favicon",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/favicon.svg"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "hero",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp",
+            "/images/studies/fragrance-paper-study-768.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "assets": [
+            "/images/studies/fragrance-paper-study.webp"
+          ],
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "texture",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/images/materials/paper.webp",
+            "/images/materials/paper-768.webp"
+          ],
+          "notes": "Seven general material textures already exist. A texture used only in navigation chrome does not satisfy the content texture slot. CSS matching is static and includes possible responsive states."
+        },
+        {
+          "slot": "brand-illustration",
+          "required": true,
+          "status": "applied",
+          "assets": [
+            "/brand/ui/portico-ink.webp",
+            "/brand/ui/portico-ink-480.webp",
+            "/brand/ui/portico-ink-1536.webp"
+          ],
+          "notes": ""
+        },
+        {
+          "slot": "real-shop-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "assets": [],
+          "notes": "Original shop files and consistent angles must be recovered; provisional generated scenes do not count as real photos."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "assets": [],
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "existingAssets": [
+        {
+          "path": "/brand/guerrazzi-logo.webp",
+          "exists": true,
+          "roles": [
+            "header-logo",
+            "footer-logo",
+            "main-image",
+            "brand-signature"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/studies/fragrance-paper-study-768.webp",
+          "exists": true,
+          "roles": [
+            "neutral-editorial-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/brand/ui/portico-ink.webp",
+          "exists": true,
+          "roles": [
+            "brand-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/brand/ui/portico-ink-480.webp",
+          "exists": true,
+          "roles": [
+            "brand-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/brand/ui/portico-ink-1536.webp",
+          "exists": true,
+          "roles": [
+            "brand-illustration"
+          ],
+          "detectedBy": [
+            "img-or-source"
+          ]
+        },
+        {
+          "path": "/images/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper.webp",
+          "exists": true,
+          "roles": [
+            "chrome-texture",
+            "texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/images/materials/paper-768.webp",
+          "exists": true,
+          "roles": [
+            "texture"
+          ],
+          "detectedBy": [
+            "matching-css-selector"
+          ]
+        },
+        {
+          "path": "/brand/favicon.svg",
+          "exists": true,
+          "roles": [
+            "favicon"
+          ],
+          "detectedBy": [
+            "favicon-link"
+          ]
+        }
+      ],
+      "availableButNotApplied": [],
+      "assetGaps": [
+        {
+          "slot": "og",
+          "required": true,
+          "status": "available-not-emitted-launch-gated",
+          "notes": "Source asset and social output are separate. Noindex/domain configuration is not changed by this audit."
+        },
+        {
+          "slot": "real-shop-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "notes": "Original shop files and consistent angles must be recovered; provisional generated scenes do not count as real photos."
+        },
+        {
+          "slot": "real-family-photo",
+          "required": false,
+          "status": "requires-real-reference",
+          "notes": "Actual non-tobacco articles and variants must be photographed and approved."
+        }
+      ],
+      "priority": "medium",
+      "status": "covered",
+      "referenceNeeds": [
+        {
+          "id": "brand-proposal",
+          "need": "Generic material illustration only: not a Raptus bottle, fragrance, atomizer, label, pack, brand logo or photograph of authentic stock. Does not replace authentic product originals or establish permission to use official brand images.",
+          "blocking": false
+        },
+        {
+          "id": "authentic-raptus-assets",
+          "need": "Second mandate: actual Raptus bottle and pack photographs and authentic original logo with publication rights. All 28 personal fragrances are confirmed by the user; daily quantities, every format, SKU/EAN and rights are separate. Generic fragrance study is not a Raptus product.",
+          "blocking": "authentic-product-and-brand-originals"
+        }
+      ],
+      "assetPlanIDs": [
+        "fragrance-paper-study",
+        "authentic-raptus-assets"
+      ],
       "indexing": {
         "robots": "noindex,nofollow",
         "ogEmitted": false
@@ -52470,6 +53875,11 @@
     "verified-brand-originals": {
       "use": "Original files, verified rights and relationship are needed; do not invent marks or tobacco promotion."
     },
+    "authentic-raptus-assets": {
+      "source": "docs/ricognizione/raptus-sources.json",
+      "officialWebsite": "https://raptusparfum.it/",
+      "use": "Authentic Raptus fragrance, bottle and packaging photographs and original brand logo require supplied originals and publication rights. The official image URLs are references, not permission to republish. The fragrance study is generic amber glass and paper, not a Raptus bottle."
+    },
     "neutral-archive-treatment": {
       "sourceFiles": [
         "src/components/CigarRecord.astro",
@@ -52480,7 +53890,7 @@
   },
   "existingVisualPack": {
     "manifest": "docs/identita/visual-pack-v1-manifest.json",
-    "baseAssets": 6,
+    "baseAssets": 7,
     "entries": [
       {
         "id": "archive-folio",
@@ -52651,10 +54061,102 @@
           "/cartoleria/",
           "/en/cartoleria/"
         ]
+      },
+      {
+        "id": "fragrance-paper-study",
+        "paths": [
+          "/images/studies/fragrance-paper-study.webp",
+          "/images/studies/fragrance-paper-study-768.webp"
+        ],
+        "scope": "Generic editorial study of amber glass and paper scent blotters. Not a Raptus product, perfume bottle, packaging or authenticated stock photograph.",
+        "contentRole": "Generated educational/editorial illustration; not an authenticated specimen, commercial product photograph or shop photograph.",
+        "isGeographicMap": false,
+        "isAuthenticProductPhoto": false,
+        "isAuthenticBrandLogo": false,
+        "appliedRoutes": [
+          "/",
+          "/assortimento/profumi-raptus/",
+          "/catalogo/",
+          "/en/",
+          "/en/assortimento/profumi-raptus/",
+          "/en/catalogo/",
+          "/en/il-negozio/",
+          "/en/profumi-raptus/",
+          "/il-negozio/",
+          "/profumi-raptus/"
+        ]
       }
     ]
   },
-  "baseCommit": "552d551727d069c4f6b19926f0bb5ca0d6fd127d",
+  "raptusEvidence": {
+    "source": "docs/ricognizione/raptus-sources.json",
+    "checkedOn": "2026-10-11",
+    "userConfirmation": {
+      "recordedOn": "2026-10-11",
+      "statement": "Il negozio ha tutti i profumi Raptus.",
+      "provenance": "Conferma dell’utente riportata dal coordinatore della lavorazione nella conversazione corrente.",
+      "supports": "Presenza dei profumi Raptus e intera gamma dichiarata dal negozio.",
+      "doesNotSpecify": [
+        "Quantità disponibili per singola fragranza o formato.",
+        "Prezzi applicati dal negozio.",
+        "Singoli EAN, SKU, confezioni o fotografie delle confezioni in negozio.",
+        "Estensione automatica della conferma a diffusori, spray per ambienti, creme o spray corpo e capelli."
+      ]
+    },
+    "verifiedOverview": {
+      "brand": "Raptus Parfum",
+      "personFragranceLines": [
+        {
+          "officialLabel": "Linea 20-100ml",
+          "denominationCount": 23,
+          "denominations": [
+            "Raptus I",
+            "Raptus II",
+            "Raptus III",
+            "Raptus IV",
+            "Raptus V",
+            "Raptus VI",
+            "Raptus VII",
+            "Raptus VIII",
+            "Raptus IX",
+            "Raptus X",
+            "Raptus XI",
+            "Raptus XII",
+            "Raptus XIII",
+            "Raptus XIV",
+            "Raptus XV",
+            "Raptus XVI",
+            "Raptus XVII",
+            "Raptus XVIII",
+            "Raptus XIX",
+            "Raptus XX",
+            "Raptus XXI",
+            "Raptus XXII",
+            "Raptus XXIII"
+          ],
+          "formatCaution": "20 ml e 100 ml identificano la linea, non due formati garantiti per ogni denominazione. Raptus X è indicato solo 100 ml; Raptus XXI è indicato 20 ml. Raptus XXIII indica 20 ml e 100 ml."
+        },
+        {
+          "officialLabel": "Linea 50ml",
+          "denominationCount": 5,
+          "denominations": [
+            "Alkmene",
+            "Chaos",
+            "Mercvrivs",
+            "Nemesi",
+            "Neptvnvs"
+          ],
+          "format": "50 ml"
+        }
+      ],
+      "recommendedOverviewIt": "Profumi Raptus per persona, nelle linee da 20/100 ml e 50 ml. La singola fragranza e il formato si verificano al banco.",
+      "recommendedOverviewEn": "Raptus personal fragrances, in the 20/100 ml and 50 ml lines. Check the individual fragrance and size in store."
+    },
+    "officialImageRights": "Il footer del sito ufficiale vieta la diffusione di immagini, grafica e testi senza autorizzazione scritta. Per questa lavorazione usare una nuova immagine editoriale generica, senza ricostruire confezioni o etichette Raptus.",
+    "authenticAssetsStatus": "second-mandate-requires-originals-and-publication-rights",
+    "genericStudyIsRaptusProduct": false
+  },
+  "baseCommit": "1a4c41aa6881f048df4c69ce825bde970489992a",
   "workingTreeModified": true,
   "secondMandate": {
     "status": "reference-dependent-not-complete",
@@ -53108,6 +54610,7 @@
           "/assortimento/penne/",
           "/assortimento/piccoli-regali/",
           "/assortimento/power-bank/",
+          "/assortimento/profumi-raptus/",
           "/assortimento/quaderni/",
           "/cartoleria/",
           "/catalogo/",
@@ -53142,6 +54645,7 @@
           "/en/assortimento/penne/",
           "/en/assortimento/piccoli-regali/",
           "/en/assortimento/power-bank/",
+          "/en/assortimento/profumi-raptus/",
           "/en/assortimento/quaderni/",
           "/en/cartoleria/",
           "/en/catalogo/",
@@ -53155,6 +54659,7 @@
           "/en/marchi-e-competenze/",
           "/en/piccole-necessita/",
           "/en/pipe-e-tabacchi-da-pipa/",
+          "/en/profumi-raptus/",
           "/en/recensioni/",
           "/en/ricevitoria/",
           "/en/schede/bollettini-e-pagopa/",
@@ -53217,6 +54722,7 @@
           "/piccole-necessita/",
           "/pipe-e-tabacchi-da-pipa/",
           "/privacy/",
+          "/profumi-raptus/",
           "/recensioni/",
           "/ricevitoria/",
           "/schede/bollettini-e-pagopa/",
@@ -53769,6 +55275,91 @@
           "/en/catalogo/"
         ],
         "requiresOriginalsAndVerification": true
+      },
+      {
+        "id": "family-profumi-raptus",
+        "bucket": "non-tobacco-family",
+        "phase": 2,
+        "priority": "alta",
+        "status": "originali-autentici-e-diritti-da-acquisire",
+        "requiredOriginals": "Foto autentiche e autorizzate delle fragranze e delle confezioni realmente presenti, con nome e formato leggibili. L’utente conferma tutte le 28 denominazioni dei profumi per persona, senza attestare quantità o ogni formato. Lo studio generico attuale non riproduce un flacone Raptus. Acquisire gli originali e i diritti d’uso prima di sostituirlo; non generare prodotti, etichette o loghi del marchio.",
+        "assetPaths": [],
+        "affectedRoutes": [
+          "/assortimento/profumi-raptus/",
+          "/catalogo/",
+          "/en/assortimento/profumi-raptus/",
+          "/en/catalogo/"
+        ],
+        "requiresOriginalsAndVerification": true
+      },
+      {
+        "id": "raptus-authentic-fragrances",
+        "bucket": "authentic-brand-and-product",
+        "phase": 2,
+        "priority": "alta",
+        "status": "originali-autentici-e-diritti-da-acquisire",
+        "requiredOriginals": "Foto autentiche dei profumi Raptus per persona: 23 denominazioni I–XXIII e Alkmene, Chaos, Mercvrivs, Nemesi e Neptvnvs della linea 50 ml. La presenza dell’intera gamma è confermata dall’utente; quantità, formati effettivamente presenti e SKU/EAN restano distinti. Usare foto reali autorizzate o asset ufficiali con permesso di pubblicazione; nessuna ricostruzione generata di flaconi o etichette.",
+        "assetPaths": [],
+        "affectedRoutes": [
+          "/assortimento/profumi-raptus/",
+          "/catalogo/",
+          "/en/assortimento/profumi-raptus/",
+          "/en/catalogo/",
+          "/en/idee-regalo/",
+          "/en/marchi-e-competenze/",
+          "/en/profumi-raptus/",
+          "/idee-regalo/",
+          "/marchi-e-competenze/",
+          "/profumi-raptus/"
+        ],
+        "requiresOriginalsAndVerification": true,
+        "reference": "docs/ricognizione/raptus-sources.json"
+      },
+      {
+        "id": "raptus-authentic-packaging",
+        "bucket": "authentic-brand-and-product",
+        "phase": 2,
+        "priority": "alta",
+        "status": "confezioni-reali-e-diritti-da-verificare",
+        "requiredOriginals": "Riprese originali delle confezioni realmente presenti, fronte/retro e dettaglio leggibile di nome e formato. Non dedurre due formati per tutte le denominazioni della linea 20–100 ml. I riferimenti immagine del sito ufficiale non sono autorizzazione alla ripubblicazione. Lo studio fragrance-paper-study è generico e non raffigura un flacone o una confezione Raptus.",
+        "assetPaths": [],
+        "affectedRoutes": [
+          "/assortimento/profumi-raptus/",
+          "/catalogo/",
+          "/en/assortimento/profumi-raptus/",
+          "/en/catalogo/",
+          "/en/idee-regalo/",
+          "/en/marchi-e-competenze/",
+          "/en/profumi-raptus/",
+          "/idee-regalo/",
+          "/marchi-e-competenze/",
+          "/profumi-raptus/"
+        ],
+        "requiresOriginalsAndVerification": true,
+        "reference": "docs/ricognizione/raptus-sources.json"
+      },
+      {
+        "id": "raptus-authentic-logo",
+        "bucket": "authentic-brand-and-product",
+        "phase": 2,
+        "priority": "media",
+        "status": "logo-originale-e-autorizzazione-da-acquisire",
+        "requiredOriginals": "File originale del logo Raptus fornito o approvato dal marchio, con condizioni d’uso e diritto di pubblicazione verificati. Non rigenerare, ricalcare o imitare il marchio con ImageGen. Il logo definitivo Guerrazzi resta invariato.",
+        "assetPaths": [],
+        "affectedRoutes": [
+          "/assortimento/profumi-raptus/",
+          "/catalogo/",
+          "/en/assortimento/profumi-raptus/",
+          "/en/catalogo/",
+          "/en/idee-regalo/",
+          "/en/marchi-e-competenze/",
+          "/en/profumi-raptus/",
+          "/idee-regalo/",
+          "/marchi-e-competenze/",
+          "/profumi-raptus/"
+        ],
+        "requiresOriginalsAndVerification": true,
+        "reference": "docs/ricognizione/raptus-sources.json"
       }
     ],
     "authenticBrandAssets": {
@@ -53789,6 +55380,7 @@
         "/assortimento/lecca-lecca/",
         "/assortimento/penne/",
         "/assortimento/power-bank/",
+        "/assortimento/profumi-raptus/",
         "/assortimento/quaderni/",
         "/en/assortimento/adesivi/",
         "/en/assortimento/capelli/",
@@ -53803,16 +55395,34 @@
         "/en/assortimento/lecca-lecca/",
         "/en/assortimento/penne/",
         "/en/assortimento/power-bank/",
+        "/en/assortimento/profumi-raptus/",
         "/en/assortimento/quaderni/",
         "/en/marchi-e-competenze/",
         "/en/schede/marchi-trattati/",
         "/marchi-e-competenze/",
         "/schede/marchi-trattati/"
       ]
+    },
+    "authenticRaptusAssets": {
+      "planID": "authentic-raptus-assets",
+      "status": "requires-authentic-originals-and-publication-rights",
+      "source": "docs/ricognizione/raptus-sources.json",
+      "affectedRoutes": [
+        "/assortimento/profumi-raptus/",
+        "/catalogo/",
+        "/en/assortimento/profumi-raptus/",
+        "/en/catalogo/",
+        "/en/idee-regalo/",
+        "/en/marchi-e-competenze/",
+        "/en/profumi-raptus/",
+        "/idee-regalo/",
+        "/marchi-e-competenze/",
+        "/profumi-raptus/"
+      ]
     }
   },
   "dataCounts": {
-    "nonTobaccoFamilies": 25,
+    "nonTobaccoFamilies": 26,
     "neutralCigarRecords": 34,
     "scientificSourceRecords": 8
   }

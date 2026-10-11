@@ -630,6 +630,54 @@
         "Scheda famiglia IT/EN"
       ],
       "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+    },
+    {
+      "id": "profumi-raptus",
+      "category": "profumi",
+      "label": "Profumi Raptus",
+      "status": "originali-autentici-e-diritti-da-acquisire",
+      "phase": 2,
+      "priority": "alta",
+      "currentImage": "/images/studies/fragrance-paper-study.webp",
+      "reference": "docs/ricognizione/raptus-sources.json",
+      "usedIn": [
+        "Profumi Raptus IT/EN",
+        "Catalogo IT/EN",
+        "Scheda famiglia IT/EN"
+      ],
+      "requiredShoot": "Foto autentiche e autorizzate delle fragranze e delle confezioni realmente presenti, con nome e formato leggibili. L’utente conferma tutte le 28 denominazioni dei profumi per persona, senza attestare quantità o ogni formato. Lo studio generico attuale non riproduce un flacone Raptus. Acquisire gli originali e i diritti d’uso prima di sostituirlo; non generare prodotti, etichette o loghi del marchio."
+    }
+  ],
+  "brandSpecificAssets": [
+    {
+      "id": "raptus-authentic-fragrances",
+      "brand": "Raptus Parfum",
+      "assetPlanID": "authentic-raptus-assets",
+      "reference": "docs/ricognizione/raptus-sources.json",
+      "phase": 2,
+      "priority": "alta",
+      "status": "originali-autentici-e-diritti-da-acquisire",
+      "requiredOriginals": "Foto autentiche dei profumi Raptus per persona: 23 denominazioni I–XXIII e Alkmene, Chaos, Mercvrivs, Nemesi e Neptvnvs della linea 50 ml. La presenza dell’intera gamma è confermata dall’utente; quantità, formati effettivamente presenti e SKU/EAN restano distinti. Usare foto reali autorizzate o asset ufficiali con permesso di pubblicazione; nessuna ricostruzione generata di flaconi o etichette."
+    },
+    {
+      "id": "raptus-authentic-packaging",
+      "brand": "Raptus Parfum",
+      "assetPlanID": "authentic-raptus-assets",
+      "reference": "docs/ricognizione/raptus-sources.json",
+      "phase": 2,
+      "priority": "alta",
+      "status": "confezioni-reali-e-diritti-da-verificare",
+      "requiredOriginals": "Riprese originali delle confezioni realmente presenti, fronte/retro e dettaglio leggibile di nome e formato. Non dedurre due formati per tutte le denominazioni della linea 20–100 ml. I riferimenti immagine del sito ufficiale non sono autorizzazione alla ripubblicazione. Lo studio fragrance-paper-study è generico e non raffigura un flacone o una confezione Raptus."
+    },
+    {
+      "id": "raptus-authentic-logo",
+      "brand": "Raptus Parfum",
+      "assetPlanID": "authentic-raptus-assets",
+      "reference": "docs/ricognizione/raptus-sources.json",
+      "phase": 2,
+      "priority": "media",
+      "status": "logo-originale-e-autorizzazione-da-acquisire",
+      "requiredOriginals": "File originale del logo Raptus fornito o approvato dal marchio, con condizioni d’uso e diritto di pubblicazione verificati. Non rigenerare, ricalcare o imitare il marchio con ImageGen. Il logo definitivo Guerrazzi resta invariato."
     }
   ],
   "nextShootChecklist": [
@@ -637,7 +685,7 @@
     "Interno: panoramica da ingresso, centro e retro; arredi riconoscibili, illuminazione reale.",
     "Banco e mani di Angela; gesti dei servizi realmente erogati.",
     "Bagagli: arrivo, consegna, ritiro; non mostrare dati di prenotazioni o spazi riservati.",
-    "25 famiglie catalogo: insieme e dettaglio degli articoli presenti, colori e marchi reali.",
+    "26 famiglie catalogo: insieme e dettaglio degli articoli presenti, colori e marchi reali; per i profumi Raptus acquisire originali autentici e diritti delle immagini e del logo.",
     "Versioni landscape, portrait e dettagli con spazio per copy; originali ad alta risoluzione."
   ]
 }

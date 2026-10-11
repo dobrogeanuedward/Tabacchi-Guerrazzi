@@ -89,6 +89,21 @@
       "preview": "/images/studies/stationery-paper-study-768.webp",
       "scope": "Editorial illustration. Not an authenticated specimen, stock product or photograph of the shop.",
       "bytes": 269428
+    },
+    {
+      "id": "fragrance-paper-study",
+      "prompt": "Create a refined editorial art plate for an independent Italian neighbourhood shop website, about the material language of perfumery: amber glass and paper scent blotters. Landscape 1536x1024, opaque warm ivory uncoated paper background. Use the attached image ONLY for its tactile fine intaglio stipple / coloured pencil / restrained gouache visual language, not its objects or layout. A new composition, completely different viewpoint: frontal close view, a tall simple EMPTY amber glass rectangular prism cropped partly at the far left edge, with delicate transparent overlap and a broad cobalt-blue geometric shadow across the lower left. At lower right, three long narrow ivory paper scent blotters form a small open fan, one single pale terracotta strip crossing them. A slender fine cobalt arc connects the composition without enclosing it. Large serene negative space in the upper-right 45 percent. Precise elegant geometry, attractive warm glass refraction, fine paper fibres, almost architectural balance, polished contemporary art direction, clean and luminous. No perfume bottle, no cap, no atomizer, no branded product, no product packaging, no plant, no notebook, no suitcase, no candle, no text, no labels, no numbers, no logo, no watermark. This is a beautiful generic editorial material illustration, not a photograph or an illustration of an actual product. Crisp purposeful shapes and subtle tactile detail, no glossy CGI, no luxury black background, no surreal or horror forms. Objects must remain visually distinct and physically plausible. Match the website's existing ivory, deep cobalt and restrained terracotta palette.",
+      "refs": [
+        "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/work/tabacchi-guerrazzi/public/brand/ui/stationery-ink.webp"
+      ],
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-93d852dd-077b-46fc-b8e5-78133cf8dafa.png",
+      "tool": "image_gen.imagegen",
+      "generatedAt": "2026-10-11",
+      "web": "/images/studies/fragrance-paper-study.webp",
+      "preview": "/images/studies/fragrance-paper-study-768.webp",
+      "scope": "Generic editorial study of amber glass and paper scent blotters. Not a Raptus product, perfume bottle, packaging or authenticated stock photograph.",
+      "bytes": 352780
     }
-  ]
+  ],
+  "revision": "1.1"
 }

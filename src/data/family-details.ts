@@ -1,4 +1,16 @@
-export const familyDetails:Record<string,{checks:[string[],string[]];question:[string,string];answer:[string,string]}>= {
+export const familyDetails:Record<string,{checks:[string[],string[]];question:[string,string];answer:[string,string];sources?:{label:[string,string];url:string}[]}>= {
+  "profumi-raptus": {
+    "checks": [
+      ["Nome completo della fragranza", "Formato indicato", "Confezione e istruzioni"],
+      ["Full fragrance name", "Labelled size", "Packaging and instructions"]
+    ],
+    "question": ["Quali linee Raptus trovo da Guerrazzi?", "Which Raptus lines can I find at Guerrazzi?"],
+    "answer": [
+      "Il negozio conferma l’intera gamma di profumi Raptus per persona. Il catalogo del marchio presenta 23 denominazioni nella linea 20–100 ml e cinque fragranze da 50 ml. I formati dipendono dalla singola fragranza: indica il nome completo e verifica la confezione che cerchi.",
+      "The shop confirms the full Raptus personal fragrance range. The brand’s catalogue lists 23 names in the 20–100 ml line and five fragrances in the 50 ml line. Sizes depend on the individual fragrance: give its full name and check the pack you need."
+    ],
+    "sources": [{"label": ["Raptus Parfum · catalogo ufficiale del marchio", "Raptus Parfum · official brand catalogue"], "url": "https://raptusparfum.it/"}]
+  },
   "quaderni": {
     "checks": [
       [

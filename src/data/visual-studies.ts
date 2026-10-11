@@ -6,7 +6,8 @@ export type VisualStudyId =
   | 'mineral-sepiolite-study'
   | 'travel-bologna-map'
   | 'gifting-still-life'
-  | 'stationery-paper-study';
+  | 'stationery-paper-study'
+  | 'fragrance-paper-study';
 
 type LocalizedStudyText = Record<VisualStudyLang, string>;
 
@@ -15,7 +16,7 @@ export interface VisualStudy {
   title: LocalizedStudyText;
   alt: LocalizedStudyText;
   caption: LocalizedStudyText;
-  theme: 'archive' | 'botanical' | 'mineral' | 'travel' | 'gifting' | 'stationery';
+  theme: 'archive' | 'botanical' | 'mineral' | 'travel' | 'gifting' | 'stationery' | 'fragrance';
   path: string;
   preview: string;
   decorative: boolean;
@@ -31,6 +32,21 @@ const files = (id: VisualStudyId) => ({
 });
 
 export const visualStudies: Record<VisualStudyId, VisualStudy> = {
+  'fragrance-paper-study': {
+    ...files('fragrance-paper-study'),
+    index: '07',
+    title: { it: 'Profumeria', en: 'Perfumery' },
+    alt: {
+      it: 'Illustrazione editoriale di vetro ambrato e strisce di carta per profumeria.',
+      en: 'Editorial illustration of amber glass and paper scent blotters.',
+    },
+    caption: {
+      it: 'Vetro e carta in uno studio sulla profumeria. L’illustrazione non raffigura flaconi o confezioni Raptus.',
+      en: 'Glass and paper in a study of perfumery. The illustration does not depict Raptus bottles or packaging.',
+    },
+    theme: 'fragrance',
+    decorative: false,
+  },
   'archive-folio': {
     ...files('archive-folio'),
     index: '01',

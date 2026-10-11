@@ -22,7 +22,7 @@ Il sito è già pubblico su `https://tabacchiguerrazzi.vercel.app`; è disponibi
 
 L’indicizzazione resta intenzionalmente disabilitata: l’export corrente contiene `noindex,nofollow`, `robots.txt` con `Disallow: /` e sitemap vuota. Non modificare il gate di lancio durante la revisione UI. `PUBLIC_SITE_URL` e `PUBLIC_LAUNCH_READY=true` sono prerequisiti tecnici da configurare solo dopo la conferma del dominio e il completamento dei dati del negozio e delle informative. La pubblicazione non dimostra indicizzazione o posizionamento.
 
-Il catalogo mostra 25 famiglie di articoli documentate dalle fotografie, senza simulare SKU, prezzi o stock. Ricerca e filtri funzionano anche nell’export statico. Recensioni e marchi vengono aggiunti solo da fonti approvate.
+Il catalogo mostra 26 famiglie: 25 documentate dal rilievo fotografico e la gamma di profumi Raptus confermata dall’utente. Non simula SKU, prezzi o stock. Ricerca e filtri funzionano anche nell’export statico. Recensioni e marchi vengono aggiunti solo da fonti approvate.
 
 ## Catalogo riservato
 
@@ -41,7 +41,7 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 
 - 21 pagine principali in italiano e inglese, comprese le nove nuove categorie.
 - 14 guide in italiano e inglese: sei percorsi pratici, tre schede normative e cinque guide su materiali, storia, botanica e lessico.
-- 25 schede di famiglie non regolamentate e 34 voci informative sui sigari, ciascuna IT/EN.
+- 26 schede di famiglie non regolamentate e 34 voci informative sui sigari, ciascuna IT/EN.
 - 18 articoli italiani in sette cluster: Servizi pratici, Idee regalo, Giochi e giocattoli, Negozio e quartiere, Tabacco: informazioni e norme, Materiali e storia, Lessico e fonti.
 - Conferma 18+ nelle sezioni pertinenti, con sessionStorage e uscita alla home; nessuna identità raccolta.
 - Area tabacco esclusivamente informativa, con fonti pubbliche: nessuna offerta, invito al consumo o ordine.
@@ -49,13 +49,15 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 - Deposito bagagli Bounce: scheda ufficiale Palazzo Ercolani, stesso indirizzo del negozio; prezzi e orari restano sulla piattaforma.
 - Ricognizione di 21 foto uniche, 134 osservazioni con marche e livelli di certezza in `docs/ricognizione/`.
 
-L’ultima build disponibile contiene 210 file HTML: 209 pagine con `index.html` più la 404. Il totale comprende le versioni IT/EN, il diario, privacy e cookie; non rappresenta 210 contenuti editoriali distinti. I conteggi e le verifiche sono descritti in `docs/ricognizione/verifica-implementazione.md`.
+L’export con la categoria Raptus contiene 214 file HTML: 213 pagine con `index.html` più la 404. Il totale comprende le versioni IT/EN, il diario, privacy e cookie; non rappresenta 214 contenuti editoriali distinti. La mappa aggiornata delle route è in `docs/identita/asset-coverage-map.json`.
 
 I dati dell’attività sono centralizzati in `src/data/shop.ts`; categorie in `src/data/assortment.ts`. Telefono, email, ragione sociale, P. IVA, orari ufficiali e recensioni approvate attendono conferma. Anche l’operatività puntuale di pagamenti e ricariche richiede conferma del negozio. Marchi riconoscibili sono documentati nel rilievo fotografico, non dedotti dalle immagini AI. Le immagini editoriali non rappresentano disponibilità di prodotti; le foto originali degli interni restano riferimenti e i relativi file devono ancora essere recuperati per le sostituzioni.
 
 Prompt completi, fonti e selezione delle immagini sono in `docs/identita/`. Gli asset consumati sono in `public/brand/ui/`, `public/images/editorial/`, `public/images/hero/` e `public/images/materials/`. Lo script `scripts/prepare-editorial-assets.mjs` genera le varianti WebP e le dimensioni per il componente `EditorialPhoto`; selezione delle fotografie verticali/orizzontali tramite `picture/source`, non solo ritagli CSS.
 
-Il primo pack di sei tavole editoriali è in `public/images/studies/`: archivio, Erica, materia minerale, viaggio/portici, regali e carta. Il manifest `docs/identita/visual-pack-v1-manifest.json` conserva prompt integrali, riferimenti e originali; `VisualStudy.astro` applica immagini responsive e didascalie IT/EN. Non sono fotografie di articoli, esemplari autenticati o interni. Le 68 schede archivio ereditano il tema cedro; guide, famiglie e diario ricevono i materiali del proprio cluster. La mappa `docs/identita/asset-coverage-map.json` e il CSV omonimo coprono tutte le 210 route e distinguono applicazioni, lacune e riferimenti autentici richiesti. Rigenerare con `node scripts/build-asset-audit.mjs` dopo `npm run build:static`.
+Il primo pack di sette tavole editoriali è in `public/images/studies/`: archivio, Erica, materia minerale, viaggio/portici, regali, carta e profumeria. Il manifest `docs/identita/visual-pack-v1-manifest.json` conserva prompt integrali, riferimenti e originali; `VisualStudy.astro` applica immagini responsive e didascalie IT/EN. Non sono fotografie di articoli, esemplari autenticati o interni. Le 68 schede archivio ereditano il tema cedro; guide, famiglie e diario ricevono i materiali del proprio cluster. La mappa `docs/identita/asset-coverage-map.json` e il CSV omonimo coprono tutte le 214 route e distinguono applicazioni, lacune e riferimenti autentici richiesti. Rigenerare con `node scripts/build-asset-audit.mjs` dopo `npm run build:static`.
+
+Raptus: assortimento confermato dall’utente; due linee e denominazioni verificate nel sito del marchio. Provenienza in `docs/ricognizione/raptus-sources.json`. La tavola ambrata è generica: le fotografie originali dei flaconi e il logo del marchio attendono asset autorizzati, come registrato nella mappa.
 
 ## R2 DOGO
 

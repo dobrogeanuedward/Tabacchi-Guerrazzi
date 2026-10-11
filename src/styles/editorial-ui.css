@@ -102,3 +102,9 @@
 .home-essentials .eyebrow{font:400 .95rem/1.5 var(--sans);letter-spacing:0;color:#42516a;margin-bottom:12px}
 .home-essentials strong{display:block;font:400 1.6rem/1.22 var(--display);letter-spacing:-.025em;color:var(--blue)}
 @media(max-width:680px){.home-essentials{gap:14px}.home-essentials a{padding:18px}.home-essentials strong{font-size:1.45rem}}
+/* Perfumery: amber glass, ivory paper and the existing cobalt identity. */
+main h1[tabindex="-1"]:focus{outline:none}
+.theme-profumo{--accent:#805020;--surface:#f3e6d0}
+.theme-profumo .page-hero,.theme-profumo .study-page-hero{background-image:linear-gradient(#fbf7eeed,#fbf7eeed),url('/images/materials/paper-768.webp');background-size:auto,900px}
+.theme-profumo .study-page-hero{padding:42px;outline:1px solid #d9c9ad}
+@media(max-width:680px){.theme-profumo .study-page-hero{padding:24px}}

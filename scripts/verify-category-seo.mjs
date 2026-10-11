@@ -1,7 +1,7 @@
 import {readFile,access} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {join} from 'node:path';
-const categories=['cartoleria','souvenir-bologna','accessori-telefono','feste-e-compleanni','piccole-necessita','dolciumi','accendini-e-accessori','ricevitoria','deposito-bagagli'];
+const categories=['cartoleria','souvenir-bologna','accessori-telefono','feste-e-compleanni','piccole-necessita','dolciumi','accendini-e-accessori','ricevitoria','deposito-bagagli','profumi-raptus'];
 const guides=['ricariche-telefoniche','bollettini-e-pagopa','scegliere-un-regalo','scegliere-un-gioco','raggiungere-il-negozio','marchi-trattati'];
 let contextualLinks=0,guideLinks=0;
 for(const prefix of ['', '/en']){
@@ -10,7 +10,7 @@ for(const prefix of ['', '/en']){
   assert.match(html,/class="category-answer"/);assert.equal((html.match(/<h1[\s>]/g)||[]).length,1);
   const section=html.match(/<section class="category-pathways"[^>]*>([\s\S]*?)<\/section>/)?.[1];
   assert.ok(section,`${prefix}/${slug}: missing contextual section`);
-  const targets=[...section.matchAll(/href="([^"]+)"/g)].map(m=>m[1]);assert.equal(targets.length,2);
+  const targets=[...section.matchAll(/href="([^"]+)"/g)].map(m=>m[1]);assert.equal(targets.length,slug==='profumi-raptus'?3:2);
   for(const target of targets){assert.ok(target.startsWith(`${prefix}/`));await access(join('dist',target,'index.html'));contextualLinks++;}
   const json=html.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)?.[1];
   const graph=JSON.parse(json);assert.ok(graph.every(Boolean));
@@ -28,4 +28,4 @@ for(const prefix of ['', '/en']){
  }
 }
 assert.ok(guideLinks>=20,'Missing guide-to-category connections');
-console.log(JSON.stringify({categories:18,contextualLinks,guideCategoryLinks:guideLinks,schemas:'valid',result:'passed'}));
+console.log(JSON.stringify({categories:categories.length*2,contextualLinks,guideCategoryLinks:guideLinks,schemas:'valid',result:'passed'}));

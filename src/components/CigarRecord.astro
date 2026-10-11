@@ -24,13 +24,13 @@ const index=String(cigarRecords.findIndex(r=>r.slug===record.slug)+1).padStart(2
 <section class="wrap record-related"><h2>{text(lang,'Altre voci dello stesso gruppo.','Other records in this group.')}</h2><div>{neighbours.map(r=><a href={pathFor(`sigari/${r.slug}`,lang)}>{r.name}<span aria-hidden="true">↗</span></a>)}</div><a class="text-link" href={pathFor('sigari',lang)}>{text(lang,'Torna all’archivio delle denominazioni','Back to the name records')}</a><OfficialSources sources={tobaccoSources} lang={lang}/></section>
 </Base>
 <style>
-.record-opening{color:#493928;background:#f5efe3 url('/images/materials/paper-768.webp') center/1000px;border-block:1px solid #cdbda8;position:relative}
+.record-opening{color:#493928;background:#f5efe3;background-image:linear-gradient(#f5efe3d9,#f5efe3d9),url('/images/materials/paper-768.webp');background-size:auto,1000px;border-block:1px solid #cdbda8;position:relative}
 .record-opening:before{content:'';position:absolute;inset:0 auto 0 0;width:14px;background:#765037 url('/images/materials/wood-768.webp') center/cover}
 .record-hero{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:clamp(32px,5vw,80px);align-items:center;padding-block:52px 38px}
 .record-copy{min-width:0}.record-series{display:flex;justify-content:space-between;align-items:center;gap:20px;padding-bottom:20px;border-bottom:1px solid #9b826854;font:600 1rem/1.5 var(--sans)}
 .record-age{border:1px solid #8c7459;border-radius:100px;padding:3px 10px;font-size:.9rem;white-space:nowrap}
 .record-reference{margin-top:24px;font-size:1rem}.record-reference span{font:400 1.5rem var(--display);color:#754d29}
-.record-hero h1{font-size:clamp(2.8rem,4.8vw,5.1rem);line-height:1.05;color:#5b402b;margin:22px 0 25px;overflow-wrap:anywhere;text-wrap:balance}
+.record-hero h1{font-size:clamp(2.8rem,4.8vw,4.7rem);line-height:1.05;color:#5b402b;margin:22px 0 25px;overflow-wrap:anywhere;text-wrap:balance}
 .record-description{max-width:58ch;line-height:1.8}.record-index-link{display:flex;justify-content:space-between;align-items:center;gap:20px;max-width:390px;padding:18px 0 8px;margin-top:20px;border-bottom:1px solid #754d29;font-weight:600;font-size:.95rem;color:#5b402b}
 .record-plate{min-width:0;padding:20px 24px 22px;border:1px solid #b8a58a;background:#fcf8ed;box-shadow:7px 7px 0 #e1d5c3}
 .record-colophon{display:flex;justify-content:space-between;gap:20px;border-top:1px solid #9b826854;padding-block:18px;font-size:.9rem}

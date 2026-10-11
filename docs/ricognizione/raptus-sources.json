@@ -1,0 +1,93 @@
+{
+  "topic": "Raptus Parfum — categoria profumi per persona",
+  "checkedOn": "2026-10-11",
+  "researchScope": "Ricognizione di fonti ufficiali del marchio; nessun ordine, contatto esterno o trasferimento di immagini.",
+  "userConfirmation": {
+    "recordedOn": "2026-10-11",
+    "statement": "Il negozio ha tutti i profumi Raptus.",
+    "provenance": "Conferma dell’utente riportata dal coordinatore della lavorazione nella conversazione corrente.",
+    "supports": "Presenza dei profumi Raptus e intera gamma dichiarata dal negozio.",
+    "doesNotSpecify": [
+      "Quantità disponibili per singola fragranza o formato.",
+      "Prezzi applicati dal negozio.",
+      "Singoli EAN, SKU, confezioni o fotografie delle confezioni in negozio.",
+      "Estensione automatica della conferma a diffusori, spray per ambienti, creme o spray corpo e capelli."
+    ]
+  },
+  "primarySources": [
+    {
+      "title": "Raptus Parfum — sito ufficiale",
+      "url": "https://raptusparfum.it/",
+      "checkedOn": "2026-10-11",
+      "sourceRole": "Sito commerciale ufficiale del marchio",
+      "supports": [
+        "Denominazione del marchio Raptus Parfum.",
+        "Distinzione fra Linea 20-100ml e Linea 50ml nei profumi per persona.",
+        "Presenza delle 23 denominazioni numerate Raptus I–XXIII.",
+        "Presenza di Alkmene, Chaos, Mercvrivs, Nemesi e Neptvnvs nella linea 50 ml.",
+        "Descrizione di Raptus X come formato solo 100 ml e di Raptus XXI come formato 20 ml.",
+        "Separazione delle categorie diffusori per ambienti, spray ambienti e tessuti, ISIDE spray e crema corpo.",
+        "Avvertenza di copyright su immagini, grafica e testi, con richiesta di autorizzazione scritta per la diffusione."
+      ],
+      "limits": "Dati relativi al catalogo del marchio al momento della verifica. Prezzi, disponibilità e recensioni del sito ufficiale non descrivono il negozio Guerrazzi."
+    },
+    {
+      "title": "Raptus XXIII — scheda ufficiale e dati GPSR del produttore",
+      "url": "https://raptusparfum.it/profumi/42-60-raptus-xxiii-8052080487105.html",
+      "checkedOn": "2026-10-11",
+      "sourceRole": "Scheda prodotto ufficiale",
+      "supports": [
+        "Raptus XXIII esiste nel catalogo attuale del marchio.",
+        "La scheda indica i formati 20 ml e 100 ml.",
+        "Il blocco GPSR indica Raptus Parfum, Royalife s.a.s. di Giordano Fabio & Co., P.IVA 07994001217, Via Libertà 63, 80026 Casoria (NA)."
+      ],
+      "limits": "EAN e riferimenti della scheda ufficiale non vengono attribuiti automaticamente a confezioni o SKU del negozio. Non si trasferiscono claim commerciali o recensioni."
+    }
+  ],
+  "verifiedOverview": {
+    "brand": "Raptus Parfum",
+    "personFragranceLines": [
+      {
+        "officialLabel": "Linea 20-100ml",
+        "denominationCount": 23,
+        "denominations": [
+          "Raptus I", "Raptus II", "Raptus III", "Raptus IV", "Raptus V", "Raptus VI",
+          "Raptus VII", "Raptus VIII", "Raptus IX", "Raptus X", "Raptus XI", "Raptus XII",
+          "Raptus XIII", "Raptus XIV", "Raptus XV", "Raptus XVI", "Raptus XVII", "Raptus XVIII",
+          "Raptus XIX", "Raptus XX", "Raptus XXI", "Raptus XXII", "Raptus XXIII"
+        ],
+        "formatCaution": "20 ml e 100 ml identificano la linea, non due formati garantiti per ogni denominazione. Raptus X è indicato solo 100 ml; Raptus XXI è indicato 20 ml. Raptus XXIII indica 20 ml e 100 ml."
+      },
+      {
+        "officialLabel": "Linea 50ml",
+        "denominationCount": 5,
+        "denominations": ["Alkmene", "Chaos", "Mercvrivs", "Nemesi", "Neptvnvs"],
+        "format": "50 ml"
+      }
+    ],
+    "recommendedOverviewIt": "Profumi Raptus per persona, nelle linee da 20/100 ml e 50 ml. La singola fragranza e il formato si verificano al banco.",
+    "recommendedOverviewEn": "Raptus personal fragrances, in the 20/100 ml and 50 ml lines. Check the individual fragrance and size in store."
+  },
+  "officialImageReferences": {
+    "status": "Riferimenti visivi ufficiali accessibili; non asset autorizzati alla ripubblicazione.",
+    "rights": "Il footer del sito ufficiale vieta la diffusione di immagini, grafica e testi senza autorizzazione scritta. Per questa lavorazione usare una nuova immagine editoriale generica, senza ricostruire confezioni o etichette Raptus.",
+    "urls": [
+      {"name": "Raptus I", "url": "https://raptusparfum.it/438-large_default/raptus-i.jpg"},
+      {"name": "Raptus XXII", "url": "https://raptusparfum.it/346-large_default/raptus-xxii.jpg"},
+      {"name": "Raptus XXIII", "url": "https://raptusparfum.it/341-large_default/raptus-xxiii.jpg"},
+      {"name": "Neptvnvs", "url": "https://raptusparfum.it/416-large_default/neptvnvs.jpg"},
+      {"name": "Alkmene", "url": "https://raptusparfum.it/415-large_default/alkmene.jpg"},
+      {"name": "Mercvrivs", "url": "https://raptusparfum.it/414-large_default/mercvrivs.jpg"},
+      {"name": "Chaos", "url": "https://raptusparfum.it/413-large_default/chaos.jpg"},
+      {"name": "Nemesi", "url": "https://raptusparfum.it/412-large_default/nemesi.jpg"}
+    ],
+    "validation": "URL ottenuti dai collegamenti immagine delle rispettive schede ufficiali e aperti durante la ricognizione. Non sono stati scaricati nel progetto."
+  },
+  "implementationLimits": [
+    "Una categoria e una famiglia di assortimento possono descrivere la presenza Raptus confermata dall’utente.",
+    "Non trasformare le 28 denominazioni in 28 SKU del negozio senza dati specifici.",
+    "Non copiare descrizioni commerciali, piramidi olfattive, prezzi o recensioni.",
+    "Non promettere durata, persistenza, equivalenza con altri marchi o disponibilità giornaliera.",
+    "Il catalogo PDF 2025 non basta per il perimetro attuale: il sito ufficiale include Raptus XXIII."
+  ]
+}

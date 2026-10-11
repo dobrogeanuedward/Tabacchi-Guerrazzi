@@ -1,6 +1,7 @@
 import type {Pair} from './assortment';
 type RouteNote={lead:Pair;target:string;label:Pair;after:Pair};
 export const categoryAnswers:Record<string,Pair>={
+ 'profumi-raptus':['Da Guerrazzi, in Via Guerrazzi 10/F a Bologna, trovi l’intera gamma di profumi Raptus per persona. Il catalogo del marchio comprende 23 denominazioni nella linea 20–100 ml e cinque fragranze da 50 ml. Il formato della singola fragranza si verifica sulla confezione in negozio.','Guerrazzi at Via Guerrazzi 10/F, Bologna carries the full Raptus personal fragrance range. The brand’s catalogue includes 23 names in the 20–100 ml line and five fragrances in the 50 ml line. Check the size of an individual fragrance on its pack in store.'],
  'cartoleria':['Da Guerrazzi, in Via Guerrazzi 10/F a Bologna, trovi quaderni, penne, evidenziatori e piccoli articoli per organizzare la scrivania. Formati e rigature si controllano sul prodotto in negozio.','Guerrazzi at Via Guerrazzi 10/F, Bologna stocks notebooks, pens, highlighters and small desk essentials. Check sizes and rulings on the item in store.'],
  'souvenir-bologna':['Il negozio propone calamite con torri, monumenti e scritte Bologna. Puoi confrontare i soggetti esposti in Via Guerrazzi 10/F; la presenza di una grafica specifica va verificata.','The shop offers magnets with towers, landmarks and Bologna lettering. Compare the designs at Via Guerrazzi 10/F; check availability for a specific design.'],
  'accessori-telefono':['Sono esposti cavi USB e power bank Teknee. Porta il telefono o una foto dei connettori: porte, capacità e compatibilità dipendono dal singolo modello.','USB cables and Teknee power banks are displayed. Bring your phone or a photo of the connectors: ports, capacity and compatibility depend on the model.'],
@@ -12,6 +13,12 @@ export const categoryAnswers:Record<string,Pair>={
  'deposito-bagagli':['Il deposito di Guerrazzi si prenota tramite Bounce. Cerca la scheda “Palazzo Ercolani”, indirizzo Via Guerrazzi 10/F, Bologna, e verifica data, prezzo, orari e ritiro prima di confermare.','Book Guerrazzi luggage storage through Bounce. Look for “Palazzo Ercolani” at Via Guerrazzi 10/F, Bologna, and check the date, price, hours and pickup before confirming.']
 };
 export const categoryPathways:Record<string,RouteNote[]>={
+ 'profumi-raptus':[
+  {lead:['Se il profumo è un pensiero per qualcuno, consulta le','If the fragrance is a gift for someone, explore our'],target:'idee-regalo',label:['idee regalo','gift ideas'],after:[' e parti dalle preferenze della persona che lo riceverà.',' and start with the recipient’s preferences.']},
+  {lead:['Per conoscere il luogo in cui scegliere, scopri','To get to know the place where you can choose, discover'],target:'il-negozio',label:['il negozio di Angela','Angela’s shop'],after:[' in Via Guerrazzi 10/F a Bologna.',' at Via Guerrazzi 10/F, Bologna.']},
+  {lead:['Per una fragranza o un formato preciso, usa le','For a specific fragrance or size, use the'],target:'contatti',label:['informazioni per la visita','visit information'],after:[' e verifica la tua richiesta prima di passare.',' and check your request before visiting.']}
+ ],
+ 'idee-regalo':[{lead:['Se cerchi una fragranza, esplora i','If you are looking for a fragrance, explore'],target:'profumi-raptus',label:['profumi Raptus','Raptus perfumes'],after:[': nome e formato aiutano a orientare una scelta personale.','; the name and size help guide a personal choice.']}],
  cartoleria:[{lead:['Se un quaderno diventa un pensiero, parti dalla guida per','If a notebook becomes a gift, start with our guide to'],target:'schede/scegliere-un-regalo',label:['scegliere un regalo','choosing a gift'],after:[': occasione e interessi aiutano a restringere la scelta.',': the occasion and interests help narrow your choice.']},{lead:['Per completare il pacchetto guarda','To complete the present, browse'],target:'feste-e-compleanni',label:['biglietti di auguri e articoli per compleanni','greeting cards and birthday items'],after:[' e confronta i formati disponibili.',' and compare available sizes.']}],
  'souvenir-bologna':[{lead:['Se stai visitando la città con le valigie, organizza il','If you are visiting with suitcases, arrange'],target:'deposito-bagagli',label:['deposito bagagli tramite Bounce','luggage storage through Bounce'],after:[' prima di dedicarti alla passeggiata.',' before heading out.']},{lead:['Per accompagnare il ricordo con un altro oggetto esplora le','To pair your keepsake with another item, explore our'],target:'idee-regalo',label:['idee regalo del negozio','shop’s gift ideas'],after:[': la scelta resta personale e si completa dal vivo.','; make the final choice in person.']}],
  'accessori-telefono':[{lead:['Se ti serve credito e non energia, leggi la scheda sulle','If you need phone credit rather than battery power, read about'],target:'schede/ricariche-telefoniche',label:['ricariche telefoniche','mobile top-ups'],after:[': è una richiesta diversa da un cavo USB.','; they are different from USB cables.']},{lead:['Per altre piccole commissioni consulta le','For other small errands, browse'],target:'piccole-necessita',label:['piccole necessità e gli articoli di cura personale','everyday essentials and personal-care items'],after:[' esposti in negozio.',' displayed in store.']}],
@@ -28,8 +35,8 @@ export const guideCategoryLinks:Record<string,string[]>={
  'tabacco-confezioni-avvertenze':['pipe-e-tabacchi-da-pipa','sigari'],
  'ricariche-telefoniche':['accessori-telefono','servizi'],
  'bollettini-e-pagopa':['ricevitoria','servizi'],
- 'scegliere-un-regalo':['cartoleria','souvenir-bologna','feste-e-compleanni'],
+ 'scegliere-un-regalo':['profumi-raptus','cartoleria','souvenir-bologna','feste-e-compleanni'],
  'scegliere-un-gioco':['giochi-e-giocattoli','feste-e-compleanni'],
  'raggiungere-il-negozio':['deposito-bagagli','souvenir-bologna'],
- 'marchi-trattati':['cartoleria','dolciumi','accessori-telefono']
+ 'marchi-trattati':['profumi-raptus','cartoleria','dolciumi','accessori-telefono']
 };

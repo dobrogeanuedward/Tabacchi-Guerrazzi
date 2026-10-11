@@ -5,7 +5,7 @@ let total=0;
 for(const prefix of ['', 'en'])for(const section of ['assortimento','sigari']){
  const directory=join('dist',prefix,section);
  const entries=(await readdir(directory,{withFileTypes:true})).filter(e=>e.isDirectory());
- assert.equal(entries.length,section==='sigari'?34:25);
+ assert.equal(entries.length,section==='sigari'?34:26);
  for(const entry of entries){
   const html=await readFile(join(directory,entry.name,'index.html'),'utf8');
   assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1);
@@ -25,7 +25,7 @@ for(const prefix of ['', 'en']){
  assert.equal((home.match(/data-slide-to=/g)||[]).length,6);
  const main=home.match(/<main[^>]*>([\s\S]*?)<\/main>/)[1];
  assert.ok(main.indexOf('class="luggage-feature"')<main.indexOf('class="discover wrap"'));
- for(const slug of ['idee-regalo','giochi-e-giocattoli','sigari','pipe-e-tabacchi-da-pipa'])assert.ok(main.includes(`href="${prefix?'/en':''}/${slug}/"`));
+ for(const slug of ['idee-regalo','giochi-e-giocattoli','sigari','pipe-e-tabacchi-da-pipa','profumi-raptus'])assert.ok(main.includes(`href="${prefix?'/en':''}/${slug}/"`));
  const luggage=await readFile(join('dist',prefix,'deposito-bagagli','index.html'),'utf8');
  const graph=JSON.parse(luggage.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
  const service=graph.find(s=>s['@type']==='Service');assert.equal(service.availableChannel.serviceUrl,'https://bounce.com/stores/bologna/7ZRpUp');
