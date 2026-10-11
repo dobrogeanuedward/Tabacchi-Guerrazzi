@@ -1,0 +1,41 @@
+---
+import {shop,pathFor,text,type Lang} from '../data/shop';
+import {pages} from '../data/pages';
+const {slug,lang='it',heading}=Astro.props as {slug:string;lang:Lang;heading:string};
+const p=pages[slug];const l=lang==='it'?0:1;
+const local=['il-negozio','contatti','recensioni','storia-e-serrande'].includes(slug);
+const night=slug==='storia-e-serrande';
+const adult=['ricevitoria','accendini-e-accessori'].includes(slug);
+const art=local?'portico-ink':slug==='servizi'?'stationery-ink':slug==='marchi-e-competenze'?'gift-ink':'archive-reference';
+const artPath=slug==='servizi'?'/images/studies/service-paper-study.webp':`/brand/ui/${art}.webp`;
+const artSet=slug==='servizi'?'/images/studies/service-paper-study-768.webp 768w, /images/studies/service-paper-study.webp 1536w':undefined;
+const note=local?text(lang,'Il ritmo dei portici · illustrazione editoriale','The rhythm of the porticoes · editorial illustration'):text(lang,'Quaderni Guerrazzi · illustrazione editoriale','Guerrazzi notebooks · editorial illustration');
+const label=local?text(lang,'Il luogo · Bologna','The place · Bologna'):adult?text(lang,'Area informativa · 18+','Information area · 18+'):slug==='servizi'?text(lang,'Al banco · informazioni pratiche','At the counter · practical information'):text(lang,'Il repertorio del negozio','The shop directory');
+---
+<section class:list={['page-opening','wrap',local&&'page-opening--local',night&&'page-opening--night',adult&&'page-opening--information']} data-page-opening={slug}>
+ <div class="opening-copy"><p class="opening-label">{label}</p><h1>{heading}</h1><p class="opening-claim">{p.title[l]}</p><p class="opening-description">{p.intro[l]}</p>
+ {slug==='contatti'&&<div class="opening-actions"><a class="button primary" href={shop.maps} target="_blank" rel="noopener">{text(lang,'Apri le indicazioni','Open directions')} <span aria-hidden="true">↗</span></a><a class="opening-text-link" href={pathFor('schede/raggiungere-il-negozio',lang)}>{text(lang,'Prepara la visita','Plan your visit')} →</a></div>}
+ {slug==='servizi'&&<div class="opening-actions"><a class="button primary" href="#page-guides">{text(lang,'Scegli il servizio','Choose a service')} <span aria-hidden="true">↓</span></a><a class="opening-text-link" href={pathFor('deposito-bagagli',lang)}>{text(lang,'Deposito bagagli Bounce','Bounce luggage storage')} →</a></div>}
+ {slug==='marchi-e-competenze'&&<a class="opening-text-link" href="#brand-directory">{text(lang,'Esplora per categoria','Explore by category')} <span aria-hidden="true">↓</span></a>}
+ </div>
+ <figure class="opening-art"><div class="opening-art-top"><span>{text(lang,'Guerrazzi','Guerrazzi')}</span><span>{local?'10/F':text(lang,'Bologna','Bologna')}</span></div><img src={artPath} srcset={artSet} sizes="(max-width: 680px) calc(100vw - 80px), 550px" width={slug==='servizi'?1536:960} height={slug==='servizi'?1024:local?480:960} alt="" aria-hidden="true" fetchpriority="high"/><figcaption><span>{note}</span>{local&&<span>{shop.address}<br/>{shop.postcode} {shop.city}</span>}</figcaption></figure>
+</section>
+<style>
+ .page-opening{--opening-tone:var(--accent);display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(30px,5vw,80px);padding-block:28px 55px;border-bottom:1px solid var(--line)}
+ .opening-copy{min-width:0;max-width:690px}.opening-label{font:600 1rem/1.6 var(--sans);color:var(--opening-tone);margin-bottom:20px}
+ .page-opening h1{font:400 clamp(2.9rem,4.6vw,4.8rem)/1.07 var(--display);letter-spacing:-.04em;color:var(--opening-tone);margin:0 0 22px;overflow-wrap:break-word}
+ .opening-claim{font:400 clamp(1.65rem,2.5vw,2.3rem)/1.25 var(--display);letter-spacing:-.02em;max-width:26ch;color:var(--opening-tone);margin-bottom:22px}
+ .opening-description{font:400 1rem/1.85 var(--sans);max-width:58ch;color:#33435b}
+ .opening-actions{display:flex;flex-wrap:wrap;gap:18px 24px;align-items:center;margin-top:28px}.opening-actions .button{font-size:.95rem;min-height:48px}
+ .opening-text-link{display:inline-flex;align-items:center;gap:14px;padding:12px 0;font:600 .95rem/1.6 var(--sans);color:var(--opening-tone);text-decoration:underline;text-underline-offset:5px}.opening-copy>.opening-text-link{margin-top:20px}
+ .opening-art{min-width:0;position:relative;margin:0;padding:24px 28px 26px;border:1px solid color-mix(in srgb,var(--opening-tone) 28%,#e9e1d2);background:linear-gradient(#faf6eeed,#faf6eeed),url('/images/materials/paper-768.webp') center/cover;box-shadow:8px 8px 0 var(--surface)}
+ .opening-art-top{display:flex;justify-content:space-between;gap:16px;padding-bottom:18px;border-bottom:1px solid #0645c030;font:600 .95rem/1.5 var(--sans);color:#40516c}
+ .opening-art>img{display:block;width:100%;height:clamp(180px,21vw,290px);object-fit:contain;mix-blend-mode:multiply;margin:22px 0}
+ .opening-art figcaption{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;padding-top:18px;border-top:1px solid #0645c030;font:.95rem/1.7 var(--sans);color:#42516a}.opening-art figcaption>span:first-child{max-width:25ch}.opening-art figcaption>span:last-child:not(:first-child){font-weight:600;color:#243957}
+ .page-opening--local .opening-art{background:linear-gradient(#faf1e5e6,#faf1e5e6),url('/images/materials/terracotta-768.webp') center/cover;box-shadow:10px 10px 0 #c88e6d30}.page-opening--local .opening-art>img{height:clamp(180px,19vw,270px)}
+ .page-opening--night{--opening-tone:#d8e3ff;padding:42px;background:linear-gradient(#13243dea,#13243dea),url('/images/materials/night-768.webp') center/cover;border-bottom:0;gap:55px}.page-opening--night .opening-description{color:#e1e6ef}.page-opening--night .opening-art{box-shadow:8px 8px 0 #e9d8b42e}
+ .page-opening--information .opening-art>img{height:240px}.page-opening--information .opening-art{background:linear-gradient(#f8f3e9eb,#f8f3e9eb),url('/images/materials/paper-768.webp') center/cover;box-shadow:none}
+ @media(max-width:960px){.page-opening{gap:32px}.opening-art{padding:22px}.page-opening--night{padding:30px}.opening-art figcaption{display:block}.opening-art figcaption>span{display:block}.opening-art figcaption>span+span{margin-top:12px}}
+ @media(max-width:680px){.page-opening{grid-template-columns:minmax(0,1fr);padding-block:14px 36px;gap:28px}.page-opening h1{font-size:clamp(2.55rem,9vw,3.25rem)}.opening-label{margin-bottom:16px}.opening-claim{font-size:1.9rem}.opening-art{padding:20px;box-shadow:5px 5px 0 var(--surface)}.opening-art>img,.page-opening--local .opening-art>img{height:200px;margin-block:18px}.opening-art figcaption{display:flex}.opening-art figcaption>span+span{margin-top:0}.page-opening--night{padding:24px}.opening-actions{align-items:flex-start;flex-direction:column;gap:10px}.page-opening--information .opening-art>img{height:180px}}
+ @media(max-width:360px){.page-opening--night{padding:21px}.opening-art figcaption{display:block}.opening-art figcaption>span+span{margin-top:12px}}
+</style>

@@ -22,7 +22,7 @@ for(const prefix of ['', '/en']){
  }
  for(const slug of guides){
   const html=await readFile(join('dist',prefix,'schede',slug,'index.html'),'utf8');
-  const section=html.match(/<section class="article-related"[^>]*>([\s\S]*?)<\/section>/)?.[1];
+  const section=html.match(/<section class="reference-related"[^>]*>([\s\S]*?)<\/section>/)?.[1];
   assert.ok(section,`${prefix}/schede/${slug}: missing contextual category section`);
   for(const category of categories){if(section.includes(`href="${prefix}/${category}/"`))guideLinks++;}
  }

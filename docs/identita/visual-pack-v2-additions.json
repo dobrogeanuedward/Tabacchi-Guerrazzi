@@ -1,0 +1,50 @@
+{
+  "version": 2,
+  "entries": [
+    {
+      "id": "service-paper-study",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-7c872764-712d-435a-9619-d1da3ebf4044.png",
+      "web": "/images/studies/service-paper-study.webp",
+      "preview": "/images/studies/service-paper-study-768.webp",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create one premium editorial raster illustration, landscape 1536 x 1024, for the inner Services pages of Guerrazzi, an Italian neighbourhood shop. Reference image 1 is STYLE ONLY: match its very fine coloured-pencil / lithographic grain, beautiful tactile warm ivory paper, precise restrained cobalt ink, natural restrained side shadows, not its objects or composition. New composition: high oblique 3/4 view, a generic dark navy smartphone lying face up with blank opaque screen, two overlapping warm ivory document slips with only a few simple cobalt rules (no readable writing), one clean cobalt folded-paper tab. Tight elegant editorial still life, objects in the lower-middle/right with generous paper breathing room upper left, asymmetrical crop; no tabletop boundary or room. Distinct from the reference paper stack. Rich beautiful materials, refined not distressed, no dirty patches. No QR codes, barcodes, currency, bank cards, brands, logos, actual product packaging, human hands, tobacco, cigarettes, gambling, store interiors or UI screenshot. Must be a finished standalone artwork, not a website mockup. Not a factual document or photo of stocked products.",
+      "referencedImages": [
+        "public/images/studies/stationery-paper-study-768.webp"
+      ],
+      "scope": "Generic editorial illustration; no actual product, package, transaction document or shop photograph.",
+      "tool": "built-in image_gen",
+      "review": "Approved for generic editorial use: clean materials, no identifiable brands, no readable document data."
+    },
+    {
+      "id": "celebration-paper-study",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-504b7103-d8d0-4f4d-8c4c-8de3b7e08cf4.png",
+      "web": "/images/studies/celebration-paper-study.webp",
+      "preview": "/images/studies/celebration-paper-study-768.webp",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Create one exceptionally refined editorial illustration landscape 1536 x 1024 for greeting cards and celebrations at Guerrazzi. Reference image 1 is STYLE ONLY: fine lithographic coloured-pencil texture, beautiful warm ivory ground, tactile credible paper, restrained rich shadows. Different composition and camera: close low diagonal view of two blank folded ivory greeting cards like small sculptural planes, one dusty coral paper rosette partially cropped at left, a deep cobalt narrow ribbon loop sweeping across lower right, a tiny unlit ivory candle cylinder placed far behind. Blank cards no text or images. Clean warm clay-red, ivory and tiny cobalt accents, graceful geometric balance, lovely detailed edges and embossed paper grain, calm premium still life, long gentle shadows, uncluttered not festive confetti chaos. No actual packaging, brands, logos, numbers, letters, people, creepy shapes, dramatic dark scene, tobacco, invented shop environment. Pure finished editorial artwork, not UI, not grid, not collage. Objects are generic, not real stocked items.",
+      "referencedImages": [
+        "public/images/studies/stationery-paper-study-768.webp"
+      ],
+      "scope": "Generic editorial illustration; no actual product, package, transaction document or shop photograph.",
+      "tool": "built-in image_gen",
+      "review": "Approved for generic editorial use: clean materials, no identifiable brands, no readable document data."
+    },
+    {
+      "id": "play-shape-study",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-91fc330a-b0a5-41e7-ad4d-517e2e514570.png",
+      "web": "/images/studies/play-shape-study.webp",
+      "preview": "/images/studies/play-shape-study-768.webp",
+      "width": 1536,
+      "height": 1024,
+      "prompt": "Generate one premium editorial raster illustration in landscape 1536 x 1024 for a shop page about games and toys. Reference image 1 is STYLE ONLY for precise pencil/lithographic fine grain, warm ivory paper backdrop and beautiful restrained cobalt. New still life: sculptural generic wooden play shapes, one large matte cobalt arch partly cropped at right, natural pale beech cylinder on its side in foreground, small muted ochre sphere, and flat terracotta rectangular tile casting precise soft shadows. Low eye-level view with an elegant diagonal depth; plenty of ivory negative space. Materials should feel beautiful and believable, refined designer editorial illustration, clean bright Mediterranean warmth, tiny edge details, no distress. Four simple forms, no faces, no anthropomorphism, no horror, no creatures. No brands, words, numbers, retail packaging, actual recognizable toy model, people, children, tobacco or store interior. Do not copy paper-fold composition of reference. Finished artwork only, not a webpage mockup. Generic conceptual play composition not stock photography.",
+      "referencedImages": [
+        "public/images/studies/stationery-paper-study-768.webp"
+      ],
+      "scope": "Generic editorial illustration; no actual product, package, transaction document or shop photograph.",
+      "tool": "built-in image_gen",
+      "review": "Approved for generic editorial use: clean materials, no identifiable brands, no readable document data."
+    }
+  ]
+}

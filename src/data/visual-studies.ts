@@ -7,7 +7,10 @@ export type VisualStudyId =
   | 'travel-bologna-map'
   | 'gifting-still-life'
   | 'stationery-paper-study'
-  | 'fragrance-paper-study';
+  | 'fragrance-paper-study'
+  | 'service-paper-study'
+  | 'celebration-paper-study'
+  | 'play-shape-study';
 
 type LocalizedStudyText = Record<VisualStudyLang, string>;
 
@@ -16,7 +19,7 @@ export interface VisualStudy {
   title: LocalizedStudyText;
   alt: LocalizedStudyText;
   caption: LocalizedStudyText;
-  theme: 'archive' | 'botanical' | 'mineral' | 'travel' | 'gifting' | 'stationery' | 'fragrance';
+  theme: 'archive' | 'botanical' | 'mineral' | 'travel' | 'gifting' | 'stationery' | 'fragrance' | 'service' | 'celebration' | 'play';
   path: string;
   preview: string;
   decorative: boolean;
@@ -32,6 +35,24 @@ const files = (id: VisualStudyId) => ({
 });
 
 export const visualStudies: Record<VisualStudyId, VisualStudy> = {
+  'service-paper-study': {
+    ...files('service-paper-study'),index:'08',theme:'service',decorative:true,
+    title:{it:'Servizi',en:'Services'},
+    alt:{it:'Studio editoriale di un telefono generico e fogli privi di dati.',en:'Editorial study of a generic phone and sheets without data.'},
+    caption:{it:'Telefono e documenti in uno studio illustrativo. Non raffigura modelli, avvisi o ricevute reali.',en:'A phone and documents in an illustrative study. It does not depict real models, notices or receipts.'},
+  },
+  'celebration-paper-study': {
+    ...files('celebration-paper-study'),index:'09',theme:'celebration',decorative:true,
+    title:{it:'Occasioni',en:'Occasions'},
+    alt:{it:'Biglietti bianchi, rosetta di carta e nastro blu in una composizione illustrata.',en:'Blank cards, a paper rosette and a blue ribbon in an illustrated composition.'},
+    caption:{it:'Carta, pieghe e piccoli dettagli per un’occasione. Composizione generica, non fotografia di articoli disponibili.',en:'Paper, folds and small details for an occasion. A generic composition, not a photograph of available items.'},
+  },
+  'play-shape-study': {
+    ...files('play-shape-study'),index:'10',theme:'play',decorative:true,
+    title:{it:'Gioco',en:'Play'},
+    alt:{it:'Forme geometriche generiche in legno e colori opachi, su carta avorio.',en:'Generic geometric forms in wood and matte colours on ivory paper.'},
+    caption:{it:'Un’idea di gioco attraverso forme e materiali. Lo studio non identifica giocattoli o fasce d’età.',en:'An idea of play through shapes and materials. This study does not identify toys or age ranges.'},
+  },
   'fragrance-paper-study': {
     ...files('fragrance-paper-study'),
     index: '07',

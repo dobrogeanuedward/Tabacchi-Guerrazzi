@@ -16,7 +16,7 @@ for(const prefix of ['', '/en']){
  for(const route of materialGuides){
   const page=await readFile(join('dist',prefix,'schede',route,'index.html'),'utf8');
   assert.equal((page.match(/<h1(?:\s|>)/g)||[]).length,1);
-  assert.match(page,/reference-guide-head/);assert.match(page,/reference-index/);
+  assert.match(page,/class="reference-cover wrap"/);assert.match(page,/data-reading-index/);assert.match(page,/Guida informativa|Information guide/);
   assert.ok(!page.includes('Plan your visit')&&!page.includes('Informazioni per la visita'));
   const graph=JSON.parse(page.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
   const article=graph.find(s=>s['@type']==='Article');
@@ -33,7 +33,7 @@ for(const prefix of ['', '/en']){
 }
 for(const slug of ['radica-non-semplice-radice','schiuma-mare-nome-minerale','nomi-botanici-denominazioni-tabacco']){
  const page=await readFile(join('dist','approfondimenti',slug,'index.html'),'utf8');
- assert.match(page,/id="age-confirmation"/);assert.match(page,/information-article-head/);
+ assert.match(page,/id="age-confirmation"/);assert.match(page,/class="editorial-cover wrap"/);assert.match(page,/Articolo informativo/);assert.match(page,/data-reading-index/);
  assert.match(page,/class="official-sources"/);assert.ok(!page.includes('"@type":"Offer"'));
  for(const [,href]of page.matchAll(/href="(\/(?:schede|pipe-e-tabacchi-da-pipa|sigari|approfondimenti)[^"#]*)"/g))await access(join('dist',href,'index.html'));
 }
