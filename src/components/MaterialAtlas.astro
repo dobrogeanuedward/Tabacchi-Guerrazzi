@@ -1,5 +1,6 @@
 ---
 import {materialGuides} from '../data/materials-education';
+import {guides} from '../data/pages';
 import {pathFor,text,type Lang} from '../data/shop';
 
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
@@ -8,10 +9,10 @@ const presentation:Record<string,{type:[string,string];texture:string;study?:str
  'radica-erica-arborea':{type:['Botanica','Botany'],texture:'wood',study:'botanical-erica-study'},
  'schiuma-di-mare-sepiolite':{type:['Materiali','Materials'],texture:'mineral',study:'mineral-sepiolite-study'},
  'pipe-materiali-storia':{type:['Storia','History'],texture:'paper'},
- 'sigaro-struttura-termini':{type:['Terminologia','Terminology'],texture:'paper'},
+ 'sigaro-struttura-termini':{type:['Terminologia','Terminology'],texture:'paper',study:'cigar-cylinder-study'},
  'nicotiana-tabacum-botanica':{type:['Botanica','Botany'],texture:'forest'}
 };
-const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===slug).map(([key,guide])=>({key,guide,...presentation[key]}));
+const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===slug).map(([key,sourceGuide])=>({key,guide:guides[key]||sourceGuide,...presentation[key]}));
 ---
 {entries.length>0&&<section id="atlante" class="material-atlas" aria-labelledby="atlas-heading">
  <div class="atlas-opening">
@@ -43,12 +44,12 @@ const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===s
  .atlas-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #62462f38;border-radius:3px;background:var(--atlas-paper);color:var(--atlas-ink);box-shadow:0 3px 0 #62462f0a;transition:border-color .2s,box-shadow .2s,transform .2s}
  .atlas-texture{height:76px;max-height:80px;overflow:hidden;border-bottom:1px solid #62462f26;background:#ded5c5}
  .atlas-texture img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.8);opacity:.85}
- .atlas-card-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 28px 0;font-family:var(--sans);font-size:.9rem;font-weight:600;line-height:1.6;letter-spacing:0;color:var(--atlas-brown)}
+ .atlas-card-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 28px 0;font-family:var(--sans);font-size:.95rem;font-weight:600;line-height:1.6;letter-spacing:0;color:var(--atlas-brown)}
  .atlas-number{font-variant-numeric:tabular-nums;color:#776d5f;font-weight:400}
  .atlas-card-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:17px 28px 27px}
  .atlas-card h3{max-width:28ch;font-family:var(--display);font-size:clamp(1.6rem,2.2vw,2rem);font-weight:400;line-height:1.2;letter-spacing:-.025em;color:var(--atlas-ink);margin-bottom:16px}
- .atlas-card-copy>p{max-width:55ch;font-size:.875rem;line-height:1.8;color:#4d5850;margin-bottom:26px}
- .atlas-card-action{display:flex;align-items:center;justify-content:space-between;gap:32px;width:100%;margin-top:auto;padding-top:19px;border-top:1px solid #62462f30;font-family:var(--sans);font-size:.8125rem;font-weight:600;line-height:1.6;color:var(--atlas-brown)}
+ .atlas-card-copy>p{max-width:55ch;font-size:.95rem;line-height:1.8;color:#4d5850;margin-bottom:26px}
+ .atlas-card-action{display:flex;align-items:center;justify-content:space-between;gap:32px;width:100%;margin-top:auto;padding-top:19px;border-top:1px solid #62462f30;font-family:var(--sans);font-size:.95rem;font-weight:600;line-height:1.6;color:var(--atlas-brown)}
  .atlas-card-action>span{font-size:1.25rem;line-height:1;transition:transform .2s}
  .atlas-card:hover{border-color:#62462f8a;box-shadow:0 8px 24px #25332d0d;transform:translateY(-2px)}
  .atlas-card:hover .atlas-card-action>span{transform:translateX(4px)}

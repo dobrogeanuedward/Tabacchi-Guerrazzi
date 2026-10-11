@@ -1,0 +1,171 @@
+{
+  "title": "Tabacco: confine editoriale e pubblicità online",
+  "checkedOn": "2026-10-11",
+  "jurisdiction": "Italia; contesto UE solo di supporto",
+  "purpose": "Ricognizione delle fonti primarie per il sito di Tabaccheria Guerrazzi. Il requisito di rispettare i limiti legali proviene dall'utente.",
+  "isLegalOpinionOrComplianceCertification": false,
+  "scope": "Divieto di pubblicità dei prodotti del tabacco e possibile qualificazione di contenuti editoriali sul sito di una rivendita. Non è una ricognizione esaustiva di tutte le norme su vendita, accessori, media audiovisivi o tutela dei minori.",
+  "answer": {
+    "canStateThatPracticalLightingTutorialIsLawfulWithoutQualifications": false,
+    "reason": "Non è stata individuata una disposizione o indicazione ADM che risolva il caso del tutorial pratico sul sito di una rivendita. Le fonti vietano la promozione commerciale; la qualificazione del contenuto concreto resta da valutare.",
+    "doesThisMeanEveryEducationalDepictionOrTutorialIsAutomaticallyProhibited": false,
+    "known": "È vietata la pubblicità del tabacco online. Una mera etichetta editoriale non determina da sola la natura effettiva della comunicazione.",
+    "unknown": "Non è stabilito da questa ricerca se una specifica guida di accensione, con il suo testo, immagini, collegamenti e posizione nel sito, costituisca promozione vietata.",
+    "currentProjectChoice": "Proseguire con tipologie, storia, materiali e confronto documentale neutrale, senza attestare che questo assetto costituisca un'autorizzazione legale. Conservare l'accensione pratica nel backlog, senza pubblicarla nella presente revisione."
+  },
+  "sources": [
+    {
+      "id": "it-dlgs-300-2004-normattiva",
+      "publisher": "Normattiva",
+      "title": "D.Lgs. 16 dicembre 2004, n. 300",
+      "url": "https://www.normattiva.it/atto/caricaDettaglioAtto?atto.codiceRedazionale=004G0340&atto.dataPubblicazioneGazzetta=2004-12-20&bloccoAggiornamentoBreadCrumb=true&classica=true&generaTabId=true&tipoDettaglio=multivigenza&title=lbl.dettaglioAtto",
+      "sourceType": "legislazione nazionale, portale ufficiale",
+      "checkedOn": "2026-10-11",
+      "provisions": ["art. 1, comma 1, lettere a e b"],
+      "paraphrase": "Il decreto considera prodotti del tabacco quelli costituiti anche in parte da tabacco e destinati a essere fumati, fiutati, succhiati o masticati. La pubblicità comprende comunicazioni commerciali dirette o indirette che mirano a promuovere tali prodotti o producono tale effetto.",
+      "versionEvidence": "Il portale riporta entrata in vigore il 4 gennaio 2005 e ultimo aggiornamento dell'atto pubblicato il 15 febbraio 2007. L'articolo 1 visualizzato è indicato in vigore dal 4 gennaio 2005.",
+      "accessLimit": "L'articolo 1 e i metadati sono leggibili. L'esportazione dell'atto intero e il collegamento diretto all'articolo 2 hanno restituito errore; il testo dell'articolo 2 è stato letto nella Gazzetta ufficiale originaria e il divieto online trova conferma nella pagina ADM attuale."
+    },
+    {
+      "id": "it-dlgs-300-2004-gazzetta",
+      "publisher": "Gazzetta Ufficiale della Repubblica Italiana",
+      "title": "G.U. Serie generale n. 297 del 20 dicembre 2004, D.Lgs. n. 300/2004",
+      "url": "https://www.gazzettaufficiale.it/eli/gu/2004/12/20/297/sg/pdf",
+      "sourceType": "pubblicazione ufficiale originaria",
+      "checkedOn": "2026-10-11",
+      "location": "pagina PDF 4, articoli 1 e 2; PDF 6, nota alla legge n. 165/1962",
+      "provisions": ["art. 2, commi 1, 2 e 3"],
+      "paraphrase": "L'articolo 2 conserva il divieto generale della legge del 1962 e vieta la pubblicità nei servizi della società dell'informazione. Il comma 2 contempla eccezioni per determinate pubblicazioni stampate professionali o extra UE; non descrive un'eccezione per siti di rivendite destinati al pubblico.",
+      "versionEvidence": "Testo originario del 2004, corroborato sul divieto online dall'indicazione ADM consultata nel 2026. Non viene presentato come esportazione integrale di un consolidato al giorno della verifica.",
+      "accessLimit": "Non sono stati verificati né riportati importi attuali delle sanzioni."
+    },
+    {
+      "id": "it-law-165-1962-mef",
+      "publisher": "Ministero dell'Economia e delle Finanze, Documentazione economica e finanziaria",
+      "title": "Legge 10 aprile 1962, n. 165, articolo unico",
+      "url": "https://def.finanze.it/DocTribFrontend/getContent.do?id=%7B6F303C4D-0237-4DF8-B9A9-683CECC5F2CE%7D",
+      "metadataUrl": "https://def.finanze.it/DocTribFrontend/getAttoNormativoDetail.do?ACTION=getSommario&id=%7BBC90B8DD-4157-45FA-A42D-4EFC13554228%7D",
+      "sourceType": "banca dati normativa ufficiale",
+      "checkedOn": "2026-10-11",
+      "provisions": ["articolo unico, primo comma"],
+      "paraphrase": "La propaganda pubblicitaria dei prodotti da fumo, italiani o esteri, è vietata.",
+      "versionEvidence": "Il PDF ufficiale annota la sostituzione dell'articolo ad opera dell'articolo 8 del D.L. n. 4/1983. Il richiamo alla legge permane nel D.Lgs. n. 300/2004 e nella pagina ADM consultata.",
+      "accessLimit": "Il PDF riporta importi in lire: non usarlo per comunicare sanzioni monetarie attuali. Il collegamento Normattiva alla legge ha restituito errore durante la ricerca."
+    },
+    {
+      "id": "adm-sites-blocked",
+      "publisher": "Agenzia delle Dogane e dei Monopoli",
+      "title": "Siti web inibiti - Tabacchi",
+      "url": "https://www.adm.gov.it/portale/siti-inibiti-tabacchi",
+      "sourceType": "indicazione amministrativa pubblica dell'autorità di settore",
+      "checkedOn": "2026-10-11",
+      "paraphrase": "ADM ribadisce il divieto della pubblicità online dei prodotti del tabacco, con le eccezioni previste dalla legge, e distingue questo divieto da quello delle vendite a distanza. Richiama la possibile inibizione dei siti ai sensi dell'articolo 102 del D.L. n. 104/2020, convertito dalla legge n. 126/2020.",
+      "currencyEvidence": "Risultato ufficiale indicizzato con contenuti e aggiornamenti del 2026, acquisito il giorno della verifica. L'elenco allegato dichiara un aggiornamento del 5 ottobre 2026 con validità dal 20 ottobre 2026: tale elenco futuro non è stato usato per attribuire una specifica inibizione già efficace.",
+      "accessLimit": "Il motore di ricerca restituisce il testo della pagina ufficiale; l'apertura diretta tramite il browser di ricerca ha restituito errore. La pagina non tratta espressamente tutorial di accensione o siti editoriali di rivendite.",
+      "scopeLimit": "La pagina cita anche liquidi da inalazione e accessori ai tabacchi da fumo. Questa ricerca non estende automaticamente tali categorie fiscali a ogni pipa, accendino o accessorio."
+    },
+    {
+      "id": "eu-directive-2003-33",
+      "publisher": "Unione europea, EUR-Lex",
+      "title": "Direttiva 2003/33/CE, articoli 2 e 3; considerando 18",
+      "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:32003L0033",
+      "sourceType": "direttiva, contesto del recepimento italiano",
+      "checkedOn": "2026-10-11",
+      "paraphrase": "La direttiva adotta una definizione commerciale della pubblicità, include la promozione indiretta e disciplina Internet. Richiama anche il rispetto della libertà di espressione. Le sue eccezioni e il suo ambito non costituiscono, da soli, un permesso per una pagina del sito italiano della rivendita.",
+      "accessLimit": "Fonte di contesto: il testo italiano e la prassi nazionale devono essere valutati separatamente."
+    },
+    {
+      "id": "eu-implementation-report-2008",
+      "publisher": "Commissione europea, EUR-Lex",
+      "title": "COM(2008) 330, relazione sull'attuazione della direttiva 2003/33/CE, paragrafo 4.2.2",
+      "url": "https://eur-lex.europa.eu/legal-content/IT/TXT/PDF/?uri=CELEX:52008DC0330",
+      "sourceType": "relazione della Commissione; osservazione interpretativa e applicativa, non autorizzazione individuale",
+      "checkedOn": "2026-10-11",
+      "location": "pagine PDF 9 e 10, numerazione interna 8 e 9",
+      "paraphrase": "La Commissione osserva che la promozione online può assumere forme indirette e inserirsi in contenuti digitali, non soltanto in annunci tradizionali. Questo aiuta a capire perché un formato apparentemente editoriale richieda attenzione al contenuto concreto.",
+      "accessLimit": "Documento del 2008: non prova l'esistenza di una prassi ADM attuale sui tutorial né sostituisce la legge italiana."
+    }
+  ],
+  "editorialDistinctions": [
+    {
+      "kind": "normative_fact",
+      "topic": "Pubblicità online",
+      "assessment": "La promozione commerciale del tabacco online rientra nel divieto, anche quando l'effetto promozionale è indiretto.",
+      "sourceIds": ["it-dlgs-300-2004-normattiva", "it-dlgs-300-2004-gazzetta", "adm-sites-blocked"]
+    },
+    {
+      "kind": "inference_not_legal_clearance",
+      "topic": "Testi educativi e immagini documentali",
+      "assessment": "La presenza di un sigaro, del suo nome o di una spiegazione tecnica non basta, isolatamente, a dimostrare la natura pubblicitaria di ogni contenuto. L'assenza di prezzi, un filtro 18+ o la parola informativo non dimostrano nemmeno il contrario.",
+      "sourceIds": ["eu-directive-2003-33", "eu-implementation-report-2008"]
+    },
+    {
+      "kind": "project_editorial_judgment",
+      "topic": "Confronto documentale",
+      "assessment": "Limitare il confronto a definizioni, fonti, classificazioni e limiti dei dati, evitando graduatorie, preferenze e inviti all'acquisto. È una scelta editoriale del progetto, non una categoria automaticamente esente per legge.",
+      "sourceIds": ["it-law-165-1962-mef", "eu-implementation-report-2008"]
+    },
+    {
+      "kind": "unresolved_application",
+      "topic": "Tutorial pratico di accensione sul sito del rivenditore",
+      "assessment": "La ricerca non consente né un sì incondizionato né l'affermazione che qualsiasi tutorial sia espressamente vietato. Resta irrisolto se il contenuto e il contesto concretamente progettati producano una promozione commerciale."
+    }
+  ],
+  "admSpecificGuidanceSearch": {
+    "result": "Nessuna indicazione ufficiale pubblica specifica individuata per tutorial di accensione o per un'esenzione editoriale generale dei siti informativi delle rivendite.",
+    "absenceDoesNotProveNonexistence": true,
+    "queries": [
+      "site.adm.gov.it tabacchi rivendite siti internet pubblicità tutorial",
+      "site.adm.gov.it rivendite sito internet pubblicità",
+      "site.adm.gov.it tabacco sito informativo",
+      "site.adm.gov.it sigari accensione",
+      "site.adm.gov.it sigaro accendere",
+      "site.adm.gov.it tutorial sigaro"
+    ],
+    "otherOfficialPagesReviewed": [
+      "https://www.adm.gov.it/portale/monopoli/tabacchi/distribuzione_vendita/rivendite_ordinarie",
+      "https://www.adm.gov.it/portale/tabacchi-distribuzione_vendita",
+      "https://www.adm.gov.it/portale/mappa-del-sito"
+    ],
+    "falsePositive": "I video tutorial ADM emersi nella ricerca sui contrassegni di legittimazione riguardano adempimenti degli operatori, non tecniche di consumo.",
+    "officialNoncommercialPracticalLightingSource": {
+      "status": "not_found_in_this_search",
+      "queries": [
+        "site.salute.gov.it sigaro accensione",
+        "site.iss.it sigaro accendere"
+      ],
+      "note": "I risultati tecnici di produttori o rivenditori non sono stati trattati come fonti istituzionali non commerciali o prova di liceità."
+    }
+  },
+  "backlog": [
+    {
+      "id": "guida-pratica-accensione",
+      "state": "editorial-scope-review-needed",
+      "draftStatus": "not_published",
+      "hasCompleteDraft": false,
+      "proposedNeutralOutline": [
+        "Scopo del documento, destinatari adulti e limiti della spiegazione tecnica.",
+        "Terminologia delle parti coinvolte e differenza tra descrizione della combustione e raccomandazione di consumo.",
+        "Dispositivi e gesti tecnici descritti genericamente, senza marchi, graduatorie o collegamenti commerciali: contenuto da definire solo dopo la valutazione del perimetro.",
+        "Limiti dei dati, provenienza delle eventuali illustrazioni e riferimenti istituzionali pertinenti."
+      ],
+      "whyEvidenceInsufficient": "Le fonti consultate fissano il divieto pubblicitario ma non qualificano questo specifico tutorial nel contesto del sito della rivendita. Non sono state individuate indicazioni ADM o decisioni ufficiali sul caso concreto.",
+      "nextEvidenceNeeded": "Una valutazione qualificata del testo, delle immagini e dei collegamenti effettivamente proposti, eventualmente supportata da un chiarimento pertinente dell'autorità. Non è documentata una procedura obbligatoria di approvazione preventiva per ogni articolo.",
+      "notAnAutomaticProhibition": true,
+      "doesNotBlockOtherNeutralEditorialWork": true
+    }
+  ],
+  "claimsNotToPublish": [
+    "Il sito o l'area informativa sono certificati conformi alla legge.",
+    "Tutti i tutorial di accensione sono vietati per legge.",
+    "I tutorial sono sicuramente consentiti perché riservati ai maggiorenni o privi di prezzi.",
+    "ADM autorizza in generale i siti informativi delle rivendite.",
+    "Il sito è esente dal divieto pubblicitario perché non vende tabacco online."
+  ],
+  "workPerformed": {
+    "siteCodeChanged": false,
+    "newPublicGuideOrArticleCreated": false,
+    "buildOrTestRun": false,
+    "output": "docs/identita/tobacco-editorial-boundary.json"
+  }
+}

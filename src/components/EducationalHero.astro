@@ -1,6 +1,7 @@
 ---
 import {text,type Lang} from '../data/shop';
 import VisualStudy from './VisualStudy.astro';
+import CigarPhoto from './CigarPhoto.astro';
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
 const pipe=slug==='pipe-e-tabacchi-da-pipa';
 ---
@@ -17,7 +18,7 @@ const pipe=slug==='pipe-e-tabacchi-da-pipa';
     <a href="#norme">{text(lang,'Norme e confezioni','Rules and packaging')} <span aria-hidden="true">↓</span></a>
    </nav>
   </div>
-  <div class="education-material"><VisualStudy id={pipe?'botanical-erica-study':'archive-folio'} lang={lang} variant="inset" loading="eager"/></div>
+  <div class:list={['education-material',!pipe&&'education-material--photo']}>{pipe?<VisualStudy id="botanical-erica-study" lang={lang} variant="inset" loading="eager"/>:<CigarPhoto name="sigaro" group="Altre denominazioni" lang={lang} loading="eager"/>}</div>
  </div>
 </header>
 <style>
@@ -28,7 +29,7 @@ const pipe=slug==='pipe-e-tabacchi-da-pipa';
 .education-edition>span:last-child{padding:3px 12px;background:#f5efe3}
 .education-opening{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(35px,5vw,80px);padding-block:46px 58px}
 .education-series{display:flex;align-items:center;gap:18px;font:600 1.05rem/1.5 var(--sans);margin-bottom:22px}
-.education-series span{font-size:.9rem;border:1px solid currentColor;border-radius:30px;padding:4px 10px;line-height:1.2}
+.education-series span{font-size:.95rem;border:1px solid currentColor;border-radius:30px;padding:4px 10px;line-height:1.2}
 .education-copy h1{font-size:clamp(3.2rem,5.1vw,4.7rem);line-height:1.04;color:var(--education-ink);max-width:14ch;margin-bottom:22px;letter-spacing:-.04em;text-wrap:balance}
 .education-subtitle{font:400 clamp(1.6rem,2.4vw,2.35rem)/1.25 var(--display);margin-bottom:24px;max-width:24ch}
 .education-intro{font-size:1rem;line-height:1.8;max-width:54ch;color:#354039}
@@ -38,6 +39,7 @@ const pipe=slug==='pipe-e-tabacchi-da-pipa';
 .education-paths a:hover{text-decoration:underline;text-underline-offset:4px}
 .education-paths a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
 .education-material{min-width:0;padding:26px;background:#fbf7ec;border:1px solid var(--education-border);box-shadow:9px 9px 0 #f5efe37a}
-@media(max-width:960px){.education-opening{gap:30px}.education-copy h1{font-size:clamp(3.1rem,5vw,4.5rem)}.education-material{padding:18px}.education-edition{font-size:.875rem}}
-@media(max-width:680px){.education-hero:before{width:8px}.education-edition{flex-direction:column;gap:4px;padding-block:16px}.education-edition>span:last-child{padding:0;background:none;font-size:.875rem}.education-opening{grid-template-columns:1fr;gap:30px;padding-block:28px 38px}.education-copy h1{font-size:clamp(3rem,11vw,4.2rem)}.education-subtitle{font-size:1.85rem}.education-series{margin-bottom:20px}.education-paths{margin-top:24px}.education-paths a{font-size:.9rem;gap:12px;padding:12px 14px}.education-material{width:100%;max-width:480px;margin-inline:auto;padding:16px;box-shadow:4px 4px 0 #d9ceba}}
+.education-material.education-material--photo{padding:0;border:0;background:none;box-shadow:none}
+@media(max-width:960px){.education-opening{gap:30px}.education-copy h1{font-size:clamp(3.1rem,5vw,4.5rem)}.education-material{padding:18px}.education-edition{font-size:.95rem}}
+@media(max-width:680px){.education-hero:before{width:8px}.education-edition{flex-direction:column;gap:4px;padding-block:16px}.education-edition>span:last-child{padding:0;background:none;font-size:.95rem}.education-opening{grid-template-columns:1fr;gap:30px;padding-block:28px 38px}.education-copy h1{font-size:clamp(3rem,11vw,4.2rem)}.education-subtitle{font-size:1.85rem}.education-series{margin-bottom:20px}.education-paths{margin-top:24px}.education-paths a{font-size:.95rem;gap:12px;padding:12px 14px}.education-material{width:100%;max-width:480px;margin-inline:auto;padding:16px;box-shadow:4px 4px 0 #d9ceba}}
 </style>

@@ -1,93 +1,237 @@
 import {tobaccoArticles} from './tobacco-information';
+
 export const clusters = [
- {id:'servizi',label:'Servizi pratici',parent:'servizi',theme:'utility'},
- {id:'regali',label:'Idee regalo',parent:'idee-regalo',theme:'regalo'},
- {id:'giochi',label:'Giochi e giocattoli',parent:'giochi-e-giocattoli',theme:'gioco'},
- {id:'quartiere',label:'Negozio e quartiere',parent:'il-negozio',theme:'bottega'},
+  {id:'servizi',label:'Servizi pratici',parent:'servizi',theme:'utility'},
+  {id:'regali',label:'Idee regalo',parent:'idee-regalo',theme:'regalo'},
+  {id:'giochi',label:'Giochi e giocattoli',parent:'giochi-e-giocattoli',theme:'gioco'},
+  {id:'quartiere',label:'Negozio e quartiere',parent:'il-negozio',theme:'bottega'},
 ];
-const evidenceAdditions:Record<string,[string,string]>={
- 'ricarica-telefonica-cosa-preparare':['Ricarica del credito o della batteria?','Sono richieste diverse. Se ti serve credito telefonico, porta numero e operatore e verifica il servizio; se ti manca un cavo, confronta il connettore nella sezione accessori per telefono. Sugli scaffali sono esposti anche accessori Teknee: compatibilità e caratteristiche dipendono dal singolo modello.'],
- 'avviso-pagamento-documenti':['Una verifica del servizio, non del marchio esposto.','I materiali Lotto e Sisal documentano una zona di ricevitoria. Non dimostrano da soli che un particolare avviso possa essere pagato. Descrivi il documento al negozio prima della visita; una conferma precisa è più utile di una generica ricerca di una tabaccheria.'],
- 'servizi-negozio-organizzare-visita':['Se la commissione è lasciare le valigie.','Per il deposito bagagli Guerrazzi usa Bounce. La scheda Palazzo Ercolani indica Via Guerrazzi 10/F: scegli data e bagagli sulla piattaforma, controlla gli orari di deposito e ritiro e conserva la conferma. La pagina dedicata sul sito collega direttamente alla prenotazione ufficiale.'],
- 'regalo-compleanno-da-dove-partire':['Il biglietto fa parte del pensiero.','L’espositore di Guerrazzi comprende biglietti di compleanno illustrati, anche con applicazioni. Puoi scegliere un soggetto che richiami gli interessi della persona e aggiungere le tue parole. Controlla il formato e la presenza della busta; per la torta sono esposte anche candeline numeriche, con cifre da verificare.'],
- 'piccolo-pensiero-occasione':['Un ricordo della città.','Se il pensiero nasce da un viaggio a Bologna, guarda l’espositore di calamite: ci sono soggetti con torri, monumenti e scritte della città. La forma e il disegno si confrontano dal vivo. È un percorso diverso dal regalo di compleanno, ma può accompagnare un biglietto o un piccolo ringraziamento.'],
- 'scegliere-regalo-ultimi-minuti':['Guarda una categoria concreta.','Da Guerrazzi puoi orientarti fra giochi, cartoleria, calamite di Bologna e biglietti augurali. Parti dalla persona: scrive e studia, sta visitando la città oppure festeggia un compleanno? Una categoria limita la ricerca; non sostituisce la verifica della variante che vorresti comprare.'],
- 'gioco-regalo-eta-interessi':['Non confondere le categorie.','Giochi e giocattoli, articoli per feste e ricevitoria sono sezioni diverse del negozio. I palloncini e le candeline richiedono istruzioni proprie; la ricevitoria non appartiene alla selezione di passatempi per bambini. Scegli sempre leggendo la confezione del prodotto, non solo il nome della sezione.'],
- 'giochi-viaggio-piccoli-passatempi':['Una sosta a Bologna con meno ingombro.','Se stai visitando Bologna con le valigie, il deposito Bounce di Guerrazzi è una richiesta distinta dalla scelta di un gioco. Prenota dalla scheda ufficiale e organizza il ritiro; per un passatempo da viaggio confronta invece confezione, componenti e utilizzo del singolo articolo.'],
- 'scegliere-gioco-insieme':['Quando il gioco accompagna un compleanno.','Dopo avere controllato età e avvertenze, puoi cercare un biglietto di auguri nell’espositore e confrontare shopper e fiocchi disponibili. Questi dettagli completano il pensiero senza cambiare l’idoneità del gioco: le indicazioni del produttore restano il primo riferimento.'],
- 'guerrazzi-via-guerrazzi-bologna':['Lo stesso indirizzo, anche su Bounce.','Per il deposito bagagli la scheda Bounce si chiama Palazzo Ercolani, ma l’indirizzo è Via Guerrazzi 10/F. Controlla questa corrispondenza prima della prenotazione; non dedurre un’altra sede dal nome della scheda. Per il percorso usa l’indirizzo completo, senza affidarti a tempi di percorrenza non aggiornati.'],
- 'vetrina-guerrazzi-piccole-scelte':['Il negozio continua oltre la vetrina.','Le foto degli interni documentano scaffali di cartoleria, un espositore di auguri, calamite di Bologna e piccoli articoli pratici. Nel sito questi gruppi hanno percorsi distinti: puoi trovare la categoria che ti serve e arrivare con una domanda più precisa, anziché cercare fra oggetti diversi.'],
- 'angela-attenzione-negozio':['Le domande cambiano con quello che cerchi.','Per un quaderno sono utili formato e rigatura; per un cavo, le due estremità e il dispositivo; per una calamita, il soggetto. Organizzare l’assortimento in categorie non sostituisce l’attenzione al banco: aiuta a capire quali dettagli portare con te.']
-};
+
 export const articleCategoryLinks:Record<string,string[]>={
- 'ricarica-telefonica-cosa-preparare':['accessori-telefono'],
- 'avviso-pagamento-documenti':['ricevitoria'],
- 'servizi-negozio-organizzare-visita':['deposito-bagagli'],
- 'regalo-compleanno-da-dove-partire':['feste-e-compleanni'],
- 'piccolo-pensiero-occasione':['souvenir-bologna'],
- 'scegliere-regalo-ultimi-minuti':['cartoleria','souvenir-bologna'],
- 'gioco-regalo-eta-interessi':['feste-e-compleanni'],
- 'giochi-viaggio-piccoli-passatempi':['deposito-bagagli'],
- 'scegliere-gioco-insieme':['feste-e-compleanni'],
- 'guerrazzi-via-guerrazzi-bologna':['deposito-bagagli'],
- 'vetrina-guerrazzi-piccole-scelte':['cartoleria','piccole-necessita'],
- 'angela-attenzione-negozio':['accessori-telefono','cartoleria']
+  'ricarica-telefonica-cosa-preparare':['accessori-telefono'],
+  'avviso-pagamento-documenti':['ricevitoria'],
+  'servizi-negozio-organizzare-visita':['deposito-bagagli'],
+  'regalo-compleanno-da-dove-partire':['feste-e-compleanni'],
+  'piccolo-pensiero-occasione':['souvenir-bologna'],
+  'scegliere-regalo-ultimi-minuti':['cartoleria','souvenir-bologna'],
+  'gioco-regalo-eta-interessi':['feste-e-compleanni'],
+  'giochi-viaggio-piccoli-passatempi':['deposito-bagagli'],
+  'scegliere-gioco-insieme':['feste-e-compleanni'],
+  'guerrazzi-via-guerrazzi-bologna':['deposito-bagagli'],
+  'vetrina-guerrazzi-piccole-scelte':['cartoleria','piccole-necessita'],
+  'angela-attenzione-negozio':['accessori-telefono','cartoleria'],
 };
+
 export type Article={slug:string;cluster:string;title:string;summary:string;guide:string;sections:string[][];sources?:{label:string;url:string}[]};
+
 export const articles:Article[] = [
- {slug:'ricarica-telefonica-cosa-preparare',cluster:'servizi',title:'Ricarica telefonica in centro: cosa preparare prima di passare.',summary:'Numero, operatore e importo. Una piccola preparazione evita dubbi al banco.',guide:'ricariche-telefoniche',sections:[
- ['Parti dal numero giusto.','Quando devi fare una ricarica, la prima informazione è il numero di telefono completo. Se la ricarica è per un’altra persona, chiedile di inviartelo per iscritto: sarà più semplice controllarlo. Prima di confermare l’operazione, rileggi tutte le cifre.'],
- ['Verifica operatore e importo.','Non dare per scontato che ogni operatore o taglio sia disponibile. Chiedi prima al negozio, soprattutto se hai una richiesta specifica. Anche le modalità di pagamento e le eventuali condizioni vanno confermate prima dell’operazione.'],
- ['Conserva la conferma.','Se viene rilasciata una ricevuta, conservala fino a quando hai verificato l’esito. In caso di dubbio, avere il riferimento dell’operazione aiuta a ricostruire cosa è accaduto. Per organizzare la visita a Guerrazzi, consulta le informazioni del negozio in Via Guerrazzi 10/F, Bologna.']]},
- {slug:'avviso-pagamento-documenti',cluster:'servizi',title:'Un avviso da pagare: quale documento portare.',summary:'Come rendere leggibili le informazioni utili e verificare il servizio prima della visita.',guide:'bollettini-e-pagopa',sections:[
- ['Porta l’avviso completo.','Una pagina tagliata o una fotografia sfocata può rendere difficile leggere i riferimenti necessari. Tieni a disposizione il documento completo, con codici e identificativi ben visibili. Se l’avviso ha più pagine, conserva l’insieme.'],
- ['Chiedi prima per il tuo documento.','La disponibilità di un servizio dipende anche dal tipo di avviso. Prima di passare, verifica con il negozio se il tuo documento può essere gestito e quali modalità di pagamento sono ammesse. Non presumere che le condizioni di un precedente pagamento siano sempre le stesse.'],
- ['Controlla e conserva.','Prima di confermare, controlla i dettagli dell’operazione. Le eventuali commissioni devono essere chiarite al banco. Conserva la ricevuta o la conferma rilasciata. Nella scheda dedicata trovi un riepilogo delle informazioni da preparare prima di raggiungere Guerrazzi.']]},
- {slug:'servizi-negozio-organizzare-visita',cluster:'servizi',title:'Una commissione in negozio: tre cose da verificare.',summary:'Disponibilità, documento e orario: organizza la tua visita con meno passaggi.',guide:'raggiungere-il-negozio',sections:[
- ['Una richiesta precisa.','“Ho bisogno di un pagamento” può voler dire cose diverse. Specifica il tipo di documento o di operazione che devi fare. Per una ricarica, indica l’operatore. Più la domanda è precisa, più è semplice ricevere un’informazione utile.'],
- ['Le informazioni da avere con te.','Prepara documenti, codici o numeri necessari. Usa le schede dei servizi come promemoria e verifica sempre il caso concreto con il negozio. Eventuali costi e modalità vengono confermati prima dell’operazione.'],
- ['La visita, al momento giusto.','Controlla l’orario aggiornato e il percorso prima di partire. Per Guerrazzi, la destinazione è Via Guerrazzi 10/F a Bologna. Se stai arrivando per una necessità specifica, verifica la disponibilità del servizio prima di raggiungerci.']]},
- {slug:'regalo-compleanno-da-dove-partire',cluster:'regali',title:'Un regalo di compleanno: parti dalla persona.',summary:'Interessi e abitudini sono indizi più utili di una ricerca senza direzione.',guide:'scegliere-un-regalo',sections:[
- ['Pensa a cosa fa volentieri.','Prima di cercare un oggetto, pensa a un’attività: giocare, scrivere, collezionare piccoli ricordi, stare insieme. Un interesse concreto restringe le possibilità e rende il regalo più personale. Non devi conoscere ogni dettaglio, ma avere un punto di partenza aiuta.'],
- ['Decidi il budget prima.','Un budget chiaro permette di confrontare scelte realistiche. Conta anche come verrà usato il regalo: un piccolo oggetto quotidiano può essere adatto quanto un gioco per un’occasione speciale. Per i bambini, controlla sempre età e avvertenze.'],
- ['Dal catalogo al negozio.','Il catalogo di Guerrazzi mostra le schede pubblicate dal negozio. Puoi usarlo per orientarti e poi verificare la disponibilità del prodotto. In Via Guerrazzi 10/F puoi vedere dal vivo gli articoli disponibili e confrontare le caratteristiche.']]},
- {slug:'piccolo-pensiero-occasione',cluster:'regali',title:'Un piccolo pensiero, un’occasione concreta.',summary:'Per un invito o un grazie, scegli qualcosa che trovi posto nella giornata di chi lo riceve.',guide:'scegliere-un-regalo',sections:[
- ['Un motivo semplice.','Un regalo può accompagnare un ringraziamento, una visita o una piccola ricorrenza. Partire dal motivo aiuta a scegliere la misura del gesto. Non serve trasformare ogni pensiero in un’occasione importante: basta che abbia un senso per la persona.'],
- ['Utile o da condividere?','Chiediti se preferisci qualcosa da usare o un passatempo da fare insieme. Sono due direzioni diverse. Se il regalo è per un bambino, la scelta va guidata dall’età indicata sulla confezione e dagli interessi.'],
- ['Verifica la scelta.','Una fotografia aiuta a orientarsi, ma dimensioni, materiali e dettagli si comprendono meglio dal vivo. Guarda il catalogo, verifica l’articolo che ti interessa e passa da Guerrazzi. Per una richiesta specifica, confrontati con il negozio prima della visita.']]},
- {slug:'scegliere-regalo-ultimi-minuti',cluster:'regali',title:'Poco tempo per un regalo? Scegli una direzione.',summary:'Tre domande per arrivare in negozio con un’idea più chiara.',guide:'scegliere-un-regalo',sections:[
- ['Per chi, per cosa, quanto?','Età, occasione e budget sono le tre informazioni essenziali. Se conosci un interesse della persona, aggiungilo. Arrivare con questi dettagli è più utile che cercare “qualcosa di bello” senza un riferimento.'],
- ['Riduci le possibilità.','Decidi se cercare un gioco, un oggetto da usare o un piccolo pensiero. Una categoria chiara permette di confrontare meno alternative. Il catalogo del negozio può aiutarti a capire da dove iniziare.'],
- ['Non presumere la disponibilità.','Se hai poco tempo e cerchi un articolo preciso, verifica prima che sia presente. La pubblicazione di una scheda non sostituisce la verifica per una richiesta urgente. Per raggiungere Guerrazzi, usa Via Guerrazzi 10/F, Bologna come destinazione.']]},
- {slug:'gioco-regalo-eta-interessi',cluster:'giochi',title:'Un gioco da regalare: età e interessi prima di tutto.',summary:'Cosa leggere sulla scatola e quali domande farsi prima della scelta.',guide:'scegliere-un-gioco',sections:[
- ['Leggi l’età indicata.','Le indicazioni e le avvertenze del produttore sono il primo riferimento. Non sostituirle con una valutazione basata soltanto sull’aspetto del gioco. Un oggetto che sembra semplice può avere piccoli componenti o richiedere capacità specifiche.'],
- ['Osserva gli interessi.','C’è chi ama costruire, chi inventare storie, chi provare regole nuove. Parti da quello che il bambino fa volentieri, senza pensare che tutti debbano apprezzare lo stesso gioco. Se non lo conosci bene, chiedi a chi si occupa di lui.'],
- ['Confronta dal vivo.','La confezione e le caratteristiche aiutano a capire dimensioni, utilizzo e numero di partecipanti. In negozio puoi confrontare le opzioni disponibili. Usa il catalogo di Guerrazzi per orientarti e verifica prima un modello specifico.']]},
- {slug:'giochi-viaggio-piccoli-passatempi',cluster:'giochi',title:'Giochi da viaggio: piccoli, pratici, adatti al momento.',summary:'Ingombro, componenti e durata aiutano a scegliere un passatempo da portare con sé.',guide:'scegliere-un-gioco',sections:[
- ['Pensa allo spazio.','Un tavolino piccolo, una sala d’attesa e un pomeriggio all’aperto sono contesti diversi. Prima di scegliere, immagina dove il gioco verrà usato. Dimensioni e numero di componenti possono contare più della dimensione della scatola.'],
- ['Controlla regole e durata.','Per un momento breve può essere utile un gioco con partite rapide. Controlla il numero di partecipanti e le indicazioni sulla confezione. Per i bambini, restano essenziali età consigliata e avvertenze.'],
- ['Verifica quello che trovi.','“Da viaggio” è un’esigenza, non la garanzia di una categoria sempre disponibile. Confronta i prodotti effettivamente presenti nel catalogo o in negozio. Prima di passare per un articolo preciso, verifica la disponibilità con Guerrazzi.']]},
- {slug:'scegliere-gioco-insieme',cluster:'giochi',title:'Scegliere un gioco insieme è già parte del gioco.',summary:'Una vetrina e qualche domanda possono diventare un piccolo momento da ricordare.',guide:'scegliere-un-gioco',sections:[
- ['Lascia spazio alla curiosità.','Fermarsi davanti a una vetrina permette di vedere cosa attira l’attenzione. Un colore, una figura o un dettaglio sono punti di partenza per una domanda. L’interesse spontaneo è utile, ma va accompagnato dalle informazioni sulla confezione.'],
- ['Guarda oltre la scatola.','Chiedi come verrà usato il gioco e confronta le caratteristiche. Per un bambino, controlla l’età indicata e le avvertenze. La scelta non deve basarsi soltanto sull’entusiasmo del momento.'],
- ['Un incontro davanti a Guerrazzi.','Le fotografie che trovi nella sezione giochi raccontano questa sequenza: lo sguardo alla vetrina, Angela che avvicina un gioco, il momento della consegna. È un modo concreto di mostrare la relazione fra la scelta e le persone.']]},
- {slug:'guerrazzi-via-guerrazzi-bologna',cluster:'quartiere',title:'Guerrazzi, un indirizzo da ritrovare a Bologna.',summary:'Via Guerrazzi 10/F: il riferimento preciso per la tua visita.',guide:'raggiungere-il-negozio',sections:[
- ['Un nome legato a un luogo.','Tabaccheria Guerrazzi di Angela si trova in Via Guerrazzi 10/F, a Bologna. Quando cerchi il negozio, usa l’indirizzo completo: il civico è il riferimento più semplice per riconoscere la destinazione corretta.'],
- ['Il percorso dalla tua posizione.','Apri le indicazioni e scegli il mezzo con cui ti sposti. I tempi e il tragitto dipendono dal punto di partenza e dalle condizioni del momento. Per questo è utile controllare la mappa prima di partire.'],
- ['Una visita con uno scopo chiaro.','Che tu stia cercando un regalo o informazioni su un servizio, verifica prima la richiesta specifica. Il sito raccoglie le aree del negozio e le schede utili per orientarti. Le disponibilità vanno confermate prima di una visita dedicata.']]},
- {slug:'vetrina-guerrazzi-piccole-scelte',cluster:'quartiere',title:'Una vetrina, tante piccole scelte.',summary:'La curiosità si ferma davanti al vetro. Il negozio continua nell’incontro.',guide:'scegliere-un-gioco',sections:[
- ['Lo sguardo arriva prima.','Le fotografie della sezione giochi mostrano una bambina nel passeggino che guarda la vetrina. È un momento semplice: la scelta inizia ancora prima di entrare. Il vetro diventa il punto di incontro fra quello che passa in strada e quello che il negozio mostra.'],
- ['Dalla curiosità alla domanda.','Guardare è l’inizio; capire viene dopo. Chiedere informazioni su età, uso e caratteristiche aiuta a trasformare un interesse in una scelta adatta. Per un prodotto preciso, la scheda del catalogo può essere un primo riferimento.'],
- ['Il gesto che accompagna.','Nella sequenza, Angela avvicina il gioco alla bambina. Il racconto fotografico dà spazio alle persone e all’attenzione del negozio. Per ritrovare questo luogo, la destinazione è Via Guerrazzi 10/F a Bologna.']]},
- {slug:'angela-attenzione-negozio',cluster:'quartiere',title:'Il negozio si riconosce anche dalle persone.',summary:'Una domanda ascoltata e un gesto concreto raccontano più di una formula.',guide:'raggiungere-il-negozio',sections:[
- ['Un nome con una firma.','“Di Angela” rende personale il nome Guerrazzi. L’identità del negozio si lega a una persona, oltre che a un indirizzo. Nelle fotografie questo legame si vede nei gesti: avvicinare un oggetto, guardare una richiesta, partecipare a una piccola scelta.'],
- ['Informazioni prima di tutto.','Un incontro utile parte da una domanda concreta. Per un gioco contano età e interessi; per un servizio, documento e disponibilità. Il sito raccoglie questi percorsi per aiutare chi arriva a preparare la visita.'],
- ['La prossima volta che passi.','Puoi partire dal catalogo o dalle schede di approfondimento. Se cerchi qualcosa di preciso, verifica con il negozio. Guerrazzi si trova in Via Guerrazzi 10/F, Bologna: apri le indicazioni per scegliere il percorso dalla tua posizione.']]},
+  {
+    slug:'ricarica-telefonica-cosa-preparare',cluster:'servizi',
+    title:'Ricarica telefonica: numero, operatore e importo',
+    summary:'Il numero completo è il primo controllo. Poi vengono operatore, importo e condizioni: ecco cosa preparare prima di chiedere una ricarica.',
+    guide:'ricariche-telefoniche',
+    sections:[
+      ['Il numero, per esteso','Se la ricarica è per un’altra persona, fatti mandare il numero per iscritto. Portalo completo e rileggi tutte le cifre prima della conferma. Un numero ricordato a memoria o dettato in fretta lascia più spazio a un errore.'],
+      ['Operatore e importo: chiedi prima','Prepara il nome dell’operatore e l’importo che vorresti ricaricare. Verifica con il negozio che la richiesta possa essere gestita, quali modalità di pagamento siano ammesse e se ci siano condizioni da conoscere. Un’operazione già fatta in passato non conferma automaticamente quella di oggi.'],
+      ['La ricevuta va tenuta','Se viene rilasciata una ricevuta, conservala fino a quando hai controllato l’esito della ricarica. Se qualcosa non torna, il riferimento dell’operazione permette di spiegare il problema con precisione.'],
+      ['Credito telefonico o batteria scarica?','Sono due necessità diverse. Per il credito servono numero e operatore; per un cavo servono il dispositivo e i connettori. Nella sezione accessori per telefono trovi cavi e power bank, anche Teknee: funzione e compatibilità si leggono sul singolo modello.'],
+    ],
+  },
+  {
+    slug:'avviso-pagamento-documenti',cluster:'servizi',
+    title:'Bollettino o pagoPA: cosa portare e cosa chiedere',
+    summary:'Porta l’avviso completo e verifica che il tuo documento possa essere gestito. Una foto tagliata o il solo nome del servizio non bastano.',
+    guide:'bollettini-e-pagopa',
+    sections:[
+      ['Tieni insieme tutte le pagine','Codici e identificativi devono essere leggibili. Prepara l’avviso completo: evita fotografie sfocate e ritagli che eliminano una parte del documento. Se ci sono più pagine, tienile tutte a disposizione.'],
+      ['Descrivi l’avviso prima della visita','Chiedi se il negozio può gestire quel documento e quali modalità di pagamento sono ammesse. Specifica il tipo di avviso: la parola “pagamento” da sola dice poco. Le condizioni di una precedente operazione possono non essere le stesse.'],
+      ['Chiarisci i costi prima di confermare','Controlla i dettagli dell’operazione e chiedi quali commissioni siano previste. Fallo prima della conferma. Conserva poi la ricevuta o il riscontro rilasciato, così da avere un riferimento se dovesse servire.'],
+      ['I marchi della ricevitoria non confermano il servizio','I materiali Lotto e Sisal documentano una zona di ricevitoria. La loro presenza non dimostra che un particolare avviso possa essere pagato. Per organizzarti conta la risposta sulla tua richiesta precisa.'],
+    ],
+  },
+  {
+    slug:'servizi-negozio-organizzare-visita',cluster:'servizi',
+    title:'Prima di andare in negozio: tre controlli utili',
+    summary:'Chiarisci la richiesta, prepara i riferimenti e controlla gli orari. Per il deposito bagagli, la prenotazione passa da Bounce.',
+    guide:'raggiungere-il-negozio',
+    sections:[
+      ['Che cosa devi fare?','Un avviso da pagare, una ricarica e un deposito bagagli richiedono preparazioni diverse. Parti dall’operazione: per un pagamento indica il documento; per una ricarica l’operatore. Una domanda precisa permette di verificare il servizio prima di mettersi in viaggio.'],
+      ['Che cosa devi portare?','Tieni a portata di mano il documento completo, il codice o il numero necessario. Le guide dei servizi raccolgono i controlli da fare; per costi, modalità e disponibilità serve la conferma sul tuo caso.'],
+      ['Quando e dove devi arrivare?','Controlla gli orari aggiornati e apri il percorso dalla tua posizione. L’indirizzo di Guerrazzi è Via Guerrazzi 10/F, 40125 Bologna. Per una commissione specifica, verifica il servizio prima di partire: trovare il civico giusto non garantisce che l’operazione sia disponibile.'],
+      ['Se devi lasciare le valigie','Il deposito di Guerrazzi si prenota tramite Bounce. La scheda si chiama “Palazzo Ercolani” e riporta lo stesso indirizzo. Scegli data e bagagli sulla piattaforma, controlla consegna e ritiro e conserva la conferma. La pagina Deposito bagagli collega alla scheda ufficiale.'],
+    ],
+  },
+  {
+    slug:'regalo-compleanno-da-dove-partire',cluster:'regali',
+    title:'Regalo di compleanno: interessi, budget e confezione',
+    summary:'Un’abitudine della persona aiuta più di una ricerca generica. Parti da quella, fissa un budget e controlla i dettagli del regalo.',
+    guide:'scegliere-un-regalo',
+    sections:[
+      ['Pensa a un’attività, prima che a un oggetto','La persona scrive, gioca, raccoglie piccoli ricordi? Un interesse concreto restringe la ricerca. Anche un’abitudine semplice — prendere appunti o conservare ricordi di viaggio — può suggerire una direzione. Non occorre conoscere ogni preferenza: serve un punto da cui partire.'],
+      ['Decidi quanto vuoi spendere','Fissa il budget prima di confrontare le proposte. Poi pensa all’uso: un oggetto quotidiano e un passatempo da condividere rispondono a esigenze diverse. Se scegli un gioco per un bambino, età indicata e avvertenze sulla confezione vengono prima dell’aspetto della scatola.'],
+      ['Usa il catalogo per restringere la scelta','Le schede di Guerrazzi distinguono famiglie di articoli e gli eventuali prodotti pubblicati. Ti aiutano a trovare la categoria; per una variante precisa controlla la disponibilità. Dal vivo puoi confrontare dimensioni, materiali e confezione.'],
+      ['Lascia spazio al biglietto','L’assortimento comprende biglietti di compleanno illustrati, anche con applicazioni. Guarda il soggetto, lo spazio per il messaggio e la presenza della busta. Se cerchi anche una candelina numerica, indica le cifre: vanno verificate singolarmente.'],
+    ],
+  },
+  {
+    slug:'piccolo-pensiero-occasione',cluster:'regali',
+    title:'Un piccolo regalo per dire grazie: come orientarsi',
+    summary:'Un invito, un ringraziamento, un ricordo di Bologna. L’occasione aiuta a scegliere un pensiero senza complicare la ricerca.',
+    guide:'scegliere-un-regalo',
+    sections:[
+      ['Dai un nome all’occasione','Stai ringraziando qualcuno, andando a cena o tornando da un viaggio? Il motivo del regalo aiuta a decidere il tipo di oggetto e il budget. Basta questo primo riferimento per scartare proposte che non c’entrano con il gesto.'],
+      ['Immagina come verrà usato','Un oggetto da tenere sulla scrivania, un piccolo ricordo e un passatempo da condividere hanno usi diversi. Pensa alla giornata della persona. Per un regalo destinato a un bambino, controlla le indicazioni del produttore e le avvertenze del singolo articolo.'],
+      ['Guarda dimensioni e confezione','Le immagini del sito aiutano a riconoscere le categorie; le illustrazioni generiche non mostrano un prodotto preciso. Confronta l’oggetto dal vivo e verifica la variante che ti interessa. Se parti per un articolo specifico, chiedi prima se è presente.'],
+      ['Per un ricordo di Bologna, parti dalle calamite','Fra i soggetti documentati nell’espositore ci sono torri, monumenti e scritte di Bologna. Guarda il disegno e le dimensioni dell’oggetto: la categoria non è un elenco aggiornato di tutte le grafiche. Un biglietto con poche parole può accompagnare il ricordo.'],
+    ],
+  },
+  {
+    slug:'scegliere-regalo-ultimi-minuti',cluster:'regali',
+    title:'Regalo all’ultimo minuto: tre domande per scegliere',
+    summary:'Per chi è, per quale occasione e con quale budget? Rispondere prima di entrare riduce le alternative da confrontare.',
+    guide:'scegliere-un-regalo',
+    sections:[
+      ['Per chi, per cosa, quanto?','Segna età, occasione e budget. Aggiungi un interesse, se lo conosci. Sono riferimenti più utili di “qualcosa di bello”: permettono di partire da una categoria e confrontare proposte sensate per quella persona.'],
+      ['Scegli una categoria concreta','Giochi, cartoleria, calamite di Bologna e biglietti augurali offrono punti di partenza diversi. La persona scrive o studia? Sta visitando la città? Festeggia un compleanno? Segui la risposta più chiara, senza aprire ogni possibilità insieme.'],
+      ['Se hai già un nome, verifica quello','Quando il tempo è poco, una ricerca generica può aspettare. Se cerchi un articolo preciso, chiedi se è presente e indica la variante. Una scheda online descrive un riferimento, ma non sostituisce la verifica per una richiesta urgente.'],
+      ['Controlla anche la partenza','Prima di muoverti, guarda gli orari aggiornati e il percorso. La destinazione è Via Guerrazzi 10/F, Bologna. Se al regalo vuoi aggiungere un biglietto o una busta, inseriscili nella richiesta: anche misura e confezione meritano un controllo.'],
+    ],
+  },
+  {
+    slug:'gioco-regalo-eta-interessi',cluster:'giochi',
+    title:'Regalare un gioco: età, interessi e avvertenze',
+    summary:'La prima lettura è sulla scatola. Poi vengono gli interessi del bambino e il modo in cui userà il gioco.',
+    guide:'scegliere-un-gioco',
+    sections:[
+      ['Leggi l’età e le avvertenze','Le indicazioni del produttore sono il primo riferimento. Non sostituirle con un giudizio basato sul colore o sulla forma del gioco. Un oggetto dall’aspetto semplice può contenere piccoli componenti o richiedere capacità specifiche.'],
+      ['Chiedi che cosa gli piace fare','Costruire, inventare storie, seguire regole, giocare insieme: gli interessi danno una direzione alla scelta. Se non conosci bene il bambino, chiedi a chi se ne occupa. Un’indicazione concreta vale più dell’idea che tutti i coetanei desiderino lo stesso gioco.'],
+      ['Confronta l’uso previsto','Guarda dimensioni, componenti e numero di partecipanti. Pensa a dove verrà usato e con chi. Catalogo e confezione servono a raccogliere questi dettagli; prima di una visita per un modello preciso, verifica che sia presente.'],
+      ['Distingui gioco, festa e ricevitoria','Sono sezioni diverse. Palloncini e candeline hanno istruzioni proprie; i materiali di ricevitoria non appartengono ai passatempi per bambini. Leggi la confezione di ogni articolo, anche quando più cose servono per lo stesso compleanno.'],
+    ],
+  },
+  {
+    slug:'giochi-viaggio-piccoli-passatempi',cluster:'giochi',
+    title:'Giochi da viaggio: spazio, pezzi e tempo a disposizione',
+    summary:'Una scatola piccola non dice tutto. Considera lo spazio per giocare, i componenti da gestire e la durata del passatempo.',
+    guide:'scegliere-un-gioco',
+    sections:[
+      ['Immagina il posto in cui giocherai','Un tavolino, una sala d’attesa e un pomeriggio all’aperto offrono spazi diversi. Guarda quanto posto richiede il gioco una volta aperto, oltre alle dimensioni della confezione. Conta anche quanti pezzi dovrai tenere insieme.'],
+      ['Leggi regole, durata e partecipanti','Per una pausa breve cerca nelle indicazioni del gioco le informazioni sulla durata. Controlla quante persone possono partecipare e come si svolge l’attività. Se scegli per un bambino, leggi anche età indicata e avvertenze.'],
+      ['Descrivi l’esigenza, poi confronta i prodotti','“Da viaggio” descrive l’uso che hai in mente. Non garantisce un assortimento sempre disponibile. Spiega lo spazio, l’età e il tempo a disposizione; confronta poi gli articoli effettivamente presenti. Per un modello preciso, verifica prima della visita.'],
+      ['Se a Bologna hai anche le valigie','Il deposito bagagli è una richiesta separata dalla scelta del gioco. Da Guerrazzi passa tramite Bounce, sulla scheda “Palazzo Ercolani”. Prenota sulla piattaforma e organizza il ritiro; per il passatempo continua invece a fare riferimento alla sua confezione.'],
+    ],
+  },
+  {
+    slug:'scegliere-gioco-insieme',cluster:'giochi',
+    title:'Scegliere un gioco con un bambino: cosa osservare',
+    summary:'La curiosità suggerisce un punto di partenza. Età, avvertenze e uso previsto aiutano a capire se quel gioco è adatto.',
+    guide:'scegliere-un-gioco',
+    sections:[
+      ['Ascolta che cosa attira l’attenzione','Un personaggio, un colore o un’attività possono accendere la curiosità. Chiedi al bambino che cosa gli piacerebbe fare con quel gioco. La risposta aiuta a capire l’interesse, anche se da sola non stabilisce l’idoneità dell’articolo.'],
+      ['Passa dalla scatola alle indicazioni','Leggi età e avvertenze del produttore, poi guarda componenti e modalità di utilizzo. Quanto spazio serve? Si gioca da soli o insieme? Sono domande concrete da affiancare all’entusiasmo del momento.'],
+      ['Tieni distinti racconto e informazioni sul prodotto','La sequenza di Angela e della bambina mostrata nel sito è una ricreazione editoriale generata. Non documenta una prova del gioco né una valutazione della sua idoneità. Per scegliere conta la confezione dell’articolo preciso, insieme alle esigenze del bambino.'],
+      ['Se il gioco è un regalo di compleanno','Dopo i controlli sul gioco puoi cercare un biglietto e confrontare buste e fiocchi. Sono dettagli del regalo, con caratteristiche proprie. Una confezione più curata non cambia l’età indicata o le avvertenze del gioco.'],
+    ],
+  },
+  {
+    slug:'guerrazzi-via-guerrazzi-bologna',cluster:'quartiere',
+    title:'Come raggiungere Guerrazzi in Via Guerrazzi 10/F',
+    summary:'L’indirizzo completo, il percorso dalla tua posizione e il nome usato da Bounce per il deposito bagagli.',
+    guide:'raggiungere-il-negozio',
+    sections:[
+      ['Usa l’indirizzo completo','Tabaccheria Guerrazzi di Angela si trova in Via Guerrazzi 10/F, 40125 Bologna. Inserisci anche il civico quando imposti la destinazione: è il riferimento da usare per raggiungere il negozio.'],
+      ['Scegli il percorso dalla tua posizione','Apri le indicazioni e seleziona il mezzo con cui ti sposti. Tempi e tragitto dipendono dal punto di partenza e dalle condizioni del momento. Controllali nella tua app di mappe prima di partire.'],
+      ['Verifica la richiesta e gli orari','Il sito raccoglie categorie, schede e informazioni sui servizi. Se arrivi per un articolo o un’operazione precisa, verifica prima la disponibilità e gli orari aggiornati. L’indirizzo ti porta al luogo; la conferma sul caso specifico ti aiuta a organizzare la visita.'],
+      ['Su Bounce il nome è “Palazzo Ercolani”','La scheda del deposito bagagli usa questo nome, ma l’indirizzo è sempre Via Guerrazzi 10/F. Confronta i due riferimenti quando prenoti. Controlla sulla piattaforma data, consegna e ritiro; poi usa il civico per impostare il percorso.'],
+    ],
+  },
+  {
+    slug:'vetrina-guerrazzi-piccole-scelte',cluster:'quartiere',
+    title:'Cosa trovi da Guerrazzi oltre alla tabaccheria',
+    summary:'Cartoleria, calamite di Bologna, biglietti, accessori e piccoli articoli pratici: le categorie aiutano a trovare il percorso giusto.',
+    guide:'scegliere-un-gioco',
+    sections:[
+      ['Carta, scrittura e compleanni','La ricognizione del negozio documenta quaderni, penne, evidenziatori e un espositore di biglietti augurali. Sul sito cartoleria e feste hanno sezioni proprie, con schede di famiglia che spiegano quali dettagli confrontare: formato, rigatura, testo interno o busta, secondo l’articolo.'],
+      ['Ricordi di Bologna, giochi e profumi','Le calamite comprendono soggetti con torri, monumenti e scritte della città. Giochi e piccoli regali hanno percorsi propri. Il negozio conferma anche l’intera gamma di profumi Raptus per persona: nome e formato si verificano sulla singola fragranza. Le illustrazioni generiche del sito non identificano ogni variante presente.'],
+      ['Accessori per telefono e necessità quotidiane','Cavi, power bank, nastri, colle e piccoli articoli di cura personale hanno usi diversi. Le loro schede aiutano a formulare una richiesta precisa. Per un cavo servono i connettori; per una colla i materiali da unire. Il marchio, da solo, non risponde a queste domande.'],
+      ['Dalla categoria al singolo articolo','Una famiglia non è un inventario aggiornato. Usa il sito per trovare il gruppo che ti interessa, poi verifica modello, confezione e disponibilità. Anche le scene di Angela e della bambina sono ricreazioni editoriali: per conoscere l’articolo contano i suoi dati e la confezione.'],
+    ],
+  },
+  {
+    slug:'angela-attenzione-negozio',cluster:'quartiere',
+    title:'Come chiedere l’articolo giusto da Guerrazzi',
+    summary:'Un formato, una misura o una foto del riferimento possono chiarire la richiesta. I dettagli utili cambiano con ciò che cerchi.',
+    guide:'raggiungere-il-negozio',
+    sections:[
+      ['Per un quaderno, comincia dal foglio','Indica formato e rigatura, poi il tipo di rilegatura. Se vuoi ritrovare quello usato a scuola o al lavoro, una foto del riferimento può evitare di confondere un blocco con un quaderno. Il nome della marca è utile, ma non descrive tutti questi dettagli.'],
+      ['Per un cavo, guarda entrambe le estremità','Prepara il modello del dispositivo e una foto delle porte da collegare. Specifica se ti serve la ricarica, il trasferimento dati o entrambi: la funzione va controllata sul cavo preciso. La forma di un connettore non sostituisce le specifiche del modello.'],
+      ['Per un regalo, descrivi la persona','Età, interessi, occasione e budget danno una direzione alla ricerca. Se hai già un oggetto in mente, aggiungi nome e variante. Per una calamita indica il soggetto; per una busta regalo porta le misure dell’oggetto da contenere.'],
+      ['Usa la scheda come promemoria','Le famiglie del catalogo raccolgono i dettagli da confrontare. Tieni il riferimento a portata di mano quando chiedi informazioni e verifica la disponibilità prima di una visita dedicata. Per raggiungere il negozio, usa Via Guerrazzi 10/F, Bologna.'],
+    ],
+  },
 ];
-for(const a of articles){const addition=evidenceAdditions[a.slug];if(addition)a.sections.push(addition);}
+
+// Keep source attribution, cluster membership and adult-area routes in the shared
+// information data. These local copies revise only the articles' editorial text.
+const informationArticleCopy:Record<string,Pick<Article,'title'|'summary'|'sections'>>={
+  'sigari-sigaretti-informazioni-termini':{
+    title:'Sigari e sigaretti: cosa significano i due nomi',
+    summary:'Il significato delle denominazioni nel testo normativo citato e le informazioni che il nome, da solo, non contiene.',
+    sections:[
+      ['Il termine “sigaretto” nel decreto','Nelle definizioni del D.Lgs. 6/2016 citato in questa area, il sigaretto è descritto come un sigaro piccolo. Il riferimento serve a leggere una denominazione. Non stabilisce una graduatoria tra articoli e non indica quale consumare.'],
+      ['Leggi la denominazione completa','Un nome abbreviato o una foto ritagliata possono lasciare fuori informazioni. Leggi la denominazione insieme al resto della confezione. Il nome della categoria non descrive automaticamente composizione e caratteristiche di ogni articolo che vi appartiene.'],
+      ['Dove approfondire i termini','La guida collegata raccoglie le definizioni e rimanda al testo pubblicato in Gazzetta Ufficiale. Questa è un’area informativa per adulti: non presenta offerte, consigli di consumo, ordini o spedizioni di tabacco. Le informazioni generali sul negozio restano nelle sezioni dedicate al luogo.'],
+    ],
+  },
+  'tabacco-18-anni-conferma-documento':{
+    title:'Conferma 18+: che cosa dichiari sul sito',
+    summary:'Il pulsante consente di consultare l’area per adulti. Non verifica la tua identità e non sostituisce il controllo del documento previsto al banco.',
+    sections:[
+      ['Dichiari di avere almeno 18 anni','Il sito chiede questa conferma prima di mostrare le sezioni interessate. Non richiede un documento né una data di nascita. La scelta viene conservata nella sessione del browser e non crea un profilo dell’utente.'],
+      ['Il documento è un controllo distinto','La conferma online non sostituisce gli obblighi relativi alla vendita ai minori e al controllo del documento. La guida dedicata collega il riferimento normativo. Il pulsante serve alla consultazione del sito: non dimostra chi lo abbia premuto.'],
+      ['Puoi uscire e continuare a navigare','Se non confermi, il collegamento di uscita porta alla home. Cartoleria, idee regalo, giochi, souvenir e deposito bagagli restano consultabili senza questa autodichiarazione. La scelta di leggere una sezione non richiede di entrare nelle altre.'],
+    ],
+  },
+  'tabacco-confezioni-fonti-informazione':{
+    title:'Confezioni di tabacco: leggere nomi e avvertenze',
+    summary:'La confezione riguarda l’articolo preciso; una fonte normativa spiega le regole. Ecco perché le due informazioni vanno lette separatamente.',
+    sections:[
+      ['Parti dalla confezione precisa','Leggi denominazione e informazioni riportate sull’imballaggio, comprese le avvertenze. Una scheda generale non certifica il singolo articolo e un contenuto online non sostituisce ciò che compare sulla confezione. Non trasferire le informazioni da un prodotto a un altro.'],
+      ['Controlla quale testo stai consultando','La Gazzetta Ufficiale collegata documenta il provvedimento pubblicato. Per ricostruire modifiche successive serve il testo vigente. Prima di attribuire una regola alla situazione attuale, verifica quindi il ruolo e la versione della fonte.'],
+      ['Non ricavare benefici da nomi o immagini','Grafica e denominazione non dimostrano un vantaggio per la salute. Questa area non propone confronti commerciali o consigli di consumo. Per comprendere i termini consulta le guide e i riferimenti ufficiali; per dubbi sulla salute rivolgiti a un professionista sanitario.'],
+    ],
+  },
+  'radica-non-semplice-radice':{
+    title:'Radica di erica: che cos’è e dove si forma',
+    summary:'La struttura da conoscere è il lignotubero: un ingrossamento legnoso fra radice e fusto. Le fonti botaniche spiegano dove si trova e quale ruolo ha nella pianta.',
+    sections:[
+      ['Il punto di passaggio fra radice e fusto','Per capire la radica occorre guardare l’anatomia della pianta. Lo studio di Paula e colleghi descrive in Erica arborea il lignotubero, un ingrossamento legnoso nella zona di transizione fra radice e fusto. Chiamarlo soltanto “radice” non restituisce questa struttura.'],
+      ['Gemme e riserve: il ruolo nella pianta','Il lignotubero contiene gemme dormienti e riserve di amido. Gli autori ne studiano il ruolo nella capacità di ricaccio dopo forti disturbi e includono Erica arborea fra le specie documentate. Prima di diventare un materiale per oggetti, è dunque una parte della pianta con una funzione biologica.'],
+      ['Che cosa documentano le due fonti','Kew permette di verificare identità e classificazione della specie. Il lavoro di anatomia vegetale descrive il lignotubero e ne documenta gli impieghi storici. Per attribuire quel materiale a un singolo oggetto serve invece una documentazione dell’oggetto: una fotografia o il colore del legno non bastano.'],
+    ],
+  },
+  'schiuma-mare-nome-minerale':{
+    title:'Schiuma di mare: che cos’è la sepiolite',
+    summary:'Il nome rimanda a un minerale, non alla schiuma marina. Il tesauro dei materiali chiarisce i sinonimi e aiuta a distinguere la denominazione dall’aspetto di un oggetto.',
+    sections:[
+      ['Più nomi per lo stesso materiale','Nel tesauro del Ministerio de Cultura spagnolo, Meerschaum e i nomi corrispondenti alla schiuma di mare rimandano alla sepiolite. Il repertorio collega termini usati in lingue diverse: è un punto di partenza per cercare il materiale senza lasciarsi guidare dall’immagine evocata dal nome.'],
+      ['La classificazione è mineralogica','La sepiolite è classificata fra i fillosilicati. La parola “schiuma” non ne documenta un’origine dalla schiuma marina; una superficie chiara, a sua volta, non dimostra che un oggetto sia fatto di sepiolite. Denominazione e identificazione richiedono informazioni diverse.'],
+      ['Che cosa puoi capire da una fotografia','Una foto mostra l’aspetto visibile. Il tesauro definisce il termine; la scheda di un oggetto registra l’attribuzione del materiale. Leggi queste informazioni insieme, mantenendo chiaro che cosa prova ciascuna: una somiglianza non identifica la composizione di un esemplare.'],
+    ],
+  },
+  'nomi-botanici-denominazioni-tabacco':{
+    title:'Nicotiana tabacum: che cosa dice il nome della pianta',
+    summary:'Genere e specie identificano una pianta. Non descrivono da soli ingredienti, lavorazione o origine di una confezione.',
+    sections:[
+      ['Prima domanda: quale specie?','Quando una fonte riporta Nicotiana tabacum, sta indicando una specie botanica. È un’informazione diversa dalla composizione di una miscela o dalle caratteristiche di un prodotto. Prima di cercare una risposta, chiarisci quale di queste domande stai facendo.'],
+      ['Famiglia, genere e specie nella scheda Kew','Kew colloca la specie nella famiglia Solanaceae e nel genere Nicotiana. Il nome completo la identifica all’interno di questa classificazione. La posizione botanica non assegna un valore commerciale e non descrive le proprietà di una confezione.'],
+      ['Abbina la domanda alla fonte','Per verificare un nome scientifico serve un repertorio botanico. Per ingredienti, origine o lavorazione di un contenuto preciso occorre documentazione riferita a quel contenuto. Una fonte può essere corretta senza rispondere a tutte le domande: controlla sempre che cosa sta effettivamente descrivendo.'],
+    ],
+  },
+};
 
 clusters.push({id:'informazione-tabacco',label:'Tabacco: informazioni e norme',parent:'sigari',theme:'cedro'});
 clusters.push({id:'materiali-e-storia',label:'Materiali e storia',parent:'pipe-e-tabacchi-da-pipa',theme:'radica'});
 clusters.push({id:'lessico-e-fonti',label:'Lessico e fonti',parent:'sigari',theme:'cedro'});
-articles.push(...tobaccoArticles);
-for(const a of tobaccoArticles)articleCategoryLinks[a.slug]=['sigari','pipe-e-tabacchi-da-pipa'];
+articles.push(...tobaccoArticles.map(article=>({...article,...informationArticleCopy[article.slug]})));
+for(const article of tobaccoArticles)articleCategoryLinks[article.slug]=['sigari','pipe-e-tabacchi-da-pipa'];

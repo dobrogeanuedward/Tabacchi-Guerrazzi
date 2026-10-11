@@ -1,0 +1,91 @@
+{
+  "revision": "1.0",
+  "verifiedOn": "2026-10-11",
+  "scope": "Loghi ufficiali Bounce e Raptus; nessun logo di tabacco o fotografia di prodotto.",
+  "verificationMethod": "Consultazione online delle fonti primarie e controllo del vettoriale originale. Le condizioni di utilizzo sono riportate in sintesi, non come parere legale.",
+  "brands": [
+    {
+      "id": "bounce",
+      "name": "Bounce",
+      "status": "official-asset-applied-to-existing-partner-service",
+      "verified": true,
+      "downloaded": true,
+      "asset": {
+        "publicPath": "/brand/partners/bounce-official.svg",
+        "repositoryPath": "public/brand/partners/bounce-official.svg",
+        "format": "image/svg+xml",
+        "bytes": 4118,
+        "sha256": "191dcde64c8cb1641bc06c9d3d7493007c60b4737e9510cfdb494a0d01df33f7",
+        "viewBox": "0 0 108 24",
+        "sourceUrl": "https://bounce.com/",
+        "sourceLocation": "Vettoriale SVG inline nel primo header, collegamento con title Bounce.",
+        "acquisition": "Estrazione esatta dell'intero elemento SVG, senza modifica di tracciato, attributi, proporzioni o colori. Nessun ridisegno e nessuna generazione.",
+        "integrity": "Il contenuto salvato coincide esattamente con l'elemento SVG della pagina ufficiale al momento del recupero; XML valido, un tracciato, nessuno script o riferimento esterno.",
+        "rendering": "Il vettoriale ufficiale usa currentColor. Come immagine SVG esterna isolata viene reso nel colore predefinito nero; utilizzare una superficie chiara e mantenere proporzioni e spazio libero. Non applicare filtri, ritagli o effetti."
+      },
+      "license": {
+        "type": "conditional-store-partner-trademark-use",
+        "rightsHolder": "Bounce, Inc.",
+        "sourceUrl": "https://bounce.com/legal/store-partner-agreement",
+        "sourceTitle": "Partner Terms and Conditions",
+        "sourceUpdatedOn": "2026-09-14",
+        "sections": [
+          "10.1",
+          "10.3",
+          "15.6"
+        ],
+        "permissionSummary": "L'articolo 10.3 consente ai partner di dichiarare il rapporto e pubblicizzare il servizio del proprio punto usando il marchio Bounce. Il partner deve usare copie esatte del marchio adottato da Bounce oppure ottenere approvazione di design, colore e dettagli.",
+        "permittedProjectUse": "Identificare il servizio deposito bagagli Bounce già presente nel negozio, con rimando alla scheda ufficiale del punto. Non è una licenza aperta né un'autorizzazione a riutilizzare tutte le immagini Bounce.",
+        "conditions": [
+          "Rapporto di partnership attivo; il progetto descrive il punto esistente di Via Guerrazzi 10F.",
+          "Usare il marchio senza ridisegno, distorsione, ritaglio o alterazione; per una rappresentazione diversa occorre approvazione Bounce.",
+          "Non attribuire al negozio garanzie, prezzi, orari, servizi o qualifiche ulteriori rispetto a quelli verificati.",
+          "Non registrare marchi simili o suggerire un rapporto diverso dalla partnership di servizio.",
+          "Cessare l'uso del marchio alla conclusione della partnership, come previsto dall'articolo 15.6."
+        ]
+      },
+      "partnerEvidence": {
+        "url": "https://bounce.com/stores/bologna/7ZRpUp",
+        "listingTitle": "Luggage Storage Palazzo Ercolani",
+        "address": "Via Guerrazzi, 10F, Bologna, BO 40125, Italy",
+        "verifiedOn": "2026-10-11",
+        "limit": "Scheda pubblica verificata; non sono stati consultati il contratto privato o l'account partner. Il numero di telefono della piattaforma non viene attribuito al negozio."
+      },
+      "implementation": "Applied in src/components/BounceBrand.astro, LuggageCallout.astro and the luggage page in Page.astro. Static route verification is recorded separately in asset-coverage-map.json; final remote browser review is pending.",
+      "implementationSourceFiles": [
+        "src/components/BounceBrand.astro",
+        "src/components/LuggageCallout.astro",
+        "src/components/Page.astro"
+      ]
+    },
+    {
+      "id": "raptus",
+      "name": "Raptus Parfum",
+      "status": "written-permission-or-owner-supplied-authorized-original-required",
+      "verified": true,
+      "downloaded": false,
+      "asset": null,
+      "license": {
+        "type": "no-public-reuse-permission-found",
+        "rightsHolder": "Royalife s.a.s. di Giordano Fabio & Co. o rispettivi titolari",
+        "sourceUrl": "https://raptusparfum.it/content/14-termini-d-uso-del-sito",
+        "sourceTitle": "Termini d'uso del sito",
+        "sourceUpdatedOn": "2026-06-16",
+        "sections": [
+          "5"
+        ],
+        "permissionSummary": "Il paragrafo 5 include espressamente loghi, marchi e grafica fra i contenuti protetti e richiede autorizzazione scritta per riproduzione, distribuzione o utilizzo. Anche il footer ufficiale esclude la diffusione senza autorizzazione scritta.",
+        "additionalSourceUrl": "https://raptusparfum.it/",
+        "downloadDecision": "Nessun logo o fotografia Raptus scaricato o pubblicato. Non è stata individuata un'eccezione pubblica per rivenditori o un press kit riutilizzabile nelle pagine ufficiali consultate.",
+        "nextAssetNeeded": "Logo originale fornito dal negozio con diritti di utilizzo confermati, oppure autorizzazione scritta del marchio e relativo file ufficiale. La conferma dell'assortimento non certifica i diritti sulle immagini."
+      },
+      "implementation": "Usare per ora la denominazione testuale del marchio. La fragrance-paper-study è un'illustrazione editoriale generica e non riproduce logo, flaconi o confezioni Raptus."
+    }
+  ],
+  "excluded": [
+    "Loghi di produttori di tabacco e sigari e loro uso promozionale.",
+    "Asset di omonime aziende Bounce estranee al deposito bagagli.",
+    "Foto di prodotti, logo Raptus estratto dal sito o riproduzioni generate di confezioni protette.",
+    "Altri marchi senza un file autentico e condizioni di riutilizzo verificate."
+  ]
+}

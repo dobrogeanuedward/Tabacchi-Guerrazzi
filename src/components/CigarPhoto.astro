@@ -1,0 +1,52 @@
+---
+import {text,type Lang} from '../data/shop';
+import {cigarPhotoForGroup} from '../data/cigar-photography';
+import {referenceCigarPhotoForName} from '../data/cigar-reference-photos';
+
+interface Props {
+ name:string;
+ group:string;
+ lang?:Lang;
+ loading?:'lazy'|'eager';
+}
+
+const {name,group,lang='it',loading='lazy'}=Astro.props;
+const photo=cigarPhotoForGroup(group);
+const reference=referenceCigarPhotoForName(name);
+const display=reference||photo;
+const l=lang==='it'?0:1;
+const generic=['sigaro','sigaretto','cigar','cigarillo'].includes(name.trim().toLowerCase());
+const caption=generic?text(lang,
+ 'Studio fotografico generato di una forma generica. Non documenta un modello, una confezione, misure o composizione.',
+ 'Generated photographic study of a generic form. It does not document a model, packaging, dimensions or composition.'
+):text(lang,
+ `Studio fotografico generato di una forma generica. Non raffigura ${name} né ne documenta confezione, misure o composizione.`,
+ `Generated photographic study of a generic form. It does not depict ${name} or document its packaging, dimensions or composition.`
+);
+---
+<figure class:list={['cigar-photo',reference&&'cigar-photo--reference']} data-photo-study={display.id} data-photo-scope={display.scope}>
+ <div class="cigar-photo-frame">
+  <img src={display.path} srcset={`${display.preview} ${reference?reference.previewWidth:768}w, ${display.path} ${display.width}w`} sizes="(max-width: 680px) calc(100vw - 44px), (max-width: 1100px) 44vw, 580px" width={display.width} height={display.height} alt={display.alt[l]} loading={loading} decoding="async"/>
+ </div>
+ <figcaption>
+  <div class="cigar-photo-label"><span>{reference?text(lang,reference.medium==='scan'?'Scansione di riferimento':'Foto di riferimento',reference.medium==='scan'?'Reference scan':'Reference photograph'):text(lang,'Studio fotografico generato','Generated photographic study')}</span><span aria-hidden="true">↳</span></div>
+  <p>{reference?reference.caption[l]:caption}</p>
+  {reference&&<div class="cigar-photo-credit"><p><a href={reference.sourcePage}>{reference.fileTitle}</a> — <a href={reference.authorUrl}>{reference.author}</a>{reference.authorAlias&&<span> ({reference.authorAlias})</span>} · <a href={reference.licenseUrl} rel="license">{reference.license}</a>.</p><p>{reference.changes[l]}</p></div>}
+ </figcaption>
+</figure>
+<style>
+ .cigar-photo{margin:0;min-width:0;color:#493928}
+ .cigar-photo-frame{padding:12px;border:1px solid #c7b59c;background:#fcf9f0}
+ .cigar-photo-frame img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:contain}
+ .cigar-photo--reference .cigar-photo-frame{display:flex;align-items:center;aspect-ratio:3/2;padding:30px 20px;background:#fff}
+ .cigar-photo--reference .cigar-photo-frame img{aspect-ratio:auto}
+ .cigar-photo figcaption{margin-top:18px;padding-top:16px;border-top:1px solid #947453}
+ .cigar-photo-label{display:flex;align-items:baseline;justify-content:space-between;gap:18px;margin-bottom:9px;color:#5b402b;font:600 .95rem/1.6 var(--sans)}
+ .cigar-photo-label>span:last-child{font-weight:400;font-size:1.2rem}
+ .cigar-photo figcaption p{max-width:65ch;margin:0;color:#51483d;font:400 .95rem/1.8 var(--sans);text-wrap:pretty}
+ .cigar-photo-credit{margin-top:13px;padding-top:12px;border-top:1px solid #c7b59c}
+ .cigar-photo-credit p+p{margin-top:5px}
+ .cigar-photo-credit a{color:#5b402b;text-decoration:underline;text-underline-offset:3px;overflow-wrap:anywhere}
+ .cigar-photo-credit a:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
+ @media(max-width:680px){.cigar-photo-frame{padding:8px}.cigar-photo figcaption{margin-top:14px;padding-top:13px}}
+</style>

@@ -151,9 +151,45 @@
       "tool": "built-in image_gen",
       "review": "Approved for generic editorial use: clean materials, no identifiable brands, no readable document data.",
       "bytes": 262372
+    },
+    {
+      "id": "cigar-tapered-study",
+      "prompt": "Use case: scientific-educational visual documentation. Create a neutral, accurate photographic-style morphology study of ONE GENERIC UNBRANDED unlit dry-cured cigar, elongated with two gently tapered rounded ends and a modest central bulge. It must NOT reproduce or represent any named commercial product. Landscape 3:2. Plain off-white matte photographic background, object horizontally oriented, gentle diagonal 8 degrees, seen directly from above. Diffuse even daylight, truthful restrained medium-brown leaf wrapping, natural small seams, clean realistic edges. Full object visible with ample quiet margin. This is a reference illustration for an adult terminology archive, not advertising. No cigar band, logo, packaging, label, brand, text, measurements, props, humidor, smoking, flame, ash, people, hands, alcohol, luxury, gilding or dramatic light. Do not exaggerate cracks, knots or defects; clean and calm. No consumption instructions.",
+      "refs": [],
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-a5e7523e-83df-4483-b6a2-4ad74a00191d.png",
+      "tool": "image_gen.imagegen",
+      "generatedAt": "2026-10-11",
+      "web": "/images/studies/cigar-tapered-study.webp",
+      "preview": "/images/studies/cigar-tapered-study-768.webp",
+      "scope": "Neutral generated photographic illustration of a generic form. Does not depict or authenticate any named cigar, pack, stock, size or blend. Educational archive use only.",
+      "bytes": 64224
+    },
+    {
+      "id": "cigar-cylinder-study",
+      "prompt": "Use case: scientific-educational visual documentation. Create a neutral photographic-style morphology study of ONE GENERIC UNBRANDED unlit cylindrical cigar with parallel sides, a closed rounded cap at one end and a plain open foot at the other. It must NOT reproduce or represent any named commercial product or exact blend. Landscape 3:2, gentle three-quarter low side view, entire object visible running left to right on a plain off-white matte photographic background. Even diffuse studio daylight, understated natural medium-brown leaf wrapping and one subtle spiral seam, plausible physical geometry. Quiet informative catalogue-of-forms framing, not sales photography. No cigar band, logo, commercial packaging, brand, text, ruler, measurements, props, wood, humidor, smoking, flame, ash, people, hands, alcohol, luxury, golden tones or dramatic light. Do not expose invented internal anatomical details. Clean, calm, non-eerie; no consumption instructions.",
+      "refs": [],
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-f8c5a163-633a-4549-9b60-25f9f06c4322.png",
+      "tool": "image_gen.imagegen",
+      "generatedAt": "2026-10-11",
+      "web": "/images/studies/cigar-cylinder-study.webp",
+      "preview": "/images/studies/cigar-cylinder-study-768.webp",
+      "scope": "Neutral generated photographic illustration of a generic form. Does not depict or authenticate any named cigar, pack, stock, size or blend. Educational archive use only.",
+      "bytes": 77772
+    },
+    {
+      "id": "cigarillo-form-study",
+      "prompt": "Use case: scientific-educational visual documentation. Create a neutral photographic-style morphology study of TWO GENERIC UNBRANDED short dry-cured cigar forms, each compact with softly tapered ends and natural medium-brown leaf wrapping. They must NOT reproduce or represent any named commercial product or exact variant. Landscape 3:2, high oblique view with the two small objects separately placed, not touching, with a clear gap, one running diagonally upward and the other parallel slightly lower; full forms visible. Plain off-white matte photographic background, diffuse even daylight, honest small contact shadows, restrained natural seams. The image is a visual aid about generic shapes in an adult terminology archive, not advertising. No cigar bands, logos, packaging, brands, text, measurements, props, humidor, smoking, flame, ash, people, hands, alcohol, luxury or dramatic light. No cutaways or invented internal anatomy. Clean and calm; do not exaggerate roughness; no consumption instructions.",
+      "refs": [],
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-d8bad7ea-739c-4f5c-ac8d-534320992686.png",
+      "tool": "image_gen.imagegen",
+      "generatedAt": "2026-10-11",
+      "web": "/images/studies/cigarillo-form-study.webp",
+      "preview": "/images/studies/cigarillo-form-study-768.webp",
+      "scope": "Neutral generated photographic illustration of a generic form. Does not depict or authenticate any named cigar, pack, stock, size or blend. Educational archive use only.",
+      "bytes": 81910
     }
   ],
-  "revision": "2.0",
+  "revision": "2.1",
   "updated": "2026-10-11",
   "basedOn": "visual-pack-v1-manifest.json"
 }

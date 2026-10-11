@@ -1,0 +1,9 @@
+---
+const {lang='it'}=Astro.props;
+---
+<div class="bounce-brand"><span>{lang==='it'?'Prenotazioni tramite':'Bookings through'}</span><img src="/brand/partners/bounce-official.svg" width="108" height="24" alt="Bounce" loading="lazy"/></div>
+<style>
+ .bounce-brand{display:flex;align-items:center;flex-wrap:wrap;gap:14px;padding:12px 16px;width:fit-content;max-width:100%;border:1px solid #aebbd0;background:#fffdfa;margin:0 0 22px;color:#33435b}
+ .bounce-brand>span{font:500 .95rem/1.6 var(--sans)}
+ .bounce-brand>img{width:108px;height:24px;object-fit:contain}
+</style>

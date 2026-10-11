@@ -1,5 +1,6 @@
 import {tobaccoGuides,tobaccoSources} from './tobacco-information';
 import {assortmentPages} from './assortment';
+import {guideCopy} from './guide-copy';
 export const pages: Record<string, any> = {
  'il-negozio': {theme:'bottega',title:['Un nome, una persona.','A name. A person.'],intro:['Dietro Guerrazzi c’è Angela. Davanti, una vetrina che invita a fermarsi.','Behind Guerrazzi is Angela. In front, a shop window that invites you to stop.'],image:'/images/incontro.webp',sections:[
  [['L’attenzione è nei gesti.','Care is in the little gestures.'],['Ascoltare una domanda, avvicinare un gioco, aiutare a scegliere. Il negozio si racconta anche così: attraverso gli incontri che avvengono ogni giorno davanti alla vetrina e al banco.','Listening to a question, bringing over a toy, helping someone choose. The shop tells its story through the everyday encounters at its window and counter.']],
@@ -71,6 +72,9 @@ guides['marchi-trattati'].sections.push([['Qualche nome per orientarsi.','Some n
 guides['raggiungere-il-negozio'].sections.push([['Se arrivi con le valigie.','If you arrive with luggage.'],['Guerrazzi offre deposito bagagli tramite Bounce. Sulla piattaforma lo stesso indirizzo è denominato Palazzo Ercolani: verifica la prenotazione e gli orari del deposito prima di impostare il percorso.','Guerrazzi offers luggage storage through Bounce. The platform names this same address Palazzo Ercolani: check your booking and storage hours before planning your route.']]);
 
 Object.assign(guides,tobaccoGuides);
+for(const [slug,copy] of Object.entries(guideCopy)){
+ guides[slug]={...guides[slug],...copy};
+}
 Object.assign(pages['sigari'],{
  title:['Sigari: termini e informazioni.','Cigars: terminology and information.'],
  intro:['Un percorso informativo per adulti: denominazioni, confezioni e riferimenti ufficiali. Guerrazzi si trova in Via Guerrazzi 10/F, Bologna.','An information area for adults: terminology, packaging and official references. Guerrazzi is at Via Guerrazzi 10/F, Bologna.'],
@@ -78,7 +82,7 @@ Object.assign(pages['sigari'],{
   [['Capire le denominazioni','Understanding terminology'],['Sigari e sigaretti sono categorie distinte nel testo normativo. La scheda dedicata chiarisce i termini e collega la fonte: non è una selezione di prodotti o un consiglio di consumo.','Cigars and cigarillos are distinct categories in the legislation. Our guide explains the terms and links to the source; it is not a product selection or consumption recommendation.']],
   [['Leggere la confezione','Reading the pack'],['Denominazione e avvertenze vanno lette sul singolo articolo. Non attribuire a un’intera categoria le informazioni di una confezione diversa; i testi online non sostituiscono l’etichetta.','Read the name and warnings on the individual item. Do not apply information from a different pack to an entire category; online text does not replace the label.']],
   [['Un’area informativa, un indirizzo preciso','An information area, a precise address'],['Qui trovi informazioni e fonti. Per ritrovare il negozio consulta l’indirizzo e la mappa di Via Guerrazzi 10/F; questa area non accetta ordini o richieste di spedizione di tabacco.','Find information and sources here. Use the address and map for Via Guerrazzi 10/F to locate the shop; this area does not accept tobacco orders or shipping requests.']]],
- links:['sigari-termini-informazioni','tabacco-minori-documenti','tabacco-confezioni-avvertenze'],related:['pipe-e-tabacchi-da-pipa','contatti'],sources:tobaccoSources,
+ links:['tipologie-di-sigaro','confrontare-schede-sigari','sigari-termini-informazioni','tabacco-minori-documenti','tabacco-confezioni-avvertenze'],related:['pipe-e-tabacchi-da-pipa','contatti'],sources:tobaccoSources,
  faqs:[['Perché compare la conferma 18+?','Questa area informativa è destinata agli adulti. Il pulsante è un’autodichiarazione e non sostituisce il controllo dell’età al banco.','Why is there an 18+ confirmation?','This information area is intended for adults. The button is a self-declaration and does not replace in-store age checks.'],['Posso ordinare sigari da questo sito?','No. Questa sezione pubblica informazioni e riferimenti; non raccoglie ordini, prenotazioni di prodotti o richieste di spedizione di tabacco.','Can I order cigars on this website?','No. This section publishes information and references; it does not accept orders, product reservations or tobacco shipping requests.']]
 });
 Object.assign(pages['pipe-e-tabacchi-da-pipa'],{

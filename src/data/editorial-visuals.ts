@@ -1,4 +1,5 @@
 import {visualStudies, type VisualStudyId} from './visual-studies';
+import {cigarPhotography,type CigarPhotoStudyId} from './cigar-photography';
 
 type Pair = [string, string];
 export type EditorialVisual = {
@@ -25,6 +26,12 @@ const mineral = study('mineral-sepiolite-study');
 const services = study('service-paper-study');
 const celebration = study('celebration-paper-study');
 const play = study('play-shape-study');
+const cigarForm=(id:CigarPhotoStudyId):EditorialVisual=>{
+  const item=cigarPhotography[id];
+  return {src:item.path,preview:item.preview,width:item.width,height:item.height,label:['Forme del sigaro','Cigar forms'],alt:item.alt,caption:['Studio fotografico generato di forme generiche, senza marchio. Non documenta un articolo, misure o composizione.','Generated photographic study of generic unbranded forms. It does not document a specific item, dimensions or composition.']};
+};
+const cylinder=cigarForm('cigar-cylinder-study');
+const cigarillo=cigarForm('cigarillo-form-study');
 
 export const clusterVisuals: Record<string, EditorialVisual> = {
   servizi:services,regali:gift,giochi:play,quartiere:travel,
@@ -35,17 +42,19 @@ const guideVisuals: Record<string, EditorialVisual> = {
   'ricariche-telefoniche':services,'bollettini-e-pagopa':services,
   'scegliere-un-regalo':gift,'scegliere-un-gioco':play,
   'marchi-trattati':archive,'raggiungere-il-negozio':travel,
-  'sigari-termini-informazioni':archive,'tabacco-minori-documenti':archive,
+  'sigari-termini-informazioni':cylinder,'tabacco-minori-documenti':archive,
   'tabacco-confezioni-avvertenze':archive,'radica-erica-arborea':botany,
   'schiuma-di-mare-sepiolite':mineral,'pipe-materiali-storia':archive,
-  'sigaro-struttura-termini':archive,'nicotiana-tabacum-botanica':archive
+  'sigaro-struttura-termini':cylinder,'nicotiana-tabacum-botanica':archive,
+  'tipologie-di-sigaro':cigarillo,'confrontare-schede-sigari':archive
 };
 
 export const visualForGuide = (slug: string) => guideVisuals[slug] || paper;
 export const visualForArticle = (slug: string, cluster: string) => {
+  if(slug==='sigari-sigaretti-informazioni-termini') return cigarillo;
   if(slug==='radica-non-semplice-radice') return botany;
   if(slug==='schiuma-mare-nome-minerale') return mineral;
-  if(slug==='regalo-compleanno-da-dove-partire'||slug==='scegliere-gioco-insieme') return celebration;
+  if(slug==='regalo-compleanno-da-dove-partire') return celebration;
   return clusterVisuals[cluster] || archive;
 };
 

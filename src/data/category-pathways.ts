@@ -30,6 +30,8 @@ export const categoryPathways:Record<string,RouteNote[]>={
  'deposito-bagagli':[{lead:['Per riconoscere l’indirizzo leggi come','To find the right address, read how to'],target:'schede/raggiungere-il-negozio',label:['raggiungere Guerrazzi in Via Guerrazzi 10/F','reach Guerrazzi at Via Guerrazzi 10/F'],after:[' e apri le indicazioni dalla tua posizione.',' and open directions from your location.']},{lead:['Prima di ripartire puoi guardare i','Before leaving, you can browse'],target:'souvenir-bologna',label:['souvenir e le calamite di Bologna','Bologna souvenirs and magnets'],after:[' esposti nel negozio.',' displayed in the shop.']}]
 };
 export const guideCategoryLinks:Record<string,string[]>={
+ 'tipologie-di-sigaro':['sigari','pipe-e-tabacchi-da-pipa'],
+ 'confrontare-schede-sigari':['sigari'],
  'sigari-termini-informazioni':['sigari','pipe-e-tabacchi-da-pipa'],
  'tabacco-minori-documenti':['sigari','contatti'],
  'tabacco-confezioni-avvertenze':['pipe-e-tabacchi-da-pipa','sigari'],
