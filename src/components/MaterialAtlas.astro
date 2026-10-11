@@ -1,0 +1,75 @@
+---
+import {materialGuides} from '../data/materials-education';
+import {pathFor,text,type Lang} from '../data/shop';
+
+const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
+const l=lang==='it'?0:1;
+const presentation:Record<string,{type:[string,string];texture:string}>={
+ 'radica-erica-arborea':{type:['Botanica','Botany'],texture:'wood'},
+ 'schiuma-di-mare-sepiolite':{type:['Materiali','Materials'],texture:'mineral'},
+ 'pipe-materiali-storia':{type:['Storia','History'],texture:'paper'},
+ 'sigaro-struttura-termini':{type:['Terminologia','Terminology'],texture:'paper'},
+ 'nicotiana-tabacum-botanica':{type:['Botanica','Botany'],texture:'forest'}
+};
+const entries=Object.entries(materialGuides).filter(([,guide])=>guide.parent===slug).map(([key,guide])=>({key,guide,...presentation[key]}));
+---
+{entries.length>0&&<section id="atlante" class="material-atlas" aria-labelledby="atlas-heading">
+ <div class="atlas-opening">
+  <p class="atlas-kicker">{text(lang,'Atlante informativo','Information atlas')}</p>
+  <h2 id="atlas-heading">{text(lang,'Guide a materiali e parole.','Guides to materials and terminology.')}</h2>
+  <p class="atlas-intro">{text(lang,'Botanica, storia e lessico: ogni guida parte da fonti verificabili.','Botany, history and terminology: each guide starts with verifiable sources.')}</p>
+ </div>
+ <div class:list={['atlas-grid',entries.length===1&&'atlas-single']}>
+  {entries.map(({key,guide,type,texture},index)=><a class="atlas-card" href={pathFor(`schede/${key}`,lang)}>
+   <div class="atlas-texture" aria-hidden="true"><img src={`/images/materials/${texture}.webp`} width="1536" height="1024" loading="lazy" alt="" aria-hidden="true"/></div>
+   <div class="atlas-card-top"><span>{text(lang,'Guida','Guide')} · {type[l]}</span><span class="atlas-number" aria-hidden="true">{String(index+1).padStart(2,'0')}</span></div>
+   <div class="atlas-card-copy">
+    <h3>{guide.title[l]}</h3>
+    <p>{guide.intro[l]}</p>
+    <span class="atlas-card-action">{text(lang,'Apri la guida','Open the guide')}<span aria-hidden="true">→</span></span>
+   </div>
+  </a>)}
+ </div>
+ <p class="atlas-texture-note">{text(lang,'Texture decorative generate; non fotografie di esemplari.','Generated decorative textures; not photographs of specimens.')}</p>
+</section>}
+
+<style>
+ .material-atlas{--atlas-paper:#f6f1e7;--atlas-ink:#25332d;--atlas-brown:#62462f;margin-block:0 72px;color:var(--atlas-ink);scroll-margin-top:32px}
+ .atlas-opening{max-width:800px;margin-bottom:30px}
+ .atlas-kicker{font-family:var(--sans);font-size:1rem;font-weight:600;line-height:1.5;letter-spacing:0;color:var(--atlas-brown);margin-bottom:14px}
+ .atlas-opening h2{font-family:var(--display);font-size:clamp(2rem,3.5vw,3.2rem);line-height:1.1;letter-spacing:-.035em;color:var(--atlas-ink);margin-bottom:18px}
+ .atlas-intro{max-width:620px;font-size:.9375rem;line-height:1.8;color:#4d5850}
+ .atlas-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ .atlas-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid #62462f38;border-radius:3px;background:var(--atlas-paper);color:var(--atlas-ink);box-shadow:0 3px 0 #62462f0a;transition:border-color .2s,box-shadow .2s,transform .2s}
+ .atlas-texture{height:76px;max-height:80px;overflow:hidden;border-bottom:1px solid #62462f26;background:#ded5c5}
+ .atlas-texture img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.8);opacity:.85}
+ .atlas-card-top{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 28px 0;font-family:var(--sans);font-size:.9rem;font-weight:600;line-height:1.6;letter-spacing:0;color:var(--atlas-brown)}
+ .atlas-number{font-variant-numeric:tabular-nums;color:#776d5f;font-weight:400}
+ .atlas-card-copy{display:flex;flex:1;flex-direction:column;align-items:flex-start;padding:17px 28px 27px}
+ .atlas-card h3{max-width:28ch;font-family:var(--display);font-size:clamp(1.6rem,2.2vw,2rem);font-weight:400;line-height:1.2;letter-spacing:-.025em;color:var(--atlas-ink);margin-bottom:16px}
+ .atlas-card-copy>p{max-width:55ch;font-size:.875rem;line-height:1.8;color:#4d5850;margin-bottom:26px}
+ .atlas-card-action{display:flex;align-items:center;justify-content:space-between;gap:32px;width:100%;margin-top:auto;padding-top:19px;border-top:1px solid #62462f30;font-family:var(--sans);font-size:.8125rem;font-weight:600;line-height:1.6;color:var(--atlas-brown)}
+ .atlas-card-action>span{font-size:1.25rem;line-height:1;transition:transform .2s}
+ .atlas-card:hover{border-color:#62462f8a;box-shadow:0 8px 24px #25332d0d;transform:translateY(-2px)}
+ .atlas-card:hover .atlas-card-action>span{transform:translateX(4px)}
+ .atlas-card:focus-visible{outline:3px solid var(--atlas-ink);outline-offset:5px;border-color:var(--atlas-ink)}
+ .atlas-single{grid-template-columns:minmax(0,1fr)}
+ .atlas-single .atlas-card-top{padding-inline:36px}
+ .atlas-single .atlas-card-copy{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:20px 48px;padding:22px 36px 32px;align-items:start}
+ .atlas-single h3{margin-bottom:0;max-width:27ch}
+ .atlas-single .atlas-card-copy>p{margin-bottom:0;max-width:50ch}
+ .atlas-single .atlas-card-action{grid-column:1/-1;margin-top:5px}
+ .atlas-texture-note{margin-top:18px;font-size:.75rem;line-height:1.7;color:#686d62}
+ @media(max-width:680px){
+  .material-atlas{margin-block:0 48px}
+  .atlas-opening{margin-bottom:24px}
+  .atlas-grid{grid-template-columns:minmax(0,1fr);gap:18px}
+  .atlas-texture{height:60px}
+  .atlas-card-top,.atlas-single .atlas-card-top{padding:22px 22px 0}
+  .atlas-card-copy,.atlas-single .atlas-card-copy{display:flex;padding:16px 22px 23px;gap:0}
+  .atlas-card h3,.atlas-single h3{font-size:1.75rem;max-width:30ch;margin-bottom:14px}
+  .atlas-card-copy>p,.atlas-single .atlas-card-copy>p{margin-bottom:24px}
+  .atlas-single .atlas-card-action{margin-top:auto}
+ }
+ @media(prefers-reduced-motion:reduce){.atlas-card,.atlas-card-action>span{transition:none}.atlas-card:hover,.atlas-card:hover .atlas-card-action>span{transform:none}}
+</style>

@@ -87,5 +87,7 @@ export const articles:Article[] = [
 for(const a of articles){const addition=evidenceAdditions[a.slug];if(addition)a.sections.push(addition);}
 
 clusters.push({id:'informazione-tabacco',label:'Tabacco: informazioni e norme',parent:'sigari',theme:'cedro'});
+clusters.push({id:'materiali-e-storia',label:'Materiali e storia',parent:'pipe-e-tabacchi-da-pipa',theme:'radica'});
+clusters.push({id:'lessico-e-fonti',label:'Lessico e fonti',parent:'sigari',theme:'cedro'});
 articles.push(...tobaccoArticles);
 for(const a of tobaccoArticles)articleCategoryLinks[a.slug]=['sigari','pipe-e-tabacchi-da-pipa'];

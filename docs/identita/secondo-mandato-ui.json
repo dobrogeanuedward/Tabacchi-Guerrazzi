@@ -1,0 +1,22 @@
+{
+  "updated": "2026-10-11",
+  "scope": "Autorità",
+  "status": "Da eseguire in seconda mandata sull’intero sito; primi criteri applicati all’area editoriale corrente.",
+  "reference": "C:/Users/dobro/Desktop/TABACCHI/proposta_tabaccheria_guerrazzi_dogo_senza_prezzi.pdf",
+  "userDirection": [
+    "Pulito ma d’effetto: prendere grande spunto dalla proposta e dall’identità, senza sovrapporre troppi linguaggi.",
+    "Informazioni essenziali subito visibili: gli eyebrow non devono sparire dietro titoli enormi e poco esplicativi.",
+    "Basta listoni di testo e blocchi fluttuanti; dare struttura, ritmo e gerarchia.",
+    "Materiali generati belli e adatti al sito: niente texture inquietanti o eccessivamente nodose.",
+    "Distinguere a colpo d’occhio prodotto apribile, categoria, guida, servizio e informazione."
+  ],
+  "work": [
+    {"id": "hierarchy", "action": "Audit mobile e desktop di tutti i template: titolo concreto, sintesi breve, dettagli progressivi, paragrafi brevi e indice dove utile."},
+    {"id": "labels", "action": "Dare peso leggibile al nome della sezione. Mai affidare al solo eyebrow minuscolo l’informazione necessaria a capire la pagina."},
+    {"id": "cards", "action": "Contenitori, bordi e spazi coerenti; tipo di contenuto visibile e azione esplicita Apri scheda, Esplora categoria o Leggi guida."},
+    {"id": "density", "action": "Ridurre ripetizioni fra intro, sezioni, FAQ e contenuti collegati. Limitare i percorsi iniziali e usare espansioni per dettagli secondari."},
+    {"id": "identity", "action": "Verificare palette, proporzioni, tipografia e materiali rispetto alla proposta; un’unica identità con variazioni di area controllate."},
+    {"id": "photos", "action": "Seguire asset-replacement-register.json: sostituzioni con vere foto e nuove generazioni solo da riferimenti sufficienti."},
+    {"id": "acceptance", "action": "Verificare a 320, 390, 768 e 1440 px: nessuna sovrapposizione, testo principale leggibile, contenuto apribile evidente, focus tastiera visibile."}
+  ]
+}

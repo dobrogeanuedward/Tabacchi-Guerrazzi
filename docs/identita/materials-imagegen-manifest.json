@@ -1,0 +1,162 @@
+{
+  "version": 1,
+  "created": "2026-10-11",
+  "tool": "image_gen built-in",
+  "reference": "proposta_tabaccheria_guerrazzi_dogo_senza_prezzi.pdf — pp.7,9,10,14; solo direzione materica/editoriale, logo definitivo invariato",
+  "scope": "Texture generali decorative. Non certificano specie o materiali di esemplari e non raffigurano il negozio o prodotti.",
+  "assets": [
+    {
+      "id": "paper",
+      "prompt": "Use case: photorealistic-natural. Asset type: general material background for an educational editorial website. Primary request: a full-frame close-up texture of warm ivory uncoated archival cotton paper, very fine irregular fibres, subtle tactile grain, tiny natural tonal variations, no stains or aged burnt edges. Style: meticulous neutral macro material photography. Composition: landscape 3:2, straight-on flat plane, edge-to-edge texture, consistent soft illumination, quiet spacious appearance. Palette: chalk, cream and pale warm grey. No objects, no words, no illustrations, no logos, no borders or vignette. No tobacco, no pipes, no cigars.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-3cb19894-62a5-4b48-ade1-d252c2d44201.png",
+      "paths": [
+        "/images/materials/paper.webp",
+        "/images/materials/paper-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Base editoriale avorio",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/paper.png"
+    },
+    {
+      "id": "wood",
+      "prompt": "Use case: photorealistic-natural. Asset type: elegant general wood texture for an editorial material library. Primary request: a beautiful quiet close-up of a smooth natural light walnut-toned wooden surface with soft flowing fine grain. Landscape 3:2, edge-to-edge single material, flat plane. Warm chestnut and taupe brown palette, delicate parallel wavy grain lines, subtle silky matte finish under large diffused daylight, beautifully balanced and restrained. Avoid pronounced knots, eyes, black holes, cracks, worm marks, stains, bark, rough cross-sections, dramatic contrast, horror-like organic patterns or glossy varnish. No objects, no tobacco, no cigars, no pipes, no smoke, no text or logos. Generic decorative wood, no claim of authenticated species.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-c6406533-7ffb-46ea-ab29-72ae7a9707c5.png",
+      "paths": [
+        "/images/materials/wood.webp",
+        "/images/materials/wood-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Accento caldo; studio generico di legno, non foto autenticata di radica",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/wood.png"
+    },
+    {
+      "id": "mineral",
+      "prompt": "Use case: photorealistic-natural. Asset type: general mineral-inspired background texture for a neutral educational editorial website. Primary request: a beautiful smooth warm-white matte mineral surface with the very finest chalky grain, delicate soft clouding, subtle milky layers. Landscape 3:2 full-frame flat texture, edge-to-edge, serene luminous ivory and pale cream, evenly lit with soft natural diffuse daylight. Sophisticated tactile but extremely quiet, no dramatic veins. Avoid holes, pores large enough to look like skin, pits, cracks, fossils, lumpy or fleshy surfaces, horror, dirt, shadows, objects, borders or vignettes. No typography, logos, tobacco, pipes or cigars. A generic decorative mineral study, not a scientifically authenticated specimen.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-460969d0-f2eb-4ffd-a4c7-0e5eaefd0aec.png",
+      "paths": [
+        "/images/materials/mineral.webp",
+        "/images/materials/mineral-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Accento minerale chiaro, non foto autenticata di sepiolite",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/mineral.png"
+    },
+    {
+      "id": "blue",
+      "prompt": "Use case: photorealistic-natural. Asset type: general brand material texture for a website inspired by tactile paper editorial design. Primary request: a full-frame flat surface of deep cobalt blue dyed uncoated art paper, finely woven cotton fibres with subtle tooth and a luxurious but sober matte finish. Landscape 3:2, uniform soft broad daylight, intense clean cobalt around #0645c0, no gradients, no dark vignette, no shiny patches. Entire frame is one beautiful quiet paper texture, no folds, no objects, no words, no logos, no borders, no cigars or tobacco. Detailed yet restrained so white typography placed in code stays legible.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-9649d4f6-88c4-4b58-be5d-8c4c1b4387ea.png",
+      "paths": [
+        "/images/materials/blue.webp",
+        "/images/materials/blue-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Continuità di marca e area utility",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/blue.png"
+    },
+    {
+      "id": "forest",
+      "prompt": "Use case: photorealistic-natural. Asset type: general brand material texture, companion to ivory paper and warm wood editorial website backgrounds. Primary request: deep forest green dyed fine art paper, full-frame macro flat surface, sophisticated muted botanical green around #263f33, extremely fine subtle cotton fibre tooth, smooth matte look. Landscape 3:2, uniform diffuse studio daylight, rich even colour, tactile but quiet. Avoid distressed print, mould, moss, flaky bark, black blobs, holes, cracks, grunge, gradients, dramatic shadows or shiny highlights. No objects, no plants, no text, no logos, no smoking products.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-1ba40c8c-f4c1-401e-a564-6e77723e908a.png",
+      "paths": [
+        "/images/materials/forest.webp",
+        "/images/materials/forest-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Area materiali/storia delle pipe",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/forest.png"
+    },
+    {
+      "id": "terracotta",
+      "prompt": "Use case: photorealistic-natural. Asset type: general brand material texture for a clean tactile editorial website inspired by Bologna terracotta. Primary request: a beautiful flat warm terracotta mineral plaster surface, restrained artisanal finish, very fine evenly distributed grain, soft hand-smoothed texture, muted burnt sienna around #b76240. Landscape 3:2, the material fills all edges, evenly lit by broad diffuse daylight. Fine tactile detail but no coarse relief. Avoid crumbling wall, peeling paint, cracks, scratches, stains, pockmarks, grunge, threatening patterns, sharp shadows or shiny patches. No objects, buildings, people, letters, logos, tobacco or smoking products.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-fea43e7a-e457-4cbc-bc53-b304484a9187.png",
+      "paths": [
+        "/images/materials/terracotta.webp",
+        "/images/materials/terracotta-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Sfondo bottega; libreria pronta per ampliamento UI in seconda mandata",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/terracotta.png"
+    },
+    {
+      "id": "night",
+      "prompt": "Use case: photorealistic-natural. Asset type: general nighttime brand material texture for a clean editorial website. Primary request: a full-frame extremely dark ink blue uncoated paper surface, fine soft cotton grain visible in the light, sophisticated deep midnight navy around #122238. Landscape 3:2. Uniform diffuse light, tactile matte finish, no cinematic lighting. Elegant quiet detail so cream text added later in code will be clear. Avoid velvet, glitter, smoke, stars, black holes, mould, cracks, stains, grunge, sharp shadows, gradients and shiny patches. No objects, text, logos, cigars, pipes or tobacco.",
+      "original": "C:/Users/dobro/.codex/generated_images/01a12b5c-4f38-73c1-852a-e61eb2e988d0/exec-c672e5b4-b710-465c-8ef0-fefa720d6c0b.png",
+      "paths": [
+        "/images/materials/night.webp",
+        "/images/materials/night-768.webp"
+      ],
+      "dimensions": {
+        "full": [
+          1536,
+          1024
+        ],
+        "small": [
+          768,
+          512
+        ]
+      },
+      "use": "Sfondo notte; libreria pronta per ampliamento UI in seconda mandata",
+      "workspaceOriginal": "C:/Users/dobro/Documents/Codex/2026-10-11/riprendi-il-context/outputs/materials/originals/night.png"
+    }
+  ],
+  "discarded": [
+    {
+      "file": "exec-d1e550e7-f9ad-473e-be34-436fb58fc66d.png",
+      "reason": "Prima prova troppo nodosa rispetto alla successiva richiesta di materiali puliti; non inclusa nel sito."
+    }
+  ]
+}
