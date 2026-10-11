@@ -22,7 +22,7 @@ Il totale comprende 209 `index.html` e la 404, non 210 argomenti distinti. Le ci
 
 ## Verifiche della versione già pubblicata
 
-La versione precedente alla mandata UI corrente è pubblicata su `https://tabacchiguerrazzi.vercel.app` e sull’alias `https://tabacchiguerrazzu.vercel.app`. I push su `main` avviano i deploy Vercel collegati al repository.
+La revisione UI è pubblicata su `https://tabacchiguerrazzi.vercel.app` e sull’alias `https://tabacchiguerrazzu.vercel.app`. I push su `main` avviano i deploy Vercel collegati al repository.
 
 - Build statico, controllo Astro, test applicativi e controlli SEO delle categorie, delle schede e delle guide informative erano stati completati nella precedente mandata.
 - La navigazione e i layout modificati erano stati verificati a 320, 390, 768 e 1440 px; questo non equivale a una nuova verifica browser esaustiva di tutti i 210 file HTML.
@@ -34,9 +34,11 @@ La versione precedente alla mandata UI corrente è pubblicata su `https://tabacc
 
 ## Mandata UI corrente
 
-È in corso l’estensione della gerarchia leggibile all’intero sito: nome della sezione evidente, titoli concreti, sintesi brevi, schede contenute e azioni esplicite per aprire categorie, famiglie, guide e articoli. La densità e le ripetizioni dei percorsi collegati vengono ridotte secondo `docs/identita/secondo-mandato-ui.json`.
+È completata l’estensione della gerarchia leggibile all’intero sito: nome della sezione evidente, titoli concreti, sintesi brevi, schede contenute e azioni esplicite per aprire categorie, famiglie, guide e articoli. La densità e le ripetizioni dei percorsi collegati vengono ridotte secondo `docs/identita/secondo-mandato-ui.json`.
 
-Dopo l’integrazione occorre registrare gli esiti effettivi di `npm test`, `npm run check`, `npm run build:static`, `npm run test:seo` e dei controlli browser sui template modificati. Non attribuire a questa mandata i risultati dei controlli precedenti. Le verifiche non sono una promessa di posizionamento SEO o citazione da assistenti.
+Verifiche di questa mandata: `npm test` (6 passati), `npm run check` (0 errori e 0 warning; un hint preesistente), `npm run build:static` (210 pagine), `npm run test:seo` e 475 collegamenti a sezioni interni risolti. I template principali sono stati controllati nel browser remoto a 320, 390, 768 e 1440 px senza overflow orizzontale; testati filtri, ricerca combinata, stato vuoto e reset del catalogo, ancore, versione inglese e focus tastiera.
+
+Anche `npm run test:e2e` passa: il limite `maxParallelFileOps:1` bloccava il caricamento annidato del Node adapter su Windows; il build server usa ora 32, mentre l’export statico mantiene 1. Pubblicazione tramite push su `main`, con entrambi i controlli Vercel riusciti per la revisione UI. Registro: `docs/identita/ui-verification-2026-10-11.json`. Le verifiche non sono una promessa di posizionamento SEO o citazione da assistenti.
 
 ## Asset e attività ancora in attesa
 

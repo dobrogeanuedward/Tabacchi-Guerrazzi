@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-11",
   "scope": "Autorità",
-  "status": "Implementata la revisione dei template pubblici; verifica responsive sul deploy in corso. Foto reali e dati finali restano in attesa.",
+  "status": "Revisione UI implementata e verificata sul sito pubblicato. Sostituzioni fotografiche e dati finali in attesa dei riferimenti reali.",
   "reference": "C:/Users/dobro/Desktop/TABACCHI/proposta_tabaccheria_guerrazzi_dogo_senza_prezzi.pdf",
   "userDirection": [
     "Pulito ma d’effetto: prendere grande spunto dalla proposta e dall’identità, senza sovrapporre troppi linguaggi.",
@@ -44,7 +44,7 @@
     {
       "id": "acceptance",
       "action": "Verificare a 320, 390, 768 e 1440 px: nessuna sovrapposizione, testo principale leggibile, contenuto apribile evidente, focus tastiera visibile.",
-      "status": "implemented-awaiting-live-qa"
+      "status": "verified"
     }
   ],
   "implementation": [
@@ -53,5 +53,6 @@
     "Catalogo e famiglie: tipo di scheda, filtri leggibili, immagini di ambientazione dichiarate.",
     "Guide e diario: sintesi, indice, sezioni numerate e articoli collegati deduplicati.",
     "Densità: tre articoli in anteprima, dettagli secondari espandibili, testo Bounce consolidato."
-  ]
+  ],
+  "verification": "ui-verification-2026-10-11.json"
 }

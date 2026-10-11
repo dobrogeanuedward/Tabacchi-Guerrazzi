@@ -9,5 +9,6 @@ export default defineConfig({
  ...(staticExport?{srcDir:'./.static-export/src'}:{adapter:node({mode:'standalone'})}),
  server:{port:4321,host:true},
  security:{allowedDomains},
- vite:{build:{rollupOptions:{maxParallelFileOps:1}},resolve:{preserveSymlinks:process.platform==='win32'},ssr:{external:['node:sqlite']}}
+ // The Node adapter loads nested asset entrypoints; serial loading stalls those hooks on Windows.
+ vite:{build:{rollupOptions:{maxParallelFileOps:staticExport?1:32}},resolve:{preserveSymlinks:process.platform==='win32'},ssr:{external:['node:sqlite']}}
 });

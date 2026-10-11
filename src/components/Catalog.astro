@@ -28,7 +28,7 @@ const categoryLabel=(id:string)=>{const c=categories.find(c=>c.id===id);return c
  const filter=()=>{const params=new URLSearchParams(location.search);const category=params.get('categoria')||'';const q=params.get('q')||'';if(input)input.value=q;let total=0;
  cards.forEach(card=>{const match=(!category||card.dataset.category===category)&&normal(card.dataset.search||'').includes(normal(q));card.hidden=!match;if(match)total++});
  controls?.querySelectorAll<HTMLAnchorElement>('.category-tab').forEach(a=>{const selected=(new URL(a.href).searchParams.get('categoria')||'')===category;if(selected)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current')});
- if(empty)empty.hidden=total!==0;if(count)count.textContent=total+' '+(lang==='en'?'listings to explore':'schede da esplorare');};
+ if(empty)empty.hidden=total!==0;if(count)count.textContent=total+' '+(lang==='en'?(total===1?'listing to explore':'listings to explore'):(total===1?'scheda da esplorare':'schede da esplorare'));};
  const navigate=(params:URLSearchParams)=>{history.pushState({},'',base+(params.size?'?'+params.toString():''));filter()};
  controls?.querySelectorAll<HTMLAnchorElement>('.category-tab').forEach(a=>a.addEventListener('click',e=>{if(e.ctrlKey||e.metaKey||e.shiftKey||e.altKey)return;e.preventDefault();const p=new URLSearchParams(location.search);const category=new URL(a.href).searchParams.get('categoria');if(category)p.set('categoria',category);else p.delete('categoria');navigate(p)}));
  document.querySelector('[data-catalog-search]')?.addEventListener('submit',e=>{e.preventDefault();const p=new URLSearchParams(location.search);const q=(input?.value||'').trim();if(q)p.set('q',q);else p.delete('q');navigate(p)});

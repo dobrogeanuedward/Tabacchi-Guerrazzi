@@ -1,0 +1,62 @@
+{
+  "date": "2026-10-11",
+  "scope": "Autorità",
+  "site": "https://tabacchiguerrazzi.vercel.app",
+  "uiCommitVerified": "633918dfdbadbbf1c98ead199d8da3a6d69d4b14",
+  "widths": [
+    320,
+    390,
+    768,
+    1440
+  ],
+  "browserTemplates": [
+    "home",
+    "catalogo",
+    "assortimento/quaderni",
+    "cartoleria",
+    "deposito-bagagli",
+    "servizi",
+    "schede/ricariche-telefoniche",
+    "approfondimenti",
+    "approfondimenti/radica-non-semplice-radice"
+  ],
+  "horizontalOverflow": 0,
+  "catalogueChecks": [
+    "category filter: 6 stationery families",
+    "combined query: 1 notebook family",
+    "empty search: visible reset action",
+    "reset: 25 families"
+  ],
+  "navigationChecks": [
+    "category sheets anchor: 30px from top",
+    "journal materials cluster anchor",
+    "English category heading and local navigation",
+    "keyboard focus: 3px solid outline"
+  ],
+  "tests": {
+    "unit": "6 passed",
+    "astro": "0 errors, 0 warnings; existing Story hint",
+    "static": "210 pages",
+    "seo": "passed",
+    "fragmentLinks": "475 resolved",
+    "nodeE2E": "passed after maxParallelFileOps fix"
+  },
+  "nodeBuildFix": {
+    "cause": "maxParallelFileOps:1 stalls nested Node adapter loads on Windows",
+    "setting": "staticExport ? 1 : 32",
+    "isolatedReproduction": "one-page app reproduced failure with 1 and built successfully with 32"
+  },
+  "finalPolish": [
+    "singular catalogue result label",
+    "Bounce location heading",
+    "booking anchor margin",
+    "home essential navigation hierarchy",
+    "hero controls fit desktop viewport"
+  ],
+  "remaining": [
+    "real photographs and prior original generations",
+    "confirmed phone, hours and legal owner data",
+    "completed legal information and final domain before indexed launch"
+  ],
+  "indexing": "noindex,nofollow remains active"
+}

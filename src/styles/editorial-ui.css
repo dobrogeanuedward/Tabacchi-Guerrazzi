@@ -10,7 +10,7 @@
 .page-jumps{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px;padding:0 0 24px;border-bottom:1px solid var(--line)}
 .page-jumps a{display:flex;align-items:center;min-height:44px;padding:10px 16px;font-size:.95rem;font-weight:600;border:1px solid var(--line);background:#fff9;color:var(--accent);border-radius:3px}
 .page-jumps a:hover{background:var(--surface);border-color:var(--accent)}
-#page-details,#category-sheets,#page-guides,#page-questions,#luggage-address{scroll-margin-top:30px}
+#booking-title,#page-details,#category-sheets,#page-guides,#page-questions,#luggage-address{scroll-margin-top:30px}
 .information-panels{gap:22px;margin:30px 0}
 .information-panels>section{padding:28px;background:#fff9;border:1px solid var(--line);border-top:3px solid var(--accent)}
 .information-panels h2{font-size:clamp(1.9rem,2.7vw,2.7rem);line-height:1.18;margin-bottom:18px;max-width:22ch}
@@ -96,3 +96,9 @@
  .visit-panel{padding-block:40px;margin-bottom:50px}.visit-panel h2{font-size:2.5rem}
  .luggage-local-notes{padding:22px}
 }
+
+.home-essentials{gap:18px}
+.home-essentials a{padding:22px;border:1px solid var(--line);border-top:3px solid var(--blue);background:#fff9}
+.home-essentials .eyebrow{font:400 .95rem/1.5 var(--sans);letter-spacing:0;color:#42516a;margin-bottom:12px}
+.home-essentials strong{display:block;font:400 1.6rem/1.22 var(--display);letter-spacing:-.025em;color:var(--blue)}
+@media(max-width:680px){.home-essentials{gap:14px}.home-essentials a{padding:18px}.home-essentials strong{font-size:1.45rem}}
