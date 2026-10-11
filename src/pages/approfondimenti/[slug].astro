@@ -1,29 +1,74 @@
 ---
-import Base from '../../layouts/Base.astro';import {articles,clusters,articleCategoryLinks} from '../../data/articles';import {guides,pages} from '../../data/pages';
+import Base from '../../layouts/Base.astro';import {articles,clusters,articleCategoryLinks,type Article} from '../../data/articles';import {guides,pages} from '../../data/pages';
 import {materialArticles} from '../../data/materials-education';
 import {tobaccoArticles} from '../../data/tobacco-information';
 import OfficialSources from '../../components/OfficialSources.astro';import {mainPages} from '../../data/shop';
 export const prerender=true;
 export function getStaticPaths(){return articles.map(a=>({params:{slug:a.slug},props:{a}}))}
-const {a}=Astro.props;const c=clusters.find(c=>c.id===a.cluster)!;const domain=import.meta.env.PUBLIC_SITE_URL;
+const {a}=Astro.props as {a:Article};const c=clusters.find(c=>c.id===a.cluster)!;const domain=import.meta.env.PUBLIC_SITE_URL;
 const research=materialArticles.some(b=>b.slug===a.slug);const information=tobaccoArticles.some(b=>b.slug===a.slug);
 const schema={'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.summary,inLanguage:'it',citation:(a.sources||[]).map(s=>s.url),author:{'@type':'Organization',name:'Tabaccheria Guerrazzi di Angela'},...(domain?{url:new URL(`/approfondimenti/${a.slug}/`,domain).href}:{})};
+const readingMinutes=Math.max(1,Math.ceil([a.summary,...a.sections.flat()].join(' ').trim().split(/\s+/).length/190));
+const categoryTitle=(slug:string)=>mainPages.find(p=>p.slug===slug)?.it||pages[slug].title[0];
+const categoryLink=(slug:string)=>({href:`/${slug}/`,kind:information?'Area informativa':'Categoria',title:categoryTitle(slug),action:information?'Apri l’area':'Esplora la categoria'});
+const continuation=[
+ {href:`/schede/${a.guide}/`,kind:'Guida',title:guides[a.guide].title[0],action:'Apri la guida'},
+ categoryLink(c.parent),
+ ...(articleCategoryLinks[a.slug]||[]).map(categoryLink),
+ ...articles.filter(b=>b.cluster===a.cluster&&b.slug!==a.slug).map(b=>({href:`/approfondimenti/${b.slug}/`,kind:'Articolo',title:b.title,action:'Leggi l’articolo'}))
+].filter((link,index,all)=>all.findIndex(item=>item.href===link.href)===index);
 ---
 <Base image={information?`/images/materials/${c.theme==='radica'?'forest':'wood'}.webp`:undefined} title={a.title} description={a.summary} slug={`approfondimenti/${a.slug}`} alternate={false} theme={c.theme} schema={schema}>
 <div class="breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/approfondimenti/">Il diario</a><span>/</span><a href={`/approfondimenti/#${c.id}`}>{c.label}</a></div>
-<header class:list={["article-head",information&&"information-article-head"]}><p>{c.label}</p><h1>{a.title}</h1><p class="standfirst">{a.summary}</p></header><div class:list={["article-body",information&&"information-article-body"]}><nav class="article-toc" aria-label="In questo articolo">{information&&<h2>In questo articolo</h2>}{a.sections.map((s:any,i:number)=><a href={`#sezione-${i}`}>{s[0]}</a>)}</nav><article>{a.sections.map((s:any,i:number)=><section id={`sezione-${i}`}><h2>{s[0]}</h2><p>{s[1]}</p></section>)}<OfficialSources sources={a.sources||[]} lang="it" research={research} checked={research?"11 ottobre 2026":undefined}/><div class="article-related"><h2>Per continuare.</h2><a href={`/schede/${a.guide}/`}>{guides[a.guide].title[0]}</a><a href={`/${c.parent}/`}>Esplora {c.label.toLowerCase()}</a>{(articleCategoryLinks[a.slug]||[]).map(s=><a href={`/${s}/`}>{mainPages.find(p=>p.slug===s)?.it||pages[s].title[0]}</a>)}{articles.filter(b=>b.cluster===a.cluster&&b.slug!==a.slug).map(b=><a href={`/approfondimenti/${b.slug}/`}>{b.title}</a>)}</div></article></div>
+<header class:list={['article-head','editorial-article-head',information&&'information-article-head']}>
+ <p class="article-kind">Articolo · {c.label}{information&&<span>18+</span>}</p>
+ <h1>{a.title}</h1>
+ <p class="standfirst">{a.summary}</p>
+ <div class="article-reading"><span>{a.sections.length} sezioni</span><span>Lettura stimata: {readingMinutes} min</span></div>
+</header>
+<div class:list={['article-body','editorial-article-body',information&&'information-article-body']}>
+ <nav class="article-toc editorial-index" aria-label="In questo articolo"><h2>In questo articolo</h2><ol>{a.sections.map((s,i)=><li><a href={`#sezione-${i}`}><span aria-hidden="true">{String(i+1).padStart(2,'0')}</span><span>{s[0]}</span></a></li>)}</ol></nav>
+ <article>
+  {a.sections.map((s,i)=><section class="editorial-section" id={`sezione-${i}`}><span class="editorial-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><h2>{s[0]}</h2><p>{s[1]}</p></section>)}
+  <OfficialSources sources={a.sources||[]} lang="it" research={research} checked={research?'11 ottobre 2026':undefined}/>
+  <section class="article-related"><h2>Per continuare.</h2><div class="continuation-grid">{continuation.map(link=><a href={link.href}><span class="continuation-kind">{link.kind}</span><h3>{link.title}</h3><span class="continuation-action">{link.action}<span aria-hidden="true">→</span></span></a>)}</div></section>
+ </article>
+</div>
 </Base>
 
 <style>
- .information-article-head>p:first-child{font:600 1rem var(--sans);color:var(--accent)}
- .information-article-head h1{font-size:clamp(2.8rem,4.6vw,4.6rem);max-width:20ch;color:var(--accent)}
- .information-article-head .standfirst{padding:24px 28px;border-left:3px solid var(--accent);background:#f3eee3;max-width:70ch;font-size:1.1rem;line-height:1.8}
- .information-article-body .article-toc{align-self:start;border:1px solid #d7d1c5;background:#f3eee3;padding:22px}
- .information-article-body .article-toc h2{font:600 1rem var(--sans);color:var(--accent);margin-bottom:20px}
- .information-article-body .article-toc a{color:var(--accent);line-height:1.7;min-height:44px;display:flex;align-items:center;border-top:1px solid #d7d1c5;padding-top:14px}
- .information-article-body article>section{border-top:1px solid #d7d1c5;padding-top:24px}
- .information-article-body article h2{font-size:clamp(2rem,3vw,2.7rem)}
- .information-article-body article p{line-height:1.9;max-width:68ch}
- .information-article-body .article-related a{color:var(--accent);padding:15px;border:1px solid #d7d1c5;background:#f3eee3;line-height:1.6;font-size:.95rem}
- @media(max-width:680px){.information-article-head .standfirst{padding:20px;font-size:1rem}.information-article-head h1{font-size:clamp(2.6rem,10vw,3.6rem)}.information-article-body .article-toc{padding:20px}}
+ .editorial-article-head,.editorial-article-body{--editorial-line:#d6dbe2;--editorial-paper:#f0f3f8}
+ .information-article-head,.information-article-body{--editorial-line:#d7d1c5;--editorial-paper:#f3eee3}
+ .editorial-article-head{padding-block:45px 38px;border-bottom:1px solid var(--editorial-line)}
+ .editorial-article-head .article-kind{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:center;font:600 1rem/1.6 var(--sans);color:var(--accent);margin-bottom:22px}
+ .article-kind>span{font-size:.8rem;border:1px solid currentColor;border-radius:20px;padding:2px 9px}
+ .editorial-article-head h1{font-size:clamp(2.8rem,4.6vw,4.7rem);max-width:21ch;color:var(--accent);margin-bottom:28px}
+ .editorial-article-head .standfirst{padding:24px 28px;border-left:3px solid var(--accent);background:var(--editorial-paper);max-width:70ch;font-size:1.1rem;line-height:1.8;color:var(--ink);margin-bottom:0}
+ .article-reading{display:flex;flex-wrap:wrap;gap:10px 24px;margin-top:22px;font-size:.85rem;line-height:1.6;color:#546172}
+ .article-reading>span+span{padding-left:24px;border-left:1px solid var(--editorial-line)}
+ .editorial-article-body{padding-top:38px;grid-template-columns:240px minmax(0,1fr);gap:55px}
+ .editorial-index{align-self:start;border:1px solid var(--editorial-line);background:var(--editorial-paper);padding:22px}
+ .editorial-index h2{font:600 .95rem/1.6 var(--sans);color:var(--accent);margin-bottom:16px}
+ .editorial-index ol{list-style:none;padding:0;margin:0}
+ .editorial-index li+li{border-top:1px solid var(--editorial-line)}
+ .editorial-index li a{display:grid;grid-template-columns:24px minmax(0,1fr);gap:8px;align-items:start;color:var(--accent);font-size:.9rem;line-height:1.65;min-height:44px;margin:0;padding-block:12px}
+ .editorial-index li a>span:first-child{font-size:.8rem;font-variant-numeric:tabular-nums;color:#637083;padding-top:2px}
+ .editorial-index a:hover{text-decoration:underline;text-underline-offset:.2em}
+ .editorial-article-body article .editorial-section{display:grid;grid-template-columns:32px minmax(0,1fr);column-gap:18px;border-top:1px solid var(--editorial-line);padding-top:26px;margin-bottom:42px;scroll-margin-top:24px}
+ .editorial-number{grid-column:1;grid-row:1;font-size:.85rem;font-variant-numeric:tabular-nums;color:#637083;padding-top:9px}
+ .editorial-section h2,.editorial-section p{grid-column:2}
+ .editorial-article-body article h2{font-size:clamp(2rem,3vw,2.7rem);margin-bottom:20px}
+ .editorial-article-body article p{line-height:1.9;max-width:68ch}
+ .editorial-article-body .article-related{border-color:var(--editorial-line)}
+ .continuation-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:26px}
+ .editorial-article-body .continuation-grid a{display:flex;flex-direction:column;gap:16px;padding:22px;margin:0;border:1px solid var(--editorial-line);background:var(--editorial-paper);color:var(--accent);min-width:0}
+ .continuation-kind{font-size:.95rem;font-weight:600;line-height:1.5}
+ .continuation-grid h3{font-size:1.65rem;line-height:1.25;max-width:28ch}
+ .continuation-action{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:.85rem;line-height:1.6;font-weight:600;margin-top:auto}
+ .continuation-grid a:hover .continuation-action{text-decoration:underline;text-underline-offset:.2em}
+ .editorial-index a:focus-visible,.continuation-grid a:focus-visible{outline:3px solid var(--blue);outline-offset:4px}
+ @media(min-width:901px){.editorial-index{position:sticky;top:25px}}
+ @media(max-width:960px){.editorial-article-body{grid-template-columns:210px minmax(0,1fr);gap:30px}.continuation-grid{grid-template-columns:1fr}}
+ @media(max-width:680px){.editorial-article-head{padding-block:25px 30px}.editorial-article-head .standfirst{padding:20px;font-size:1rem}.editorial-article-head h1{font-size:clamp(2.5rem,9.5vw,3.3rem);margin-bottom:24px}.editorial-article-body{grid-template-columns:1fr;gap:30px;padding-top:28px}.editorial-index{padding:18px 20px}.editorial-index h2{margin-bottom:8px}.editorial-article-body article .editorial-section{grid-template-columns:25px minmax(0,1fr);column-gap:12px;margin-bottom:32px}.editorial-article-body article h2{font-size:2.1rem}.editorial-article-body article p{line-height:1.85}.article-reading{gap:8px 16px}.article-reading>span+span{padding-left:16px}}
+ @media(max-width:370px){.article-reading{display:grid;gap:6px}.article-reading>span+span{padding:0;border:0}}
 </style>

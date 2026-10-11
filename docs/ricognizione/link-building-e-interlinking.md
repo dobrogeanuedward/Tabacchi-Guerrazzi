@@ -1,12 +1,13 @@
 # Autorità locale: collegamenti e fonti
 
-Aggiornamento: 8 ottobre 2026. Nessun backlink acquisito o contatto esterno inviato in questo giro.
+Aggiornamento: 11 ottobre 2026. Nessun backlink acquisito o contatto esterno inviato in questa mandata.
 
 ## Implementato
 
 - Nove categorie IT/EN: risposta sintetica a una richiesta concreta e due collegamenti contestuali, non una lista di parole chiave.
-- Sei schede IT/EN: collegamenti alle categorie coerenti con il tema.
-- Collegamenti reciproci fra articoli esistenti e categorie: le categorie mostrano anche gli articoli che le citano. I quattro cluster del pacchetto restano invariati.
+- Sei guide pratiche IT/EN con collegamenti alle categorie coerenti con il tema; tre guide normative e cinque guide documentarie IT/EN completano i 14 percorsi disponibili per lingua.
+- Collegamenti reciproci fra articoli e categorie. I 18 articoli italiani sono organizzati in sette cluster: ai quattro iniziali si aggiungono Tabacco: informazioni e norme, Materiali e storia, Lessico e fonti. Le aree pertinenti restano informative per adulti, senza promozione o vendita di tabacco.
+- 25 schede di famiglie non regolamentate e 34 voci informative sui sigari, ciascuna IT/EN, collegate alle rispettive categorie. La mandata UI corrente rende più chiari tipo di contenuto e azione di apertura e riduce le anteprime ripetute; le verifiche finali dei nuovi layout restano da registrare.
 - Un'identità Store stabile e una WebSite collegata attraverso gli stessi `@id` quando il dominio è configurato. Nessun orario, recensione, prezzo o disponibilità inventati.
 - Prenotazione Bounce verso la scheda del punto esatto; Google Maps per percorso e ricerca del negozio. Nessuna affiliazione aggiunta a `sameAs` come se fosse un profilo posseduto.
 
@@ -31,8 +32,10 @@ La scheda generale di Bologna Welcome riguarda Bounce a Bologna: **non è una me
 
 ## Pubblicazione e misurazione
 
-Accessibilità pubblica e indicizzazione sono due condizioni distinte. Il collegamento Vercel attualmente non è autorizzato al team `edwards-projects-c448201f`; occorre risolvere l'accesso o far cambiare la visibilità al proprietario. Non è stata rimossa alcuna protezione.
+Accessibilità pubblica e indicizzazione sono due condizioni distinte. Il sito è pubblico su `https://tabacchiguerrazzi.vercel.app`, con alias `https://tabacchiguerrazzu.vercel.app`. I deploy vengono attivati dai push su `main` del repository GitHub collegato: l’indisponibilità del connettore Vercel al team non blocca questo flusso. Il dominio finale resta da confermare.
 
-Per l'indicizzazione occorrono il dominio canonico verificato, `PUBLIC_SITE_URL` e `PUBLIC_LAUNCH_READY=true`. Il sito conserva la protezione di lancio finché queste condizioni non sono soddisfatte. La pubblicazione non dimostra che Google o un motore generativo abbia indicizzato o citato le pagine.
+L’indicizzazione resta disabilitata: l’export corrente contiene `noindex,nofollow`, `robots.txt` con `Disallow: /` e sitemap vuota. Per il lancio indicizzato occorrono dominio canonico confermato, `PUBLIC_SITE_URL` e `PUBLIC_LAUNCH_READY=true`, dopo il completamento dei dati dell’attività e delle informative. Questa mandata UI non modifica tali configurazioni. La pubblicazione non dimostra che Google o un motore generativo abbia indicizzato o citato le pagine.
+
+Telefono, email, ragione sociale/P. IVA, orari ufficiali, dati del titolare e dei fornitori devono essere confermati. Le foto originali degli interni e le vecchie generazioni non recuperate restano in attesa: le sostituzioni seguono `docs/identita/asset-replacement-register.json`, senza nuove ricostruzioni alla cieca. Queste attese non impediscono di migliorare gerarchia, accessibilità e collegamenti interni.
 
 Dopo l'attivazione: verificare sitemap e canonical, impostare Search Console con accesso del proprietario, misurare query/pagine e mantenere un registro dei link effettivamente pubblicati (URL fonte, destinazione, data, stato). Non inviare richieste o modificare profili esterni senza accesso e autorizzazione.

@@ -1,7 +1,7 @@
 {
   "updated": "2026-10-11",
   "scope": "Autorità",
-  "status": "Da eseguire in seconda mandata sull’intero sito; primi criteri applicati all’area editoriale corrente.",
+  "status": "Implementata la revisione dei template pubblici; verifica responsive sul deploy in corso. Foto reali e dati finali restano in attesa.",
   "reference": "C:/Users/dobro/Desktop/TABACCHI/proposta_tabaccheria_guerrazzi_dogo_senza_prezzi.pdf",
   "userDirection": [
     "Pulito ma d’effetto: prendere grande spunto dalla proposta e dall’identità, senza sovrapporre troppi linguaggi.",
@@ -11,12 +11,47 @@
     "Distinguere a colpo d’occhio prodotto apribile, categoria, guida, servizio e informazione."
   ],
   "work": [
-    {"id": "hierarchy", "action": "Audit mobile e desktop di tutti i template: titolo concreto, sintesi breve, dettagli progressivi, paragrafi brevi e indice dove utile."},
-    {"id": "labels", "action": "Dare peso leggibile al nome della sezione. Mai affidare al solo eyebrow minuscolo l’informazione necessaria a capire la pagina."},
-    {"id": "cards", "action": "Contenitori, bordi e spazi coerenti; tipo di contenuto visibile e azione esplicita Apri scheda, Esplora categoria o Leggi guida."},
-    {"id": "density", "action": "Ridurre ripetizioni fra intro, sezioni, FAQ e contenuti collegati. Limitare i percorsi iniziali e usare espansioni per dettagli secondari."},
-    {"id": "identity", "action": "Verificare palette, proporzioni, tipografia e materiali rispetto alla proposta; un’unica identità con variazioni di area controllate."},
-    {"id": "photos", "action": "Seguire asset-replacement-register.json: sostituzioni con vere foto e nuove generazioni solo da riferimenti sufficienti."},
-    {"id": "acceptance", "action": "Verificare a 320, 390, 768 e 1440 px: nessuna sovrapposizione, testo principale leggibile, contenuto apribile evidente, focus tastiera visibile."}
+    {
+      "id": "hierarchy",
+      "action": "Audit mobile e desktop di tutti i template: titolo concreto, sintesi breve, dettagli progressivi, paragrafi brevi e indice dove utile.",
+      "status": "implemented"
+    },
+    {
+      "id": "labels",
+      "action": "Dare peso leggibile al nome della sezione. Mai affidare al solo eyebrow minuscolo l’informazione necessaria a capire la pagina.",
+      "status": "implemented"
+    },
+    {
+      "id": "cards",
+      "action": "Contenitori, bordi e spazi coerenti; tipo di contenuto visibile e azione esplicita Apri scheda, Esplora categoria o Leggi guida.",
+      "status": "implemented"
+    },
+    {
+      "id": "density",
+      "action": "Ridurre ripetizioni fra intro, sezioni, FAQ e contenuti collegati. Limitare i percorsi iniziali e usare espansioni per dettagli secondari.",
+      "status": "implemented"
+    },
+    {
+      "id": "identity",
+      "action": "Verificare palette, proporzioni, tipografia e materiali rispetto alla proposta; un’unica identità con variazioni di area controllate.",
+      "status": "implemented"
+    },
+    {
+      "id": "photos",
+      "action": "Seguire asset-replacement-register.json: sostituzioni con vere foto e nuove generazioni solo da riferimenti sufficienti.",
+      "status": "waiting-for-real-references"
+    },
+    {
+      "id": "acceptance",
+      "action": "Verificare a 320, 390, 768 e 1440 px: nessuna sovrapposizione, testo principale leggibile, contenuto apribile evidente, focus tastiera visibile.",
+      "status": "implemented-awaiting-live-qa"
+    }
+  ],
+  "implementation": [
+    "Home: nomi categorie prima dei claim, schede con azioni esplicite, Bounce evidente.",
+    "Categorie: H1 concreto, sintesi, salti di pagina, guide e percorsi in contenitori.",
+    "Catalogo e famiglie: tipo di scheda, filtri leggibili, immagini di ambientazione dichiarate.",
+    "Guide e diario: sintesi, indice, sezioni numerate e articoli collegati deduplicati.",
+    "Densità: tre articoli in anteprima, dettagli secondari espandibili, testo Bounce consolidato."
   ]
 }

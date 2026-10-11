@@ -1,6 +1,6 @@
-# Schede, identità e navigazione — 9 ottobre 2026
+# Schede, identità e navigazione — 11 ottobre 2026
 
-Questo giro aggiunge 25 schede di famiglie non regolamentate e 34 voci informative sulle denominazioni dei sigari, ciascuna in italiano e inglese. Sono 118 nuovi percorsi, collegati alle categorie e alla sitemap; il sito genera 196 pagine HTML di contenuto, oltre alla 404. Il gate di indicizzazione resta configurabile con PUBLIC_SITE_URL e PUBLIC_LAUNCH_READY.
+Sono presenti 25 schede di famiglie non regolamentate e 34 voci informative sulle denominazioni dei sigari, ciascuna in italiano e inglese: 118 percorsi collegati alle categorie. L’export disponibile all’inizio di questa mandata contiene 209 pagine con `index.html`, più la 404: 210 file HTML totali. Include 21 percorsi principali IT/EN, 14 guide IT/EN, 18 articoli italiani in sette cluster, il diario e due informative. I percorsi sono predisposti per la sitemap, che resta vuota finché il gate di lancio è disabilitato.
 
 Le famiglie comprendono tre dettagli pratici da controllare, una domanda specifica, una breve risposta, FAQ visibili con schema corrispondente e collegamenti alle altre schede della categoria. Fotografie e illustrazioni editoriali non descrivono una SKU precisa. Nessuno stock o prezzo è inventato.
 
@@ -8,9 +8,11 @@ L'archivio sigari deriva dal registro fotografico consolidato, con riferimento a
 
 Le schede sigari sono protette dalla conferma di maggiore età della sessione. Contengono denominazioni, limiti del riscontro e fonti ufficiali, senza descrizioni sensoriali, consigli di consumo, prezzi, disponibilità, ordini, offerte o dati Product/Offer. La conferma 18+ non viene descritta come verifica dell'identità o autorizzazione alla pubblicità.
 
-Il menu completo è organizzato in tre aree, con 18+ sui collegamenti pertinenti. La barra sotto l'header espone sei percorsi principali ed è scorrevole su mobile. Dialog, Escape e ritorno del focus restano supportati.
+Il logo è al centro dell’header. Su desktop è presente una sola navigazione, con menu Esplora suddiviso in tre aree; il burger è mobile. La vecchia barra secondaria sotto l’header è stata rimossa. I collegamenti pertinenti indicano 18+; dialog, Escape e ritorno del focus restano supportati. Il deposito bagagli è raggiungibile dall’header, dalle informazioni utili e da un blocco anticipato della home, oltre che dalla pagina Servizi.
 
 Il logo originale viene ripreso sulle schede, nei richiami di visita e nella sezione di Angela. La parola Angela è una composizione tipografica, non una firma autografa ricostruita. Gli eyebrow hanno una classe semantica dedicata: Bodoni corsivo autentico (font locale dedicato, senza sintesi), nero, misura maggiore; sui fondi scuri hanno un campo chiaro.
+
+La mandata UI corrente applica la revisione di `docs/identita/secondo-mandato-ui.json` ai template generali: nomi di sezioni e categorie subito riconoscibili, titoli proporzionati, contenitori coerenti e azioni esplicite. Categoria, famiglia di articoli, guida, servizio e informazione devono essere distinguibili prima dell’apertura. Le liste di contenuti collegati vanno sintetizzate; i dettagli secondari restano consultabili progressivamente. Il logo definitivo non viene rigenerato.
 
 ## Asset generato
 
@@ -20,4 +22,10 @@ Prompt: Use case: stylized-concept. Asset type: premium Italian shop website UI 
 
 ## Verifica
 
-Astro check, test applicativi, build statico e controlli SEO sulle schede. Il controllo delle nuove pagine verifica corrispondenza FAQ/contenuto, collegamenti esistenti e conferma 18+ nel solo perimetro pertinente. La verifica browser copre 320, 390, 768 e 1440 px, immagini, metadati, menu e percorsi interni. Non è una promessa di posizionamento SEO o citazione da assistenti.
+La versione già pubblicata ha superato controllo Astro, test applicativi, build statico e controlli SEO sulle schede. I controlli verificano corrispondenza FAQ/contenuto, collegamenti esistenti e conferma 18+ nel solo perimetro pertinente. Le verifiche browser precedenti coprono i layout modificati a 320, 390, 768 e 1440 px. La revisione corrente richiede una nuova verifica dopo l’integrazione: non considerare automaticamente trasferiti i risultati precedenti. Non è una promessa di posizionamento SEO o citazione da assistenti.
+
+## Attese e stato del lancio
+
+Il sito è pubblico su `https://tabacchiguerrazzi.vercel.app`, con alias `https://tabacchiguerrazzu.vercel.app`; l’indicizzazione resta disabilitata. Dominio finale, dati del titolare, telefono, email, ragione sociale/P. IVA e orari ufficiali devono essere confermati prima di completare le informative e valutare l’attivazione di `PUBLIC_SITE_URL` e `PUBLIC_LAUNCH_READY=true`.
+
+Le fotografie originali degli interni e le generazioni non recuperate della chat precedente restano in attesa. Le sostituzioni sono documentate in `docs/identita/asset-replacement-register.json`; le immagini attuali sono provvisorie e non dimostrano articoli specifici, stock o configurazione degli interni. Nuove immagini fedeli richiedono riferimenti reali sufficienti.

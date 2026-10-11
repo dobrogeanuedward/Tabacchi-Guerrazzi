@@ -3,17 +3,18 @@ import Base from '../layouts/Base.astro';import {assortmentImage} from '../data/
 const {lang='it'}=Astro.props;const category=Astro.url.searchParams.get('categoria')||'';const query=(Astro.url.searchParams.get('q')||'').slice(0,200);const all=getProducts({publicOnly:true});const products=all;const l=lang==='it'?0:1;const categories=[...catalogGroups,...(all.some((p:any)=>p.category==='accessori')?[{id:'accessori',it:'Accessori regalo',en:'Gift accessories'}]:[])];
 const catalogSchema={'@context':'https://schema.org','@type':'ItemList',name:text(lang,'Famiglie di articoli del negozio','Shop item families'),itemListElement:catalogAssortment.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.name[l],...(import.meta.env.PUBLIC_SITE_URL?{url:new URL(pathFor(`assortimento/${p.id}`,lang),import.meta.env.PUBLIC_SITE_URL).href}:{})}))};
 const availability=(value:string)=>text(lang,{available:'Disponibile',unavailable:'Non disponibile','on-request':'Da verificare'}[value]||'Da verificare',{available:'Available',unavailable:'Unavailable','on-request':'Check availability'}[value]||'Check availability');
+const categoryLabel=(id:string)=>{const c=categories.find(c=>c.id===id);return c?(lang==='it'?c.it:c.en):text(lang,'Articoli del negozio','Shop items')};
 ---
 <Base lang={lang} slug="catalogo" title={text(lang,'Il catalogo del negozio','The shop catalogue')} description={text(lang,'Cartoleria, souvenir di Bologna, biglietti, giochi, cavi e dolciumi: esplora l’assortimento di Guerrazzi in Via Guerrazzi 10/F.','Stationery, Bologna souvenirs, cards, toys, cables and sweets: explore Guerrazzi’s range at Via Guerrazzi 10/F.')} noindex={!!query||!!category} schema={catalogSchema}>
-<div class="wrap"><header class="catalog-heading"><h1>{text(lang,'Una prima occhiata.','A first look.')}</h1><p>{text(lang,'Parti da quello che ti serve: una penna, un biglietto, un piccolo regalo. Sfoglia le categorie e scopri cosa puoi trovare da Angela.','Start with what you need: a pen, a card, a small gift. Browse the categories and discover what you can find at Angela’s.')}</p></header>
-<div class="catalog-controls" data-catalog-controls><nav class="category-tabs" aria-label={text(lang,'Categorie del catalogo','Catalogue categories')}><a class="category-tab" href={pathFor('catalogo',lang)} aria-current={!category?'page':undefined}>{text(lang,'Tutto','All')}</a>{categories.map(c=><a class="category-tab" href={`${pathFor('catalogo',lang)}?categoria=${c.id}`} aria-current={category===c.id?'page':undefined}>{lang==='it'?c.it:c.en}</a>)}</nav><form method="get" data-catalog-search><label class="sr-only" for="search">{text(lang,'Cerca un prodotto','Search products')}</label><input id="search" name="q" placeholder={text(lang,'Cerca nel catalogo','Search the catalogue')} value={query}/>{category&&<input type="hidden" name="categoria" value={category}/>}<button type="submit"><Icon name="search"/>{text(lang,'Cerca','Search')}</button></form></div>
-<p class="catalog-note">{text(lang,'Immagini di ambientazione. Per il singolo articolo, prezzi e disponibilità, chiedi in negozio.','Atmosphere images. Ask in store about individual items, prices and availability.')}</p>
+<div class="wrap catalog-shell"><header class="catalog-heading"><div><p class="catalog-type-label">{text(lang,'Articoli e famiglie','Items and families')}</p><h1>{text(lang,'Catalogo','Catalogue')}</h1><p>{text(lang,'Cartoleria, regali e piccole necessità: scegli una categoria e apri la scheda che ti interessa.','Stationery, gifts and everyday essentials: choose a category and open a record.')}</p></div><div class="catalog-key"><div><span>{text(lang,'Famiglia','Family')}</span><p>{text(lang,'Un gruppo di articoli, con i dettagli da confrontare.','A group of items, with details to compare.')}</p></div><div><span>{text(lang,'Prodotto','Product')}</span><p>{text(lang,'Un articolo con una propria scheda, quando pubblicato.','An item with its own record, when published.')}</p></div></div></header>
+<div class="catalog-controls" data-catalog-controls><div class="catalog-filter-group"><p class="catalog-control-label">{text(lang,'Filtra per categoria','Filter by category')}</p><nav class="category-tabs" aria-label={text(lang,'Categorie del catalogo','Catalogue categories')}><a class="category-tab" href={pathFor('catalogo',lang)} aria-current={!category?'page':undefined}>{text(lang,'Tutto','All')}</a>{categories.map(c=><a class="category-tab" href={`${pathFor('catalogo',lang)}?categoria=${c.id}`} aria-current={category===c.id?'page':undefined}>{lang==='it'?c.it:c.en}</a>)}</nav></div><form method="get" data-catalog-search><label class="sr-only" for="search">{text(lang,'Cerca un articolo nel catalogo','Search catalogue items')}</label><input id="search" name="q" placeholder={text(lang,'Cerca un articolo o un marchio','Search items or brands')} value={query}/>{category&&<input type="hidden" name="categoria" value={category}/>}<button type="submit"><Icon name="search"/>{text(lang,'Cerca','Search')}</button></form></div>
+<p class="catalog-note">{text(lang,'Le foto di ambientazione illustrano le famiglie, non il singolo modello. Varianti e disponibilità si verificano in negozio.','Atmosphere images illustrate families, not individual models. Check variants and availability in store.')}</p>
 <p data-catalog-count aria-live="polite">{catalogAssortment.length+products.length} {text(lang,'schede da esplorare','listings to explore')}</p>
 <div class="product-grid" data-catalog-grid>
- {catalogAssortment.map(p=><a class="product-card assortment-card" data-category={p.category} data-search={`${p.name.join(' ')} ${p.description.join(' ')} ${p.brand}`} href={pathFor(`assortimento/${p.id}`,lang)}><div class="product-image"><img src={assortmentImage(p.category,p.id)} width="800" height="500" loading="lazy" alt="" aria-hidden="true"/></div><p class="assortment-label">{text(lang,'Da Angela','At Angela’s')}</p><h2>{p.name[l]}</h2>{p.brand&&<p>{p.brand}</p>}<p>{p.description[l]}</p><span class="availability">{text(lang,'Scopri di più','Find out more')}</span></a>)}
- {products.map((p:any)=><a class="product-card" data-category={p.category} data-search={`${p.nameIt} ${p.nameEn} ${p.brand} ${p.descriptionIt} ${p.descriptionEn}`} href={pathFor(`catalogo/${p.slug}`,lang)}><div class="product-image"><img src={p.image} width="900" height="900" loading="lazy" alt={lang==='it'?p.nameIt:p.nameEn}/></div><h2>{lang==='it'?p.nameIt:p.nameEn}</h2>{p.brand&&<p>{p.brand}</p>}<p class="availability">{availability(p.availability)}</p>{p.price!==null&&<p>{new Intl.NumberFormat(lang==='it'?'it-IT':'en-GB',{style:'currency',currency:'EUR'}).format(p.price)}</p>}</a>)}
+ {catalogAssortment.map(p=><a class="product-card assortment-card" data-category={p.category} data-search={`${p.name.join(' ')} ${p.description.join(' ')} ${p.brand}`} href={pathFor(`assortimento/${p.id}`,lang)}><div class="product-image"><img src={assortmentImage(p.category,p.id)} width="800" height="500" loading="lazy" alt="" aria-hidden="true"/><span class="catalog-image-note">{text(lang,'Foto di ambientazione','Atmosphere image')}</span></div><div class="catalog-card-body"><p class="catalog-card-label"><span>{text(lang,'Famiglia','Family')}</span>{categoryLabel(p.category)}</p><h2>{p.name[l]}</h2><p class="catalog-card-description">{p.description[l]}</p>{p.brand&&<p class="catalog-brand">{text(lang,'Marchi citati:','Brands mentioned:')} {p.brand}</p>}<span class="catalog-card-action">{text(lang,'Apri scheda','Open record')}<span aria-hidden="true">→</span></span></div></a>)}
+ {products.map((p:any)=><a class="product-card" data-category={p.category} data-search={`${p.nameIt} ${p.nameEn} ${p.brand} ${p.descriptionIt} ${p.descriptionEn}`} href={pathFor(`catalogo/${p.slug}`,lang)}><div class="product-image"><img src={p.image} width="900" height="900" loading="lazy" alt={lang==='it'?p.nameIt:p.nameEn}/></div><div class="catalog-card-body"><p class="catalog-card-label"><span>{text(lang,'Prodotto','Product')}</span>{categoryLabel(p.category)}</p><h2>{lang==='it'?p.nameIt:p.nameEn}</h2>{p.brand&&<p class="catalog-brand">{p.brand}</p>}<div class="catalog-product-facts"><p class="availability">{availability(p.availability)}</p>{p.price!==null&&<p class="catalog-price">{new Intl.NumberFormat(lang==='it'?'it-IT':'en-GB',{style:'currency',currency:'EUR'}).format(p.price)}</p>}</div><span class="catalog-card-action">{text(lang,'Apri scheda','Open record')}<span aria-hidden="true">→</span></span></div></a>)}
 </div>
-<div class="catalog-empty" data-catalog-empty hidden><div><h2>{text(lang,'Un’altra parola, un’altra possibilità.','Another word, another possibility.')}</h2><p>{text(lang,'Prova il nome dell’articolo, del marchio o una categoria diversa.','Try an item name, a brand or a different category.')}</p><a class="button primary" href={pathFor('catalogo',lang)} data-catalog-reset>{text(lang,'Mostra tutto','Show all')}</a></div></div>
+<div class="catalog-empty" data-catalog-empty hidden><div><h2>{text(lang,'Nessuna scheda trovata.','No records found.')}</h2><p>{text(lang,'Prova il nome dell’articolo, del marchio o una categoria diversa.','Try an item name, a brand or a different category.')}</p><a class="button primary" href={pathFor('catalogo',lang)} data-catalog-reset>{text(lang,'Mostra tutto','Show all')}</a></div></div>
 <noscript><p>{text(lang,'Tutto l’assortimento è visibile qui sotto. Attiva JavaScript per ricerca e filtri.','The full range is shown below. Enable JavaScript to search and filter.')}</p></noscript>
 
 </div></Base>
@@ -35,11 +36,53 @@ const availability=(value:string)=>text(lang,{available:'Disponibile',unavailabl
  window.addEventListener('popstate',filter);filter();
 </script>
 <style>
- .catalog-note{max-width:75ch;line-height:1.7;margin:2rem 0;color:#4d5560}
- [data-catalog-count]{margin:1.5rem 0}
- .assortment-card .product-image{background:#eee9df;padding:0}
- .assortment-card .product-image{aspect-ratio:4/3}.assortment-card .product-image img{object-fit:cover;transition:transform .5s}.assortment-card:hover .product-image img{transform:scale(1.04)}
- .assortment-label{font-size:.8rem;color:#0645c0;margin-top:1rem}
- .assortment-card>p{line-height:1.65}
+ .catalog-shell{--catalog-line:#0645c026;--catalog-ivory:#f6f1e7}
+ .catalog-heading{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(280px,.75fr);align-items:center;gap:50px;padding:50px 0 34px}
+ .catalog-heading h1{font-size:clamp(3.1rem,5.5vw,5.1rem);letter-spacing:-.045em;margin:12px 0 22px;color:var(--blue)}
+ .catalog-heading>div>p:last-child{max-width:55ch;font-size:1rem;line-height:1.8;color:#33435b}
+ .catalog-type-label,.catalog-control-label{font-family:var(--sans);font-size:.95rem;font-weight:600;letter-spacing:.035em;line-height:1.6;color:var(--blue)}
+ .catalog-key{padding:26px 28px;border:1px solid var(--catalog-line);background:linear-gradient(#f6f1e7f0,#f6f1e7f0),url('/images/materials/paper.webp') center/cover;border-radius:3px 24px 3px 3px}
+ .catalog-key>div+div{border-top:1px solid #0645c020;padding-top:17px;margin-top:17px}
+ .catalog-key span{display:block;font-size:.95rem;font-weight:600;color:var(--blue);margin-bottom:7px}
+ .catalog-key p{font-size:.95rem;line-height:1.75;max-width:36ch;color:#435066}
+ .catalog-controls{display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,310px);gap:24px;padding:24px;background:#fffefa;border:1px solid var(--catalog-line);border-radius:3px;margin:0 0 20px;align-items:end}
+ .catalog-control-label{margin-bottom:12px;color:#32445f}
+ .category-tabs{display:flex;flex-wrap:wrap;gap:8px}
+ .category-tab{min-height:42px;display:inline-flex;align-items:center;padding:9px 13px;font-size:.95rem;line-height:1.5;border:1px solid #0645c02e;border-radius:3px;background:#fffefa;color:#263b5b;transition:background .18s,border-color .18s}
+ .category-tab:hover{background:#edf2fc;border-color:#0645c08c}
+ .category-tab[aria-current]{background:var(--blue);color:white;border-color:var(--blue)}
+ .catalog-controls form{display:flex;min-width:0;width:100%;padding:4px;gap:0;border:1px solid #0645c048;border-radius:3px;background:#fff}
+ .catalog-controls input{min-width:0;max-width:none;flex:1;width:100%;font-size:.95rem;padding:12px 10px;border:0;background:transparent}
+ .catalog-controls button{min-height:44px;font-size:.95rem;padding:9px 10px;border-radius:2px;color:var(--blue)}
+ .catalog-note{font-size:.95rem;max-width:95ch;line-height:1.75;color:#4c5768;margin:0 0 22px;padding-left:14px;border-left:2px solid #0645c044}
+ [data-catalog-count]{font-size:.95rem;font-weight:600;color:#33435b;margin:22px 0 18px}
+ .product-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;padding-bottom:72px;align-items:stretch}
+ .product-card{display:flex;flex-direction:column;min-width:0;overflow:hidden;border:1px solid var(--catalog-line);border-radius:3px;background:#fffefa;box-shadow:0 3px 0 #0645c007;transition:transform .2s,border-color .2s,box-shadow .2s}
+ .product-card .product-image{position:relative;width:100%;aspect-ratio:4/3;overflow:hidden;border-bottom:1px solid var(--catalog-line);background:#eee9df;padding:0}
+ .product-card .product-image img{width:100%;height:100%;object-fit:contain;transition:transform .35s}
+ .assortment-card .product-image img{object-fit:cover}
+ .catalog-image-note{position:absolute;bottom:12px;left:12px;max-width:calc(100% - 24px);padding:5px 9px;background:#fffef5f2;border:1px solid #ffffff80;border-radius:2px;color:#3b413d;font-size:.95rem;font-weight:600;line-height:1.5}
+ .catalog-card-body{display:flex;flex:1;flex-direction:column;min-width:0;padding:24px}
+ .product-card .catalog-card-label{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.95rem;line-height:1.5;font-weight:600;color:#435066;margin:0 0 16px}
+ .catalog-card-label>span{padding:4px 7px;background:#e8effb;border-radius:2px;color:var(--blue)}
+ .product-card h2{font-family:var(--display);font-size:clamp(1.5rem,2vw,1.9rem);line-height:1.18;letter-spacing:-.025em;color:var(--blue);margin:0 0 15px;overflow-wrap:break-word}
+ .product-card .catalog-card-description{font-size:.95rem;line-height:1.8;color:#34415a;margin:0 0 17px}
+ .product-card .catalog-brand{font-size:.95rem;line-height:1.65;color:#596071;margin:0 0 18px}
+ .catalog-card-action{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--catalog-line);padding-top:18px;margin-top:auto;font-size:.95rem;line-height:1.5;font-weight:600;color:var(--blue)}
+ .catalog-card-action>span{font-size:1.25rem;transition:transform .2s}
+ .catalog-product-facts{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;margin:0 0 22px}
+ .product-card .availability{font-size:.95rem;line-height:1.7;margin:0;color:#435066}
+ .product-card .catalog-price{font-weight:600;color:#132f61;font-size:.95rem;margin:0}
+ .product-card:hover{border-color:#0645c07a;box-shadow:0 8px 20px #0645c00a;transform:translateY(-2px)}
+ .product-card:hover .product-image img{transform:scale(1.025)}
+ .product-card:hover .catalog-card-action>span{transform:translateX(4px)}
+ .product-card:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-color:var(--blue)}
+ .catalog-empty{display:block;padding:36px;border:1px solid var(--catalog-line);border-radius:3px;background:var(--catalog-ivory);margin-bottom:65px}
+ .catalog-empty h2{font-size:clamp(2rem,3vw,2.6rem);margin:0 0 18px}
+ .catalog-empty p{font-size:.95rem;margin-bottom:24px}
  [data-catalog-grid] .product-card[hidden],[data-catalog-empty][hidden]{display:none!important}
+ @media(max-width:1080px){.catalog-controls{grid-template-columns:minmax(0,1fr)}.catalog-controls form{max-width:420px}.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:760px){.catalog-heading{grid-template-columns:minmax(0,1fr);gap:25px;padding-top:32px}.catalog-key{display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:20px}.catalog-key>div+div{margin:0;padding:0 0 0 20px;border-top:0;border-left:1px solid #0645c020}.catalog-heading h1{font-size:3.2rem}.catalog-controls{padding:20px}.catalog-card-body{padding:20px}}
+ @media(max-width:520px){.catalog-key{display:block}.catalog-key>div+div{border-left:0;border-top:1px solid #0645c020;padding:15px 0 0;margin-top:15px}.catalog-controls{padding:17px;gap:20px}.catalog-controls form{max-width:none}.category-tab{font-size:.95rem;padding:9px 10px}.catalog-note{font-size:.95rem}.product-grid{grid-template-columns:minmax(0,1fr);gap:22px;padding-bottom:50px}.catalog-card-body{padding:22px}.product-card h2{font-size:1.85rem}.catalog-empty{padding:25px}}
+ @media(prefers-reduced-motion:reduce){.product-card,.product-card .product-image img,.catalog-card-action>span,.category-tab{transition:none}.product-card:hover,.product-card:hover .product-image img,.product-card:hover .catalog-card-action>span{transform:none}}
 </style>

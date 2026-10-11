@@ -1,6 +1,35 @@
 ---
-import {catalogAssortment} from '../data/catalog-assortment';import {pathFor,text,type Lang} from '../data/shop';
+import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';import {pathFor,text,type Lang} from '../data/shop';
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};const families=catalogAssortment.filter(p=>p.page===slug);const l=lang==='it'?0:1;
+const categoryLabel=(id:string)=>{const group=catalogGroups.find(g=>g.id===id);return group?(lang==='it'?group.it:group.en):''};
 ---
-{families.length>0&&<section class="family-links"><p class="eyebrow">{text(lang,'Le schede di Guerrazzi','Guerrazzi records')}</p><h2>{text(lang,'Parti da un oggetto.','Start with an item.')}</h2><div>{families.map(p=><a href={pathFor(`assortimento/${p.id}`,lang)}><h3>{p.name[l]}</h3><p>{p.description[l]}</p><span>{text(lang,'Apri la scheda','Read the record')} ↗</span></a>)}</div></section>}
-<style>.family-links{padding:2rem 0 3rem}.family-links h2{font-size:clamp(2.6rem,4vw,3.6rem);color:var(--blue);margin:1rem 0 1.5rem}.family-links>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}.family-links a{padding:1.5rem;background:#edf2fc;border-radius:0 30px 0 0;display:flex;flex-direction:column;align-items:flex-start}.family-links h3{font-size:1.8rem;color:var(--blue);margin-bottom:1rem}.family-links a p{font-size:.9rem;line-height:1.7;margin-bottom:1.3rem}.family-links a span{font-size:.8rem;color:var(--blue);margin-top:auto}@media(max-width:960px){.family-links>div{grid-template-columns:1fr 1fr}}@media(max-width:680px){.family-links>div{grid-template-columns:1fr}.family-links a{padding:1.3rem}.family-links h3{font-size:1.9rem}}</style>
+{families.length>0&&<section class="family-links" aria-labelledby="family-links-title">
+ <header class="family-links-heading"><p class="family-section-label">{text(lang,'Famiglie di articoli','Item families')}</p><h2 id="family-links-title">{text(lang,'Esplora le schede.','Explore the records.')}</h2><p>{text(lang,'Ogni scheda descrive una famiglia e i dettagli da confrontare sul singolo articolo.','Each record describes a family and the details to compare on an individual item.')}</p></header>
+ <div class="family-link-grid">{families.map(p=><a class="family-link-card" href={pathFor(`assortimento/${p.id}`,lang)}>
+  <p class="family-card-label"><span>{text(lang,'Famiglia','Family')}</span>{categoryLabel(p.category)}</p>
+  <h3>{p.name[l]}</h3><p class="family-card-description">{p.description[l]}</p>
+  <span class="family-link-action">{text(lang,'Apri scheda','Open record')}<span aria-hidden="true">→</span></span>
+ </a>)}</div>
+</section>}
+<style>
+ .family-links{--family-line:#0645c028;padding:32px;margin:38px 0 48px;border:1px solid var(--family-line);border-radius:3px;background:linear-gradient(#f6f1e7f2,#f6f1e7f2),url('/images/materials/paper.webp') center/cover}
+ .family-links-heading{max-width:760px;margin-bottom:26px}
+ .family-section-label{font-family:var(--sans);font-size:.95rem;line-height:1.6;letter-spacing:.035em;font-weight:600;color:var(--blue);margin-bottom:12px}
+ .family-links h2{font-family:var(--display);font-size:clamp(2rem,3.1vw,2.8rem);line-height:1.12;letter-spacing:-.03em;color:var(--blue);margin:0 0 16px}
+ .family-links-heading>p:last-child{font-size:.95rem;line-height:1.8;max-width:64ch;color:#42516a}
+ .family-link-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+ .family-link-card{display:flex;flex-direction:column;align-items:flex-start;min-width:0;padding:25px;border:1px solid var(--family-line);border-radius:3px;background:#fffefa;color:#263950;box-shadow:0 3px 0 #0645c005;transition:transform .2s,border-color .2s,box-shadow .2s}
+ .family-links .family-card-label{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-size:.95rem;line-height:1.6;font-weight:600;color:#4a5669;margin:0 0 18px}
+ .family-card-label>span{background:#e8effb;color:var(--blue);padding:4px 7px;border-radius:2px}
+ .family-links h3{font-family:var(--display);font-size:clamp(1.5rem,2vw,1.8rem);line-height:1.2;letter-spacing:-.025em;overflow-wrap:break-word;color:var(--blue);margin:0 0 15px}
+ .family-card-description{font-size:.95rem;line-height:1.8;color:#42516a;margin:0 0 24px}
+ .family-link-action{display:flex;justify-content:space-between;align-items:center;width:100%;gap:20px;padding-top:17px;border-top:1px solid var(--family-line);font-family:var(--sans);font-size:.95rem;line-height:1.6;font-weight:600;color:var(--blue);margin-top:auto}
+ .family-link-action>span{font-size:1.25rem;line-height:1;transition:transform .2s}
+ .family-link-card:hover{border-color:#0645c078;box-shadow:0 7px 20px #0645c00a;transform:translateY(-2px)}
+ .family-link-card:hover .family-link-action>span{transform:translateX(4px)}
+ .family-link-card:focus-visible{outline:3px solid var(--blue);outline-offset:4px;border-color:var(--blue)}
+ @media(max-width:1080px){.family-link-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+ @media(max-width:680px){.family-links{padding:22px;margin-block:30px 38px}.family-link-grid{grid-template-columns:minmax(0,1fr);gap:17px}.family-link-card{padding:22px}.family-links h3{font-size:1.75rem}}
+ @media(max-width:360px){.family-links{padding:17px}.family-link-card{padding:19px}}
+ @media(prefers-reduced-motion:reduce){.family-link-card,.family-link-action>span{transition:none}.family-link-card:hover,.family-link-card:hover .family-link-action>span{transform:none}}
+</style>

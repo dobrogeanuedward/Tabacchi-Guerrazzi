@@ -1,0 +1,98 @@
+/* Shared hierarchy for the shop pages. Area colours and the existing logo stay central. */
+.section-label,.card-kind{display:block;font-family:var(--sans);font-size:1rem;font-style:normal;font-weight:600;line-height:1.5;letter-spacing:0;color:var(--accent)}
+.page-hero .section-label,.assortment-hero .section-label{font-size:1.05rem;margin:0 0 18px}
+.page-hero h1,.assortment-hero h1{font-size:clamp(3rem,5.2vw,5.2rem);line-height:1.06;margin:0 0 20px;max-width:880px;overflow-wrap:break-word}
+.page-hero p.page-claim,.assortment-hero>div>p.page-claim{font-family:var(--display);font-size:clamp(1.7rem,2.4vw,2.2rem);line-height:1.3;color:var(--accent);margin-bottom:18px;max-width:640px}
+.page-hero>div>p:last-child,.assortment-hero>div>p:last-of-type{font-size:1.05rem;line-height:1.8;max-width:62ch}
+.page-hero.no-photo{min-height:0;padding-block:50px 60px}
+.page-hero>img{max-height:460px;object-fit:cover}
+.page-content{padding-block:45px 70px}
+.page-jumps{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 36px;padding:0 0 24px;border-bottom:1px solid var(--line)}
+.page-jumps a{display:flex;align-items:center;min-height:44px;padding:10px 16px;font-size:.95rem;font-weight:600;border:1px solid var(--line);background:#fff9;color:var(--accent);border-radius:3px}
+.page-jumps a:hover{background:var(--surface);border-color:var(--accent)}
+#page-details,#category-sheets,#page-guides,#page-questions,#luggage-address{scroll-margin-top:30px}
+.information-panels{gap:22px;margin:30px 0}
+.information-panels>section{padding:28px;background:#fff9;border:1px solid var(--line);border-top:3px solid var(--accent)}
+.information-panels h2{font-size:clamp(1.9rem,2.7vw,2.7rem);line-height:1.18;margin-bottom:18px;max-width:22ch}
+.information-panels p{font-size:1rem;max-width:65ch}
+.panel-number{display:block;color:var(--accent);font-size:.95rem;font-weight:600;margin-bottom:16px}
+.page-guide-section{margin:55px 0}
+.page-guide-section>h2{font-size:clamp(2rem,3.3vw,3.1rem);color:var(--accent);margin-bottom:24px}
+.page-guide-section .guides-links{margin-top:0}
+.page-guide-section .guide-link{display:flex;flex-direction:column;align-items:flex-start;gap:18px;background:#fff9;border:1px solid var(--line);border-top:3px solid var(--accent);padding:26px}
+.page-guide-section .guide-link:hover{background:var(--surface)}
+.page-guide-section .guide-link h3{font-size:1.9rem;line-height:1.2}
+.page-guide-section .guide-link p{display:flex;justify-content:space-between;width:100%;gap:15px;font-size:.95rem;font-weight:600;margin-top:auto;padding-top:18px;color:var(--accent)}
+.page-guide-section .guide-link .guide-summary{font-weight:400;color:var(--ink);font-size:1rem;line-height:1.75;margin:0;padding:0;display:block}
+.range-disclosure .range-detail{margin-top:8px;margin-bottom:25px}
+.extra-details{margin:35px 0;border-block:1px solid var(--line)}
+.extra-details>summary{padding:22px 4px;font-size:1.05rem;font-weight:600;color:var(--accent);cursor:pointer}
+.extra-details .information-panels{margin-top:4px}
+.choice-opening{gap:35px}
+.choice-opening h2{font-size:clamp(2.3rem,3.5vw,3.6rem)}
+.choice-list{gap:22px}
+.choice-list>div{padding:25px;background:#fff9;border:1px solid var(--line);border-top:3px solid var(--accent)}
+.choice-list dt{font-size:1.9rem}
+.range-detail{gap:35px;align-items:start}
+.range-groups{padding:28px;background:var(--surface);border:1px solid var(--line)}
+.range-groups h2{font-size:clamp(2rem,3vw,2.8rem)}
+.range-groups>div+div{border-top:1px solid var(--line);padding-top:8px}
+.related-categories h2,.faq>h2{font-size:clamp(2.1rem,3.4vw,3.1rem)}
+.related-categories>div>a{padding:20px;border:1px solid var(--line);background:#fff9}
+.faq details{background:#fff9;padding-inline:20px}
+.faq summary{min-height:58px;font-size:1.05rem;line-height:1.6}
+.section-opening h2{font-size:clamp(2.5rem,3.7vw,4rem);line-height:1.1}
+.discover{padding-block:65px 80px}
+.discover-grid{gap:22px}
+.discovery{border:1px solid #cfd4db;display:flex;flex-direction:column}
+.discovery>div{display:flex;flex-direction:column;gap:15px;flex:1}
+.discovery .card-kind{font-size:.95rem;color:var(--deep)}
+.discovery h3{font-size:clamp(2rem,2.5vw,2.8rem);margin:0;max-width:none;color:var(--blue)}
+.discovery p{font-size:1rem;line-height:1.65;max-width:30ch}
+.card-open{display:block;font-size:.95rem;line-height:1.5;font-weight:600;color:var(--blue)}
+.discovery .card-open{display:flex;justify-content:space-between;gap:15px;margin-top:auto;padding-top:10px}
+.journal-list{gap:22px}
+.journal-list>a{display:flex;flex-direction:column;gap:18px;padding:26px;border:1px solid var(--line);border-top:3px solid var(--accent);background:#fff9}
+.journal-list>a:hover{background:var(--surface)}
+.journal-list .card-kind{font-size:.95rem;color:var(--accent)}
+.journal-list h3{font-size:1.95rem;line-height:1.22;margin:0;color:var(--accent)}
+.journal-list p{font-size:1rem;line-height:1.75}
+.journal-list .article-open{display:block;font-size:.95rem;font-weight:600;line-height:1.5;margin-top:auto;padding-top:12px;color:var(--accent)}
+.assortment-paths{gap:20px}
+.assortment-paths>a{padding:24px;background:#fff9;border:1px solid var(--line);gap:22px;align-items:flex-start}
+.assortment-paths>a:hover{background:var(--surface);border-color:#a5b8d9}
+.assortment-paths>a>img,.assortment-paths>a>.category-information{width:90px;height:90px;flex-shrink:0}
+.assortment-paths .card-kind{font-size:.95rem;margin-bottom:10px}
+.assortment-paths h3{font-size:1.9rem;line-height:1.2}
+.assortment-paths .card-open{margin-top:16px}
+.assortment-paths .path-arrow{display:none}
+.visit-panel{padding-block:55px;margin-bottom:70px}
+.visit-panel>p{font-size:1.05rem;font-weight:600}
+.visit-panel h2{font-size:clamp(2.4rem,3.8vw,4rem);max-width:750px}
+.booking-steps{margin-bottom:45px}
+.booking-steps>h2,.luggage-local h2{font-size:clamp(2.2rem,3.5vw,3.4rem)}
+.booking-steps ol{gap:20px}
+.booking-steps li{padding:25px;background:#fff9;border:1px solid var(--line);border-top:3px solid var(--blue)}
+.luggage-local{margin-block:45px}
+.luggage-local-notes{padding:28px;background:var(--surface);border:1px solid var(--line)}
+@media(max-width:960px){
+ .page-hero{gap:30px}.assortment-hero{gap:30px;padding-block:30px 50px}
+ .information-panels{gap:20px}.assortment-paths>a{padding:20px;gap:18px}
+ .assortment-paths>a>img,.assortment-paths>a>.category-information{width:70px;height:70px}
+ .assortment-paths h3{font-size:1.7rem}.journal-list{gap:18px}
+}
+@media(max-width:680px){
+ .page-hero h1,.assortment-hero h1{font-size:clamp(2.8rem,10vw,3.6rem)}
+ .page-hero.no-photo{padding-block:35px 45px}.page-hero>img{max-height:380px}
+ .page-content{padding-block:30px 50px}.page-jumps{gap:8px;margin-bottom:26px}
+ .page-jumps a{padding:10px 12px;font-size:.9rem}
+ .information-panels{grid-template-columns:1fr}.information-panels>section,.page-guide-section .guide-link,.range-groups{padding:22px}
+ .choice-list{gap:18px}.choice-list>div{padding:22px}
+ .journal-list{grid-template-columns:1fr}.journal-list>a{padding:22px}
+ .section-opening{gap:22px;margin-bottom:28px;align-items:flex-start}
+ .discover{padding-block:45px 60px}.discover-grid{gap:20px}
+ .assortment-paths>a{gap:16px}.assortment-paths h3{font-size:1.65rem}
+ .assortment-paths .card-kind{font-size:.9rem}.assortment-paths .card-open{font-size:.9rem}
+ .visit-panel{padding-block:40px;margin-bottom:50px}.visit-panel h2{font-size:2.5rem}
+ .luggage-local-notes{padding:22px}
+}

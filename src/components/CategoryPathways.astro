@@ -1,17 +1,25 @@
 ---
 import {categoryAnswers,categoryPathways} from '../data/category-pathways';
 import {pathFor,text,type Lang} from '../data/shop';
-const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};
+const {slug,lang='it',mode='all'}=Astro.props as {slug:string;lang:Lang;mode?:'all'|'answer'|'links'};
 const l=lang==='it'?0:1;const answer=categoryAnswers[slug];const notes=categoryPathways[slug]||[];
 ---
-{answer&&<aside class="category-answer" aria-label={text(lang,'In breve','At a glance')}><p>{answer[l]}</p></aside>}
-{notes.length>0&&<section class="category-pathways"><h2>{text(lang,'Una scelta porta alla prossima.','One choice leads to the next.')}</h2>{notes.map(n=><p>{n.lead[l]} <a href={pathFor(n.target,lang)}>{n.label[l]}</a>{n.after[l]}</p>)}</section>}
+{mode!=='links'&&answer&&<aside class="category-answer" aria-label={text(lang,'In breve','At a glance')}><strong>{text(lang,'In breve','At a glance')}</strong><p>{answer[l]}</p></aside>}
+{mode!=='answer'&&notes.length>0&&<section class="category-pathways"><h2>{text(lang,'Percorsi collegati.','Related paths.')}</h2><div class="pathway-grid">{notes.map(n=><a href={pathFor(n.target,lang)}><span class="pathway-type">{n.target.startsWith('schede/')?text(lang,'Guida pratica','Practical guide'):text(lang,'Sezione del sito','Website section')}</span><h3>{n.label[l]}</h3><p>{n.lead[l]} {n.label[l]}{n.after[l]}</p><span class="pathway-open">{n.target.startsWith('schede/')?text(lang,'Leggi la guida','Read the guide'):text(lang,'Esplora la sezione','Explore this section')} <span aria-hidden="true">→</span></span></a>)}</div></section>}
 <style>
- .category-answer{border-left:3px solid var(--blue,#0645c0);padding:1rem 1.4rem;margin:0 0 2.8rem;max-width:72ch;background:rgba(6,69,192,.035)}
+ .category-answer{border-left:3px solid var(--accent);padding:1.2rem 1.5rem;margin:0 0 2.8rem;max-width:85ch;background:var(--surface)}
+ .category-answer strong{display:block;font-size:1rem;color:var(--accent);margin-bottom:.4rem}
  .category-answer p{margin:0;line-height:1.75}
- .category-pathways{margin:3rem 0;max-width:72ch}
- .category-pathways h2{font-size:clamp(1.6rem,3vw,2.5rem);margin-bottom:1.25rem}
- .category-pathways p{line-height:1.8;margin:1rem 0}
- .category-pathways a{text-decoration:underline;text-underline-offset:.2em}
+ .category-pathways{margin:4rem 0}
+ .category-pathways h2{font-size:clamp(1.9rem,3vw,2.8rem);margin-bottom:1.4rem;color:var(--accent)}
+ .pathway-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+ .pathway-grid>a{display:flex;flex-direction:column;gap:15px;border:1px solid var(--line);border-top:3px solid var(--accent);padding:26px;background:#fff9;transition:background .2s}
+ .pathway-grid>a:hover{background:var(--surface)}
+ .pathway-type{font-size:.95rem;font-weight:600;color:var(--accent)}
+ .pathway-grid h3{font-size:1.85rem;line-height:1.22;color:var(--accent)}
+ .pathway-grid h3::first-letter{text-transform:uppercase}
+ .pathway-grid p{font-size:.95rem;line-height:1.75}
+ .pathway-open{display:flex;justify-content:space-between;gap:15px;margin-top:auto;padding-top:12px;font-size:.95rem;font-weight:600;color:var(--accent)}
+ @media(max-width:680px){.pathway-grid{grid-template-columns:1fr}.pathway-grid>a{padding:22px}}
  @media(max-width:680px){.category-answer{padding:.9rem 1rem}.category-pathways{margin:2rem 0}}
 </style>
