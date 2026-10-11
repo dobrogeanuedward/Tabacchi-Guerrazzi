@@ -105,3 +105,6 @@ h1,h2,h3,dt,.site-menu nav a{overflow-wrap:anywhere}
 .grouped-menu small{white-space:nowrap;flex-shrink:0}
 
 .luggage-label.eyebrow,.journal-list>a>.eyebrow{font-family:var(--display);font-style:italic;font-size:1.25rem;color:#151515;letter-spacing:0;text-transform:none}
+
+/* Practical home shortcuts and photographic category cards. */
+.home-essentials{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;padding-block:35px;border-bottom:1px solid var(--line)}.home-essentials a{display:flex;flex-direction:column;gap:10px;min-height:80px;padding:10px 0}.home-essentials strong{font-size:.9rem;font-weight:600;line-height:1.6}.home-essentials a:hover strong{color:var(--blue)}.assortment-paths>a>img{object-fit:cover;border-radius:3px 18px 3px 3px}.home-essentials+.discover{padding-top:75px}@media(max-width:960px){.home-essentials{grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 30px}}@media(max-width:680px){.home-essentials{gap:10px 20px;padding-block:20px}.home-essentials .eyebrow{font-size:1.1rem}.home-essentials strong{font-size:.8rem}.home-essentials+.discover{padding-top:50px}}

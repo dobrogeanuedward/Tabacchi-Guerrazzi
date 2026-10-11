@@ -18,7 +18,7 @@ try {
   await writeFile(path,`export const prerender=true;\n${await readFile(path,'utf8')}`);
  }
  await new Promise((resolve,reject)=>{
-  const child=spawn('npm',['run','build'],{stdio:'inherit',env:{...process.env,ASTRO_STATIC_EXPORT:'true',PUBLIC_SITE_URL:productionUrl}});
+  const child=spawn(process.execPath,['node_modules/astro/astro.js','build'],{stdio:'inherit',env:{...process.env,ASTRO_STATIC_EXPORT:'true',PUBLIC_SITE_URL:productionUrl}});
   child.once('error',reject);
   child.once('exit',code=>code===0?resolve():reject(new Error(`Static build failed (${code}).`)));
  });

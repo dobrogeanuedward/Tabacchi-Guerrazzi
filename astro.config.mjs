@@ -9,5 +9,5 @@ export default defineConfig({
  ...(staticExport?{srcDir:'./.static-export/src'}:{adapter:node({mode:'standalone'})}),
  server:{port:4321,host:true},
  security:{allowedDomains},
- vite:{ssr:{external:['node:sqlite']}}
+ vite:{build:{rollupOptions:{maxParallelFileOps:1}},resolve:{preserveSymlinks:process.platform==='win32'},ssr:{external:['node:sqlite']}}
 });

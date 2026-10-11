@@ -1,7 +1,7 @@
 ---
 import {text,type Lang} from '../data/shop';
 import editorialAssets from '../data/editorial-assets.json';
-const {name,alt,lang='it',caption=true,wide=false}=Astro.props as {name:string;alt:string;lang:Lang;caption?:boolean;wide?:boolean};
+const {name,alt,lang='it',caption=false,wide=false}=Astro.props as {name:string;alt:string;lang:Lang;caption?:boolean;wide?:boolean};
 const dimensions=(editorialAssets as Record<string,{mobile:{width:number;height:number};desktop:{width:number;height:number}}>)[name];
 ---
 <figure class="editorial-photo">

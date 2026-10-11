@@ -1,5 +1,5 @@
 export type CigarRecord={slug:string;name:string;group:string;reference:string;photo:string;detail:[string,string]};
-export const cigarRecords:CigarRecord[]=[
+const sourceRecords:CigarRecord[]=[
   {
     "slug": "toscano-extravecchio",
     "name": "Toscano Extravecchio",
@@ -375,3 +375,5 @@ export const cigarRecords:CigarRecord[]=[
     ]
   }
 ];
+
+export const cigarRecords:CigarRecord[]=sourceRecords.map(record=>({...record,detail:record.group==='Toscano'?[`«${record.name.replace(/^Toscano /,'')}» è una denominazione Toscano. Formato e numero di pezzi dipendono dalla confezione; questa scheda non indica la disponibilità attuale.`,`“${record.name.replace(/^Toscano /,'')}” is a Toscano name. Size and pack quantity depend on the individual pack; this page does not indicate current availability.`]:[`${record.name}: informazioni sulla denominazione. Per identificare la variante esatta occorre il nome completo sulla confezione; dal solo nome non si ricavano formato o composizione.`,`${record.name}: information about the name. The full pack name is needed to identify an exact variant; size and composition cannot be established from the name alone.`]}));
