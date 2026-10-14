@@ -1,4 +1,5 @@
 ---
+import NeighborhoodLinks from './NeighborhoodLinks.astro';
 import Base from '../layouts/Base.astro';import {guides,pages} from '../data/pages';import {pathFor,text,type Lang,mainPages} from '../data/shop';
 import {guideCategoryLinks} from '../data/category-pathways';
 import {tobaccoGuides} from '../data/tobacco-information';import {materialGuides} from '../data/materials-education';
@@ -26,7 +27,7 @@ const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,ti
    <p class="reference-category">{parentLabel}</p>
    <h1>{g.title[l]}</h1>
    <p class="reference-summary">{g.intro[l]}</p>
-   <div class="reference-meta"><span>{g.sections.length} {text(lang,'sezioni','sections')}</span><span>{text(lang,'Lettura stimata','Estimated reading time')}: {readingMinutes} min</span></div>
+   <div class="reference-meta"><span>{readingMinutes} {text(lang,'min di lettura','min read')}</span></div>
    <a class="reference-start" href="#informazione-0">{text(lang,'Leggi la guida','Read the guide')} </a>
   </div>
   <div class="reference-cover-art"><EditorialArt visual={visual} lang={lang} loading="eager"/></div>
@@ -35,15 +36,15 @@ const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,ti
   <ReadingIndex entries={indexEntries} title={text(lang,'In questa guida','In this guide')} lang={lang}/>
   <article class="reference-content">
    {g.sections.map((s:any,i:number)=><section id={'informazione-'+i} class:list={['reference-section',i===0&&'reference-section--opening']}>
-    <span class="reference-section-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span>
     <div><h2>{s[0][l]}</h2><p>{s[1][l]}</p></div>
    </section>)}
-   {categories.length>0&&<section class="reference-related"><p class="reference-section-label">{text(lang,'Percorsi collegati','Related paths')}</p><h2>{informationGuide?text(lang,'Continua la consultazione.','Continue reading.'):text(lang,'Dalla guida alla categoria.','From guide to category.')}</h2><div class="reference-related-grid">{categories.map(p=><a href={pathFor(p!.slug,lang)}><span class="reference-link-type">{informationGuide?text(lang,'Area informativa','Information area'):text(lang,'Categoria','Category')}</span><strong>{lang==='it'?p!.it:p!.en}</strong><span class="reference-link-action">{informationGuide?text(lang,'Apri l’area','Open the area'):text(lang,'Esplora la categoria','Explore the category')} </span></a>)}</div></section>}
+   {categories.length>0&&<section class="reference-related"><p class="reference-section-label">{text(lang,'Ti può interessare','You might also like')}</p><h2>{informationGuide?text(lang,'Continua a leggere.','Keep reading.'):text(lang,'Da Angela trovi anche.','Also at Angela’s.')}</h2><div class="reference-related-grid">{categories.map(p=><a href={pathFor(p!.slug,lang)}><span class="reference-link-type">{informationGuide?text(lang,'Area informativa','Information area'):text(lang,'Categoria','Category')}</span><strong>{lang==='it'?p!.it:p!.en}</strong><span class="reference-link-action">{informationGuide?text(lang,'Apri l’area','Open the area'):text(lang,'Esplora la categoria','Explore the category')} </span></a>)}</div></section>}
    <OfficialSources sources={g.sources||[]} lang={lang} research={researchGuide} technical={technicalGuide} checked={researchGuide||technicalGuide?'11 ottobre 2026':undefined}/>
-   {informationGuide?<div class="reference-return"><a href={pathFor(g.parent,lang)}>{text(lang,'Torna all’area informativa','Back to the information area')}</a></div>:<div class="reference-visit"><div><p class="reference-section-label">{text(lang,'Prima della visita','Before your visit')}</p><h2>{text(lang,'Una richiesta precisa.','A clear request.')}</h2><p>{text(lang,'Verifica la tua richiesta prima di passare.','Check your request before visiting.')}</p></div><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Informazioni per la visita','Plan your visit')}</a></div>}
+   {informationGuide?<div class="reference-return"><a href={pathFor(g.parent,lang)}>{text(lang,'Torna all’area informativa','Back to the information area')}</a></div>:<div class="reference-visit"><div><p class="reference-section-label">{text(lang,'Ti aspettiamo','See you here')}</p><h2>{text(lang,'Parliamone da vicino.','Let’s talk in person.')}</h2><p>{text(lang,'Porta la tua domanda in Via Guerrazzi 10/F. Cominciamo da lì.','Bring your question to Via Guerrazzi 10/F. We will start there.')}</p></div><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Informazioni per la visita','Plan your visit')}</a></div>}
   </article>
  </div>
 </div>
+{!informationGuide&&<div class="wrap"><NeighborhoodLinks topic={g.parent} lang={lang}/></div>}
 </Base>
 <style>
  .reference-document{--reference-line:color-mix(in srgb,var(--accent) 25%,#ded6c8);color:var(--ink)}
@@ -62,7 +63,7 @@ const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,ti
  .reference-start>span{font-size:1.25rem}.reference-cover-art{min-width:0;padding-top:18px}
  .reference-reading{display:grid;grid-template-columns:240px minmax(0,1fr);gap:72px;padding-block:54px 75px;align-items:start}
  .reference-content{min-width:0}
- .reference-section{display:grid;grid-template-columns:54px minmax(0,1fr);gap:22px;padding:30px 0;border-top:1px solid var(--reference-line);scroll-margin-top:30px}
+ .reference-section{display:grid;grid-template-columns:minmax(0,1fr);gap:22px;padding:30px 0;border-top:1px solid var(--reference-line);scroll-margin-top:30px}
  .reference-section--opening{padding:30px;margin-bottom:12px;border-top:3px solid var(--accent);background:color-mix(in srgb,var(--surface) 62%,#fffdf8)}
  .reference-section-number{font:400 2.85rem/1 var(--display);color:var(--accent);letter-spacing:-.04em;padding-top:2px}
  .reference-section h2,.reference-related h2,.reference-visit h2{font:400 clamp(1.9rem,2.7vw,2.7rem)/1.15 var(--display);letter-spacing:-.025em;color:var(--accent);margin-bottom:20px}
@@ -79,8 +80,8 @@ const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,ti
  .reference-visit h2{margin-bottom:13px}.reference-visit p:not(.reference-section-label){font-size:1rem;line-height:1.8}.reference-visit .button{font-size:.95rem}
  .reference-return{padding-top:25px;margin-top:35px;border-top:1px solid var(--reference-line)}
  .reference-return a{display:inline-flex;align-items:center;gap:14px;min-height:44px;color:var(--accent);font-size:.95rem;text-decoration:underline;text-underline-offset:4px}
- @media(max-width:1100px){.reference-cover{gap:35px;grid-template-columns:1.1fr .9fr}.reference-reading{grid-template-columns:210px minmax(0,1fr);gap:35px}.reference-section--opening{padding:25px}.reference-section{grid-template-columns:42px minmax(0,1fr);gap:17px}}
+ @media(max-width:1100px){.reference-cover{gap:35px;grid-template-columns:1.1fr .9fr}.reference-reading{grid-template-columns:210px minmax(0,1fr);gap:35px}.reference-section--opening{padding:25px}.reference-section{grid-template-columns:minmax(0,1fr);gap:17px}}
  @media(max-width:820px){.reference-cover{grid-template-columns:1fr;gap:30px;padding-bottom:35px}.reference-cover h1{max-width:24ch}.reference-cover-art{max-width:620px;width:100%;justify-self:end;padding-top:0}.reference-reading{grid-template-columns:1fr;gap:34px;padding-block:35px 55px}.reference-cover h1{font-size:clamp(2.6rem,7.4vw,3.8rem)}}
- @media(max-width:520px){.reference-cover{padding-top:12px}.reference-kind{margin-bottom:20px}.reference-summary{font-size:1rem;padding-left:16px}.reference-meta{gap:8px 15px}.reference-meta>span+span{padding-left:15px}.reference-section{grid-template-columns:32px minmax(0,1fr);gap:12px;padding-block:25px}.reference-section--opening{padding:22px 17px}.reference-section-number{font-size:2.1rem}.reference-section h2{font-size:1.95rem}.reference-section p{font-size:1rem;line-height:1.9}.reference-related-grid{grid-template-columns:1fr;gap:0}.reference-visit{padding:24px}.reference-visit .button{width:100%}}
+ @media(max-width:520px){.reference-cover{padding-top:12px}.reference-kind{margin-bottom:20px}.reference-summary{font-size:1rem;padding-left:16px}.reference-meta{gap:8px 15px}.reference-meta>span+span{padding-left:15px}.reference-section{grid-template-columns:minmax(0,1fr);gap:12px;padding-block:25px}.reference-section--opening{padding:22px 17px}.reference-section-number{font-size:2.1rem}.reference-section h2{font-size:1.95rem}.reference-section p{font-size:1rem;line-height:1.9}.reference-related-grid{grid-template-columns:1fr;gap:0}.reference-visit{padding:24px}.reference-visit .button{width:100%}}
  @media(max-width:370px){.reference-meta{display:grid;gap:5px}.reference-meta>span+span{padding:0;border:0}.reference-cover h1{font-size:2.5rem}.reference-kind{gap:10px}.reference-kind::before{width:22px}}
 </style>

@@ -1,5 +1,6 @@
 import {materialGuides,materialArticles} from './materials-education';
 import {guideCopy} from './guide-copy';
+import {cigarHistoryArticles} from './cigar-history';
 export const tobaccoSources=[
  {label:'D.Lgs. 6/2016 — testo pubblicato in Gazzetta Ufficiale',url:'https://www.gazzettaufficiale.it/eli/id/2016/01/18/16G00009/sg'},
  {label:'Legge 165/1962 — divieto di propaganda pubblicitaria',url:'https://def.finanze.it/DocTribFrontend/getContent.do?id=%7B6F303C4D-0237-4DF8-B9A9-683CECC5F2CE%7D'}
@@ -33,5 +34,5 @@ export const tobaccoArticles=[
  {slug:'tabacco-confezioni-fonti-informazione',cluster:'informazione-tabacco',title:'Confezioni e fonti: leggere senza interpretazioni commerciali.',summary:'Dove trovare i riferimenti ufficiali e come distinguere informazioni e messaggi promozionali.',guide:'tabacco-confezioni-avvertenze',sources:tobaccoSources,sections:[['Parti dall’articolo esatto.','Una famiglia di prodotti non coincide con una confezione precisa. Denominazione e informazioni sull’imballaggio vanno lette insieme; una scheda generale non è una certificazione del singolo articolo.'],['Le informazioni hanno una fonte.','Le schede di questa area citano testi pubblicati da enti pubblici e indicano il loro ruolo. La Gazzetta documenta il provvedimento originario; gli aggiornamenti normativi richiedono il testo vigente.'],['Il perimetro del sito.','Questa area non presenta offerte, classifiche, consigli di consumo o inviti all’acquisto di tabacco. Per gli articoli non regolamentati puoi consultare il catalogo separato; per le informazioni del luogo trovi l’indirizzo e le indicazioni del negozio.']]}
 ];
 Object.assign(tobaccoGuides,materialGuides);
-tobaccoArticles.push(...materialArticles);
+tobaccoArticles.push(...materialArticles,...cigarHistoryArticles);
 export const adultSectionSlugs=['sigari','pipe-e-tabacchi-da-pipa','accendini-e-accessori','ricevitoria',...Object.keys(tobaccoGuides).map(s=>`schede/${s}`),...tobaccoArticles.map(a=>`approfondimenti/${a.slug}`)];

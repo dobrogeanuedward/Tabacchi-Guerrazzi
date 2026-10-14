@@ -38,33 +38,30 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
   'service-paper-study': {
     ...files('service-paper-study'),index:'08',theme:'service',decorative:true,
     title:{it:'Servizi',en:'Services'},
-    alt:{it:'Studio editoriale di un telefono generico e fogli privi di dati.',en:'Editorial study of a generic phone and sheets without data.'},
-    caption:{it:'Telefono e documenti in uno studio illustrativo. Non raffigura modelli, avvisi o ricevute reali.',en:'A phone and documents in an illustrative study. It does not depict real models, notices or receipts.'},
+    alt:{it:'Telefono e fogli bianchi.',en:'Phone and blank sheets.'},
+    caption:{it:'Un numero, un documento, una commissione.',en:'A number, a document, an errand.'},
   },
   'celebration-paper-study': {
     ...files('celebration-paper-study'),index:'09',theme:'celebration',decorative:true,
     title:{it:'Occasioni',en:'Occasions'},
-    alt:{it:'Biglietti bianchi, rosetta di carta e nastro blu in una composizione illustrata.',en:'Blank cards, a paper rosette and a blue ribbon in an illustrated composition.'},
-    caption:{it:'Carta, pieghe e piccoli dettagli per un’occasione. Composizione generica, non fotografia di articoli disponibili.',en:'Paper, folds and small details for an occasion. A generic composition, not a photograph of available items.'},
+    alt:{it:'Biglietti bianchi, rosetta di carta e nastro blu.',en:'Blank cards, a paper rosette and a blue ribbon.'},
+    caption:{it:'Carta, colori e un pensiero da completare.',en:'Paper, colours and a gift to complete.'},
   },
   'play-shape-study': {
     ...files('play-shape-study'),index:'10',theme:'play',decorative:true,
     title:{it:'Gioco',en:'Play'},
     alt:{it:'Forme geometriche generiche in legno e colori opachi, su carta avorio.',en:'Generic geometric forms in wood and matte colours on ivory paper.'},
-    caption:{it:'Un’idea di gioco attraverso forme e materiali. Lo studio non identifica giocattoli o fasce d’età.',en:'An idea of play through shapes and materials. This study does not identify toys or age ranges.'},
+    caption:{it:'Forme e colori che invitano a giocare.',en:'Shapes and colours that invite play.'},
   },
   'fragrance-paper-study': {
     ...files('fragrance-paper-study'),
     index: '07',
     title: { it: 'Profumeria', en: 'Perfumery' },
     alt: {
-      it: 'Illustrazione editoriale di vetro ambrato e strisce di carta per profumeria.',
-      en: 'Editorial illustration of amber glass and paper scent blotters.',
+      it: 'Vetro ambrato e strisce di carta per profumeria.',
+      en: 'Amber glass and paper scent blotters.',
     },
-    caption: {
-      it: 'Vetro e carta in uno studio sulla profumeria. L’illustrazione non raffigura flaconi o confezioni Raptus.',
-      en: 'Glass and paper in a study of perfumery. The illustration does not depict Raptus bottles or packaging.',
-    },
+    caption:{it:'Vetro, carta e riflessi.',en:'Glass, paper and reflections.'},
     theme: 'fragrance',
     decorative: false,
   },
@@ -73,10 +70,7 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
     index: '01',
     title: { it: 'Archivio', en: 'Archive' },
     alt: { it: '', en: '' },
-    caption: {
-      it: 'Carte e raccoglitore in una composizione editoriale per l’archivio delle denominazioni.',
-      en: 'Cards and a folio in an editorial composition for the name archive.',
-    },
+    caption:{it:'Carta, nomi e storie da leggere.',en:'Paper, names and stories to read.'},
     theme: 'archive',
     decorative: true,
   },
@@ -88,10 +82,7 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
       it: 'Studio illustrativo ispirato a Erica arborea, con ramo e dettaglio schematico della base.',
       en: 'Illustrative study inspired by Erica arborea, with a branch and a schematic detail of its base.',
     },
-    caption: {
-      it: 'Erica arborea: studio botanico illustrativo, con dettaglio schematico della base. Non è la fotografia di un esemplare.',
-      en: 'Erica arborea: an illustrative botanical study, with a schematic detail of its base. This is not a specimen photograph.',
-    },
+    caption:{it:'L’Erica arborea e la materia del legno.',en:'Erica arborea and the material of wood.'},
     theme: 'botanical',
     decorative: false,
   },
@@ -103,10 +94,7 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
       it: 'Studio illustrativo di un frammento chiaro su carta avorio.',
       en: 'Illustrative study of a pale fragment on ivory paper.',
     },
-    caption: {
-      it: 'Materia chiara, opaca e gessosa: studio illustrativo, non fotografia di un campione autenticato di sepiolite.',
-      en: 'Pale, opaque, chalky material: an illustrative study, not a photograph of an authenticated sepiolite specimen.',
-    },
+    caption:{it:'La materia grezza e la superficie lavorata.',en:'Raw material and a worked surface.'},
     theme: 'mineral',
     decorative: false,
   },
@@ -118,10 +106,7 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
       it: 'Illustrazione editoriale di una valigia e di portici.',
       en: 'Editorial illustration of a suitcase and porticoes.',
     },
-    caption: {
-      it: 'Una valigia e il ritmo dei portici. Illustrazione evocativa, senza indicazioni geografiche.',
-      en: 'A suitcase and the rhythm of porticoes. An evocative illustration without geographic directions.',
-    },
+    caption:{it:'Una passeggiata tra i portici di Bologna.',en:'A walk beneath Bologna’s porticoes.'},
     theme: 'travel',
     decorative: false,
   },
@@ -133,10 +118,7 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
       it: 'Composizione illustrata di un pacchetto e piccoli oggetti generici per un regalo.',
       en: 'Illustrated composition of a parcel and small generic gift objects.',
     },
-    caption: {
-      it: 'Una composizione editoriale dedicata ai regali. Gli oggetti non identificano articoli specifici.',
-      en: 'An editorial composition about gifts. The objects do not identify specific products.',
-    },
+    caption:{it:'Piccole cose, scelte pensando a qualcuno.',en:'Little things, chosen with someone in mind.'},
     theme: 'gifting',
     decorative: false,
   },
@@ -145,14 +127,16 @@ export const visualStudies: Record<VisualStudyId, VisualStudy> = {
     index: '06',
     title: { it: 'Carta', en: 'Paper' },
     alt: {
-      it: 'Studio illustrativo di fogli, pieghe della carta e una matita.',
-      en: 'Illustrative study of sheets, paper folds and a pencil.',
+      it: 'Fogli di carta e una matita.',
+      en: 'Sheets of paper and a pencil.',
     },
-    caption: {
-      it: 'Carta, pieghe e strumenti di scrittura in uno studio editoriale. Non rappresenta un articolo specifico.',
-      en: 'Paper, folds and writing tools in an editorial study. This does not depict a specific product.',
-    },
+    caption:{it:'Una pagina, una penna, la prossima idea.',en:'A page, a pen, the next idea.'},
     theme: 'stationery',
     decorative: false,
   },
 };
+
+// Photographs used by the botanical and mineral reading pages.
+Object.assign(visualStudies['botanical-erica-study'],{path:'/images/quaderni/botanica-erica.webp',preview:'/images/quaderni/botanica-erica-768.webp',alt:{it:'Ramo fiorito di erica e legno grezzo su carta avorio',en:'Flowering heather sprig and rough wood on ivory paper'},caption:{it:'Un ramo fiorito e la materia del legno.',en:'A flowering sprig and the material of wood.'}});
+Object.assign(visualStudies['mineral-sepiolite-study'],{path:'/images/quaderni/materia-sepiolite.webp',preview:'/images/quaderni/materia-sepiolite-768.webp',alt:{it:'Frammento minerale chiaro e blocco levigato su carta avorio',en:'Pale mineral fragment and smooth block on ivory paper'},caption:{it:'La superficie grezza accanto a quella lavorata.',en:'A rough surface alongside a worked one.'}});
+Object.assign(visualStudies['archive-folio'],{path:'/images/quaderni/carta-e-nomi.webp',preview:'/images/quaderni/carta-e-nomi-768.webp',alt:{it:'Libro aperto, carta e penna blu',en:'Open book, paper and blue pen'},decorative:false});

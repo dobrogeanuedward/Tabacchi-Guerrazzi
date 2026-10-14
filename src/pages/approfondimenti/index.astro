@@ -8,20 +8,20 @@ import EditorialArt from '../../components/EditorialArt.astro';
 export const prerender=true;
 const adultArticleSlugs=new Set([...tobaccoArticles,...materialArticles].map(a=>a.slug));
 ---
-<Base title="Il diario di Guerrazzi" description="Idee regalo, giochi, servizi pratici, il negozio e informazioni sul tabacco: approfondimenti documentati da Guerrazzi a Bologna." slug="approfondimenti" alternate={false} theme="utility" image="/images/studies/archive-folio.webp">
+<Base title="Il diario di Guerrazzi" description="Idee regalo, commissioni e passeggiate fra Santo Stefano, Via Guerrazzi e Strada Maggiore. Le storie e le guide di Angela a Bologna." slug="approfondimenti" alternate={false} theme="utility" image="/images/quaderni/carta-e-nomi.webp">
 <div class="wrap journal-shell">
  <header class="journal-cover">
   <div class="journal-cover-copy">
    <p class="journal-kicker">Quaderni Guerrazzi</p>
    <h1>Il diario</h1>
-   <p class="journal-intro">Storie e approfondimenti sul negozio, i servizi e i materiali. Scegli un argomento, poi apri l’articolo che ti interessa.</p>
+   <p class="journal-intro">Un regalo da scegliere, una commissione da organizzare, una strada da seguire. E qualche storia da leggere con calma.</p>
    <p class="journal-count"><span>{clusters.length} argomenti</span><span>{articles.length} articoli</span></p>
    <a class="journal-start" href="#argomenti">Sfoglia gli argomenti </a>
   </div>
   <EditorialArt visual={clusterVisuals['lessico-e-fonti']} lang="it" loading="eager" compact />
  </header>
  <nav class="journal-index" id="argomenti" aria-label="Argomenti del diario">
-  <div class="journal-index-heading"><h2>Da dove vuoi partire?</h2><p>Un indice per trovare il tuo argomento.</p></div>
+  <div class="journal-index-heading"><h2>Da dove vuoi partire?</h2><p>Scegli quello che ti incuriosisce.</p></div>
   <ol>{clusters.map((c,i)=>{
    const count=articles.filter(a=>a.cluster===c.id).length;
    return <li><a href={'#'+c.id}><span class="journal-index-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><span>{c.label}<small>{count} {count===1?'articolo':'articoli'}</small></span></a></li>
@@ -54,7 +54,7 @@ const adultArticleSlugs=new Set([...tobaccoArticles,...materialArticles].map(a=>
    </div>
   </section>
  })}
- <footer class="journal-footer"><p>Hai un’esigenza pratica?</p><a href="/servizi/">Consulta i servizi </a></footer>
+ <footer class="journal-footer"><p>Una commissione da fare?</p><a href="/servizi/">Guarda i servizi </a></footer>
 </div>
 </Base>
 <style>

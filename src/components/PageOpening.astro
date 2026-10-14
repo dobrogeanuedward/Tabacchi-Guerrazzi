@@ -9,8 +9,8 @@ const adult=['ricevitoria','accendini-e-accessori'].includes(slug);
 const art=local?'portico-ink':slug==='servizi'?'stationery-ink':slug==='marchi-e-competenze'?'gift-ink':'archive-reference';
 const artPath=slug==='servizi'?'/images/studies/service-paper-study.webp':`/brand/ui/${art}.webp`;
 const artSet=slug==='servizi'?'/images/studies/service-paper-study-768.webp 768w, /images/studies/service-paper-study.webp 1536w':undefined;
-const note=local?text(lang,'Il ritmo dei portici · illustrazione editoriale','The rhythm of the porticoes · editorial illustration'):text(lang,'Quaderni Guerrazzi · illustrazione editoriale','Guerrazzi notebooks · editorial illustration');
-const label=local?text(lang,'Il luogo · Bologna','The place · Bologna'):adult?text(lang,'Area informativa · 18+','Information area · 18+'):slug==='servizi'?text(lang,'Al banco · informazioni pratiche','At the counter · practical information'):text(lang,'Il repertorio del negozio','The shop directory');
+const note=local?text(lang,'Il ritmo dei portici','The rhythm of the porticoes'):text(lang,'Le cose di ogni giorno','Everyday things');
+const label=local?text(lang,'Il luogo · Bologna','The place · Bologna'):adult?text(lang,'Area informativa · 18+','Information area · 18+'):slug==='servizi'?text(lang,'Al banco · informazioni pratiche','At the counter · practical information'):text(lang,'Da Angela','At Angela’s');
 ---
 <section class:list={['page-opening','wrap',local&&'page-opening--local',night&&'page-opening--night',adult&&'page-opening--information']} data-page-opening={slug}>
  <div class="opening-copy"><p class="opening-label">{label}</p><h1>{heading}</h1><p class="opening-claim">{p.title[l]}</p><p class="opening-description">{p.intro[l]}</p>

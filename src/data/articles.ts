@@ -1,3 +1,4 @@
+import {articleRevision,neighborhoodArticles} from './article-revision';
 import {tobaccoArticles} from './tobacco-information';
 
 export const clusters = [
@@ -230,8 +231,14 @@ const informationArticleCopy:Record<string,Pick<Article,'title'|'summary'|'secti
   },
 };
 
-clusters.push({id:'informazione-tabacco',label:'Tabacco: informazioni e norme',parent:'sigari',theme:'cedro'});
+clusters.push({id:'informazione-tabacco',label:'Le parole del sigaro',parent:'sigari',theme:'cedro'});
 clusters.push({id:'materiali-e-storia',label:'Materiali e storia',parent:'pipe-e-tabacchi-da-pipa',theme:'radica'});
-clusters.push({id:'lessico-e-fonti',label:'Lessico e fonti',parent:'sigari',theme:'cedro'});
+clusters.push({id:'lessico-e-fonti',label:'Nomi e storie',parent:'sigari',theme:'cedro'});
 articles.push(...tobaccoArticles.map(article=>({...article,...informationArticleCopy[article.slug]})));
 for(const article of tobaccoArticles)articleCategoryLinks[article.slug]=['sigari','pipe-e-tabacchi-da-pipa'];
+
+for(const article of articles)if(articleRevision[article.slug])Object.assign(article,articleRevision[article.slug]);
+articles.push(...neighborhoodArticles);
+articleCategoryLinks["deposito-bagagli-santo-stefano-strada-maggiore-bologna"]=["deposito-bagagli","il-quartiere"];
+articleCategoryLinks["regali-cartoleria-santo-stefano-aldrovandi-bologna"]=["idee-regalo","cartoleria","il-quartiere"];
+articleCategoryLinks["commissioni-san-petronio-vecchio-strada-maggiore"]=["servizi","accessori-telefono","il-quartiere"];

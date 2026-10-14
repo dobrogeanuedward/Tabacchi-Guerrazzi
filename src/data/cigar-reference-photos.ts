@@ -268,4 +268,10 @@ export const cigarReferencePhotos:Record<string,CigarReferencePhoto> = {
   }
 };
 
+// Keep the licensed archive captions short; attribution remains with each image.
+for(const photo of Object.values(cigarReferencePhotos)){
+ photo.alt=[`${photo.name}, immagine d’archivio`,`${photo.name}, archive image`];
+ photo.caption=[`${photo.name}. Immagine d’archivio.`,`${photo.name}. Archive image.`];
+}
+
 export const referenceCigarPhotoForName=(name:string):CigarReferencePhoto|undefined=>cigarReferencePhotos[name];

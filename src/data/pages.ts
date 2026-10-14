@@ -1,3 +1,4 @@
+import {pageRevision,guideRevision} from './site-copy';
 import {tobaccoGuides,tobaccoSources} from './tobacco-information';
 import {assortmentPages} from './assortment';
 import {guideCopy} from './guide-copy';
@@ -53,7 +54,7 @@ pages['giochi-e-giocattoli'].sections.push([['Completa il compleanno.','Complete
 pages['giochi-e-giocattoli'].related=['feste-e-compleanni','idee-regalo','dolciumi'];
 pages['marchi-e-competenze'].intro=['Nomi riconoscibili sugli scaffali: profumi Raptus, cartoleria, dolciumi, accessori e cura personale. Le informazioni aiutano a orientare una richiesta, senza sostituire la verifica del singolo articolo.','Recognisable names on the shelves: Raptus perfumes, stationery, sweets, accessories and personal care. This information helps you ask the right question, without replacing a check of each item.'];
 pages['marchi-e-competenze'].groups=[
- {title:['Profumi Raptus','Raptus perfumes'],items:[['Raptus: l’intera gamma di profumi per persona','Raptus: the full perfume range for personal use'],['Linee 20–100ml e 50ml: formati da verificare sulla singola fragranza','20–100ml and 50ml lines: check sizes for each fragrance']]},
+ {title:['Profumi Raptus','Raptus perfumes'],items:[['Raptus: l’intera gamma di profumi per persona','Raptus: the full perfume range for personal use'],['Linee 20–100 ml e 50 ml','20–100 ml and 50 ml lines']]},
  {title:['Cartoleria','Stationery'],items:[['BIC: penne a sfera','BIC: ballpoint pens'],['STABILO: evidenziatori','STABILO: highlighters'],['Pritt: colle','Pritt: glue'],['Notami: quaderni ed etichette','Notami: notebooks and labels']]},
  {title:['Dolciumi','Sweets'],items:[['Haribo e Fini: caramelle','Haribo and Fini: sweets'],['Chupa Chups: lecca-lecca','Chupa Chups: lollipops'],['Dietorelle: caramelle confezionate','Dietorelle: packaged sweets'],['Ferrero: Pocket Coffee e Rocher','Ferrero: Pocket Coffee and Rocher']]},
  {title:['Articoli pratici','Practical items'],items:[['Teknee: accessori di ricarica','Teknee: charging accessories'],['Loctite: colle','Loctite: glue'],['Confiderm: cerotti','Confiderm: plasters'],['Labello e Trim: piccoli articoli di cura personale','Labello and Trim: small personal-care items']]}
@@ -95,3 +96,6 @@ Object.assign(pages['pipe-e-tabacchi-da-pipa'],{
  links:['sigari-termini-informazioni','tabacco-confezioni-avvertenze','tabacco-minori-documenti'],related:['sigari','contatti'],sources:tobaccoSources,
  faqs:[['Tabacco da pipa e tabacco da arrotolare sono la stessa categoria?','Il D.Lgs. 6/2016 distingue le denominazioni. Consulta la scheda sui termini e la confezione del singolo articolo.','Are pipe tobacco and rolling tobacco the same category?','Legislative Decree 6/2016 distinguishes the names. Read the terminology guide and the individual pack.'],['Il catalogo contiene prodotti del tabacco?','No. Il catalogo presenta famiglie di articoli non regolamentati e le eventuali schede pubblicate dal negozio. L’area tabacco resta informativa.','Does the catalogue contain tobacco products?','No. The catalogue presents non-regulated item families and any listings published by the shop. The tobacco area remains informational.']]
 });
+
+for(const [slug,copy] of Object.entries(pageRevision))if(pages[slug])Object.assign(pages[slug],copy);
+for(const [slug,copy] of Object.entries(guideRevision))if(guides[slug])Object.assign(guides[slug],copy);

@@ -1,0 +1,12 @@
+---
+import {neighborhoodAreas,neighborhoodCopy,walkingDirections} from '../data/neighborhood';
+import {pathFor,text,type Lang} from '../data/shop';
+const {topic='',lang='it'}=Astro.props as {topic?:string;lang:Lang};
+---
+<aside class="neighborhood-links" aria-labelledby="neighborhood-heading">
+ <div><p class="eyebrow">{text(lang,'Qui in quartiere','In the neighbourhood')}</p><h2 id="neighborhood-heading">{text(lang,'Se sei da queste parti.','If you are nearby.')}</h2><p>{neighborhoodCopy(topic,lang)}</p><a class="text-link" href={pathFor('il-quartiere',lang)}>{text(lang,'Scopri il quartiere e come arrivare','Explore the neighbourhood and find us')}</a></div>
+ <nav aria-label={text(lang,'Percorsi a piedi per Via Guerrazzi 10/F','Walking routes to Via Guerrazzi 10/F')}>{neighborhoodAreas.map(area=><a href={walkingDirections(area)} target="_blank" rel="noopener"><span>{area.name}</span><small>{text(lang,'Percorso a piedi','Walking route')}</small></a>)}</nav>
+</aside>
+<style>
+ .neighborhood-links{display:grid;grid-template-columns:1fr 1.1fr;gap:45px;padding:38px 0;margin:30px 0 48px;border-block:1px solid var(--line)}.neighborhood-links h2{font:400 clamp(2rem,3vw,2.7rem)/1.15 var(--display);margin:14px 0 18px;color:var(--accent,var(--blue))}.neighborhood-links p{max-width:52ch;font-size:1rem;line-height:1.85}.neighborhood-links .text-link{margin-top:18px}.neighborhood-links nav{display:grid;grid-template-columns:1fr 1fr;gap:0 24px;align-content:start}.neighborhood-links nav a{display:flex;flex-direction:column;justify-content:center;gap:5px;padding:15px 0;border-bottom:1px solid var(--line);min-height:74px;color:var(--accent,var(--blue))}.neighborhood-links nav a span{font-weight:600;font-size:.95rem}.neighborhood-links small{font-size:.8rem;color:var(--ink);opacity:.7}.neighborhood-links nav a:hover span{text-decoration:underline;text-underline-offset:4px}@media(max-width:760px){.neighborhood-links{grid-template-columns:1fr;gap:25px;padding-block:30px}.neighborhood-links nav{gap:0 18px}}@media(max-width:360px){.neighborhood-links nav{grid-template-columns:1fr}}
+</style>

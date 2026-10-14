@@ -17,7 +17,7 @@ export const mainPages = [
  {slug:'marchi-e-competenze',it:'Marchi e competenze',en:'Brands and expertise'},
  {slug:'storia-e-serrande',it:'Storia e serrande',en:'Our story and shutters'},
  {slug:'recensioni',it:'Recensioni',en:'Reviews'}, {slug:'catalogo',it:'Catalogo',en:'Catalogue'},
- {slug:'contatti',it:'Contatti',en:'Contact'}, ...assortmentLinks,
+ {slug:'contatti',it:'Contatti',en:'Contact'}, {slug:'il-quartiere',it:'Il quartiere',en:'The neighbourhood'}, ...assortmentLinks,
 ];
 export const categories = [
  {id:'regali',it:'Idee regalo',en:'Gift ideas'}, {id:'giochi',it:'Giochi e giocattoli',en:'Games and toys'},

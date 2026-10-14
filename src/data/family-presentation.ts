@@ -16,54 +16,54 @@ export const familyPresentations: Record<string, FamilyPresentation> = {
     theme: 'utility', material: 'paper', treatment: 'paper', page: 'cartoleria', art: 'stationery-ink',
     focus: ['Per scrivere, raccogliere, organizzare.', 'For writing, collecting and organising.'],
     checkNotes: [
-      ['Confronta il dettaglio indicato sul singolo articolo: una famiglia può riunire formati diversi.', 'Compare the detail on the individual item: one family may include different sizes.'],
-      ['Parti dall’uso che ne farai e leggi le indicazioni della confezione.', 'Start with its intended use and read the information on the pack.'],
-      ['Controlla cosa comprende la confezione, senza dedurlo dalla foto illustrativa.', 'Check what the pack contains rather than inferring it from the illustrative photograph.'],
+      ['Tieni a mente il formato e la rigatura che usi ogni giorno.', 'Keep your everyday size and ruling in mind.'],
+      ['Per scuola, studio o lavoro: raccontaci come lo userai.', 'For school, studying or work: tell us how you will use it.'],
+      ['Una foto dell’articolo che usi può aiutarci a ritrovarlo.', 'A photo of the item you use can help us find it.'],
     ],
   },
   souvenir: {
     theme: 'bottega', material: 'terracotta', treatment: 'city', page: 'souvenir-bologna', art: 'souvenir-ink',
     focus: ['Un piccolo ricordo di Bologna.', 'A small reminder of Bologna.'],
     checkNotes: [
-      ['Guarda il soggetto sul singolo articolo; la pagina non elenca tutte le varianti.', 'Look at the design on the individual item; this page does not list every variant.'],
-      ['Confronta le dimensioni reali prima di scegliere.', 'Compare the actual dimensions before choosing.'],
-      ['Verifica materiale e finitura direttamente sull’oggetto.', 'Check the material and finish on the object itself.'],
+      ['Scegli il soggetto che ti ricorda la tua passeggiata a Bologna.', 'Choose the design that brings back your walk in Bologna.'],
+      ['Guarda forma e dimensioni da vicino.', 'Look at the shape and size closely.'],
+      ['Per te o da regalare: pensa a dove lo porterai.', 'For yourself or as a gift: think about where it will go.'],
     ],
   },
   feste: {
     theme: 'gioco', material: 'paper', treatment: 'celebration', page: 'feste-e-compleanni', art: 'party-ink',
     focus: ['Il dettaglio che accompagna l’occasione.', 'A finishing touch for the occasion.'],
     checkNotes: [
-      ['Tieni presente l’occasione e confronta le varianti sul singolo articolo.', 'Keep the occasion in mind and compare the variants on each item.'],
-      ['Misure e caratteristiche si leggono sulla confezione o si verificano dal vivo.', 'Read sizes and features on the pack or check them in person.'],
-      ['Leggi contenuto della confezione, istruzioni e avvertenze pertinenti.', 'Read the pack contents and any relevant instructions and warnings.'],
+      ['Pensa all’occasione e ai colori della festa.', 'Think about the occasion and party colours.'],
+      ['Se scegli una busta, porta le misure del regalo.', 'Bring the gift’s measurements when choosing a bag.'],
+      ['Apri il biglietto e guarda lo spazio per il tuo messaggio.', 'Open the card and look at the space for your message.'],
     ],
   },
   telefono: {
     theme: 'utility', material: 'blue', treatment: 'utility', page: 'accessori-telefono', art: 'phone-ink',
-    focus: ['Il riferimento giusto parte dal dispositivo.', 'The right reference starts with your device.'],
+    focus: ['Partiamo dal tuo telefono.', 'Start with your phone.'],
     checkNotes: [
-      ['Porta il modello del dispositivo e confronta il collegamento richiesto.', 'Bring your device model and compare the connection it requires.'],
-      ['Leggi le specifiche del singolo articolo: l’aspetto non conferma la compatibilità.', 'Read the individual specifications: appearance does not establish compatibility.'],
-      ['Controlla le istruzioni e cosa è incluso nella confezione.', 'Check the instructions and what is included in the pack.'],
+      ['Porta il telefono o una foto delle porte.', 'Bring the phone or a photo of its ports.'],
+      ['Guardiamo insieme entrambe le estremità del cavo.', 'Look at both ends of the cable together.'],
+      ['Per un power bank, guarda capacità, porte e cavo incluso.', 'For a power bank, look at capacity, ports and the included cable.'],
     ],
   },
   necessita: {
     theme: 'utility', material: 'blue', treatment: 'utility', page: 'piccole-necessita', art: 'essentials-ink',
-    focus: ['Una necessità concreta, dettagli da verificare.', 'A practical need, details to check.'],
+    focus: ['Quella piccola cosa che ti manca.', 'That little thing you are missing.'],
     checkNotes: [
-      ['Descrivi l’uso previsto e confrontalo con le indicazioni del singolo articolo.', 'Describe the intended use and compare it with the individual item’s instructions.'],
-      ['Controlla formato e caratteristiche sulla confezione.', 'Check the size and features on the pack.'],
-      ['Leggi istruzioni e avvertenze; il nome della famiglia non le sostituisce.', 'Read instructions and warnings; the family name does not replace them.'],
+      ['Raccontaci per cosa ti serve.', 'Tell us what you need it for.'],
+      ['Una misura o una foto possono chiarire la scelta.', 'A measurement or photo can make the choice clearer.'],
+      ['Per colle e nastri, indica il materiale su cui lavorerai.', 'For glue and tape, tell us the material you will work on.'],
     ],
   },
   dolciumi: {
     theme: 'regalo', material: 'paper', treatment: 'sweets', page: 'dolciumi', art: 'sweets-ink',
     focus: ['Il gusto si sceglie, l’etichetta si legge.', 'Choose the flavour, read the label.'],
     checkNotes: [
-      ['Confronta la variante sulla confezione precisa, senza estenderla a tutta la marca.', 'Compare the variant on the specific pack rather than applying it to the entire brand.'],
-      ['Per ingredienti e allergeni fai riferimento all’etichetta del singolo prodotto.', 'Refer to the individual label for ingredients and allergens.'],
-      ['Controlla formato e quantità indicati sul pacchetto.', 'Check the size and quantity stated on the pack.'],
+      ['Scegli il gusto che preferisci, o prova a guardare gli altri.', 'Choose your favourite flavour or browse the others.'],
+      ['Ingredienti e allergeni sono sull’etichetta.', 'Ingredients and allergens are on the label.'],
+      ['Una confezione per te o qualcosa da condividere?', 'A pack for you or something to share?'],
     ],
   },
   regali: {
@@ -71,8 +71,8 @@ export const familyPresentations: Record<string, FamilyPresentation> = {
     focus: ['Prima la persona, poi il dettaglio.', 'The person first, then the detail.'],
     checkNotes: [
       ['Parti dalla persona e dall’occasione per restringere la ricerca.', 'Start with the person and the occasion to narrow down your search.'],
-      ['Confronta misure e caratteristiche sull’oggetto preciso.', 'Compare sizes and features on the specific object.'],
-      ['Verifica confezione e dettagli della proposta che stai considerando.', 'Check the packaging and details of the item you are considering.'],
+      ['Guarda l’oggetto da vicino e immagina chi lo riceverà.', 'Look closely at the object and imagine its recipient.'],
+      ['Un biglietto può aggiungere le tue parole.', 'A card adds your own words.'],
     ],
   },
   giochi: {
@@ -81,16 +81,16 @@ export const familyPresentations: Record<string, FamilyPresentation> = {
     checkNotes: [
       ['Leggi l’età indicata dal produttore e le avvertenze sul singolo gioco.', 'Read the manufacturer’s age guidance and warnings on the individual toy or game.'],
       ['Pensa a dove e con chi verrà usato; confronta le istruzioni.', 'Think about where and with whom it will be used; compare the instructions.'],
-      ['Verifica cosa contiene la confezione prima della scelta.', 'Check what the box contains before choosing.'],
+      ['Guarda i componenti e lo spazio necessario per giocare.', 'Look at the pieces and space needed to play.'],
     ],
   },
   profumi: {
     theme: 'profumo', material: 'paper', treatment: 'fragrance', page: 'profumi-raptus', art: 'gift-ink',
     focus: ['Nome, formato e preferenza personale.', 'Name, size and personal preference.'],
     checkNotes: [
-      ['Usa la denominazione completa: il nome distingue il riferimento che cerchi.', 'Use the full name to identify the fragrance you are looking for.'],
-      ['I formati variano fra le fragranze; controlla il riferimento preciso.', 'Sizes vary between fragrances; check the specific reference.'],
-      ['Leggi le informazioni sulla confezione e le istruzioni del produttore.', 'Read the pack information and the manufacturer’s instructions.'],
+      ['Porta il nome della fragranza o una foto del flacone.', 'Bring the fragrance name or a photo of the bottle.'],
+      ['Per un regalo, raccontaci i gusti di chi lo riceverà.', 'For a gift, tell us the recipient’s preferences.'],
+      ['Guardiamo insieme fragranze e formati.', 'Look at fragrances and sizes together.'],
     ],
   },
 };

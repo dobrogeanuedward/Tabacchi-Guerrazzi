@@ -1,4 +1,5 @@
 ---
+import NeighborhoodLinks from './NeighborhoodLinks.astro';
 import Base from '../layouts/Base.astro';
 import BrandSignature from './BrandSignature.astro';
 import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';
@@ -27,11 +28,11 @@ const familyImageSet=photograph.srcset;
 const familyOgImage=photograph.src;
 const faqs=[
   [d.question[l],d.answer[l]],
-  [text(lang,'La pagina conferma modelli e disponibilità?','Does this page confirm models and availability?'),text(lang,'Le varianti e le confezioni possono cambiare. Per un articolo specifico, verifica la disponibilità prima di passare.','Variants and packs can change. Check availability before visiting for a specific item.')],
+  [text(lang,'Cerchi un colore o un modello preciso?','Looking for a particular colour or model?'),text(lang,'Raccontalo ad Angela. Una foto o il nome dell’articolo ci aiutano a capire cosa stai cercando.','Tell Angela. A photo or the item’s name helps us understand what you need.')],
 ];
 const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))};
 ---
-<Base lang={lang} slug={`assortimento/${id}`} title={`${item.name[l]} ${text(lang,'a Bologna','in Bologna')}`} description={text(lang,`${item.name[0]} da Guerrazzi, Via Guerrazzi 10/F, Bologna: dettagli pratici, domande e categoria di riferimento. Disponibilità da verificare in negozio.`,`${item.name[1]} at Guerrazzi, Via Guerrazzi 10/F, Bologna: practical details, questions and category links. Check availability in store.`)} schema={schema} theme={theme} image={familyOgImage}>
+<Base lang={lang} slug={`assortimento/${id}`} title={`${item.name[l]} ${text(lang,'a Bologna','in Bologna')}`} description={text(lang,`${item.name[0]} da Guerrazzi, Via Guerrazzi 10/F, Bologna: idee per scegliere e risposte alle tue domande.`,`${item.name[1]} at Guerrazzi, Via Guerrazzi 10/F, Bologna: ideas for choosing and answers to your questions.`)} schema={schema} theme={theme} image={familyOgImage}>
   <div class="family-document" data-treatment={presentation.treatment} style={`--family-material: url('/images/materials/${presentation.material}-768.webp')`}>
     <nav class="breadcrumb wrap" aria-label={text(lang,'Percorso di navigazione','Breadcrumb')}><a href={pathFor('catalogo',lang)}>{text(lang,'Catalogo','Catalogue')}</a><span aria-hidden="true">/</span><a href={pathFor(item.page,lang)}>{label}</a><span aria-hidden="true">/</span><span>{text(lang,'Famiglia','Family')}</span></nav>
 
@@ -42,14 +43,14 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
         <p class="family-description">{item.description[l]}</p>
         <a class="family-category-link" href={pathFor(item.page,lang)}>{text(lang,'Esplora la categoria','Explore the category')}</a>
         <nav class="family-index" aria-label={text(lang,'In questa scheda','On this record')}>
-          <a href="#dettagli">{text(lang,'Dettagli da confrontare','Details to compare')}</a>
+          <a href="#dettagli">{text(lang,'Come scegliere','How to choose')}</a>
           <a href="#domande">{text(lang,'Domande e risposte','Questions and answers')}</a>
           {(siblings.length>0||relatedCategories.length>0)&&<a href="#percorsi">{text(lang,'Continua a esplorare','Keep exploring')}</a>}
         </nav>
       </div>
       <figure class="family-visual family-visual-photo">
         <div class="family-art-surface"><img src={familyImage} srcset={familyImageSet} sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1100px) 42vw, 570px" width={photograph.width} height={photograph.height} alt={`${item.name[l]} ${text(lang,'su un piano chiaro, in luce naturale','on a light surface in natural daylight')}`} fetchpriority="high"/></div>
-        <figcaption>{fragranceStudy?text(lang,'Composizione fotografica generata per la profumeria; i flaconi non riproducono le confezioni Raptus.','Generated editorial perfumery photograph; the bottles do not reproduce Raptus packaging.'):text(lang,'Composizione fotografica generata della famiglia. Modelli e confezioni si confrontano in negozio.','Generated editorial photograph of the item family. Compare models and packaging in store.')}</figcaption>
+        <figcaption>{item.name[l]}</figcaption>
       </figure>
     </section>
 
@@ -57,15 +58,15 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
       <h2 id="family-register-title" class="sr-only">{text(lang,'La scheda in breve','Record at a glance')}</h2>
       <dl>
         <div><dt>{text(lang,'Categoria di riferimento','Category reference')}</dt><dd><a href={pathFor(item.page,lang)}>{label}</a></dd></div>
-        {item.brand&&<div><dt>{fragranceStudy?text(lang,'Marchio','Brand'):text(lang,'Marchi citati','Brands mentioned')}</dt><dd>{item.brand}</dd></div>}
-        <div class="family-register-note"><dt>{text(lang,'Sul singolo articolo','For an individual item')}</dt><dd>{text(lang,'Modello, confezione e disponibilità da verificare.','Check the model, pack and availability.')}</dd></div>
+        {item.brand&&<div><dt>{fragranceStudy?text(lang,'Marchio','Brand'):text(lang,'Brand disponibili','Available brands')}</dt><dd>{item.brand}</dd></div>}
+        <div class="family-register-note"><dt>{text(lang,'Sul singolo articolo','For an individual item')}</dt><dd>{text(lang,'Guarda gli articoli da vicino, da Angela.','Take a closer look at the items at Angela’s.')}</dd></div>
       </dl>
     </section>
 
     <section id="dettagli" class="family-checks wrap" aria-labelledby="family-checks-title">
       <div class="family-section-opening">
         <p class="family-section-label">{text(lang,'Prima di scegliere','Before choosing')}</p>
-        <h2 id="family-checks-title">{text(lang,'I dettagli che distinguono un articolo.','Details that distinguish each item.')}</h2>
+        <h2 id="family-checks-title">{text(lang,'Tre cose da guardare.','Three things to look at.')}</h2>
         <p>{presentation.focus[l]}</p>
         <p class="family-check-context">{presentation.checkNotes[0][l]}</p>
       </div>
@@ -73,7 +74,7 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
     </section>
 
     <section id="domande" class="family-information wrap" aria-labelledby="family-faq-title">
-      <div class="family-section-opening"><p class="family-section-label">{text(lang,'La domanda utile','A useful question')}</p><h2 id="family-faq-title">{text(lang,'Chiarire, prima di passare.','Clarify before visiting.')}</h2><p>{text(lang,'Questa è una scheda di famiglia: i dettagli della proposta precisa si leggono sul singolo articolo.','This is a family record: read the specific details on the individual item.')}</p></div>
+      <div class="family-section-opening"><p class="family-section-label">{text(lang,'La domanda utile','A useful question')}</p><h2 id="family-faq-title">{text(lang,'Una domanda utile.','A useful question.')}</h2><p>{text(lang,'Se hai qualcosa in mente, raccontacelo.','If you have something in mind, tell us.')}</p></div>
       <div class="family-faq">
         {faqs.map(([q,a],i)=><details open={i===0}><summary>{q}<span aria-hidden="true"></span></summary><p>{a}</p></details>)}
         {!!d.sources?.length&&<div class="family-sources"><p>{text(lang,'Riferimenti delle linee','References for the lines')}</p>{d.sources!.map(source=><a href={source.url} target="_blank" rel="noopener">{source.label[l]}</a>)}</div>}
@@ -86,9 +87,10 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
       {relatedCategories.length>0&&<div class="family-category-grid">{relatedCategories.map(category=><a href={pathFor(category.slug,lang)}><span class="family-card-type">{text(lang,'Categoria','Category')}</span><h3>{category.label}</h3><p>{category.intro}</p><span class="family-card-action">{text(lang,'Esplora la categoria','Explore the category')}</span></a>)}</div>}
     </section>}
 
+    <div class="wrap"><NeighborhoodLinks topic={item.page} lang={lang}/></div>
     <section class="family-visit wrap" aria-label={text(lang,'Informazioni per la visita','Visit information')}>
       <div><BrandSignature lang={lang}/><p>{shop.address}, {shop.postcode} {shop.city}</p></div>
-      <div class="family-visit-copy"><p>{text(lang,'Un riferimento preciso rende la richiesta più semplice.','A precise reference makes your question clearer.')}</p><p>{text(lang,'Per una variante specifica, verifica la disponibilità prima della visita.','Check availability before visiting for a specific variant.')}</p></div>
+      <div class="family-visit-copy"><p>{text(lang,'Sai già cosa cerchi? Portaci il nome o una foto.','Know what you need? Bring the name or a photo.')}</p><p>{text(lang,'Oppure entra e lasciati incuriosire.','Or come in and let curiosity lead.')}</p></div>
       <div class="family-visit-actions"><a class="button quiet" href={pathFor('contatti',lang)}>{text(lang,'Contatta il negozio','Contact the shop')}</a><a class="family-all-link" href={shop.maps} target="_blank" rel="noopener">{text(lang,'Apri le indicazioni','Open directions')}</a></div>
     </section>
   </div>

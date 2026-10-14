@@ -376,4 +376,15 @@ const sourceRecords:CigarRecord[]=[
   }
 ];
 
-export const cigarRecords:CigarRecord[]=sourceRecords.map(record=>({...record,detail:record.group==='Toscano'?[`«${record.name.replace(/^Toscano /,'')}» è una denominazione Toscano. Formato e numero di pezzi dipendono dalla confezione; questa scheda non indica la disponibilità attuale.`,`“${record.name.replace(/^Toscano /,'')}” is a Toscano name. Size and pack quantity depend on the individual pack; this page does not indicate current availability.`]:[`${record.name}: informazioni sulla denominazione. Per identificare la variante esatta occorre il nome completo sulla confezione; dal solo nome non si ricavano formato o composizione.`,`${record.name}: information about the name. The full pack name is needed to identify an exact variant; size and composition cannot be established from the name alone.`]}));
+const terms:Record<string,[string,string]>={
+ 'denominazione-long-filler':['Long filler, o tripa larga: il termine indica un riempimento composto da foglie a tutta lunghezza. È una parola che descrive la struttura interna.','Long filler, or tripa larga, means a filling made from full-length leaves. The term describes the internal structure.'],
+ 'denominazione-long-riserva':['Long e Riserva compaiono insieme in questa denominazione. Il nome della linea e i termini tecnici appartengono a due livelli diversi del linguaggio.','Long and Riserva appear together in this name. Line names and technical terms belong to different levels of the vocabulary.'],
+ 'plasencia-alma':['Plasencia è il marchio; Alma è una parola che ricorre nelle denominazioni delle sue linee. In spagnolo significa “anima”.','Plasencia is the brand; Alma is a word used in its line names. In Spanish it means “soul”.']
+};
+export const cigarRecords:CigarRecord[]=sourceRecords.map(record=>({
+ ...record,
+ detail:terms[record.slug]||(
+ record.group==='Toscano'?[`Toscano è il marchio; «${record.name.replace(/^Toscano /,'')}» è il nome della linea. Questa voce fa parte dell’indice dedicato ai nomi del sigaro.`,`Toscano is the brand; “${record.name.replace(/^Toscano /,'')}” is the line name. This entry belongs to the index of cigar names.`]:
+ record.group==='Toscanello'?[`«${record.name.replace(/^Toscanello /,'')}» è una denominazione Toscanello. Un nome da leggere insieme alla famiglia a cui appartiene.`,`“${record.name.replace(/^Toscanello /,'')}” is a Toscanello name. Read it alongside the family it belongs to.`]:
+ [`${record.name}, nell’indice dei nomi del sigaro. Un punto di partenza per esplorare il lessico delle forme e delle denominazioni.`,`${record.name}, in the index of cigar names. A starting point for exploring the language of forms and denominations.`])
+}));

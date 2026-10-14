@@ -2,13 +2,13 @@
 import {cigarRecords} from '../data/cigar-records';import {pathFor,text,type Lang} from '../data/shop';
 const {lang='it'}=Astro.props as {lang:Lang};
 const groups=[...new Set(cigarRecords.map(r=>r.group))].map(name=>({name,records:cigarRecords.filter(r=>r.group===name)}));
-const groupLabel=(name:string)=>name==='Denominazioni da completare'?text(lang,name,'Names awaiting completion'):name==='Altre denominazioni'?text(lang,name,'Other names'):name;
+const groupLabel=(name:string)=>name==='Denominazioni da completare'?text(lang,'Altri nomi e termini','Other names and terms'):name==='Altre denominazioni'?text(lang,name,'Other names'):name;
 ---
 <section class="cigar-records" aria-labelledby="cigar-records-title">
  <div class="records-heading">
   <p class="category-name eyebrow">{text(lang,'Archivio delle denominazioni · 18+','Name archive · 18+')}</p>
   <h2 id="cigar-records-title">{text(lang,'Le schede delle denominazioni.','The name records.')}</h2>
-  <p>{text(lang,'Consulta le denominazioni e le informazioni su confezioni e avvertenze. Le schede sono riservate agli adulti e non indicano disponibilità o prezzi.','Browse names and information about packs and warnings. These pages are for adults and do not list stock or prices.')}</p>
+  <p>{text(lang,'Un indice di nomi e linee, da affiancare alle guide sulle forme e sul lessico del sigaro.','An index of names and lines, alongside guides to cigar forms and vocabulary.')}</p>
  </div>
  <div class="records-groups">{groups.map((group,i)=><details open={i===0}>
   <summary><span class="record-group-name">{groupLabel(group.name)}</span><span class="record-group-count">{group.records.length} {text(lang,group.records.length===1?'voce':'voci',group.records.length===1?'record':'records')}</span><span class="record-toggle" aria-hidden="true"></span></summary>

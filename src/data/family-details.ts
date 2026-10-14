@@ -1,15 +1,34 @@
 export const familyDetails:Record<string,{checks:[string[],string[]];question:[string,string];answer:[string,string];sources?:{label:[string,string];url:string}[]}>= {
   "profumi-raptus": {
     "checks": [
-      ["Nome completo della fragranza", "Formato indicato", "Confezione e istruzioni"],
-      ["Full fragrance name", "Labelled size", "Packaging and instructions"]
+      [
+        "Nome completo della fragranza",
+        "Formato indicato",
+        "Confezione e istruzioni"
+      ],
+      [
+        "Full fragrance name",
+        "Labelled size",
+        "Packaging and instructions"
+      ]
     ],
-    "question": ["Quali linee Raptus trovo da Guerrazzi?", "Which Raptus lines can I find at Guerrazzi?"],
+    "question": [
+      "Quali linee Raptus trovo da Angela?",
+      "Which Raptus lines can I find at Angela’s?"
+    ],
     "answer": [
-      "Il negozio conferma l’intera gamma di profumi Raptus per persona. Il catalogo del marchio presenta 23 denominazioni nella linea 20–100 ml e cinque fragranze da 50 ml. I formati dipendono dalla singola fragranza: indica il nome completo e verifica la confezione che cerchi.",
-      "The shop confirms the full Raptus personal fragrance range. The brand’s catalogue lists 23 names in the 20–100 ml line and five fragrances in the 50 ml line. Sizes depend on the individual fragrance: give its full name and check the pack you need."
+      "Da Angela trovi la gamma Raptus per persona nelle linee 20–100 ml e 50 ml. Porta il nome della fragranza o una foto del flacone: guardiamo insieme il formato che cerchi.",
+      "At Angela’s you will find the Raptus personal fragrance range in the 20–100 ml and 50 ml lines. Bring the fragrance name or a photo of the bottle: we will look at the size you need together."
     ],
-    "sources": [{"label": ["Raptus Parfum · catalogo ufficiale del marchio", "Raptus Parfum · official brand catalogue"], "url": "https://raptusparfum.it/"}]
+    "sources": [
+      {
+        "label": [
+          "Raptus Parfum · catalogo ufficiale del marchio",
+          "Raptus Parfum · official brand catalogue"
+        ],
+        "url": "https://raptusparfum.it/"
+      }
+    ]
   },
   "quaderni": {
     "checks": [
@@ -25,12 +44,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Come descrivo il quaderno che cerco?",
-      "How do I describe the notebook I need?"
+      "Come trovo il quaderno con la rigatura giusta?",
+      "How do I find a notebook with the right ruling?"
     ],
     "answer": [
-      "Indica il formato, la rigatura e il tipo di rilegatura. Una foto di quello usato a scuola o al lavoro evita di confondere un blocco con un quaderno.",
-      "Give the size, ruling and binding. A photo of the notebook used at school or work helps distinguish it from a pad."
+      "Porta una foto del quaderno o di una pagina. Formato, rigatura e rilegatura ci aiutano a ritrovare quello che usi.",
+      "Bring a photo of the notebook or a page. Size, ruling and binding help us find the one you use."
     ]
   },
   "penne": {
@@ -47,12 +66,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Il colore del corpo indica sempre quello dell’inchiostro?",
-      "Does the body colour always show the ink colour?"
+      "Dove leggo il colore dell’inchiostro?",
+      "Where can I find the ink colour?"
     ],
     "answer": [
-      "Controlla la dicitura sulla penna o sulla confezione. Il colore della plastica, da solo, non è una prova del colore dell’inchiostro.",
-      "Check the wording on the pen or pack. The plastic colour alone is not evidence of ink colour."
+      "Sulla penna o sulla confezione. Guardiamo anche il tratto e il tipo di punta, soprattutto se cerchi quella che usi già.",
+      "On the pen or its pack. Look at the line and tip too, especially if you want the one you already use."
     ]
   },
   "evidenziatori": {
@@ -69,12 +88,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Posso chiedere un colore preciso?",
-      "Can I ask about a specific colour?"
+      "Posso cercare un colore preciso?",
+      "Can I look for a specific colour?"
     ],
     "answer": [
-      "Sì: indicare il colore rende la richiesta più chiara. La presenza di STABILO nel registro fotografico non conferma tutte le tonalità della sua gamma.",
-      "Yes: naming the colour makes the question clearer. STABILO in the photo survey does not establish every colour in its range."
+      "Certo: dicci quale colore ti serve. Se usi già un evidenziatore, una foto ci aiuta a ritrovare la tonalità.",
+      "Of course: tell us the colour you need. A photo of an existing highlighter helps us find the shade."
     ]
   },
   "colle": {
@@ -91,12 +110,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "La colla per carta è adatta anche ad altri materiali?",
-      "Is paper glue suitable for other materials?"
+      "Come scelgo la colla?",
+      "How do I choose glue?"
     ],
     "answer": [
-      "Non attribuire alla colla per carta impieghi non indicati. Leggi materiali compatibili e istruzioni della confezione; per un piccolo intervento consulta anche la categoria dedicata.",
-      "Do not assume uses that are not listed. Read compatible materials and pack instructions; see the separate small-repair category too."
+      "Partiamo dal materiale: carta, cartoncino o un altro supporto. Le superfici compatibili e le istruzioni sono sulla confezione.",
+      "Start with the material: paper, card or another surface. Compatible surfaces and directions are on the pack."
     ]
   },
   "cartelline": {
@@ -113,12 +132,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Basta sapere che i fogli sono A4?",
-      "Is knowing that the sheets are A4 enough?"
+      "Quanti fogli deve contenere la cartellina?",
+      "How many sheets should the folder hold?"
     ],
     "answer": [
-      "È utile anche indicare quanti fogli devi raccogliere e se porterai la cartellina in borsa: capienza e chiusura fanno parte della richiesta.",
-      "Also mention how many sheets you need to hold and whether the folder goes in a bag: capacity and fastening matter."
+      "Dillo quando scegli: poche pagine o una raccolta più grande richiedono capienze diverse. Guarda anche la chiusura, se la porterai in borsa.",
+      "Tell us when choosing: a few pages or a larger collection need different capacities. Look at the fastening too if it will go in a bag."
     ]
   },
   "etichette": {
@@ -135,12 +154,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Tutte le etichette si possono stampare?",
-      "Can every label be printed?"
+      "Cerco etichette per la stampante: cosa porto?",
+      "What should I bring when looking for printer labels?"
     ],
     "answer": [
-      "No: verifica l’impiego indicato sulla confezione e l’eventuale compatibilità con la stampante. Non dedurla dalla sola forma del foglio.",
-      "No: check the intended use on the pack and any printer compatibility. Do not infer it from the sheet shape."
+      "Il tipo di stampante e le misure che ti servono. Sulla confezione trovi l’impiego previsto e la compatibilità.",
+      "The printer type and dimensions you need. The pack shows its intended use and compatibility."
     ]
   },
   "calamite": {
@@ -157,12 +176,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Quali soggetti sono documentati?",
-      "Which designs are documented?"
+      "Quali soggetti posso scegliere?",
+      "Which designs can I choose?"
     ],
     "answer": [
-      "Le foto mostrano torri, monumenti e scritte di Bologna. Non costituiscono un elenco aggiornato di ogni soggetto: confronta il disegno esposto quando passi.",
-      "The photos show Bologna towers, landmarks and lettering. They are not an updated list of every design: check the display when you visit."
+      "Torri, monumenti e scritte di Bologna. Guarda i soggetti in vetrina e scegli quello che ti riporta alla tua passeggiata.",
+      "Bologna’s towers, landmarks and lettering. Browse the designs and choose one that recalls your walk."
     ]
   },
   "auguri": {
@@ -179,12 +198,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Il biglietto include sempre una busta?",
-      "Does the card always include an envelope?"
+      "Il biglietto ha spazio per il mio messaggio?",
+      "Does the card have room for my message?"
     ],
     "answer": [
-      "Verificalo sul singolo biglietto. Controlla anche se è già stampato un testo all’interno e se lo spazio basta per il tuo messaggio.",
-      "Check the individual card. Also check for a printed inner message and enough room for your own wording."
+      "Aprilo e guarda l’interno: alcuni hanno già un testo. Poi scegli lo spazio per le tue parole e controlla la busta.",
+      "Open it and look inside: some already have a printed message. Choose room for your words and check the envelope."
     ]
   },
   "candeline": {
@@ -201,12 +220,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Per un’età a due cifre cosa devo indicare?",
-      "What should I specify for a two-digit age?"
+      "Per un’età a due cifre cosa chiedo?",
+      "What do I ask for when the age has two digits?"
     ],
     "answer": [
-      "Indica entrambe le cifre. La presenza di candeline numeriche non conferma ogni numero o una confezione già composta; segui le istruzioni del prodotto.",
-      "Give both digits. Number candles in the survey do not establish every digit or a ready-made pair; follow product instructions."
+      "Indica entrambe le cifre, così cerchiamo la coppia giusta. Guarda le dimensioni e segui le istruzioni della confezione.",
+      "Give both digits so we can look for the right pair. Check the size and follow the pack directions."
     ]
   },
   "palloncini": {
@@ -223,12 +242,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "È disponibile il gonfiaggio?",
-      "Is inflation available?"
+      "Come scelgo i palloncini per il compleanno?",
+      "How do I choose birthday balloons?"
     ],
     "answer": [
-      "Il servizio di gonfiaggio non è confermato. La foto documenta articoli confezionati: non dimostra disponibilità di elio, allestimenti o servizi per feste.",
-      "An inflation service is unconfirmed. The photo records packaged items, not helium availability, decorations or party services."
+      "Parti dai colori e da quanti te ne servono. Qui trovi palloncini confezionati: quantità e istruzioni sono sul pacchetto.",
+      "Start with the colours and how many you need. You will find packaged balloons here: quantities and directions are on the pack."
     ]
   },
   "buste": {
@@ -245,12 +264,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Come verifico la misura della busta?",
-      "How do I check the gift bag size?"
+      "Come scelgo la misura della busta?",
+      "How do I choose the gift bag size?"
     ],
     "answer": [
-      "Misura larghezza, altezza e profondità del regalo. Il solo formato nominale della busta può non bastare per un oggetto spesso o una scatola.",
-      "Measure the gift’s width, height and depth. A nominal bag size alone may not fit a bulky item or box."
+      "Misura larghezza, altezza e profondità del regalo. Lascia un po’ di spazio per inserirlo e chiudere la busta senza schiacciarlo.",
+      "Measure the gift’s width, height and depth. Leave a little room to insert it and close the bag without squeezing it."
     ]
   },
   "cavi": {
@@ -267,12 +286,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Basta dire il modello del telefono?",
+      "Basta il modello del telefono?",
       "Is the phone model enough?"
     ],
     "answer": [
-      "Una foto di entrambe le porte aiuta. Ricarica e trasferimento dati non sono intercambiabili: la funzione va verificata sul cavo specifico.",
-      "A photo of both ports helps. Charging and data transfer are not interchangeable; check the function of the specific cable."
+      "Una foto delle porte del telefono e dell’alimentatore aiuta ancora di più. Dicci se vuoi ricaricare, trasferire dati o entrambe le cose.",
+      "A photo of the phone and charger ports helps even more. Tell us whether you want charging, data transfer or both."
     ]
   },
   "power-bank": {
@@ -289,12 +308,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "La capacità dice quante ricariche avrò?",
-      "Does capacity tell me how many charges I get?"
+      "Come scelgo il power bank per il mio telefono?",
+      "How do I choose a power bank for my phone?"
     ],
     "answer": [
-      "La capacità dichiarata, da sola, non garantisce un numero preciso di ricariche. Verifica le specifiche del modello e le esigenze del dispositivo, senza dedurle dal marchio Teknee.",
-      "Stated capacity alone does not guarantee a number of charges. Check the model specifications and device requirements, rather than inferring them from Teknee branding."
+      "Partiamo dal dispositivo e da come lo userai. Guardiamo capacità, porte, dimensioni e cavo incluso sul modello che scegli.",
+      "Start with your device and how you will use it. Look at capacity, ports, size and the included cable on your chosen model."
     ]
   },
   "nastri": {
@@ -311,12 +330,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Un nastro può andare su qualsiasi superficie?",
-      "Can tape be used on any surface?"
+      "Quale nastro mi serve?",
+      "Which tape do I need?"
     ],
     "answer": [
-      "Controlla uso, supporto e materiali indicati. Non tutti i nastri hanno lo stesso adesivo o la stessa destinazione.",
-      "Check the specified use, backing and materials. Tapes do not all share the same adhesive or purpose."
+      "Raccontaci su quale superficie lo userai e per cosa. Materiale, larghezza e tipo di adesivo aiutano a scegliere.",
+      "Tell us the surface and purpose. Material, width and adhesive type help you choose."
     ]
   },
   "adesivi": {
@@ -333,12 +352,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Il marchio basta per capire se la colla va bene?",
-      "Is the brand enough to know whether glue fits the job?"
+      "Come trovo la colla per il materiale giusto?",
+      "How do I find glue for the right material?"
     ],
     "answer": [
-      "No: Loctite identifica il marchio, non la compatibilità di ogni prodotto. Leggi la confezione specifica, incluse modalità d’uso e avvertenze.",
-      "No: Loctite identifies the brand, not compatibility for every product. Read the specific pack, including directions and warnings."
+      "Porta il nome del materiale o una foto dell’oggetto. Sulla confezione Loctite trovi superfici compatibili, modalità d’uso e avvertenze.",
+      "Bring the material’s name or a photo of the object. The Loctite pack lists compatible surfaces, directions and warnings."
     ]
   },
   "lucchetti": {
@@ -359,8 +378,8 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       "How do I describe the fastening point?"
     ],
     "answer": [
-      "Porta le misure o una foto del foro e del passaggio disponibile. Il nome lucchetto non documenta un livello di sicurezza o una certificazione.",
-      "Bring measurements or a photo of the opening and clearance. The word padlock does not establish a security level or certification."
+      "Porta le misure o una foto del foro da chiudere. Diametro e lunghezza dell’archetto ci aiutano a scegliere la misura.",
+      "Bring measurements or a photo of the opening. Shackle diameter and length help us choose the size."
     ]
   },
   "cerotti": {
@@ -377,12 +396,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "La scheda indica quale cerotto usare?",
-      "Does this page tell me which plaster to use?"
+      "Cosa guardo sulla confezione dei cerotti?",
+      "What should I look at on the plaster pack?"
     ],
     "answer": [
-      "No: descrive una famiglia osservata in negozio. Le indicazioni si leggono sulla confezione; per dubbi sanitari chiedi a un professionista.",
-      "No: it describes a family observed in the shop. Read the pack directions and ask a professional about health concerns."
+      "Misure, quantità e indicazioni d’uso. Puoi confrontare i formati da vicino; per una domanda sulla salute chiedi a un professionista sanitario.",
+      "Size, quantity and directions. Compare the formats in person; ask a healthcare professional about health questions."
     ]
   },
   "labbra": {
@@ -399,12 +418,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Tutti i balsami della stessa marca hanno gli stessi ingredienti?",
-      "Do balms from the same brand have the same ingredients?"
+      "Dove trovo gli ingredienti del balsamo labbra?",
+      "Where can I find lip balm ingredients?"
     ],
     "answer": [
-      "Non dedurlo dal marchio Labello. Leggi l’etichetta della variante presente: questa scheda non attribuisce benefici o proprietà al prodotto.",
-      "Do not infer this from Labello branding. Read the available variant’s label; this page does not attribute benefits or properties to it."
+      "Sull’etichetta della variante che scegli. Guarda il nome completo e le indicazioni della confezione, anche quando conosci già il marchio.",
+      "On your chosen variant’s label. Look at the full name and pack directions, even when you already know the brand."
     ]
   },
   "capelli": {
@@ -421,12 +440,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Come evito di confondere fermagli e pinzette?",
-      "How do I distinguish clips from tweezers?"
+      "Come ritrovo un accessorio che uso già?",
+      "How do I find an accessory I already use?"
     ],
     "answer": [
-      "Descrivi l’oggetto e il tipo di chiusura, oppure porta una foto. Il marchio Trim nel registro non identifica ogni modello degli accessori vicini.",
-      "Describe the object and its fastening, or bring a photo. Trim in the survey does not identify every nearby accessory model."
+      "Portalo con te o mostraci una foto. Forma, dimensioni e tipo di chiusura ci aiutano a cercarlo insieme.",
+      "Bring it with you or show us a photo. Shape, size and fastening help us look for it together."
     ]
   },
   "gommose": {
@@ -443,12 +462,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Posso ricavare gli allergeni dal marchio?",
-      "Can I identify allergens from the brand?"
+      "Dove leggo ingredienti e allergeni?",
+      "Where do I find ingredients and allergens?"
     ],
     "answer": [
-      "No: Haribo e Fini hanno linee diverse. Leggi ingredienti e allergeni della confezione esatta, senza estendere dati da un prodotto all’altro.",
-      "No: Haribo and Fini have different lines. Read the exact pack’s ingredients and allergens; do not transfer information between items."
+      "Sulla confezione che scegli. Haribo e Fini hanno proposte diverse: tieni il pacchetto come riferimento per le informazioni alimentari.",
+      "On your chosen pack. Haribo and Fini have different products: use the pack as the reference for food information."
     ]
   },
   "lecca-lecca": {
@@ -465,12 +484,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Sono presenti tutti i gusti Chupa Chups?",
-      "Are all Chupa Chups flavours present?"
+      "Posso scegliere il gusto?",
+      "Can I choose the flavour?"
     ],
     "answer": [
-      "Il registro documenta il marchio, non la gamma completa. I gusti esposti possono cambiare; le informazioni alimentari sono sulla singola confezione.",
-      "The survey records the brand, not the full range. Displayed flavours may change; food information is on the individual pack."
+      "Guarda i gusti Chupa Chups presenti e cerca il tuo preferito. Ingredienti e informazioni alimentari sono sulla confezione.",
+      "Browse the Chupa Chups flavours and find your favourite. Ingredients and food information are on the pack."
     ]
   },
   "caramelle": {
@@ -487,12 +506,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "La marca indica se una caramella è senza zucchero?",
-      "Does the brand tell me whether a sweet is sugar-free?"
+      "Come riconosco una caramella senza zucchero?",
+      "How do I recognise a sugar-free sweet?"
     ],
     "answer": [
-      "La caratteristica va letta sulla confezione della linea specifica. Questa pagina non la attribuisce a tutti gli articoli Dietorelle.",
-      "Read the specific line’s pack. This page does not attribute that feature to every Dietorelle item."
+      "Cerca la dicitura sulla confezione della linea che scegli. Leggi anche ingredienti e informazioni alimentari sul pacchetto.",
+      "Look for the wording on your chosen line’s pack. Read the ingredients and food information too."
     ]
   },
   "cioccolatini": {
@@ -509,12 +528,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Pocket Coffee e Rocher sono la stessa referenza?",
-      "Are Pocket Coffee and Rocher the same item?"
+      "Pocket Coffee e Rocher sono la stessa proposta?",
+      "Are Pocket Coffee and Rocher the same product?"
     ],
     "answer": [
-      "No: sono denominazioni distinte identificate negli espositori Ferrero. Ingredienti, formato e informazioni si verificano su ciascuna confezione.",
-      "No: they are separate names identified in Ferrero displays. Check ingredients, size and information on each pack."
+      "Sono due proposte Ferrero diverse. Cerca il nome sulla confezione e scegli il formato che ti serve; ingredienti e allergeni sono sull’etichetta.",
+      "They are different Ferrero products. Find the name on the pack and choose the size you need; ingredients and allergens are on the label."
     ]
   },
   "piccoli-regali": {
@@ -531,12 +550,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "La vetrina è un catalogo di tutti i regali?",
-      "Is the display a catalogue of every gift?"
+      "Da dove comincio per un piccolo regalo?",
+      "Where do I start with a little gift?"
     ],
     "answer": [
-      "No: documenta alcuni oggetti, fra cui candele e portachiavi. Varianti, confezioni e disponibilità cambiano; per le candele leggi le avvertenze specifiche.",
-      "No: it documents some objects, including candles and keyrings. Variants, packs and availability change; read specific candle warnings."
+      "Raccontaci per chi è e l’occasione. Una candela, un portachiavi o un piccolo oggetto possono diventare un pensiero personale con le tue parole nel biglietto.",
+      "Tell us who it is for and the occasion. A candle, keyring or little object can become a personal gift with your own words in a card."
     ]
   },
   "giochi": {
@@ -553,12 +572,12 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
       ]
     ],
     "question": [
-      "Come descrivo il gioco che cerco?",
-      "How do I describe the toy I need?"
+      "Come chiedo un gioco da regalare?",
+      "How do I ask about a toy for a gift?"
     ],
     "answer": [
-      "Indica età e interessi del destinatario. Il sito non assegna una fascia d’età ai giochi fotografati: fa riferimento alle indicazioni della confezione precisa.",
-      "Give the recipient’s age and interests. The website does not assign ages to photographed toys; it refers to the specific pack information."
+      "Dicci età e interessi di chi lo riceverà. Poi guardiamo le proposte e leggiamo insieme età consigliata e avvertenze sulla confezione.",
+      "Tell us the recipient’s age and interests. Then look at the options and read the recommended age and pack warnings together."
     ]
   }
 };

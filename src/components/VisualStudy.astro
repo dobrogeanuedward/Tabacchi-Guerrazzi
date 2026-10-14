@@ -30,9 +30,8 @@ const sizes = variant === 'inset'
     />
   </div>
   <figcaption class="study-caption">
-    <span class="study-index" aria-hidden="true">{study.index}</span>
     <div class="study-caption-copy">
-      <span class="study-label">{study.title[lang]} <span aria-hidden="true">/</span> {lang === 'it' ? 'Studio illustrativo' : 'Illustrative study'}</span>
+      <span class="study-label">{study.title[lang]}</span>
       <p>{study.caption[lang]}</p>
     </div>
   </figcaption>
@@ -75,7 +74,7 @@ const sizes = variant === 'inset'
 
   .study-caption {
     display: grid;
-    grid-template-columns: 58px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: 20px;
     align-items: start;
     padding: 20px 0 0;
@@ -117,7 +116,7 @@ const sizes = variant === 'inset'
   }
 
   .visual-study--inset .study-caption {
-    grid-template-columns: 40px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr);
     gap: 16px;
     padding-top: 16px;
     margin-top: 12px;
@@ -127,7 +126,7 @@ const sizes = variant === 'inset'
 
   @media (max-width: 680px) {
     .study-caption {
-      grid-template-columns: 40px minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: 14px;
       margin-top: 12px;
       padding-top: 16px;
@@ -141,7 +140,7 @@ const sizes = variant === 'inset'
   @media (max-width: 370px) {
     .study-caption,
     .visual-study--inset .study-caption {
-      grid-template-columns: 32px minmax(0, 1fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: 10px;
     }
 

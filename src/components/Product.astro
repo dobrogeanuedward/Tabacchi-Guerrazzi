@@ -1,4 +1,5 @@
 ---
+import NeighborhoodLinks from './NeighborhoodLinks.astro';
 import Base from '../layouts/Base.astro';
 import {getProductBySlug} from '../lib/catalog.mjs';
 import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';
@@ -17,8 +18,8 @@ const group=catalogGroups.find(g=>g.id===p.category);
 const categoryLabel=group?(lang==='it'?group.it:group.en):text(lang,'Accessori regalo','Gift accessories');
 const presentation=familyPresentationFor(p.category);
 const relatedFamilies=catalogAssortment.filter(item=>item.category===(p.category==='accessori'?'regali':p.category)).slice(0,3);
-const availabilityIt:Record<string,string>={available:'Disponibile in negozio',unavailable:'Attualmente non disponibile','on-request':'Disponibilità da verificare'};
-const availabilityEn:Record<string,string>={available:'Available in store',unavailable:'Currently unavailable','on-request':'Check availability'};
+const availabilityIt:Record<string,string>={available:'Disponibile in negozio',unavailable:'Attualmente non disponibile','on-request':'Chiedi ad Angela'};
+const availabilityEn:Record<string,string>={available:'Available in store',unavailable:'Currently unavailable','on-request':'Ask Angela'};
 const updated=Number.isFinite(p.updated)?new Date(p.updated):null;
 ---
 <Base title={name} description={description.slice(0,160)} lang={lang} slug={`catalogo/${slug}`} theme={presentation.theme} image={p.image||'/images/hero/portico.webp'} schema={{'@context':'https://schema.org','@type':'Product',name,description,image:images,category:categoryLabel}}>
@@ -37,16 +38,17 @@ const updated=Number.isFinite(p.updated)?new Date(p.updated):null;
         <div class="product-summary">
           <section class="product-description-panel" aria-labelledby="product-description-title"><p class="product-section-label">{text(lang,'Il singolo articolo','The individual item')}</p><h2 id="product-description-title">{text(lang,'Descrizione.','Description.')}</h2><p class="product-description">{description}</p></section>
           <section class="product-facts" aria-labelledby="product-facts-title">
-            <h2 id="product-facts-title">{text(lang,'Dati della scheda','Record details')}</h2>
-            <dl><div><dt>{text(lang,'Categoria','Category')}</dt><dd>{categoryLabel}</dd></div>{p.brand&&<div><dt>{p.brandRole==='distributor'?text(lang,'Selezionato e distribuito da','Selected and distributed by'):text(lang,'Marchio','Brand')}</dt><dd>{p.brand}</dd></div>}<div><dt>{text(lang,'Disponibilità indicata','Listed availability')}</dt><dd>{text(lang,availabilityIt[p.availability]||availabilityIt['on-request'],availabilityEn[p.availability]||availabilityEn['on-request'])}</dd></div>{p.price!==null&&p.price!==undefined&&<div><dt>{p.source?text(lang,'Prezzo esposto','Displayed price'):text(lang,'Prezzo indicato','Listed price')}</dt><dd class="product-price">{new Intl.NumberFormat(lang==='it'?'it-IT':'en-GB',{style:'currency',currency:'EUR'}).format(p.price)}</dd></div>}</dl>
+            <h2 id="product-facts-title">{text(lang,'In breve','At a glance')}</h2>
+            <dl><div><dt>{text(lang,'Categoria','Category')}</dt><dd>{categoryLabel}</dd></div>{p.brand&&<div><dt>{p.brandRole==='distributor'?text(lang,'Selezionato e distribuito da','Selected and distributed by'):text(lang,'Marchio','Brand')}</dt><dd>{p.brand}</dd></div>}<div><dt>{text(lang,'Per saperne di più','Find out more')}</dt><dd>{text(lang,availabilityIt[p.availability]||availabilityIt['on-request'],availabilityEn[p.availability]||availabilityEn['on-request'])}</dd></div>{p.price!==null&&p.price!==undefined&&<div><dt>{p.source?text(lang,'Prezzo','Price'):text(lang,'Prezzo indicato','Listed price')}</dt><dd class="product-price">{new Intl.NumberFormat(lang==='it'?'it-IT':'en-GB',{style:'currency',currency:'EUR'}).format(p.price)}</dd></div>}</dl>
             {updated&&<p class="product-updated">{text(lang,'Aggiornamento scheda:','Record updated:')} <time datetime={updated.toISOString()}>{new Intl.DateTimeFormat(lang==='it'?'it-IT':'en-GB',{day:'numeric',month:'long',year:'numeric'}).format(updated)}</time></p>}
           </section>
-          <div class="product-contact-panel"><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Chiedi informazioni','Ask for information')}</a><p>{text(lang,'Prima della visita, verifica disponibilità e variante. Gli acquisti si effettuano in negozio.','Before visiting, check availability and variant. Purchases are made in store.')}</p><a class="product-back-link" href={`${pathFor('catalogo',lang)}?categoria=${p.category}`}>{text(lang,'Torna a','Back to')} {categoryLabel.toLowerCase()}</a></div>
+          <div class="product-contact-panel"><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Chiedi informazioni','Ask for information')}</a><p>{text(lang,'Ti aspettiamo in Via Guerrazzi 10/F. Se hai una domanda, raccontacela al banco.','Find us at Via Guerrazzi 10/F. Bring your questions to the counter.')}</p><a class="product-back-link" href={`${pathFor('catalogo',lang)}?categoria=${p.category}`}>{text(lang,'Torna a','Back to')} {categoryLabel.toLowerCase()}</a></div>
         </div>
       </div>
 
+      <NeighborhoodLinks topic={presentation.page} lang={lang}/>
       <section class="product-visit-notes" aria-labelledby="product-visit-title">
-        <div class="product-notes-opening"><p class="product-section-label">{text(lang,'Prima della visita','Before visiting')}</p><h2 id="product-visit-title">{text(lang,'Una richiesta più precisa.','A more precise question.')}</h2></div>
+        <div class="product-notes-opening"><p class="product-section-label">{text(lang,'Prima della visita','Before visiting')}</p><h2 id="product-visit-title">{text(lang,'Una cosa da sapere.','Something to know.')}</h2></div>
         <ol>{presentation.checkNotes.map((note,i)=><li><span aria-hidden="true">0{i+1}</span><p>{note[l]}</p></li>)}</ol>
       </section>
 

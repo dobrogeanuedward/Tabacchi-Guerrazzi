@@ -10,5 +10,5 @@ const dimensions=(editorialAssets as Record<string,{mobile:{width:number;height:
   <source srcset={`/images/editorial/${name}-desktop-800.webp 800w, /images/editorial/${name}-desktop.webp 1600w`} sizes={wide?'calc(100vw - 70px)':'(max-width: 960px) 50vw, 650px'} width={dimensions.desktop.width} height={dimensions.desktop.height}/>
   <img src={`/images/editorial/${name}-desktop.webp`} width={dimensions.desktop.width} height={dimensions.desktop.height} loading="lazy" decoding="async" alt={alt}/>
  </picture>
- {caption&&<figcaption>{text(lang,'Ricreazione editoriale basata sulle foto del negozio.','Editorial recreation based on shop photographs.')}</figcaption>}
+ {caption&&<figcaption>{text(lang,'Uno sguardo alla bottega.','A look at the shop.')}</figcaption>}
 </figure>

@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-14",
+  "direction": "Testi diretti e accoglienti, articoli utili alle persone che si muovono in quartiere, fotografie tematiche senza attribuzioni documentarie a esemplari reali. Le pagine del tabacco restano informative e non presentano disponibilità, prezzi o inviti all'acquisto.",
+  "sources": [
+    {
+      "url": "https://www.comune.bologna.it/novita/comunicati-stampa/halloween-guerrazzi-i-provvedimenti-al-traffico-vigore-giovedi-31-ottobre",
+      "use": "Connessioni tra Via Guerrazzi, Santo Stefano, San Petronio Vecchio, Strada Maggiore e Piazza Aldrovandi"
+    },
+    {
+      "url": "https://www.bolognawelcome.com/it/luoghi/edifici-religiosi/chiesa-di-santa-maria-dei-servi",
+      "use": "Basilica e portici dei Servi"
+    },
+    {
+      "url": "https://www.habanos.com/en/glossary/",
+      "use": "Terminologia tecnica: capa, capote, tripa, parejo, figurado, vitola"
+    }
+  ],
+  "images": [
+    {
+      "id": "foglia-struttura",
+      "prompt": "Use case: scientific-educational. ONE photorealistic landscape 3:2 neutral documentary still-life photograph for a cultural article on cigar terminology. A broad dried brown tobacco leaf with sharply visible veins laid flat beside one plain unbranded unlit cigar, on clean warm ivory paper on pale wood. The whole leaf and the cylinder are separate and legible, product scale believable; no smoking, no hands, no branded packaging, no cigar band, no flame, no luxurious props, no promotional atmosphere. Side window daylight, precise material texture, 85mm lens, restrained studio documentary composition, no text or diagrams or collage. This teaches the relationship of a leaf and rolled structure.",
+      "source": "/workspace/scratch/16132b2ad533/generated_images/exec-cc40c07e-88f8-48e4-980f-5537fa627e6a.png",
+      "outputs": [
+        "/images/quaderni/foglia-struttura.webp",
+        "/images/quaderni/foglia-struttura-768.webp"
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "botanica-erica",
+      "prompt": "Use case: scientific-educational. ONE landscape 3:2 photograph with the sensitivity of a modern botanical book. A single delicate sprig of tree heath (Erica arborea), tiny green needle-like leaves and many small white bell-shaped flowers, laid on warm ivory paper beside a small rough reddish-brown woody burl specimen; separate objects with breathing room. Natural diffuse window daylight, macro botanical detail, neutral accurate botanical study. No pot, no labelled specimen, no tobacco products, no people, no brand, no text, no fake vintage annotations, no artistic diagram, no collage. Crisp believable plant and wood, soft grounded shadow.",
+      "source": "/workspace/scratch/16132b2ad533/generated_images/exec-1123b2c1-af7f-45d4-8f07-62ec97efb666.png",
+      "outputs": [
+        "/images/quaderni/botanica-erica.webp",
+        "/images/quaderni/botanica-erica-768.webp"
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "materia-sepiolite",
+      "prompt": "Use case: scientific-educational. ONE premium restrained documentary macro photograph, landscape 3:2. A small raw chalk-white porous mineral specimen suggestive of sepiolite, beside a simple pale carved material sample without a smoking chamber, on warm ivory paper. Show texture: soft matte raw porous surface and smoother worked surface, subtle pale cream tones, quiet side daylight and grounded shadows. Neutral museum-like material study with a small cobalt paper edge, tactile realistic photo. No gemstone sparkle, no jewellery, no smoking object, no labels, no words, no hands, no collage. Do not imply the image is an authenticated museum specimen.",
+      "source": "/workspace/scratch/16132b2ad533/generated_images/exec-76e6c775-f7d9-49dd-879b-6cde5950f085.png",
+      "outputs": [
+        "/images/quaderni/materia-sepiolite.webp",
+        "/images/quaderni/materia-sepiolite-768.webp"
+      ],
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "id": "carta-e-nomi",
+      "prompt": "Use case: photorealistic-natural. ONE landscape 3:2 editorial still life for a local Italian shop's cultural reading section. Two cream paper cards, a neatly closed old clothbound book without text and a small natural cedar offcut with clear grain, on pale wood. One ordinary cobalt blue writing pen resting across the blank cards. Warm natural window daylight through a portico, natural 70mm lens, tactile linen, paper fibres and wood, calm readable composition. No tobacco products, no alcohol, no ashtray, no smoking, no people, no fancy luxury styling, no readable text, no logo, no watermark, no collage. Distinct contemporary cultural editorial photograph.",
+      "source": "/workspace/scratch/16132b2ad533/generated_images/exec-fe092e10-6755-4cff-ac8d-40303bd8fe37.png",
+      "outputs": [
+        "/images/quaderni/carta-e-nomi.webp",
+        "/images/quaderni/carta-e-nomi-768.webp"
+      ],
+      "width": 1536,
+      "height": 1024
+    }
+  ]
+}
