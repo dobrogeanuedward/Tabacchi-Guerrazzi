@@ -1,0 +1,763 @@
+{
+  "date": "2026-10-14",
+  "method": "built-in ImageGen",
+  "direction": "Natural portico daylight, ivory paper, pale wood, restrained cobalt, realistic product materials",
+  "familyScope": "26 distinct editorial family photographs; generated photographs do not authenticate models, packaging, brands or stock.",
+  "productScope": "Three cable-protector photographs recreated from IMG_5342, IMG_5346, IMG_5347 and IMG_5349 provided by the user. AkenA is the distributor named on the display; EUR 3.50 is its photographed displayed price.",
+  "assets": [
+    {
+      "id": "profumi-raptus",
+      "kind": "family",
+      "source": "exec-7f500e1d-4ffd-420f-89b1-807e0022772f.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two unlabelled personal perfume bottles, one tall and one compact, clear thick glass with amber liquid and simple black cylindrical caps, one closed cream carton turned to its blank side. A tiny cobalt strip of paper behind the bottles. Editorial fragrance-family photo only: no Raptus labels, no invented Raptus bottle identity, no logo, no readable fragrance name. Side light reveals glass and liquid, fresh refined intimate mood.",
+      "variants": [
+        {
+          "path": "/images/catalogo/profumi-raptus-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 12576
+        },
+        {
+          "path": "/images/catalogo/profumi-raptus-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 39582
+        },
+        {
+          "path": "/images/catalogo/profumi-raptus.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 132130
+        }
+      ]
+    },
+    {
+      "id": "quaderni",
+      "kind": "family",
+      "source": "exec-bdc54ecc-f6b7-4e59-926e-c90bfb24a263.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two ordinary school notebooks with subtly textured cobalt and muted ochre card covers, one closed and one open showing clean ruled paper, a small plain tear-off notepad on top. Accurate paper layers and straight binding. Three-quarter tabletop photograph, tactile modest stationery.",
+      "variants": [
+        {
+          "path": "/images/catalogo/quaderni-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 9834
+        },
+        {
+          "path": "/images/catalogo/quaderni-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 33492
+        },
+        {
+          "path": "/images/catalogo/quaderni.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 113458
+        }
+      ]
+    },
+    {
+      "id": "penne",
+      "kind": "family",
+      "source": "exec-7f099b83-ebe3-4137-853f-ece32f234b02.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Three recognisable everyday clear-barrel ballpoint pens with respectively blue, black and red caps laid diagonally on cream note paper, one uncapped pen with a physically accurate small metal writing tip, its cap lying beside it. Avoid writing, branding, duplicate pen tips or extraneous stationery.",
+      "variants": [
+        {
+          "path": "/images/catalogo/penne-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 11758
+        },
+        {
+          "path": "/images/catalogo/penne-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 33420
+        },
+        {
+          "path": "/images/catalogo/penne.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 96726
+        }
+      ]
+    },
+    {
+      "id": "evidenziatori",
+      "kind": "family",
+      "source": "exec-2b767a1c-46e0-41d9-aafa-9d8989e98574.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Four chunky everyday fluorescent highlighters in yellow, pink, green and cobalt blue, one yellow uncapped highlighter with a credible bevelled felt nib beside its cap, laid on clean paper with three small straight fluorescent swatches. No words, no brand lettering.",
+      "variants": [
+        {
+          "path": "/images/catalogo/evidenziatori-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 10222
+        },
+        {
+          "path": "/images/catalogo/evidenziatori-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 24868
+        },
+        {
+          "path": "/images/catalogo/evidenziatori.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 65128
+        }
+      ]
+    },
+    {
+      "id": "colle",
+      "kind": "family",
+      "source": "exec-e72cfae8-5f29-4fa8-84f5-37af80791fe0.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two ordinary twist-up glue sticks for paper, a taller white plastic tube with a red cap and a small tube with a blue cap, plus one cap beside the exposed glue surface and two overlapping pieces of cream paper. Blank label facing camera, no brand, no invented chemical information. Neat utilitarian tabletop photo.",
+      "variants": [
+        {
+          "path": "/images/catalogo/colle-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 6780
+        },
+        {
+          "path": "/images/catalogo/colle-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 18232
+        },
+        {
+          "path": "/images/catalogo/colle.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 52192
+        }
+      ]
+    },
+    {
+      "id": "cartelline",
+      "kind": "family",
+      "source": "exec-2bddd144-2102-4ddc-9ba1-0d5c1bf1a7fe.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Three thin A4 document folders: one translucent frosted plastic folder with a real elastic corner closure, one ivory cardboard folder, one cobalt blue folder, a few straight white paper sheets inside. Offset stack diagonally with realistic geometry and visible paper edges, not a book.",
+      "variants": [
+        {
+          "path": "/images/catalogo/cartelline-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 12302
+        },
+        {
+          "path": "/images/catalogo/cartelline-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 36572
+        },
+        {
+          "path": "/images/catalogo/cartelline.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 109558
+        }
+      ]
+    },
+    {
+      "id": "etichette",
+      "kind": "family",
+      "source": "exec-02fcd282-6152-4d9c-8ff6-442917e972a4.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: One small partly peeled sheet of ordinary blank white adhesive labels with rounded rectangles, a small correction tape roller, a tiny bottle of white correction fluid and one pair of blunt-ended stationery scissors. Objects clearly separate, modest practical desk still life, no labels or words.",
+      "variants": [
+        {
+          "path": "/images/catalogo/etichette-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 11854
+        },
+        {
+          "path": "/images/catalogo/etichette-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 31904
+        },
+        {
+          "path": "/images/catalogo/etichette.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 82454
+        }
+      ]
+    },
+    {
+      "id": "calamite",
+      "kind": "family",
+      "source": "exec-a7a70427-87ec-4b0f-9db6-30ff1f894ef4.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Three plausible Bologna souvenir refrigerator magnets on a light wood surface: a small terracotta-coloured relief magnet showing Bologna's two medieval towers (one tall slender tower and a shorter noticeably leaning tower), one arched portico motif, one simple city magnet with the correctly spelled single word 'BOLOGNA'. Real affordable tourist souvenir materials, resin/ceramic, no invented city landmarks, no luxury metalwork.",
+      "variants": [
+        {
+          "path": "/images/catalogo/calamite-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 19884
+        },
+        {
+          "path": "/images/catalogo/calamite-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 66752
+        },
+        {
+          "path": "/images/catalogo/calamite.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 209006
+        }
+      ]
+    },
+    {
+      "id": "auguri",
+      "kind": "family",
+      "source": "exec-d3a0fb25-e34a-4275-b482-eec6922a3e45.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Three birthday greeting cards and simple matching envelopes, one upright, others slightly overlapping. Original tasteful colourful printed balloons and floral cut-paper decorations on ivory card, one small correctly spelled Italian word 'Auguri'. Material paper depth and shadows, no long writing or readable brand.",
+      "variants": [
+        {
+          "path": "/images/catalogo/auguri-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 17686
+        },
+        {
+          "path": "/images/catalogo/auguri-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 49142
+        },
+        {
+          "path": "/images/catalogo/auguri.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 129742
+        }
+      ]
+    },
+    {
+      "id": "candeline",
+      "kind": "family",
+      "source": "exec-f9f0042f-7c8e-437c-ad99-b9a6fabd1a6d.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two small unopened retail blister packs of number-shaped birthday candles showing the numerals 2 and 5 separately, one cobalt candle and one ochre candle, realistic wax with tiny wicks and plastic stakes, generic blank packaging. No lit flame, no cake, no event scene, no brands.",
+      "variants": [
+        {
+          "path": "/images/catalogo/candeline-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 12612
+        },
+        {
+          "path": "/images/catalogo/candeline-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 40690
+        },
+        {
+          "path": "/images/catalogo/candeline.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 117460
+        }
+      ]
+    },
+    {
+      "id": "palloncini",
+      "kind": "family",
+      "source": "exec-5a705ff3-4e72-47d0-ac32-d24dae06f913.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two unopened transparent packets of ordinary uninflated latex balloons in yellow, pink, cobalt and pale green, plus three loose uninflated balloons on cream paper. Real latex folds and visible mouth openings. No inflated balloons, no helium equipment, no service implications, no readable branding.",
+      "variants": [
+        {
+          "path": "/images/catalogo/palloncini-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 15146
+        },
+        {
+          "path": "/images/catalogo/palloncini-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 38476
+        },
+        {
+          "path": "/images/catalogo/palloncini.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 94346
+        }
+      ]
+    },
+    {
+      "id": "buste",
+      "kind": "family",
+      "source": "exec-dbce08ba-9970-4d21-9d1e-047a644bd374.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two small gift bags, one ivory with a cobalt blue paper handle and one pale kraft with a warm coral bow, a flat blue gift ribbon and one plain gift tag. Convincing paper creases and real handles, modest gift packaging, no logo, no fancy luxury jewellery props.",
+      "variants": [
+        {
+          "path": "/images/catalogo/buste-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 14706
+        },
+        {
+          "path": "/images/catalogo/buste-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 46952
+        },
+        {
+          "path": "/images/catalogo/buste.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 170174
+        }
+      ]
+    },
+    {
+      "id": "cavi",
+      "kind": "family",
+      "source": "exec-a5a98663-7d04-4a48-9388-17df80dfadf1.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: One white USB-A to USB-C charging cable coiled in a relaxed oval with both distinct correct connectors sharply visible in the foreground, one separate shorter white USB-C cable beside it. Accurate metal connector geometry and credible cable routing, no invented phone, no model ratings or fake packaging.",
+      "variants": [
+        {
+          "path": "/images/catalogo/cavi-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 12064
+        },
+        {
+          "path": "/images/catalogo/cavi-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 32172
+        },
+        {
+          "path": "/images/catalogo/cavi.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 84582
+        }
+      ]
+    },
+    {
+      "id": "power-bank",
+      "kind": "family",
+      "source": "exec-ca6f6efe-c195-475e-a14a-97a8986c285b.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: A plain compact matte-white rectangular portable power bank and a small coiled white USB cable, USB ports and tiny unlit indicator holes along one edge, pale wood with a cobalt paper accent. Generic unbranded model, do not fabricate capacity, fast-charge claims, digital display or brand typography.",
+      "variants": [
+        {
+          "path": "/images/catalogo/power-bank-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 10732
+        },
+        {
+          "path": "/images/catalogo/power-bank-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 29612
+        },
+        {
+          "path": "/images/catalogo/power-bank.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 79268
+        }
+      ]
+    },
+    {
+      "id": "nastri",
+      "kind": "family",
+      "source": "exec-56f3a9c9-25a8-400a-b59c-0e578e441e7b.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: One wide roll of transparent adhesive tape, one small translucent tape dispenser with a plausible serrated metal cutting edge and one roll of matte cream masking tape. Real adhesive layers, slight scratches and believable translucency, modest practical tabletop.",
+      "variants": [
+        {
+          "path": "/images/catalogo/nastri-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 10706
+        },
+        {
+          "path": "/images/catalogo/nastri-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 32232
+        },
+        {
+          "path": "/images/catalogo/nastri.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 98548
+        }
+      ]
+    },
+    {
+      "id": "adesivi",
+      "kind": "family",
+      "source": "exec-15b1b4cd-c101-4ab8-a1e5-483ed14dcc4d.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: One small generic instant-glue squeeze bottle with a pointed dispensing cap and one small closed glue tube lying beside it, plain mostly white packaging with a small red colour block and blank label. One tiny clean scrap of card behind, no spills, no branded claims, no glue application.",
+      "variants": [
+        {
+          "path": "/images/catalogo/adesivi-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 8948
+        },
+        {
+          "path": "/images/catalogo/adesivi-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 25756
+        },
+        {
+          "path": "/images/catalogo/adesivi.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 72726
+        }
+      ]
+    },
+    {
+      "id": "lucchetti",
+      "kind": "family",
+      "source": "exec-311ea824-a40b-462e-a228-ac73ba909d8b.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two everyday small brass padlocks, one closed and one open, each with a physically coherent steel U-shaped shackle, two separate brass keys on a simple ring beside them. Warm daylight, true metal scratches, no engraved brand or text, no lockpicking tools.",
+      "variants": [
+        {
+          "path": "/images/catalogo/lucchetti-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 13804
+        },
+        {
+          "path": "/images/catalogo/lucchetti-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 47126
+        },
+        {
+          "path": "/images/catalogo/lucchetti.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 144250
+        }
+      ]
+    },
+    {
+      "id": "cerotti",
+      "kind": "family",
+      "source": "exec-d5b0b11e-3748-4b11-87d8-8bc20594cbe7.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: One simple sealed packet of ordinary beige adhesive plasters beside two individually sealed paper plaster sachets; one plaster in its translucent sealed wrapper so the absorbent pad is visible. Cream paper background, tiny cobalt accent. No bandaged person, no medical claims, no symbols suggesting approval, no invented brand or instructions.",
+      "variants": [
+        {
+          "path": "/images/catalogo/cerotti-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 10718
+        },
+        {
+          "path": "/images/catalogo/cerotti-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 33712
+        },
+        {
+          "path": "/images/catalogo/cerotti.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 98384
+        }
+      ]
+    },
+    {
+      "id": "labbra",
+      "kind": "family",
+      "source": "exec-697cde89-3739-492e-8bc4-e7375c169d4e.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two ordinary lip balm sticks, one with a deep blue cylindrical cap and one plain white capped tube, one open tube displaying a pale wax balm with smooth rounded top, its cap beside it. Realistic modest drugstore packaging, no readable brands, no claims, no cosmetic styling props.",
+      "variants": [
+        {
+          "path": "/images/catalogo/labbra-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 8730
+        },
+        {
+          "path": "/images/catalogo/labbra-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 23752
+        },
+        {
+          "path": "/images/catalogo/labbra.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 66756
+        }
+      ]
+    },
+    {
+      "id": "capelli",
+      "kind": "family",
+      "source": "exec-11c1dbb5-fe90-47d5-8507-4fde35a7b675.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two small tortoiseshell hair clips, one simple black hair claw, three black elastic hair ties and one stainless steel slant-tip tweezer arranged on pale paper. Accurate spring/hinge geometry and delicate steel edge, calm practical still life.",
+      "variants": [
+        {
+          "path": "/images/catalogo/capelli-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 14488
+        },
+        {
+          "path": "/images/catalogo/capelli-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 43000
+        },
+        {
+          "path": "/images/catalogo/capelli.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 135310
+        }
+      ]
+    },
+    {
+      "id": "gommose",
+      "kind": "family",
+      "source": "exec-f5ead8ae-bfca-4fd7-b004-e500c66f68a7.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two small ordinary clear-front sealed packets of colourful gummy sweets, one with gummy bears and one with gummy rings, generic warm yellow and green colour blocks but no readable brand names. Clearly packaged retail sweets, translucent sugar textures visible through real crinkled plastic; no loose food props.",
+      "variants": [
+        {
+          "path": "/images/catalogo/gommose-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 17570
+        },
+        {
+          "path": "/images/catalogo/gommose-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 53830
+        },
+        {
+          "path": "/images/catalogo/gommose.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 145342
+        }
+      ]
+    },
+    {
+      "id": "lecca-lecca",
+      "kind": "family",
+      "source": "exec-63638d11-65cc-45a3-9a38-4aaa24a82585.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Five individually wrapped round lollipops, red, yellow and pink wrapper colours, simple white paper sticks crossing naturally on cream paper. Real cellophane folds, no brand imitation or words, plausible round candy below wrappers, subtly playful daylight.",
+      "variants": [
+        {
+          "path": "/images/catalogo/lecca-lecca-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 15492
+        },
+        {
+          "path": "/images/catalogo/lecca-lecca-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 47446
+        },
+        {
+          "path": "/images/catalogo/lecca-lecca.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 136940
+        }
+      ]
+    },
+    {
+      "id": "caramelle",
+      "kind": "family",
+      "source": "exec-833509d3-af83-4d3a-92fe-d9198abf1222.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two sealed retail pouches of individually wrapped hard candies, one muted red and one soft green, several real twist-wrapped candies beside them. Generic unbranded pack front, no nutritional or sugar-free claims, real translucent cellophane and crumples, no loose unwrapped food.",
+      "variants": [
+        {
+          "path": "/images/catalogo/caramelle-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 19168
+        },
+        {
+          "path": "/images/catalogo/caramelle-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 55806
+        },
+        {
+          "path": "/images/catalogo/caramelle.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 149286
+        }
+      ]
+    },
+    {
+      "id": "cioccolatini",
+      "kind": "family",
+      "source": "exec-9538bfa8-5d87-4813-83e2-d9b94e4e07cc.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: An understated small gold foil-wrapped round chocolate with its dark brown pleated paper cup alongside two small rectangular individually wrapped dark-red coffee chocolate packets, a small clear unbranded box behind. No logos or claims, authentic everyday confectionery packaging and foil microtexture.",
+      "variants": [
+        {
+          "path": "/images/catalogo/cioccolatini-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 15286
+        },
+        {
+          "path": "/images/catalogo/cioccolatini-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 43800
+        },
+        {
+          "path": "/images/catalogo/cioccolatini.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 116524
+        }
+      ]
+    },
+    {
+      "id": "piccoli-regali",
+      "kind": "family",
+      "source": "exec-d2596994-274f-41d2-9f8e-bf1968cbaa51.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: Two small ordinary candles in clear glass cups, a simple metal keyring with a small colourful resin charm and one minimal gift tag on ivory paper. Small affordable personal gifts, wax surface and real woven wick, no flame, no brand, no luxury jewellery or expensive packaging.",
+      "variants": [
+        {
+          "path": "/images/catalogo/piccoli-regali-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 16110
+        },
+        {
+          "path": "/images/catalogo/piccoli-regali-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 46930
+        },
+        {
+          "path": "/images/catalogo/piccoli-regali.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 126816
+        }
+      ]
+    },
+    {
+      "id": "giochi",
+      "kind": "family",
+      "source": "exec-27a513a2-e0cd-4fa5-9fc5-ce8d35150477.png",
+      "prompt": "Use case: product-mockup. Create ONE premium photorealistic editorial catalogue photograph for Tabaccheria Guerrazzi di Angela, an Italian neighbourhood shop in Bologna. Landscape 3:2 composition. This is a still life of an item family, not proof of a specific branded SKU. Real everyday objects, plausible retail materials, tactile detail, slightly imperfect natural arrangement with deliberate professional composition. Ivory paper, pale natural wood or warm cream tabletop, small restrained cobalt accent. Soft directional portico window daylight, natural grounded shadows, 70–85mm product lens, crisp essential details, moderate depth of field, neutral colours. Fill 65–75% of frame with the actual subject so a 4:3 catalogue crop remains clear. No people, no hands, no luxury props, no shop interior reconstruction, no text overlays, no watermark, no illustration, no 3D render, no borders, no collage, no impossible floating objects. Do not invent brand labels, performance ratings, price labels or certified markings. Subject: A small colourful classic spinning top, a tiny simple wooden puzzle and a compact packet of game cards with original cheerful simple geometric artwork, arranged on a warm pale wood tabletop. Realistic physical toy construction, restrained cobalt, mustard and coral accents. Generic toys only, no brand, no licensed character, no young child or packaging age claim.",
+      "variants": [
+        {
+          "path": "/images/catalogo/giochi-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 13288
+        },
+        {
+          "path": "/images/catalogo/giochi-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 40990
+        },
+        {
+          "path": "/images/catalogo/giochi.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 124176
+        }
+      ]
+    },
+    {
+      "id": "proteggi-fili-in-uso",
+      "kind": "product",
+      "source": "exec-659c83ac-9a3d-42e5-ab22-0a4f5f31b00a.png",
+      "prompt": "Use case: product-mockup. Create one high-end photorealistic editorial product photograph for Tabaccheria Guerrazzi di Angela's catalogue, landscape 3:2.\nThe four references document a real small silicone animal cable protector: match the EXACT violet hippo in images 1 and 2, its chunky squat hippo body/head, broad rounded muzzle, tiny black eyes, two short round ears, four low feet, matte moulded flexible silicone, subtle seam, small size around a USB charging connector. This is a functional cable protector, NOT a toy figurine and NOT a new design. Images 3 and 4 only document the distributor's display and other variants.\nScene: the violet hippo installed over a realistic white phone charging connector plugged into the edge of a contemporary smartphone resting on ivory paper on a pale natural wood tabletop. Keep connector insertion and white cable path physically coherent: white cable exits from the rear of the hippo, hippo muzzle surrounds the connector at the phone; connector and silicone stay visibly distinct. Cable makes a single relaxed curve into the background. Device display is off, no interface.\nFraming: intimate three-quarter macro at tabletop level, hippo and connector as the sharp focal subject filling about 45% of the landscape frame, phone partly in frame, enough breathing room. Sophisticated real Italian small-shop still life, soft window daylight from a portico, credible material microtexture, restrained cobalt blue paper out of focus in background, warm ivory and pale wood. Natural 85mm lens, f/5.6, soft grounded shadows, outstanding product-edge sharpness, plausible reflections. No superfluous objects, no floating elements, no overlay text, no watermark, no invented brand logo. Preserve real product geometry and violet colour. A photograph, not a render, not an illustration, not a collage.",
+      "variants": [
+        {
+          "path": "/images/catalogo/proteggi-fili-in-uso-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 9056
+        },
+        {
+          "path": "/images/catalogo/proteggi-fili-in-uso-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 21716
+        },
+        {
+          "path": "/images/catalogo/proteggi-fili-in-uso.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 56922
+        }
+      ]
+    },
+    {
+      "id": "proteggi-fili-dettaglio",
+      "kind": "product",
+      "source": "exec-890c35be-c387-4da2-8666-aaa2ee03484a.png",
+      "prompt": "Use case: product-mockup. ONE premium photorealistic landscape 3:2 still-life product photograph for the same Guerrazzi catalogue shoot. The input images are exact physical product references. Reproduce the exact small VIOLET HIPPOPOTAMUS cable protector in reference images 1 and 2: squat body, broad blocky rounded muzzle with open lower mouth for a charging connector, tiny black eyes, small ears, four short feet, fine centre mould seam, matte soft flexible material. NOT a redesigned hippo, NOT a large toy. Photograph the unattached object from an elegant close three-quarter angle on warm ivory paper on pale wood, both face and hollow mouth/open lower channel visible, one white cable end partially blurred well behind it only as context. Soft portico daylight from the upper left, subdued cobalt blue paper edge far in background. Object occupies about 55% of landscape frame with breathing space, pin-sharp eyes, edge and matte mould texture, believable little grounded shadow, natural 85mm lens f/8. Professional restrained product photography, gentle colour, real-life scale. No text, no logos, no watermark, no hands, no collage, no props hiding the product.",
+      "variants": [
+        {
+          "path": "/images/catalogo/proteggi-fili-dettaglio-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 5990
+        },
+        {
+          "path": "/images/catalogo/proteggi-fili-dettaglio-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 17518
+        },
+        {
+          "path": "/images/catalogo/proteggi-fili-dettaglio.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 60708
+        }
+      ]
+    },
+    {
+      "id": "proteggi-fili-varianti",
+      "kind": "product",
+      "source": "exec-ef11cc99-95fb-4f7c-8b15-9369e0cc2129.png",
+      "prompt": "Use case: product-mockup. ONE photorealistic professional landscape 3:2 editorial product still life for Tabaccheria Guerrazzi di Angela. Images 1 and 2 show the real small violet hippo cable protector; images 3 and 4 show the other real animal cable-protector variants in the AkenA display. Faithfully photograph a small group of FOUR of those exact flexible moulded cable protectors OUTSIDE their plastic bags on ivory paper and pale wood: the VIOLET HIPPO from images 1/2 in sharp foreground, the PINK ELEPHANT with folded trunk/ears visible in images 3/4, the PALE CREAM TIGER/CAT with dark markings shown in image 4, and the GREEN CROCODILE visible in the top row of image 4. Each is small, squat, matte, with the physical hollow slot/mouth for a connector, tiny black facial details. Preserve reference shapes and colours; no new creature designs or printed labels. Arrange casually but professionally with space between four objects and believable shadows; white cable with accurate metal connector rests beside the foreground hippo without obscuring it. Warm daylight through an Italian portico, restrained cobalt card in distant background, natural 70mm lens, accurate material microtexture, crisp product silhouettes, moderate depth of field. Modest cheerful useful everyday accessories, not glossy toys, not 3D renders. No people, no hands, no text, no logos, no overlay, no price, no watermark, no collage.",
+      "variants": [
+        {
+          "path": "/images/catalogo/proteggi-fili-varianti-360.webp",
+          "width": 360,
+          "height": 240,
+          "bytes": 12536
+        },
+        {
+          "path": "/images/catalogo/proteggi-fili-varianti-720.webp",
+          "width": 720,
+          "height": 480,
+          "bytes": 30098
+        },
+        {
+          "path": "/images/catalogo/proteggi-fili-varianti.webp",
+          "width": 1440,
+          "height": 960,
+          "bytes": 80528
+        }
+      ]
+    }
+  ]
+}

@@ -7,11 +7,12 @@ const productionUrl=process.env.PUBLIC_SITE_URL||(process.env.VERCEL_PROJECT_PRO
 try {
  await rm(destination,{recursive:true,force:true});
  await cp('src',`${destination}/src`,{recursive:true});
- for (const route of ['admin','api','uploads','catalogo/[slug].astro','en/catalogo/[slug].astro']) {
+ for (const route of ['admin','api','uploads']) {
   await rm(`${destination}/src/pages/${route}`,{recursive:true,force:true});
  }
- // The first public version has no approved product inventory. Never seed fictional stock.
- await writeFile(`${destination}/src/lib/store.mjs`,'export function getProducts(){return [];}\n');
+ // Database articles stay on the Node runtime; documented catalogue articles
+ // come from catalog-products.mjs and are shared with the static export.
+ await writeFile(`${destination}/src/lib/store.mjs`,'export function getProducts(){return [];}\nexport function getProductBySlug(){return null;}\n');
  for (const route of ['robots.txt.ts','sitemap.xml.ts']) {
   const {readFile}=await import('node:fs/promises');
   const path=`${destination}/src/pages/${route}`;

@@ -25,17 +25,17 @@ const indexEntries=a.sections.map((s,i)=>({href:'#sezione-'+i,title:s[0]}));
 <div class="editorial-document">
  <div class="breadcrumb wrap"><a href="/">Home</a><span>/</span><a href="/approfondimenti/">Il diario</a><span>/</span><a href={'/approfondimenti/#'+c.id}>{c.label}</a></div>
  <header class="editorial-cover wrap">
-  <div class="editorial-cover-top"><p class="editorial-kind">{information?'Articolo informativo':'Articolo'}{information&&<span>18+</span>}</p><a href={'/approfondimenti/#'+c.id}>{c.label} <span aria-hidden="true">↗</span></a></div>
+  <div class="editorial-cover-top"><p class="editorial-kind">{information?'Articolo informativo':'Articolo'}{information&&<span>18+</span>}</p><a href={'/approfondimenti/#'+c.id}>{c.label} </a></div>
   <h1>{a.title}</h1>
-  <div class="editorial-deck"><div class="editorial-deck-copy"><p class="editorial-standfirst">{a.summary}</p><div class="editorial-meta"><span>{a.sections.length} sezioni</span><span>Lettura stimata: {readingMinutes} min</span></div><a class="editorial-start" href="#sezione-0">Leggi l’articolo <span aria-hidden="true">↓</span></a></div><div class="editorial-cover-art"><EditorialArt visual={visual} loading="eager" compact/></div></div>
+  <div class="editorial-deck"><div class="editorial-deck-copy"><p class="editorial-standfirst">{a.summary}</p><div class="editorial-meta"><span>{a.sections.length} sezioni</span><span>Lettura stimata: {readingMinutes} min</span></div><a class="editorial-start" href="#sezione-0">Leggi l’articolo </a></div><div class="editorial-cover-art"><EditorialArt visual={visual} loading="eager" compact/></div></div>
  </header>
  <div class="editorial-reading wrap">
   <ReadingIndex entries={indexEntries} title="In questo articolo"/>
   <article class="editorial-content">
    {a.sections.map((s,i)=><section class="editorial-section" id={'sezione-'+i}><div class="editorial-section-heading"><span class="editorial-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><h2>{s[0]}</h2></div><p>{s[1]}</p></section>)}
    <OfficialSources sources={a.sources||[]} lang="it" research={research} checked={research?'11 ottobre 2026':undefined}/>
-   <section class="editorial-continuation"><p class="editorial-section-label">Percorsi collegati</p><h2>Per continuare.</h2><div class="continuation-grid">{continuation.map((link,i)=><a class:list={[i===0&&'continuation-primary']} href={link.href}><span class="continuation-kind">{link.kind}</span><h3>{link.title}</h3><span class="continuation-action">{link.action}<span aria-hidden="true">→</span></span></a>)}</div></section>
-   <a class="editorial-return" href={'/approfondimenti/#'+c.id}><span aria-hidden="true">←</span> Torna a {c.label.toLowerCase()}</a>
+   <section class="editorial-continuation"><p class="editorial-section-label">Percorsi collegati</p><h2>Per continuare.</h2><div class="continuation-grid">{continuation.map((link,i)=><a class:list={[i===0&&'continuation-primary']} href={link.href}><span class="continuation-kind">{link.kind}</span><h3>{link.title}</h3><span class="continuation-action">{link.action}</span></a>)}</div></section>
+   <a class="editorial-return" href={'/approfondimenti/#'+c.id}> Torna a {c.label.toLowerCase()}</a>
   </article>
  </div>
 </div>

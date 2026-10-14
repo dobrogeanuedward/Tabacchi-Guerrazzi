@@ -8,7 +8,7 @@ for(const prefix of ['', '/en']){
  const cards=[...html.matchAll(/class="product-card assortment-card"[^>]+href="([^"]+)"/g)];
  assert.equal(cards.length,26);for(const [,href]of cards)await access(join('dist',href,'index.html'));
  const graph=JSON.parse(html.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
- const list=graph.find(x=>x['@type']==='ItemList');assert.equal(list.itemListElement.length,26);
+ const list=graph.find(x=>x['@type']==='ItemList');assert.equal(list.itemListElement.length,27);
  assert.ok(!graph.some(x=>['Product','Offer'].includes(x['@type'])));
  for(const route of ['sigari','pipe-e-tabacchi-da-pipa',...educationalGuides.map(s=>`schede/${s}`)]){
   const page=await readFile(join('dist',prefix,route,'index.html'),'utf8');assert.match(page,/id="age-confirmation"/);assert.match(page,/class="official-sources"/);assert.ok(!page.includes('"@type":"Offer"'));

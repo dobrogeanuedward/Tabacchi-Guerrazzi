@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated": "2026-10-11",
+  "updated": "2026-10-14",
   "scope": "Autorità",
   "decision": "Utente approva per ora le generazioni attuali e rinvia tutte le sostituzioni al secondo mandato, con più asset reali. Non generare ulteriori interni alla cieca.",
   "rules": [
@@ -285,367 +285,418 @@
       "id": "quaderni",
       "category": "cartoleria",
       "label": "Quaderni e blocchi",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/quaderni.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "penne",
       "category": "cartoleria",
       "label": "Penne a sfera",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/penne.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "evidenziatori",
       "category": "cartoleria",
       "label": "Evidenziatori",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/evidenziatori.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "colle",
       "category": "cartoleria",
       "label": "Colle per carta e piccoli lavori",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/colle.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "cartelline",
       "category": "cartoleria",
       "label": "Cartelline e portadocumenti",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/cartelline.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "etichette",
       "category": "cartoleria",
       "label": "Etichette e piccoli articoli da scrivania",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/etichette.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "calamite",
       "category": "souvenir",
       "label": "Calamite di Bologna",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/calamite.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "auguri",
       "category": "feste",
       "label": "Biglietti di compleanno",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/auguri.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "candeline",
       "category": "feste",
       "label": "Candeline numeriche",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/candeline.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "palloncini",
       "category": "feste",
       "label": "Palloncini",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/palloncini.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "buste",
       "category": "feste",
       "label": "Buste regalo e fiocchi",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/buste.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "cavi",
       "category": "telefono",
       "label": "Cavi USB di ricarica",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/cavi.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "power-bank",
       "category": "telefono",
       "label": "Power bank",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/power-bank.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "nastri",
       "category": "necessita",
       "label": "Nastri adesivi",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/nastri.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "adesivi",
       "category": "necessita",
       "label": "Colle per piccoli interventi",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/adesivi.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "lucchetti",
       "category": "necessita",
       "label": "Lucchetti",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/lucchetti.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "cerotti",
       "category": "necessita",
       "label": "Cerotti confezionati",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/cerotti.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "labbra",
       "category": "necessita",
       "label": "Balsami labbra",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/labbra.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "capelli",
       "category": "necessita",
       "label": "Accessori capelli e pinzette",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/capelli.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "gommose",
       "category": "dolciumi",
       "label": "Caramelle gommose",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/gommose.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "lecca-lecca",
       "category": "dolciumi",
       "label": "Lecca-lecca",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/lecca-lecca.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "caramelle",
       "category": "dolciumi",
       "label": "Caramelle confezionate",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/caramelle.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "cioccolatini",
       "category": "dolciumi",
       "label": "Cioccolatini",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/cioccolatini.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "piccoli-regali",
       "category": "regali",
       "label": "Piccole candele e portachiavi",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/piccoli-regali.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "giochi",
       "category": "giochi",
       "label": "Giochi e passatempi",
-      "status": "foto-dedicata-originale-da-recuperare",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "Fallback di categoria: src/data/assortment-images.ts",
+      "currentImage": "/images/catalogo/giochi.webp",
       "usedIn": [
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione."
+      "requiredShoot": "Fotografia dedicata della famiglia di articoli effettivamente presente, insieme e dettaglio; nessuno SKU, disponibilità o variante dedotti da una generazione.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     },
     {
       "id": "profumi-raptus",
       "category": "profumi",
       "label": "Profumi Raptus",
-      "status": "originali-autentici-e-diritti-da-acquisire",
+      "status": "composizione-fotografica-editoriale-generata",
       "phase": 2,
       "priority": "alta",
-      "currentImage": "/images/studies/fragrance-paper-study.webp",
+      "currentImage": "/images/catalogo/profumi-raptus.webp",
       "reference": "docs/ricognizione/raptus-sources.json",
       "usedIn": [
-        "Profumi Raptus IT/EN",
         "Catalogo IT/EN",
-        "Scheda famiglia IT/EN"
+        "Scheda famiglia IT/EN",
+        "Richiami nelle categorie IT/EN"
       ],
-      "requiredShoot": "Foto autentiche e autorizzate delle fragranze e delle confezioni realmente presenti, con nome e formato leggibili. L’utente conferma tutte le 28 denominazioni dei profumi per persona, senza attestare quantità o ogni formato. Lo studio generico attuale non riproduce un flacone Raptus. Acquisire gli originali e i diritti d’uso prima di sostituirlo; non generare prodotti, etichette o loghi del marchio."
+      "requiredShoot": "Foto autentiche e autorizzate delle fragranze e delle confezioni realmente presenti, con nome e formato leggibili. L’utente conferma tutte le 28 denominazioni dei profumi per persona, senza attestare quantità o ogni formato. Lo studio generico attuale non riproduce un flacone Raptus. Acquisire gli originali e i diritti d’uso prima di sostituirlo; non generare prodotti, etichette o loghi del marchio.",
+      "generationManifest": "docs/identita/catalog-photography-2026-10-14.json"
     }
   ],
   "brandSpecificAssets": [
@@ -687,5 +738,33 @@
     "Bagagli: arrivo, consegna, ritiro; non mostrare dati di prenotazioni o spazi riservati.",
     "26 famiglie catalogo: insieme e dettaglio degli articoli presenti, colori e marchi reali; per i profumi Raptus acquisire originali autentici e diritti delle immagini e del logo.",
     "Versioni landscape, portrait e dettagli con spazio per copy; originali ad alta risoluzione."
+  ],
+  "catalogProducts": [
+    {
+      "id": "proteggi-fili-animaletti-akena",
+      "status": "shooting-ricreato-da-riferimenti-reali-utente",
+      "paths": [
+        "/images/catalogo/proteggi-fili-in-uso.webp",
+        "/images/catalogo/proteggi-fili-dettaglio.webp",
+        "/images/catalogo/proteggi-fili-varianti.webp"
+      ],
+      "reference": [
+        "IMG_5342.jpeg",
+        "IMG_5346.jpeg",
+        "IMG_5347.jpeg",
+        "IMG_5349.jpeg"
+      ],
+      "verifiedFacts": [
+        "Prodotto proteggi fili e forme nell’espositore",
+        "Selezionato e distribuito da AkenA",
+        "Prezzo esposto 3,50 €"
+      ],
+      "limits": "Foto ricreate, non attestazione di stock o del materiale. Compatibilità, variante e prezzo aggiornato si verificano in negozio.",
+      "usedIn": [
+        "Catalogo IT/EN",
+        "Scheda prodotto IT/EN",
+        "Accessori telefono IT/EN"
+      ]
+    }
   ]
 }

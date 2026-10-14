@@ -14,8 +14,8 @@ const pipe=slug==='pipe-e-tabacchi-da-pipa';
    <p class="education-subtitle">{pipe?text(lang,'Materiali, botanica e storia.','Materials, botany and history.'):text(lang,'Struttura, termini e fonti.','Structure, terminology and sources.')}</p>
    <p class="education-intro">{pipe?text(lang,'Dall’Erica arborea alla sepiolite: guide brevi per leggere i materiali e distinguere l’oggetto dal suo contenuto.','From Erica arborea to sepiolite: concise guides to materials and the distinction between an object and its contents.'):text(lang,'Un percorso nel linguaggio: le parti, le denominazioni e le informazioni da verificare nelle fonti.','A path through the language: components, names and information to check against the sources.')}</p>
    <nav class="education-paths" aria-label={text(lang,'Esplora questa area','Explore this area')}>
-    <a href="#atlante">{text(lang,'Apri le guide','Open the guides')} <span aria-hidden="true">↓</span></a>
-    <a href="#norme">{text(lang,'Norme e confezioni','Rules and packaging')} <span aria-hidden="true">↓</span></a>
+    <a href="#atlante">{text(lang,'Apri le guide','Open the guides')} </a>
+    <a href="#norme">{text(lang,'Norme e confezioni','Rules and packaging')} </a>
    </nav>
   </div>
   <div class:list={['education-material',!pipe&&'education-material--photo']}>{pipe?<VisualStudy id="botanical-erica-study" lang={lang} variant="inset" loading="eager"/>:<CigarPhoto name="sigaro" group="Altre denominazioni" lang={lang} loading="eager"/>}</div>

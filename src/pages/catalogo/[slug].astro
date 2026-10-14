@@ -1,5 +1,6 @@
 ---
-import Product from '../../components/Product.astro';import {getProductBySlug} from '../../lib/store.mjs';
+import Product from '../../components/Product.astro';import {getProducts,getProductBySlug} from '../../lib/catalog.mjs';
+export function getStaticPaths(){return getProducts({publicOnly:true}).map(p=>({params:{slug:p.slug}}));}
 if(!getProductBySlug(Astro.params.slug))return new Response(null,{status:404});
 ---
 <Product slug={Astro.params.slug} lang="it"/>

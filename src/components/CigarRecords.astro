@@ -12,7 +12,7 @@ const groupLabel=(name:string)=>name==='Denominazioni da completare'?text(lang,n
  </div>
  <div class="records-groups">{groups.map((group,i)=><details open={i===0}>
   <summary><span class="record-group-name">{groupLabel(group.name)}</span><span class="record-group-count">{group.records.length} {text(lang,group.records.length===1?'voce':'voci',group.records.length===1?'record':'records')}</span><span class="record-toggle" aria-hidden="true"></span></summary>
-  <div class="record-links">{group.records.map(r=><a href={pathFor(`sigari/${r.slug}`,lang)}><span class="record-name">{r.name}</span><span class="record-action">{text(lang,'Apri scheda','Open record')}<span aria-hidden="true">→</span></span></a>)}</div>
+  <div class="record-links">{group.records.map(r=><a href={pathFor(`sigari/${r.slug}`,lang)}><span class="record-name">{r.name}</span><span class="record-action">{text(lang,'Apri scheda','Open record')}</span></a>)}</div>
  </details>)}</div>
 </section>
 <style>

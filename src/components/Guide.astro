@@ -27,7 +27,7 @@ const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,ti
    <h1>{g.title[l]}</h1>
    <p class="reference-summary">{g.intro[l]}</p>
    <div class="reference-meta"><span>{g.sections.length} {text(lang,'sezioni','sections')}</span><span>{text(lang,'Lettura stimata','Estimated reading time')}: {readingMinutes} min</span></div>
-   <a class="reference-start" href="#informazione-0">{text(lang,'Leggi la guida','Read the guide')} <span aria-hidden="true">↓</span></a>
+   <a class="reference-start" href="#informazione-0">{text(lang,'Leggi la guida','Read the guide')} </a>
   </div>
   <div class="reference-cover-art"><EditorialArt visual={visual} lang={lang} loading="eager"/></div>
  </header>
@@ -38,9 +38,9 @@ const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,ti
     <span class="reference-section-number" aria-hidden="true">{String(i+1).padStart(2,'0')}</span>
     <div><h2>{s[0][l]}</h2><p>{s[1][l]}</p></div>
    </section>)}
-   {categories.length>0&&<section class="reference-related"><p class="reference-section-label">{text(lang,'Percorsi collegati','Related paths')}</p><h2>{informationGuide?text(lang,'Continua la consultazione.','Continue reading.'):text(lang,'Dalla guida alla categoria.','From guide to category.')}</h2><div class="reference-related-grid">{categories.map(p=><a href={pathFor(p!.slug,lang)}><span class="reference-link-type">{informationGuide?text(lang,'Area informativa','Information area'):text(lang,'Categoria','Category')}</span><strong>{lang==='it'?p!.it:p!.en}</strong><span class="reference-link-action">{informationGuide?text(lang,'Apri l’area','Open the area'):text(lang,'Esplora la categoria','Explore the category')} <span aria-hidden="true">→</span></span></a>)}</div></section>}
+   {categories.length>0&&<section class="reference-related"><p class="reference-section-label">{text(lang,'Percorsi collegati','Related paths')}</p><h2>{informationGuide?text(lang,'Continua la consultazione.','Continue reading.'):text(lang,'Dalla guida alla categoria.','From guide to category.')}</h2><div class="reference-related-grid">{categories.map(p=><a href={pathFor(p!.slug,lang)}><span class="reference-link-type">{informationGuide?text(lang,'Area informativa','Information area'):text(lang,'Categoria','Category')}</span><strong>{lang==='it'?p!.it:p!.en}</strong><span class="reference-link-action">{informationGuide?text(lang,'Apri l’area','Open the area'):text(lang,'Esplora la categoria','Explore the category')} </span></a>)}</div></section>}
    <OfficialSources sources={g.sources||[]} lang={lang} research={researchGuide} technical={technicalGuide} checked={researchGuide||technicalGuide?'11 ottobre 2026':undefined}/>
-   {informationGuide?<div class="reference-return"><a href={pathFor(g.parent,lang)}><span aria-hidden="true">←</span>{text(lang,'Torna all’area informativa','Back to the information area')}</a></div>:<div class="reference-visit"><div><p class="reference-section-label">{text(lang,'Prima della visita','Before your visit')}</p><h2>{text(lang,'Una richiesta precisa.','A clear request.')}</h2><p>{text(lang,'Verifica la tua richiesta prima di passare.','Check your request before visiting.')}</p></div><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Informazioni per la visita','Plan your visit')}</a></div>}
+   {informationGuide?<div class="reference-return"><a href={pathFor(g.parent,lang)}>{text(lang,'Torna all’area informativa','Back to the information area')}</a></div>:<div class="reference-visit"><div><p class="reference-section-label">{text(lang,'Prima della visita','Before your visit')}</p><h2>{text(lang,'Una richiesta precisa.','A clear request.')}</h2><p>{text(lang,'Verifica la tua richiesta prima di passare.','Check your request before visiting.')}</p></div><a class="button primary" href={pathFor('contatti',lang)}>{text(lang,'Informazioni per la visita','Plan your visit')}</a></div>}
   </article>
  </div>
 </div>

@@ -18,7 +18,7 @@ export const familyPresentations: Record<string, FamilyPresentation> = {
     checkNotes: [
       ['Confronta il dettaglio indicato sul singolo articolo: una famiglia può riunire formati diversi.', 'Compare the detail on the individual item: one family may include different sizes.'],
       ['Parti dall’uso che ne farai e leggi le indicazioni della confezione.', 'Start with its intended use and read the information on the pack.'],
-      ['Controlla cosa comprende la confezione, senza dedurlo dall’illustrazione di categoria.', 'Check what the pack contains rather than inferring it from the category illustration.'],
+      ['Controlla cosa comprende la confezione, senza dedurlo dalla foto illustrativa.', 'Check what the pack contains rather than inferring it from the illustrative photograph.'],
     ],
   },
   souvenir: {

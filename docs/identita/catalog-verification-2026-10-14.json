@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-14",
+  "checks": {
+    "astroCheck": "104 files; 0 errors, warnings or hints",
+    "applicationTests": "6 passed",
+    "staticBuild": "220 HTML pages",
+    "categorySeo": "20 categories; 42 contextual links; 26 guide links; passed",
+    "familyPages": "52 photographic family pages IT/EN",
+    "productPages": "2 cable-protector product pages IT/EN, each with 3 gallery images",
+    "photoFiles": "29 selected images; 87 WebP variants, dimensions and existence verified",
+    "linkedArrowCleanup": "All linked controls across 220 HTML pages checked",
+    "bounce": "Original https://bounce.com/stores/bologna/7ZRpUp preserved"
+  },
+  "verificationLimit": "Browser QA was not run in this managed environment because the required browser-control plugin is unavailable."
+}

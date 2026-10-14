@@ -1,14 +1,19 @@
 ---
-import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';import {pathFor,text,type Lang} from '../data/shop';
+import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';import {pathFor,text,type Lang} from '../data/shop';import {catalogPhotoFor} from '../data/catalog-photography';
+import {catalogProducts} from '../data/catalog-products.mjs';
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};const families=catalogAssortment.filter(p=>p.page===slug);const l=lang==='it'?0:1;
+const products=catalogProducts.filter(p=>families.some(family=>family.category===p.category));
 const categoryLabel=(id:string)=>{const group=catalogGroups.find(g=>g.id===id);return group?(lang==='it'?group.it:group.en):''};
 ---
 {families.length>0&&<section class="family-links" aria-labelledby="family-links-title">
- <header class="family-links-heading"><p class="family-section-label">{text(lang,'Famiglie di articoli','Item families')}</p><h2 id="family-links-title">{text(lang,'Esplora le schede.','Explore the records.')}</h2><p>{text(lang,'Ogni scheda descrive una famiglia e i dettagli da confrontare sul singolo articolo.','Each record describes a family and the details to compare on an individual item.')}</p></header>
- <div class="family-link-grid">{families.map(p=><a class="family-link-card" href={pathFor(`assortimento/${p.id}`,lang)}>
-  <div class="family-card-top"><img src={p.category==='profumi'?'/images/studies/fragrance-paper-study-768.webp':`/brand/ui/${p.art}-320.webp`} width="320" height="320" alt="" aria-hidden="true" loading="lazy"/><p class="family-card-label"><span>{text(lang,'Famiglia','Family')}</span>{categoryLabel(p.category)}</p></div>
+ <header class="family-links-heading"><p class="family-section-label">{text(lang,'Articoli e famiglie','Items and families')}</p><h2 id="family-links-title">{text(lang,'Esplora le schede.','Explore the records.')}</h2><p>{text(lang,'Trova l’articolo che ti serve e scopri cosa confrontare in negozio.','Find the item you need and discover what to compare in store.')}</p></header>
+ <div class="family-link-grid">
+ {products.map(p=><a class="family-link-card" href={pathFor(`catalogo/${p.slug}`,lang)}><img class="family-card-photo" src={p.image} width="1440" height="960" alt={lang==='it'?p.imageAltIt:p.imageAltEn} loading="lazy"/><div class="family-card-top"><p class="family-card-label"><span>{text(lang,'Prodotto','Product')}</span>{categoryLabel(p.category)}</p></div><h3>{lang==='it'?p.nameIt:p.nameEn}</h3><p class="family-card-description">{text(lang,'Un piccolo tocco di colore per il cavo di ricarica. Selezionato e distribuito da AkenA.','A little touch of colour for your charging cable. Selected and distributed by AkenA.')}</p><span class="family-link-action">{text(lang,'Apri scheda','Open record')}</span></a>)}
+ {families.map(p=><a class="family-link-card" href={pathFor(`assortimento/${p.id}`,lang)}>
+  <img class="family-card-photo" src={catalogPhotoFor(p.id).src} srcset={catalogPhotoFor(p.id).srcset} sizes="(max-width: 680px) calc(100vw - 90px), (max-width: 1080px) 40vw, 350px" width="1440" height="960" alt={p.name[l]} loading="lazy"/>
+  <div class="family-card-top"><p class="family-card-label"><span>{text(lang,'Famiglia','Family')}</span>{categoryLabel(p.category)}</p></div>
   <h3>{p.name[l]}</h3><p class="family-card-description">{p.description[l]}</p>
-  <span class="family-link-action">{text(lang,'Apri scheda','Open record')}<span aria-hidden="true">→</span></span>
+  <span class="family-link-action">{text(lang,'Apri scheda','Open record')}</span>
  </a>)}</div>
 </section>}
 <style>
@@ -32,5 +37,5 @@ const categoryLabel=(id:string)=>{const group=catalogGroups.find(g=>g.id===id);r
  @media(max-width:680px){.family-links{padding:22px;margin-block:30px 38px}.family-link-grid{grid-template-columns:minmax(0,1fr);gap:17px}.family-link-card{padding:22px}.family-links h3{font-size:1.75rem}}
  @media(max-width:360px){.family-links{padding:17px}.family-link-card{padding:19px}}
  @media(prefers-reduced-motion:reduce){.family-link-card,.family-link-action>span{transition:none}.family-link-card:hover,.family-link-card:hover .family-link-action>span{transform:none}}
- .family-card-top{display:flex;align-items:center;gap:15px;width:100%;padding-bottom:18px;border-bottom:1px solid var(--family-line);margin-bottom:20px}.family-card-top>img{width:65px;height:65px;object-fit:contain;mix-blend-mode:multiply}.family-card-top .family-card-label{margin:0}.family-links{border-top:3px solid var(--accent)}
+ .family-card-photo{width:100%;aspect-ratio:3/2;object-fit:cover;margin-bottom:21px;border-radius:2px}.family-card-top{width:100%;margin-bottom:18px}.family-card-top .family-card-label{margin:0}.family-links{border-top:3px solid var(--accent)}
 </style>
