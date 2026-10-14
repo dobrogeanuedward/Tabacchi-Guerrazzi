@@ -1,0 +1,7 @@
+---
+import CigarBrandStory from '../../../../components/CigarBrandStory.astro';
+import {cigarBrandStories} from '../../../../data/cigar-brand-stories';
+export const prerender=true;
+export function getStaticPaths(){return cigarBrandStories.map(story=>({params:{slug:story.slug},props:{story}}));}
+---
+<CigarBrandStory story={Astro.props.story} lang="en"/>

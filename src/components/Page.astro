@@ -1,5 +1,6 @@
 ---
 import NeighborhoodLinks from './NeighborhoodLinks.astro';
+import CigarBrandStories from './CigarBrandStories.astro';
 import Base from '../layouts/Base.astro';import BounceBrand from './BounceBrand.astro';import Icon from './Icon.astro';import ChoiceNotes from './ChoiceNotes.astro';import Story from './Story.astro';import {shop,mainPages,pathFor,text,type Lang} from '../data/shop';import {pages,guides} from '../data/pages';import {articles,clusters} from '../data/articles';
 import AssortmentNav from './AssortmentNav.astro';import LuggageCallout from './LuggageCallout.astro';import {bounceUrl} from '../data/assortment';
 import EditorialPhoto from './EditorialPhoto.astro';import CategoryPathways from './CategoryPathways.astro';import {articleCategoryLinks} from '../data/articles';
@@ -38,6 +39,7 @@ const faqs=p.faqs||[];const schema=faqs.length?{'@context':'https://schema.org',
  </nav>}
  {slug==='servizi'&&<LuggageCallout lang={lang}/>}
  {!infoOnly&&<CategoryPathways slug={slug} lang={lang} mode="answer"/>}
+ {slug==='sigari'&&<CigarBrandStories lang={lang}/>}
  {infoOnly&&<MaterialAtlas slug={slug} lang={lang}/>}
  <div id="category-sheets"><FamilyLinks slug={slug} lang={lang}/></div>
  {['idee-regalo','marchi-e-competenze'].includes(slug)&&<aside class="fragrance-path"><div><p class="card-kind">{text(lang,'Profumi · Raptus','Perfumes · Raptus')}</p><h2>{text(lang,'La gamma Raptus, da scegliere in negozio.','The Raptus range, to choose in store.')}</h2><p>{text(lang,'L’intera gamma di profumi per persona è da Guerrazzi. Parti da una preferenza e confronta fragranza, formato e confezione.','Guerrazzi carries the full perfume range for personal use. Start with a preference and compare fragrance, size and packaging.')}</p></div><a class="button quiet" href={pathFor('profumi-raptus',lang)}>{text(lang,'Esplora i profumi Raptus','Explore Raptus perfumes')} </a></aside>}

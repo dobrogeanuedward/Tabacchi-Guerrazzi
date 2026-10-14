@@ -3,13 +3,13 @@ import type {EditorialVisual} from '../data/editorial-visuals';
 interface Props {visual:EditorialVisual;lang?:'it'|'en';loading?:'lazy'|'eager';compact?:boolean;}
 const {visual,lang='it',loading='lazy',compact=false}=Astro.props;
 const l=lang==='it'?0:1;
-const smallWidth=visual.preview?.includes('-960')?960:visual.preview?.includes('-720')?720:visual.preview?.includes('-600')?600:visual.preview?.includes('-320')?320:768;
+const smallWidth=visual.previewWidth||(visual.preview?.includes('-960')?960:visual.preview?.includes('-720')?720:visual.preview?.includes('-600')?600:visual.preview?.includes('-320')?320:768);
 ---
 <figure class:list={['editorial-art',compact&&'editorial-art--compact']}>
  <div class:list={['editorial-art-image',visual.width===visual.height&&'editorial-art-image--square']}>
   <img src={visual.src} srcset={visual.preview?`${visual.preview} ${smallWidth}w, ${visual.src} ${visual.width}w`:undefined} sizes="(max-width: 760px) calc(100vw - 40px), (max-width: 1100px) 45vw, 620px" width={visual.width} height={visual.height} alt={visual.alt[l]} aria-hidden={!visual.alt[l]?'true':undefined} loading={loading} decoding="async"/>
  </div>
- <figcaption><span>{visual.label[l]}</span><p>{visual.caption[l]}</p></figcaption>
+ <figcaption><span>{visual.label[l]}</span><p>{visual.caption[l]}</p>{visual.credit&&<div class="editorial-image-credit"><p>{visual.credit.author} · <a href={visual.credit.licenseUrl} rel="license">{visual.credit.license}</a> · <a href={visual.credit.sourcePage}>Wikimedia Commons</a></p><details><summary>{lang==='it'?'La fotografia':'About the photograph'}</summary><p>{visual.credit.changes[l]}</p></details></div>}</figcaption>
 </figure>
 <style>
  .editorial-art{min-width:0;margin:0;color:var(--ink);--art-rule:color-mix(in srgb,var(--accent) 35%,#ddd4c5)}
@@ -21,5 +21,6 @@ const smallWidth=visual.preview?.includes('-960')?960:visual.preview?.includes('
  .editorial-art figcaption>span>span{padding-inline:7px;font-weight:400}
  .editorial-art figcaption p{font:400 .95rem/1.75 var(--sans);color:#5e5c56;max-width:63ch;margin:0}
  .editorial-art--compact figcaption{padding-top:12px;margin-top:8px}
+ .editorial-image-credit{margin-top:10px}.editorial-image-credit p{font-size:.8rem}.editorial-image-credit a{color:inherit;text-decoration:underline;text-underline-offset:3px}.editorial-image-credit summary{min-height:44px;align-content:center;cursor:pointer;font-size:.85rem}.editorial-image-credit a:focus-visible,.editorial-image-credit summary:focus-visible{outline:2px solid var(--blue);outline-offset:3px}
  @media(max-width:760px){.editorial-art-image--square img{max-height:290px}}
 </style>

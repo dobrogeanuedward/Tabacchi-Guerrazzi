@@ -2,21 +2,24 @@
 import {text,type Lang} from '../data/shop';
 import {leafVisual,namesVisual} from '../data/editorial-visuals';
 import {referenceCigarPhotoForName} from '../data/cigar-reference-photos';
+import CommonsPhoto from './CommonsPhoto.astro';
+import {storyForCigarName} from '../data/cigar-brand-stories';
 interface Props {name:string;group:string;lang?:Lang;loading?:'lazy'|'eager';}
 const {name,lang='it',loading='lazy'}=Astro.props;
 const reference=referenceCigarPhotoForName(name);
+const history=storyForCigarName(name);
 const l=lang==='it'?0:1;
 const generic=['sigaro','sigaretto','cigar','cigarillo'].includes(name.trim().toLowerCase());
 const visual=generic?leafVisual:namesVisual;
 const display=reference||{id:generic?'foglia-struttura':'carta-e-nomi',scope:'thematic-photograph',path:visual.src,preview:visual.preview,width:visual.width,height:visual.height,alt:visual.alt};
 ---
-<figure class:list={['cigar-photo',reference&&'cigar-photo--reference']} data-photo-study={display.id} data-photo-scope={display.scope}>
+{!reference&&history?<CommonsPhoto id={history.photo} lang={lang} loading={loading}/>:<figure class:list={['cigar-photo',reference&&'cigar-photo--reference']} data-photo-study={display.id} data-photo-scope={display.scope}>
  <div class="cigar-photo-frame"><img src={display.path} srcset={display.preview?`${display.preview} ${reference?reference.previewWidth:768}w, ${display.path} ${display.width}w`:undefined} sizes="(max-width: 680px) calc(100vw - 44px), (max-width: 1100px) 44vw, 580px" width={display.width} height={display.height} alt={display.alt[l]} loading={loading} decoding="async"/></div>
  <figcaption>
   <p>{reference?reference.caption[l]:visual.caption[l]}</p>
   {reference&&<details class="cigar-photo-credit"><summary>{text(lang,'Crediti fotografici','Photograph credits')}</summary><p><a href={reference.sourcePage}>{reference.fileTitle}</a> — <a href={reference.authorUrl}>{reference.author}</a>{reference.authorAlias&&<span> ({reference.authorAlias})</span>} · <a href={reference.licenseUrl} rel="license">{reference.license}</a>.</p><p>{reference.changes[l]}</p></details>}
  </figcaption>
-</figure>
+</figure>}
 <style>
  .cigar-photo{margin:0;min-width:0;color:#493928}
  .cigar-photo-frame{padding:12px;border:1px solid #c7b59c;background:#fcf9f0}

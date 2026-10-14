@@ -4,7 +4,7 @@ import {join} from 'node:path';
 let total=0;
 for(const prefix of ['', 'en'])for(const section of ['assortimento','sigari']){
  const directory=join('dist',prefix,section);
- const entries=(await readdir(directory,{withFileTypes:true})).filter(e=>e.isDirectory());
+ const entries=(await readdir(directory,{withFileTypes:true})).filter(e=>e.isDirectory()&&e.name!=='storie');
  assert.equal(entries.length,section==='sigari'?34:26);
  for(const entry of entries){
   const html=await readFile(join(directory,entry.name,'index.html'),'utf8');

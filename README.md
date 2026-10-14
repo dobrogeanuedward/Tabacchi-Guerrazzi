@@ -42,6 +42,8 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 - 21 pagine principali in italiano e inglese, comprese le nove nuove categorie.
 - 14 guide in italiano e inglese: sei percorsi pratici, tre schede normative e cinque guide su materiali, storia, botanica e lessico.
 - 26 schede di famiglie non regolamentate e 34 voci informative sui sigari, ciascuna IT/EN.
+- Otto storie documentarie sui marchi, con pagine IT/EN in `/sigari/storie/`: Davidoff, Zino, Camacho, Plasencia, La Aurora e Príncipes, León Jimenes, A. Flores/PDR, Montosa e Parcero. Contenuti di storia e lessico, senza dati di giacenza o inviti all’acquisto.
+- Otto fotografie Wikimedia Commons in 16 varianti WebP, con autore, licenza, fonte, revisione e didascalia; metadati in `src/data/commons-photography.json` e manifest in `docs/identita/brand-stories-photography-2026-10-14.json`.
 - 18 articoli italiani in sette cluster: Servizi pratici, Idee regalo, Giochi e giocattoli, Negozio e quartiere, Tabacco: informazioni e norme, Materiali e storia, Lessico e fonti.
 - Conferma 18+ nelle sezioni pertinenti, con sessionStorage e uscita alla home; nessuna identità raccolta.
 - Area tabacco esclusivamente informativa, con fonti pubbliche: nessuna offerta, invito al consumo o ordine.
@@ -49,7 +51,7 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 - Deposito bagagli Bounce: scheda ufficiale Palazzo Ercolani, stesso indirizzo del negozio; prezzi e orari restano sulla piattaforma.
 - Ricognizione di 21 foto uniche, 134 osservazioni con marche e livelli di certezza in `docs/ricognizione/`.
 
-L’export con la categoria Raptus contiene 214 file HTML: 213 pagine con `index.html` più la 404. Il totale comprende le versioni IT/EN, il diario, privacy e cookie; non rappresenta 214 contenuti editoriali distinti. La mappa aggiornata delle route è in `docs/identita/asset-coverage-map.json`.
+L’export con le storie dei marchi contiene 243 file HTML: 242 pagine con `index.html` più la 404. Il totale comprende le versioni IT/EN, il diario, privacy e cookie; non rappresenta 243 contenuti editoriali distinti. La mappa aggiornata delle route è in `docs/identita/asset-coverage-map.json`.
 
 I dati dell’attività sono centralizzati in `src/data/shop.ts`; categorie in `src/data/assortment.ts`. Telefono, email, ragione sociale, P. IVA, orari ufficiali e recensioni approvate attendono conferma. Anche l’operatività puntuale di pagamenti e ricariche richiede conferma del negozio. Marchi riconoscibili sono documentati nel rilievo fotografico, non dedotti dalle immagini AI. Le immagini editoriali non rappresentano disponibilità di prodotti; le foto originali degli interni restano riferimenti e i relativi file devono ancora essere recuperati per le sostituzioni.
 

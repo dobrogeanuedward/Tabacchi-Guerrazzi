@@ -1,0 +1,282 @@
+{
+  "buende-museum": {
+    "id": "buende-museum",
+    "path": "/images/brand-stories/buende-museum.webp",
+    "preview": "/images/brand-stories/buende-museum-640.webp",
+    "width": 1024,
+    "height": 768,
+    "previewWidth": 640,
+    "previewHeight": 480,
+    "caption": [
+      "Il Deutsches Tabak- und Zigarrenmuseum di Bünde.",
+      "The Deutsches Tabak- und Zigarrenmuseum in Bünde."
+    ],
+    "alt": [
+      "Facciata a graticcio del museo del tabacco e dei sigari a Bünde, Germania",
+      "The timber-framed tobacco and cigar museum in Bünde, Germany"
+    ],
+    "author": "Ohannes",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Ohannes",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fileTitle": "Tabakmuseum.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Tabakmuseum.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3ATabakmuseum.jpg&oldid=1247106249",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/39/Tabakmuseum.jpg",
+    "originalSha1": "7a5c92a57310044ec89b5cc6bde33a6399fae0b4",
+    "date": "2007-04-15",
+    "scope": "place",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 228154,
+    "previewBytes": 88014
+  },
+  "santiago-cathedral": {
+    "id": "santiago-cathedral",
+    "path": "/images/brand-stories/santiago-cathedral.webp",
+    "preview": "/images/brand-stories/santiago-cathedral-640.webp",
+    "width": 1536,
+    "height": 1152,
+    "previewWidth": 640,
+    "previewHeight": 480,
+    "caption": [
+      "La cattedrale Santiago Apóstol, a Santiago de los Caballeros, 2014.",
+      "Santiago Apóstol cathedral in Santiago de los Caballeros, 2014."
+    ],
+    "alt": [
+      "Facciata della cattedrale Santiago Apóstol a Santiago de los Caballeros",
+      "The façade of Santiago Apóstol cathedral in Santiago de los Caballeros"
+    ],
+    "author": "Jos1950",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Jos1950",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fileTitle": "Catedral Santiago Apóstol-IMG 0136.JPG",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Catedral_Santiago_Ap%C3%B3stol-IMG_0136.JPG",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3ACatedral%20Santiago%20Ap%C3%B3stol-IMG%200136.JPG&oldid=1036209997",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Catedral_Santiago_Ap%C3%B3stol-IMG_0136.JPG",
+    "originalSha1": "f8b26e257c00c92cc632765b2979c88fab832b5f",
+    "date": "2014-03-27 12:03:48",
+    "scope": "place",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 235748,
+    "previewBytes": 47192
+  },
+  "la-aurora-band": {
+    "id": "la-aurora-band",
+    "path": "/images/brand-stories/la-aurora-band.webp",
+    "preview": "/images/brand-stories/la-aurora-band-640.webp",
+    "width": 800,
+    "height": 822,
+    "previewWidth": 640,
+    "previewHeight": 658,
+    "caption": [
+      "La fascetta La Aurora, in una fotografia del 2014.",
+      "A La Aurora band in a 2014 photograph."
+    ],
+    "alt": [
+      "Fascetta con il leone e il nome La Aurora in una fotografia del 2014",
+      "A band with the lion and La Aurora name in a 2014 photograph"
+    ],
+    "author": "Didia",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Didia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fileTitle": "La Aurora Cigar.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:La_Aurora_Cigar.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3ALa%20Aurora%20Cigar.jpg&oldid=1151865627",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/24/La_Aurora_Cigar.jpg",
+    "originalSha1": "fc293fdb8211f6b3fe4267a19d3f754179e7a80a",
+    "date": "2014-06-09",
+    "scope": "historical-brand-detail",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 24678,
+    "previewBytes": 13182
+  },
+  "la-aurora-factory": {
+    "id": "la-aurora-factory",
+    "path": "/images/brand-stories/la-aurora-factory.webp",
+    "preview": "/images/brand-stories/la-aurora-factory-640.webp",
+    "width": 1536,
+    "height": 1152,
+    "previewWidth": 640,
+    "previewHeight": 480,
+    "caption": [
+      "La sede storica La Aurora a Santiago, nella fotografia del 2006.",
+      "La Aurora’s historic site in Santiago, photographed in 2006."
+    ],
+    "alt": [
+      "Edificio storico La Aurora con giardino a Santiago de los Caballeros",
+      "The historic La Aurora building and garden in Santiago de los Caballeros"
+    ],
+    "author": "hex1848",
+    "authorUrl": "https://www.flickr.com/photos/hex1848/",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "fileTitle": "Aurora cigar factory, Santiago, Dominican Republic.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Aurora_cigar_factory,_Santiago,_Dominican_Republic.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3AAurora%20cigar%20factory%2C%20Santiago%2C%20Dominican%20Republic.jpg&oldid=1282678128",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/15/Aurora_cigar_factory%2C_Santiago%2C_Dominican_Republic.jpg",
+    "originalSha1": "adc28ac9135e450b8b6fb7bd1f92df872966e17b",
+    "date": "2006-07-25",
+    "scope": "historical-place",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 322216,
+    "previewBytes": 59490
+  },
+  "esteli": {
+    "id": "esteli",
+    "path": "/images/brand-stories/esteli.webp",
+    "preview": "/images/brand-stories/esteli-640.webp",
+    "width": 1536,
+    "height": 1152,
+    "previewWidth": 640,
+    "previewHeight": 480,
+    "caption": [
+      "Estelí vista dalle alture del Tisey, Nicaragua.",
+      "Estelí seen from the Tisey hills, Nicaragua."
+    ],
+    "alt": [
+      "Panorama di Estelí, in Nicaragua, dalle alture di Tisey-La Estanzuela",
+      "A panorama of Estelí, Nicaragua, from the Tisey-La Estanzuela hills"
+    ],
+    "author": "Tisey",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Tisey",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "fileTitle": "Esteli Nicaragua Skyline from Tisey.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Esteli_Nicaragua_Skyline_from_Tisey.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3AEsteli%20Nicaragua%20Skyline%20from%20Tisey.jpg&oldid=1167384955",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Esteli_Nicaragua_Skyline_from_Tisey.jpg",
+    "originalSha1": "284e3f40610cdde47ab5de7b84b835ce531bb24d",
+    "date": "2014-08-04 19:11:57",
+    "scope": "place",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 306432,
+    "previewBytes": 52688
+  },
+  "zino-portrait": {
+    "id": "zino-portrait",
+    "path": "/images/brand-stories/zino-portrait.webp",
+    "preview": "/images/brand-stories/zino-portrait-640.webp",
+    "width": 1340,
+    "height": 978,
+    "previewWidth": 640,
+    "previewHeight": 467,
+    "caption": [
+      "Zino Davidoff, 1984.",
+      "Zino Davidoff, 1984."
+    ],
+    "alt": [
+      "Zino Davidoff nel ritratto fotografato da Claude Richardet nel 1984",
+      "Zino Davidoff in Claude Richardet’s 1984 photograph"
+    ],
+    "author": "Claude Richardet",
+    "authorUrl": null,
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "fileTitle": "Zino Davidoff, 1984.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Zino_Davidoff,_1984.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3AZino%20Davidoff%2C%201984.jpg&oldid=1068027219",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5b/Zino_Davidoff%2C_1984.jpg",
+    "originalSha1": "f8743aee3f7d2f4124efa0ba6be7838e9a1b555b",
+    "date": "1984",
+    "scope": "biography",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 403688,
+    "previewBytes": 57122
+  },
+  "danli": {
+    "id": "danli",
+    "path": "/images/brand-stories/danli.webp",
+    "preview": "/images/brand-stories/danli-640.webp",
+    "width": 1382,
+    "height": 1382,
+    "previewWidth": 640,
+    "previewHeight": 640,
+    "caption": [
+      "Veduta di Danlí, Honduras.",
+      "A view of Danlí, Honduras."
+    ],
+    "alt": [
+      "Veduta della parte meridionale di Danlí, in Honduras",
+      "A view of southern Danlí, Honduras"
+    ],
+    "author": "Fernan bth",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Fernan_bth",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fileTitle": "Danlí.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Danl%C3%AD.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3ADanl%C3%AD.jpg&oldid=1164748550",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Danl%C3%AD.jpg",
+    "originalSha1": "c3b7c0728efa70d2d3a9575823b8204191656aae",
+    "date": "2025-08-28 15:50:57",
+    "scope": "place",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 388220,
+    "previewBytes": 85294
+  },
+  "geneva-street": {
+    "id": "geneva-street",
+    "path": "/images/brand-stories/geneva-street.webp",
+    "preview": "/images/brand-stories/geneva-street-640.webp",
+    "width": 1536,
+    "height": 2048,
+    "previewWidth": 640,
+    "previewHeight": 853,
+    "caption": [
+      "Ginevra, giugno 2026.",
+      "Geneva, June 2026."
+    ],
+    "alt": [
+      "Una strada di Ginevra con l’insegna Davidoff of Geneva",
+      "A Geneva street with the Davidoff of Geneva sign"
+    ],
+    "author": "GinoOnassis",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:GinoOnassis",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fileTitle": "1 a street geneva june 2026.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:1_a_street_geneva_june_2026.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3A1%20a%20street%20geneva%20june%202026.jpg&oldid=1233407564",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2c/1_a_street_geneva_june_2026.jpg",
+    "originalSha1": "858b0fca2bef672ba2f7b0f29f11e36c28452ac6",
+    "date": "2026-06-15",
+    "scope": "place",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale; il file mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing; the file retains the stated licence."
+    ],
+    "bytes": 601672,
+    "previewBytes": 105504
+  }
+}

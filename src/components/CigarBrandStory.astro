@@ -1,0 +1,50 @@
+---
+import Base from '../layouts/Base.astro';
+import CommonsPhoto from './CommonsPhoto.astro';
+import OfficialSources from './OfficialSources.astro';
+import BrandSignature from './BrandSignature.astro';
+import {cigarBrandStories,type CigarBrandStory as Story} from '../data/cigar-brand-stories';
+import {commonsPhotographs} from '../data/commons-photography';
+import {pathFor,text,shop,type Lang} from '../data/shop';
+interface Props {story:Story;lang?:Lang;}
+const {story,lang='it'}=Astro.props;const l=lang==='it'?0:1;
+const slug=`sigari/storie/${story.slug}`;const photo=commonsPhotographs[story.photo];
+const configured=import.meta.env.PUBLIC_SITE_URL;
+const url=configured?new URL(pathFor(slug,lang),configured).href:undefined;
+const continuation=cigarBrandStories.filter(s=>s.slug!==story.slug).slice(0,3);
+const imageObject={'@type':'ImageObject',...(configured?{contentUrl:new URL(photo.path,configured).href}:{}),caption:photo.caption[l],creator:{'@type':'Person',name:photo.author},creditText:photo.author,license:photo.licenseUrl,acquireLicensePage:photo.sourcePage};
+const schema=[{'@context':'https://schema.org','@type':'Article',headline:story.title[l],description:story.summary[l],inLanguage:lang,datePublished:'2026-10-14',dateModified:'2026-10-14',articleSection:text(lang,'Storia e denominazioni','History and names'),about:story.names.map(name=>({'@type':'Thing',name})),citation:story.sources.map(source=>source.url),author:{'@type':'Organization',name:shop.name},publisher:{'@type':'Organization',name:shop.name},image:imageObject,...(url?{url,mainEntityOfPage:url}:{})},{'@context':'https://schema.org','@type':'FAQPage',mainEntity:story.faqs.map(f=>({'@type':'Question',name:f.question[l],acceptedAnswer:{'@type':'Answer',text:f.answer[l]}}))}];
+---
+<Base title={story.title[l]} description={story.summary[l]} slug={slug} lang={lang} theme="cedro" image={photo.path} schema={schema}>
+ <div class="breadcrumb wrap"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor('sigari',lang)}>{text(lang,'Storie e parole del sigaro','Cigar stories and words')}</a><span>/</span><span>{story.names.join(' · ')}</span></div>
+ <header class="brand-story-cover wrap"><div class="brand-story-copy"><p class="eyebrow">{text(lang,'Storie dei marchi','Brand stories')} <span class="story-age">18+</span></p><h1>{story.title[l]}</h1><p class="brand-story-intro">{story.intro[l]}</p><p class="story-location">{story.place[l]}</p><a class="story-start" href="#storia">{text(lang,'Comincia a leggere','Start reading')}</a></div><CommonsPhoto id={story.photo} lang={lang} loading="eager"/></header>
+ <div class="brand-story-reading wrap" id="storia"><nav class="story-outline" aria-label={text(lang,'In questa storia','In this story')}><p>{text(lang,'In questa storia','In this story')}</p>{story.sections.map((s,i)=><a href={`#capitolo-${i}`}>{s.title[l]}</a>)}</nav><article class="story-prose">{story.sections.map((s,i)=><section id={`capitolo-${i}`}><h2>{s.title[l]}</h2><p>{s.body[l]}</p></section>)}<section class="story-questions"><h2>{text(lang,'Due domande, due risposte.','Two questions, two answers.')}</h2>{story.faqs.map(f=><details><summary>{f.question[l]}</summary><p>{f.answer[l]}</p></details>)}</section><OfficialSources sources={story.sources} lang={lang}/><BrandSignature lang={lang}/></article></div>
+ <section class="brand-story-continuation wrap"><h2>{text(lang,'La storia continua.','The story continues.')}</h2><div>{continuation.map(s=><a href={pathFor(`sigari/storie/${s.slug}`,lang)}><span>{s.place[l]}</span><h3>{s.title[l]}</h3><span>{text(lang,'Leggi la storia','Read the story')}</span></a>)}</div><a class="story-return" href={pathFor('sigari',lang)+'#storie-dei-marchi'}>{text(lang,'Torna alle storie dei marchi','Back to brand stories')}</a></section>
+</Base>
+<style>
+ .brand-story-cover{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(35px,5vw,80px);padding-block:32px 58px;border-bottom:1px solid #d0c4b4;color:#493928}
+ .brand-story-copy{min-width:0}.brand-story-copy .eyebrow{display:flex;flex-wrap:wrap;gap:20px;align-items:center;margin-bottom:24px}
+ .story-age{font:600 .85rem/1.4 var(--sans);border:1px solid #b3a087;padding:4px 10px;border-radius:30px;white-space:nowrap}
+ .brand-story-cover h1{font:400 clamp(2.6rem,4.6vw,4.4rem)/1.08 var(--display);letter-spacing:-.035em;color:#5b402b;margin:0 0 28px;text-wrap:balance;overflow-wrap:anywhere}
+ .brand-story-intro{font-size:1.12rem;line-height:1.9;max-width:50ch;margin:0 0 22px}
+ .story-location{font-size:.9rem;line-height:1.7;color:#766352;margin:0}
+ .story-start,.story-return{display:inline-flex;min-height:44px;align-items:center;margin-top:24px;border-bottom:1px solid #947453;font-weight:600;font-size:.9rem;color:#5b402b}
+ .brand-story-reading{display:grid;grid-template-columns:220px minmax(0,1fr);gap:clamp(35px,6vw,85px);padding-block:48px 30px;color:#493928;scroll-margin-top:30px}
+ .story-outline{position:sticky;top:28px;align-self:start;border-top:2px solid #896543;padding-top:18px}
+ .story-outline p{font-size:.85rem;font-weight:600;margin:0 0 12px}
+ .story-outline a{display:block;padding:16px 0;min-height:44px;border-bottom:1px solid #d0c4b4;font-size:.9rem;line-height:1.7;color:#5b402b}
+ .story-outline a:hover{text-decoration:underline;text-underline-offset:4px}
+ .story-prose{min-width:0;max-width:800px}
+ .story-prose>section{padding:27px 0 34px;border-top:1px solid #d0c4b4;scroll-margin-top:30px}
+ .story-prose>section:first-child{border-top:3px solid #896543}
+ .story-prose h2,.brand-story-continuation>h2{font:400 clamp(1.9rem,3vw,2.65rem)/1.16 var(--display);letter-spacing:-.025em;color:#5b402b;margin:0 0 22px}
+ .story-prose p{font-size:1.05rem;line-height:1.95;max-width:65ch;margin:0}
+ .story-questions details{border-top:1px solid #d0c4b4}.story-questions summary{cursor:pointer;min-height:60px;padding:17px 0;font-size:1rem;font-weight:600;line-height:1.7}.story-questions details p{font-size:.95rem;padding:0 0 22px}
+ .brand-story-continuation{padding-block:20px 60px;color:#493928}
+ .brand-story-continuation>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:28px}
+ .brand-story-continuation>div>a{display:flex;flex-direction:column;gap:18px;padding:24px 0;border-block:1px solid #d0c4b4;color:#5b402b}
+ .brand-story-continuation span{font-size:.85rem;line-height:1.6}.brand-story-continuation h3{font:400 1.65rem/1.25 var(--display);letter-spacing:-.02em;margin:0}.brand-story-continuation a>span:last-child{margin-top:auto;font-weight:600}
+ .story-outline a:focus-visible,.story-start:focus-visible,.story-return:focus-visible,.story-questions summary:focus-visible,.brand-story-continuation a:focus-visible{outline:2px solid var(--blue);outline-offset:4px}
+ @media(max-width:950px){.brand-story-cover{gap:32px}.brand-story-reading{grid-template-columns:190px minmax(0,1fr);gap:32px}}
+ @media(max-width:760px){.brand-story-cover,.brand-story-reading{grid-template-columns:1fr}.brand-story-cover{padding-block:20px 38px;gap:32px}.brand-story-cover h1{font-size:clamp(2.65rem,8vw,3.6rem)}.brand-story-intro{font-size:1rem}.brand-story-reading{padding-top:30px;gap:32px}.story-outline{position:static;background:#f7f2e9;padding:20px}.story-prose p{font-size:1rem}.brand-story-continuation>div{grid-template-columns:1fr;gap:0}}
+</style>

@@ -36,7 +36,7 @@ for(const [slug,[photo,alt]] of Object.entries(editorialPhotos)){pages[slug].pho
 const localTitles:Record<string,[string,string]>={
  'il-negozio':['Tabaccheria Guerrazzi di Angela, Via Guerrazzi 10/F Bologna','Tabaccheria Guerrazzi di Angela, Via Guerrazzi 10/F Bologna'],
  'servizi':['Servizi e deposito bagagli Bounce a Bologna, Via Guerrazzi','Services and Bounce luggage storage in Bologna, Via Guerrazzi'],
- 'sigari':['Informazioni sui sigari in negozio a Bologna, Via Guerrazzi','Cigar information in store in Bologna, Via Guerrazzi'],
+ 'sigari':['Sigari: storie dei marchi, nomi e lessico','Cigars: brand histories, names and vocabulary'],
  'pipe-e-tabacchi-da-pipa':['Informazioni sui tabacchi da pipa a Bologna, Via Guerrazzi','Pipe tobacco information in Bologna, Via Guerrazzi'],
  'idee-regalo':['Idee regalo e piccoli pensieri a Bologna, Via Guerrazzi','Gift ideas and little keepsakes in Bologna, Via Guerrazzi'],
  'giochi-e-giocattoli':['Giochi e giocattoli a Bologna, Via Guerrazzi','Games and toys in Bologna, Via Guerrazzi'],

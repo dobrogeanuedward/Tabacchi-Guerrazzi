@@ -1,7 +1,9 @@
 import {visualStudies, type VisualStudyId} from './visual-studies';
+import {commonsPhotographs,type CommonsPhotograph} from './commons-photography';
 
 type Pair = [string, string];
-export type EditorialVisual = {src:string;preview?:string;width:number;height:number;label:Pair;caption:Pair;alt:Pair};
+export type EditorialVisual = {src:string;preview?:string;previewWidth?:number;width:number;height:number;label:Pair;caption:Pair;alt:Pair;credit?:CommonsPhotograph};
+const documentary=(id:string,label:Pair):EditorialVisual=>{const photo=commonsPhotographs[id];return {src:photo.path,preview:photo.preview,previewWidth:photo.previewWidth,width:photo.width,height:photo.height,label,caption:photo.caption,alt:photo.alt,credit:photo};};
 const study=(id:VisualStudyId):EditorialVisual=>{
  const item=visualStudies[id];
  return {src:item.path,preview:item.preview,width:item.width,height:item.height,label:[item.title.it,item.title.en],caption:[item.caption.it,item.caption.en],alt:[item.alt.it,item.alt.en]};
@@ -27,7 +29,7 @@ const guideVisuals:Record<string,EditorialVisual>={
 const articleVisuals:Record<string,EditorialVisual>={
  'ricarica-telefonica-cosa-preparare':phone,'regalo-compleanno-da-dove-partire':celebration,'piccolo-pensiero-occasione':souvenir,'scegliere-regalo-ultimi-minuti':gift,
  'guerrazzi-via-guerrazzi-bologna':travel,'vetrina-guerrazzi-piccole-scelte':paper,'angela-attenzione-negozio':travel,
- 'la-aurora-storia-santiago-leone':namesVisual,'tornabuoni-nome-rinascimento-sansepolcro':namesVisual,
+ 'la-aurora-storia-santiago-leone':documentary('la-aurora-factory',['Santiago de los Caballeros','Santiago de los Caballeros']),'tornabuoni-nome-rinascimento-sansepolcro':namesVisual,
  'sigari-sigaretti-informazioni-termini':leafVisual,'tabacco-18-anni-conferma-documento':namesVisual,'tabacco-confezioni-fonti-informazione':namesVisual,'radica-non-semplice-radice':botany,'schiuma-mare-nome-minerale':mineral,'nomi-botanici-denominazioni-tabacco':leafVisual,
  'deposito-bagagli-santo-stefano-strada-maggiore-bologna':travel,'regali-cartoleria-santo-stefano-aldrovandi-bologna':paper,'commissioni-san-petronio-vecchio-strada-maggiore':services
 };
