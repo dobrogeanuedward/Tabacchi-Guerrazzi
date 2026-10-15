@@ -1,3 +1,4 @@
+import {updateOctoberPages} from './october-pages';
 import {pageRevision,guideRevision} from './site-copy';
 import {tobaccoGuides,tobaccoSources} from './tobacco-information';
 import {assortmentPages} from './assortment';
@@ -99,3 +100,5 @@ Object.assign(pages['pipe-e-tabacchi-da-pipa'],{
 
 for(const [slug,copy] of Object.entries(pageRevision))if(pages[slug])Object.assign(pages[slug],copy);
 for(const [slug,copy] of Object.entries(guideRevision))if(guides[slug])Object.assign(guides[slug],copy);
+
+updateOctoberPages(pages);

@@ -1,0 +1,3752 @@
+{
+  "date": "2026-10-15",
+  "result": "passed",
+  "publicHtmlPages": 443,
+  "localLinks": 33345,
+  "localAssetReferences": 7405,
+  "fragmentLinks": 1427,
+  "oneH1PerPage": true,
+  "uniqueIds": true,
+  "noindexGate": "preserved",
+  "applicationTests": {
+    "passed": 6,
+    "failed": 0
+  },
+  "astroCheck": {
+    "errors": 0,
+    "warnings": 0,
+    "hints": 0
+  },
+  "seoAndCatalogueChecks": "passed",
+  "photographyChecks": "passed",
+  "browserReview": "not run: required browser capability unavailable in managed container",
+  "failures": [],
+  "routes": [
+    {
+      "route": "/404.html",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/accendini-e-accessori/",
+      "language": "it",
+      "images": [
+        "/images/collection/cartel-130-720.webp",
+        "/images/collection/cartel-130.webp",
+        "/images/collection/cartine-filtri-720.webp",
+        "/images/collection/cartine-filtri.webp",
+        "/images/collection/ciao-goldrake-720.webp",
+        "/images/collection/ciao-goldrake.webp",
+        "/images/collection/clipper-lupin-720.webp",
+        "/images/collection/clipper-lupin.webp",
+        "/images/collection/clipper-metallo-720.webp",
+        "/images/collection/clipper-metallo.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/accessori-telefono/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/angela-attenzione-negozio/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/avviso-pagamento-documenti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/commissioni-san-petronio-vecchio-strada-maggiore/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/deposito-bagagli-santo-stefano-strada-maggiore-bologna/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/giochi-viaggio-piccoli-passatempi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/gioco-regalo-eta-interessi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/guerrazzi-via-guerrazzi-bologna/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/la-aurora-storia-santiago-leone/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/nomi-botanici-denominazioni-tabacco/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/piccolo-pensiero-occasione/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/radica-non-semplice-radice/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/regali-cartoleria-santo-stefano-aldrovandi-bologna/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/regalo-compleanno-da-dove-partire/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/ricarica-telefonica-cosa-preparare/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/scegliere-gioco-insieme/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/scegliere-regalo-ultimi-minuti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/schiuma-mare-nome-minerale/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/servizi-negozio-organizzare-visita/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/sigari-sigaretti-informazioni-termini/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/tabacco-18-anni-conferma-documento/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/tabacco-confezioni-fonti-informazione/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/tornabuoni-nome-rinascimento-sansepolcro/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/approfondimenti/vetrina-guerrazzi-piccole-scelte/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/adesivi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/adesivi-personaggi/",
+      "language": "it",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/auguri/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/bambole-disney/",
+      "language": "it",
+      "images": [
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/biscotti-oreo/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/buste/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/calamite/",
+      "language": "it",
+      "images": [
+        "/images/collection/calamite-bologna-360.webp",
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/calamite-ricette/",
+      "language": "it",
+      "images": [
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/candeline/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/capelli/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/caramelle/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/cartelline/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/cavi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/cerotti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/chewing-gum/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/cioccolatini/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/colle/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/colle-uhu-kores/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/costruzioni-lego/",
+      "language": "it",
+      "images": [
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/etichette/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/evidenziatori/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/figurine-panini/",
+      "language": "it",
+      "images": [
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/fishermans-friend/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/giochi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/giochi-aperto/",
+      "language": "it",
+      "images": [
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/giochi-magnetici/",
+      "language": "it",
+      "images": [
+        "/images/collection/giochi-magnetici-360.webp",
+        "/images/collection/giochi-magnetici-720.webp",
+        "/images/collection/giochi-magnetici.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/giochi-nuby/",
+      "language": "it",
+      "images": [
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/gommose/",
+      "language": "it",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/guanti-spontex/",
+      "language": "it",
+      "images": [
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/labbra/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/lampadine-led/",
+      "language": "it",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/lecca-lecca/",
+      "language": "it",
+      "images": [
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/liquirizia-gatos/",
+      "language": "it",
+      "images": [
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/lucchetti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/mappamondi/",
+      "language": "it",
+      "images": [
+        "/images/collection/mappamondi-360.webp",
+        "/images/collection/mappamondi-720.webp",
+        "/images/collection/mappamondi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/matite-tortellino/",
+      "language": "it",
+      "images": [
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/meccanica-clementoni/",
+      "language": "it",
+      "images": [
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/modellini-auto/",
+      "language": "it",
+      "images": [
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/nastri/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/palloncini/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/palloncini-acqua/",
+      "language": "it",
+      "images": [
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/penne/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/penne-perle/",
+      "language": "it",
+      "images": [
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/penne-profumate/",
+      "language": "it",
+      "images": [
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/personaggi-marvel/",
+      "language": "it",
+      "images": [
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/piccoli-regali/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/pile-batterie/",
+      "language": "it",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/power-bank/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/prese-cavi-elettrici/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/profumi-raptus/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/quaderni/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/rasoi-bic/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/ricola-erbe/",
+      "language": "it",
+      "images": [
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/salina-cervia/",
+      "language": "it",
+      "images": [
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/salvadanai-nani/",
+      "language": "it",
+      "images": [
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/slime-fidget/",
+      "language": "it",
+      "images": [
+        "/images/collection/slime-fidget-360.webp",
+        "/images/collection/slime-fidget-720.webp",
+        "/images/collection/slime-fidget.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/assortimento/stitch-e-giochi-sorpresa/",
+      "language": "it",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/cartoleria/",
+      "language": "it",
+      "images": [
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/catalogo/",
+      "language": "it",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp",
+        "/images/collection/calamite-bologna-360.webp",
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp",
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp",
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp",
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp",
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp",
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp",
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp",
+        "/images/collection/giochi-magnetici-360.webp",
+        "/images/collection/giochi-magnetici-720.webp",
+        "/images/collection/giochi-magnetici.webp",
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp",
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp",
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp",
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp",
+        "/images/collection/mappamondi-360.webp",
+        "/images/collection/mappamondi-720.webp",
+        "/images/collection/mappamondi.webp",
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp",
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp",
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp",
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp",
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp",
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp",
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp",
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp",
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp",
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp",
+        "/images/collection/slime-fidget-360.webp",
+        "/images/collection/slime-fidget-720.webp",
+        "/images/collection/slime-fidget.webp",
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/catalogo/proteggi-fili-animaletti-akena/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/contatti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/cookie/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/deposito-bagagli/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/dolciumi/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp",
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp",
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp",
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp",
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/accendini-e-accessori/",
+      "language": "en",
+      "images": [
+        "/images/collection/cartel-130-720.webp",
+        "/images/collection/cartel-130.webp",
+        "/images/collection/cartine-filtri-720.webp",
+        "/images/collection/cartine-filtri.webp",
+        "/images/collection/ciao-goldrake-720.webp",
+        "/images/collection/ciao-goldrake.webp",
+        "/images/collection/clipper-lupin-720.webp",
+        "/images/collection/clipper-lupin.webp",
+        "/images/collection/clipper-metallo-720.webp",
+        "/images/collection/clipper-metallo.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/accessori-telefono/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/adesivi/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/adesivi-personaggi/",
+      "language": "en",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/auguri/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/bambole-disney/",
+      "language": "en",
+      "images": [
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/biscotti-oreo/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/buste/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/calamite/",
+      "language": "en",
+      "images": [
+        "/images/collection/calamite-bologna-360.webp",
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/calamite-ricette/",
+      "language": "en",
+      "images": [
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/candeline/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/capelli/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/caramelle/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/cartelline/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/cavi/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/cerotti/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/chewing-gum/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/cioccolatini/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/colle/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/colle-uhu-kores/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/costruzioni-lego/",
+      "language": "en",
+      "images": [
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/etichette/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/evidenziatori/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/figurine-panini/",
+      "language": "en",
+      "images": [
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/fishermans-friend/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/giochi/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/giochi-aperto/",
+      "language": "en",
+      "images": [
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/giochi-magnetici/",
+      "language": "en",
+      "images": [
+        "/images/collection/giochi-magnetici-360.webp",
+        "/images/collection/giochi-magnetici-720.webp",
+        "/images/collection/giochi-magnetici.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/giochi-nuby/",
+      "language": "en",
+      "images": [
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/gommose/",
+      "language": "en",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/guanti-spontex/",
+      "language": "en",
+      "images": [
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/labbra/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/lampadine-led/",
+      "language": "en",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/lecca-lecca/",
+      "language": "en",
+      "images": [
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/liquirizia-gatos/",
+      "language": "en",
+      "images": [
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/lucchetti/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/mappamondi/",
+      "language": "en",
+      "images": [
+        "/images/collection/mappamondi-360.webp",
+        "/images/collection/mappamondi-720.webp",
+        "/images/collection/mappamondi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/matite-tortellino/",
+      "language": "en",
+      "images": [
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/meccanica-clementoni/",
+      "language": "en",
+      "images": [
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/modellini-auto/",
+      "language": "en",
+      "images": [
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/nastri/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/palloncini/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/palloncini-acqua/",
+      "language": "en",
+      "images": [
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/penne/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/penne-perle/",
+      "language": "en",
+      "images": [
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/penne-profumate/",
+      "language": "en",
+      "images": [
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/personaggi-marvel/",
+      "language": "en",
+      "images": [
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/piccoli-regali/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/pile-batterie/",
+      "language": "en",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/power-bank/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/prese-cavi-elettrici/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/profumi-raptus/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/quaderni/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/rasoi-bic/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/ricola-erbe/",
+      "language": "en",
+      "images": [
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/salina-cervia/",
+      "language": "en",
+      "images": [
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/salvadanai-nani/",
+      "language": "en",
+      "images": [
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/slime-fidget/",
+      "language": "en",
+      "images": [
+        "/images/collection/slime-fidget-360.webp",
+        "/images/collection/slime-fidget-720.webp",
+        "/images/collection/slime-fidget.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/assortimento/stitch-e-giochi-sorpresa/",
+      "language": "en",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/cartoleria/",
+      "language": "en",
+      "images": [
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/catalogo/",
+      "language": "en",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp",
+        "/images/collection/calamite-bologna-360.webp",
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp",
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp",
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp",
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp",
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp",
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp",
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp",
+        "/images/collection/giochi-magnetici-360.webp",
+        "/images/collection/giochi-magnetici-720.webp",
+        "/images/collection/giochi-magnetici.webp",
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp",
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp",
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp",
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp",
+        "/images/collection/mappamondi-360.webp",
+        "/images/collection/mappamondi-720.webp",
+        "/images/collection/mappamondi.webp",
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp",
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp",
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp",
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp",
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp",
+        "/images/collection/penne-decorate-360.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp",
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp",
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp",
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp",
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp",
+        "/images/collection/slime-fidget-360.webp",
+        "/images/collection/slime-fidget-720.webp",
+        "/images/collection/slime-fidget.webp",
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/catalogo/proteggi-fili-animaletti-akena/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/contatti/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/deposito-bagagli/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/dolciumi/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp",
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp",
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp",
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp",
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/feste-e-compleanni/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/giochi-e-giocattoli/",
+      "language": "en",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp",
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp",
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp",
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp",
+        "/images/collection/giochi-magnetici-360.webp",
+        "/images/collection/giochi-magnetici-720.webp",
+        "/images/collection/giochi-magnetici.webp",
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp",
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp",
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp",
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp",
+        "/images/collection/slime-fidget-360.webp",
+        "/images/collection/slime-fidget-720.webp",
+        "/images/collection/slime-fidget.webp",
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/idee-regalo/",
+      "language": "en",
+      "images": [
+        "/images/collection/mappamondi-360.webp",
+        "/images/collection/mappamondi-720.webp",
+        "/images/collection/mappamondi.webp",
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/il-negozio/",
+      "language": "en",
+      "images": [
+        "/images/collection/esterno-portico-720.webp",
+        "/images/collection/esterno-portico.webp",
+        "/images/collection/interno-negozio-720.webp",
+        "/images/collection/interno-negozio.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/il-quartiere/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/",
+      "language": "en",
+      "images": [
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp",
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp",
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/esterno-portico-720.webp",
+        "/images/collection/esterno-portico.webp",
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp",
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp",
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp",
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/arda/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/bburago/",
+      "language": "en",
+      "images": [
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/bic/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/big-babol/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/brooklyn/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/chupa-chups/",
+      "language": "en",
+      "images": [
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/clementoni/",
+      "language": "en",
+      "images": [
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/confiderm/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/cool-things/",
+      "language": "en",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/daygum/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/dietorelle/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/disney/",
+      "language": "en",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp",
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/duracell/",
+      "language": "en",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/estiatoys/",
+      "language": "en",
+      "images": [
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/ferrero/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/fiam/",
+      "language": "en",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/fini/",
+      "language": "en",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/fishermans-friend/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/fruit-tella/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/fsl/",
+      "language": "en",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/gatos/",
+      "language": "en",
+      "images": [
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/golia/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/halls/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/haribo/",
+      "language": "en",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/kimono-party/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/kores/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/labello/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/lego/",
+      "language": "en",
+      "images": [
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/loctite/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/lupo-alberto/",
+      "language": "en",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/magnum/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/marvel/",
+      "language": "en",
+      "images": [
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/mentos/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/notami/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/nuby/",
+      "language": "en",
+      "images": [
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/oreo/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/panini/",
+      "language": "en",
+      "images": [
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/paw-patrol/",
+      "language": "en",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/pizzardi/",
+      "language": "en",
+      "images": [
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/pritt/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/raptus/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/ricola/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp",
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/rmz-city/",
+      "language": "en",
+      "images": [
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/saila/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/salina-di-cervia/",
+      "language": "en",
+      "images": [
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/spontex/",
+      "language": "en",
+      "images": [
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/sport-one/",
+      "language": "en",
+      "images": [
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/stabilo/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/std/",
+      "language": "en",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/teknee/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/trim/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/uhu/",
+      "language": "en",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi/vivident/",
+      "language": "en",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/marchi-e-competenze/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/piccole-necessita/",
+      "language": "en",
+      "images": [
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp",
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp",
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/pipe-e-tabacchi-da-pipa/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/profumi-raptus/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/recensioni/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/ricevitoria/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sale-di-cervia/",
+      "language": "en",
+      "images": [
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/bollettini-e-pagopa/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/confrontare-schede-sigari/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/marchi-trattati/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/nicotiana-tabacum-botanica/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/pipe-materiali-storia/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/radica-erica-arborea/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/raggiungere-il-negozio/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/ricariche-telefoniche/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/scegliere-un-gioco/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/scegliere-un-regalo/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/schiuma-di-mare-sepiolite/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/sigari-termini-informazioni/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/sigaro-struttura-termini/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/tabacco-confezioni-avvertenze/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/tabacco-minori-documenti/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/schede/tipologie-di-sigaro/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/servizi/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/servizi/paga-e-preleva/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/servizi/pagamenti/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/servizi/self-service/",
+      "language": "en",
+      "images": [
+        "/images/collection/esterno-portico.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/davidoff-aniversario-short-perfecto/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/denominazione-arcano/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/denominazione-cacciatore-maremmano/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/denominazione-galante/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/denominazione-il-lustro/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/denominazione-long-filler/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/denominazione-long-riserva/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/italico/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/la-aurora-107/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/la-aurora-escogidos/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/la-aurora-family-creed-fuerte-sol/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nicita/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-avanone/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-campesano/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-cannaregio/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-clandestino-tre-6/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-foscari/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-il-benedettino/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/nostrano-il-ducale/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/parcero/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/plasencia-alma/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/a-flores/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/camacho/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/davidoff/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/la-aurora/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/leon-jimenes/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/montosa-parcero/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/plasencia/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/storie/zino/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/tornabuoni-allegro/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/tornabuoni-amarcord/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/tornabuoni-archibugio/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/tornabuoni-cimette/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/tornabuoni-rinascimento/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/tornabuoni-spingarda-xo/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscanello-bianco/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscanello-blu/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscanello-rosso/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscanello-xxl/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-antico/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-aquila/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-classico/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-extravecchio/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-garibaldi/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-il-bracco/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-il-grande/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-leggendario/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-maremmano/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-originale/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-puccini/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-soldati/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/toscano-terre/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/villa-zamorano/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/sigari/zino-nicaragua/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/en/souvenir-bologna/",
+      "language": "en",
+      "images": [
+        "/images/collection/calamite-bologna-360.webp",
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp",
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp",
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/en/storia-e-serrande/",
+      "language": "en",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/feste-e-compleanni/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/giochi-e-giocattoli/",
+      "language": "it",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp",
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp",
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp",
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp",
+        "/images/collection/giochi-magnetici-360.webp",
+        "/images/collection/giochi-magnetici-720.webp",
+        "/images/collection/giochi-magnetici.webp",
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp",
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp",
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp",
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp",
+        "/images/collection/slime-fidget-360.webp",
+        "/images/collection/slime-fidget-720.webp",
+        "/images/collection/slime-fidget.webp",
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/idee-regalo/",
+      "language": "it",
+      "images": [
+        "/images/collection/mappamondi-360.webp",
+        "/images/collection/mappamondi-720.webp",
+        "/images/collection/mappamondi.webp",
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/il-negozio/",
+      "language": "it",
+      "images": [
+        "/images/collection/esterno-portico-720.webp",
+        "/images/collection/esterno-portico.webp",
+        "/images/collection/interno-negozio-720.webp",
+        "/images/collection/interno-negozio.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/il-quartiere/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/",
+      "language": "it",
+      "images": [
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp",
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp",
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/esterno-portico-720.webp",
+        "/images/collection/esterno-portico.webp",
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp",
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp",
+        "/images/collection/penne-decorate-720.webp",
+        "/images/collection/penne-decorate.webp",
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp",
+        "/images/collection/salvadanai-nani-360.webp",
+        "/images/collection/salvadanai-nani-720.webp",
+        "/images/collection/salvadanai-nani.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/arda/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/bburago/",
+      "language": "it",
+      "images": [
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/bic/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/big-babol/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/brooklyn/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/chupa-chups/",
+      "language": "it",
+      "images": [
+        "/images/collection/chupa-chups-360.webp",
+        "/images/collection/chupa-chups-720.webp",
+        "/images/collection/chupa-chups.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/clementoni/",
+      "language": "it",
+      "images": [
+        "/images/collection/meccanica-clementoni-360.webp",
+        "/images/collection/meccanica-clementoni-720.webp",
+        "/images/collection/meccanica-clementoni.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/confiderm/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/cool-things/",
+      "language": "it",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/daygum/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/dietorelle/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/disney/",
+      "language": "it",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp",
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/duracell/",
+      "language": "it",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/estiatoys/",
+      "language": "it",
+      "images": [
+        "/images/collection/palloncini-acqua-360.webp",
+        "/images/collection/palloncini-acqua-720.webp",
+        "/images/collection/palloncini-acqua.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/ferrero/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/fiam/",
+      "language": "it",
+      "images": [
+        "/images/collection/distributore-sorprese-360.webp",
+        "/images/collection/distributore-sorprese-720.webp",
+        "/images/collection/distributore-sorprese.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/fini/",
+      "language": "it",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/fishermans-friend/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/fruit-tella/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/fsl/",
+      "language": "it",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/gatos/",
+      "language": "it",
+      "images": [
+        "/images/collection/liquirizia-gatos-360.webp",
+        "/images/collection/liquirizia-gatos-720.webp",
+        "/images/collection/liquirizia-gatos.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/golia/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/halls/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/haribo/",
+      "language": "it",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/kimono-party/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/kores/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/labello/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/lego/",
+      "language": "it",
+      "images": [
+        "/images/collection/costruzioni-lego-360.webp",
+        "/images/collection/costruzioni-lego-720.webp",
+        "/images/collection/costruzioni-lego.webp",
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/loctite/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/lupo-alberto/",
+      "language": "it",
+      "images": [
+        "/images/collection/haribo-rotella-360.webp",
+        "/images/collection/haribo-rotella-720.webp",
+        "/images/collection/haribo-rotella.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/magnum/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/marvel/",
+      "language": "it",
+      "images": [
+        "/images/collection/vetrina-giochi-360.webp",
+        "/images/collection/vetrina-giochi-720.webp",
+        "/images/collection/vetrina-giochi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/mentos/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/notami/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/nuby/",
+      "language": "it",
+      "images": [
+        "/images/collection/giochi-nuby-360.webp",
+        "/images/collection/giochi-nuby-720.webp",
+        "/images/collection/giochi-nuby.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/oreo/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/panini/",
+      "language": "it",
+      "images": [
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/paw-patrol/",
+      "language": "it",
+      "images": [
+        "/images/collection/adesivi-personaggi-360.webp",
+        "/images/collection/adesivi-personaggi-720.webp",
+        "/images/collection/adesivi-personaggi.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/pizzardi/",
+      "language": "it",
+      "images": [
+        "/images/collection/figurine-panini-360.webp",
+        "/images/collection/figurine-panini-720.webp",
+        "/images/collection/figurine-panini.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/pritt/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/raptus/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/ricola/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp",
+        "/images/collection/ricola-erbe-360.webp",
+        "/images/collection/ricola-erbe-720.webp",
+        "/images/collection/ricola-erbe.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/rmz-city/",
+      "language": "it",
+      "images": [
+        "/images/collection/modellini-auto-360.webp",
+        "/images/collection/modellini-auto-720.webp",
+        "/images/collection/modellini-auto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/saila/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/salina-di-cervia/",
+      "language": "it",
+      "images": [
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/spontex/",
+      "language": "it",
+      "images": [
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/sport-one/",
+      "language": "it",
+      "images": [
+        "/images/collection/giochi-aperto-360.webp",
+        "/images/collection/giochi-aperto-720.webp",
+        "/images/collection/giochi-aperto.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/stabilo/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/std/",
+      "language": "it",
+      "images": [
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/teknee/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/trim/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/uhu/",
+      "language": "it",
+      "images": [
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi/vivident/",
+      "language": "it",
+      "images": [
+        "/images/collection/caramelle-miste-360.webp",
+        "/images/collection/caramelle-miste-720.webp",
+        "/images/collection/caramelle-miste.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/marchi-e-competenze/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/piccole-necessita/",
+      "language": "it",
+      "images": [
+        "/images/collection/guanti-spontex-360.webp",
+        "/images/collection/guanti-spontex-720.webp",
+        "/images/collection/guanti-spontex.webp",
+        "/images/collection/necessita-pannello-360.webp",
+        "/images/collection/necessita-pannello-720.webp",
+        "/images/collection/necessita-pannello.webp",
+        "/images/collection/pile-lampadine-360.webp",
+        "/images/collection/pile-lampadine-720.webp",
+        "/images/collection/pile-lampadine.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/pipe-e-tabacchi-da-pipa/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/privacy/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/profumi-raptus/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/recensioni/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/ricevitoria/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sale-di-cervia/",
+      "language": "it",
+      "images": [
+        "/images/collection/salina-cervia-360.webp",
+        "/images/collection/salina-cervia-720.webp",
+        "/images/collection/salina-cervia.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/bollettini-e-pagopa/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/confrontare-schede-sigari/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/marchi-trattati/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/nicotiana-tabacum-botanica/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/pipe-materiali-storia/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/radica-erica-arborea/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/raggiungere-il-negozio/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/ricariche-telefoniche/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/scegliere-un-gioco/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/scegliere-un-regalo/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/schiuma-di-mare-sepiolite/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/sigari-termini-informazioni/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/sigaro-struttura-termini/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/tabacco-confezioni-avvertenze/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/tabacco-minori-documenti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/schede/tipologie-di-sigaro/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/servizi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/servizi/paga-e-preleva/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/servizi/pagamenti/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/servizi/self-service/",
+      "language": "it",
+      "images": [
+        "/images/collection/esterno-portico.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/davidoff-aniversario-short-perfecto/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/denominazione-arcano/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/denominazione-cacciatore-maremmano/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/denominazione-galante/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/denominazione-il-lustro/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/denominazione-long-filler/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/denominazione-long-riserva/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/italico/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/la-aurora-107/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/la-aurora-escogidos/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/la-aurora-family-creed-fuerte-sol/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nicita/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-avanone/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-campesano/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-cannaregio/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-clandestino-tre-6/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-foscari/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-il-benedettino/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/nostrano-il-ducale/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/parcero/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/plasencia-alma/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/a-flores/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/camacho/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/davidoff/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/la-aurora/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/leon-jimenes/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/montosa-parcero/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/plasencia/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/storie/zino/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/tornabuoni-allegro/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/tornabuoni-amarcord/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/tornabuoni-archibugio/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/tornabuoni-cimette/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/tornabuoni-rinascimento/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/tornabuoni-spingarda-xo/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscanello-bianco/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscanello-blu/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscanello-rosso/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscanello-xxl/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-antico/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-aquila/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-classico/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-extravecchio/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-garibaldi/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-il-bracco/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-il-grande/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-leggendario/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-maremmano/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-originale/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-puccini/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-soldati/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/toscano-terre/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/villa-zamorano/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/sigari/zino-nicaragua/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    },
+    {
+      "route": "/souvenir-bologna/",
+      "language": "it",
+      "images": [
+        "/images/collection/calamite-bologna-360.webp",
+        "/images/collection/calamite-bologna-720.webp",
+        "/images/collection/calamite-bologna.webp",
+        "/images/collection/calamite-ricette-360.webp",
+        "/images/collection/calamite-ricette-720.webp",
+        "/images/collection/calamite-ricette.webp",
+        "/images/collection/matite-tortellino-360.webp",
+        "/images/collection/matite-tortellino-720.webp",
+        "/images/collection/matite-tortellino.webp"
+      ],
+      "schemas": 1
+    },
+    {
+      "route": "/storia-e-serrande/",
+      "language": "it",
+      "images": [],
+      "schemas": 1
+    }
+  ]
+}

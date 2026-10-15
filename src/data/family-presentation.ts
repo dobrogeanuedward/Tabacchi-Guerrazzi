@@ -95,5 +95,6 @@ export const familyPresentations: Record<string, FamilyPresentation> = {
   },
 };
 
+familyPresentations.alimentari={theme:'regalo',material:'paper',treatment:'sweets',page:'sale-di-cervia',art:'gift-ink',focus:['Un formato per la tua cucina.','A format for your kitchen.'],checkNotes:[['Scegli fra sale fino, Salfiore e sale alle erbe.','Choose fine salt, Salfiore or herb salt.'],['Leggi gli ingredienti della confezione.','Read the pack ingredients.'],['Confronta il formato e le indicazioni di conservazione.','Compare size and storage guidance.']]};
 export const familyPresentationFor = (category: string): FamilyPresentation =>
   familyPresentations[category] || familyPresentations.regali;

@@ -1,0 +1,3296 @@
+{
+  "date": "2026-10-15",
+  "photo_count": 44,
+  "unique_photo_count": 38,
+  "records": [
+    {
+      "id": "GF03-001",
+      "categoria": "Servizi e identificazione",
+      "brand": "Bounce",
+      "articolo_o_servizio": "Deposito bagagli",
+      "dettagli": "Vetrofania e QR identificativi",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-002",
+      "categoria": "Servizi e identificazione",
+      "brand": "Satispay",
+      "articolo_o_servizio": "Pagamenti con Satispay",
+      "dettagli": "Vetrofania di accettazione; promozioni non trascritte",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-003",
+      "categoria": "Servizi e identificazione",
+      "brand": "Nexi",
+      "articolo_o_servizio": "Pagamenti con carte tramite POS",
+      "dettagli": "Vetrofania; non prova tutti i circuiti o servizi bancari",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-004",
+      "categoria": "Servizi e identificazione",
+      "brand": "PuntoLis",
+      "articolo_o_servizio": "Paga e Preleva",
+      "dettagli": "Vetrofania verde leggibile ingrandita; condizioni correnti nella fonte ufficiale",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-005",
+      "categoria": "Servizi e identificazione",
+      "brand": "Sisal",
+      "articolo_o_servizio": "Ricevitoria e WeSisal Insieme",
+      "dettagli": "Materiali identificativi; operazioni puntuali da verificare",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-006",
+      "categoria": "Servizi e identificazione",
+      "brand": "IGT",
+      "articolo_o_servizio": "My Club Premium",
+      "dettagli": "Adesivo identificativo; marchio storico riportato come visto",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-007",
+      "categoria": "Servizi e identificazione",
+      "brand": "DomusBet",
+      "articolo_o_servizio": "Punto vendita ricariche",
+      "dettagli": "Dicitura esatta sul cartello; non è una ricarica telefonica generica",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-008",
+      "categoria": "Servizi e identificazione",
+      "brand": "Gratta e Vinci",
+      "articolo_o_servizio": "Lotteria istantanea",
+      "dettagli": "Solo identificazione; non riprendere vincite o messaggi promozionali",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-009",
+      "categoria": "Servizi e identificazione",
+      "brand": "Lotteria Italia",
+      "articolo_o_servizio": "Lotteria nazionale",
+      "dettagli": "Adesivi e cartelli identificativi",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-010",
+      "categoria": "Servizi e identificazione",
+      "brand": "ADM",
+      "articolo_o_servizio": "Autorità indicata sui materiali",
+      "dettagli": "Ente regolatore, non un servizio del negozio",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi / ricevitoria"
+    },
+    {
+      "id": "GF03-011",
+      "categoria": "Ricevitoria",
+      "brand": "SuperEnalotto",
+      "articolo_o_servizio": "SuperEnalotto",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-012",
+      "categoria": "Ricevitoria",
+      "brand": "Eurojackpot",
+      "articolo_o_servizio": "Eurojackpot",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-013",
+      "categoria": "Ricevitoria",
+      "brand": "VinciCasa",
+      "articolo_o_servizio": "VinciCasa",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-014",
+      "categoria": "Ricevitoria",
+      "brand": "Win for Life",
+      "articolo_o_servizio": "Win for Life",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-015",
+      "categoria": "Ricevitoria",
+      "brand": "SiVinceTutto",
+      "articolo_o_servizio": "SiVinceTutto",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-016",
+      "categoria": "Ricevitoria",
+      "brand": "Lotto",
+      "articolo_o_servizio": "Lotto",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-017",
+      "categoria": "Ricevitoria",
+      "brand": "10eLotto",
+      "articolo_o_servizio": "10eLotto",
+      "dettagli": "Identificazione neutra; nessuna quota, vincita o invito al gioco",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-018",
+      "categoria": "Marchi su materiali",
+      "brand": "blu",
+      "articolo_o_servizio": "Dispositivi e confezioni blu",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-019",
+      "categoria": "Marchi su materiali",
+      "brand": "Vuse",
+      "articolo_o_servizio": "Confezioni Vuse",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-020",
+      "categoria": "Marchi su materiali",
+      "brand": "GIZEH",
+      "articolo_o_servizio": "Adesivi GIZEH e GIZEH Francy",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-021",
+      "categoria": "Marchi su materiali",
+      "brand": "ARkx",
+      "articolo_o_servizio": "Materiale identificativo ARkx",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-022",
+      "categoria": "Marchi su materiali",
+      "brand": "JTI",
+      "articolo_o_servizio": "JTI Quality / #SENZA NOME",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-023",
+      "categoria": "Marchi su materiali",
+      "brand": "HYLA",
+      "articolo_o_servizio": "Volantino HYLA",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-024",
+      "categoria": "Marchi su materiali",
+      "brand": "Verisure",
+      "articolo_o_servizio": "Cartello impianto di sicurezza",
+      "dettagli": "Vetrofania o materiale visibile: non equivale a servizio o prodotto disponibile",
+      "foto": "IMG_5455.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio interno"
+    },
+    {
+      "id": "GF03-025",
+      "categoria": "Cartine e filtri",
+      "brand": "GIZEH",
+      "articolo_o_servizio": "Active Filters 50 6 mm Black",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-026",
+      "categoria": "Cartine e filtri",
+      "brand": "GIZEH",
+      "articolo_o_servizio": "Active Filters 50 6 mm Prism",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-027",
+      "categoria": "Cartine e filtri",
+      "brand": "GIZEH",
+      "articolo_o_servizio": "Active Filters 50 6 mm Rainbow",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-028",
+      "categoria": "Cartine e filtri",
+      "brand": "GIZEH",
+      "articolo_o_servizio": "Active Filters 50 6 mm Pink",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-029",
+      "categoria": "Cartine e filtri",
+      "brand": "GIZEH",
+      "articolo_o_servizio": "Slim Filters 6 mm 120 + 30",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-030",
+      "categoria": "Cartine e filtri",
+      "brand": "Energy",
+      "articolo_o_servizio": "Clixx Filter Tips 10 x 100",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-031",
+      "categoria": "Cartine e filtri",
+      "brand": "Rizla+",
+      "articolo_o_servizio": "Filtri Slim",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-032",
+      "categoria": "Cartine e filtri",
+      "brand": "Cartel",
+      "articolo_o_servizio": "Filter Tips Slim",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-033",
+      "categoria": "Cartine e filtri",
+      "brand": "OCB",
+      "articolo_o_servizio": "Cartine e accessori",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-034",
+      "categoria": "Dolciumi",
+      "brand": "Lupo Alberto",
+      "articolo_o_servizio": "Dolciumi con personaggio Lupo Alberto",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-035",
+      "categoria": "Dolciumi",
+      "brand": "Chupa Chups",
+      "articolo_o_servizio": "Lecca-lecca Forever Fun",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-036",
+      "categoria": "Dolciumi",
+      "brand": "Haribo",
+      "articolo_o_servizio": "Rotella Maxi",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-037",
+      "categoria": "Dolciumi",
+      "brand": "Chupa Chups",
+      "articolo_o_servizio": "Roller / confezioni cilindriche",
+      "dettagli": "",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-038",
+      "categoria": "Dolciumi e sorprese",
+      "brand": "",
+      "articolo_o_servizio": "Candy Canes",
+      "dettagli": "Per marchi e ingredienti non leggibili non sono assegnate proprietà alimentari",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi / inventario"
+    },
+    {
+      "id": "GF03-039",
+      "categoria": "Dolciumi e sorprese",
+      "brand": "",
+      "articolo_o_servizio": "Lollipop & Ring",
+      "dettagli": "Per marchi e ingredienti non leggibili non sono assegnate proprietà alimentari",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi / inventario"
+    },
+    {
+      "id": "GF03-040",
+      "categoria": "Dolciumi e sorprese",
+      "brand": "Mad Prof",
+      "articolo_o_servizio": "Zombie Brain",
+      "dettagli": "Per marchi e ingredienti non leggibili non sono assegnate proprietà alimentari",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi / inventario"
+    },
+    {
+      "id": "GF03-041",
+      "categoria": "Alimentari",
+      "brand": "",
+      "articolo_o_servizio": "Sale marino grosso",
+      "dettagli": "Marca non leggibile dalla confezione in questa immagine",
+      "foto": "IMG_5456.jpeg",
+      "riscontro": "Categoria leggibile",
+      "sezione_sito": "Inventario"
+    },
+    {
+      "id": "GF03-042",
+      "categoria": "Tabacco da pipa",
+      "brand": "Amphora",
+      "articolo_o_servizio": "Rich",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-043",
+      "categoria": "Tabacco da pipa",
+      "brand": "Amphora",
+      "articolo_o_servizio": "Original",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-044",
+      "categoria": "Tabacco da pipa",
+      "brand": "Amphora",
+      "articolo_o_servizio": "Special Reserve No. 2",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-045",
+      "categoria": "Tabacco da pipa",
+      "brand": "Amphora",
+      "articolo_o_servizio": "Black Cavendish",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-046",
+      "categoria": "Tabacco da pipa",
+      "brand": "Skandinavik",
+      "articolo_o_servizio": "Regular",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-047",
+      "categoria": "Tabacco da pipa",
+      "brand": "Skandinavik",
+      "articolo_o_servizio": "Sungold",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-048",
+      "categoria": "Tabacco da pipa",
+      "brand": "Skandinavik",
+      "articolo_o_servizio": "Navy",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-049",
+      "categoria": "Tabacco da pipa",
+      "brand": "Mac Baren",
+      "articolo_o_servizio": "Original Choice",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-050",
+      "categoria": "Tabacco da pipa",
+      "brand": "Clan",
+      "articolo_o_servizio": "Original",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-051",
+      "categoria": "Tabacco da pipa",
+      "brand": "Kentucky Bird",
+      "articolo_o_servizio": "Pipe Tobacco",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-052",
+      "categoria": "Tabacco da pipa",
+      "brand": "Thomas Radford",
+      "articolo_o_servizio": "Sunday’s Fantasy",
+      "dettagli": "",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-053",
+      "categoria": "Arredo",
+      "brand": "EGOIST",
+      "articolo_o_servizio": "Mobile espositivo in legno con igrometro",
+      "dettagli": "Identifica il mobile; non è un prodotto in vendita",
+      "foto": "IMG_5457.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-054",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Tornabuoni",
+      "articolo_o_servizio": "Allegro",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-055",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Tornabuoni",
+      "articolo_o_servizio": "Amarcord",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-056",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Golden Blend’s",
+      "articolo_o_servizio": "No. 1",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-057",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Mac Baren",
+      "articolo_o_servizio": "Mixture Scottish Blend",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-058",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Mac Baren",
+      "articolo_o_servizio": "Cube",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-059",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Park Lane",
+      "articolo_o_servizio": "7 Sliced Pipe Tobacco",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-060",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "Cellini",
+      "articolo_o_servizio": "Classico Riserva",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-061",
+      "categoria": "Tabacco e denominazioni",
+      "brand": "7 Seas",
+      "articolo_o_servizio": "Gold Blend",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa / sigari"
+    },
+    {
+      "id": "GF03-062",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Foscari",
+      "dettagli": "Campesano normalizzato rispetto alla lettura parziale, conferma denominazione ADM",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-063",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Campesano",
+      "dettagli": "Campesano normalizzato rispetto alla lettura parziale, conferma denominazione ADM",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-064",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Clandestino Tre-6",
+      "dettagli": "Campesano normalizzato rispetto alla lettura parziale, conferma denominazione ADM",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-065",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Del Brenta",
+      "dettagli": "Campesano normalizzato rispetto alla lettura parziale, conferma denominazione ADM",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-066",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "RELX",
+      "articolo_o_servizio": "Vetrina RELX",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-067",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "Lost Mary",
+      "articolo_o_servizio": "Vape Pen",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-068",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "Lost Mary",
+      "articolo_o_servizio": "Vape Pen PRO",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-069",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "ZYN",
+      "articolo_o_servizio": "Spearmint",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-070",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "ZYN",
+      "articolo_o_servizio": "Coffee",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-071",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "VELO",
+      "articolo_o_servizio": "Bright Spearmint",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-072",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "VELO",
+      "articolo_o_servizio": "Altre varianti",
+      "dettagli": "Nessuna prestazione, dose o aroma attribuito fuori da quanto leggibile",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "pipe-e-tabacchi-da-pipa"
+    },
+    {
+      "id": "GF03-073",
+      "categoria": "Tabacco e marchi",
+      "brand": "Chesterfield",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-074",
+      "categoria": "Tabacco e marchi",
+      "brand": "Winston",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-075",
+      "categoria": "Tabacco e marchi",
+      "brand": "Mehari’s",
+      "articolo_o_servizio": "Mini",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-076",
+      "categoria": "Tabacco e marchi",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Materiali identificativi",
+      "dettagli": "",
+      "foto": "IMG_5458.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-077",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Il Ducale",
+      "dettagli": "",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-078",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Il Benedettino",
+      "dettagli": "",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-079",
+      "categoria": "Sigari",
+      "brand": "Tornabuoni",
+      "articolo_o_servizio": "Cimette di Mastro Tornabuoni",
+      "dettagli": "",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-080",
+      "categoria": "Sigari",
+      "brand": "Italico",
+      "articolo_o_servizio": "Italico",
+      "dettagli": "Espositore identificativo",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-081",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "Lost Mary",
+      "articolo_o_servizio": "Vape Pen Mango Ice",
+      "dettagli": "",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-082",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "Lost Mary",
+      "articolo_o_servizio": "Vape Pen Strawberry Watermelon",
+      "dettagli": "",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-083",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "Lost Mary",
+      "articolo_o_servizio": "Vape Pen Pink Lemonade",
+      "dettagli": "",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-084",
+      "categoria": "Sigari",
+      "brand": "Príncipes",
+      "articolo_o_servizio": "Confezione Red",
+      "dettagli": "Solo denominazione, nessuna promozione",
+      "foto": "IMG_5459.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-085",
+      "categoria": "Cartoleria e regali",
+      "brand": "",
+      "articolo_o_servizio": "Matite con tortellino Bologna",
+      "dettagli": "Colori arancio, giallo, verde, fucsia",
+      "foto": "IMG_5460.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "cartoleria / souvenir-bologna / idee-regalo"
+    },
+    {
+      "id": "GF03-086",
+      "categoria": "Cartoleria e regali",
+      "brand": "",
+      "articolo_o_servizio": "Penne con perla",
+      "dettagli": "Colori pastello e dettagli metallici",
+      "foto": "IMG_5460.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "cartoleria / souvenir-bologna / idee-regalo"
+    },
+    {
+      "id": "GF03-087",
+      "categoria": "Cartoleria e regali",
+      "brand": "",
+      "articolo_o_servizio": "Matite con dettaglio brillante",
+      "dettagli": "Matite scure con estremità brillante",
+      "foto": "IMG_5460.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "cartoleria / souvenir-bologna / idee-regalo"
+    },
+    {
+      "id": "GF03-088",
+      "categoria": "Cartoleria e regali",
+      "brand": "",
+      "articolo_o_servizio": "Bracciali colorati",
+      "dettagli": "Bracciali su supporto cilindrico scuro",
+      "foto": "IMG_5460.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "cartoleria / souvenir-bologna / idee-regalo"
+    },
+    {
+      "id": "GF03-089",
+      "categoria": "Cartoleria e regali",
+      "brand": "",
+      "articolo_o_servizio": "Libro Bologna com’era",
+      "dettagli": "Titolo parziale: Bologna com’era; edizione non determinata",
+      "foto": "IMG_5460.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "cartoleria / souvenir-bologna / idee-regalo"
+    },
+    {
+      "id": "GF03-090",
+      "categoria": "Marchio da completare",
+      "brand": "",
+      "articolo_o_servizio": "Penne: firma stilizzata by glam NEXT",
+      "dettagli": "Non si assegna un marchio dalla scritta parziale",
+      "foto": "IMG_5460.jpeg",
+      "riscontro": "Lettura parziale",
+      "sezione_sito": "Inventario"
+    },
+    {
+      "id": "GF03-091",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Accendini in metallo argento",
+      "dettagli": "",
+      "foto": "IMG_5461.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-092",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Accendini Rose Gold",
+      "dettagli": "",
+      "foto": "IMG_5461.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-093",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Tribal Elephants",
+      "dettagli": "",
+      "foto": "IMG_5461.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-094",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Lupin III",
+      "dettagli": "",
+      "foto": "IMG_5461.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-095",
+      "categoria": "Accendini",
+      "brand": "CIAO",
+      "articolo_o_servizio": "Accendini compatti colorati",
+      "dettagli": "",
+      "foto": "IMG_5461.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-096",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Candele bianche con portacandele",
+      "dettagli": "Oggetti esposti; marca e materiale non confermati",
+      "foto": "IMG_5461.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-097",
+      "categoria": "Giochi e cartoleria",
+      "brand": "Disney",
+      "articolo_o_servizio": "Stitch",
+      "dettagli": "Gioco a personaggio; confezione",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-098",
+      "categoria": "Giochi e cartoleria",
+      "brand": "Sport One",
+      "articolo_o_servizio": "Holiday ping-pong",
+      "dettagli": "Set in custodia con racchette e palline",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-099",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Penne con pompon",
+      "dettagli": "Pompon azzurro e giallo con occhi ricamati",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-100",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Girandole",
+      "dettagli": "Motivo geometrico rosso e bianco",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-101",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Slime e giochi morbidi",
+      "dettagli": "Barattoli, palline con faccine, piccole creature",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-102",
+      "categoria": "Giochi e cartoleria",
+      "brand": "Mad Prof",
+      "articolo_o_servizio": "Zombie Brain",
+      "dettagli": "Confezioni; non estendere proprietà ad altri giochi",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-103",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Beauty e piccoli giochi a sorpresa",
+      "dettagli": "Nome della linea parzialmente leggibile",
+      "foto": "IMG_5462.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-104",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita ricetta Ragù alla bolognese",
+      "dettagli": "Versioni italiano e inglese; non sono alimenti",
+      "foto": "IMG_5463.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-105",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita ricetta Lasagne bolognesi",
+      "dettagli": "Versioni italiano e inglese; non sono alimenti",
+      "foto": "IMG_5463.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-106",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita ricetta Cotoletta alla bolognese",
+      "dettagli": "Versioni italiano e inglese; non sono alimenti",
+      "foto": "IMG_5463.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-107",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita ricetta Tortellini bolognesi",
+      "dettagli": "Versioni italiano e inglese; non sono alimenti",
+      "foto": "IMG_5463.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-108",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita ricetta Friggione bolognese",
+      "dettagli": "Versioni italiano e inglese; non sono alimenti",
+      "foto": "IMG_5463.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-109",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita ricetta Tagliatelle bolognesi",
+      "dettagli": "Versioni italiano e inglese; non sono alimenti",
+      "foto": "IMG_5463.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-110",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita Due Torri",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-111",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita tortellino Bologna",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-112",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita mortadella Bologna",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-113",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita portici",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-114",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita monumenti e piazze",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-115",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita auto tricolore",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-116",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita scooter",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-117",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita Ape Bologna",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-118",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita Forza Bologna rossoblù",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-119",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita forchetta con tagliatelle",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-120",
+      "categoria": "Souvenir",
+      "brand": "",
+      "articolo_o_servizio": "Calamita Bologna a cuore",
+      "dettagli": "Marchi di fabbrica non leggibili; i soggetti non provano licenze commerciali",
+      "foto": "IMG_5464.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "souvenir-bologna"
+    },
+    {
+      "id": "GF03-121",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Pallone calcio bianco e nero",
+      "dettagli": "Il marchio BIC appartiene all’espositore sottostante, non è attribuito ai palloni",
+      "foto": "IMG_5466.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-122",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Pallone calcio rosa e nero",
+      "dettagli": "Il marchio BIC appartiene all’espositore sottostante, non è attribuito ai palloni",
+      "foto": "IMG_5466.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-123",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Tre salvadanai a forma di nano",
+      "dettagli": "Funzione salvadanaio confermata dall’utente",
+      "foto": "IMG_5467(1).jpeg",
+      "riscontro": "Foto e conferma utente",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-124",
+      "categoria": "Tabacco e sigaretti",
+      "brand": "Henri Wintermans",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "",
+      "foto": "IMG_5467(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-125",
+      "categoria": "Tabacco e sigaretti",
+      "brand": "Moods",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "",
+      "foto": "IMG_5467(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-126",
+      "categoria": "Tabacco e sigaretti",
+      "brand": "Café Crème",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "",
+      "foto": "IMG_5467(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-127",
+      "categoria": "Tabacco e sigaretti",
+      "brand": "Mac Baren",
+      "articolo_o_servizio": "Mixture Scottish Blend",
+      "dettagli": "",
+      "foto": "IMG_5467(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-128",
+      "categoria": "Sigari",
+      "brand": "Antico Sigaro Nostrano del Brenta",
+      "articolo_o_servizio": "Avanone in giara",
+      "dettagli": "Denominazione completata incrociando foto, elenco ADM e fonti",
+      "foto": "IMG_5467(1).jpeg",
+      "riscontro": "Foto + denominazione ADM",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-129",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Salvadanaio nano sul tronco",
+      "dettagli": "Funzione confermata dall’utente; ceramica dall’aspetto smaltato",
+      "foto": "IMG_5468(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-130",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Salvadanaio nano sotto il fungo",
+      "dettagli": "Funzione confermata dall’utente; ceramica dall’aspetto smaltato",
+      "foto": "IMG_5468(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-131",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Salvadanaio nano con cappello grigio",
+      "dettagli": "Funzione confermata dall’utente; ceramica dall’aspetto smaltato",
+      "foto": "IMG_5468(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-132",
+      "categoria": "Accendini",
+      "brand": "Atomic",
+      "articolo_o_servizio": "Flexi",
+      "dettagli": "Collo flessibile visibile",
+      "foto": "IMG_5468(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-133",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Mappamondo fumé con anelli dorati",
+      "dettagli": "Uso decorativo; non si deducono marca, dimensioni o materiale della sfera",
+      "foto": "IMG_5469.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-134",
+      "categoria": "Regali",
+      "brand": "",
+      "articolo_o_servizio": "Mappamondo nero e oro",
+      "dettagli": "Uso decorativo; non si deducono marca, dimensioni o materiale della sfera",
+      "foto": "IMG_5469.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "idee-regalo"
+    },
+    {
+      "id": "GF03-135",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Chesterfield",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-136",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Rizla+",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-137",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Pueblo",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-138",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Marlboro",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-139",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "American Spirit",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-140",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Camel",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-141",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Winston",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-142",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Philip Morris",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-143",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "JPS",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-144",
+      "categoria": "Tabacco e dispositivi",
+      "brand": "Ploom",
+      "articolo_o_servizio": "Marchio sull’esposizione",
+      "dettagli": "Nessuna promozione o offerta ripresa dalla fotografia",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-145",
+      "categoria": "Interni",
+      "brand": "",
+      "articolo_o_servizio": "Papiro egizio a parete",
+      "dettagli": "Riferimento di posizione e aspetto",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-146",
+      "categoria": "Interni",
+      "brand": "",
+      "articolo_o_servizio": "Fotografia incorniciata",
+      "dettagli": "Riferimento di posizione e aspetto",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-147",
+      "categoria": "Interni",
+      "brand": "",
+      "articolo_o_servizio": "Orologio rotondo a numeri romani",
+      "dettagli": "Riferimento di posizione e aspetto",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-148",
+      "categoria": "Interni",
+      "brand": "",
+      "articolo_o_servizio": "Profilo a cavalluccio marino luminoso",
+      "dettagli": "Riferimento di posizione e aspetto",
+      "foto": "IMG_5471.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-149",
+      "categoria": "Dolciumi",
+      "brand": "Gatos",
+      "articolo_o_servizio": "Soft Liquorice",
+      "dettagli": "Bastoncini neri/gialli confezionati singolarmente",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-150",
+      "categoria": "Dolciumi",
+      "brand": "Big Babol",
+      "articolo_o_servizio": "Chewing gum",
+      "dettagli": "Espositore identificativo",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-151",
+      "categoria": "Dolciumi",
+      "brand": "Haribo",
+      "articolo_o_servizio": "Piccole confezioni",
+      "dettagli": "Nel cestino del banco",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-152",
+      "categoria": "Dolciumi",
+      "brand": "Fisherman’s Friend",
+      "articolo_o_servizio": "Bustine",
+      "dettagli": "Più varianti non tutte leggibili",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-153",
+      "categoria": "Sigari",
+      "brand": "Toscanello",
+      "articolo_o_servizio": "Nero",
+      "dettagli": "",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-154",
+      "categoria": "Sigari",
+      "brand": "Toscanello",
+      "articolo_o_servizio": "Castano Raffinato",
+      "dettagli": "",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-155",
+      "categoria": "Sigari",
+      "brand": "Toscanello",
+      "articolo_o_servizio": "XXL Giallo Raffinato",
+      "dettagli": "",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-156",
+      "categoria": "Sigari",
+      "brand": "Toscanello",
+      "articolo_o_servizio": "Giallo Raffinato",
+      "dettagli": "",
+      "foto": "IMG_5472.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-157",
+      "categoria": "Cartine",
+      "brand": "Cartel",
+      "articolo_o_servizio": "Robot Universe",
+      "dettagli": "Confezione 130 mm, 32 leaves + 32 art filters",
+      "foto": "IMG_5473.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-158",
+      "categoria": "Cartine",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "4Twenty Collection",
+      "dettagli": "Cartine, non le serie degli accendini",
+      "foto": "IMG_5473.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-159",
+      "categoria": "Cartine",
+      "brand": "Cartel",
+      "articolo_o_servizio": "130 mm Feuilles & Filtres viola",
+      "dettagli": "Numero 32+32 leggibile per le confezioni esposte",
+      "foto": "IMG_5474.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-160",
+      "categoria": "Cartine",
+      "brand": "Cartel",
+      "articolo_o_servizio": "130 mm Non-Blanchi",
+      "dettagli": "Numero 32+32 leggibile per le confezioni esposte",
+      "foto": "IMG_5474.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-161",
+      "categoria": "Cartine",
+      "brand": "Cartel",
+      "articolo_o_servizio": "130 mm Robot Universe",
+      "dettagli": "Numero 32+32 leggibile per le confezioni esposte",
+      "foto": "IMG_5474.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-162",
+      "categoria": "Cartine",
+      "brand": "Juicy Jay’s",
+      "articolo_o_servizio": "Mix n Roll King Size Slim",
+      "dettagli": "",
+      "foto": "IMG_5474.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-163",
+      "categoria": "Cartine",
+      "brand": "Juicy Jay’s",
+      "articolo_o_servizio": "Green Apple",
+      "dettagli": "",
+      "foto": "IMG_5474.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-164",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Serie illustrate italiane",
+      "dettagli": "",
+      "foto": "IMG_5475.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-165",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Lupin III",
+      "dettagli": "",
+      "foto": "IMG_5475.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-166",
+      "categoria": "Accendini",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Goemon",
+      "dettagli": "",
+      "foto": "IMG_5475.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-167",
+      "categoria": "Accessori",
+      "brand": "CIAO",
+      "articolo_o_servizio": "Roll in Box",
+      "dettagli": "Contenitore, extra band and tray indicati sulla confezione",
+      "foto": "IMG_5475.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-168",
+      "categoria": "Accendini",
+      "brand": "CIAO",
+      "articolo_o_servizio": "Goldrake",
+      "dettagli": "Grafiche robot e personaggi su più forme di accendino",
+      "foto": "IMG_5476.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-169",
+      "categoria": "Accendini",
+      "brand": "BIC",
+      "articolo_o_servizio": "Serie decorate",
+      "dettagli": "Corpi colorati con piccoli personaggi",
+      "foto": "IMG_5476.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-170",
+      "categoria": "Dolciumi",
+      "brand": "Dietorelle",
+      "articolo_o_servizio": "Liquirizia",
+      "dettagli": "",
+      "foto": "IMG_5476.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-171",
+      "categoria": "Dolciumi",
+      "brand": "Dietorelle",
+      "articolo_o_servizio": "Limone",
+      "dettagli": "",
+      "foto": "IMG_5476.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-172",
+      "categoria": "Dolciumi",
+      "brand": "Dietorelle",
+      "articolo_o_servizio": "Menta",
+      "dettagli": "",
+      "foto": "IMG_5476.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-173",
+      "categoria": "Dolciumi",
+      "brand": "Dietorelle",
+      "articolo_o_servizio": "Fragola",
+      "dettagli": "",
+      "foto": "IMG_5476.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-174",
+      "categoria": "Accendini",
+      "brand": "CIAO",
+      "articolo_o_servizio": "Goldrake",
+      "dettagli": "Seconda inquadratura dello stesso espositore",
+      "foto": "IMG_5477.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "accendini-e-accessori"
+    },
+    {
+      "id": "GF03-175",
+      "categoria": "Sigari",
+      "brand": "La Aurora",
+      "articolo_o_servizio": "Family Creed Fuerte Sol",
+      "dettagli": "Fronte scatola; avvertenze presenti e non rimosse dalla fonte",
+      "foto": "IMG_5478.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-176",
+      "categoria": "Sigari",
+      "brand": "La Aurora",
+      "articolo_o_servizio": "Family Creed Fuerte Sol Toro",
+      "dettagli": "Retro scatola: Toro, 20, barcode leggibile; dati transcritti come etichetta, non giacenza",
+      "foto": "IMG_5479.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-177",
+      "categoria": "Dolciumi",
+      "brand": "Ricola",
+      "articolo_o_servizio": "L’Originale",
+      "dettagli": "",
+      "foto": "IMG_5483.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-178",
+      "categoria": "Dolciumi",
+      "brand": "Ricola",
+      "articolo_o_servizio": "Melissa Limoncella",
+      "dettagli": "",
+      "foto": "IMG_5483.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-179",
+      "categoria": "Dolciumi",
+      "brand": "Ricola",
+      "articolo_o_servizio": "Altre varianti alle erbe",
+      "dettagli": "",
+      "foto": "IMG_5483.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-180",
+      "categoria": "Ricevitoria",
+      "brand": "Lotto",
+      "articolo_o_servizio": "Fai 3 / Fai 4",
+      "dettagli": "Schermata informativa riconosciuta; non riprendere payout, quote o conto alla rovescia",
+      "foto": "IMG_5483.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "ricevitoria"
+    },
+    {
+      "id": "GF03-181",
+      "categoria": "Panoramica del banco",
+      "brand": "Air Bar",
+      "articolo_o_servizio": "Espositore",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-182",
+      "categoria": "Panoramica del banco",
+      "brand": "RELX",
+      "articolo_o_servizio": "Vetrine",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-183",
+      "categoria": "Panoramica del banco",
+      "brand": "WAKA",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-184",
+      "categoria": "Panoramica del banco",
+      "brand": "KIWI",
+      "articolo_o_servizio": "GO",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-185",
+      "categoria": "Panoramica del banco",
+      "brand": "GMedical",
+      "articolo_o_servizio": "Alcol test monouso",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-186",
+      "categoria": "Panoramica del banco",
+      "brand": "Respiro Vivo",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-187",
+      "categoria": "Panoramica del banco",
+      "brand": "Mentos",
+      "articolo_o_servizio": "Confetti",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-188",
+      "categoria": "Panoramica del banco",
+      "brand": "Fruit-tella",
+      "articolo_o_servizio": "Caramelle",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-189",
+      "categoria": "Panoramica del banco",
+      "brand": "Ploom",
+      "articolo_o_servizio": "Aura",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-190",
+      "categoria": "Panoramica del banco",
+      "brand": "Avanti",
+      "articolo_o_servizio": "Blunt 3",
+      "dettagli": "Identificazione nella panoramica, non specifica completa",
+      "foto": "IMG_5484.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio / categorie dedicate"
+    },
+    {
+      "id": "GF03-191",
+      "categoria": "Dolciumi",
+      "brand": "Oreo",
+      "articolo_o_servizio": "Biscotti",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-192",
+      "categoria": "Dolciumi",
+      "brand": "Golia",
+      "articolo_o_servizio": "Caramelle",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-193",
+      "categoria": "Dolciumi",
+      "brand": "Saila",
+      "articolo_o_servizio": "Caramelle",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-194",
+      "categoria": "Dolciumi",
+      "brand": "Halls",
+      "articolo_o_servizio": "Caramelle",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-195",
+      "categoria": "Dolciumi",
+      "brand": "Brooklyn",
+      "articolo_o_servizio": "Chewing gum",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-196",
+      "categoria": "Dolciumi",
+      "brand": "Vivident",
+      "articolo_o_servizio": "Chewing gum",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-197",
+      "categoria": "Dolciumi",
+      "brand": "Daygum",
+      "articolo_o_servizio": "Chewing gum",
+      "dettagli": "Panoramica: verificare la variante precisa sulla confezione",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "dolciumi"
+    },
+    {
+      "id": "GF03-198",
+      "categoria": "Interni",
+      "brand": "",
+      "articolo_o_servizio": "Vista generale ingresso verso banco",
+      "dettagli": "Mensole nere a sinistra, due vetrine alte centrali, banco sul fondo, parete destra con piccolo espositore",
+      "foto": "IMG_5485.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-199",
+      "categoria": "Servizi",
+      "brand": "Bounce",
+      "articolo_o_servizio": "Bag storage here",
+      "dettagli": "Foto ravvicinata della vetrofania; non cambia il link Bounce già presente",
+      "foto": "IMG_5487.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "deposito-bagagli"
+    },
+    {
+      "id": "GF03-200",
+      "categoria": "Servizi",
+      "brand": "eVx",
+      "articolo_o_servizio": "Distributore Luna h24",
+      "dettagli": "Insegna self-service h24; operazioni e controlli anagrafici del distributore non equivalgono ai servizi del banco",
+      "foto": "IMG_5488.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi"
+    },
+    {
+      "id": "GF03-201",
+      "categoria": "Servizi",
+      "brand": "",
+      "articolo_o_servizio": "Sali e valori bollati",
+      "dettagli": "Dicitura sull’insegna esterna",
+      "foto": "IMG_5488.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "servizi"
+    },
+    {
+      "id": "GF03-202",
+      "categoria": "Esterni",
+      "brand": "",
+      "articolo_o_servizio": "Civico Via Guerrazzi 10/F",
+      "dettagli": "Portico, due archi, vetrina a sinistra, ingresso, distributore a destra, cabina rossa presso ingresso",
+      "foto": "IMG_5488.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "il-negozio / contatti"
+    },
+    {
+      "id": "GF03-203",
+      "categoria": "Vetrina",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Creator 3 in 1",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-204",
+      "categoria": "Vetrina",
+      "brand": "LEGO",
+      "articolo_o_servizio": "City",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-205",
+      "categoria": "Vetrina",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Technic",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-206",
+      "categoria": "Vetrina",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Animal Crossing",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-207",
+      "categoria": "Vetrina",
+      "brand": "Bburago",
+      "articolo_o_servizio": "Modellini",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-208",
+      "categoria": "Vetrina",
+      "brand": "RMZ City",
+      "articolo_o_servizio": "Modellini",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-209",
+      "categoria": "Vetrina",
+      "brand": "Disney",
+      "articolo_o_servizio": "Frozen",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-210",
+      "categoria": "Vetrina",
+      "brand": "Disney",
+      "articolo_o_servizio": "Princess",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-211",
+      "categoria": "Vetrina",
+      "brand": "Disney",
+      "articolo_o_servizio": "Animators",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-212",
+      "categoria": "Vetrina",
+      "brand": "Clementoni",
+      "articolo_o_servizio": "Scienza & Gioco Meccanica",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-213",
+      "categoria": "Vetrina",
+      "brand": "Nuby",
+      "articolo_o_servizio": "Polipetto attività",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-214",
+      "categoria": "Vetrina",
+      "brand": "Sport One",
+      "articolo_o_servizio": "Set ping-pong",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-215",
+      "categoria": "Vetrina",
+      "brand": "CHAMP HIGH",
+      "articolo_o_servizio": "Accessori in vetrina",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-216",
+      "categoria": "Vetrina",
+      "brand": "RAW",
+      "articolo_o_servizio": "Cartine",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-217",
+      "categoria": "Vetrina",
+      "brand": "CLIPPER",
+      "articolo_o_servizio": "Accessori",
+      "dettagli": "",
+      "foto": "IMG_5492.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Categorie dedicate"
+    },
+    {
+      "id": "GF03-218",
+      "categoria": "Interni e vetrina",
+      "brand": "",
+      "articolo_o_servizio": "Vista frontale completa",
+      "dettagli": "Mensole sospese a catena; montante che separa giochi e accessori",
+      "foto": "IMG_5493.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    },
+    {
+      "id": "GF03-219",
+      "categoria": "Giochi",
+      "brand": "Bburago",
+      "articolo_o_servizio": "Racing Red Bull / F1",
+      "dettagli": "Alcuni marchi auto sono quelli dei veicoli riprodotti, non del fabbricante del modellino",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-220",
+      "categoria": "Giochi",
+      "brand": "RMZ City",
+      "articolo_o_servizio": "Modellini auto e veicoli",
+      "dettagli": "Alcuni marchi auto sono quelli dei veicoli riprodotti, non del fabbricante del modellino",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-221",
+      "categoria": "Giochi",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Creator 3 in 1 e City",
+      "dettagli": "Alcuni marchi auto sono quelli dei veicoli riprodotti, non del fabbricante del modellino",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-222",
+      "categoria": "Giochi",
+      "brand": "Disney",
+      "articolo_o_servizio": "Frozen e Princess",
+      "dettagli": "Alcuni marchi auto sono quelli dei veicoli riprodotti, non del fabbricante del modellino",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-223",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Racchettoni da spiaggia",
+      "dettagli": "Marchio non determinato",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-224",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Palloni",
+      "dettagli": "Marchio non determinato",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-225",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Ventagli",
+      "dettagli": "Marchio non determinato",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-226",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Maschere",
+      "dettagli": "Marchio non determinato",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-227",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Penne profumate",
+      "dettagli": "Marchio non determinato",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-228",
+      "categoria": "Giochi e cartoleria",
+      "brand": "",
+      "articolo_o_servizio": "Gomme da collezione",
+      "dettagli": "Marchio non determinato",
+      "foto": "IMG_5494.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / cartoleria"
+    },
+    {
+      "id": "GF03-229",
+      "categoria": "Giochi",
+      "brand": "Nuby",
+      "articolo_o_servizio": "Polipetto attività 18m+",
+      "dettagli": "",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-230",
+      "categoria": "Giochi",
+      "brand": "Clementoni",
+      "articolo_o_servizio": "Meccanica Roadster & Dragster",
+      "dettagli": "",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-231",
+      "categoria": "Giochi",
+      "brand": "Disney",
+      "articolo_o_servizio": "Bambole Anna ed Elsa",
+      "dettagli": "",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-232",
+      "categoria": "Giochi",
+      "brand": "Disney",
+      "articolo_o_servizio": "Princess e Animators",
+      "dettagli": "",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-233",
+      "categoria": "Giochi",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Animal Crossing e Technic",
+      "dettagli": "",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-234",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Magnetic Solitario",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-235",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Magnetic Ludo",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-236",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Magnetic Football",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-237",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Magnetic Scacchi",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-238",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Giochi da spiaggia",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-239",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Dinosaur Transforming Car",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-240",
+      "categoria": "Giochi",
+      "brand": "",
+      "articolo_o_servizio": "Unicorn Transforming Car",
+      "dettagli": "Marca non determinata; non attribuire le auto trasformabili a Clementoni per vicinanza",
+      "foto": "IMG_5495(1).jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-241",
+      "categoria": "Giochi e collezioni",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Creator pappagallo 3 in 1",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-242",
+      "categoria": "Giochi e collezioni",
+      "brand": "LEGO",
+      "articolo_o_servizio": "Minifigures Serie 24",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-243",
+      "categoria": "Giochi e collezioni",
+      "brand": "Marvel",
+      "articolo_o_servizio": "Avengers Titan Hero Series Thor",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-244",
+      "categoria": "Giochi e collezioni",
+      "brand": "PAW Patrol",
+      "articolo_o_servizio": "Adesivi",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-245",
+      "categoria": "Giochi e collezioni",
+      "brand": "Panini",
+      "articolo_o_servizio": "Calciatori",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-246",
+      "categoria": "Giochi e collezioni",
+      "brand": "Panini",
+      "articolo_o_servizio": "FIFA World Cup 2026",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-247",
+      "categoria": "Giochi e collezioni",
+      "brand": "Pizzardi",
+      "articolo_o_servizio": "Amici Cucciolotti 2025",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-248",
+      "categoria": "Giochi e collezioni",
+      "brand": "Estiatoys",
+      "articolo_o_servizio": "Water Bomb 70 pcs",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-249",
+      "categoria": "Giochi e collezioni",
+      "brand": "Mad Prof",
+      "articolo_o_servizio": "Zombie Brain",
+      "dettagli": "",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-250",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Adesivi gattini",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-251",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Girandole geometriche rosse e bianche",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-252",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Slime in barattolo",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-253",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Palline con faccine",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-254",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Giochi morbidi a forma di rana",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-255",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Penne profumate",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-256",
+      "categoria": "Giochi e feste",
+      "brand": "",
+      "articolo_o_servizio": "Candela magica",
+      "dettagli": "Marca non leggibile; Candela Magica non certifica uso pirotecnico o alimentare",
+      "foto": "IMG_5497.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-257",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Notami",
+      "articolo_o_servizio": "Etichette autoadesive",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-258",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Arda",
+      "articolo_o_servizio": "Squadre e strumenti disegno",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-259",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Confiderm",
+      "articolo_o_servizio": "Cerotti assortiti e soft",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-260",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Teknee",
+      "articolo_o_servizio": "Power bank 2200 mAh",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-261",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Teknee",
+      "articolo_o_servizio": "Cavi Lightning 1A",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-262",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Teknee",
+      "articolo_o_servizio": "Cavi Lightning 1.5A",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-263",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Duracell",
+      "articolo_o_servizio": "Pile",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-264",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Magnum",
+      "articolo_o_servizio": "Lucchetto",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-265",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Loctite",
+      "articolo_o_servizio": "Super Attak Original",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-266",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Loctite",
+      "articolo_o_servizio": "Super Attak Mini Dosi",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-267",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Pritt",
+      "articolo_o_servizio": "Colla",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-268",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "UHU",
+      "articolo_o_servizio": "Patafix",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-269",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Kores",
+      "articolo_o_servizio": "Gom e colle",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-270",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "BIC",
+      "articolo_o_servizio": "Twin Lady",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-271",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Spontex",
+      "articolo_o_servizio": "Milleusi",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-272",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Spontex",
+      "articolo_o_servizio": "Sensitive",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-273",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "FSL",
+      "articolo_o_servizio": "Lampadina LED",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-274",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "STD",
+      "articolo_o_servizio": "Lampadina LED",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-275",
+      "categoria": "Piccole necessità e cartoleria",
+      "brand": "Kimono Party",
+      "articolo_o_servizio": "Piccoli accessori e guanti",
+      "dettagli": "",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / cartoleria / accessori-telefono"
+    },
+    {
+      "id": "GF03-276",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Nastri adesivi trasparenti",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-277",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Nastro carta",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-278",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Elastici",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-279",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Forbici",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-280",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Lime per unghie",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-281",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Ricarica gas",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-282",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Lampadina a candela",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-283",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Prese multiple",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-284",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Cavi e prolunghe",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-285",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Catena di sicurezza",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-286",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Candeline numeriche",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-287",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Torcia",
+      "dettagli": "Marca, modello o portata non interamente leggibili",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "piccole-necessita / feste-e-compleanni"
+    },
+    {
+      "id": "GF03-288",
+      "categoria": "Autodifesa",
+      "brand": "Legittima Difesa",
+      "articolo_o_servizio": "Spray in blister",
+      "dettagli": "Nome leggibile; composizione e conformità del singolo articolo non documentate: resta nel censimento, senza scheda commerciale",
+      "foto": "IMG_5498.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Inventario"
+    },
+    {
+      "id": "GF03-289",
+      "categoria": "Piccole necessità",
+      "brand": "",
+      "articolo_o_servizio": "Seconda vista del pannello",
+      "dettagli": "Dettagli di cavi, colle, guanti, nastri, prese; completa IMG_5498",
+      "foto": "IMG_5499.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni / categorie"
+    },
+    {
+      "id": "GF03-290",
+      "categoria": "Sigari",
+      "brand": "Nicita",
+      "articolo_o_servizio": "Confezioni",
+      "dettagli": "",
+      "foto": "IMG_5500.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-291",
+      "categoria": "Sigari",
+      "brand": "Tornabuoni",
+      "articolo_o_servizio": "Archibugio",
+      "dettagli": "",
+      "foto": "IMG_5500.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-292",
+      "categoria": "Sigari",
+      "brand": "Tornabuoni",
+      "articolo_o_servizio": "Rinascimento",
+      "dettagli": "",
+      "foto": "IMG_5500.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-293",
+      "categoria": "Sigari",
+      "brand": "Tornabuoni",
+      "articolo_o_servizio": "Spingarda XO",
+      "dettagli": "",
+      "foto": "IMG_5500.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-294",
+      "categoria": "Sigari",
+      "brand": "Davidoff",
+      "articolo_o_servizio": "Aniversario Short Perfecto",
+      "dettagli": "",
+      "foto": "IMG_5500.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sigari"
+    },
+    {
+      "id": "GF03-295",
+      "categoria": "Alimentari",
+      "brand": "Salina di Cervia",
+      "articolo_o_servizio": "Salfiore di Cervia",
+      "dettagli": "Sul vasetto Salfiore si legge raccolta 2017: dato della foto, non data della fornitura corrente",
+      "foto": "IMG_5502.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sale-di-cervia"
+    },
+    {
+      "id": "GF03-296",
+      "categoria": "Alimentari",
+      "brand": "Salina di Cervia",
+      "articolo_o_servizio": "Sale Dolce di Cervia alle erbe aromatiche senza aglio",
+      "dettagli": "Sul vasetto Salfiore si legge raccolta 2017: dato della foto, non data della fornitura corrente",
+      "foto": "IMG_5502.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sale-di-cervia"
+    },
+    {
+      "id": "GF03-297",
+      "categoria": "Alimentari",
+      "brand": "Salina di Cervia",
+      "articolo_o_servizio": "Sale fino",
+      "dettagli": "Sul vasetto Salfiore si legge raccolta 2017: dato della foto, non data della fornitura corrente",
+      "foto": "IMG_5502.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "sale-di-cervia"
+    },
+    {
+      "id": "GF03-298",
+      "categoria": "Dispositivi e nicotina",
+      "brand": "FUYL",
+      "articolo_o_servizio": "Estratti di Tabacco",
+      "dettagli": "Materiale sullo sfondo; non si riprendono equivalenze con sigarette",
+      "foto": "IMG_5502.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Archivio 18+"
+    },
+    {
+      "id": "GF03-299",
+      "categoria": "Giochi e distributore",
+      "brand": "FIAM",
+      "articolo_o_servizio": "Mani & Crazy Friends",
+      "dettagli": "Distributore rosso a cabina telefonica",
+      "foto": "IMG_5503.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-300",
+      "categoria": "Giochi e distributore",
+      "brand": "Cool Things",
+      "articolo_o_servizio": "Puppy Club",
+      "dettagli": "Collezione a sorpresa nel secondo vano",
+      "foto": "IMG_5503.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "giochi-e-giocattoli"
+    },
+    {
+      "id": "GF03-301",
+      "categoria": "Esterni",
+      "brand": "",
+      "articolo_o_servizio": "Distributore a forma di cabina rossa",
+      "dettagli": "Due vani e due meccanismi manuali, insegne Telephone, pavimento terrazzo con bordo scuro",
+      "foto": "IMG_5503.jpeg",
+      "riscontro": "Nome leggibile",
+      "sezione_sito": "Mappa interni"
+    }
+  ],
+  "photos": [
+    {
+      "filename": "IMG_5455.jpeg",
+      "sha256": "8486818c0f49447503f50a60db42008340a70e430a3f708f2b04acfa4b3c67d8",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5456.jpeg",
+      "sha256": "28409f5b2d3b3ede7a410659585905f00313d9317e96472d9269fa89d070c774",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5457.jpeg",
+      "sha256": "8ad0d2fbc241d3d3c67fae22dc686bed0c1731536cb6c3feeb9b34eec8774927",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5458.jpeg",
+      "sha256": "11145d222f4cf6eedc8d362d311da60759508bec2eb4ba1bdea22b65dfd6e799",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5459.jpeg",
+      "sha256": "73ad7a0042b30bb08695b1ea8e7f3b5103c51b911a22139eb486c1153a130df6",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5460.jpeg",
+      "sha256": "07189400e5779093da46c8755d8dd46f71b522380a299825c929eff959edf183",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5461.jpeg",
+      "sha256": "a74d1ffc1d0fd7eda32185b75403a87ab84fe8384ff71b16e18e39d757ceb84a",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5462.jpeg",
+      "sha256": "263c63502969ae828340c2318413e039a67719d3f3035400d077de2414e616de",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5463.jpeg",
+      "sha256": "b7710031e2ca1ab30133e14eec383f94db07302150bf89eacd19a309ec4c2346",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5464.jpeg",
+      "sha256": "294f0dc6937d54aa4b96c2102179130c51d8e6460f0eff5b916b89df667b50f0",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5466.jpeg",
+      "sha256": "fd4cddaa4d374850c0d9864744a3d067e47f481172021fe87a8a1332ca6d65a1",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5467(1).jpeg",
+      "sha256": "ba72bbc4f2265b6b72bc810ea50ba1895201b0a953b3b66c4bb07d3ebd8ab341",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5468(1).jpeg",
+      "sha256": "65ef61a81c0ed1ec8238cf24393da60d7fe2d8dd9fd72554ead366be7d959669",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5469(1).jpeg",
+      "sha256": "9c9c208a144885707dafe8aefc7573bd8ad058b30ef10221094e4abf62d74a1d",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5469.jpeg",
+      "sha256": "9c9c208a144885707dafe8aefc7573bd8ad058b30ef10221094e4abf62d74a1d",
+      "duplicate_of": "IMG_5469(1).jpeg"
+    },
+    {
+      "filename": "IMG_5471.jpeg",
+      "sha256": "5e7056298b988e0ba034eb8634917fabc9ef3d86c6fda613e0c6b970021b2310",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5472.jpeg",
+      "sha256": "085d2911e811ac58d4f190aa4f06034d71ff2fc175d1c6f1a804e13c915eef9d",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5473(1).jpeg",
+      "sha256": "d4d6773552ddaefebf8a9f2f1ba21cf832829b4125ee51ed52e858c9f0258b7a",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5473.jpeg",
+      "sha256": "d4d6773552ddaefebf8a9f2f1ba21cf832829b4125ee51ed52e858c9f0258b7a",
+      "duplicate_of": "IMG_5473(1).jpeg"
+    },
+    {
+      "filename": "IMG_5474(1).jpeg",
+      "sha256": "24ebd8679e847e2cbf0100004b8880853337f2b4232e5c17b6a793afbd35531d",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5474.jpeg",
+      "sha256": "24ebd8679e847e2cbf0100004b8880853337f2b4232e5c17b6a793afbd35531d",
+      "duplicate_of": "IMG_5474(1).jpeg"
+    },
+    {
+      "filename": "IMG_5475(1).jpeg",
+      "sha256": "2a9a7876acd159ed790f61a8327d5992d4cbb2bb43d926871a32e991c38b3672",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5475.jpeg",
+      "sha256": "2a9a7876acd159ed790f61a8327d5992d4cbb2bb43d926871a32e991c38b3672",
+      "duplicate_of": "IMG_5475(1).jpeg"
+    },
+    {
+      "filename": "IMG_5476.jpeg",
+      "sha256": "702e4c12a7d0b36d495acf82b086acc967e01edbd4a67de3da19427fdaa6a77a",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5477.jpeg",
+      "sha256": "6bbeda06e0e90f820e69263e072a0e2f7918e6ba922abb7829baa35e87399d0c",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5478.jpeg",
+      "sha256": "1b65261b01f2b3bb7633c8bcf625e85b2001b3027655730b9b774aa6be613143",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5479.jpeg",
+      "sha256": "f09623f405616d2d769ca389f2daa7752d2e540eda38f9ecb2476960d3f2fbca",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5483.jpeg",
+      "sha256": "2572867571c989b55bbd0719c1d57c4d331b0fcdd9073dcb706e3489b80e1284",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5484.jpeg",
+      "sha256": "669a64da4e5bda2a13899258ecce528f04e3093a5d5b4381cb0f1ea959ec5145",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5485.jpeg",
+      "sha256": "55f839807c736251532fcbf8f072baf10b4381f77c3694bc77cf0c2e2c5432b0",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5487.jpeg",
+      "sha256": "ada6e957f60bce1f06e08c34c24686d586bf7845705a954a710cdac84d6df01a",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5488.jpeg",
+      "sha256": "1f752f9c9d6e82920efb9f37335f719fdfe5b91cd97ec889b08566c93ea18a99",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5492.jpeg",
+      "sha256": "7499274758b45122764c0e5e251a92e07f72a92c0ba913caaf915df51f0b60db",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5493(1).jpeg",
+      "sha256": "021f2db5608a58bf7b5d3b8ab563789e755056fa335f8abec801f1527842da1a",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5493.jpeg",
+      "sha256": "021f2db5608a58bf7b5d3b8ab563789e755056fa335f8abec801f1527842da1a",
+      "duplicate_of": "IMG_5493(1).jpeg"
+    },
+    {
+      "filename": "IMG_5494(1).jpeg",
+      "sha256": "177d6c01708ef480dc72a5740327e466680c888149603230ccf97ca5a0cf2809",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5494.jpeg",
+      "sha256": "177d6c01708ef480dc72a5740327e466680c888149603230ccf97ca5a0cf2809",
+      "duplicate_of": "IMG_5494(1).jpeg"
+    },
+    {
+      "filename": "IMG_5495(1).jpeg",
+      "sha256": "d9593b9bc27b1e5490d27f6b7a1a091abe409bc5b10939fa0b77ff094b0ddaf8",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5497.jpeg",
+      "sha256": "955bf364d7732161c2051102366e1c03cdca7fa2334e8f6f90f13b74e16cbf28",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5498.jpeg",
+      "sha256": "fc616e5cb4e7db12c5e2ce5665b93ca153588752b3d6673f7a657b3cbbc620c4",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5499.jpeg",
+      "sha256": "6557d70a299483bade47513877508493e14557475a1bf7b166f4ffaf105477ae",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5500.jpeg",
+      "sha256": "f8700a35d595230a0124967dc62681b734a8f17c7b423e7f61ec215ef6d109f8",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5502.jpeg",
+      "sha256": "d8f15612387b9dae0bd8d90c708203ce2dcfc122d2d237b00b80759c6b0aade2",
+      "duplicate_of": null
+    },
+    {
+      "filename": "IMG_5503.jpeg",
+      "sha256": "30e2be0ba810864d5ca6870ed3017c35a95929ae1cfb08dc1636b269429c25ad",
+      "duplicate_of": null
+    }
+  ],
+  "spazi": [
+    {
+      "zona": "Ingresso e portico",
+      "riferimenti": [
+        "IMG_5488.jpeg",
+        "IMG_5503.jpeg"
+      ],
+      "osservato": "Vetrina a sinistra, ingresso a destra; cabina rossa fra vetrina e ingresso; distributore h24 alla destra dell’ingresso."
+    },
+    {
+      "zona": "Vetrina giochi",
+      "riferimenti": [
+        "IMG_5492.jpeg",
+        "IMG_5493.jpeg",
+        "IMG_5494.jpeg"
+      ],
+      "osservato": "Mensole nere sospese da catene; modellini e costruzioni a sinistra, piccoli giochi al centro; vetrina stretta accessori e scrittura sulla destra."
+    },
+    {
+      "zona": "Parete sinistra interna",
+      "riferimenti": [
+        "IMG_5484.jpeg",
+        "IMG_5485.jpeg"
+      ],
+      "osservato": "Mensole nere alte con mappamondi e salvadanai, parete calamite, mensole illuminate e accessori sottostanti."
+    },
+    {
+      "zona": "Banco e fondo",
+      "riferimenti": [
+        "IMG_5471.jpeg",
+        "IMG_5485.jpeg",
+        "IMG_5483.jpeg"
+      ],
+      "osservato": "Due mobili alti centrali in vetro e legno; scaffali sul fondo; papiro, foto incorniciata e orologio in alto; banco nero e dolciumi davanti."
+    },
+    {
+      "zona": "Pannello piccole necessità",
+      "riferimenti": [
+        "IMG_5498.jpeg",
+        "IMG_5499.jpeg"
+      ],
+      "osservato": "Pannello forato bianco con ganci; vaschetta modulistica ricevitoria al lato. Posizione assoluta rispetto all’ingresso non determinabile con precisione."
+    }
+  ],
+  "scale": "Rilievo qualitativo dalle fotografie; nessuna misura o planimetria in scala disponibile.",
+  "normalizzazioni": [
+    {
+      "nome": "Campesano",
+      "fonte": "ADM, anteprima 14 gennaio 2022: codice 3710",
+      "url": "https://www.adm.gov.it/portale/documents/20182/5541504/anteprima-14-01-22.pdf/74d00ab7-cfe1-f0be-6ff6-612350b9c9c4?t=1642148285669"
+    },
+    {
+      "nome": "Avanone del Brenta",
+      "fonte": "ADM, anteprima 14 novembre 2022: codice 20392",
+      "url": "https://www.adm.gov.it/portale/documents/20182/5983432/ANTEPRIMA-14-11-22.pdf/21e43c37-5c47-6e5f-7b2f-a3c5a4643d9f?t=1668423362289&version=1.0"
+    }
+  ]
+}

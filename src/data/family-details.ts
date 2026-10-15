@@ -1,3 +1,4 @@
+import {octoberCollection} from './collection-october';
 export const familyDetails:Record<string,{checks:[string[],string[]];question:[string,string];answer:[string,string];sources?:{label:[string,string];url:string}[]}>= {
   "profumi-raptus": {
     "checks": [
@@ -581,3 +582,5 @@ export const familyDetails:Record<string,{checks:[string[],string[]];question:[s
     ]
   }
 };
+
+for(const item of octoberCollection) familyDetails[item.id]={checks:item.checks,question:item.question,answer:item.answer};

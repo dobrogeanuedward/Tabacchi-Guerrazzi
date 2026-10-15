@@ -1,3 +1,4 @@
+import {octoberCollection,octoberBrandUpdates} from './collection-october';
 type Item={id:string;category:string;page:string;name:[string,string];description:[string,string];brand:string;art:string};
 const rows:[string,string,string,string,string,string,string,string][]=[
  ['profumi-raptus','profumi','Profumi Raptus','Raptus perfumes','Raptus','La gamma Raptus da scegliere da vicino, per te o per un regalo.','Explore the Raptus range in person, for yourself or as a gift.','gift-ink'],
@@ -27,6 +28,7 @@ const rows:[string,string,string,string,string,string,string,string][]=[
  ['piccoli-regali','regali','Piccole candele e portachiavi','Small candles and keyrings','','Candele e portachiavi per dire “ho pensato a te”.','Candles and keyrings to say “I thought of you”.','gift-ink'],
  ['giochi','giochi','Giochi e passatempi','Toys and pastimes','','Piccole sorprese, giochi e passatempi da scegliere pensando a chi li riceve.','Little surprises, toys and pastimes chosen with their recipient in mind.','play-ink']
 ];
-const destinations:Record<string,string>={profumi:'profumi-raptus',cartoleria:'cartoleria',souvenir:'souvenir-bologna',feste:'feste-e-compleanni',telefono:'accessori-telefono',necessita:'piccole-necessita',dolciumi:'dolciumi',regali:'idee-regalo',giochi:'giochi-e-giocattoli'};
-export const catalogAssortment:Item[]=rows.map(([id,category,it,en,brand,dit,den,art])=>({id,category,page:destinations[category],name:[it,en],description:[dit,den],brand,art}));
+const destinations:Record<string,string>={profumi:'profumi-raptus',cartoleria:'cartoleria',souvenir:'souvenir-bologna',feste:'feste-e-compleanni',telefono:'accessori-telefono',necessita:'piccole-necessita',dolciumi:'dolciumi',regali:'idee-regalo',giochi:'giochi-e-giocattoli',alimentari:'sale-di-cervia'};
+export const catalogAssortment:Item[]=[...rows.map(([id,category,it,en,brand,dit,den,art])=>({id,category,page:destinations[category],name:[it,en] as [string,string],description:[dit,den] as [string,string],brand:octoberBrandUpdates[id]||brand,art})),...octoberCollection.map(item=>({id:item.id,category:item.category,page:destinations[item.category],name:item.name,description:item.description,brand:item.brand,art:'gift-ink'}))];
 export const catalogGroups=[{id:'regali',it:'Idee regalo',en:'Gift ideas'},{id:'profumi',it:'Profumi Raptus',en:'Raptus perfumes'},{id:'giochi',it:'Giochi',en:'Toys'},{id:'cartoleria',it:'Cartoleria',en:'Stationery'},{id:'feste',it:'Compleanni',en:'Birthdays'},{id:'souvenir',it:'Souvenir',en:'Souvenirs'},{id:'telefono',it:'Telefono',en:'Phone accessories'},{id:'necessita',it:'Necessità',en:'Essentials'},{id:'dolciumi',it:'Dolciumi',en:'Sweets'}];
+catalogGroups.push({id:'alimentari',it:'Sale di Cervia',en:'Cervia salt'});

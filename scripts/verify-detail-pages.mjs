@@ -2,10 +2,12 @@ import {readFile,access,readdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {join} from 'node:path';
 let total=0;
+const sectionCounts={};
 for(const prefix of ['', 'en'])for(const section of ['assortimento','sigari']){
  const directory=join('dist',prefix,section);
  const entries=(await readdir(directory,{withFileTypes:true})).filter(e=>e.isDirectory()&&e.name!=='storie');
- assert.equal(entries.length,section==='sigari'?34:26);
+ if(!prefix){assert.ok(entries.length>=(section==='sigari'?34:26));sectionCounts[section]=entries.length;}
+ else assert.equal(entries.length,sectionCounts[section]);
  for(const entry of entries){
   const html=await readFile(join(directory,entry.name,'index.html'),'utf8');
   assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1);

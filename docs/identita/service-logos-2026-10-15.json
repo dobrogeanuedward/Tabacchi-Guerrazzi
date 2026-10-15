@@ -1,0 +1,64 @@
+{
+  "date": "2026-10-15",
+  "root": "public/brand/partners",
+  "assets": [
+    {
+      "name": "Bounce",
+      "file": "bounce-official.svg",
+      "source": "https://bounce.com/stores/bologna/7ZRpUp",
+      "method": "Asset originale già presente nel progetto; link di prenotazione conservato"
+    },
+    {
+      "name": "Satispay",
+      "file": "satispay-official.png",
+      "source": "https://www.datocms-assets.com/133951/1720164277-group-1321316881.svg?fm=svg",
+      "method": "File originale scaricato; contenuto PNG verificato nonostante l’estensione della URL"
+    },
+    {
+      "name": "Nexi",
+      "file": "nexi-official.svg",
+      "source": "https://www.nexi.it/content/dam/nexinew/icone/nexi-logo-dark.svg",
+      "method": "SVG originale"
+    },
+    {
+      "name": "pagoPA",
+      "file": "pagopa-official.svg",
+      "source": "https://www.pagopa.gov.it/assets/images/logo-pagopa-bianco.svg",
+      "method": "SVG originale, esposto su fondo blu nella guida ai pagamenti"
+    },
+    {
+      "name": "Sisal",
+      "file": "sisal-official.png",
+      "source": "https://www.sisal.it/etc.clientlibs/sisal-fullresponsive/clientlibs/clientlib-site/resources/images/svg/header/logo-sisal.png",
+      "method": "PNG originale; uso esclusivamente identificativo nella sezione informativa"
+    },
+    {
+      "name": "PuntoLis",
+      "file": "puntolis-official.png",
+      "source": "https://www.evxvending.it/download/38390/?tmstv=1775558663",
+      "method": "Immagine nativa xref 3300 e maschera 3299 dalla pagina PDF 28 (indice 27), brochure EVX 03/2026; conversione del solo spazio colore CMYK/RGB per l’esportazione PNG, forma invariata"
+    },
+    {
+      "name": "eVx",
+      "file": "evx-official.svg",
+      "source": "https://www.evxvending.it/download/38390/?tmstv=1775558663",
+      "method": "Esportazione dei vettori originali della pagina PDF 29 (indice 28), area logo 30,140,590,338; nessuna ricostruzione generativa"
+    },
+    {
+      "name": "IGT",
+      "file": "igt-logo.png",
+      "source": "https://commons.wikimedia.org/wiki/File:IGTlogo.png",
+      "original": "https://upload.wikimedia.org/wikipedia/commons/e/e6/IGTlogo.png",
+      "author": "International Game Technology PLC",
+      "copyright": "PD-textlogo; marchio registrato",
+      "method": "Asset invariato proveniente da IGT, distribuito da Wikimedia Commons; versione corrispondente alla vetrofania fotografata"
+    },
+    {
+      "name": "DomusBet",
+      "file": "domusbet-official.png",
+      "source": "https://www.domusbet.it/external_css/DOMUSBET/img/logo.png",
+      "method": "PNG originale del fornitore; sola identificazione del punto ricariche fotografato, senza collegamenti a gioco o registrazione"
+    }
+  ],
+  "note": "Marchi utilizzati per identificare i servizi documentati nelle fotografie. La presenza di un logo non definisce condizioni economiche, garanzie o l’intera gamma di operazioni del fornitore."
+}

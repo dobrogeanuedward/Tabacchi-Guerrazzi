@@ -1,0 +1,386 @@
+{
+  "date": "2026-10-15",
+  "mode": "built-in imagegen",
+  "assets": [
+    {
+      "id": "salvadanai-nani",
+      "referencePhotos": [
+        "IMG_5468(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. the three EXACT glazed ceramic DWARF COIN BANKS from reference, not decorative statues: left laughing seated dwarf green vest brown tree-stump base, centre seated laughing dwarf beneath large cream mushroom with green trousers, right sitting grey-capped dwarf mustard-yellow shirt grey trousers. These are piggy banks. Keep original shapes and glazing, no added accessories. Three-quarter eye-level intimate still life on light warm wooden shop counter with ivory wall, no tobacco products.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-a29401e9-8a0a-458a-986d-dfcb217a5a53.png",
+      "status": "selected",
+      "output": "/images/collection/salvadanai-nani.webp"
+    },
+    {
+      "id": "mappamondi",
+      "referencePhotos": [
+        "IMG_5469.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. the TWO EXACT decorative globes in reference: one taupe transparent-grey globe with gold continents and fine brass orbital wire rings, one black globe with fine gold map lines and small gold finial. Natural brushed brass imperfections and curved real cartographic markings. Restrained warm wooden tabletop still life, cream background, no tobacco packaging, no extra products.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-e90ee842-0fa6-4393-8247-2942bd4a80df.png",
+      "status": "selected",
+      "output": "/images/collection/mappamondi.webp"
+    },
+    {
+      "id": "matite-tortellino",
+      "referencePhotos": [
+        "IMG_5460.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. the actual souvenir pencils from reference topped with sculpted golden-yellow tortellini, in orange yellow green and pink lacquered wood, silver ferrules, the word BOLOGNA discreetly on shafts. Arrange five on natural paper on the real pale wood countertop. Tortellino shape must match folded pasta from reference, not flowers or dumplings. A close product photograph; no food props, no extra products.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-cf2c709e-7222-4d0c-ace1-1d789a447538.png",
+      "status": "selected",
+      "output": "/images/collection/matite-tortellino.webp"
+    },
+    {
+      "id": "calamite-bologna",
+      "referencePhotos": [
+        "IMG_5464.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. an exact selection of the Bologna souvenir fridge magnets in reference: terracotta Due Torri, yellow tortellino with Bologna handwritten, Bologna with mortadella motif, tiny green-white-red FIAT 500 style magnet, oval red-blue FORZA BOLOGNA, one tiny ochre scooter magnet. Preserve reference forms and believable resin size. Arrange naturally on warm off-white paper atop light wood, with tactile painted resin details. Single still life, no sheet or grid.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-77a25f45-5f6a-4585-a4e6-25105e4246dc.png",
+      "status": "selected",
+      "output": "/images/collection/calamite-bologna.webp"
+    },
+    {
+      "id": "calamite-ricette",
+      "referencePhotos": [
+        "IMG_5463.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. a tasteful exact product photograph of the small RECTANGULAR BOLOGNA RECIPE FRIDGE MAGNETS shown in reference, dark charcoal design with white Italian labels and small food photograph at upper left. Three magnets on warm cream paper: labels verbatim RAGÙ ALLA BOLOGNESE, TORTELLINI BOLOGNESI, TAGLIATELLE BOLOGNESI. Keep tiny recipe copy naturally too small to read; no fabricated legible ingredients. Preserve dimensions and print design. No food or plates outside magnets, these are souvenir products.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-4e691543-c68f-40e7-8542-10b173c2b755.png",
+      "status": "selected",
+      "output": "/images/collection/calamite-ricette.webp"
+    },
+    {
+      "id": "modellini-auto",
+      "referencePhotos": [
+        "IMG_5494.jpeg",
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. a restrained photograph of THREE ACTUAL diecast model cars from reference: small silver modern sports car, small blue sports coupe, small red open-wheel racing model, displayed with their real RMZ City blue-black and Bburago black-green boxes behind, labels not enlarged. Match model scale and realistic tire detail, no invented car models emphasized. Pale wood counter and soft cream background, no unrelated goods.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-f844334f-cee9-400f-99c9-20d3eeacf2dd.png",
+      "status": "selected",
+      "output": "/images/collection/modellini-auto.webp"
+    },
+    {
+      "id": "costruzioni-lego",
+      "referencePhotos": [
+        "IMG_5497.jpeg",
+        "IMG_5494.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. a photographic still life faithful to the LEGO CREATOR 3 in 1 red colourful parrot set package and small LEGO CITY yellow roadwork vehicle set visible in references. One real-looking boxed Creator parrot set, with a small assembled brick parrot next to it, accurate LEGO brick geometry. Preserve depicted parrot red-blue-yellow colours, don't invent set numbers or claims. Adult catalogue tabletop photograph, no children or extra objects.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-9e81e8d9-fe98-4d43-8697-5fd95f9054c3.png",
+      "status": "selected",
+      "output": "/images/collection/costruzioni-lego.webp"
+    },
+    {
+      "id": "salina-cervia",
+      "referencePhotos": [
+        "IMG_5502.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end editorial photograph for the real catalogue of Tabaccheria Guerrazzi di Angela in Bologna, landscape 3:2. Reference image is product identity evidence, not the target photo composition. Create a fresh professional photographic shoot, physically plausible, natural warm daylight from the side, restrained saturation, 70mm lens, f/7.1, entire products in focus, refined soft shadows, exact tactile textures, no wide angle, no synthetic gloss, no CGI look, no text overlay, no watermark, no collage. faithful product photography of the real SALINA DI CERVIA glass jars from reference. One glass jar labelled SALE DOLCE DI CERVIA ALLE ERBE AROMATICHE SENZA AGLIO with white pale blue triangular pattern and orange square Salina di Cervia emblem, silver screw lid, green herb salt granules. A second closed SALFIORE DI CERVIA jar with pale pink label behind. Keep reference packaging proportions and labels. No tasting claims, no old harvest year prominently displayed. Pale wooden counter and warm paper backdrop, natural glass reflections.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-4971134a-1eb2-4358-92d4-327bf2c1a8be.png",
+      "status": "selected",
+      "output": "/images/collection/salina-cervia.webp"
+    },
+    {
+      "id": "meccanica-clementoni",
+      "referencePhotos": [
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the Clementoni Scienza & Gioco Meccanica Roadster & Dragster construction set shown in reference, small red and black assembled mechanical toy roadster, exposed perforated black beams, red body panels and thin grey shafts. One authentic-looking package partly behind, preserve the actual box style, no invented extra modes or specifications. Still life on pale wooden counter and ivory paper.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-82e31cdd-2b9e-4b79-a9d1-b2c1209b34df.png",
+      "status": "selected",
+      "output": "/images/collection/meccanica-clementoni.webp"
+    },
+    {
+      "id": "bambole-disney",
+      "referencePhotos": [
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the small Disney Frozen dolls Anna and Elsa from the reference toy display, exact retail doll proportions with large eyes and stylised small bodies, Anna auburn braided hair black/blue/magenta outfit and Elsa pale-blonde hair blue dress, one other small Princess doll in background. Keep them as physical plastic retail toys, not live people or animation. Subtle actual Disney packaging blurred behind. Natural off-white paper and pale wood still life.",
+      "source": null,
+      "status": "generation-blocked",
+      "output": null
+    },
+    {
+      "id": "giochi-magnetici",
+      "referencePhotos": [
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the small magnetic TRAVEL GAME TINS visible in reference, four slim rectangular rounded tins labelled Magnetic Solitario, Magnetic Ludo, Magnetic Football, Magnetic Scacchi with colourful covers. One ludo tin slightly open showing a small real board and pieces, other tins closed. Accurate small travel-game proportions. No smartphone, no invented electronic features. Restrained cream paper and light wooden surface.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-84992a01-3853-4fce-ad14-ab0abd872973.png",
+      "status": "selected",
+      "output": "/images/collection/giochi-magnetici.webp"
+    },
+    {
+      "id": "giochi-nuby",
+      "referencePhotos": [
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the exact Nuby purple octopus activity toy visible in reference: purple rounded octopus head with large printed turquoise eyes, green and yellow small play rings, clear/translucent appendages and suction components as in actual reference toy. Place next to its small white cardboard backer with red Nuby wordmark and visible 18m+ as reference. Single infant activity toy, no baby, no water scene, no invented use claims. Pale wood counter cream background.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-14ae31b3-1355-41c3-97ff-8664a838aa3a.png",
+      "status": "selected",
+      "output": "/images/collection/giochi-nuby.webp"
+    },
+    {
+      "id": "adesivi-personaggi",
+      "referencePhotos": [
+        "IMG_5497.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the actual retail STICKER SHEETS from reference: one tall sheet of funny colourful cartoon kittens and tiny paw prints, and one narrow red-backed sheet with Paw Patrol puppy characters. Exact physical clear sticker plastic, glossy edges, modest reflections. Both laid naturally on slightly textured ivory paper on a light wooden desk, no other products. Product photography, not a flat digital illustration.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-29c2df93-1a02-4ea7-a84c-d68b3de98213.png",
+      "status": "selected",
+      "output": "/images/collection/adesivi-personaggi.webp"
+    },
+    {
+      "id": "slime-fidget",
+      "referencePhotos": [
+        "IMG_5497.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the actual small toy collection from reference: clear short jars of bright orange red and blue slime, a small green soft frog toy and two yellow smiley stress balls, one pink spiky soft ball. Physical plastic and soft rubber objects. Match real scale and shapes, preserve realistic transparent jar reflections. Single catalogue still life on neutral light wood, not glowing, no loose liquid, no strange new creatures.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-79114293-7794-407e-baac-89c041da4aa7.png",
+      "status": "selected",
+      "output": "/images/collection/slime-fidget.webp"
+    },
+    {
+      "id": "palloncini-acqua",
+      "referencePhotos": [
+        "IMG_5497.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the exact Estiatoys WATER BOMB colourful water-balloon packs from reference: green cardboard header with WATER BOMB H2O and 70 PCS, clear bag of small colourful uninflated latex balloons. Two neatly laid sealed packs, one slightly behind, faithful reference packaging. Neutral cream paper tabletop, no child, no actual exploding balloons, no invented claims, no unrelated props.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-76e2ccff-4a83-44eb-9e89-0c8866cc8efc.png",
+      "status": "selected",
+      "output": "/images/collection/palloncini-acqua.webp"
+    },
+    {
+      "id": "giochi-aperto",
+      "referencePhotos": [
+        "IMG_5466.jpeg",
+        "IMG_5462.jpeg",
+        "IMG_5494.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the actual outdoor play objects from references: small white football with black pentagons, bright pink football with black pentagons, and compact SPORT ONE HOLIDAY ping-pong set in transparent blue-trimmed zipped case with two real paddles and three white ping-pong balls. Arrange naturally on pale wooden counter, cream background, realistic ball scuff-free PVC texture and natural seams. No added logos, no sports stadium.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-26121e6f-ee61-4d45-8357-b2ac494c1b07.png",
+      "status": "selected",
+      "output": "/images/collection/giochi-aperto.webp"
+    },
+    {
+      "id": "figurine-panini",
+      "referencePhotos": [
+        "IMG_5497.jpeg",
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one landscape 3:2 photograph for the shop catalogue. References document the real products. Create a new high-end professional product shoot faithful to those references. Natural soft daylight from the left, refined neutral warmth, restrained saturation, 70mm lens f/8 for sharp whole objects, natural contact shadows, tactile real materials, believable plastic and printed cardboard. Not CGI, not a composite grid, no text overlay, no watermark. the actual collectible sticker packs shown in reference: one small Panini Calciatori packet, one FIFA WORLD CUP 2026 packet with white tournament trophy silhouette on blue-green/navy design and yellow Panini mark, one Amici Cucciolotti 2025 packet with puppy photo, and LEGO Minifigures pink series 24 pouch. Keep physical retail packets and reference packaging, tiny copy naturally small, no invented team or player endorsements. Restrained tabletop editorial photograph.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-5ef6a125-48d4-4001-8414-f258750f8d56.png",
+      "status": "selected",
+      "output": "/images/collection/figurine-panini.webp"
+    },
+    {
+      "id": "penne-decorate",
+      "referencePhotos": [
+        "IMG_5460.jpeg",
+        "IMG_5462.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. the real decorative stationery in references: three slim pastel pens with large imitation pearl bead tops and silver collars, two black pencils with small pink jewel ends, and one pale blue fluffy pompom pen with closed embroidered eyes. All are writing instruments, physically realistic and carefully arranged on warm off-white paper over pale wood. No tortellino pencils in this scene, no invented brand.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-1fed1027-a067-4f63-bbc9-35fd2be01437.png",
+      "status": "selected",
+      "output": "/images/collection/penne-decorate.webp"
+    },
+    {
+      "id": "chupa-chups",
+      "referencePhotos": [
+        "IMG_5456.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. the Chupa Chups lollipops from the reference. Five fully wrapped spherical lollipops on white sticks in red yellow orange and purple printed wrappers, with authentic yellow flower-shaped Chupa Chups marks, arranged naturally on warm ivory paper. Retain exact wrapper proportions and real twisted plastic texture. No child, no unwrapped sticky food, no additional props.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-f279139f-cd88-43ea-abcf-3c5db27f320c.png",
+      "status": "selected",
+      "output": "/images/collection/chupa-chups.webp"
+    },
+    {
+      "id": "haribo-rotella",
+      "referencePhotos": [
+        "IMG_5456.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. Haribo ROTELLA MAXI liquorice wheel sweets as seen in the actual cardboard display in reference: black glossy liquorice coils each in a small genuine clear wrapper, three packets on cream paper and a partially visible original white-red Haribo Rotella Maxi carton behind, preserve real product proportions. No lollipops, no invented health claims, realistic food photography without artificial saturation.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-360f5b22-d2c1-4b30-9c21-f64e40a210d2.png",
+      "status": "selected",
+      "output": "/images/collection/haribo-rotella.webp"
+    },
+    {
+      "id": "caramelle-miste",
+      "referencePhotos": [
+        "IMG_5485.jpeg",
+        "IMG_5476.jpeg",
+        "IMG_5472.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. a restrained real packaged-sweets still life from references: Dietorelle Liquirizia purple box, Dietorelle Menta turquoise box, Mentos blue-white mint roll, small red Golia packet, small green Saila packet, one cream Fisherman's Friend pouch and a modest small Oreo pack behind. Exact real package proportions, legible main brand names but small copy naturally not readable. Product on pale wood and cream paper; no unpackaged food, no invented new flavours.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-95a617ac-8d94-4497-bac6-7e60bf31b88a.png",
+      "status": "selected",
+      "output": "/images/collection/caramelle-miste.webp"
+    },
+    {
+      "id": "liquirizia-gatos",
+      "referencePhotos": [
+        "IMG_5472.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. the actual GATOS SOFT liquorice sticks, wrapped individually in slim black wrappers with bold yellow SOFT and cursive pink liquorice wording, a small selection lying on cream paper with yellow GATOS carton partly behind. Preserve the small cat-face emblem on carton and packaging identity. No unrelated sweets, no generic black cables; these are wrapped soft liquorice sticks.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-c2e88950-78a4-45b2-baa3-d6c728778b28.png",
+      "status": "selected",
+      "output": "/images/collection/liquirizia-gatos.webp"
+    },
+    {
+      "id": "ricola-erbe",
+      "referencePhotos": [
+        "IMG_5483.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. three authentic-looking Ricola sweets boxes faithful to reference: yellow L'ORIGINALE with herb drawings, yellow-pink small flavour box, pale yellow-green MELISSA LIMONCELLA herb-sweets box. Actual classic Ricola black script and realistic carton sizes. Arrange on cream paper, no loose medicinal herbs or medical claims, no invented flavour names, soft neutral warm product photograph.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-46e5b4d8-e2cc-45a0-b977-80d534742ad0.png",
+      "status": "selected",
+      "output": "/images/collection/ricola-erbe.webp"
+    },
+    {
+      "id": "guanti-spontex",
+      "referencePhotos": [
+        "IMG_5499.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. two Spontex HOUSEHOLD GLOVE packs exact as reference: yellow Spontex MILLEUSI pack with visible yellow rubber gloves and yellow Spontex SENSITIVE pack with pink accents. One simple yellow glove laid beside the packages, realistic matte rubber not shiny latex fetish. Adult household product catalogue, light neutral tabletop, no extra products, no unsupported claims.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-4370458e-5cf7-46bb-8961-a92cd3628ecf.png",
+      "status": "selected",
+      "output": "/images/collection/guanti-spontex.webp"
+    },
+    {
+      "id": "pile-lampadine",
+      "referencePhotos": [
+        "IMG_5498.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. the actual everyday products shown in reference: two Duracell battery blister packs with copper-top black batteries, one orange-white FSL LED bulb box and one red-white STD LED bulb box, a single matte white LED candle-shaped bulb beside them. Preserve believable electrical-product scale. Do not invent readable wattage, voltage, certification or efficiency claims, tiny text soft. Cream paper and pale wood.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-baf2169f-ab2b-40f8-afec-ea943cd0ed1a.png",
+      "status": "selected",
+      "output": "/images/collection/pile-lampadine.webp"
+    },
+    {
+      "id": "necessita-pannello",
+      "referencePhotos": [
+        "IMG_5499.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. a coherent professional still life of the actual practical items in reference: Loctite SUPER ATTAK original red-blue pack, yellow UHU patafix pack, small Kores glue stick, a Pritt stick, one roll of clear packing tape and one cream masking-tape roll, small brass padlock. Main real brand marks faithful. Exact real household product scale, neat but not geometric grid, pale warm paper and light wood, no new products.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-06f4155a-6a02-4f00-876a-b53e40ea39f2.png",
+      "status": "selected",
+      "output": "/images/collection/necessita-pannello.webp"
+    },
+    {
+      "id": "personaggi-marvel",
+      "referencePhotos": [
+        "IMG_5497.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. the actual Marvel AVENGERS TITAN HERO SERIES Thor action figure seen partly on the right of reference: blond long-haired male superhero in dark armour with red cape as a plastic retail action figure, beside partly visible blue-black Avengers retail carton. Reconstruct a single professional catalogue image without inventing accessories, no hammer unless visible. Physical plastic toy, not a live actor or cinematic action scene. Cream paper tabletop, grounded natural shadow.",
+      "source": null,
+      "status": "generation-blocked",
+      "output": null
+    },
+    {
+      "id": "distributore-sorprese",
+      "referencePhotos": [
+        "IMG_5503.jpeg"
+      ],
+      "prompt": "Use case: product-mockup. Asset type: one high-end landscape 3:2 editorial catalogue photograph. Reference is identity evidence, preserve the subject accurately. New photographic shoot with restrained warm daylight, precise tactile materials and true colours, subtle contact shadows, 70mm lens f/8, realistic depth of field with all main products sharp. No CGI, no oversaturation, no logos added as overlay, no text captions, no watermarks, no montage. reshoot the EXACT small red toy-capsule vending machine shaped like a British telephone box from reference, front and right side visible, two silver manual coin mechanisms, small red dispensing openings, rounded TELEPHONE signs at top. Retain actual FIAM Mani & Crazy Friends upper poster with colourful hands and Cool Things Puppy Club lower poster with puppies. Situated under the same Bologna portico, terracotta-red wall, pink-brown terrazzo floor with black mosaic borders, shop window at left softly out of focus. Remove only cardboard delivery boxes on ground. No people, no tobacco product focus. No invented geometry.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-9f155c12-d8c9-47ce-a1df-9f7f71222f93.png",
+      "status": "selected",
+      "output": "/images/collection/distributore-sorprese.webp"
+    },
+    {
+      "id": "clipper-metallo",
+      "referencePhotos": [
+        "IMG_5461.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a neutral exact catalogue reference photograph of the CLIPPER reusable pocket lighters in reference: four classic tall cylindrical silver-metal bodies and two rose-gold bodies, rounded exposed silver top housings, no flames, no people, no tobacco, on pale wood and cream paper. Not a luxury lifestyle advertisement. Keep real proportions and subtle brushed-metal wear, no invented packaging claims.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-1f7b72c6-6f78-4a03-985d-0cf39b6c5457.png",
+      "status": "selected",
+      "output": "/images/collection/clipper-metallo.webp"
+    },
+    {
+      "id": "ciao-goldrake",
+      "referencePhotos": [
+        "IMG_5476.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a neutral product-reference photograph of FOUR actual CIAO Goldrake lighters from reference: black rectangular tops, printed Goldrake robot designs in blue red yellow and purple, actual small CIAO square logo near top. Preserve the exact printed characters and retail lighter shape, no new product art. Upright on light wooden surface, cream paper background. No flame, no hand, no tobacco, no smoking, no promotional tagline.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-461fea75-33a8-41f9-8cd9-ca7cee2fc2a0.png",
+      "status": "selected",
+      "output": "/images/collection/ciao-goldrake.webp"
+    },
+    {
+      "id": "clipper-lupin",
+      "referencePhotos": [
+        "IMG_5475.jpeg",
+        "IMG_5461.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a neutral product-reference photograph of FOUR actual CLIPPER reusable lighters from reference with LUPIN THE THIRD anime artwork: Lupin in red jacket, Jigen in dark suit and hat, Goemon, Fujiko on white backgrounds and silver cylindrical tops. Match the real printing from references, small CLIPPER reusable label. No new designs, no flame, no people, no tobacco, no lifestyle props. Cream paper and pale wooden surface.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-c1516336-d62c-451e-8df0-f4afe9ef2d39.png",
+      "status": "selected",
+      "output": "/images/collection/clipper-lupin.webp"
+    },
+    {
+      "id": "cartel-130",
+      "referencePhotos": [
+        "IMG_5474.jpeg",
+        "IMG_5473.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a neutral documentary product photograph of the CARTEL 130 MM rolling-paper and card-tip booklets in reference. Three CLOSED booklets, one purple, one brown non-blanchi, one blue ROBOT UNIVERSE with small friendly blue robot drawing, clearly real printed paper packaging, the main words CARTEL and 130 mm accurate. No unwrapped paper demonstrations, no tobacco, no cannabis, no person or smoking, no claims. Pale wooden counter, soft even daylight.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-ec727102-b156-441c-acf5-02df2e48687f.png",
+      "status": "selected",
+      "output": "/images/collection/cartel-130.webp"
+    },
+    {
+      "id": "cartine-filtri",
+      "referencePhotos": [
+        "IMG_5456.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a neutral documentary product photograph of the closed accessory packs in reference: GIZEH 50 6MM ACTIVE FILTERS black pack and pink pack, GIZEH 6mm SLIM FILTERS white pack, RIZLA+ blue filter-tip booklet and one OCB blue paper booklet. Accurate actual package scale and main wordmarks. No tobacco, no cigarettes, no smoking, no flames, no demonstrations, no promotional copy. Soft even daylight, cream paper over pale wood.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-68307c7f-757e-44d3-834a-4608f1360f9b.png",
+      "status": "selected",
+      "output": "/images/collection/cartine-filtri.webp"
+    },
+    {
+      "id": "interno-negozio",
+      "referencePhotos": [
+        "IMG_5485.jpeg",
+        "IMG_5484.jpeg",
+        "IMG_5471.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a fresh high-level architectural interior photograph of EXACTLY the real small shop in references. Same white walls and decorative white cornice, grey recessed ceiling, pale diagonal square tiled floor, black and light wood counters, left long illuminated glass shelves, two tall central black/glass cabinets with dark wood lower cabinets, rear tobacco shelving in its exact location, same Egyptian papyrus frieze high on rear wall, black framed picture and large black open-face Roman numeral clock to right, narrow customer area and no enlarged room. Eye-level 35mm lens straight verticals, natural balanced warm white light, detailed real surfaces, reduce purple camera cast. No people, no added furniture, no marble, no changed floor, preserve layout. Small package signage remains incidental and unobtrusive, never enlarged, no legible advertising, no tobacco glamour.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-1146dde8-4c5b-4322-b522-dca1fa7d0079.png",
+      "status": "selected",
+      "output": "/images/collection/interno-negozio.webp",
+      "revision": "Walking floor corrected to diagonal pale ceramic tiles; counter panels retain their real wood finish."
+    },
+    {
+      "id": "vetrina-giochi",
+      "referencePhotos": [
+        "IMG_5493.jpeg",
+        "IMG_5494.jpeg",
+        "IMG_5495(1).jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a premium but absolutely faithful straight-on photographic reshoot of the REAL TOY DISPLAY WINDOW in references. Same slim dark metal window frame, black shelves suspended by fine vertical chains, green and white LED lighting, real LEGO and model-car boxes on left shelves, racquet and beach toys hanging left, centre dangling stickers and colourful small toys, right narrower glass cabinet with writing instruments, souvenirs and little gifts. Preserve physical density and all relative positions, use real glass reflections without milky glare, exact red-brown stone sill at bottom. No invented enormous shop, no empty stylised shelves, no new product selection. Photographer 50mm perspective with straight verticals, lovely balanced daylight, all visible merchandise physically believable. No people, no text overlay.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-ecfee634-4194-4752-8e69-cc95382b4b5d.png",
+      "status": "selected",
+      "output": "/images/collection/vetrina-giochi.webp"
+    },
+    {
+      "id": "esterno-portico",
+      "referencePhotos": [
+        "IMG_5488.jpeg",
+        "IMG_5503.jpeg"
+      ],
+      "prompt": "Use case: photorealistic-natural. Asset type: one professional landscape 3:2 photographic asset for the existing Guerrazzi website. Reference images document the subjects. Create a new photographic shoot with natural exposure, truthful colours, full material detail and credible optics, no collage, no watermark. a premium architectural landscape photograph of EXACTLY the Tabaccheria Guerrazzi di Angela storefront under the real Bologna portico from reference. Same two tall arched bays, ochre/terracotta plaster pillars and walls, white ribbed vaults, pink-brown terrazzo floor and black mosaic borders, illuminated little blue-and-yellow T sign above, left toy window, narrow glass entrance right with stickers, silver-turquoise self-service machine to the right, red telephone-box toy dispenser standing between toy window and doorway as shown. Preserve exact dimensions and spatial order, no invented extensions. Remove passers-by and cardboard boxes only. Natural late afternoon portico daylight, no neon fantasy, 40mm architecture lens, true verticals, tactile worn stone, restrained colour, photographic not CGI. No enlarged tobacco advertisements or product pack closeups.",
+      "source": "/workspace/scratch/658a5b6e8cfc/generated_images/exec-02aa6dfd-6c25-480b-a66a-7ee6658c3e77.png",
+      "status": "selected",
+      "output": "/images/collection/esterno-portico.webp"
+    }
+  ],
+  "fallbacks": {
+    "bambole-disney": "vetrina-giochi",
+    "personaggi-marvel": "vetrina-giochi"
+  }
+}

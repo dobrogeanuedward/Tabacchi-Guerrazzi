@@ -1,3 +1,4 @@
+import {octoberCigarNames} from './counter-archive';
 export type CigarRecord={slug:string;name:string;group:string;reference:string;photo:string;detail:[string,string]};
 const sourceRecords:CigarRecord[]=[
   {
@@ -392,3 +393,8 @@ export const cigarRecords:CigarRecord[]=sourceRecords.map(record=>({
  record.group==='Toscanello'?[`«${record.name.replace(/^Toscanello /,'')}» è una denominazione Toscanello. Un nome da leggere insieme alla famiglia a cui appartiene.`,`“${record.name.replace(/^Toscanello /,'')}” is a Toscanello name. Read it alongside the family it belongs to.`]:
  [`${record.name}, nell’indice dei nomi del sigaro. Un punto di partenza per esplorare il lessico delle forme e delle denominazioni.`,`${record.name}, in the index of cigar names. A starting point for exploring the language of forms and denominations.`])
 }));
+
+for(const [slug,name,group] of octoberCigarNames){
+ if(cigarRecords.some(record=>record.slug===slug||record.name.toLowerCase()===name.toLowerCase()))continue;
+ cigarRecords.push({slug,name,group,reference:'GF03-'+slug,photo:slug.startsWith('la-aurora')?'5478;5479':slug.startsWith('nostrano')?'5458;5459;5467':slug.startsWith('tornabuoni')?'5458;5459;5500':'5500',detail:[`${name}: una denominazione dell’indice del sigaro. Marchio, linea e termini di formato vanno letti separatamente; questa voce non attribuisce caratteristiche di consumo.`,`${name}: a name in the cigar index. Brand, line and format terms are separate; this record does not describe consumption qualities.`]});
+}

@@ -1,0 +1,5 @@
+---
+import BrandPage from '../../components/BrandPage.astro';import {catalogueBrands} from '../../data/brand-catalogue';
+export function getStaticPaths(){return catalogueBrands.map(brand=>({params:{slug:brand.slug}}));}
+---
+<BrandPage slug={Astro.params.slug} lang="it"/>

@@ -1,0 +1,16 @@
+---
+import {octoberCollection} from '../data/collection-october';
+import {brandSlug} from '../data/brand-catalogue';
+import {text,pathFor,type Lang} from '../data/shop';
+const {id,lang='it'}=Astro.props as {id:string;lang:Lang};
+const item=octoberCollection.find(r=>r.id===id);const l=lang==='it'?0:1;
+---
+{item&&<section class="collection-narrative wrap" aria-label={text(lang,'I dettagli dell’articolo','Item details')}>
+ <div><p class="section-label">{text(lang,'Da Angela','At Angela’s')}</p><h2>{item.name[l]}</h2></div>
+ <div class="narrative-copy">{item.story.map(part=><p>{part.text[l]}</p>)}
+ {item.brand&&<nav class="brand-links" aria-label={text(lang,'Scopri i brand','Explore the brands')}>{item.brand.split(',').map(name=><a href={pathFor(`marchi/${brandSlug(name.trim())}`,lang)}>{name.trim()}</a>)}</nav>}
+ </div>
+</section>}
+<style>
+.collection-narrative{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:50px;padding-block:42px;border-top:1px solid var(--line)}.collection-narrative h2{font:400 clamp(2rem,3vw,2.8rem)/1.18 var(--display);color:var(--accent);max-width:18ch}.narrative-copy>p{font-size:1.02rem;line-height:1.95;max-width:68ch}.brand-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:23px}.brand-links a{display:inline-flex;align-items:center;min-height:44px;border:1px solid var(--line);padding:8px 14px;color:var(--accent);font-weight:600;font-size:.9rem}.brand-links a:hover{background:var(--surface)}@media(max-width:680px){.collection-narrative{grid-template-columns:1fr;gap:24px;padding-block:30px}}
+</style>
