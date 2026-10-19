@@ -1,4 +1,5 @@
 ---
+import DisclosedImage from './DisclosedImage.astro';
 import { visualStudies, type VisualStudyId, type VisualStudyLang } from '../data/visual-studies';
 
 interface Props {
@@ -17,7 +18,7 @@ const sizes = variant === 'inset'
 
 <figure class:list={['visual-study', `visual-study--${variant}`, `visual-study--${study.theme}`]} data-study={id}>
   <div class="study-image">
-    <img
+    <DisclosedImage lang={lang}
       src={study.path}
       srcset={`${study.preview} 768w, ${study.path} 1536w`}
       sizes={sizes}

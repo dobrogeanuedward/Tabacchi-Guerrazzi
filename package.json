@@ -19,7 +19,8 @@
     "build:static": "node scripts/build-static.mjs",
     "check": "astro check",
     "audit:content": "node scripts/audit-site-content.mjs --summary --output docs/audit/site-content.json",
-    "check:launch": "node scripts/verify-launch-readiness.mjs --source-only --require-ready"
+    "check:launch": "node scripts/verify-launch-readiness.mjs --source-only --require-ready",
+    "test:notices": "node scripts/verify-public-notices.mjs"
   },
   "dependencies": {
     "@astrojs/node": "^9.0.0",

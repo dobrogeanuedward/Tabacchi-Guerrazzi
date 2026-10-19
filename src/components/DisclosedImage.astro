@@ -1,0 +1,8 @@
+---
+import type {HTMLAttributes} from 'astro/types';
+import {isGeneratedImage,imageDisclosure} from '../data/generated-images.mjs';
+type Props = HTMLAttributes<'img'> & {lang?:'it'|'en';dynamicDisclosure?:boolean};
+const {lang='it',dynamicDisclosure=false,...attributes}=Astro.props;
+const generated=isGeneratedImage(attributes.src);
+---
+{generated||dynamicDisclosure?<span class="disclosed-image" data-ai-visual><img {...attributes} data-ai-generated={generated?'true':undefined}/><span class="ai-disclosure" hidden={!generated}>{imageDisclosure(lang,attributes.src||'')}</span></span>:<img {...attributes}/>}

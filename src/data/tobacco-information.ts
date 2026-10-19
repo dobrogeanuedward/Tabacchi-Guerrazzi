@@ -6,6 +6,38 @@ export const tobaccoSources=[
  {label:'Legge 165/1962 — divieto di propaganda pubblicitaria (MEF)',url:'https://def.finanze.it/DocTribFrontend/executePrintArticolo.do?articolo=Articolo+testo&codiceOrdinamento=500000000000000&id=%7BBC90B8DD-4157-45FA-A42D-4EFC13554228%7D'},
  {label:'ADM — divieti di pubblicità e vendita a distanza; siti web inibiti',url:'https://www.adm.gov.it/portale/siti-inibiti-tabacchi'}
 ];
+export type LegalNoticeKind='tobacco'|'pipe'|'accessories'|'gambling';
+type LocalizedLegalText=readonly [string,string];
+type LegalNoticeCopy={title:LocalizedLegalText;paragraphs:LocalizedLegalText[];source:{label:LocalizedLegalText;url:string}};
+export const dependenceSupport={
+ number:'800 940 789',phone:'800940789',
+ label:['Sostegno anonimo e gratuito: Numero Verde Dipendenze ISS','Free, anonymous support: ISS national addiction helpline'] as LocalizedLegalText,
+ url:'https://www.iss.it/-/numero-verde-nazionale-dipendenze-800-940-789',
+};
+const tobaccoHealthSource={
+ label:['ISS — rischi del fumo di sigari e pipa','ISS — health risks of cigar and pipe smoking'] as LocalizedLegalText,
+ url:'https://www.issalute.it/index.php/falsi-miti-e-bufale/fumo-alcol-droghe-dipendenze/e-vero-che-se-fumo-sigarette-leggere-sigari-o-pipa-non-corro-rischi-per-la-salute',
+};
+const tobaccoSaleNotice:LocalizedLegalText=[
+ 'La vendita di prodotti del tabacco ai minori di 18 anni è vietata. La conferma 18+ sul sito non sostituisce i controlli previsti al banco. Il sito non raccoglie ordini e non effettua vendite o spedizioni online di tabacco.',
+ 'Selling tobacco products to anyone under 18 is prohibited. The website’s 18+ confirmation does not replace the required in-store checks. This website does not accept tobacco orders or sell or ship tobacco online.',
+];
+export const legalNotices:Record<LegalNoticeKind,LegalNoticeCopy>={
+ tobacco:{title:['Tabacco e salute','Tobacco and health'],paragraphs:[
+  ['Fumare sigari o pipa comporta rischi per la salute anche senza aspirare il fumo e può causare dipendenza.','Smoking cigars or a pipe carries health risks even without inhaling and can cause dependence.'],
+  tobaccoSaleNotice,
+ ],source:tobaccoHealthSource},
+ pipe:{title:['Pipe, tabacco e salute','Pipes, tobacco and health'],paragraphs:[
+  ['Una pipa non rende sicuro il fumo di tabacco: i rischi per la salute rimangono anche senza aspirare il fumo. Il consumo di tabacco può causare dipendenza.','A pipe does not make tobacco smoking safe: health risks remain even without inhaling. Tobacco use can cause dependence.'],
+  tobaccoSaleNotice,
+ ],source:tobaccoHealthSource},
+ accessories:{title:['Accessori per il fumo','Smoking accessories'],paragraphs:[
+  ['Gli accessori non eliminano i rischi del fumo di tabacco. Il sito non raccoglie ordini e non effettua vendite o spedizioni online di tabacco.','Accessories do not eliminate the health risks of tobacco smoking. This website does not accept tobacco orders or sell or ship tobacco online.'],
+ ],source:tobaccoHealthSource},
+ gambling:{title:['Gioco e tutela della salute','Gambling and health'],paragraphs:[
+  ['Il gioco con vincite in denaro è vietato ai minori di 18 anni e può causare dipendenza. Il sito non raccoglie giocate né pagamenti per il gioco.','Gambling for money is prohibited for anyone under 18 and can cause addiction. This website does not accept bets, lottery entries or gambling payments.'],
+ ],source:{label:['ISS — informazioni e sostegno sulle dipendenze','ISS — addiction information and support'],url:dependenceSupport.url}},
+};
 export const tobaccoGuides:Record<string,any>={
  'sigari-termini-informazioni':{parent:'sigari',title:['Sigari, sigaretti e tabacco da pipa: i termini.','Cigars, cigarillos and pipe tobacco: terminology.'],intro:['Una scheda per capire le denominazioni, senza suggerimenti di consumo o confronti commerciali.','A guide to terminology, without consumption advice or commercial comparisons.'],sources:tobaccoSources.slice(0,1),sections:[
  [['Le categorie nel testo normativo','Categories in the legislation'],['L’articolo 2 del D.Lgs. 6/2016 distingue sigari, sigaretti e tabacco da pipa. Il sigaretto è definito come un sigaro piccolo; il tabacco da pipa è destinato esclusivamente all’impiego in una pipa.','Article 2 of Legislative Decree 6/2016 distinguishes cigars, cigarillos and pipe tobacco. A cigarillo is defined as a small cigar; pipe tobacco is intended exclusively for use in a pipe.']],

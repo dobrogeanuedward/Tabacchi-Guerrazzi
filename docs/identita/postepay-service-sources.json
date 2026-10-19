@@ -1,0 +1,41 @@
+{
+  "checkedOn": "2026-10-19",
+  "service": "Ricariche Postepay",
+  "slug": "ricariche-postepay",
+  "shopAvailability": {
+    "basis": "Direct confirmation from the project owner in this task on 2026-10-19.",
+    "scope": "Postepay top-ups at the counter of Tabaccheria Guerrazzi di Angela, Via Guerrazzi 10/F, Bologna.",
+    "doesNotEstablish": "Card issuance, online top-ups on this website, self-service top-ups or all services offered by Poste/LIS."
+  },
+  "officialSources": [
+    {
+      "url": "https://www.poste.it/come-ricaricare-carta-postepay/",
+      "section": "Tabaccherie rete PuntoLis",
+      "factsUsed": ["Cardholder or third-party top-up", "Card number, valid identity document and tax code", "Recharge amount from EUR 1.00 to EUR 997.99 per operation", "Payment service provided by LIS Pay S.p.A."]
+    },
+    {
+      "url": "https://www.puntolis.it/it/pagamenti/carte_prepagate/postepay",
+      "factsUsed": ["Adult requester", "Health card or electronic identity card for tax-code verification", "Cardholder tax code also needed for a third-party top-up", "First-operation residence and domicile details", "Check the transaction preview and retain the receipt"]
+    },
+    {
+      "url": "https://www.puntolis.it/content/dam/puntolis/documents/lis-paga/Foglio-Informativo-Servizi-di-Pagamento.pdf",
+      "edition": "Foglio informativo n. 1 - febbraio 2026",
+      "factsUsed": ["Cumulative limits per requester exist and include commissions", "Current fees and complete conditions must be checked in the official service documentation"],
+      "internalClarification": "The EUR 999.99 daily aggregate limit including commissions is distinct from the EUR 997.99 per-operation recharge amount. The website does not conflate these limits or promise a fixed fee."
+    }
+  ],
+  "logo": {
+    "path": "public/brand/partners/postepay-official.webp",
+    "sourcePage": "https://postepay.poste.it/",
+    "sourceAsset": "https://www.media.poste.it/115928d8-bbe0-41ff-963a-1de8efe7a784/lg/webp/logo-pp@2x",
+    "sourceImageAlt": "Postepay",
+    "format": "image/webp",
+    "width": 344,
+    "height": 72,
+    "bytes": 8340,
+    "sha256": "60f2c68cb2c8a71408cf4425d35f33e03d1a7cca94322a966085f7179a24e120",
+    "modification": "None; original downloaded asset retained byte for byte.",
+    "rights": "Postepay trademark and logo remain the property of their respective rights holders. No open licence or endorsement is asserted.",
+    "use": "Identification of the Postepay top-up service directly confirmed by the shop owner."
+  }
+}

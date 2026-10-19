@@ -1,11 +1,12 @@
 ---
+import DisclosedImage from './DisclosedImage.astro';
 import {pathFor,text,type Lang} from '../data/shop';
 import {bounceUrl} from '../data/assortment';
 import BounceBrand from './BounceBrand.astro';
 const {lang='it'}=Astro.props as {lang:Lang};
 ---
 <aside class="luggage-feature" aria-label={text(lang,'Deposito bagagli Bounce a Bologna','Bounce luggage storage in Bologna')}>
- <div class="luggage-feature-photo"><img src="/images/hero/viaggiatrice-960.webp" srcset="/images/hero/viaggiatrice-960.webp 960w, /images/hero/viaggiatrice.webp 1672w" sizes="(max-width: 800px) 100vw, 48vw" width="1672" height="940" loading="lazy" alt={text(lang,'una viaggiatrice con la valigia davanti alla vetrina di Guerrazzi','a traveller with a suitcase at the Guerrazzi shop window')}/><span>Bologna · Via Guerrazzi 10/F</span></div>
+ <div class="luggage-feature-photo"><DisclosedImage lang={lang} src="/images/hero/viaggiatrice-960.webp" srcset="/images/hero/viaggiatrice-960.webp 960w, /images/hero/viaggiatrice.webp 1672w" sizes="(max-width: 800px) 100vw, 48vw" width="1672" height="940" loading="lazy" alt={text(lang,'una viaggiatrice con la valigia davanti alla vetrina di Guerrazzi','a traveller with a suitcase at the Guerrazzi shop window')}/><span>Bologna · Via Guerrazzi 10/F</span></div>
  <div class="luggage-feature-copy"><BounceBrand lang={lang}/><p class="eyebrow">{text(lang,'Deposito bagagli Bounce · Bologna','Bounce luggage storage · Bologna')}</p><h2>{text(lang,'Più Bologna.','More Bologna.')}<br/><em>{text(lang,'Meno bagagli.','Less baggage.')}</em></h2><p>{text(lang,'Il check-out è già fatto, la giornata no. Lascia la valigia da Guerrazzi e riparti a piedi: una piazza, un portico, una sosta in più.','You’ve checked out. The day is still yours. Leave your suitcase at Guerrazzi and set off on foot: another square, another portico, another stop.')}</p><p class="luggage-location">{text(lang,'Deposito bagagli in Via Guerrazzi 10/F, nel centro storico. Su Bounce ci trovi come “Palazzo Ercolani”.','Luggage storage at Via Guerrazzi 10/F, in the historic centre. Find us on Bounce as “Palazzo Ercolani”.')}</p><div class="luggage-actions"><a class="button primary" href={bounceUrl} target="_blank" rel="noopener">{text(lang,'Prenota su Bounce','Book on Bounce')}</a><a class="text-link" href={pathFor('deposito-bagagli',lang)}>{text(lang,'Come funziona','How it works')}</a></div><p class="luggage-terms">{text(lang,'Disponibilità, prezzo e orari aggiornati nella scheda Bounce.','See the Bounce listing for current availability, prices and hours.')}</p></div>
 </aside>
 <style>

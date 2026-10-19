@@ -1,4 +1,5 @@
 ---
+import DisclosedImage from './DisclosedImage.astro';
 import NeighborhoodLinks from './NeighborhoodLinks.astro';
 import Base from '../layouts/Base.astro';
 import CollectionNarrative from './CollectionNarrative.astro';
@@ -67,7 +68,7 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
         </nav>
       </div>
       <figure class="family-visual family-visual-photo">
-        <div class="family-art-surface"><img src={familyImage} srcset={familyImageSet} sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1100px) 42vw, 570px" width={photograph.width} height={photograph.height} alt={photograph.alt?.[l]||item.name[l]} fetchpriority="high"/></div>
+        <div class="family-art-surface"><DisclosedImage lang={lang} src={familyImage} srcset={familyImageSet} sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1100px) 42vw, 570px" width={photograph.width} height={photograph.height} alt={photograph.alt?.[l]||item.name[l]} fetchpriority="high"/></div>
         <figcaption>{item.name[l]}</figcaption>
       </figure>
     </section>
@@ -110,7 +111,7 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
 
     {(siblings.length>0||relatedCategories.length>0)&&<section id="percorsi" class="family-related wrap" aria-labelledby="family-related-title">
       <div class="family-related-opening"><div class="family-section-opening"><p class="family-section-label">{text(lang,'Continua a esplorare','Keep exploring')}</p><h2 id="family-related-title">{siblings.length>0?text(lang,'Da confrontare, da abbinare.','Compare or pair.'):text(lang,'Altri percorsi, altre idee.','More paths, more ideas.')}</h2></div><a class="family-all-link" href={`${pathFor('catalogo',lang)}?categoria=${item.category}`}>{text(lang,'Vedi nel catalogo','View in the catalogue')}</a></div>
-      {siblings.length>0&&<div class="family-sibling-grid">{siblings.map(sibling=>{const photo=catalogPhotoFor(sibling.id);return <a class="family-sibling-card" href={pathFor(`assortimento/${sibling.id}`,lang)}><img class="family-sibling-photo" src={photo.src} srcset={photo.srcset} sizes="(max-width: 680px) calc(100vw - 88px), 360px" width={photo.width} height={photo.height} alt={photo.alt?.[l]||sibling.name[l]} loading="lazy"/><span class="family-card-type">{text(lang,'Famiglia','Family')} · {familyCategoryLabel(sibling.category)}</span><h3>{sibling.name[l]}</h3><p>{sibling.description[l]}</p><span class="family-card-action">{text(lang,'Apri la scheda','Open the record')}</span></a>})}</div>}
+      {siblings.length>0&&<div class="family-sibling-grid">{siblings.map(sibling=>{const photo=catalogPhotoFor(sibling.id);return <a class="family-sibling-card" href={pathFor(`assortimento/${sibling.id}`,lang)}><DisclosedImage lang={lang} class="family-sibling-photo" src={photo.src} srcset={photo.srcset} sizes="(max-width: 680px) calc(100vw - 88px), 360px" width={photo.width} height={photo.height} alt={photo.alt?.[l]||sibling.name[l]} loading="lazy"/><span class="family-card-type">{text(lang,'Famiglia','Family')} · {familyCategoryLabel(sibling.category)}</span><h3>{sibling.name[l]}</h3><p>{sibling.description[l]}</p><span class="family-card-action">{text(lang,'Apri la scheda','Open the record')}</span></a>})}</div>}
       {relatedCategories.length>0&&<div class="family-category-grid">{relatedCategories.map(category=><a href={pathFor(category.slug,lang)}><span class="family-card-type">{text(lang,'Categoria','Category')}</span><h3>{category.label}</h3><p>{category.intro}</p><span class="family-card-action">{text(lang,'Esplora la categoria','Explore the category')}</span></a>)}</div>}
     </section>}
 

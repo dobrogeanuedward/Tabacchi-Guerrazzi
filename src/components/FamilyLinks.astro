@@ -1,4 +1,5 @@
 ---
+import DisclosedImage from './DisclosedImage.astro';
 import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';import {pathFor,text,type Lang} from '../data/shop';import {catalogPhotoFor} from '../data/catalog-photography';
 import {catalogProducts} from '../data/catalog-products.mjs';
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};const families=catalogAssortment.filter(p=>p.page===slug);const l=lang==='it'?0:1;
@@ -8,9 +9,9 @@ const categoryLabel=(id:string)=>{const group=catalogGroups.find(g=>g.id===id);r
 {families.length>0&&<section class="family-links" aria-labelledby="family-links-title">
  <header class="family-links-heading"><p class="family-section-label">{text(lang,'Articoli e famiglie','Items and families')}</p><h2 id="family-links-title">{text(lang,'Esplora le schede.','Explore the records.')}</h2><p>{text(lang,'Trova l’articolo che ti serve e scopri cosa confrontare in negozio.','Find the item you need and discover what to compare in store.')}</p></header>
  <div class="family-link-grid">
- {products.map(p=><a class="family-link-card" href={pathFor(`catalogo/${p.slug}`,lang)}><img class="family-card-photo" src={p.image} width="1440" height="960" alt={lang==='it'?p.imageAltIt:p.imageAltEn} loading="lazy"/><div class="family-card-top"><p class="family-card-label"><span>{text(lang,'Prodotto','Product')}</span>{categoryLabel(p.category)}</p></div><h3>{lang==='it'?p.nameIt:p.nameEn}</h3><p class="family-card-description">{text(lang,'Un piccolo tocco di colore per il cavo di ricarica. Selezionato e distribuito da AkenA.','A little touch of colour for your charging cable. Selected and distributed by AkenA.')}</p><span class="family-link-action">{text(lang,'Apri scheda','Open record')}</span></a>)}
+ {products.map(p=><a class="family-link-card" href={pathFor(`catalogo/${p.slug}`,lang)}><DisclosedImage lang={lang} class="family-card-photo" src={p.image} width="1440" height="960" alt={lang==='it'?p.imageAltIt:p.imageAltEn} loading="lazy"/><div class="family-card-top"><p class="family-card-label"><span>{text(lang,'Prodotto','Product')}</span>{categoryLabel(p.category)}</p></div><h3>{lang==='it'?p.nameIt:p.nameEn}</h3><p class="family-card-description">{text(lang,'Un piccolo tocco di colore per il cavo di ricarica. Selezionato e distribuito da AkenA.','A little touch of colour for your charging cable. Selected and distributed by AkenA.')}</p><span class="family-link-action">{text(lang,'Apri scheda','Open record')}</span></a>)}
  {families.map(p=><a class="family-link-card" href={pathFor(`assortimento/${p.id}`,lang)}>
-  <img class="family-card-photo" src={catalogPhotoFor(p.id).src} srcset={catalogPhotoFor(p.id).srcset} sizes="(max-width: 680px) calc(100vw - 90px), (max-width: 1080px) 40vw, 350px" width="1440" height="960" alt={p.name[l]} loading="lazy"/>
+  <DisclosedImage lang={lang} class="family-card-photo" src={catalogPhotoFor(p.id).src} srcset={catalogPhotoFor(p.id).srcset} sizes="(max-width: 680px) calc(100vw - 90px), (max-width: 1080px) 40vw, 350px" width="1440" height="960" alt={p.name[l]} loading="lazy"/>
   <div class="family-card-top"><p class="family-card-label"><span>{text(lang,'Famiglia','Family')}</span>{categoryLabel(p.category)}</p></div>
   <h3>{p.name[l]}</h3><p class="family-card-description">{p.description[l]}</p>
   <span class="family-link-action">{text(lang,'Apri scheda','Open record')}</span>

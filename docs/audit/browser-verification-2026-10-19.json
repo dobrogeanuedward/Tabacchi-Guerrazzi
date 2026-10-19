@@ -3,10 +3,57 @@
   "environment": "Local production static export, Chrome",
   "scope": "Representative templates and user journeys; not all 448 pages visually inspected, not a WCAG or field Core Web Vitals certification.",
   "checks": [
-    {"page":"/giochi-e-giocattoli/","viewports":[1920,390],"result":"Category content, photographs and navigation render without horizontal overflow."},
-    {"page":"/catalogo/","viewport":390,"result":"Games category filter returns 14 families; LEGO search returns 3 relevant families."},
-    {"page":"/sigari/toscano-antico/","viewport":1920,"result":"Age gate and subsequent keyboard focus checked; factual identification, historical photograph, source credits and return navigation present."},
-    {"page":"/assortimento/quaderni/","viewport":320,"documentWidth":305,"result":"No horizontal overflow or failed loaded images. Footer with telephone, hours, DOGO Studio and Guerrazzi case study wraps correctly."}
+    {
+      "page": "/giochi-e-giocattoli/",
+      "viewports": [
+        1920,
+        390
+      ],
+      "result": "Category content, photographs and navigation render without horizontal overflow."
+    },
+    {
+      "page": "/catalogo/",
+      "viewport": 390,
+      "result": "Games category filter returns 14 families; LEGO search returns 3 relevant families."
+    },
+    {
+      "page": "/sigari/toscano-antico/",
+      "viewport": 1920,
+      "result": "Age gate and subsequent keyboard focus checked; factual identification, historical photograph, source credits and return navigation present."
+    },
+    {
+      "page": "/assortimento/quaderni/",
+      "viewport": 320,
+      "documentWidth": 305,
+      "result": "No horizontal overflow or failed loaded images. Footer with telephone, hours, DOGO Studio and Guerrazzi case study wraps correctly."
+    },
+    {
+      "page": "/servizi/ricariche-postepay/",
+      "viewports": [
+        1920,
+        320
+      ],
+      "result": "Official Postepay and PuntoLis logos loaded; 320px viewport has 305px document width and no horizontal overflow."
+    },
+    {
+      "page": "/giochi-e-giocattoli/",
+      "viewport": 390,
+      "result": "Local disclosure legible on the generated category image, no horizontal overflow or failed visible images."
+    },
+    {
+      "page": "/catalogo/proteggi-fili-animaletti-akena/",
+      "viewport": 390,
+      "result": "Selecting gallery image2 changes image and alt, with local AI disclosure visible."
+    },
+    {
+      "page": "/cookie/",
+      "viewport": 390,
+      "result": "Cancelling the18+ choice shows a success status; revisiting a regulated page presents the age-confirmation dialog again."
+    },
+    {
+      "page": "/sigari/toscano-antico/",
+      "result": "Health, minors, no-online-sale notice and current ISS support contact present; authentic Commons image has no AI label."
+    }
   ],
   "resolvedIssue": "Footer case-study link previously exceeded the 320px viewport; flex wrapping corrected and verified.",
   "publicationState": "Indexing gate remains closed until deferred business/privacy details and launch evidence are completed."
