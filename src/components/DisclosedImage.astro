@@ -2,10 +2,8 @@
 import type {HTMLAttributes} from 'astro/types';
 import AiDisclosure from './AiDisclosure.astro';
 import {isGeneratedImage,imageDisclosure} from '../data/generated-images.mjs';
-import {isSoftenedProductImage} from '../data/product-image-treatment.mjs';
 type Props = HTMLAttributes<'img'> & {lang?:'it'|'en';dynamicDisclosure?:boolean};
 const {lang='it',dynamicDisclosure=false,...attributes}=Astro.props;
 const generated=isGeneratedImage(attributes.src);
-const obscured=isSoftenedProductImage(attributes.src||'');
 ---
-{generated||dynamicDisclosure||obscured?<span class="disclosed-image" data-ai-visual data-product-obscured={obscured?'true':undefined}><img {...attributes} data-ai-generated={generated?'true':undefined} data-product-obscured={obscured?'true':undefined}/><AiDisclosure lang={lang} message={imageDisclosure(lang,attributes.src||'')} hidden={!generated}/></span>:<img {...attributes}/>}
+{generated||dynamicDisclosure?<span class="disclosed-image" data-ai-visual><img {...attributes} data-ai-generated={generated?'true':undefined}/><AiDisclosure lang={lang} message={imageDisclosure(lang,attributes.src||'')} hidden={!generated}/></span>:<img {...attributes}/>}

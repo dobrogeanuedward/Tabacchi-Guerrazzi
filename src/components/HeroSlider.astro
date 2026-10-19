@@ -1,6 +1,5 @@
 ---
 import AiDisclosure from './AiDisclosure.astro';
-import {isSoftenedProductImage} from '../data/product-image-treatment.mjs';
 import {shop,text,pathFor,type Lang} from '../data/shop';
 const {lang='it'}=Astro.props as {lang:Lang};
 const slides=[
@@ -16,7 +15,7 @@ for(const scene of newScenes)Object.assign(slides[scene.index],{src:`/images/col
 
 ---
 <section class="cinema-hero" data-ai-disclosure-group data-hero-slider aria-label={text(lang,'Benvenuti da Guerrazzi','Welcome to Guerrazzi')} aria-roledescription={text(lang,'Carosello','Carousel')}>
- <div class="cinema-frames">{slides.map((s,i)=><div class:list={['cinema-frame',{'is-active':i===0}]} data-slide aria-hidden={i!==0}><img src={s.src} srcset={`${s.small} ${s.smallWidth||960}w, ${s.src} ${s.width||1672}w`} sizes="100vw" style={`object-position:${s.focus}`} alt={s.alt} width={s.width||1672} height={s.height||940} loading={i===0?'eager':'lazy'} fetchpriority={i===0?'high':'auto'} data-product-obscured={isSoftenedProductImage(s.src)?'true':undefined}/></div>)}</div>
+ <div class="cinema-frames">{slides.map((s,i)=><div class:list={['cinema-frame',{'is-active':i===0}]} data-slide aria-hidden={i!==0}><img src={s.src} srcset={`${s.small} ${s.smallWidth||960}w, ${s.src} ${s.width||1672}w`} sizes="100vw" style={`object-position:${s.focus}`} alt={s.alt} width={s.width||1672} height={s.height||940} loading={i===0?'eager':'lazy'} fetchpriority={i===0?'high':'auto'}/></div>)}</div>
  <div class="cinema-copy"><p class="location-label eyebrow">{shop.address} <span>Bologna</span></p><h1><span data-hero-line1>{slides[0].line1}</span><br/><em data-hero-line2>{slides[0].line2}</em></h1><p class="cinema-description" data-hero-description>{slides[0].description}</p><div class="hero-buttons"><a class="button light" data-hero-cta href={slides[0].href}>{slides[0].cta}</a><a class="button cinema-directions" href={shop.maps} target="_blank" rel="noopener">{text(lang,'Come arrivare','Find us')}</a></div></div>
  <div class="cinema-bottom"><p><span data-slide-label>{slides[0].label}</span><AiDisclosure inline lang={lang} message={text(lang,'Immagini generate con IA','AI-generated images')} class="hero-image-disclosure"/></p><div class="cinema-controls"><div class="cinema-dots" aria-label={text(lang,'Scegli scena','Choose a scene')}>{slides.map((s,i)=><button type="button" data-slide-to={i} data-label={s.label} data-line1={s.line1} data-line2={s.line2} data-description={s.description} data-cta={s.cta} data-href={s.href} aria-label={`${text(lang,'Scena','Scene')} ${i+1}: ${s.label}`} aria-pressed={i===0}><span class="sr-only">{i+1}</span></button>)}</div><button type="button" data-slide-pause data-play={text(lang,'Riprendi slideshow','Play slideshow')} data-pause={text(lang,'Pausa slideshow','Pause slideshow')} aria-label={text(lang,'Pausa slideshow','Pause slideshow')}>Ⅱ</button></div></div>
 </section>
