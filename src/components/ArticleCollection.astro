@@ -2,6 +2,7 @@
 import DisclosedImage from './DisclosedImage.astro';
 import {catalogAssortment} from '../data/catalog-assortment';
 import {catalogPhotoFor} from '../data/catalog-photography';
+import {pathFor,text} from '../data/shop';
 const {slug,lang='it'}=Astro.props as {slug:string;lang?:'it'|'en'};
 const references:Record<string,string[]>={
  'lego-clementoni-modellini-scegliere-gioco-bologna':['costruzioni-lego','meccanica-clementoni','modellini-auto'],
@@ -19,9 +20,10 @@ const references:Record<string,string[]>={
  'regali-cartoleria-santo-stefano-aldrovandi-bologna':['quaderni','calamite'],
  'commissioni-san-petronio-vecchio-strada-maggiore':['cavi','nastri'],
 };
+const l=lang==='it'?0:1;
 const items=(references[slug]||[]).map(id=>catalogAssortment.find(item=>item.id===id)).filter(Boolean);
 ---
-{items.length>0&&<aside class="article-collection" aria-label="Le famiglie citate nel catalogo"><p class="section-label">Dal racconto al catalogo</p><div>{items.map(item=>{const photo=catalogPhotoFor(item!.id);return <figure><a href={`/assortimento/${item!.id}/`}><DisclosedImage lang={lang} src={photo.src} srcset={photo.srcset} width={photo.width} height={photo.height} sizes="(max-width:680px) 90vw,320px" alt={photo.alt?.[0]||item!.name[0]} loading="lazy"/><figcaption><strong>{item!.name[0]}</strong><span>{item!.description[0]}</span><span class="text-link">Apri la scheda</span></figcaption></a></figure>})}</div></aside>}
+{items.length>0&&<aside class="article-collection" aria-label={text(lang,'Le famiglie citate nel catalogo','Families mentioned in the catalogue')}><p class="section-label">{text(lang,'Dal racconto al catalogo','From the story to the catalogue')}</p><div>{items.map(item=>{const photo=catalogPhotoFor(item!.id);return <figure><DisclosedImage lang={lang} src={photo.src} srcset={photo.srcset} width={photo.width} height={photo.height} sizes="(max-width:680px) 90vw,320px" alt={photo.alt?.[l]||item!.name[l]} loading="lazy"/><figcaption><strong><a class="article-collection-link" href={pathFor(`assortimento/${item!.id}`,lang)}>{item!.name[l]}</a></strong><span>{item!.description[l]}</span><span class="text-link">{text(lang,'Apri la scheda','Open the listing')}</span></figcaption></figure>})}</div></aside>}
 <style>
-.article-collection{margin-block:28px 40px;padding-block:24px;border-block:1px solid var(--line)}.article-collection>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,185px),1fr));gap:24px}.article-collection figure{margin:0;min-width:0}.article-collection img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.article-collection figcaption{display:flex;flex-direction:column;gap:12px;padding-top:16px}.article-collection strong{font:400 1.5rem/1.25 var(--display);color:var(--accent)}.article-collection figcaption>span{font-size:.95rem;line-height:1.75}.article-image-note{font-size:.9rem;line-height:1.7;margin-top:24px;max-width:65ch}@media(max-width:520px){.article-collection>div{grid-template-columns:1fr}}
+.article-collection{margin-block:28px 40px;padding-block:24px;border-block:1px solid var(--line)}.article-collection>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,185px),1fr));gap:24px}.article-collection figure{position:relative;margin:0;min-width:0}.article-collection-link::after{content:'';position:absolute;inset:0;z-index:1}.article-collection-link:focus-visible{outline:0}.article-collection figure:focus-within{outline:3px solid var(--blue);outline-offset:4px}.article-collection img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.article-collection figcaption{display:flex;flex-direction:column;gap:12px;padding-top:16px}.article-collection strong{font:400 1.5rem/1.25 var(--display);color:var(--accent)}.article-collection figcaption>span{font-size:.95rem;line-height:1.75}.article-image-note{font-size:.9rem;line-height:1.7;margin-top:24px;max-width:65ch}@media(max-width:520px){.article-collection>div{grid-template-columns:1fr}}
 </style>

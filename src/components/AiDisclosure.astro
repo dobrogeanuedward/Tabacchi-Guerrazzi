@@ -1,0 +1,45 @@
+---
+import {randomUUID} from 'node:crypto';
+import {imageDisclosure} from '../data/generated-images.mjs';
+interface Props {lang?:'it'|'en';message?:string;inline?:boolean;hidden?:boolean;class?:string;}
+const {lang='it',message=imageDisclosure(lang),inline=false,hidden=false,class:className}=Astro.props;
+const id=`ai-info-${randomUUID()}`;
+const label=lang==='en'?`Image information: ${message}`:`Informazioni sull’immagine: ${message}`;
+---
+<span class:list={['ai-disclosure',inline&&'ai-disclosure--inline',className]} data-ai-control hidden={hidden}>
+ <button type="button" class="ai-info-button" aria-label={label} aria-controls={id} aria-expanded="false" popovertarget={id}>
+  <span class="ai-info-mark" aria-hidden="true"><span>a</span><svg viewBox="0 0 16 16" width="14" height="14" focusable="false"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.1"/><circle cx="8" cy="4.7" r=".8" fill="currentColor"/><path d="M7.2 7.2h.9v4h1" fill="none" stroke="currentColor" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+ </button>
+ <span id={id} class="ai-info-panel" popover="auto" role="note">{message}</span>
+</span>
+<script>
+ const controls=[...document.querySelectorAll<HTMLElement>('[data-ai-control]')];
+ const nativePopover='showPopover' in HTMLElement.prototype;
+ const entries=controls.map(control=>({control,button:control.querySelector<HTMLButtonElement>('.ai-info-button')!,panel:control.querySelector<HTMLElement>('.ai-info-panel')!}));
+ const isOpen=(panel:HTMLElement)=>nativePopover?panel.matches(':popover-open'):panel.hasAttribute('data-open');
+ const position=(button:HTMLElement,panel:HTMLElement)=>{
+  const rect=button.getBoundingClientRect();
+  panel.style.width=`${Math.min(260,innerWidth-24)}px`;
+  const {width,height}=panel.getBoundingClientRect();
+  panel.style.left=`${Math.max(12,Math.min(rect.right-width,innerWidth-width-12))}px`;
+  const above=rect.top-height-7;
+  panel.style.top=`${Math.max(12,Math.min(above>=12?above:rect.bottom+7,innerHeight-height-12))}px`;
+  panel.style.transform='none';
+ };
+ const close=({button,panel}:typeof entries[number])=>{
+  if(nativePopover&&isOpen(panel))panel.hidePopover();
+  panel.removeAttribute('data-open');button.setAttribute('aria-expanded','false');
+ };
+ for(const entry of entries){
+  const {button,panel}=entry;
+  button.addEventListener('click',event=>{
+   event.stopPropagation();
+   if(!nativePopover){event.preventDefault();const open=isOpen(panel);entries.forEach(close);if(!open){panel.setAttribute('data-open','');button.setAttribute('aria-expanded','true');position(button,panel);}}
+  });
+  panel.addEventListener('toggle',()=>{const open=isOpen(panel);button.setAttribute('aria-expanded',String(open));if(open)position(button,panel);});
+ }
+ document.addEventListener('click',event=>{if(!nativePopover&&!(event.target as Element).closest('[data-ai-control]'))entries.forEach(close);});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape')entries.forEach(close);});
+ document.addEventListener('scroll',()=>entries.filter(({panel})=>isOpen(panel)).forEach(close),true);
+ window.addEventListener('resize',()=>entries.filter(({panel})=>isOpen(panel)).forEach(({button,panel})=>position(button,panel)));
+</script>

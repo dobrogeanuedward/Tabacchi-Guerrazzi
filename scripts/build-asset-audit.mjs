@@ -199,7 +199,7 @@ function structuralDesignSignals(fragment,appliedAssets){
   genericFormStudyAssetIDs:genericFormStudyIDs.filter(id=>appliedAssets.some(asset=>asset.roles.includes('generated-generic-form-study')&&asset.path.includes('/'+id))),
   genericGeneratedPhotoScopeVisible:appliedAssets.some(asset=>asset.roles.includes('generated-generic-form-study'))&&/Studio fotografico generato|Generated photographic study/.test(text(fragment)),
   officialPartnerLogos:unique(appliedAssets.filter(asset=>asset.roles.includes('official-partner-logo')).map(asset=>asset.path)),
-  themedFamilyCardCount:[...fragment.matchAll(/<a\b[^>]*>/g)].filter(([tag])=>/\bassortment-card\b/.test(attrs(tag).class||'')&&attrs(tag)['data-treatment']).length,
+  themedFamilyCardCount:[...fragment.matchAll(/<article\b[^>]*>/g)].filter(([tag])=>/\bassortment-card\b/.test(attrs(tag).class||'')&&attrs(tag)['data-treatment']).length,
   pageOpeningVariant:attrs(fragment.match(/<section\b[^>]*\bdata-page-opening[^>]*>/)?.[0]||'')['data-page-opening']||null,
   containedContentPatterns:unique(classes.filter(value=>cardClasses.has(value))),
   explicitActionLabelsDetected:unique(actionLabels),

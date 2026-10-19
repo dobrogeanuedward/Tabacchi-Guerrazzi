@@ -24,7 +24,7 @@ const storyImages:Record<string,(string|null)[]>={
   const chosen=storyImages[slug];const family=chosen?catalogAssortment.find(item=>item.id===chosen[i]):families[i];const photo=family?catalogPhotoFor(family.id):null;
   return <section class:list={['category-story',photo&&'has-photograph']}>
    <div class="category-story-copy"><h2>{section[0][l]}</h2><p>{section[1][l]}</p>{family&&<a class="text-link" href={pathFor(`assortimento/${family.id}`,lang)}>{text(lang,'Nella scheda: ','In the record: ')}{family.name[l]}</a>}</div>
-   {family&&photo&&<figure><a href={pathFor(`assortimento/${family.id}`,lang)} aria-label={family.name[l]}><DisclosedImage lang={lang} src={photo.src} srcset={photo.srcset} sizes="(max-width:720px) 90vw, 480px" width={photo.width} height={photo.height} alt={photo.alt?.[l]||family.name[l]} loading="lazy"/></a><figcaption>{family.name[l]}</figcaption></figure>}
+   {family&&photo&&<figure><DisclosedImage lang={lang} src={photo.src} srcset={photo.srcset} sizes="(max-width:720px) 90vw, 480px" width={photo.width} height={photo.height} alt={photo.alt?.[l]||family.name[l]} loading="lazy"/><figcaption>{family.name[l]}</figcaption></figure>}
   </section>
  })}
 </div>

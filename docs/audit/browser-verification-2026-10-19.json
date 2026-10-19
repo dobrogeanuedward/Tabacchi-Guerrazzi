@@ -1,7 +1,7 @@
 {
   "checkedOn": "2026-10-19",
   "environment": "Local production static export, Chrome",
-  "scope": "Representative templates and user journeys; not all 448 pages visually inspected, not a WCAG or field Core Web Vitals certification.",
+  "scope": "Representative templates and user journeys; not all 450 pages visually inspected, not a WCAG or field Core Web Vitals certification.",
   "checks": [
     {
       "page": "/giochi-e-giocattoli/",
@@ -55,6 +55,18 @@
       "result": "Health, minors, no-online-sale notice and current ISS support contact present; authentic Commons image has no AI label."
     }
   ],
+  "aiIconChecks": {
+    "viewport": 390,
+    "buttonSize": [32, 28],
+    "backgroundOpacity": 0.42,
+    "opensOnlyOnActivation": true,
+    "keyboardEnterAndEscape": true,
+    "outsideClickCloses": true,
+    "popupWithinViewport": true,
+    "catalogueIconDoesNotNavigate": true,
+    "catalogueHeadingAndImageRemainLinked": true,
+    "gamesCategoryVisibleFamilies": 14
+  },
   "resolvedIssue": "Footer case-study link previously exceeded the 320px viewport; flex wrapping corrected and verified.",
   "publicationState": "Indexing gate remains closed until deferred business/privacy details and launch evidence are completed."
 }

@@ -14,6 +14,11 @@ const errors=[];let generated=0,documentary=0,decorative=0,pages=0;
 for(const file of await files('dist')){
  const html=await readFile(file,'utf8');const dom=parse(html);const nodes=descendants(dom);pages++;
  assert(html.includes('footer-image-note'),'Missing shared image note: '+file);
+ for(const button of nodes.filter(n=>n.tagName==='button'&&hasClass(n,'ai-info-button'))){
+  if(parents(button).some(n=>n.tagName==='a'||n.tagName==='button'))errors.push({file,reason:'AI control nested inside another interactive control'});
+  const target=attrs(button).popovertarget;const panel=nodes.find(n=>attrs(n).id===target);
+  if(!target||!panel||attrs(panel).popover!=='auto'||!attrs(button)['aria-label'])errors.push({file,reason:'AI control lacks accessible disclosure panel'});
+ }
  for(const img of nodes.filter(n=>n.tagName==='img')){
   const src=attrs(img).src||'';const ancestors=parents(img);
   if(isGeneratedImage(src)){

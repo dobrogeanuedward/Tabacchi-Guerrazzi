@@ -1,4 +1,5 @@
 ---
+import AiDisclosure from './AiDisclosure.astro';
 import DisclosedImage from './DisclosedImage.astro';
 import {isGeneratedImage} from '../data/generated-images.mjs';
 import NeighborhoodLinks from './NeighborhoodLinks.astro';
@@ -33,7 +34,7 @@ const updated=Number.isFinite(p.updated)?new Date(p.updated):null;
       <div class="product-detail">
         <figure class="product-media">
           <div class="product-image-frame"><DisclosedImage dynamicDisclosure lang={lang} id="main-product-image" class="main-product-image" src={p.image} alt={(lang==='it'?p.imageAltIt:p.imageAltEn)||name} width="1440" height="960" fetchpriority="high"/></div>
-          {images.length>1&&<div class="product-gallery-controls" data-ai-disclosure-group><p>{text(lang,'Galleria','Gallery')} <span class={images.some(isGeneratedImage)?'ai-group-disclosure':undefined}>{images.length} {images.every(isGeneratedImage)?text(lang,'immagini generate con IA','AI-generated images'):images.some(isGeneratedImage)?text(lang,'immagini, alcune generate con IA','images, including AI-generated images'):text(lang,'immagini','images')}</span></p><div class="product-thumbs" role="group" aria-label={text(lang,'Immagini del prodotto','Product images')}>{images.map((src:string,i:number)=><button type="button" data-product-src={src} data-product-generated={String(isGeneratedImage(src))} data-product-alt={imageAlts[i]} aria-pressed={i===0?'true':'false'} aria-label={`${text(lang,'Visualizza immagine','View image')} ${i+1}: ${imageAlts[i]}`}><img src={src} alt="" width="150" height="150" loading="lazy"/></button>)}</div></div>}
+          {images.length>1&&<div class="product-gallery-controls" data-ai-disclosure-group><p>{text(lang,'Galleria','Gallery')} <span>{images.length} {text(lang,'immagini','images')}</span>{images.some(isGeneratedImage)&&<AiDisclosure inline lang={lang} message={images.every(isGeneratedImage)?text(lang,'Immagini della galleria generate con IA','AI-generated gallery images'):text(lang,'La galleria include immagini generate con IA','The gallery includes AI-generated images')}/>}</p><div class="product-thumbs" role="group" aria-label={text(lang,'Immagini del prodotto','Product images')}>{images.map((src:string,i:number)=><button type="button" data-product-src={src} data-product-generated={String(isGeneratedImage(src))} data-product-alt={imageAlts[i]} aria-pressed={i===0?'true':'false'} aria-label={`${text(lang,'Visualizza immagine','View image')} ${i+1}: ${imageAlts[i]}`}><img src={src} alt="" width="150" height="150" loading="lazy"/></button>)}</div></div>}
           <figcaption>{(lang==='it'?p.imageCaptionIt:p.imageCaptionEn)||text(lang,'Immagini pubblicate per questa scheda. Verifica con il negozio la variante e la confezione che cerchi.','Images published for this record. Check the variant and pack you need with the shop.')}</figcaption>
         </figure>
 
@@ -61,7 +62,7 @@ const updated=Number.isFinite(p.updated)?new Date(p.updated):null;
 <script>
   const main=document.querySelector<HTMLImageElement>('#main-product-image');
   const thumbs=[...document.querySelectorAll<HTMLButtonElement>('[data-product-src]')];
-  thumbs.forEach(button=>button.addEventListener('click',()=>{if(main&&button.dataset.productSrc){main.src=button.dataset.productSrc;main.alt=button.dataset.productAlt||main.alt;const generated=button.dataset.productGenerated==='true';main.toggleAttribute('data-ai-generated',generated);const disclosure=main.parentElement?.querySelector<HTMLElement>('.ai-disclosure');if(disclosure)disclosure.hidden=!generated;thumbs.forEach(other=>other.setAttribute('aria-pressed',String(other===button)))}}));
+  thumbs.forEach(button=>button.addEventListener('click',()=>{if(main&&button.dataset.productSrc){main.src=button.dataset.productSrc;main.alt=button.dataset.productAlt||main.alt;const generated=button.dataset.productGenerated==='true';main.toggleAttribute('data-ai-generated',generated);const disclosure=main.parentElement?.querySelector<HTMLElement>('.ai-disclosure');if(disclosure){const panel=disclosure.querySelector<HTMLElement>('[popover]');if(panel&&'hidePopover' in panel&&panel.matches(':popover-open'))panel.hidePopover();panel?.removeAttribute('data-open');disclosure.querySelector('button')?.setAttribute('aria-expanded','false');disclosure.hidden=!generated;}thumbs.forEach(other=>other.setAttribute('aria-pressed',String(other===button)))}}));
 </script>
 <style>
   .product-document{--product-tone:var(--accent);--product-line:color-mix(in srgb,var(--accent) 23%,#e5e0d5);--product-muted:#4d5a68;color:var(--ink)}

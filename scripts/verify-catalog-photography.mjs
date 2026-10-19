@@ -2,6 +2,9 @@ import {readFile,access,readdir} from 'node:fs/promises';
 import assert from 'node:assert/strict';
 import {join} from 'node:path';
 import sharp from 'sharp';
+import {parse,serialize} from 'parse5';
+const descendants=node=>[node,...(node.childNodes||[]).flatMap(descendants)];
+const hasClass=(node,name)=>(node.attrs?.find(attribute=>attribute.name==='class')?.value||'').split(/\s+/).includes(name);
 
 const productSlug='proteggi-fili-animaletti-akena';
 let checkedFamilies=0,checkedProducts=0,checkedPages=0;
@@ -9,7 +12,7 @@ const familyCount=(await readdir('dist/assortimento',{withFileTypes:true})).filt
 let familyPhotos=0;
 for(const prefix of ['', 'en']){
  const catalogue=await readFile(join('dist',prefix,'catalogo/index.html'),'utf8');
- const cards=[...catalogue.matchAll(/<a class="product-card assortment-card"[\s\S]*?<\/a>/g)].map(match=>match[0]);
+ const cards=descendants(parse(catalogue)).filter(node=>node.tagName==='article'&&hasClass(node,'product-card')&&hasClass(node,'assortment-card')).map(node=>serialize(node));
  assert.equal(cards.length,familyCount);
  const photos=cards.map(card=>{
   const source=card.match(/<img[^>]+src="([^"]+)"/)[1];
