@@ -83,7 +83,7 @@ export const articles:Article[] = [
       ['Dai un nome all’occasione','Stai ringraziando qualcuno, andando a cena o tornando da un viaggio? Il motivo del regalo aiuta a decidere il tipo di oggetto e il budget. Basta questo primo riferimento per scartare proposte che non c’entrano con il gesto.'],
       ['Immagina come verrà usato','Un oggetto da tenere sulla scrivania, un piccolo ricordo e un passatempo da condividere hanno usi diversi. Pensa alla giornata della persona. Per un regalo destinato a un bambino, controlla le indicazioni del produttore e le avvertenze del singolo articolo.'],
       ['Guarda dimensioni e confezione','Le immagini del sito aiutano a riconoscere le categorie; le illustrazioni generiche non mostrano un prodotto preciso. Confronta l’oggetto dal vivo e verifica la variante che ti interessa. Se parti per un articolo specifico, chiedi prima se è presente.'],
-      ['Per un ricordo di Bologna, parti dalle calamite','Fra i soggetti documentati nell’espositore ci sono torri, monumenti e scritte di Bologna. Guarda il disegno e le dimensioni dell’oggetto: la categoria non è un elenco aggiornato di tutte le grafiche. Un biglietto con poche parole può accompagnare il ricordo.'],
+      ['Per un ricordo di Bologna, parti dalle calamite','Nell’espositore trovi torri, monumenti e scritte di Bologna. Guarda il disegno e le dimensioni dell’oggetto e scegli il soggetto che ti ricorda il viaggio. Un biglietto con poche parole può accompagnare il ricordo.'],
     ],
   },
   {
@@ -130,7 +130,7 @@ export const articles:Article[] = [
     sections:[
       ['Ascolta che cosa attira l’attenzione','Un personaggio, un colore o un’attività possono accendere la curiosità. Chiedi al bambino che cosa gli piacerebbe fare con quel gioco. La risposta aiuta a capire l’interesse, anche se da sola non stabilisce l’idoneità dell’articolo.'],
       ['Passa dalla scatola alle indicazioni','Leggi età e avvertenze del produttore, poi guarda componenti e modalità di utilizzo. Quanto spazio serve? Si gioca da soli o insieme? Sono domande concrete da affiancare all’entusiasmo del momento.'],
-      ['Tieni distinti racconto e informazioni sul prodotto','La sequenza di Angela e della bambina mostrata nel sito è una ricreazione editoriale generata. Non documenta una prova del gioco né una valutazione della sua idoneità. Per scegliere conta la confezione dell’articolo preciso, insieme alle esigenze del bambino.'],
+      ['Una scelta da condividere','Se il bambino sceglie insieme a te, chiedigli che cosa gli piace fare: costruire, inventare storie o giocare con altri. Guarda poi la confezione del gioco preciso, l’età indicata e i componenti inclusi. Un interesse concreto aiuta a orientarsi fra proposte diverse.'],
       ['Se il gioco è un regalo di compleanno','Dopo i controlli sul gioco puoi cercare un biglietto e confrontare buste e fiocchi. Sono dettagli del regalo, con caratteristiche proprie. Una confezione più curata non cambia l’età indicata o le avvertenze del gioco.'],
     ],
   },
@@ -152,7 +152,7 @@ export const articles:Article[] = [
     summary:'Cartoleria, calamite di Bologna, biglietti, accessori e piccoli articoli pratici: le categorie aiutano a trovare il percorso giusto.',
     guide:'scegliere-un-gioco',
     sections:[
-      ['Carta, scrittura e compleanni','La ricognizione del negozio documenta quaderni, penne, evidenziatori e un espositore di biglietti augurali. Sul sito cartoleria e feste hanno sezioni proprie, con schede di famiglia che spiegano quali dettagli confrontare: formato, rigatura, testo interno o busta, secondo l’articolo.'],
+      ['Carta, scrittura e compleanni','Quaderni, penne, evidenziatori e un espositore di biglietti augurali rispondono a piccole commissioni diverse. Per un quaderno confronta formato e rigatura; per un biglietto guarda disegno, testo interno e busta. Cartoleria e feste hanno percorsi dedicati per scegliere con calma.'],
       ['Ricordi di Bologna, giochi e profumi','Le calamite comprendono soggetti con torri, monumenti e scritte della città. Giochi e piccoli regali hanno percorsi propri. Il negozio conferma anche l’intera gamma di profumi Raptus per persona: nome e formato si verificano sulla singola fragranza. Le illustrazioni generiche del sito non identificano ogni variante presente.'],
       ['Accessori per telefono e necessità quotidiane','Cavi, power bank, nastri, colle e piccoli articoli di cura personale hanno usi diversi. Le loro schede aiutano a formulare una richiesta precisa. Per un cavo servono i connettori; per una colla i materiali da unire. Il marchio, da solo, non risponde a queste domande.'],
       ['Dalla categoria al singolo articolo','Una famiglia non è un inventario aggiornato. Usa il sito per trovare il gruppo che ti interessa, poi verifica modello, confezione e disponibilità. Anche le scene di Angela e della bambina sono ricreazioni editoriali: per conoscere l’articolo contano i suoi dati e la confezione.'],
@@ -242,3 +242,51 @@ articles.push(...neighborhoodArticles);
 articleCategoryLinks["deposito-bagagli-santo-stefano-strada-maggiore-bologna"]=["deposito-bagagli","il-quartiere"];
 articleCategoryLinks["regali-cartoleria-santo-stefano-aldrovandi-bologna"]=["idee-regalo","cartoleria","il-quartiere"];
 articleCategoryLinks["commissioni-san-petronio-vecchio-strada-maggiore"]=["servizi","accessori-telefono","il-quartiere"];
+
+articles.unshift(
+ {
+  slug:'lego-clementoni-modellini-scegliere-gioco-bologna',cluster:'giochi',
+  title:'Costruire o collezionare? LEGO, meccanica e modellini da confrontare',
+  summary:'Un set LEGO, un progetto Clementoni e un’auto Bburago non offrono la stessa attività. Dalle proposte di Angela, tre modi concreti per scegliere un gioco a Bologna.',
+  guide:'scegliere-un-gioco',
+  sections:[
+   ['La domanda è che cosa gli piace fare','Davanti a una vetrina di giochi si può partire dal personaggio preferito, dal colore o dall’automobile che si riconosce. Per un regalo, però, è utile aggiungere una domanda: la persona vuole montare un progetto, inventare storie oppure guardare e collezionare un oggetto?\n\nNelle proposte di Angela, in Via Guerrazzi 10/F a Bologna, trovi costruzioni LEGO, meccanica Clementoni e modellini Bburago e RMZ City. Sono percorsi diversi. Il nome del produttore aiuta a ritrovarli, ma non basta a scegliere la scatola.'],
+   ['LEGO: linea e codice del set','Creator 3 in 1, City, Technic e Animal Crossing compaiono nella famiglia delle costruzioni. Un pappagallo Creator, un piccolo veicolo City e un’ambientazione Animal Crossing danno punti di partenza diversi all’immaginazione.\n\nPer una richiesta precisa porta il nome completo e il codice del set. Sono i riferimenti con cui distinguere una scatola da un’altra. Poi confronta età indicata e contenuto: la presenza di una linea nel catalogo non equivale alla disponibilità di tutti i set del marchio.'],
+   ['Clementoni: il montaggio è parte del tempo di gioco','Nella famiglia Meccanica Clementoni trovi Scienza & Gioco Roadster & Dragster. Elementi strutturali, ruote e componenti si assemblano seguendo le istruzioni: il progetto prende forma un pezzo alla volta.\n\nÈ una proposta da guardare pensando anche al tempo da dedicare al montaggio. Controlla età sulla scatola, modelli descritti, componenti inclusi ed eventuali elementi richiesti separatamente. Le indicazioni appartengono al set preciso, non a tutta la marca.'],
+   ['Bburago e RMZ City: parti dal veicolo','Per un modellino può essere il veicolo a far scattare la curiosità: una sportiva, un’auto da corsa o una forma riconoscibile. Scala, materiali, dimensioni e parti mobili sono poi i dettagli da confrontare sulla confezione.\n\nIl marchio dell’automobile riprodotta e quello del modellino sono due nomi distinti. Una foto della vettura desiderata e un riferimento alla scala chiariscono la richiesta meglio della sola parola “macchinina”.'],
+   ['Dal catalogo alla scelta dal vivo','Le schede delle famiglie permettono di preparare il confronto prima della visita. Per un bambino aggiungi sempre l’età e leggi le avvertenze della confezione; per un modello preciso verifica la disponibilità prima di una visita dedicata.\n\nSe cerchi invece una partita da portare in viaggio, c’è il percorso dei giochi magnetici. Per completare il regalo puoi esplorare biglietti, buste e fiocchi nella sezione compleanni.']
+  ],
+  sources:[{label:'Scheda: costruzioni LEGO',url:'/assortimento/costruzioni-lego/'},{label:'Scheda: meccanica Clementoni',url:'/assortimento/meccanica-clementoni/'},{label:'Scheda: modellini Bburago e RMZ City',url:'/assortimento/modellini-auto/'}]
+ },
+ {
+  slug:'calamite-ricette-matite-tortellino-souvenir-bologna',cluster:'regali',
+  title:'Una ricetta sul frigorifero, un tortellino sulla matita: piccoli ricordi di Bologna',
+  summary:'Calamite con ricette in italiano e inglese, torri, portici e matite con tortellino. Tre percorsi fra i souvenir di Angela in Via Guerrazzi.',
+  guide:'scegliere-un-regalo',
+  sections:[
+   ['Il ricordo può partire da un piatto','A volte il viaggio torna in mente davanti a un luogo; altre volte basta il nome di quello che hai mangiato. Nel percorso souvenir di Angela ci sono calamite con ricette bolognesi: il soggetto non è soltanto un monumento, ma anche un piatto.\n\nRagù, lasagne, tortellini, tagliatelle, cotoletta e friggione sono i sei riferimenti della famiglia. La fotografia del piatto e il testo della ricetta condividono il piccolo formato rettangolare. Per un soggetto preciso verifica le varianti presenti.'],
+   ['Prima del colore, scegli la lingua','Le calamite ricetta comprendono versioni in italiano e in inglese. È un dettaglio concreto quando il ricordo è per qualcuno: chiediti in quale lingua leggerà più volentieri il testo.\n\nPiatto, lingua e formato sono tre caratteristiche distinte. Se cerchi una ricetta particolare in inglese, indica entrambe le cose prima di una visita dedicata: la presenza della famiglia non garantisce ogni combinazione in ogni momento.'],
+   ['Le torri e i portici raccontano un’altra passeggiata','Le altre calamite della bottega mostrano torri, portici, tortellini, mortadella e colori rossoblù. Puoi scegliere un soggetto legato a una passeggiata, a un sapore oppure alla persona che riceverà il pensiero.\n\nGuardare dal vivo forma e dimensioni aiuta a distinguere gli oggetti. Le due famiglie, calamite cittadine e calamite ricetta, si possono esplorare separatamente senza confondere soggetto e formato.'],
+   ['Un tortellino fra gli appunti','Le matite con tortellino portano il ricordo sulla scrivania. Gialle, arancioni, verdi e rosa, portano il nome di Bologna e un tortellino sagomato in cima. È un dettaglio decorativo, non un alimento.\n\nPer chi scrive o studia, la matita può essere il punto di partenza di un piccolo regalo. Nella cartoleria puoi confrontare anche penne decorate e quaderni; biglietto e busta hanno un percorso dedicato.'],
+   ['Una tappa prima di ripartire','Guerrazzi di Angela è in Via Guerrazzi 10/F, fra Via Santo Stefano e Strada Maggiore. Le schede aiutano a scegliere quali soggetti cercare; il modello e la variante disponibili si verificano in negozio.\n\nSe stai visitando Bologna con le valigie, il deposito bagagli nello stesso indirizzo si prenota tramite Bounce sulla scheda “Palazzo Ercolani”. Prezzo, disponibilità e orario di ritiro seguono la prenotazione sulla piattaforma.']
+  ],
+  sources:[{label:'Scheda: calamite con ricette bolognesi',url:'/assortimento/calamite-ricette/'},{label:'Scheda: calamite di Bologna',url:'/assortimento/calamite/'},{label:'Scheda: matite con tortellino',url:'/assortimento/matite-tortellino/'}]
+ },
+ {
+  slug:'pile-lampadine-ricambi-cosa-portare',cluster:'servizi',
+  title:'Una pila o una lampadina da cambiare: la foto che serve davvero',
+  summary:'Sigla, attacco e formato chiariscono una richiesta più della sola marca. Come preparare il confronto fra le pile e le lampadine di Angela a Bologna.',
+  guide:'preparare-un-ricambio',
+  sections:[
+   ['Il problema è piccolo, il riferimento deve essere preciso','Una pila finita o una lampadina da sostituire possono sembrare richieste semplici. Per confrontare un ricambio, però, “una uguale” è utile soltanto se si vede che cosa deve essere uguale.\n\nSul pannello delle piccole necessità di Angela trovi pile Duracell, lampadine confezionate FSL e STD e piccoli accessori elettrici. Nel catalogo puoi confrontare le caratteristiche; per un modello preciso verifica disponibilità e compatibilità.'],
+   ['Per le pile, rendi leggibile la sigla','Una fotografia utile mostra il codice della batteria da sostituire, la tensione e il formato. Sono informazioni da confrontare con il tipo richiesto dal dispositivo e con la confezione del ricambio.\n\nLa marca aiuta a riconoscere una famiglia, ma non identifica da sola la pila necessaria. Prima di una visita dedicata indica il riferimento completo e verifica il modello presente in negozio. Per uso e raccolta delle pile esauste segui le indicazioni del prodotto.'],
+   ['Per le lampadine, l’attacco è una domanda a sé','La vecchia confezione o una foto leggibile dell’attacco danno un riferimento concreto. Attacco, alimentazione, potenza e tonalità della luce descrivono aspetti diversi: una somiglianza nella forma non dimostra che il modello sia quello richiesto.\n\nLa scheda lampadine LED raccoglie i dettagli da confrontare sulle confezioni FSL e STD. Le indicazioni del modello e della lampada restano il riferimento per la compatibilità.'],
+   ['Una presa multipla è un’altra famiglia','Sul pannello ci sono anche prese multiple, cavi e piccoli accessori elettrici. Per questi articoli il tipo di spina e presa, la portata dichiarata e la lunghezza del cavo sono riferimenti da leggere separatamente.\n\nLa foto dell’elettrodomestico, da sola, può non mostrare il collegamento che ti serve. La scheda della famiglia spiega quali informazioni preparare, senza sostituire le istruzioni del prodotto.'],
+   ['La commissione si prepara prima di partire','Ci trovi in Via Guerrazzi 10/F a Bologna. Porta il nome completo, la sigla o le misure e spiega a che cosa serve il ricambio. Per un articolo preciso verifica l’assortimento prima di una visita dedicata.\n\nSe il problema riguarda la ricarica del telefono, parti invece dalla famiglia dei cavi USB o dei power bank. Un ricambio elettrico, un accessorio per telefono e una ricarica di credito telefonico hanno percorsi diversi.']
+  ],
+  sources:[{label:'Scheda: pile e batterie Duracell',url:'/assortimento/pile-batterie/'},{label:'Scheda: lampadine LED',url:'/assortimento/lampadine-led/'},{label:'Scheda: prese e piccoli accessori elettrici',url:'/assortimento/prese-cavi-elettrici/'}]
+ }
+);
+articleCategoryLinks['lego-clementoni-modellini-scegliere-gioco-bologna']=['giochi-e-giocattoli','idee-regalo','feste-e-compleanni'];
+articleCategoryLinks['calamite-ricette-matite-tortellino-souvenir-bologna']=['souvenir-bologna','cartoleria','deposito-bagagli'];
+articleCategoryLinks['pile-lampadine-ricambi-cosa-portare']=['piccole-necessita','accessori-telefono'];

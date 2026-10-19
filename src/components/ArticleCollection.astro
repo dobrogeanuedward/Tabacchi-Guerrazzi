@@ -1,0 +1,26 @@
+---
+import {catalogAssortment} from '../data/catalog-assortment';
+import {catalogPhotoFor} from '../data/catalog-photography';
+const {slug}=Astro.props as {slug:string};
+const references:Record<string,string[]>={
+ 'lego-clementoni-modellini-scegliere-gioco-bologna':['costruzioni-lego','meccanica-clementoni','modellini-auto'],
+ 'calamite-ricette-matite-tortellino-souvenir-bologna':['calamite-ricette','calamite','matite-tortellino'],
+ 'pile-lampadine-ricambi-cosa-portare':['pile-batterie','lampadine-led','prese-cavi-elettrici'],
+ 'ricarica-telefonica-cosa-preparare':['cavi','power-bank'],
+ 'regalo-compleanno-da-dove-partire':['auguri','buste','candeline'],
+ 'piccolo-pensiero-occasione':['piccoli-regali','calamite'],
+ 'scegliere-regalo-ultimi-minuti':['quaderni','piccoli-regali','auguri'],
+ 'gioco-regalo-eta-interessi':['costruzioni-lego','meccanica-clementoni','modellini-auto'],
+ 'giochi-viaggio-piccoli-passatempi':['giochi','adesivi-personaggi'],
+ 'scegliere-gioco-insieme':['costruzioni-lego','bambole-disney'],
+ 'vetrina-guerrazzi-piccole-scelte':['penne','calamite','piccoli-regali'],
+ 'angela-attenzione-negozio':['cavi','quaderni'],
+ 'regali-cartoleria-santo-stefano-aldrovandi-bologna':['quaderni','calamite'],
+ 'commissioni-san-petronio-vecchio-strada-maggiore':['cavi','nastri'],
+};
+const items=(references[slug]||[]).map(id=>catalogAssortment.find(item=>item.id===id)).filter(Boolean);
+---
+{items.length>0&&<aside class="article-collection" aria-label="Le famiglie citate nel catalogo"><p class="section-label">Dal racconto al catalogo</p><div>{items.map(item=>{const photo=catalogPhotoFor(item!.id);return <figure><a href={`/assortimento/${item!.id}/`}><img src={photo.src} srcset={photo.srcset} width={photo.width} height={photo.height} sizes="(max-width:680px) 90vw,320px" alt={photo.alt?.[0]||item!.name[0]} loading="lazy"/><figcaption><strong>{item!.name[0]}</strong><span>{item!.description[0]}</span><span class="text-link">Apri la scheda</span></figcaption></a></figure>})}</div></aside>}
+<style>
+.article-collection{margin-block:28px 40px;padding-block:24px;border-block:1px solid var(--line)}.article-collection>div{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,185px),1fr));gap:24px}.article-collection figure{margin:0;min-width:0}.article-collection img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}.article-collection figcaption{display:flex;flex-direction:column;gap:12px;padding-top:16px}.article-collection strong{font:400 1.5rem/1.25 var(--display);color:var(--accent)}.article-collection figcaption>span{font-size:.95rem;line-height:1.75}.article-image-note{font-size:.9rem;line-height:1.7;margin-top:24px;max-width:65ch}@media(max-width:520px){.article-collection>div{grid-template-columns:1fr}}
+</style>

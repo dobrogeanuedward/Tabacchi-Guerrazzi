@@ -24,5 +24,5 @@ const notes:Record<string,[string,string]>={
 };
 export const catalogueBrands=[...new Set(catalogAssortment.flatMap(item=>item.brand.split(',').map(name=>name.trim()).filter(Boolean)))].sort((a,b)=>a.localeCompare(b,'it')).map(name=>{
  const items=catalogAssortment.filter(item=>item.brand.split(',').map(s=>s.trim()).includes(name));
- return {name,slug:brandSlug(name),items,role:['PAW Patrol','Lupo Alberto'].includes(name)?'franchise':'brand',note:notes[name]||[`${name} fa parte dei marchi della bottega. Le schede qui sotto raccolgono gli articoli della sua categoria e i dettagli utili per orientare la scelta.`,`${name} is among the shop’s brands. The listings below collect its item categories and the details useful when choosing.`] as [string,string]};
+ return {name,slug:brandSlug(name),items,noteOrigin:notes[name]?'authored':'catalogue',role:['PAW Patrol','Lupo Alberto'].includes(name)?'franchise':'brand',note:notes[name]||[`${name}: ${items.map(item=>item.name[0].toLocaleLowerCase('it-IT')).join(', ')}. ${items[0].description[0]} Per una variante precisa, verifica nome e confezione con il negozio.`,`${name}: ${items.map(item=>item.name[1].toLocaleLowerCase('en-GB')).join(', ')}. ${items[0].description[1]} Check the name and packaging with the shop for a specific variant.`] as [string,string]};
 });

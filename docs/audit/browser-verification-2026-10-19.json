@@ -1,0 +1,13 @@
+{
+  "checkedOn": "2026-10-19",
+  "environment": "Local production static export, Chrome",
+  "scope": "Representative templates and user journeys; not all 448 pages visually inspected, not a WCAG or field Core Web Vitals certification.",
+  "checks": [
+    {"page":"/giochi-e-giocattoli/","viewports":[1920,390],"result":"Category content, photographs and navigation render without horizontal overflow."},
+    {"page":"/catalogo/","viewport":390,"result":"Games category filter returns 14 families; LEGO search returns 3 relevant families."},
+    {"page":"/sigari/toscano-antico/","viewport":1920,"result":"Age gate and subsequent keyboard focus checked; factual identification, historical photograph, source credits and return navigation present."},
+    {"page":"/assortimento/quaderni/","viewport":320,"documentWidth":305,"result":"No horizontal overflow or failed loaded images. Footer with telephone, hours, DOGO Studio and Guerrazzi case study wraps correctly."}
+  ],
+  "resolvedIssue": "Footer case-study link previously exceeded the 320px viewport; flex wrapping corrected and verified.",
+  "publicationState": "Indexing gate remains closed until deferred business/privacy details and launch evidence are completed."
+}

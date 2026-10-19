@@ -1,0 +1,107 @@
+{
+  "lucca-manifattura": {
+    "id": "lucca-manifattura",
+    "path": "/images/history-context/lucca-manifattura.webp",
+    "preview": "/images/history-context/lucca-manifattura-640.webp",
+    "width": 1536,
+    "height": 1028,
+    "previewWidth": 640,
+    "previewHeight": 428,
+    "caption": [
+      "La ex Manifattura Tabacchi di Lucca, 2012.",
+      "Lucca’s former tobacco factory, 2012."
+    ],
+    "alt": [
+      "Edificio storico della ex Manifattura Tabacchi di Lucca",
+      "The historic building of Lucca’s former tobacco factory"
+    ],
+    "author": "Hermann Hammer",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Haneburger",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "fileTitle": "Manifattura tabacchi di Lucca.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Manifattura_tabacchi_di_Lucca.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3AManifattura+tabacchi+di+Lucca.jpg&oldid=1178148750",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Manifattura_tabacchi_di_Lucca.jpg",
+    "originalSha1": "97fe8358fa6b9f6279088c1904d8f57568fb9c05",
+    "date": "2012-07-14",
+    "scope": "historic-industrial-place: former Manifattura Tabacchi, Lucca, Tuscany, Italy",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale, senza ritagli né modifiche al soggetto. La derivata mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing, without cropping or subject changes. The derivative retains the stated licence."
+    ],
+    "bytes": 281768,
+    "previewBytes": 65156
+  },
+  "sansepolcro-citerna": {
+    "id": "sansepolcro-citerna",
+    "path": "/images/history-context/sansepolcro-citerna.webp",
+    "preview": "/images/history-context/sansepolcro-citerna-640.webp",
+    "width": 1536,
+    "height": 978,
+    "previewWidth": 640,
+    "previewHeight": 408,
+    "caption": [
+      "Sansepolcro vista da Citerna, 2017.",
+      "Sansepolcro seen from Citerna, 2017."
+    ],
+    "alt": [
+      "Veduta di Sansepolcro e dell’Alta Valle del Tevere da Citerna",
+      "A view of Sansepolcro and the Upper Tiber Valley from Citerna"
+    ],
+    "author": "Luca Aless",
+    "authorUrl": "https://commons.wikimedia.org/wiki/User:Luca_Aless",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "fileTitle": "Veduta di sansepolcro da Citerna.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Veduta_di_sansepolcro_da_Citerna.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3AVeduta+di+sansepolcro+da+Citerna.jpg&oldid=1104220373",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Veduta_di_sansepolcro_da_Citerna.jpg",
+    "originalSha1": "4d544b28117edb34730c50ffaf5455c3414cce7f",
+    "date": "2017-04-14 16:14:06",
+    "scope": "geographical-place: Sansepolcro viewed from Citerna, Upper Tiber Valley; not a specific tobacco field or factory",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale, senza ritagli né modifiche al soggetto. La derivata mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing, without cropping or subject changes. The derivative retains the stated licence."
+    ],
+    "bytes": 280062,
+    "previewBytes": 63584
+  },
+  "orsago-campanile": {
+    "id": "orsago-campanile",
+    "path": "/images/history-context/orsago-campanile.webp",
+    "preview": "/images/history-context/orsago-campanile-640.webp",
+    "width": 1301,
+    "height": 1452,
+    "previewWidth": 640,
+    "previewHeight": 714,
+    "caption": [
+      "Il campanile di Orsago, in provincia di Treviso.",
+      "The bell tower of Orsago, in the province of Treviso."
+    ],
+    "alt": [
+      "Campanile della chiesa parrocchiale di Orsago",
+      "The bell tower of Orsago’s parish church"
+    ],
+    "author": "Orric",
+    "authorUrl": "https://it.wikipedia.org/wiki/Utente:Orric",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "fileTitle": "Orsago campanile.jpg",
+    "sourcePage": "https://commons.wikimedia.org/wiki/File:Orsago_campanile.jpg",
+    "sourceRevision": "https://commons.wikimedia.org/w/index.php?title=File%3AOrsago+campanile.jpg&oldid=963063752",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Orsago_campanile.jpg",
+    "originalSha1": "64e538740bdee5bd2738d524dc249e7c3a568f5d",
+    "date": "2009-09-06",
+    "scope": "geographical-place: parish bell tower, Orsago, Treviso, Veneto; contextual town photograph only, not a tobacco facility",
+    "documentsShopStock": false,
+    "changes": [
+      "Conversione WebP e ridimensionamento proporzionale, senza ritagli né modifiche al soggetto. La derivata mantiene la licenza indicata.",
+      "WebP conversion and proportional resizing, without cropping or subject changes. The derivative retains the stated licence."
+    ],
+    "bytes": 216812,
+    "previewBytes": 66066
+  }
+}

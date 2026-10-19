@@ -2,9 +2,14 @@ import {assortmentLinks} from './assortment';
 export type Lang = 'it' | 'en';
 export const shop = {
  name: 'Tabaccheria Guerrazzi di Angela', address: 'Via Guerrazzi 10/F', postcode:'40125', city: 'Bologna',
- phone: '', email: '', vat: '', legalName:'', hours: [] as {day:string;hours:string}[],
+ phone: '+39 051 498 3858', email: '', vat: '', legalName:'',
+ hours: [
+  {day:'Lunedì–sabato',dayEn:'Monday–Saturday',hours:'07:30–20:30',days:['Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'],opens:'07:30',closes:'20:30'},
+  {day:'Domenica',dayEn:'Sunday',hours:'10:00–20:00',days:['Sunday'],opens:'10:00',closes:'20:00'},
+ ],
+ profileSource:{label:'Google Maps',url:'https://maps.google.com/maps?ftid=0x477fd5904f1d6f3d:0xea65e530ca1bdcdb',checkedOn:'2026-10-19'},
  instagram:'https://www.instagram.com/tabaccheria_guerrazzi/',
- maps:'https://www.google.com/maps/search/?api=1&query=Tabaccheria+Guerrazzi+Via+Guerrazzi+10%2FF+Bologna',
+ maps:'https://maps.google.com/maps?ftid=0x477fd5904f1d6f3d:0xea65e530ca1bdcdb',
  reviewUrl:'', reviews: [] as {name:string;body:string;date:string;sourceUrl:string}[],
 };
 export const pathFor = (slug:string,lang:Lang='it') => `${lang==='en'?'/en':''}/${slug ? slug+'/' : ''}`;

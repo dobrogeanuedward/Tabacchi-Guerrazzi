@@ -17,7 +17,9 @@
     "test:e2e": "npm run build && node scripts/verify-node.mjs",
     "build:preview": "node scripts/build-preview.mjs",
     "build:static": "node scripts/build-static.mjs",
-    "check": "astro check"
+    "check": "astro check",
+    "audit:content": "node scripts/audit-site-content.mjs --summary --output docs/audit/site-content.json",
+    "check:launch": "node scripts/verify-launch-readiness.mjs --source-only --require-ready"
   },
   "dependencies": {
     "@astrojs/node": "^9.0.0",

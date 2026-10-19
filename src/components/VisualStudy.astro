@@ -29,12 +29,12 @@ const sizes = variant === 'inset'
       decoding="async"
     />
   </div>
-  <figcaption class="study-caption">
+  {!study.decorative&&<figcaption class="study-caption">
     <div class="study-caption-copy">
       <span class="study-label">{study.title[lang]}</span>
       <p>{study.caption[lang]}</p>
     </div>
-  </figcaption>
+  </figcaption>}
 </figure>
 
 <style>

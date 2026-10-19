@@ -15,10 +15,10 @@ const display=reference||{id:generic?'foglia-struttura':'carta-e-nomi',scope:'th
 ---
 {!reference&&history?<CommonsPhoto id={history.photo} lang={lang} loading={loading}/>:<figure class:list={['cigar-photo',reference&&'cigar-photo--reference']} data-photo-study={display.id} data-photo-scope={display.scope}>
  <div class="cigar-photo-frame"><img src={display.path} srcset={display.preview?`${display.preview} ${reference?reference.previewWidth:768}w, ${display.path} ${display.width}w`:undefined} sizes="(max-width: 680px) calc(100vw - 44px), (max-width: 1100px) 44vw, 580px" width={display.width} height={display.height} alt={display.alt[l]} loading={loading} decoding="async"/></div>
- <figcaption>
+ {reference&&<figcaption>
   <p>{reference?reference.caption[l]:visual.caption[l]}</p>
   {reference&&<details class="cigar-photo-credit"><summary>{text(lang,'Crediti fotografici','Photograph credits')}</summary><p><a href={reference.sourcePage}>{reference.fileTitle}</a> — <a href={reference.authorUrl}>{reference.author}</a>{reference.authorAlias&&<span> ({reference.authorAlias})</span>} · <a href={reference.licenseUrl} rel="license">{reference.license}</a>.</p><p>{reference.changes[l]}</p></details>}
- </figcaption>
+ </figcaption>}
 </figure>}
 <style>
  .cigar-photo{margin:0;min-width:0;color:#493928}

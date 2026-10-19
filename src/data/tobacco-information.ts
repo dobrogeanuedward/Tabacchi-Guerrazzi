@@ -3,7 +3,8 @@ import {guideCopy} from './guide-copy';
 import {cigarHistoryArticles} from './cigar-history';
 export const tobaccoSources=[
  {label:'D.Lgs. 6/2016 — testo pubblicato in Gazzetta Ufficiale',url:'https://www.gazzettaufficiale.it/eli/id/2016/01/18/16G00009/sg'},
- {label:'Legge 165/1962 — divieto di propaganda pubblicitaria',url:'https://def.finanze.it/DocTribFrontend/getContent.do?id=%7B6F303C4D-0237-4DF8-B9A9-683CECC5F2CE%7D'}
+ {label:'Legge 165/1962 — divieto di propaganda pubblicitaria (MEF)',url:'https://def.finanze.it/DocTribFrontend/executePrintArticolo.do?articolo=Articolo+testo&codiceOrdinamento=500000000000000&id=%7BBC90B8DD-4157-45FA-A42D-4EFC13554228%7D'},
+ {label:'ADM — divieti di pubblicità e vendita a distanza; siti web inibiti',url:'https://www.adm.gov.it/portale/siti-inibiti-tabacchi'}
 ];
 export const tobaccoGuides:Record<string,any>={
  'sigari-termini-informazioni':{parent:'sigari',title:['Sigari, sigaretti e tabacco da pipa: i termini.','Cigars, cigarillos and pipe tobacco: terminology.'],intro:['Una scheda per capire le denominazioni, senza suggerimenti di consumo o confronti commerciali.','A guide to terminology, without consumption advice or commercial comparisons.'],sources:tobaccoSources.slice(0,1),sections:[

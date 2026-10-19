@@ -18,9 +18,9 @@ const study=(id:CigarPhotoStudyId,alt:[string,string]):CigarPhotoStudy=>({
 
 // The group selects an editorial shape study, never an identification of the named item.
 export const cigarPhotography:Record<CigarPhotoStudyId,CigarPhotoStudy>={
- 'cigar-tapered-study':study('cigar-tapered-study',['Forma generica affusolata; immagine fotografica generata','Generic tapered form; generated photographic image']),
- 'cigar-cylinder-study':study('cigar-cylinder-study',['Forma generica cilindrica; immagine fotografica generata','Generic cylindrical form; generated photographic image']),
- 'cigarillo-form-study':study('cigarillo-form-study',['Forma generica sottile; immagine fotografica generata','Generic slender form; generated photographic image'])
+ 'cigar-tapered-study':study('cigar-tapered-study',['Forma generica affusolata','Generic tapered form']),
+ 'cigar-cylinder-study':study('cigar-cylinder-study',['Forma generica cilindrica','Generic cylindrical form']),
+ 'cigarillo-form-study':study('cigarillo-form-study',['Forma generica sottile','Generic slender form'])
 };
 
 export const cigarStudyForGroup=(group:string):CigarPhotoStudyId=>group==='Toscano'?'cigar-tapered-study':group==='Toscanello'?'cigarillo-form-study':'cigar-cylinder-study';

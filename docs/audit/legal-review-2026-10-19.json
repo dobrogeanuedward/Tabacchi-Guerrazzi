@@ -1,0 +1,153 @@
+{
+  "title": "Revisione legale ed editoriale delle aree regolamentate",
+  "checkedOn": "2026-10-19",
+  "place": "Bologna, Via Guerrazzi",
+  "scope": "Sorgente di lavoro site-audit. Nessuna modifica a sources/ o ai file sincronizzati del progetto ChatGPT; nessuna pubblicazione.",
+  "legalClearance": false,
+  "qualification": "Ricerca operativa su fonti pubbliche e riduzione di rischi concreti. Non è un parere professionale né un'autorizzazione ADM alla pubblicazione del sito del rivenditore.",
+  "factsEstablished": [
+    {
+      "priority": "P0",
+      "topic": "Pubblicità e vendita a distanza del tabacco",
+      "finding": "ADM ribadisce il divieto di vendita a distanza dei tabacchi lavorati e dei prodotti accessori ai tabacchi da fumo e il divieto di pubblicità dei prodotti indicati, salvo le eccezioni di legge. Il mancato rispetto può comportare inibizione del sito.",
+      "source": "https://www.adm.gov.it/portale/siti-inibiti-tabacchi"
+    },
+    {
+      "priority": "P0",
+      "topic": "Natura editoriale delle 46 voci e delle 8 storie",
+      "finding": "Il precedente insieme di grandi immagini di prodotto, nomi commerciali, schede ripetitive, prodotti correlati e collegamenti a pagine commerciali dei produttori aumentava il rischio di effetto promozionale. L'assenza di prezzi, il nome archivio e il pulsante 18+ non dimostrano che un sito di rivenditore sia estraneo al divieto.",
+      "certainty": "Valutazione editoriale del caso concreto, non accertamento di una violazione né esenzione legale."
+    },
+    {
+      "priority": "P0",
+      "topic": "Gioco con vincite in denaro",
+      "finding": "Il divieto pubblicitario riguarda anche comunicazioni indirette e canali digitali. Le comunicazioni esclusivamente informative vanno valutate anche per linguaggio, grafica e contesto. Confermare le autorizzazioni e rimuovere inviti al gioco, promesse, vincite, jackpot e loghi promozionali non verificati.",
+      "sources": [
+        "https://www.agcom.it/provvedimenti/delibera-132-19-cons",
+        "https://www.agcom.it/provvedimenti/delibera-200-26-cons"
+      ],
+      "implementationOwner": "Revisione del componente Page.astro affidata al coordinatore."
+    }
+  ],
+  "contentCoverage": {
+    "cigarRecords": 46,
+    "brandStories": 8,
+    "recordSpecificFactsAdded": 43,
+    "otherRecordsWithFamilyHistoricalOrRegionalContext": 3,
+    "recordsWithoutAnySubstantivePublicText": 0,
+    "importantDistinction": "43 voci hanno ora fatti identificativi specifici da fonti primarie, inclusi casi trattati come famiglie di denominazioni e non come singolo SKU. Le altre 3 hanno contesto storico di famiglia. Nessuna voce certifica disponibilità del negozio o una scheda tecnica completa del singolo prodotto.",
+    "newRecordSpecificSlugs": [
+      "toscano-extravecchio",
+      "toscano-garibaldi",
+      "toscano-il-grande",
+      "toscano-il-bracco",
+      "toscano-aquila",
+      "toscano-classico",
+      "toscano-leggendario",
+      "toscano-terre",
+      "toscano-maremmano",
+      "toscano-puccini",
+      "toscano-soldati",
+      "toscano-originale",
+      "toscano-antico",
+      "nostrano-campesano",
+      "nostrano-cannaregio",
+      "nostrano-clandestino-tre-6",
+      "nostrano-foscari",
+      "nostrano-il-benedettino",
+      "nostrano-il-ducale",
+      "nostrano-avanone",
+      "tornabuoni-amarcord",
+      "tornabuoni-archibugio",
+      "tornabuoni-rinascimento",
+      "davidoff-aniversario-short-perfecto",
+      "zino-nicaragua",
+      "la-aurora-107",
+      "la-aurora-escogidos",
+      "la-aurora-family-creed-fuerte-sol",
+      "parcero",
+      "plasencia-alma",
+      "toscanello-bianco",
+      "toscanello-blu",
+      "toscanello-rosso",
+      "toscanello-xxl",
+      "denominazione-arcano",
+      "denominazione-il-lustro",
+      "denominazione-galante",
+      "denominazione-long-riserva",
+      "denominazione-long-filler",
+      "denominazione-cacciatore-maremmano",
+      "italico",
+      "nicita",
+      "villa-zamorano"
+    ],
+    "familyContextSources": [
+      "https://siusa-archivi.cultura.gov.it/cgi-bin/siusa/pagina.pl?Chiave=60145&RicDimF=2&RicSez=prodenti&RicTipoScheda=pe&RicVM=indice&TipoPag=prodente",
+      "https://www.regione.veneto.it/static/www/agricoltura-e-foreste/partexidocumentodiintegrazionenormativa.pdf#page=127",
+      "https://www.treccani.it/enciclopedia/niccolo-di-donato-tornabuoni/",
+      "Fonti delle cronologie aziendali già presenti in cigar-brand-stories.ts, ripulite da giudizi commerciali e collegamenti a negozi online."
+    ],
+    "toscanelloNamesAndPacks": {
+      "authority": "ADM",
+      "documentDate": "2026-10-19",
+      "verifiedBy": "Agente public_seo_audit, recupero diretto del PDF primario dal portale ADM; controllo intestazione, pagine 43–44 e successivi estratti di denominazioni e confezioni delle restanti famiglie.",
+      "document": "https://www.adm.gov.it/portale/documents/20182/1106899/2.1+LIST+SIGARI.pdf/b42f5a7c-c376-cabc-16d9-c150dc0dea12?t=1792407883110",
+      "index": "https://www.adm.gov.it/portale/monopoli/tabacchi/prezzi/prezzi_pubblico",
+      "factsUsed": "Denominazioni separate e confezioni: Bianco, Blu e Rosso da cinque pezzi; diverse versioni XXL da quattro o cinque pezzi. Nessuna cifra di prezzo riprodotta.",
+      "xxlScope": "XXL è trattato come gruppo di denominazioni, non come identificazione di un'unica referenza vista nella fotografia. Non è stata attribuita arbitrariamente una variante Blend alla confezione del negozio."
+    },
+    "toscanelloFamilyHistory": {
+      "fact": "Il D.P.R. 14 settembre 1948, n. 1342 inserisce la denominazione Toscanello nella tariffa dal 1 ottobre 1948. Questa storia comune compare una sola volta nell'indice, senza attribuire quell'anno alle varianti successive.",
+      "source": "https://www.gazzettaufficiale.it/atto/vediMenuHTML?atto.codiceRedazionale=048U1342&atto.dataPubblicazioneGazzetta=1948-11-22&tipoSerie=serie_generale&tipoVigenza=originario"
+    },
+    "remainingFamilyContextOnlySlugs": [
+      "tornabuoni-allegro",
+      "tornabuoni-spingarda-xo",
+      "tornabuoni-cimette"
+    ],
+    "additionalAdmFacts": "Denominazioni e confezioni per trenta voci ulteriori. Trattati esplicitamente come famiglie: Garibaldi Il Grande (2/5), Bracco (Assolo/Originale/Robusto), Aquila (Assolo/Robusto), Avanone/Edizione 2025, Davidoff Short Perfecto (4/25), Zino Nicaragua, La Aurora 107/Escogidos/Family Creed, Parcero e Plasencia Alma. Nessuna variante del negozio dedotta dal nome tronco."
+  },
+  "identityCorrections": [
+    "Il Lustro è presentato come Tornabuoni Lustro; lo slug storico è conservato.",
+    "Arcano, Galante e Mastro Tornabuoni Long Riserva sono associati al produttore attraverso fonti primarie, non per vicinanza nelle fotografie.",
+    "Long filler è trattato come lessico costruttivo, non come SKU.",
+    "La pagina dello slug cacciatore-maremmano distingue Il Cacciatore e Il Cacciatore alla Maremmana; non attribuisce arbitrariamente l'una o l'altra alla confezione fotografata.",
+    "La fonte agronomica Nostrano del Brenta descrive una varietà e il territorio; non è usata per inferire la miscela di ciascuna confezione.",
+    "Toscano Antico viene presentato con il nome ufficiale Antico Toscano.",
+    "Toscano Il Grande è presentato come famiglia Garibaldi Il Grande con due confezionamenti distinti; Bracco e Aquila come famiglie di formati.",
+    "La voce Plasencia Alma descrive più linee, non un prodotto determinato dalla sola parola Alma."
+  ],
+  "cacciatoreEvidence": {
+    "source": "https://www.compagniatoscanasigari.it/wp-content/uploads/2026/04/CTS_Mod.-U88-FAX-format-del-2-aprile-2026-F.-Alessi_con-Tornabuoni-Il-Cacciatore-alla-Maremmana.pdf",
+    "facts": "Il Cacciatore e Il Cacciatore alla Maremmana sono due denominazioni separate nel documento del produttore del 2 aprile 2026.",
+    "publicLinkSuppressed": true,
+    "reason": "Il PDF contiene anche prezzi e modulo commerciale. La prova resta interna; il sito non propone questo collegamento commerciale."
+  },
+  "changes": [
+    "Tolte dalle 46 schede le immagini singole di prodotto, le sequenze di prodotti correlati, le firme commerciali e FAQ generiche ripetute.",
+    "Inseriti contesti storici o territoriali pertinenti, e descrizioni identificative individuali dove provate da fonti primarie.",
+    "Riutilizzate fotografie di persone, luoghi e manifatture dal repertorio Commons già presente, mantenendo crediti, licenze e didascalie. Sostituita la fascetta di prodotto della storia León Jimenes con la fotografia della manifattura.",
+    "Trasformato l'indice delle denominazioni da griglia di grandi schede commerciali in indice testuale per famiglie.",
+    "Tolti log di ricognizione, dettagli del processo di lavoro e avvertenze generiche ripetute dalla prosa pubblica. Le incertezze rimangono in questo report e nei dati di riferimento interni.",
+    "Rimosse griglie e liste promozionali di cartine, filtri, tabacchi e dispositivi con nicotina da CounterArchive; aggiunti racconti di materiali e musei con fonti istituzionali.",
+    "La pagina accessori si concentra sugli accendini generici; la classificazione dei prodotti accessori al tabacco non è stata estesa automaticamente a ogni accendino.",
+    "Mantenute le otto storie con fotografie documentarie e fonti attribuite, eliminando prosecuzioni fra marchi, giudizi di qualità e fonti che portavano direttamente a negozi online.",
+    "Nessun gate noindex aggiunto. Il contenuto è stato rivisto; la protezione globale di anteprima e il giudizio di pubblicabilità restano separati."
+  ],
+  "remainingBeforeProduction": [
+    "Valutare con competenza legale il testo, le immagini e i collegamenti effettivi dell'intera area tabacco sul sito della rivendita. Non dichiarare che le revisioni rendano automaticamente lecite tutte le 54 landing.",
+    "Se si desiderano schede individuali più approfondite per tutte le 46 denominazioni, raccogliere schede del produttore e confezioni complete delle varianti precise. Non confondere contesto storico condiviso e descrizione tecnica del singolo prodotto.",
+    "Confermare identità della ditta, P.IVA, sede legale, recapiti e autorizzazioni; nessun dato del titolare è stato inventato.",
+    "Verificare tracciatori, fornitori e trattamenti reali prima di chiudere privacy e cookie; non dedurre assenza di dati dalla sola assenza di moduli.",
+    "Confermare autorizzazioni della ricevitoria e condizioni dei servizi realmente offerti.",
+    "Completare verifica visiva e funzionale sul sito assemblato. Questo agente non ha eseguito build, test, commit o pubblicazioni."
+  ],
+  "verificationPerformed": {
+    "officialSourcesBrowsed": true,
+    "sourceAndDiffRead": true,
+    "testsRun": false,
+    "buildRun": false,
+    "commitCreated": false,
+    "sitePublished": false
+  }
+}

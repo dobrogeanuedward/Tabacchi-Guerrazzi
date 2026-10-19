@@ -1,4 +1,5 @@
 import {updateOctoberPages} from './october-pages';
+import {categoryIntentUpdates,categoryGuideUpdates} from './category-intents';
 import {pageRevision,guideRevision} from './site-copy';
 import {tobaccoGuides,tobaccoSources} from './tobacco-information';
 import {assortmentPages} from './assortment';
@@ -26,12 +27,12 @@ export const pages: Record<string, any> = {
 };
 for(const page of assortmentPages) pages[page.slug]=page;
 const editorialPhotos:Record<string,[string,[string,string]]>={
- 'cartoleria':['cartoleria',['Ricreazione editoriale degli scaffali bianchi di cartoleria, con quaderni e penne','Editorial recreation of white stationery shelves with notebooks and pens']],
- 'souvenir-bologna':['souvenir',['Ricreazione editoriale dell’espositore di calamite con soggetti di Bologna','Editorial recreation of the magnet display with Bologna designs']],
- 'feste-e-compleanni':['auguri',['Ricreazione editoriale dell’espositore di biglietti di compleanno illustrati','Editorial recreation of the illustrated birthday card display']],
- 'piccole-necessita':['necessita',['Ricreazione editoriale del pannello con nastri, colle e piccoli articoli pratici','Editorial recreation of the pegboard with tape, glue and small practical items']],
- 'accessori-telefono':['necessita',['Dettaglio editoriale di accessori di ricarica e piccoli articoli sul pannello del negozio','Editorial detail of charging accessories and small items on the shop pegboard']],
- 'dolciumi':['dolciumi',['Composizione editoriale di caramelle confezionate e lecca-lecca ispirata al negozio','Editorial composition of wrapped sweets and lollipops inspired by the shop']]
+ 'cartoleria':['cartoleria',['Scaffali bianchi con quaderni e penne','White shelves with notebooks and pens']],
+ 'souvenir-bologna':['souvenir',['Espositore di calamite con soggetti di Bologna','Magnet display with Bologna designs']],
+ 'feste-e-compleanni':['auguri',['Espositore di biglietti di compleanno illustrati','Illustrated birthday card display']],
+ 'piccole-necessita':['necessita',['Pannello con nastri, colle e piccoli articoli pratici','Pegboard with tape, glue and small practical items']],
+ 'accessori-telefono':['necessita',['Accessori di ricarica e piccoli articoli sul pannello','Charging accessories and small items on a pegboard']],
+ 'dolciumi':['dolciumi',['Caramelle confezionate e lecca-lecca','Wrapped sweets and lollipops']]
 };
 for(const [slug,[photo,alt]] of Object.entries(editorialPhotos)){pages[slug].photo=photo;pages[slug].photoAlt=alt;}
 const localTitles:Record<string,[string,string]>={
@@ -102,3 +103,7 @@ for(const [slug,copy] of Object.entries(pageRevision))if(pages[slug])Object.assi
 for(const [slug,copy] of Object.entries(guideRevision))if(guides[slug])Object.assign(guides[slug],copy);
 
 updateOctoberPages(pages);
+for(const [slug,copy] of Object.entries(categoryIntentUpdates))if(pages[slug])Object.assign(pages[slug],copy);
+for(const [slug,copy] of Object.entries(categoryGuideUpdates))guides[slug]={...guides[slug],...copy};
+
+pages['il-negozio'].seoTitle[1]='Angela’s shop on Via Guerrazzi 10/F, Bologna';

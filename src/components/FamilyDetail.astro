@@ -19,7 +19,10 @@ const group=catalogGroups.find(g=>g.id===item.category)!;
 const label=lang==='it'?group.it:group.en;
 const presentation=familyPresentationFor(item.category);
 const theme=pages[item.page]?.theme||presentation.theme;
-const siblings=catalogAssortment.filter(p=>p.page===item.page&&p.id!==id).slice(0,6);
+const siblings=d.relatedFamilies
+  ?d.relatedFamilies.map(relatedId=>catalogAssortment.find(p=>p.id===relatedId)).filter((p):p is typeof item=>!!p&&p.id!==id).slice(0,4)
+  :catalogAssortment.filter(p=>p.page===item.page&&p.id!==id).slice(0,4);
+const familyCategoryLabel=(category:string)=>{const entry=catalogGroups.find(g=>g.id===category);return entry?(lang==='it'?entry.it:entry.en):label};
 const categorySlugs=new Set(catalogAssortment.map(p=>p.page));
 const related=(pages[item.page]?.related||[]).filter((slug:string)=>slug!==item.page&&categorySlugs.has(slug)).slice(0,2);
 const relatedCategories:{slug:string;label:string;intro:string}[]=related.map((slug:string)=>({slug,label:mainPages.find(p=>p.slug===slug)?.[lang]||pages[slug].title[l],intro:pages[slug].intro[l]}));
@@ -28,13 +31,26 @@ const photograph=catalogPhotoFor(item.id);
 const familyImage=photograph.src;
 const familyImageSet=photograph.srcset;
 const familyOgImage=photograph.src;
+const visitQuestions:Record<string,[[string,string],[string,string]]>={
+ giochi:[['Cerchi una scatola o un personaggio preciso?','Looking for a specific box or character?'],['Porta nome, codice o foto della confezione e indica l’età di chi giocherà. Le famiglie orientano la ricerca; verifica la disponibilità del modello prima di una visita dedicata.','Bring the name, code or pack photo and the player’s age. Families guide your search; check model availability before a special trip.']],
+ cartoleria:[['Cerchi un formato o una variante precisa?','Looking for a specific size or variant?'],['Porta la misura, il nome completo o una foto dell’articolo che usi. Rigatura, colore, punta e formato vanno confrontati sul singolo articolo.','Bring the size, full name or a photo of the item you use. Ruling, colour, tip and size must be compared on the individual item.']],
+ dolciumi:[['Cerchi un gusto o hai un’esigenza alimentare?','Looking for a flavour or checking a dietary requirement?'],['Usa nome e variante della confezione. Ingredienti e allergeni si leggono sull’etichetta del prodotto presente, anche se conosci già la marca.','Use the pack’s name and variant. Read ingredients and allergens on the available product’s label, even if you know the brand.']],
+ necessita:[['Come preparo la richiesta per un ricambio?','How should I prepare a replacement request?'],['Porta una foto leggibile, la sigla o le misure dell’articolo. Specifica l’uso e confronta indicazioni e compatibilità sulla confezione del modello presente.','Bring a clear photo, code or item dimensions. Specify the intended use and compare instructions and compatibility on the available model’s pack.']],
+ telefono:[['Che cosa porto per controllare la compatibilità?','What should I bring to check compatibility?'],['Il dispositivo o foto leggibili delle porte del telefono e dell’alimentatore. Il modello scelto va confrontato con entrambe le connessioni e con le specifiche richieste.','Bring the device or clear photos of the phone and charger ports. Match the chosen model to both connections and the required specifications.']],
+ souvenir:[['Cerchi un soggetto o una lingua precisa?','Looking for a specific design or language?'],['Indica il monumento, la ricetta o il soggetto che hai in mente. Per le calamite ricetta specifica italiano o inglese; confronta le varianti presenti in negozio.','Specify the landmark, recipe or subject you have in mind. For recipe magnets, specify Italian or English; compare the variants available in store.']],
+ feste:[['Come preparo una richiesta per la festa?','How should I prepare a party request?'],['Indica cifra, colore e quantità; per una busta porta le misure del regalo. Verifica le varianti presenti e le istruzioni del singolo articolo.','Specify the digit, colour and quantity; bring gift dimensions for a bag. Check available variants and each item’s instructions.']],
+ regali:[['Come scelgo per un’altra persona?','How do I choose for someone else?'],['Parti da occasione, interessi, budget e spazio in cui userà l’oggetto. Guarda finitura e dimensioni dal vivo; biglietti e buste hanno percorsi dedicati.','Start with the occasion, interests, budget and space where they will use the object. Compare finish and size in person; cards and gift bags have dedicated paths.']],
+ profumi:[['Cerchi una fragranza che conosci già?','Looking for a fragrance you already know?'],['Porta il nome completo o una foto leggibile di flacone e confezione. Controlla il formato e verifica la variante prima di una visita dedicata.','Bring the full name or a clear bottle and pack photo. Check the size and verify the variant before a special trip.']],
+ alimentari:[['Come verifico formato e ingredienti?','How do I check the size and ingredients?'],['Leggi denominazione, quantità, ingredienti e conservazione sul vasetto presente. Per una variante precisa verifica l’assortimento prima della visita.','Read the name, quantity, ingredients and storage details on the available jar. Check the range before visiting for a specific variant.']]
+};
+const visitQuestion=visitQuestions[item.category];
 const faqs=[
   [d.question[l],d.answer[l]],
-  [text(lang,'Cerchi un colore o un modello preciso?','Looking for a particular colour or model?'),text(lang,'Raccontalo ad Angela. Una foto o il nome dell’articolo ci aiutano a capire cosa stai cercando.','Tell Angela. A photo or the item’s name helps us understand what you need.')],
+  [visitQuestion[0][l],visitQuestion[1][l]],
 ];
 const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.map(([q,a])=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:a}}))};
 ---
-<Base lang={lang} slug={`assortimento/${id}`} title={`${item.name[l]} ${text(lang,'a Bologna','in Bologna')}`} description={text(lang,`${item.name[0]} da Guerrazzi, Via Guerrazzi 10/F, Bologna: idee per scegliere e risposte alle tue domande.`,`${item.name[1]} at Guerrazzi, Via Guerrazzi 10/F, Bologna: ideas for choosing and answers to your questions.`)} schema={schema} theme={theme} image={familyOgImage}>
+<Base lang={lang} slug={`assortimento/${id}`} title={`${item.name[l]} ${text(lang,'a Bologna','in Bologna')}`} description={text(lang,`${item.name[0]} da Angela, Via Guerrazzi 10/F, Bologna. ${item.description[0]}`,`${item.name[1]} at Angela’s, Via Guerrazzi 10/F, Bologna. ${item.description[1]}`)} schema={schema} theme={theme} image={familyOgImage}>
   <div class="family-document" data-treatment={presentation.treatment} style={`--family-material: url('/images/materials/${presentation.material}-768.webp')`}>
     <nav class="breadcrumb wrap" aria-label={text(lang,'Percorso di navigazione','Breadcrumb')}><a href={pathFor('catalogo',lang)}>{text(lang,'Catalogo','Catalogue')}</a><span aria-hidden="true">/</span><a href={pathFor(item.page,lang)}>{label}</a><span aria-hidden="true">/</span><span>{text(lang,'Famiglia','Family')}</span></nav>
 
@@ -56,7 +72,13 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
       </figure>
     </section>
 
-    <CollectionNarrative id={id} lang={lang}/>
+    {d.story?<section class="family-story wrap" aria-label={text(lang,'Da conoscere','Get to know it')}>
+      {d.story.map(part=><div class="family-story-part"><h2>{part.title[l]}</h2><div>{part.paragraphs.map(paragraph=><p>{paragraph[l]}</p>)}</div></div>)}
+    </section>:<CollectionNarrative id={id} lang={lang}/>}
+    {d.choice&&<section class="family-choice wrap" aria-labelledby="family-choice-title">
+      <p class="family-section-label">{text(lang,'Scegli il tuo percorso','Choose your path')}</p><h2 id="family-choice-title">{d.choice.title[l]}</h2>
+      <div class="family-choice-options">{d.choice.options.map(option=><section><h3>{option.label[l]}</h3><p>{option.text[l]}</p></section>)}</div>
+    </section>}
     <section class="family-register wrap" aria-labelledby="family-register-title">
       <h2 id="family-register-title" class="sr-only">{text(lang,'La scheda in breve','Record at a glance')}</h2>
       <dl>
@@ -84,9 +106,11 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
       </div>
     </section>
 
+    {d.readMore&&<aside class="family-reading wrap"><div><p class="family-section-label">{text(lang,'Dal diario di Angela','From Angela’s journal')}</p><h2>{d.readMore.title[l]}</h2><p>{text(lang,'Un racconto per confrontare le proposte e trovare il tuo percorso.','A story to compare the options and find your path. The article is in Italian.')}</p></div><a class="button quiet" href={`/approfondimenti/${d.readMore.slug}/`}>{text(lang,'Leggi l’articolo','Read the article in Italian')}</a></aside>}
+
     {(siblings.length>0||relatedCategories.length>0)&&<section id="percorsi" class="family-related wrap" aria-labelledby="family-related-title">
-      <div class="family-related-opening"><div class="family-section-opening"><p class="family-section-label">{text(lang,'Continua a esplorare','Keep exploring')}</p><h2 id="family-related-title">{siblings.length>0?text(lang,'Nella stessa categoria.','In the same category.'):text(lang,'Altri percorsi, altre idee.','More paths, more ideas.')}</h2></div><a class="family-all-link" href={`${pathFor('catalogo',lang)}?categoria=${item.category}`}>{text(lang,'Vedi nel catalogo','View in the catalogue')}</a></div>
-      {siblings.length>0&&<div class="family-sibling-grid">{siblings.map(sibling=><a class="family-sibling-card" href={pathFor(`assortimento/${sibling.id}`,lang)}><span class="family-card-type">{text(lang,'Famiglia','Family')} · {label}</span><h3>{sibling.name[l]}</h3><p>{sibling.description[l]}</p><span class="family-card-action">{text(lang,'Apri la scheda','Open the record')}</span></a>)}</div>}
+      <div class="family-related-opening"><div class="family-section-opening"><p class="family-section-label">{text(lang,'Continua a esplorare','Keep exploring')}</p><h2 id="family-related-title">{siblings.length>0?text(lang,'Da confrontare, da abbinare.','Compare or pair.'):text(lang,'Altri percorsi, altre idee.','More paths, more ideas.')}</h2></div><a class="family-all-link" href={`${pathFor('catalogo',lang)}?categoria=${item.category}`}>{text(lang,'Vedi nel catalogo','View in the catalogue')}</a></div>
+      {siblings.length>0&&<div class="family-sibling-grid">{siblings.map(sibling=>{const photo=catalogPhotoFor(sibling.id);return <a class="family-sibling-card" href={pathFor(`assortimento/${sibling.id}`,lang)}><img class="family-sibling-photo" src={photo.src} srcset={photo.srcset} sizes="(max-width: 680px) calc(100vw - 88px), 360px" width={photo.width} height={photo.height} alt={photo.alt?.[l]||sibling.name[l]} loading="lazy"/><span class="family-card-type">{text(lang,'Famiglia','Family')} · {familyCategoryLabel(sibling.category)}</span><h3>{sibling.name[l]}</h3><p>{sibling.description[l]}</p><span class="family-card-action">{text(lang,'Apri la scheda','Open the record')}</span></a>})}</div>}
       {relatedCategories.length>0&&<div class="family-category-grid">{relatedCategories.map(category=><a href={pathFor(category.slug,lang)}><span class="family-card-type">{text(lang,'Categoria','Category')}</span><h3>{category.label}</h3><p>{category.intro}</p><span class="family-card-action">{text(lang,'Esplora la categoria','Explore the category')}</span></a>)}</div>}
     </section>}
 
@@ -99,6 +123,8 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
   </div>
 </Base>
 <style>
+ .family-reading{display:flex;align-items:center;justify-content:space-between;gap:30px;padding-block:32px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.family-reading h2{font:400 clamp(1.7rem,2.5vw,2.3rem)/1.2 var(--display);color:var(--accent);max-width:26ch;margin:0 0 14px}.family-reading p{max-width:65ch;line-height:1.8}.family-reading .button{flex-shrink:0}@media(max-width:680px){.family-reading{align-items:flex-start;flex-direction:column;gap:14px}}
+ .family-story{border-top:1px solid var(--line);padding-block:38px}.family-story-part{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px}.family-story h2,.family-choice h2{font:400 clamp(1.9rem,3vw,2.7rem)/1.2 var(--display);color:var(--accent)}.family-story p{line-height:1.9;max-width:68ch;margin:0 0 1rem}.family-choice{padding-block:30px 45px}.family-choice-options{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:20px;margin-top:24px}.family-choice-options>section{padding:24px;border-top:3px solid var(--accent);background:var(--surface)}.family-choice-options h3{font:400 1.65rem/1.2 var(--display);color:var(--accent);margin:0 0 14px}.family-choice-options p{line-height:1.8;margin:0}.family-sibling-photo{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;margin:0 0 18px}@media(max-width:680px){.family-story-part{grid-template-columns:1fr;gap:16px}}
  .family-brands{display:flex;flex-wrap:wrap;gap:8px 16px}.family-brands a{text-decoration:underline;text-underline-offset:4px;min-height:44px;display:inline-flex;align-items:center}
   .family-document{--family-tone:var(--accent);--family-line:color-mix(in srgb,var(--accent) 23%,#e5e0d5);--family-muted:#4d5a68;color:var(--ink)}
   .family-document .breadcrumb{font-size:.95rem;line-height:1.6;gap:10px}

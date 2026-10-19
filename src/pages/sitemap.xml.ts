@@ -1,5 +1,18 @@
 import {catalogueBrands} from '../data/brand-catalogue';
 import {serviceIdentities} from '../data/service-identities';
 import {cigarBrandStories} from '../data/cigar-brand-stories';
-import {catalogAssortment} from '../data/catalog-assortment';import {cigarRecords} from '../data/cigar-records';import {mainPages} from '../data/shop';import {guides} from '../data/pages';import {articles} from '../data/articles';import {getProducts} from '../lib/catalog.mjs';
-export function GET(){const base=import.meta.env.PUBLIC_SITE_URL;if(!base||import.meta.env.PUBLIC_LAUNCH_READY!=='true')return new Response('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"></urlset>',{headers:{'Content-Type':'application/xml'}});const paths=[];for(const prefix of ['', '/en']){for(const p of mainPages)paths.push(`${prefix}/${p.slug?p.slug+'/':''}`);for(const g of Object.keys(guides))paths.push(`${prefix}/schede/${g}/`);for(const p of catalogAssortment)paths.push(`${prefix}/assortimento/${p.id}/`);for(const p of cigarRecords)paths.push(`${prefix}/sigari/${p.slug}/`);for(const brand of catalogueBrands)paths.push(`${prefix}/marchi/${brand.slug}/`);for(const service of serviceIdentities)paths.push(`${prefix}/servizi/${service.slug}/`);for(const story of cigarBrandStories)paths.push(`${prefix}/sigari/storie/${story.slug}/`);for(const p of getProducts({publicOnly:true}))paths.push(`${prefix}/catalogo/${p.slug}/`);}paths.push('/approfondimenti/',...articles.map(a=>`/approfondimenti/${a.slug}/`));const escape=(s:string)=>s.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');return new Response(`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(p=>`<url><loc>${escape(new URL(p,base).href)}</loc></url>`).join('')}</urlset>`,{headers:{'Content-Type':'application/xml'}});}
+import {catalogAssortment} from '../data/catalog-assortment';
+import {cigarRecords} from '../data/cigar-records';
+import {mainPages,shop} from '../data/shop';
+import {guides} from '../data/pages';
+import {articles} from '../data/articles';
+import {getProducts} from '../lib/catalog.mjs';
+import {getLaunchReadiness,getPublicSitemapPaths} from '../lib/launch-readiness.mjs';
+
+export function GET(){
+ const launch=getLaunchReadiness({siteUrl:import.meta.env.PUBLIC_SITE_URL,launchRequested:import.meta.env.PUBLIC_LAUNCH_READY,shop});
+ const paths=launch.ready?getPublicSitemapPaths({mainPages,guides,catalogAssortment,cigarRecords,catalogueBrands,serviceIdentities,cigarBrandStories,products:getProducts({publicOnly:true}),articles}):[];
+ const escape=(value:string)=>value.replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
+ const body=`<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${paths.map(path=>`<url><loc>${escape(new URL(path,launch.siteUrl).href)}</loc></url>`).join('')}</urlset>`;
+ return new Response(body,{headers:{'Content-Type':'application/xml; charset=utf-8'}});
+}

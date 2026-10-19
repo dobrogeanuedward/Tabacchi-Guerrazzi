@@ -2,8 +2,8 @@
 import Base from '../layouts/Base.astro';
 import CommonsPhoto from './CommonsPhoto.astro';
 import OfficialSources from './OfficialSources.astro';
-import BrandSignature from './BrandSignature.astro';
-import {cigarBrandStories,type CigarBrandStory as Story} from '../data/cigar-brand-stories';
+import type {CigarBrandStory as Story} from '../data/cigar-brand-stories';
+
 import {commonsPhotographs} from '../data/commons-photography';
 import {pathFor,text,shop,type Lang} from '../data/shop';
 interface Props {story:Story;lang?:Lang;}
@@ -11,15 +11,14 @@ const {story,lang='it'}=Astro.props;const l=lang==='it'?0:1;
 const slug=`sigari/storie/${story.slug}`;const photo=commonsPhotographs[story.photo];
 const configured=import.meta.env.PUBLIC_SITE_URL;
 const url=configured?new URL(pathFor(slug,lang),configured).href:undefined;
-const continuation=cigarBrandStories.filter(s=>s.slug!==story.slug).slice(0,3);
 const imageObject={'@type':'ImageObject',...(configured?{contentUrl:new URL(photo.path,configured).href}:{}),caption:photo.caption[l],creator:{'@type':'Person',name:photo.author},creditText:photo.author,license:photo.licenseUrl,acquireLicensePage:photo.sourcePage};
-const schema=[{'@context':'https://schema.org','@type':'Article',headline:story.title[l],description:story.summary[l],inLanguage:lang,datePublished:'2026-10-14',dateModified:'2026-10-14',articleSection:text(lang,'Storia e denominazioni','History and names'),about:story.names.map(name=>({'@type':'Thing',name})),citation:story.sources.map(source=>source.url),author:{'@type':'Organization',name:shop.name},publisher:{'@type':'Organization',name:shop.name},image:imageObject,...(url?{url,mainEntityOfPage:url}:{})},{'@context':'https://schema.org','@type':'FAQPage',mainEntity:story.faqs.map(f=>({'@type':'Question',name:f.question[l],acceptedAnswer:{'@type':'Answer',text:f.answer[l]}}))}];
+const schema={'@context':'https://schema.org','@type':'Article',headline:story.title[l],description:story.summary[l],inLanguage:lang,datePublished:'2026-10-14',dateModified:'2026-10-19',articleSection:text(lang,'Storia industriale e fonti','Industrial history and sources'),about:story.names.map(name=>({'@type':'Thing',name})),citation:story.sources.map(source=>source.url),author:{'@type':'Organization',name:shop.name},publisher:{'@type':'Organization',name:shop.name},image:imageObject,...(url?{url,mainEntityOfPage:url}:{})};
 ---
 <Base title={story.title[l]} description={story.summary[l]} slug={slug} lang={lang} theme="cedro" image={photo.path} schema={schema}>
  <div class="breadcrumb wrap"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor('sigari',lang)}>{text(lang,'Storie e parole del sigaro','Cigar stories and words')}</a><span>/</span><span>{story.names.join(' · ')}</span></div>
- <header class="brand-story-cover wrap"><div class="brand-story-copy"><p class="eyebrow">{text(lang,'Storie dei marchi','Brand stories')} <span class="story-age">18+</span></p><h1>{story.title[l]}</h1><p class="brand-story-intro">{story.intro[l]}</p><p class="story-location">{story.place[l]}</p><a class="story-start" href="#storia">{text(lang,'Comincia a leggere','Start reading')}</a></div><CommonsPhoto id={story.photo} lang={lang} loading="eager"/></header>
- <div class="brand-story-reading wrap" id="storia"><nav class="story-outline" aria-label={text(lang,'In questa storia','In this story')}><p>{text(lang,'In questa storia','In this story')}</p>{story.sections.map((s,i)=><a href={`#capitolo-${i}`}>{s.title[l]}</a>)}</nav><article class="story-prose">{story.sections.map((s,i)=><section id={`capitolo-${i}`}><h2>{s.title[l]}</h2><p>{s.body[l]}</p></section>)}<section class="story-questions"><h2>{text(lang,'Due domande, due risposte.','Two questions, two answers.')}</h2>{story.faqs.map(f=><details><summary>{f.question[l]}</summary><p>{f.answer[l]}</p></details>)}</section><OfficialSources sources={story.sources} lang={lang}/><BrandSignature lang={lang}/></article></div>
- <section class="brand-story-continuation wrap"><h2>{text(lang,'La storia continua.','The story continues.')}</h2><div>{continuation.map(s=><a href={pathFor(`sigari/storie/${s.slug}`,lang)}><span>{s.place[l]}</span><h3>{s.title[l]}</h3><span>{text(lang,'Leggi la storia','Read the story')}</span></a>)}</div><a class="story-return" href={pathFor('sigari',lang)+'#storie-dei-marchi'}>{text(lang,'Torna alle storie dei marchi','Back to brand stories')}</a></section>
+ <header class="brand-story-cover wrap"><div class="brand-story-copy"><p class="eyebrow">{text(lang,'Persone, luoghi e fonti','People, places and sources')} <span class="story-age">18+</span></p><h1>{story.title[l]}</h1><p class="brand-story-intro">{story.intro[l]}</p><p class="story-location">{story.place[l]}</p></div><CommonsPhoto id={story.photo} lang={lang} loading="eager"/></header>
+ <div class="brand-story-reading wrap" id="storia"><nav class="story-outline" aria-label={text(lang,'In questa storia','In this story')}><p>{text(lang,'In questa storia','In this story')}</p>{story.sections.map((s,i)=><a href={`#capitolo-${i}`}>{s.title[l]}</a>)}</nav><article class="story-prose">{story.sections.map((s,i)=><section id={`capitolo-${i}`}><h2>{s.title[l]}</h2><p>{s.body[l]}</p></section>)}<section class="story-questions"><h2>{text(lang,'Domande sulla storia.','Questions about the history.')}</h2>{story.faqs.map(f=><details><summary>{f.question[l]}</summary><p>{f.answer[l]}</p></details>)}</section><OfficialSources sources={story.sources} lang={lang}/></article></div>
+ <nav class="brand-story-continuation wrap" aria-label={text(lang,'Indice informativo','Information index')}><a class="story-return" href={pathFor('sigari',lang)+'#storie-dei-marchi'}>{text(lang,'Torna alle informazioni e alle fonti','Back to information and sources')}</a></nav>
 </Base>
 <style>
  .brand-story-cover{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(35px,5vw,80px);padding-block:32px 58px;border-bottom:1px solid #d0c4b4;color:#493928}

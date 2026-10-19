@@ -9,7 +9,7 @@ const study=(id:VisualStudyId):EditorialVisual=>{
  return {src:item.path,preview:item.preview,width:item.width,height:item.height,label:[item.title.it,item.title.en],caption:[item.caption.it,item.caption.en],alt:[item.alt.it,item.alt.en]};
 };
 const photograph=(id:string,label:Pair,caption:Pair,alt:Pair,folder='quaderni'):EditorialVisual=>({src:`/images/${folder}/${id}.webp`,preview:`/images/${folder}/${id}-${folder==='catalogo'?720:768}.webp`,width:folder==='catalogo'?1440:1536,height:folder==='catalogo'?960:1024,label,caption,alt});
-export const leafVisual=photograph('foglia-struttura',['La foglia e la forma','The leaf and the form'],['Una foglia essiccata e un sigaro, per osservare pieghe, venature e struttura.','A dried leaf and a cigar: folds, veins and structure.'],['Foglia essiccata e sigaro senza marchio su carta avorio','Dried leaf and unbranded cigar on ivory paper']);
+export const leafVisual=photograph('foglia-struttura',['La foglia e la forma','The leaf and the form'],['La foglia e la struttura del sigaro.','The leaf and the structure of a cigar.'],['Foglia essiccata e sigaro senza marchio su carta avorio','Dried leaf and unbranded cigar on ivory paper']);
 export const namesVisual=photograph('carta-e-nomi',['Nomi e storie','Names and stories'],['Un libro aperto, carta e spazio per le parole.','An open book, paper and space for words.'],['Libro aperto, penna blu e fogli su un tavolo di legno','Open book, blue pen and paper on a wooden table']);
 const botany=study('botanical-erica-study');
 const mineral=study('mineral-sepiolite-study');

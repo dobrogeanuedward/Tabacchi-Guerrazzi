@@ -1,5 +1,6 @@
 ---
 import NeighborhoodLinks from '../../components/NeighborhoodLinks.astro';
+import ArticleCollection from '../../components/ArticleCollection.astro';
 import Base from '../../layouts/Base.astro';import {articles,clusters,articleCategoryLinks,type Article} from '../../data/articles';import {guides,pages} from '../../data/pages';
 import {materialArticles} from '../../data/materials-education';import {tobaccoArticles} from '../../data/tobacco-information';
 import {visualForArticle} from '../../data/editorial-visuals';
@@ -33,7 +34,7 @@ const indexEntries=a.sections.map((s,i)=>({href:'#sezione-'+i,title:s[0]}));
  <div class="editorial-reading wrap">
   <ReadingIndex entries={indexEntries} title="In questo articolo"/>
   <article class="editorial-content">
-   {a.sections.map((s,i)=><section class="editorial-section" id={'sezione-'+i}><div class="editorial-section-heading"><h2>{s[0]}</h2></div>{s.slice(1).flatMap(p=>p.split("\n\n")).map(paragraph=><p>{paragraph}</p>)}</section>)}
+   {a.sections.map((s,i)=><><section class="editorial-section" id={'sezione-'+i}><div class="editorial-section-heading"><h2>{s[0]}</h2></div>{s.slice(1).flatMap(p=>p.split("\n\n")).map(paragraph=><p>{paragraph}</p>)}</section>{i===1&&!information&&<ArticleCollection slug={a.slug}/>}</>)}
    <OfficialSources sources={a.sources||[]} lang="it" research={research} checked={research?'11 ottobre 2026':undefined}/>
    {!information&&<NeighborhoodLinks topic={c.parent} lang="it"/>}
    <section class="editorial-continuation"><p class="editorial-section-label">Ti può interessare</p><h2>Continua a leggere.</h2><div class="continuation-grid">{continuation.map((link,i)=><a class:list={[i===0&&'continuation-primary']} href={link.href}><span class="continuation-kind">{link.kind}</span><h3>{link.title}</h3><span class="continuation-action">{link.action}</span></a>)}</div></section>

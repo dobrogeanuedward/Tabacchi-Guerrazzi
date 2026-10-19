@@ -13,10 +13,20 @@ for(const prefix of ['', 'en'])for(const section of ['assortimento','sigari']){
   assert.equal((html.match(/<h1(?:\s|>)/g)||[]).length,1);
   const graph=JSON.parse(html.match(/<script type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/)[1]);
   assert.ok(!graph.some(s=>['Product','Offer','AggregateRating'].includes(s['@type'])));
-  const faq=graph.find(s=>s['@type']==='FAQPage');assert.ok(faq.mainEntity.length>=2);
-  for(const q of faq.mainEntity){assert.ok(html.includes(q.name));assert.ok(html.includes(q.acceptedAnswer.text));}
+  const faq=graph.find(s=>s['@type']==='FAQPage');
+  if(section==='assortimento'){
+   assert.ok(faq?.mainEntity.length>=2,'A family must answer its practical questions');
+   for(const q of faq.mainEntity){assert.ok(html.includes(q.name));assert.ok(html.includes(q.acceptedAnswer.text));}
+   assert.match(html,/family-story|collection-narrative/,'A family needs its own narrative');
+  }
   for(const [,href] of html.matchAll(/href="(\/(?:en\/)?(?:sigari|assortimento|schede)[^"?#]*)"/g))await access(join('dist',href,'index.html'));
-  if(section==='sigari'){assert.match(html,/id="age-confirmation"/);assert.match(html,/class="official-sources"/);assert.ok(!/class="product-price"|@type":"Offer"/.test(html));}
+  if(section==='sigari'){
+   assert.match(html,/id="age-confirmation"/);
+   assert.match(html,/class="official-sources"/,'A historical record must link its sources');
+   assert.ok(/<h1[^>]*>[^<]+<\/h1>\s*<p[^>]*>[^<]+<\/p>/.test(html)||/class="record-context(?: |")/.test(html),'A cigar name needs factual or historical prose');
+   assert.ok(!/class="product-price"|@type":"Offer"|record-related|class="record-plate"/.test(html));
+   assert.doesNotMatch(html,/ricognizione fotografica|photographic survey|immagine fotografica generata/);
+  }
   else assert.ok(!html.includes('id="age-confirmation"'));
   total++;
  }
