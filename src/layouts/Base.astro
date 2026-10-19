@@ -4,9 +4,11 @@ import '../styles/editorial-ui.css';
 import Logo from '../components/Logo.astro';
 import LegalNotice from '../components/LegalNotice.astro';
 import {getLaunchReadiness} from '../lib/launch-readiness.mjs';
+import {isSoftenedProductImage} from '../data/product-image-treatment.mjs';
 import AgeConfirmation from '../components/AgeConfirmation.astro';import {adultSectionSlugs,tobaccoGuides} from '../data/tobacco-information';
 import {shop, mainPages, pathFor, text} from '../data/shop';
 const {title=shop.name,description='',lang='it',slug='',theme='',noindex=false,alternate=true,schema=null,image='/images/hero/portico.webp'}=Astro.props;
+const socialImage=isSoftenedProductImage(image)?'/brand/guerrazzi-logo.webp':image;
 const launch=getLaunchReadiness({siteUrl:import.meta.env.PUBLIC_SITE_URL,launchRequested:import.meta.env.PUBLIC_LAUNCH_READY,shop});
 const configured=launch.siteUrl;
 const ready=launch.ready;
@@ -27,7 +29,7 @@ const noticeKind=slug==='ricevitoria'?'gambling':slug==='accendini-e-accessori'?
 <link rel="icon" type="image/svg+xml" href="/brand/favicon.svg"/><link rel="preload" href="/fonts/bodoni-moda-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/><link rel="preload" href="/fonts/manrope-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin/>
 {adultSection&&<script is:inline>try{if(sessionStorage.getItem('guerrazzi-adult-session-v1')!=='yes')document.documentElement.classList.add('age-pending')}catch{document.documentElement.classList.add('age-pending')}</script>}
 <meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="website"/><meta property="og:locale" content={lang==='it'?'it_IT':'en_GB'}/>{canonical&&<meta property="og:url" content={canonical}/>}
-{configured&&<><meta property="og:image" content={new URL(image,configured).href}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:image" content={new URL(image,configured).href}/></>}
+{configured&&<><meta property="og:image" content={new URL(socialImage,configured).href}/><meta name="twitter:card" content="summary_large_image"/><meta name="twitter:image" content={new URL(socialImage,configured).href}/></>}
 <script type="application/ld+json" set:html={json([entity,...(website?[website]:[]),...(canonical?[{'@context':'https://schema.org','@type':'WebPage','@id':`${canonical}#webpage`,url:canonical,name:title,description,inLanguage:lang,about:{'@id':new URL('/#store',configured).href},isPartOf:{'@id':new URL('/#website',configured).href}},...(slug?[{'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Home',item:new URL(pathFor('',lang),configured).href},{'@type':'ListItem',position:2,name:pageName?(lang==='it'?pageName.it:pageName.en):title,item:canonical}]}]:[])]:[]),...extraSchemas])}/>
 </head><body class={theme?`theme-${theme}`:''}>
 <a class="skip-link" href="#main">{text(lang,'Vai al contenuto','Skip to content')}</a>

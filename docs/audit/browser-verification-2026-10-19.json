@@ -67,6 +67,22 @@
     "catalogueHeadingAndImageRemainLinked": true,
     "gamesCategoryVisibleFamilies": 14
   },
+  "temporaryImageTreatmentChecks": {
+    "inventoryFilesIncludingResponsiveVariants": 92,
+    "mobileViewport": 390,
+    "mobileDocumentWidth": 375,
+    "mobileImageFilter": "blur(10px)",
+    "desktopViewport": 1920,
+    "desktopImageFilter": "blur(14px)",
+    "iconAndDisclosurePanelFilter": "none",
+    "genericGamesImageFilter": "none",
+    "galleryChangePreservesTreatment": true,
+    "catalogueIconDoesNotNavigate": true,
+    "catalogueTitleLinkNavigates": true,
+    "productSchemaOmitsSelectedReconstructions": true,
+    "sourceAssetsChanged": false,
+    "limitation": "CSS visual treatment only: original source assets remain accessible; no rights clearance is established."
+  },
   "resolvedIssue": "Footer case-study link previously exceeded the 320px viewport; flex wrapping corrected and verified.",
   "publicationState": "Indexing gate remains closed until deferred business/privacy details and launch evidence are completed."
 }
