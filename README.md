@@ -42,7 +42,7 @@ Il pannello gestisce bozze, pubblicazione, rimozione dalla vetrina tramite bozza
 - 22 pagine principali in italiano e inglese, compresa la nuova categoria Sale di Cervia.
 - 14 guide in italiano e inglese: sei percorsi pratici, tre schede normative e cinque guide su materiali, storia, botanica e lessico.
 - 57 schede di famiglie non regolamentate e 46 voci informative sui sigari, ciascuna IT/EN.
-- 53 pagine di marchi e personaggi del catalogo e tre pagine di servizi, ciascuna IT/EN; indice ricercabile per marchio e categoria.
+- 53 pagine di marchi e personaggi del catalogo e pagine IT/EN per sei servizi documentati, più la panoramica dei pagamenti; indice ricercabile per marchio e categoria.
 - Otto storie documentarie sui marchi, con pagine IT/EN in `/sigari/storie/`: Davidoff, Zino, Camacho, Plasencia, La Aurora e Príncipes, León Jimenes, A. Flores/PDR, Montosa e Parcero. Contenuti di storia e lessico, senza dati di giacenza o inviti all’acquisto.
 - Otto fotografie Wikimedia Commons in 16 varianti WebP, con autore, licenza, fonte, revisione e didascalia; metadati in `src/data/commons-photography.json` e manifest in `docs/identita/brand-stories-photography-2026-10-14.json`.
 - 18 articoli italiani in sette cluster: Servizi pratici, Idee regalo, Giochi e giocattoli, Negozio e quartiere, Tabacco: informazioni e norme, Materiali e storia, Lessico e fonti.
@@ -101,3 +101,11 @@ Privacy e cookie descrivono la versione statica effettiva, ricerca locale e memo
 Nuovo servizio confermato dall’utente: ricariche Postepay al banco, con pagina IT/EN, logo ufficiale, FAQ e collegamenti dalla pagina Servizi. Fonti e provenienza del logo in docs/identita/postepay-service-sources.json. Export:450 HTML, 447 URL candidate. npm run test:notices controlla copertura locale delle diciture, distinzione foto autentiche, avvertenze e presenza del servizio.
 
 Le diciture locali IA usano ora un piccolo pulsante semitrasparente con una “a” accanto al simbolo informativo. Il testo si apre soltanto al clic o all’attivazione da tastiera e si chiude con Escape o clic esterno. Le schede mantengono il collegamento sull’immagine senza annidare il pulsante in un link. Verificati tocco, tastiera, posizionamento del testo e navigazione del catalogo a 390 px.
+
+## Copertura dei servizi — 20 ottobre 2026
+
+Confrontate 30 osservazioni di servizio/ricevitoria dai due censimenti e la conferma diretta Postepay. I sei servizi documentati sono deposito bagagli Bounce, ricariche Postepay, pagamenti Satispay, carte tramite Nexi, Paga e Preleva PuntoLis e distributore eVx Luna h24. Ciascuno ha pagina IT/EN, logo originale, informazioni locali, FAQ, contatti e dati Service; l’indice Servizi espone i sei percorsi e la panoramica Pagamenti resta distinta. Le due pagine Satispay/Nexi sono nuove; Postepay esisteva già dal 19 ottobre. Gli orari h24 descrivono solo il distributore.
+
+Le guide su ricariche telefoniche, bollettini e pagoPA non dichiarano un servizio attivo: mancano la conferma operativa e gli eventuali operatori. La dicitura “Sali e valori bollati” è documentata, ma le operazioni attuali sui valori bollati richiedono conferma. ADM è un’autorità, IGT My Club Premium una dicitura identificativa; i nomi della ricevitoria restano nell’area informativa 18+, senza landing promozionali di gioco. Non sono dedotti bonifici, F24, money transfer, SPID, attivazione SIM, spedizioni o stampa dalla sola presenza del marchio PuntoLis.
+
+Registro puntuale in `docs/audit/services-coverage-2026-10-20.json`. `npm run test:services` controlla schede IT/EN, logo, Service/FAQ coerenti al testo, indirizzo, telefono, mappa, distinzione degli orari e collegamenti. L’export comprende 454 HTML; il dominio canonico e i dati/informative del titolare restano necessari per aprire l’indicizzazione.

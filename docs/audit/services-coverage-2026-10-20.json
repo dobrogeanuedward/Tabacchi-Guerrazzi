@@ -1,0 +1,413 @@
+{
+  "checkedOn": "2026-10-20",
+  "scope": "Confronto dei servizi fra entrambi i censimenti e la conferma utente Postepay. Non certifica una pagina per ogni SKU del catalogo.",
+  "documentedServices": [
+    {
+      "name": "Deposito bagagli Bounce",
+      "route": "/deposito-bagagli/",
+      "basis": "GF02-049, GF03-001, GF03-199; conferma cliente e scheda ufficiale Bounce",
+      "languages": [
+        "it",
+        "en"
+      ],
+      "originalLogo": true,
+      "serviceSchema": true,
+      "visibleFaq": true,
+      "localAddress": true,
+      "mapAndContactLinks": true
+    },
+    {
+      "name": "Ricariche Postepay",
+      "route": "/servizi/ricariche-postepay/",
+      "basis": "Conferma diretta dell’utente il 19 ottobre 2026, ribadita il 20 ottobre; docs/identita/postepay-service-sources.json",
+      "languages": [
+        "it",
+        "en"
+      ],
+      "originalLogo": true,
+      "serviceSchema": true,
+      "visibleFaq": true,
+      "localAddress": true,
+      "mapAndContactLinks": true
+    },
+    {
+      "name": "Pagamenti Satispay",
+      "route": "/servizi/pagamenti-satispay/",
+      "basis": "GF03-002: vetrofania di accettazione fotografata",
+      "languages": [
+        "it",
+        "en"
+      ],
+      "originalLogo": true,
+      "serviceSchema": true,
+      "visibleFaq": true,
+      "localAddress": true,
+      "mapAndContactLinks": true
+    },
+    {
+      "name": "Pagamenti con carte tramite Nexi",
+      "route": "/servizi/pagamenti-carte-nexi/",
+      "basis": "GF03-003: vetrofania e POS; non prova tutti i circuiti",
+      "languages": [
+        "it",
+        "en"
+      ],
+      "originalLogo": true,
+      "serviceSchema": true,
+      "visibleFaq": true,
+      "localAddress": true,
+      "mapAndContactLinks": true
+    },
+    {
+      "name": "Paga e Preleva PuntoLis",
+      "route": "/servizi/paga-e-preleva/",
+      "basis": "GF03-004: vetrofania specifica fotografata; carta e condizioni da verificare",
+      "languages": [
+        "it",
+        "en"
+      ],
+      "originalLogo": true,
+      "serviceSchema": true,
+      "visibleFaq": true,
+      "localAddress": true,
+      "mapAndContactLinks": true
+    },
+    {
+      "name": "Distributore eVx Luna h24",
+      "route": "/servizi/self-service/",
+      "basis": "GF03-200 e foto esterne; h24 non esteso al banco o alle prenotazioni Bounce",
+      "languages": [
+        "it",
+        "en"
+      ],
+      "originalLogo": true,
+      "serviceSchema": true,
+      "visibleFaq": true,
+      "localAddress": true,
+      "mapAndContactLinks": true
+    }
+  ],
+  "paymentOverview": "/servizi/pagamenti/",
+  "observations": [
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-001",
+      "brandOrLabel": "Bounce",
+      "observation": "Deposito bagagli",
+      "status": "documented-service",
+      "route": "/deposito-bagagli/"
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-002",
+      "brandOrLabel": "Satispay",
+      "observation": "Pagamenti con Satispay",
+      "status": "documented-service",
+      "route": "/servizi/pagamenti-satispay/"
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-003",
+      "brandOrLabel": "Nexi",
+      "observation": "Pagamenti con carte tramite POS",
+      "status": "documented-service",
+      "route": "/servizi/pagamenti-carte-nexi/"
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-004",
+      "brandOrLabel": "PuntoLis",
+      "observation": "Paga e Preleva",
+      "status": "documented-service",
+      "route": "/servizi/paga-e-preleva/"
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-005",
+      "brandOrLabel": "Sisal",
+      "observation": "Ricevitoria e WeSisal Insieme",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-006",
+      "brandOrLabel": "IGT",
+      "observation": "My Club Premium",
+      "status": "identification-not-standalone-service",
+      "route": "/ricevitoria/",
+      "note": "My Club Premium è una vetrofania identificativa storica, non un elenco di operazioni."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-007",
+      "brandOrLabel": "DomusBet",
+      "observation": "Punto vendita ricariche",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-008",
+      "brandOrLabel": "Gratta e Vinci",
+      "observation": "Lotteria istantanea",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-009",
+      "brandOrLabel": "Lotteria Italia",
+      "observation": "Lotteria nazionale",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-010",
+      "brandOrLabel": "ADM",
+      "observation": "Autorità indicata sui materiali",
+      "status": "authority-not-service",
+      "route": null,
+      "note": "Autorità regolatrice: non un servizio della tabaccheria e non un logo di convenzionamento."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-011",
+      "brandOrLabel": "SuperEnalotto",
+      "observation": "SuperEnalotto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-012",
+      "brandOrLabel": "Eurojackpot",
+      "observation": "Eurojackpot",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-013",
+      "brandOrLabel": "VinciCasa",
+      "observation": "VinciCasa",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-014",
+      "brandOrLabel": "Win for Life",
+      "observation": "Win for Life",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-015",
+      "brandOrLabel": "SiVinceTutto",
+      "observation": "SiVinceTutto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-016",
+      "brandOrLabel": "Lotto",
+      "observation": "Lotto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-017",
+      "brandOrLabel": "10eLotto",
+      "observation": "10eLotto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-180",
+      "brandOrLabel": "Lotto",
+      "observation": "Fai 3 / Fai 4",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-199",
+      "brandOrLabel": "Bounce",
+      "observation": "Bag storage here",
+      "status": "documented-service",
+      "route": "/deposito-bagagli/"
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-200",
+      "brandOrLabel": "eVx",
+      "observation": "Distributore Luna h24",
+      "status": "documented-service",
+      "route": "/servizi/self-service/"
+    },
+    {
+      "source": "censimento-2026-10-15.json",
+      "id": "GF03-201",
+      "brandOrLabel": "",
+      "observation": "Sali e valori bollati",
+      "status": "business-confirmation-needed",
+      "route": null,
+      "note": "Dicitura esterna documentata; confermare operazioni effettive prima di una pagina di servizio attivo."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-078",
+      "brandOrLabel": "Materiali Lotto",
+      "observation": "Lotto e 10eLotto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-079",
+      "brandOrLabel": "Materiali Lotto",
+      "observation": "Simbolotto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-080",
+      "brandOrLabel": "Modulistica visibile",
+      "observation": "MillionDAY e MillionDAY Extra",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-081",
+      "brandOrLabel": "Modulistica visibile",
+      "observation": "Fai 3 e Fai 4",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-082",
+      "brandOrLabel": "Sisal",
+      "observation": "SuperEnalotto e SuperStar",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-083",
+      "brandOrLabel": "Sisal",
+      "observation": "SiVinceTutto",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-084",
+      "brandOrLabel": "Sisal",
+      "observation": "Eurojackpot",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF01-085",
+      "brandOrLabel": "Sisal",
+      "observation": "VinciCasa e Win for Life",
+      "status": "regulated-information-only",
+      "route": "/ricevitoria/",
+      "note": "Ricevitoria in area informativa 18+. Non sono state aperte landing promozionali per giochi o ricariche di conti gioco."
+    },
+    {
+      "source": "inventario-consolidato.json",
+      "id": "GF02-049",
+      "brandOrLabel": "Bounce",
+      "observation": "Deposito bagagli",
+      "status": "documented-service",
+      "route": "/deposito-bagagli/"
+    }
+  ],
+  "requiresBusinessConfirmation": [
+    {
+      "service": "Ricariche telefoniche",
+      "existingGuide": "/schede/ricariche-telefoniche/",
+      "missing": "Elenco degli operatori effettivamente attivi e relative modalità; nessun logo di operatore dedotto dal marchio PuntoLis."
+    },
+    {
+      "service": "Bollettini",
+      "existingGuide": "/schede/bollettini-e-pagopa/",
+      "missing": "Conferma delle tipologie di bollettino e del canale effettivamente abilitati al banco."
+    },
+    {
+      "service": "pagoPA",
+      "existingGuide": "/schede/bollettini-e-pagopa/",
+      "missing": "Conferma del servizio attivo e del prestatore; il logo nella guida non prova l’abilitazione."
+    },
+    {
+      "service": "Valori bollati",
+      "censusId": "GF03-201",
+      "missing": "Conferma delle operazioni attuali; non equiparare insegna, marca da bollo, francobolli e qualsiasi servizio postale."
+    }
+  ],
+  "notInferredFromProviderLogos": [
+    "Bonifici",
+    "Money transfer",
+    "F24",
+    "Bollo auto",
+    "SPID",
+    "Attivazione SIM",
+    "Spedizioni",
+    "Fotocopie o stampa"
+  ],
+  "officialSourcesChecked": [
+    "https://www.puntolis.it/it/pagamenti/prelievi/paga-e-preleva",
+    "https://www.satispay.com/it-it/privati/",
+    "https://www.nexi.it/content/dam/nexinew/download/assistenza/guide-pos/Guida_operativa_all_uso.pdf",
+    "https://www.nexi.it/it/supporto-carte/codici-sicurezza-pagamenti/pagamenti/transazioni-negate",
+    "https://www.evxvending.it/"
+  ],
+  "indexing": "Resta chiusa fino al dominio canonico confermato e al completamento dei dati del titolare e dell’informativa. Nessuna promessa di ranking o citazione AI.",
+  "staticValidation": {
+    "htmlPages": 454,
+    "eligibleRoutes": 451,
+    "brokenInternalLinks": 0,
+    "brokenAnchors": 0,
+    "missingAssets": 0,
+    "orphans": 0,
+    "duplicateTitles": 0,
+    "duplicateDescriptions": 0,
+    "astroErrors": 0,
+    "astroWarnings": 0,
+    "applicationTestsPassed": 9,
+    "servicePageChecks": "passed",
+    "seoChecks": "passed",
+    "publicNoticeChecks": "passed",
+    "indexingGate": "closed, preserved"
+  }
+}

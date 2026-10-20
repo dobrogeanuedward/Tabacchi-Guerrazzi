@@ -24,7 +24,7 @@ const localTopics:Record<string,Pair>={
 };
 export const neighborhoodCopy=(topic:string,lang:Lang)=>{const pair=localTopics[topic]||['Da Angela, tra i portici di Bologna. Ci trovi in Via Guerrazzi 10/F, fra Via Santo Stefano e Strada Maggiore.','At Angela’s, beneath Bologna’s porticoes. Find us at Via Guerrazzi 10/F, between Via Santo Stefano and Strada Maggiore.'];return pair[lang==='it'?0:1];};
 export const neighborhoodServices=[
- {slug:'servizi',name:['Servizi al banco','Counter services'],description:['Ricariche e avvisi di pagamento: porta con te il numero o il documento.','Top-ups and payment notices: bring the number or document.']},
+ {slug:'servizi',name:['Servizi al banco','Counter services'],description:['Ricariche Postepay, pagamenti Satispay e carte tramite Nexi.','Postepay top-ups, Satispay and card payments through Nexi.']},
  {slug:'deposito-bagagli',name:['Deposito bagagli Bounce','Bounce luggage storage'],description:['Prenota il deposito e continua la visita senza valigie.','Book storage and continue sightseeing without your bags.']},
  {slug:'cartoleria',name:['Cartoleria','Stationery'],description:['Quaderni, penne, evidenziatori e articoli per la scrivania.','Notebooks, pens, highlighters and desk essentials.']},
  {slug:'idee-regalo',name:['Regali e profumi','Gifts and perfumes'],description:['Piccoli pensieri, Raptus e ricordi di Bologna.','Little gifts, Raptus perfumes and Bologna keepsakes.']},
