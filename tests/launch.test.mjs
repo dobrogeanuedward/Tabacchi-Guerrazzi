@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import {getLaunchReadiness,getPublicSitemapPaths} from '../src/lib/launch-readiness.mjs';
+import {getLaunchReadiness,getPublicSitemapPaths,launchAuthorization} from '../src/lib/launch-readiness.mjs';
 
 const shop={name:'Test shop',address:'Test street 1',postcode:'40125',city:'Bologna',legalName:'Test controller',vat:'12345678901',email:'privacy@example.test',phone:'+390511234567',hours:[{day:'Monday',hours:'09:00–18:00'}]};
 const review={reviewedOn:'2026-10-19',controller:{legalName:shop.legalName,vat:shop.vat,contactEmail:shop.email,evidence:'Test controller record'},hosting:{provider:'Test host',policyUrl:'https://example.test/privacy',evidence:'Test hosting agreement'},retention:{description:'Test retention criteria',evidence:'Test configuration record'}};
@@ -31,4 +31,26 @@ test('sitemap includes both languages, ordinary and informational routes, with n
  assert.ok(!paths.includes('/admin/'));
  assert.ok(!paths.includes('/en/admin/'));
  assert.equal(new Set(paths).size,paths.length);
+});
+
+test('owner-authorized launch keeps deferred identity work visible on the confirmed domain only',()=>{
+ const pendingShop={...shop,legalName:'',vat:'',email:''};
+ const result=getLaunchReadiness({siteUrl:launchAuthorization.siteUrl,launchRequested:true,shop:pendingShop});
+ assert.equal(result.ready,true);
+ assert.equal(result.fullyComplete,false);
+ assert.equal(result.blockers.length,0);
+ assert.ok(result.warnings.some(item=>item.code==='shop-vat'));
+ assert.ok(result.warnings.some(item=>item.code==='privacy-controller'));
+ assert.equal(result.checks.find(item=>item.code==='shop-vat').passed,false);
+ assert.equal(getLaunchReadiness({siteUrl:'https://another.example',launchRequested:true,shop:pendingShop}).ready,false);
+ assert.equal(getLaunchReadiness({siteUrl:launchAuthorization.siteUrl,launchRequested:false,shop:pendingShop}).ready,false);
+ assert.equal(getLaunchReadiness({siteUrl:launchAuthorization.siteUrl,launchRequested:true,shop:pendingShop,authorization:null}).ready,false);
+});
+
+test('deferred business details cannot bypass technical or practical shop blockers',()=>{
+ const result=getLaunchReadiness({siteUrl:launchAuthorization.siteUrl,launchRequested:true,shop:{...shop,address:'',phone:'',hours:[]},authorization:{...launchAuthorization,deferredChecks:[...launchAuthorization.deferredChecks,'shop-address','shop-phone','shop-hours']}});
+ assert.equal(result.ready,false);
+ assert.ok(result.blockers.some(item=>item.code==='shop-address'));
+ assert.ok(result.blockers.some(item=>item.code==='shop-phone'));
+ assert.ok(result.blockers.some(item=>item.code==='shop-hours'));
 });

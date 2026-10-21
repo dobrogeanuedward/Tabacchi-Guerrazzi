@@ -1,9 +1,12 @@
 ---
 import DisclosedImage from './DisclosedImage.astro';
+import CatalogQuestions from './CatalogQuestions.astro';
+import {getSiteOrigin} from '../lib/site-origin.mjs';
 import Base from '../layouts/Base.astro';import {familyPresentationFor} from '../data/family-presentation';import Icon from './Icon.astro';import {getProducts} from '../lib/catalog.mjs';import {catalogPhotoFor} from '../data/catalog-photography';import {pathFor,text} from '../data/shop';import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';
 const {lang='it'}=Astro.props;const category=Astro.url.searchParams.get('categoria')||'';const query=(Astro.url.searchParams.get('q')||'').slice(0,200);const all=getProducts({publicOnly:true});const products=all;const l=lang==='it'?0:1;const categories=[...catalogGroups,...(all.some((p:any)=>p.category==='accessori')?[{id:'accessori',it:'Accessori regalo',en:'Gift accessories'}]:[])];
 const catalogEntries=[...products.map((p:any)=>({name:lang==='it'?p.nameIt:p.nameEn,path:`catalogo/${p.slug}`})),...catalogAssortment.map(p=>({name:p.name[l],path:`assortimento/${p.id}`}))];
-const catalogSchema={'@context':'https://schema.org','@type':'ItemList',name:text(lang,'Articoli e famiglie del negozio','Shop items and families'),itemListElement:catalogEntries.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.name,...(import.meta.env.PUBLIC_SITE_URL?{url:new URL(pathFor(p.path,lang),import.meta.env.PUBLIC_SITE_URL).href}:{})}))};
+const origin=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
+const catalogSchema={'@context':'https://schema.org','@type':'ItemList','@id':new URL(`${pathFor('catalogo',lang)}#listings`,origin).href,name:text(lang,'Articoli e famiglie del negozio','Shop items and families'),url:new URL(pathFor('catalogo',lang),origin).href,itemListElement:catalogEntries.map((p,i)=>({'@type':'ListItem',position:i+1,name:p.name,url:new URL(pathFor(p.path,lang),origin).href}))};
 const availability=(value:string)=>text(lang,{available:'Disponibile',unavailable:'Non disponibile','on-request':'Chiedi ad Angela'}[value]||'Da verificare',{available:'Available',unavailable:'Unavailable','on-request':'Ask Angela'}[value]||'Check availability');
 const categoryLabel=(id:string)=>{const c=categories.find(c=>c.id===id);return c?(lang==='it'?c.it:c.en):text(lang,'Articoli del negozio','Shop items')};
 const categoryAccents:Record<string,string>={cartoleria:'#164fc1',souvenir:'#8b4636',feste:'#a14436',telefono:'#164fc1',necessita:'#164fc1',dolciumi:'#964235',regali:'#9d443a',giochi:'#1750bc',profumi:'#795d42'};
@@ -21,6 +24,7 @@ const familyArt=(p:typeof catalogAssortment[number])=>catalogPhotoFor(p.id);
 <div class="catalog-more"><button class="button quiet" type="button" data-catalog-more aria-controls="catalog-listings" hidden>{text(lang,'Mostra altre schede','Show more listings')}</button></div>
 <div class="catalog-empty" data-catalog-empty hidden><div><h2>{text(lang,'Nessuna scheda trovata.','No records found.')}</h2><p>{text(lang,'Prova il nome dell’articolo, del marchio o una categoria diversa.','Try an item name, a brand or a different category.')}</p><a class="button primary" href={pathFor('catalogo',lang)} data-catalog-reset>{text(lang,'Mostra tutto','Show all')}</a></div></div>
 <noscript><p>{text(lang,'Tutto l’assortimento è visibile qui sotto. Attiva JavaScript per ricerca e filtri.','The full range is shown below. Enable JavaScript to search and filter.')}</p></noscript>
+<CatalogQuestions lang={lang}/>
 
 </div></Base>
 

@@ -5,6 +5,53 @@ const section=(it:string,en:string,textIt:string,textEn:string):Section=>[[it,en
 // Public category copy, applied after the existing editorial revisions.
 // The range describes the families; individual stock is checked in store.
 export const categoryIntentUpdates:Record<string,any>={
+ 'profumi-raptus':{
+  sections:[
+   section('Una fragranza che conosci.','A familiar fragrance.','Porta il nome completo o una foto leggibile del flacone Raptus. Il nome e il formato aiutano a distinguere la fragranza e la confezione che cerchi.','Bring the full name or a clear photo of the Raptus bottle. The name and size help identify the fragrance and pack you are looking for.'),
+   section('Due linee da confrontare.','Two lines to compare.','I riferimenti Raptus distinguono le linee per persona “20–100ml” e “50ml”. Non ogni fragranza ha gli stessi formati: confronta il nome completo e la quantità sulla confezione, poi verifica la variante in negozio.','Raptus identifies its personal fragrance lines as “20–100ml” and “50ml”. Sizes vary by fragrance: compare the full name and quantity on the pack, then check the specific option in store.'),
+   section('Un regalo da scegliere.','A gift to choose.','Una fragranza già conosciuta è un buon punto di partenza per un pensiero personale. Per accompagnarla, trovi biglietti di auguri e piccoli articoli regalo nelle rispettive categorie.','A familiar fragrance is a useful starting point for a personal gift. Browse the greeting-card and little-gift categories for something to accompany it.')
+  ],
+  faqs:[
+   ['Dove trovo i profumi Raptus a Bologna?','Da Angela, in Via Guerrazzi 10/F a Bologna, tra Via Santo Stefano e Strada Maggiore. Porta il nome della fragranza o una foto del flacone per verificare il formato che cerchi.','Where can I find Raptus perfumes in Bologna?','At Angela’s, Via Guerrazzi 10/F, Bologna, between Via Santo Stefano and Strada Maggiore. Bring the fragrance name or a bottle photo to check the size you need.'],
+   ['Quali linee Raptus posso confrontare?','Le linee per persona sono indicate come “20–100ml” e “50ml”. Il formato disponibile dipende dalla fragranza: il riferimento è il nome completo della singola confezione.','Which Raptus lines can I compare?','The personal fragrance lines are labelled “20–100ml” and “50ml”. Available sizes depend on the fragrance: use the full name on the individual pack.']
+  ]
+ },
+ 'souvenir-bologna':{
+  intro:['Calamite con le Due Torri, tortellini, mortadella e colori rossoblù, matite tortellino e ricette bolognesi anche in inglese. Piccoli ricordi della città da Angela, in Via Guerrazzi 10/F a Bologna.','Magnets with the Two Towers, tortellini, mortadella and red-and-blue colours, tortellino pencils and Bolognese recipes in English too. Little city keepsakes at Angela’s, Via Guerrazzi 10/F, Bologna.'],
+  faqs:[
+   ['Dove compro souvenir e calamite di Bologna in centro?','Da Angela, in Via Guerrazzi 10/F a Bologna, tra Via Santo Stefano e Strada Maggiore. Le schede comprendono calamite con monumenti e ricette, e matite con tortellino; verifica il soggetto che cerchi.','Where can I buy Bologna souvenirs and magnets in the city centre?','At Angela’s, Via Guerrazzi 10/F, Bologna, between Via Santo Stefano and Strada Maggiore. Listings include landmark and recipe magnets and tortellino pencils; check your chosen design.'],
+   ['Ci sono calamite con ricette in inglese?','La famiglia delle calamite con ricette comprende versioni in italiano e in inglese. Confronta lingua, ricetta e formato: le varianti presenti possono cambiare.','Are recipe magnets available in English?','The recipe-magnet family includes Italian and English versions. Compare the language, recipe and size; available variants can change.']
+  ]
+ },
+ 'accessori-telefono':{
+  intro:['Cavi, power bank Teknee e proteggi fili AkenA da Angela, in Via Guerrazzi 10/F a Bologna. Porta il dispositivo o una foto delle porte del telefono e dell’alimentatore per confrontare l’accessorio che ti serve.','Cables, Teknee power banks and AkenA cable protectors at Angela’s, Via Guerrazzi 10/F, Bologna. Bring your device or photos of the phone and charger ports to compare the accessory you need.'],
+  sections:[
+   section('Guardiamo il connettore.','Let’s look at the connector.','Una foto della porta del telefono e dell’alimentatore aiuta a capire quale cavo ti serve. Raccontaci se vuoi solo ricaricare o anche trasferire dati: entrambe le estremità e le caratteristiche del cavo si controllano sulla confezione.','A photo of your phone and charger ports helps identify the cable you need. Tell us whether you only want to charge or also transfer data: check both ends and the cable’s specifications on the pack.'),
+   section('Una riserva per la giornata.','Backup power for the day.','I power bank Teknee hanno una famiglia dedicata. Prima della scelta confronta porte, capacità dichiarata e cavo incluso con il dispositivo che usi. La capacità da sola non indica quante ricariche otterrai su ogni telefono.','Teknee power banks have their own family listing. Compare ports, stated capacity and the included cable with your device. Capacity alone does not tell you how many charges every phone will receive.'),
+   section('Un piccolo animaletto sul cavo.','A little animal on your cable.','L’ippopotamo viola e gli altri proteggi fili selezionati e distribuiti da AkenA aggiungono colore al caricatore. Guarda le foto e confronta il passaggio del cavo con il tuo connettore.','The violet hippo and other cable protectors selected and distributed by AkenA add colour to your charger. Browse the photos and compare the cable opening with your connector.')
+  ],
+  faqs:[
+   ['Dove compro un cavo o un power bank in Via Guerrazzi?','Da Angela, in Via Guerrazzi 10/F a Bologna, trovi le famiglie dei cavi USB e dei power bank Teknee. Porta il telefono o le foto delle porte e verifica il modello adatto alla tua richiesta.','Where can I buy a cable or power bank on Via Guerrazzi?','Angela’s at Via Guerrazzi 10/F, Bologna, carries USB cable and Teknee power-bank families. Bring your phone or port photos and check the model for your request.'],
+   ['Che cosa controllo prima di scegliere un cavo?','Confronta entrambe le estremità, la porta dell’alimentatore e le caratteristiche indicate sulla confezione. Specifica se ti serve soltanto la ricarica o anche il trasferimento di dati.','What should I check before choosing a cable?','Compare both ends, the charger port and the specifications on the pack. Say whether you only need charging or also data transfer.'],
+   ['Che cosa sono i proteggi fili AkenA?','Piccoli animaletti da infilare sul cavo vicino al connettore, selezionati e distribuiti da AkenA. La scheda del prodotto mostra l’ippopotamo viola e altre forme; il passaggio del cavo deve adattarsi al tuo connettore.','What are AkenA cable protectors?','Little animals that slide onto the cable near its connector, selected and distributed by AkenA. The product listing shows the violet hippo and other shapes; the cable opening needs to fit your connector.']
+  ]
+ },
+ 'feste-e-compleanni':{
+  intro:['Biglietti, candeline numeriche, palloncini, buste e fiocchi da Angela, in Via Guerrazzi 10/F a Bologna. Piccoli dettagli per completare un compleanno o un pensiero da regalare.','Cards, number candles, balloons, gift bags and bows at Angela’s, Via Guerrazzi 10/F, Bologna. Little details to complete a birthday or a thoughtful gift.'],
+  faqs:[
+   ['Dove compro biglietti e candeline di compleanno in Via Guerrazzi?','Da Angela, in Via Guerrazzi 10/F a Bologna. Le famiglie comprendono biglietti illustrati, candeline numeriche, palloncini e articoli per accompagnare il regalo; verifica la cifra o il soggetto che cerchi.','Where can I buy birthday cards and candles on Via Guerrazzi?','At Angela’s, Via Guerrazzi 10/F, Bologna. The families include illustrated cards, number candles, balloons and gift-packaging items; check your chosen number or design.'],
+   ['Come scelgo una busta per il regalo?','Porta le misure dell’oggetto o una foto e confrontale con il formato della busta o shopper. Buste, fiocchi e biglietti sono articoli dell’assortimento; non descrivono un servizio di confezionamento.','How do I choose a bag for a gift?','Bring the object’s measurements or a photo and compare them with the bag’s size. Bags, bows and cards are items in the range; they do not establish a gift-wrapping service.'],
+   ['Gonfiate i palloncini?','Il sito presenta i palloncini come articoli dell’assortimento. Per il gonfiaggio, chiedi al negozio prima di una visita dedicata.','Do you inflate balloons?','The website presents balloons as items in the range. Ask the shop about inflation before making a special trip.']
+  ]
+ },
+ dolciumi:{
+  intro:['Ricola, liquirizia Gatos, Chupa Chups, Haribo, Dietorelle, chewing gum e piccoli dolci confezionati da Angela, in Via Guerrazzi 10/F a Bologna. Confronta gusti e formati nelle schede e sulle confezioni.','Ricola, Gatos liquorice, Chupa Chups, Haribo, Dietorelle, chewing gum and little packaged treats at Angela’s, Via Guerrazzi 10/F, Bologna. Compare flavours and sizes in the listings and on the packs.'],
+  faqs:[
+   ['Dove trovo caramelle Ricola e liquirizia Gatos a Bologna?','Da Angela, in Via Guerrazzi 10/F a Bologna. Le famiglie comprendono scatole Ricola e bastoncini di liquirizia Gatos; per gusto e formato precisi verifica le confezioni presenti.','Where can I find Ricola sweets and Gatos liquorice in Bologna?','At Angela’s, Via Guerrazzi 10/F, Bologna. The families include Ricola boxes and Gatos liquorice sticks; check the packs available for a specific flavour or size.'],
+   ['Ci sono anche lecca-lecca e cioccolatini?','Le schede comprendono lecca-lecca Chupa Chups, Pocket Coffee, Ferrero Rocher e altre famiglie di piccoli dolci. Confronta il formato del singolo articolo e verifica la variante che cerchi.','Are lollipops and chocolates available too?','Listings include Chupa Chups lollipops, Pocket Coffee, Ferrero Rocher and other little-treat families. Compare the individual item’s size and check your chosen variant.'],
+   ['Dove controllo ingredienti e allergeni?','Sull’etichetta della singola confezione. Il nome del marchio o della famiglia non stabilisce gli ingredienti, gli allergeni o le caratteristiche di tutte le varianti.','Where should I check ingredients and allergens?','On the individual pack’s label. A brand or family name does not establish the ingredients, allergens or features of every variant.']
+  ]
+ },
  'il-negozio':{
   faqs:[
    ['Che cosa trovo da Angela oltre alla tabaccheria?','Giochi e giocattoli, idee regalo, profumi Raptus, cartoleria, souvenir di Bologna, articoli per compleanni, dolciumi, accessori per telefono, piccole necessità e Sale di Cervia. Le categorie e le schede aiutano a preparare la visita.','What else can I find at Angela’s?','Games and toys, gift ideas, Raptus perfumes, stationery, Bologna souvenirs, birthday supplies, sweets, phone accessories, everyday essentials and Cervia salt. Browse the categories and listings to plan your visit.'],
@@ -59,6 +106,11 @@ export const categoryIntentUpdates:Record<string,any>={
   faqs:[['Un marchio in elenco significa che ogni prodotto è disponibile?','No. Il nome identifica famiglie o articoli del negozio. Per un modello preciso porta nome, codice o foto e verifica l’assortimento attuale.','Does a listed brand mean every product is available?','No. The name identifies families or items in the shop. Bring a name, code or photo for a specific model and check the current range.']]
  },
  cartoleria:{
+  faqs:[
+   ['Dove compro quaderni e penne in Via Guerrazzi?','Da Angela, in Via Guerrazzi 10/F a Bologna: trovi quaderni, penne, evidenziatori e piccoli articoli per la scrivania.','Where can I buy notebooks and pens on Via Guerrazzi?','At Angela’s, Via Guerrazzi 10/F, Bologna: notebooks, pens, highlighters and little desk essentials.'],
+   ['Come chiedo un quaderno con la rigatura giusta?','Porta una foto della pagina o del quaderno che usi. Formato, rigatura e rilegatura aiutano a confrontare la confezione che cerchi.','How do I ask for the right notebook ruling?','Bring a photo of a page or the notebook you use. Size, ruling and binding help identify the pack you need.'],
+   ['Ci sono penne da scegliere come piccolo regalo?','Le famiglie comprendono penne con perle e penne profumate, oltre alle penne a sfera. Confronta tipo di scrittura, confezione e dettagli della variante.','Are there pens suitable for a little gift?','The families include pearl pens and scented pens, as well as ballpoint pens. Compare the writing type, packaging and details of the variant.']
+  ],
   sections:[
    section('Per scuola, studio e scrivania.','For school, studying and your desk.','Quaderni e blocchi Notami, penne BIC, evidenziatori STABILO, colle Pritt e Kores, cartelline ed etichette: le schede distinguono le famiglie. Per un quaderno porta una foto della pagina e indica formato, rigatura e rilegatura.','Notami notebooks and pads, BIC pens, STABILO highlighters, Pritt and Kores glue, folders and labels: listings distinguish the families. For a notebook, bring a page photo and specify size, ruling and binding.'),
    section('Una penna può diventare un pensiero.','A pen can become a little gift.','Le penne con perle e quelle profumate hanno schede dedicate. Confronta il tipo di scrittura e i dettagli della variante; le matite con tortellino si trovano anche nel percorso souvenir di Bologna.','Pearl pens and scented pens have their own listings. Compare the writing type and details of the variant; tortellino pencils also appear in the Bologna souvenir section.'),
@@ -66,6 +118,7 @@ export const categoryIntentUpdates:Record<string,any>={
   ]
  },
  'piccole-necessita':{
+  seoTitle:['Pile, lampadine e piccole necessità a Bologna, Via Guerrazzi','Batteries, bulbs and everyday essentials in Via Guerrazzi, Bologna'],
   links:['preparare-un-ricambio'],
   sections:[
    section('Pile, lampadine e piccoli accessori elettrici.','Batteries, bulbs and little electrical accessories.','Per le pile Duracell porta la sigla leggibile della batteria da sostituire. Per lampadine FSL e STD o prese multiple confronta attacco, alimentazione e caratteristiche del modello: le schede aiutano a preparare queste informazioni.','For Duracell batteries, bring the legible code of the one you need to replace. For FSL and STD bulbs or power strips, compare fitting, supply and model specifications: the listings help you prepare these details.'),
@@ -102,6 +155,12 @@ export const categoryIntentUpdates:Record<string,any>={
   ]
  }
 };
+
+export const catalogQuestions:[string,string,string,string][]=[
+ ['Che differenza c’è tra una famiglia e un prodotto del catalogo?','Una famiglia riunisce articoli da confrontare, come quaderni, cavi o calamite. Una scheda prodotto descrive invece un articolo preciso, con i dettagli pubblicati dal negozio. La presenza di una famiglia non garantisce tutte le varianti.','What is the difference between a catalogue family and a product?','A family groups items to compare, such as notebooks, cables or magnets. A product listing describes one specific item using the details published by the shop. Listing a family does not guarantee every variant.'],
+ ['Posso acquistare dal catalogo online?','Il catalogo ti aiuta a scegliere e a preparare la visita. Gli acquisti si effettuano da Angela, in Via Guerrazzi 10/F a Bologna. Per un articolo preciso verifica la disponibilità prima di una visita dedicata.','Can I buy from the online catalogue?','The catalogue helps you choose and plan your visit. Purchases are made at Angela’s, Via Guerrazzi 10/F, Bologna. Check availability for a specific item before making a special trip.'],
+ ['Come cerco un articolo o un marchio?','Scegli il filtro della categoria oppure scrivi il nome nel campo di ricerca. Le pagine delle categorie spiegano le differenze tra le famiglie; l’indice marchi raccoglie le schede associate a ciascun nome.','How do I find an item or brand?','Choose a category filter or enter a name in the search field. Category pages explain the differences between families; the brand index collects the listings associated with each name.']
+];
 
 export const categoryGuideUpdates:Record<string,any>={
  'preparare-un-ricambio':{

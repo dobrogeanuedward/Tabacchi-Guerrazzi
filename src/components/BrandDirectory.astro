@@ -1,8 +1,12 @@
 ---
 import {catalogueBrands} from '../data/brand-catalogue';import {catalogGroups} from '../data/catalog-assortment';import {pathFor,text,type Lang} from '../data/shop';
+import {getSiteOrigin} from '../lib/site-origin.mjs';
 const {lang='it'}=Astro.props as {lang:Lang};
 const groups=catalogGroups.map(group=>({...group,brands:catalogueBrands.filter(brand=>brand.items.some(item=>item.category===group.id))})).filter(group=>group.brands.length);
+const origin=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
+const brandList={'@context':'https://schema.org','@type':'ItemList',name:text(lang,'I marchi del catalogo Guerrazzi','Brands in the Guerrazzi catalogue'),itemListElement:catalogueBrands.map((brand,index)=>({'@type':'ListItem',position:index+1,name:brand.name,url:new URL(pathFor(`marchi/${brand.slug}`,lang),origin).href}))};
 ---
+<script type="application/ld+json" set:html={JSON.stringify(brandList).replace(/</g,'\\u003c')}/>
 <section id="brand-directory" class="brand-directory" aria-labelledby="brand-directory-title">
 <header><p class="section-label">{text(lang,'I brand della bottega','The shop’s brands')}</p><h2 id="brand-directory-title">{text(lang,'Un nome che riconosci.','A name you recognise.')}</h2><p>{text(lang,'Scegli una categoria oppure cerca il marchio. Ogni nome apre le sue schede, con gli articoli e i dettagli da guardare in negozio.','Choose a category or search for a brand. Each name opens its listings, with items and details to look at in store.')}</p></header>
 <label class="brand-search"><span>{text(lang,'Cerca un brand','Search brands')}</span><input type="search" data-brand-search placeholder="LEGO, Ricola, Bburago…"/></label><p class="brand-total">{catalogueBrands.length} {text(lang,'nomi nel catalogo','names in the catalogue')}</p>

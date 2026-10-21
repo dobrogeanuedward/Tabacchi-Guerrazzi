@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import {getSiteOrigin} from '../lib/site-origin.mjs';
 import CommonsPhoto from './CommonsPhoto.astro';
 import OfficialSources from './OfficialSources.astro';
 import type {CigarBrandStory as Story} from '../data/cigar-brand-stories';
@@ -9,10 +10,10 @@ import {pathFor,text,shop,type Lang} from '../data/shop';
 interface Props {story:Story;lang?:Lang;}
 const {story,lang='it'}=Astro.props;const l=lang==='it'?0:1;
 const slug=`sigari/storie/${story.slug}`;const photo=commonsPhotographs[story.photo];
-const configured=import.meta.env.PUBLIC_SITE_URL;
-const url=configured?new URL(pathFor(slug,lang),configured).href:undefined;
-const imageObject={'@type':'ImageObject',...(configured?{contentUrl:new URL(photo.path,configured).href}:{}),caption:photo.caption[l],creator:{'@type':'Person',name:photo.author},creditText:photo.author,license:photo.licenseUrl,acquireLicensePage:photo.sourcePage};
-const schema={'@context':'https://schema.org','@type':'Article',headline:story.title[l],description:story.summary[l],inLanguage:lang,datePublished:'2026-10-14',dateModified:'2026-10-19',articleSection:text(lang,'Storia industriale e fonti','Industrial history and sources'),about:story.names.map(name=>({'@type':'Thing',name})),citation:story.sources.map(source=>source.url),author:{'@type':'Organization',name:shop.name},publisher:{'@type':'Organization',name:shop.name},image:imageObject,...(url?{url,mainEntityOfPage:url}:{})};
+const configured=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
+const url=new URL(pathFor(slug,lang),configured).href;
+const imageObject={'@type':'ImageObject',contentUrl:new URL(photo.path,configured).href,caption:photo.caption[l],creator:{'@type':'Person',name:photo.author},creditText:photo.author,license:photo.licenseUrl,acquireLicensePage:photo.sourcePage};
+const schema={'@context':'https://schema.org','@type':'Article','@id':`${url}#article`,headline:story.title[l],description:story.summary[l],inLanguage:lang,datePublished:'2026-10-14',dateModified:'2026-10-19',articleSection:text(lang,'Storia industriale e fonti','Industrial history and sources'),about:story.names.map(name=>({'@type':'Thing',name})),citation:story.sources.map(source=>source.url),author:{'@type':'Organization','@id':new URL('/#store',configured).href,name:shop.name},publisher:{'@id':new URL('/#store',configured).href},image:imageObject,url,mainEntityOfPage:{'@id':`${url}#webpage`}};
 ---
 <Base title={story.title[l]} description={story.summary[l]} slug={slug} lang={lang} theme="cedro" image={photo.path} schema={schema}>
  <div class="breadcrumb wrap"><a href={pathFor('',lang)}>Home</a><span>/</span><a href={pathFor('sigari',lang)}>{text(lang,'Storie e parole del sigaro','Cigar stories and words')}</a><span>/</span><span>{story.names.join(' · ')}</span></div>

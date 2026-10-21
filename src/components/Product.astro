@@ -5,6 +5,7 @@ import {isGeneratedImage} from '../data/generated-images.mjs';
 import NeighborhoodLinks from './NeighborhoodLinks.astro';
 import Base from '../layouts/Base.astro';
 import {getProductBySlug} from '../lib/catalog.mjs';
+import {getSiteOrigin} from '../lib/site-origin.mjs';
 import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';
 import {familyPresentationFor} from '../data/family-presentation';
 import {pathFor,text,type Lang} from '../data/shop';
@@ -24,8 +25,11 @@ const relatedFamilies=catalogAssortment.filter(item=>item.category===(p.category
 const availabilityIt:Record<string,string>={available:'Disponibile in negozio',unavailable:'Attualmente non disponibile','on-request':'Chiedi ad Angela'};
 const availabilityEn:Record<string,string>={available:'Available in store',unavailable:'Currently unavailable','on-request':'Ask Angela'};
 const updated=Number.isFinite(p.updated)?new Date(p.updated):null;
+const origin=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
+const url=new URL(pathFor(`catalogo/${slug}`,lang),origin).href;
+const schema={'@context':'https://schema.org','@type':'Product','@id':`${url}#product`,url,mainEntityOfPage:{'@id':`${url}#webpage`},name,description,image:images.map(src=>new URL(src,origin).href),category:categoryLabel};
 ---
-<Base title={name} description={description.slice(0,160)} lang={lang} slug={`catalogo/${slug}`} theme={presentation.theme} image={p.image||'/images/hero/portico.webp'} schema={{'@context':'https://schema.org','@type':'Product',name,description,image:images,category:categoryLabel}}>
+<Base title={name} description={description.slice(0,160)} lang={lang} slug={`catalogo/${slug}`} theme={presentation.theme} image={p.image||'/images/hero/portico.webp'} schema={schema}>
   <div class="product-document" data-treatment={presentation.treatment} style={`--product-material: url('/images/materials/${presentation.material}-768.webp')`}>
     <div class="wrap product-shell">
       <nav class="breadcrumb" aria-label={text(lang,'Percorso di navigazione','Breadcrumb')}><a href={pathFor('',lang)}>Home</a><span aria-hidden="true">/</span><a href={pathFor('catalogo',lang)}>{text(lang,'Catalogo','Catalogue')}</a><span aria-hidden="true">/</span><a href={`${pathFor('catalogo',lang)}?categoria=${p.category}`}>{categoryLabel}</a></nav>

@@ -1,0 +1,42 @@
+{
+  "confirmedOn": "2026-10-20",
+  "source": "Conferma diretta del titolare nella conversazione di lavoro: RICARICHE TELEFONICHE, BOLLETTINI, PAGOPA, VALORI BOLLATI tutti attivi.",
+  "scope": "Disponibilità delle quattro categorie di servizio al banco; non estesa automaticamente a ogni operatore, documento, modalità o taglio.",
+  "routes": [
+    "/servizi/ricariche-telefoniche/",
+    "/servizi/bollettini/",
+    "/servizi/pagopa/",
+    "/servizi/valori-bollati/"
+  ],
+  "languages": ["it", "en"],
+  "implemented": [
+    "Pagine locali con nome del servizio, indirizzo, telefono, indicazioni e orari del banco.",
+    "Preparazione della visita e tre FAQ specifiche per ogni servizio e lingua.",
+    "Dati strutturati Service, luogo Store coerente e FAQ corrispondenti al testo visibile.",
+    "Collegamento dalla directory servizi; guide pratiche mantenute come approfondimenti distinti.",
+    "Logo pagoPA già presente nel progetto; nessun logo di operatore o prestatore dedotto."
+  ],
+  "notEstablished": [
+    "Elenco degli operatori telefonici e dei tagli di ricarica supportati.",
+    "Tutte le tipologie di bollettino o tutti gli avvisi di ogni ente.",
+    "Prestatore di pagamento utilizzato per bollettini e pagoPA.",
+    "Commissioni, limiti e modalità di pagamento di ogni operazione.",
+    "Ogni tipo di valore bollato, importo o quantità disponibile.",
+    "Francobolli, spedizioni, bonifici, F24, SPID, attivazione SIM o altri servizi non confermati."
+  ],
+  "primaryContentSources": [
+    {
+      "url": "https://assistenza.pagopa.gov.it/hc/it/articles/31958790454417-Pagare-con-pagoPA",
+      "supports": "Avviso o Codice Avviso e codice fiscale dell'ente creditore come riferimenti per il pagamento; non prova il prestatore adottato dal negozio."
+    },
+    {
+      "url": "https://assistenza.pagopa.gov.it/hc/it/articles/34578368277777-Inquadrare-il-codice-QR-di-un-avviso-pagoPA",
+      "supports": "Riconoscimento dell'avviso e del codice QR; rivolgersi all'ente creditore per un avviso errato."
+    },
+    {
+      "url": "https://www1.agenziaentrate.gov.it/servizi/valoribollati/index.htm",
+      "supports": "Esistenza del controllo ufficiale dei contrassegni telematici; nessuna indicazione di importo dovuto per una pratica specifica."
+    }
+  ],
+  "supersedes": "Lo stato requiresBusinessConfirmation delle quattro categorie nel precedente audit del 20 ottobre, soltanto per la presenza del servizio. Le condizioni specifiche restano da verificare al banco."
+}

@@ -1,5 +1,6 @@
 ---
 import NeighborhoodLinks from '../../components/NeighborhoodLinks.astro';
+import {getSiteOrigin} from '../../lib/site-origin.mjs';
 import ArticleCollection from '../../components/ArticleCollection.astro';
 import Base from '../../layouts/Base.astro';import {articles,clusters,articleCategoryLinks,type Article} from '../../data/articles';import {guides,pages} from '../../data/pages';
 import {materialArticles} from '../../data/materials-education';import {tobaccoArticles} from '../../data/tobacco-information';
@@ -8,10 +9,11 @@ import OfficialSources from '../../components/OfficialSources.astro';import {mai
 import EditorialArt from '../../components/EditorialArt.astro';import ReadingIndex from '../../components/ReadingIndex.astro';
 export const prerender=true;
 export function getStaticPaths(){return articles.map(a=>({params:{slug:a.slug},props:{a}}))}
-const {a}=Astro.props as {a:Article};const c=clusters.find(c=>c.id===a.cluster)!;const domain=import.meta.env.PUBLIC_SITE_URL;
+const {a}=Astro.props as {a:Article};const c=clusters.find(c=>c.id===a.cluster)!;const domain=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
 const research=materialArticles.some(b=>b.slug===a.slug);const information=research||tobaccoArticles.some(b=>b.slug===a.slug);
 const visual=visualForArticle(a.slug,a.cluster);
-const schema={'@context':'https://schema.org','@type':'Article',headline:a.title,description:a.summary,inLanguage:'it',citation:(a.sources||[]).map(s=>s.url),author:{'@type':'Organization',name:'Tabaccheria Guerrazzi di Angela'},...(domain?{url:new URL('/approfondimenti/'+a.slug+'/',domain).href}:{})};
+const url=new URL('/approfondimenti/'+a.slug+'/',domain).href;
+const schema={'@context':'https://schema.org','@type':'Article','@id':`${url}#article`,headline:a.title,description:a.summary,inLanguage:'it',citation:(a.sources||[]).map(s=>new URL(s.url,domain).href),author:{'@type':'Organization','@id':new URL('/#store',domain).href,name:'Tabaccheria Guerrazzi di Angela'},publisher:{'@id':new URL('/#store',domain).href},url,mainEntityOfPage:{'@id':`${url}#webpage`}};
 const readingMinutes=Math.max(1,Math.ceil([a.summary,...a.sections.flat()].join(' ').trim().split(/\s+/).length/190));
 const categoryTitle=(slug:string)=>mainPages.find(p=>p.slug===slug)?.it||pages[slug].title[0];
 const categoryLink=(slug:string)=>({href:'/'+slug+'/',kind:information?'Area informativa':'Categoria',title:categoryTitle(slug),action:information?'Apri l’area':'Esplora la categoria'});

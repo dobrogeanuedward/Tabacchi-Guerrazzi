@@ -1,5 +1,6 @@
 ---
 import DisclosedImage from './DisclosedImage.astro';
+import {getSiteOrigin} from '../lib/site-origin.mjs';
 import Base from '../layouts/Base.astro';
 import {catalogueBrands} from '../data/brand-catalogue';
 import {catalogPhotoFor} from '../data/catalog-photography';
@@ -9,7 +10,9 @@ import {familyDetails} from '../data/family-details';
 const {slug,lang='it'}=Astro.props as {slug:string;lang:Lang};const brand=catalogueBrands.find(b=>b.slug===slug)!;const l=lang==='it'?0:1;
 const image=catalogPhotoFor(brand.items[0].id);
 const title=text(lang,`${brand.name} a Bologna, da Angela`,`${brand.name} in Bologna, at Angela’s`);
-const schema={'@context':'https://schema.org','@type':'CollectionPage',name:title,description:brand.note[l],about:{'@type':'Brand',name:brand.name},mainEntity:{'@type':'ItemList',itemListElement:brand.items.map((item,i)=>({'@type':'ListItem',position:i+1,name:item.name[l],...(import.meta.env.PUBLIC_SITE_URL?{url:new URL(pathFor(`assortimento/${item.id}`,lang),import.meta.env.PUBLIC_SITE_URL).href}:{})}))}};
+const origin=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
+const url=new URL(pathFor(`marchi/${slug}`,lang),origin).href;
+const schema={'@context':'https://schema.org','@type':'CollectionPage','@id':`${url}#collection`,url,name:title,description:brand.note[l],inLanguage:lang,isPartOf:{'@id':new URL('/#website',origin).href},about:{'@type':'Brand',name:brand.name},mainEntity:{'@type':'ItemList',itemListElement:brand.items.map((item,i)=>({'@type':'ListItem',position:i+1,name:item.name[l],url:new URL(pathFor(`assortimento/${item.id}`,lang),origin).href}))}};
 ---
 <Base slug={`marchi/${slug}`} lang={lang} title={title} description={`${brand.note[l]} ${shop.address}, Bologna.`} image={image.src} schema={schema}>
  <nav class="breadcrumb wrap"><a href={pathFor('marchi-e-competenze',lang)}>{text(lang,'I brand della bottega','The shop’s brands')}</a><span>/</span><span>{brand.name}</span></nav>

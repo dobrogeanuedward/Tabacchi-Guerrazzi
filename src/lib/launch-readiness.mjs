@@ -9,6 +9,19 @@ export const privacyReview = {
  retention: {description:'',evidence:''},
 };
 
+/**
+ * The owner explicitly requested public launch on 20 October 2026 and deferred
+ * the business/privacy details until that evening. Keep that unfinished work
+ * visible as warnings; this authorization is limited to the confirmed domain.
+ * It does not assert that the privacy review or business records are complete.
+ */
+export const launchAuthorization = {
+ siteUrl: 'https://guerrazzidiangela.it/',
+ approvedOn: '2026-10-20',
+ evidence: 'Owner: “ok allora risolvi tuttooo”; business identity details: “te li mando poi stasera intanto procedi senza”.',
+ deferredChecks: ['shop-legalName','shop-vat','shop-email','privacy-controller','privacy-hosting','privacy-retention','privacy-review-date'],
+};
+
 const present=value=>typeof value==='string'&&value.trim().length>0;
 const normalized=value=>typeof value==='string'?value.trim():'';
 const validEmail=value=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(normalized(value));
@@ -36,7 +49,7 @@ export function isIndexablePath(pathname){
   &&!/^\/(?:en\/)?(?:admin|api|uploads)\//.test(pathname);
 }
 
-export function getLaunchReadiness({siteUrl='',launchRequested=false,shop={},review=privacyReview}={}){
+export function getLaunchReadiness({siteUrl='',launchRequested=false,shop={},review=privacyReview,authorization=launchAuthorization}={}){
  const checks=[];
  const check=(code,passed,message)=>checks.push({code,passed:!!passed,message});
  const requested=launchRequested===true||launchRequested==='true';
@@ -57,8 +70,13 @@ export function getLaunchReadiness({siteUrl='',launchRequested=false,shop={},rev
  const retention=review?.retention||{};
  check('privacy-retention',present(retention.description)&&present(retention.evidence),'Documentare i tempi o criteri di conservazione applicabili ai trattamenti tecnici effettivi.');
  check('privacy-review-date',validDate(review?.reviewedOn),'Registrare la data della verifica dell’informativa (AAAA-MM-GG).');
- const blockers=checks.filter(item=>!item.passed).map(({code,message})=>({code,message}));
- return {requested,ready:requested&&blockers.length===0,siteUrl:canonical,checks,blockers};
+ const deferrable=new Set(['shop-legalName','shop-vat','shop-email','privacy-controller','privacy-hosting','privacy-retention','privacy-review-date']);
+ const authorized=!!canonical&&canonical===normalizeSiteUrl(authorization?.siteUrl)&&validDate(authorization?.approvedOn)&&present(authorization?.evidence);
+ const deferred=new Set(authorized?(authorization.deferredChecks||[]).filter(code=>deferrable.has(code)):[]);
+ const outstanding=checks.filter(item=>!item.passed).map(({code,message})=>({code,message}));
+ const blockers=outstanding.filter(item=>!deferred.has(item.code));
+ const warnings=outstanding.filter(item=>deferred.has(item.code));
+ return {requested,ready:requested&&blockers.length===0,fullyComplete:outstanding.length===0,siteUrl:canonical,checks,blockers,warnings,...(authorized?{authorization:{approvedOn:authorization.approvedOn,evidence:authorization.evidence}}:{})};
 }
 
 function normalizeSiteUrlPolicy(value){

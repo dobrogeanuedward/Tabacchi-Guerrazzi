@@ -1,5 +1,13 @@
 # Tabaccheria Guerrazzi di Angela
 
+## Stato corrente — 20 ottobre 2026
+
+Il dominio canonico confermato è `https://guerrazzidiangela.it`. Il proprietario ha richiesto il lancio indicizzato e ha esplicitamente rinviato ragione sociale, P. IVA ed email alla sera del 20 ottobre. `launchAuthorization` registra questo rinvio per il solo dominio confermato: i dati e la revisione privacy restano avvisi visibili del controllo di lancio, non verifiche superate. Non inventare i dati mancanti. La configurazione Production Vercel usa `PUBLIC_SITE_URL=https://guerrazzidiangela.it` e `PUBLIC_LAUNCH_READY=true`; le anteprime possono restare noindex.
+
+Search Console è stata controllata direttamente il 20 ottobre: proprietà Dominio verificata e aggiunta il 19 ottobre; prima della correzione la home era sconosciuta a Google e il test live la rilevava bloccata da robots.txt. I rapporti aggregati erano ancora in elaborazione e non risultavano sitemap inviate. Pubblicare la configurazione corretta, ritestare l’URL e inviare la sitemap sono passaggi distinti dalla verifica della proprietà e dai risultati futuri sui motori.
+
+Il proprietario ha inoltre confermato il 20 ottobre che ricariche telefoniche, bollettini, pagoPA e valori bollati sono attivi. Non dedurre da questa conferma operatori, commissioni, formati accettati o abilitazioni ulteriori. Il brandbook è già disponibile nella cartella Desktop del progetto; i vecchi riferimenti a un file ancora da ricevere sono storici. Le sezioni datate qui sotto descrivono le mandata precedenti e non sostituiscono questo stato corrente.
+
 Sito Astro del pacchetto Autorità, con nuove categorie predisposte per il lavoro continuativo. Identità ripresa dalla proposta: cobalto, avorio, Bodoni e Manrope. Font locali, illustrazioni UI ImageGen e immagini editoriali ottimizzate in WebP. Le nuove scene del negozio hanno composizioni generate distintamente per mobile e desktop.
 
 ## Sviluppo

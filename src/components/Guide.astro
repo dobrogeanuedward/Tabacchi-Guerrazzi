@@ -1,5 +1,6 @@
 ---
 import NeighborhoodLinks from './NeighborhoodLinks.astro';
+import {getSiteOrigin} from '../lib/site-origin.mjs';
 import Base from '../layouts/Base.astro';import {guides,pages} from '../data/pages';import {pathFor,text,type Lang,mainPages} from '../data/shop';
 import {guideCategoryLinks} from '../data/category-pathways';
 import {tobaccoGuides} from '../data/tobacco-information';import {materialGuides} from '../data/materials-education';
@@ -13,8 +14,9 @@ const informationGuide=researchGuide||Object.prototype.hasOwnProperty.call(tobac
 const theme=pages[g.parent]?.theme||'utility';const visual=visualForGuide(slug);
 const parentPage=mainPages.find(p=>p.slug===g.parent);
 const parentLabel=parentPage?(lang==='it'?parentPage.it:parentPage.en):text(lang,'Informazioni','Information');
-const domain=import.meta.env.PUBLIC_SITE_URL;
-const schema=informationGuide?{'@context':'https://schema.org','@type':'Article',headline:g.title[l],description:g.intro[l],inLanguage:lang,isAccessibleForFree:true,citation:(g.sources||[]).map((s:any)=>s.url),...(domain?{url:new URL(pathFor('schede/'+slug,lang),domain).href}:{}),author:{'@type':'Organization',name:'Tabaccheria Guerrazzi di Angela'}}:undefined;
+const domain=getSiteOrigin(import.meta.env.PUBLIC_SITE_URL);
+const url=new URL(pathFor('schede/'+slug,lang),domain).href;
+const schema=informationGuide?{'@context':'https://schema.org','@type':'Article','@id':`${url}#article`,headline:g.title[l],description:g.intro[l],inLanguage:lang,isAccessibleForFree:true,citation:(g.sources||[]).map((s:any)=>s.url),url,mainEntityOfPage:{'@id':`${url}#webpage`},author:{'@type':'Organization','@id':new URL('/#store',domain).href,name:'Tabaccheria Guerrazzi di Angela'},publisher:{'@id':new URL('/#store',domain).href}}:undefined;
 const readingMinutes=Math.max(1,Math.ceil([g.intro[l],...g.sections.flatMap((s:any)=>[s[0][l],s[1][l]])].join(' ').trim().split(/\s+/).length/190));
 const indexEntries=g.sections.map((s:any,i:number)=>({href:'#informazione-'+i,title:s[0][l]}));
 ---

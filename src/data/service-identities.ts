@@ -1,4 +1,5 @@
 import {localServiceUpdates,individualPaymentServices} from './service-local-details';
+import {confirmedCounterServices} from './confirmed-counter-services';
 type Pair=[string,string];
 export type ServiceIdentity={
  slug:string;title:Pair;intro:Pair;
@@ -33,3 +34,4 @@ export const serviceIdentities:ServiceIdentity[]=[
 ];
 for(const service of serviceIdentities)Object.assign(service,localServiceUpdates[service.slug]||{});
 serviceIdentities.push(...individualPaymentServices);
+serviceIdentities.push(...confirmedCounterServices);

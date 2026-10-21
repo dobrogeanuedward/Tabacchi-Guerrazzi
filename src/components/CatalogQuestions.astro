@@ -1,0 +1,16 @@
+---
+import {catalogQuestions} from '../data/category-intents';
+import {pathFor,text,type Lang} from '../data/shop';
+const {lang='it'}=Astro.props as {lang:Lang};
+const l=lang==='it'?0:2;
+const schema={'@context':'https://schema.org','@type':'FAQPage',inLanguage:lang,mainEntity:catalogQuestions.map(faq=>({'@type':'Question',name:faq[l],acceptedAnswer:{'@type':'Answer',text:faq[l+1]}}))};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema).replace(/</g,'\\u003c')}/>
+<section class="catalog-questions faq" aria-labelledby="catalog-questions-title">
+ <h2 id="catalog-questions-title">{text(lang,'Prima di passare in negozio.','Before visiting the shop.')}</h2>
+ {catalogQuestions.map(faq=><details><summary>{faq[l]}</summary><p>{faq[l+1]}</p></details>)}
+ <nav aria-label={text(lang,'Continua a esplorare','Keep exploring')}><a class="text-link" href={pathFor('marchi-e-competenze',lang)}>{text(lang,'Esplora i marchi','Explore brands')}</a><a class="text-link" href={pathFor('contatti',lang)}>{text(lang,'Orari e contatti','Opening hours and contact')}</a></nav>
+</section>
+<style>
+.catalog-questions{margin:50px 0 30px;padding-top:30px;border-top:1px solid var(--line);max-width:880px}.catalog-questions h2{font:400 clamp(2rem,3vw,2.7rem)/1.2 var(--display);color:var(--accent,var(--blue));margin-bottom:22px}.catalog-questions nav{display:flex;flex-wrap:wrap;gap:16px 28px;margin-top:26px}.catalog-questions p{font-size:.95rem;line-height:1.8}
+</style>
