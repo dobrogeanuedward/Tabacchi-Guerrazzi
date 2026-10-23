@@ -6,11 +6,11 @@ const {slug,lang='it',heading}=Astro.props as {slug:string;lang:Lang;heading:str
 const p=pages[slug];const l=lang==='it'?0:1;
 const local=['il-negozio','contatti','recensioni','storia-e-serrande'].includes(slug);
 const night=slug==='storia-e-serrande';
-const adult=['ricevitoria','accendini-e-accessori'].includes(slug);
+const adult=['ricevitoria','accendini-e-accessori','ploom'].includes(slug);
 const art=local?'portico-ink':slug==='servizi'?'stationery-ink':slug==='marchi-e-competenze'?'gift-ink':'archive-reference';
 const artPath=slug==='servizi'?'/images/studies/service-paper-study.webp':`/brand/ui/${art}.webp`;
 const artSet=slug==='servizi'?'/images/studies/service-paper-study-768.webp 768w, /images/studies/service-paper-study.webp 1536w':undefined;
-const note=local?text(lang,'Il ritmo dei portici','The rhythm of the porticoes'):text(lang,'Le cose di ogni giorno','Everyday things');
+const note=slug==='ploom'?text(lang,'Nomi, documenti e assistenza','Names, documents and support'):local?text(lang,'Il ritmo dei portici','The rhythm of the porticoes'):text(lang,'Le cose di ogni giorno','Everyday things');
 const label=local?text(lang,'Il luogo · Bologna','The place · Bologna'):adult?text(lang,'Area informativa · 18+','Information area · 18+'):slug==='servizi'?text(lang,'Al banco · informazioni pratiche','At the counter · practical information'):text(lang,'Da Angela','At Angela’s');
 ---
 <section class:list={['page-opening','wrap',local&&'page-opening--local',night&&'page-opening--night',adult&&'page-opening--information']} data-page-opening={slug}>

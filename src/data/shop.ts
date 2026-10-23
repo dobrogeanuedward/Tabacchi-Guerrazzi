@@ -17,6 +17,7 @@ export const text = (lang:Lang,it:string,en:string) => lang==='en'?en:it;
 export const mainPages = [
  {slug:'',it:'Home',en:'Home'}, {slug:'il-negozio',it:'Il negozio',en:'The shop'},
  {slug:'servizi',it:'Servizi',en:'Services'}, {slug:'sigari',it:'Sigari',en:'Cigars'},
+ {slug:'ploom',it:'Ploom: informazioni',en:'Ploom information'},
  {slug:'pipe-e-tabacchi-da-pipa',it:'Pipe e tabacchi da pipa',en:'Pipes and pipe tobacco'},
  {slug:'idee-regalo',it:'Idee regalo',en:'Gift ideas'}, {slug:'giochi-e-giocattoli',it:'Giochi e giocattoli',en:'Games and toys'},
  {slug:'marchi-e-competenze',it:'Marchi e competenze',en:'Brands and expertise'},

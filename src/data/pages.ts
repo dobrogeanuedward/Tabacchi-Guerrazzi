@@ -1,4 +1,5 @@
 import {updateOctoberPages} from './october-pages';
+import {applyShopIdentityCopy} from './shop-identity';
 import {categoryIntentUpdates,categoryGuideUpdates} from './category-intents';
 import {pageRevision,guideRevision} from './site-copy';
 import {tobaccoGuides,tobaccoSources} from './tobacco-information';
@@ -107,3 +108,4 @@ for(const [slug,copy] of Object.entries(categoryIntentUpdates))if(pages[slug])Ob
 for(const [slug,copy] of Object.entries(categoryGuideUpdates))guides[slug]={...guides[slug],...copy};
 
 pages['il-negozio'].seoTitle[1]='Angela’s shop on Via Guerrazzi 10/F, Bologna';
+applyShopIdentityCopy(pages);

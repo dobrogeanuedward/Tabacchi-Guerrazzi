@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-23",
+  "purpose": "Clarify the current shop identity before external directory corrections",
+  "publicName": "Tabaccheria Guerrazzi di Angela",
+  "address": "Via Guerrazzi 10/F, 40125 Bologna",
+  "canonicalEntityId": "https://guerrazzidiangela.it/#store",
+  "ownerConfirmedFacts": [
+    "Angela runs the current shop; Marangoni Simone identifies a previous management",
+    "There is one current tobacconist at this street number",
+    "PLOOM STORE Tabaccheria Cartoleria di Sgambati Angela refers to the same premises",
+    "Ploom should be connected to the premises without replacing the shop name"
+  ],
+  "photographicEvidence": [
+    {"record": "GF03-144", "file": "IMG_5471.jpeg", "observation": "Ploom branding on the display"},
+    {"record": "GF03-189", "file": "IMG_5484.jpeg", "observation": "Ploom Aura name; not a complete device specification"}
+  ],
+  "content": {
+    "languages": ["it", "en"],
+    "identityCopy": "src/data/shop-identity.ts",
+    "updatedPages": ["/", "/il-negozio/", "/contatti/", "/storia-e-serrande/", "/servizi/"],
+    "newInformationPage": "/ploom/",
+    "historicalNamePlacement": "One explanatory paragraph in the history page, plus its English translation",
+    "ploomRole": "Listing-name clarification, neutral device identification and manufacturer customer support",
+    "storeNameAndEntityIdPreserved": true,
+    "previousManagementNotAnAlias": true,
+    "ploomNotAStoreAliasOrSecondStore": true,
+    "ploomPageHasNoProductOfferOrLocalServiceSchema": true,
+    "localRepairOrWarrantyCentreStatusNotClaimed": true,
+    "productSupportUsesOfficialManufacturerSources": true,
+    "ageConfirmationAndRelevantNotice": true
+  },
+  "officialSources": [
+    "https://www.ploom.it/it/manuale-e-avvertenze-prodotto",
+    "https://www.ploom.it/it/conformita",
+    "https://www.ploom.it/it/assistenza/contatti",
+    "https://developers.google.com/search/docs/appearance/ai-features"
+  ],
+  "verification": {
+    "astroCheck": "157 files; 0 errors, 0 warnings",
+    "staticBuild": "passed; 464 HTML files and 461 sitemap URLs",
+    "existingTests": "11 passed",
+    "categoryAndDetailSEO": "passed; 206 detail pages",
+    "serviceVerification": "passed; 20 dedicated service pages",
+    "publicNotices": "464 pages, zero errors",
+    "targetedIdentityCheck": "12 bilingual page variants; visible FAQ text matches JSON-LD; canonical identity preserved; Ploom adult page has support references and no sales schema"
+  },
+  "pending": [
+    "Owner-provided legal name, VAT and email",
+    "Google Business Profile and external directory changes are separate tasks",
+    "Re-crawling and updates in search or AI answers are not immediate or guaranteed"
+  ]
+}

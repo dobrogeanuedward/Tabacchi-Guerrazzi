@@ -1,5 +1,9 @@
 # Tabaccheria Guerrazzi di Angela
 
+## Identità attuale e collegamento Ploom — 23 ottobre 2026
+
+Home, negozio, contatti e dati strutturati esplicitano il nome attuale e la gestione di Angela al 10/F. Le FAQ collegano la dicitura delle schede “Ploom Store” allo stesso punto vendita; Marangoni Simone compare soltanto come precedente gestione nella pagina Storia. Nessuno dei due nomi sostituisce l’entità `#store` o viene aggiunto come alias del negozio. La pagina IT/EN `/ploom/`, collegata dalla navigazione e dai servizi, distingue il nome della scheda, il dispositivo Ploom AURA e l’Assistenza Clienti del produttore. È informativa, con conferma 18+, fonti ufficiali e avvertenze pertinenti; non attribuisce al negozio riparazioni o garanzie non documentate. Dati fiscali ed email restano in attesa del titolare. Evidenze e verifiche: `docs/identita/current-identity-2026-10-23.json`.
+
 ## Stato corrente — 20 ottobre 2026
 
 Il dominio canonico confermato è `https://guerrazzidiangela.it`. Il proprietario ha richiesto il lancio indicizzato e ha esplicitamente rinviato ragione sociale, P. IVA ed email alla sera del 20 ottobre. `launchAuthorization` registra questo rinvio per il solo dominio confermato: i dati e la revisione privacy restano avvisi visibili del controllo di lancio, non verifiche superate. Non inventare i dati mancanti. La configurazione Production Vercel usa `PUBLIC_SITE_URL=https://guerrazzidiangela.it` e `PUBLIC_LAUNCH_READY=true`; le anteprime possono restare noindex.

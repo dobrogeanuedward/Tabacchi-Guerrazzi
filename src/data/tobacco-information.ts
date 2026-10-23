@@ -6,7 +6,7 @@ export const tobaccoSources=[
  {label:'Legge 165/1962 — divieto di propaganda pubblicitaria (MEF)',url:'https://def.finanze.it/DocTribFrontend/executePrintArticolo.do?articolo=Articolo+testo&codiceOrdinamento=500000000000000&id=%7BBC90B8DD-4157-45FA-A42D-4EFC13554228%7D'},
  {label:'ADM — divieti di pubblicità e vendita a distanza; siti web inibiti',url:'https://www.adm.gov.it/portale/siti-inibiti-tabacchi'}
 ];
-export type LegalNoticeKind='tobacco'|'pipe'|'accessories'|'gambling';
+export type LegalNoticeKind='tobacco'|'heated-tobacco'|'pipe'|'accessories'|'gambling';
 type LocalizedLegalText=readonly [string,string];
 type LegalNoticeCopy={title:LocalizedLegalText;paragraphs:LocalizedLegalText[];source:{label:LocalizedLegalText;url:string}};
 export const dependenceSupport={
@@ -23,6 +23,10 @@ const tobaccoSaleNotice:LocalizedLegalText=[
  'Selling tobacco products to anyone under 18 is prohibited. The website’s 18+ confirmation does not replace the required in-store checks. This website does not accept tobacco orders or sell or ship tobacco online.',
 ];
 export const legalNotices:Record<LegalNoticeKind,LegalNoticeCopy>={
+ 'heated-tobacco':{title:['Tabacco riscaldato e salute','Heated tobacco and health'],paragraphs:[
+  ['I dispositivi Ploom sono destinati agli adulti e all’uso con stick contenenti nicotina, sostanza che crea dipendenza. Il prodotto non è privo di rischi per la salute e non è un rimedio per smettere di fumare.','Ploom devices are intended for adults and for use with sticks containing nicotine, an addictive substance. The product is not risk-free and is not a smoking-cessation aid.'],
+  tobaccoSaleNotice,
+ ],source:{label:['Ploom — manuali e avvertenze del produttore','Ploom — manufacturer’s manuals and warnings'],url:'https://www.ploom.it/it/manuale-e-avvertenze-prodotto'}},
  tobacco:{title:['Tabacco e salute','Tobacco and health'],paragraphs:[
   ['Fumare sigari o pipa comporta rischi per la salute anche senza aspirare il fumo e può causare dipendenza.','Smoking cigars or a pipe carries health risks even without inhaling and can cause dependence.'],
   tobaccoSaleNotice,
@@ -68,4 +72,4 @@ export const tobaccoArticles=[
 ];
 Object.assign(tobaccoGuides,materialGuides);
 tobaccoArticles.push(...materialArticles,...cigarHistoryArticles);
-export const adultSectionSlugs=['sigari','pipe-e-tabacchi-da-pipa','accendini-e-accessori','ricevitoria',...Object.keys(tobaccoGuides).map(s=>`schede/${s}`),...tobaccoArticles.map(a=>`approfondimenti/${a.slug}`)];
+export const adultSectionSlugs=['sigari','pipe-e-tabacchi-da-pipa','accendini-e-accessori','ricevitoria','ploom',...Object.keys(tobaccoGuides).map(s=>`schede/${s}`),...tobaccoArticles.map(a=>`approfondimenti/${a.slug}`)];
