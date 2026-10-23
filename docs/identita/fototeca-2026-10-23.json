@@ -3,13 +3,18 @@
   "scope": "Fototeca editoriale ricostruita da fotografie autentiche recuperate. Non inventario né catalogo di SKU esatti.",
   "rules": [
     "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
-    "Volti di persone, scarti e F27-calamite-ricette esclusi. Le immagini stampate su giocattoli o confezioni non sono persone presenti.",
+    "Volti di persone, scarti, 09-bologna e F27-calamite-ricette esclusi. Le immagini stampate su giocattoli o confezioni non sono persone presenti.",
     "Originali del logo usati soltanto nel layout del sito; nessun marchio del negozio rigenerato dentro la fotografia."
   ],
   "excluded": [
     {
       "id": "07-gesto-carta",
       "reason": "Scartata dal cliente; sostituita con dettaglio privo di mani."
+    },
+    {
+      "id": "09-bologna",
+      "path": "scartati/09-bologna-testo-inaffidabile.png",
+      "reason": "Scritte delle calamite inesatte: scartata e sostituita da F37-calamite-bologna."
     },
     {
       "id": "F16-costruzioni-meccanica",
@@ -1780,12 +1785,12 @@
       }
     },
     {
-      "id": "09-bologna",
-      "path": "shooting/09-bologna.png",
-      "title": "Un ricordo di Bologna",
+      "id": "F37-calamite-bologna",
+      "path": "fototeca/shooting/F37-calamite-bologna.png",
+      "title": "Bologna, in piccolo",
       "category": "souvenir",
       "sources": [
-        "sorgenti/IMG_5241.jpeg"
+        "sorgenti/lotto-02/IMG_5463.jpeg"
       ],
       "scene_ids": [
         "E09"
@@ -1799,40 +1804,40 @@
       ],
       "limits": [
         "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
-        "Diverse scritte delle calamite sono deformate. Uso di atmosfera e categoria, mai per identificare o vendere il singolo modello."
+        "Ricostruzione editoriale di categoria dai soggetti fotografati: forme, confezioni e finiture non sono prova di uno specifico SKU o della disponibilità attuale. Nessun testo di ricetta utilizzato."
       ],
       "verdict": "utilizzabile_editoriale_con_limiti",
       "facesVisible": false,
       "alt": {
-        "it": "Pannello con calamite colorate ispirate alle torri, ai portici e ai simboli di Bologna",
-        "en": "Panel of colourful magnets inspired by Bologna's towers, porticoes and symbols"
+        "it": "Calamite sagomate con un piccolo veicolo rosso con scritta Bologna, uno scooter giallo e un tortellino sul pannello bianco",
+        "en": "Shaped souvenir magnets showing a little red vehicle marked Bologna, a yellow scooter and a tortellino on the white panel"
       },
-      "width": 1122,
-      "height": 1402,
+      "width": 1536,
+      "height": 1024,
       "website": {
         "included": true,
-        "src": "/images/fototeca/09-bologna.webp",
-        "srcset": "/images/fototeca/09-bologna-360.webp 360w, /images/fototeca/09-bologna-720.webp 720w, /images/fototeca/09-bologna.webp 1122w",
-        "width": 1122,
-        "height": 1402,
+        "src": "/images/fototeca/f37-calamite-bologna.webp",
+        "srcset": "/images/fototeca/f37-calamite-bologna-360.webp 360w, /images/fototeca/f37-calamite-bologna-720.webp 720w, /images/fototeca/f37-calamite-bologna.webp 1440w",
+        "width": 1440,
+        "height": 960,
         "categorySlugs": [
           "souvenir-bologna"
         ],
         "variants": [
           {
-            "src": "/images/fototeca/09-bologna-360.webp",
+            "src": "/images/fototeca/f37-calamite-bologna-360.webp",
             "width": 360,
-            "bytes": 64534
+            "bytes": 20088
           },
           {
-            "src": "/images/fototeca/09-bologna-720.webp",
+            "src": "/images/fototeca/f37-calamite-bologna-720.webp",
             "width": 720,
-            "bytes": 212494
+            "bytes": 75254
           },
           {
-            "src": "/images/fototeca/09-bologna.webp",
-            "width": 1122,
-            "bytes": 415440
+            "src": "/images/fototeca/f37-calamite-bologna.webp",
+            "width": 1440,
+            "bytes": 210476
           }
         ]
       }

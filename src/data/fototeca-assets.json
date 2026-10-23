@@ -598,14 +598,14 @@
     "generated": true
   },
   {
-    "id": "09-bologna",
-    "src": "/images/fototeca/09-bologna.webp",
-    "srcset": "/images/fototeca/09-bologna-360.webp 360w, /images/fototeca/09-bologna-720.webp 720w, /images/fototeca/09-bologna.webp 1122w",
-    "width": 1122,
-    "height": 1402,
+    "id": "F37-calamite-bologna",
+    "src": "/images/fototeca/f37-calamite-bologna.webp",
+    "srcset": "/images/fototeca/f37-calamite-bologna-360.webp 360w, /images/fototeca/f37-calamite-bologna-720.webp 720w, /images/fototeca/f37-calamite-bologna.webp 1440w",
+    "width": 1440,
+    "height": 960,
     "alt": {
-      "it": "Pannello con calamite colorate ispirate alle torri, ai portici e ai simboli di Bologna",
-      "en": "Panel of colourful magnets inspired by Bologna's towers, porticoes and symbols"
+      "it": "Calamite sagomate con un piccolo veicolo rosso con scritta Bologna, uno scooter giallo e un tortellino sul pannello bianco",
+      "en": "Shaped souvenir magnets showing a little red vehicle marked Bologna, a yellow scooter and a tortellino on the white panel"
     },
     "familyIds": [
       "calamite"
