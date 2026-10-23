@@ -1,0 +1,11 @@
+---
+import PhotoGallery from './PhotoGallery.astro';
+import {sectionPhotosFor} from '../data/fototeca';
+import {text,type Lang} from '../data/shop';
+const {lang='it'}=Astro.props as {lang:Lang};
+const photos=sectionPhotosFor('raptus-ambienti-tessuti');
+---
+{photos.length>0&&<section class="room-fragrance" aria-labelledby="room-fragrance-title"><div><p class="section-label">{text(lang,'Raptus · Ambienti e tessuti','Raptus · Rooms and fabrics')}</p><h2 id="room-fragrance-title">{text(lang,'Un profumo per i tuoi spazi.','A fragrance for your spaces.')}</h2><p>{text(lang,'Accanto ai profumi per persona, l’espositore Raptus comprende proposte per ambienti e tessuti. Sono prodotti con una destinazione d’uso diversa: confronta in negozio nome, formato e indicazioni sulla confezione.','Alongside personal perfumes, the Raptus display includes room and fabric fragrances. These have a different intended use: compare the name, size and pack instructions in store.')}</p></div><PhotoGallery photos={photos} lang={lang} label={text(lang,'Raptus per ambienti e tessuti','Raptus room and fabric fragrances')}/></section>}
+<style>
+ .room-fragrance{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(30px,5vw,65px);align-items:center;border-block:1px solid var(--line);padding-block:38px;margin-block:45px}.room-fragrance>div{min-width:0}.room-fragrance h2{font:400 clamp(2.2rem,3.5vw,3.2rem)/1.12 var(--display);color:var(--accent);max-width:19ch;margin-block:18px 24px}.room-fragrance p:not(.section-label){font-size:.98rem;line-height:1.85;max-width:55ch}@media(max-width:720px){.room-fragrance{grid-template-columns:1fr;gap:26px;margin-block:30px;padding-block:30px}}
+</style>

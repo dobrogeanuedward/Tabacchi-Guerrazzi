@@ -16,7 +16,7 @@ for(const prefix of ['', 'en']){
  assert.equal(cards.length,familyCount);
  const photos=cards.map(card=>{
   const source=card.match(/<img[^>]+src="([^"]+)"/)[1];
-  assert.match(source,/^\/images\/(?:catalogo|collection)\//);
+  assert.match(source,/^\/images\/(?:catalogo|collection|fototeca)\//);
   assert.ok(!card.includes('/brand/ui/'));
   assert.match(card,/srcset=/);
   return source;

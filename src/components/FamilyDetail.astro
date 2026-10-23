@@ -1,5 +1,6 @@
 ---
 import DisclosedImage from './DisclosedImage.astro';
+import PhotoGallery from './PhotoGallery.astro';
 import NeighborhoodLinks from './NeighborhoodLinks.astro';
 import Base from '../layouts/Base.astro';
 import CollectionNarrative from './CollectionNarrative.astro';
@@ -8,7 +9,7 @@ import BrandSignature from './BrandSignature.astro';
 import {catalogAssortment,catalogGroups} from '../data/catalog-assortment';
 import {familyDetails} from '../data/family-details';
 import {familyPresentationFor} from '../data/family-presentation';
-import {catalogPhotoFor} from '../data/catalog-photography';
+import {catalogPhotoFor,catalogGalleryFor} from '../data/catalog-photography';
 import {shop,pathFor,text,mainPages,type Lang} from '../data/shop';
 import {pages} from '../data/pages';
 
@@ -29,8 +30,7 @@ const related=(pages[item.page]?.related||[]).filter((slug:string)=>slug!==item.
 const relatedCategories:{slug:string;label:string;intro:string}[]=related.map((slug:string)=>({slug,label:mainPages.find(p=>p.slug===slug)?.[lang]||pages[slug].title[l],intro:pages[slug].intro[l]}));
 const fragranceStudy=item.category==='profumi';
 const photograph=catalogPhotoFor(item.id);
-const familyImage=photograph.src;
-const familyImageSet=photograph.srcset;
+const photographs=catalogGalleryFor(item.id,item.name);
 const familyOgImage=photograph.src;
 const visitQuestions:Record<string,[[string,string],[string,string]]>={
  giochi:[['Cerchi una scatola o un personaggio preciso?','Looking for a specific box or character?'],['Porta nome, codice o foto della confezione e indica l’età di chi giocherà. Le famiglie orientano la ricerca; verifica la disponibilità del modello prima di una visita dedicata.','Bring the name, code or pack photo and the player’s age. Families guide your search; check model availability before a special trip.']],
@@ -68,7 +68,7 @@ const schema={'@context':'https://schema.org','@type':'FAQPage',mainEntity:faqs.
         </nav>
       </div>
       <figure class="family-visual family-visual-photo">
-        <div class="family-art-surface"><DisclosedImage lang={lang} src={familyImage} srcset={familyImageSet} sizes="(max-width: 720px) calc(100vw - 40px), (max-width: 1100px) 42vw, 570px" width={photograph.width} height={photograph.height} alt={photograph.alt?.[l]||item.name[l]} fetchpriority="high"/></div>
+        <PhotoGallery photos={photographs} lang={lang} eager caption={photographs.length>1} label={item.name[l]}/>
         <figcaption>{item.name[l]}</figcaption>
       </figure>
     </section>

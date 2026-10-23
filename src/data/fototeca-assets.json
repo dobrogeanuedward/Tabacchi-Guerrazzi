@@ -1,0 +1,640 @@
+[
+  {
+    "id": "F13-vetrina-giochi",
+    "src": "/images/fototeca/f13-vetrina-giochi.webp",
+    "srcset": "/images/fototeca/f13-vetrina-giochi-360.webp 360w, /images/fototeca/f13-vetrina-giochi-720.webp 720w, /images/fototeca/f13-vetrina-giochi.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Vetrina dei giochi con scatole, modellini e piccoli passatempi sugli scaffali scuri",
+      "en": "Toy window with boxes, model cars and little games on dark shelves"
+    },
+    "familyIds": [
+      "giochi"
+    ],
+    "categorySlugs": [
+      "giochi-e-giocattoli",
+      "il-negozio"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F19-raptus-persona",
+    "src": "/images/fototeca/f19-raptus-persona.webp",
+    "srcset": "/images/fototeca/f19-raptus-persona-360.webp 360w, /images/fototeca/f19-raptus-persona-720.webp 720w, /images/fototeca/f19-raptus-persona.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Flaconi tester Raptus e confezioni colorate sul ripiano chiaro del negozio",
+      "en": "Raptus tester bottles and coloured cartons on the shop's light wooden shelf"
+    },
+    "familyIds": [
+      "profumi-raptus"
+    ],
+    "categorySlugs": [
+      "profumi-raptus"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "03-cartoleria",
+    "src": "/images/fototeca/03-cartoleria.webp",
+    "srcset": "/images/fototeca/03-cartoleria-360.webp 360w, /images/fototeca/03-cartoleria-720.webp 720w, /images/fototeca/03-cartoleria.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Quaderni, penne e articoli di cartoleria nei moduli bianchi a vani arrotondati",
+      "en": "Notebooks, pens and stationery in rounded white display compartments"
+    },
+    "familyIds": [
+      "quaderni",
+      "penne",
+      "evidenziatori",
+      "cartelline"
+    ],
+    "categorySlugs": [
+      "cartoleria"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "04-auguri",
+    "src": "/images/fototeca/04-auguri.webp",
+    "srcset": "/images/fototeca/04-auguri-360.webp 360w, /images/fototeca/04-auguri-720.webp 720w, /images/fototeca/04-auguri.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Biglietti illustrati di compleanno con bicicletta, fiori e palloncini nell’espositore metallico",
+      "en": "Illustrated birthday cards with a bicycle, flowers and balloons in the metal rack"
+    },
+    "familyIds": [
+      "auguri"
+    ],
+    "categorySlugs": [
+      "feste-e-compleanni"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F20-telefono-ricambi",
+    "src": "/images/fototeca/f20-telefono-ricambi.webp",
+    "srcset": "/images/fototeca/f20-telefono-ricambi-360.webp 360w, /images/fototeca/f20-telefono-ricambi-720.webp 720w, /images/fototeca/f20-telefono-ricambi.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Cavi e accessori di ricarica confezionati sui ganci del pannello bianco",
+      "en": "Packaged charging cables and accessories on the white pegboard"
+    },
+    "familyIds": [
+      "cavi",
+      "power-bank"
+    ],
+    "categorySlugs": [
+      "accessori-telefono"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F21-casa-elettrici",
+    "src": "/images/fototeca/f21-casa-elettrici.webp",
+    "srcset": "/images/fototeca/f21-casa-elettrici-360.webp 360w, /images/fototeca/f21-casa-elettrici-720.webp 720w, /images/fototeca/f21-casa-elettrici.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Guanti domestici, lampadine, nastri e colle sul pannello delle piccole necessità",
+      "en": "Household gloves, bulbs, tape and glue on the everyday-essentials pegboard"
+    },
+    "familyIds": [
+      "colle",
+      "nastri",
+      "adesivi",
+      "pile-batterie",
+      "lampadine-led",
+      "guanti-spontex",
+      "colle-uhu-kores",
+      "prese-cavi-elettrici",
+      "rasoi-bic",
+      "buste"
+    ],
+    "categorySlugs": [
+      "piccole-necessita"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F35-candele-vetro",
+    "src": "/images/fototeca/f35-candele-vetro.webp",
+    "srcset": "/images/fototeca/f35-candele-vetro-360.webp 360w, /images/fototeca/f35-candele-vetro-720.webp 720w, /images/fototeca/f35-candele-vetro.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Piccole candele in contenitori di vetro e confezioni regalo sui ripiani illuminati della vetrinetta",
+      "en": "Small candles in glass holders and gift packaging on the cabinet's illuminated shelves"
+    },
+    "familyIds": [
+      "piccoli-regali"
+    ],
+    "categorySlugs": [
+      "idee-regalo"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "12-regali",
+    "src": "/images/fototeca/12-regali.webp",
+    "srcset": "/images/fototeca/12-regali-360.webp 360w, /images/fototeca/12-regali-720.webp 720w, /images/fototeca/12-regali.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Portachiavi e piccoli regali colorati sui ripiani in vetro della vetrinetta",
+      "en": "Keyrings and colourful little gifts on the glass cabinet shelves"
+    },
+    "familyIds": [
+      "piccoli-regali"
+    ],
+    "categorySlugs": [
+      "idee-regalo"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F25-matite-tortellino",
+    "src": "/images/fototeca/f25-matite-tortellino.webp",
+    "srcset": "/images/fototeca/f25-matite-tortellino-360.webp 360w, /images/fototeca/f25-matite-tortellino-720.webp 720w, /images/fototeca/f25-matite-tortellino.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Matite colorate con decorazione a tortellino nei due portapenne neri a rete",
+      "en": "Coloured pencils with tortellino-shaped toppers in two black mesh cups"
+    },
+    "familyIds": [
+      "matite-tortellino"
+    ],
+    "categorySlugs": [
+      "souvenir-bologna"
+    ],
+    "corner": "top-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F18-sale-varianti",
+    "src": "/images/fototeca/f18-sale-varianti.webp",
+    "srcset": "/images/fototeca/f18-sale-varianti-360.webp 360w, /images/fototeca/f18-sale-varianti-720.webp 720w, /images/fototeca/f18-sale-varianti.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Sacchetto e tre vasetti di sale di Cervia sul supporto chiaro in legno",
+      "en": "A bag and three Cervia salt jars on the light wooden display"
+    },
+    "familyIds": [
+      "salina-cervia"
+    ],
+    "categorySlugs": [
+      "sale-di-cervia"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "10-dolci",
+    "src": "/images/fototeca/10-dolci.webp",
+    "srcset": "/images/fototeca/10-dolci-360.webp 360w, /images/fototeca/10-dolci-720.webp 720w, /images/fototeca/10-dolci.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Espositori di caramelle, lecca-lecca e dolciumi confezionati sul banco",
+      "en": "Displays of sweets, lollipops and packaged treats on the counter"
+    },
+    "familyIds": [
+      "gommose",
+      "lecca-lecca"
+    ],
+    "categorySlugs": [
+      "dolciumi"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "01-portico",
+    "src": "/images/fototeca/01-portico.webp",
+    "srcset": "/images/fototeca/01-portico-360.webp 360w, /images/fototeca/01-portico-720.webp 720w, /images/fototeca/01-portico.webp 1440w",
+    "width": 1440,
+    "height": 737,
+    "alt": {
+      "it": "Ingresso del negozio e portico di Via Guerrazzi, con colonne, archi e pavimento in prospettiva",
+      "en": "Shop entrance and the Via Guerrazzi portico, with columns, arches and floor in perspective"
+    },
+    "familyIds": [],
+    "categorySlugs": [
+      "contatti"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "08-gesto-banco",
+    "src": "/images/fototeca/08-gesto-banco.webp",
+    "srcset": "/images/fototeca/08-gesto-banco-360.webp 360w, /images/fototeca/08-gesto-banco-720.webp 720w, /images/fototeca/08-gesto-banco.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Mani e fogli bianchi sul banco grigio, accanto alla penna collegata al supporto",
+      "en": "Hands and blank paper on the grey counter beside its tethered pen"
+    },
+    "familyIds": [],
+    "categorySlugs": [
+      "il-negozio",
+      "servizi"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F23-bounce-ingresso",
+    "src": "/images/fototeca/f23-bounce-ingresso.webp",
+    "srcset": "/images/fototeca/f23-bounce-ingresso-360.webp 360w, /images/fototeca/f23-bounce-ingresso-720.webp 720w, /images/fototeca/f23-bounce-ingresso.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Cartello blu e rosa Bounce per il deposito bagagli sulla porta del negozio",
+      "en": "Blue and pink Bounce luggage-storage sign on the shop door"
+    },
+    "familyIds": [],
+    "categorySlugs": [
+      "deposito-bagagli"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F14-modellini-auto",
+    "src": "/images/fototeca/f14-modellini-auto.webp",
+    "srcset": "/images/fototeca/f14-modellini-auto-360.webp 360w, /images/fototeca/f14-modellini-auto-720.webp 720w, /images/fototeca/f14-modellini-auto.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Modellini di auto nelle scatole blu e rosse sugli scaffali scuri della vetrina",
+      "en": "Boxed model cars in blue and red packaging on the window's dark shelves"
+    },
+    "familyIds": [
+      "modellini-auto"
+    ],
+    "categorySlugs": [
+      "giochi-e-giocattoli"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F15-giochi-magnetici",
+    "src": "/images/fototeca/f15-giochi-magnetici.webp",
+    "srcset": "/images/fototeca/f15-giochi-magnetici-360.webp 360w, /images/fototeca/f15-giochi-magnetici-720.webp 720w, /images/fototeca/f15-giochi-magnetici.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Scatole di giochi magnetici da viaggio, con altri piccoli giochi nella vetrina",
+      "en": "Magnetic travel-game boxes alongside other small toys in the window"
+    },
+    "familyIds": [
+      "giochi-magnetici"
+    ],
+    "categorySlugs": [
+      "giochi-e-giocattoli"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F17-collezioni",
+    "src": "/images/fototeca/f17-collezioni.webp",
+    "srcset": "/images/fototeca/f17-collezioni-360.webp 360w, /images/fototeca/f17-collezioni-720.webp 720w, /images/fototeca/f17-collezioni.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Bustine di figurine, adesivi e piccoli passatempi appesi nell’espositore",
+      "en": "Collectible packets, stickers and little pastimes hanging in the display"
+    },
+    "familyIds": [
+      "figurine-panini",
+      "adesivi-personaggi",
+      "palloncini-acqua"
+    ],
+    "categorySlugs": [
+      "giochi-e-giocattoli"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F22-feste-numeri",
+    "src": "/images/fototeca/f22-feste-numeri.webp",
+    "srcset": "/images/fototeca/f22-feste-numeri-360.webp 360w, /images/fototeca/f22-feste-numeri-720.webp 720w, /images/fototeca/f22-feste-numeri.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Candeline numeriche, palloncini e buste colorate appesi al pannello bianco",
+      "en": "Number candles, balloons and coloured bags hanging on the white board"
+    },
+    "familyIds": [
+      "candeline",
+      "palloncini"
+    ],
+    "categorySlugs": [
+      "feste-e-compleanni"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F24-scrivere-auguri",
+    "src": "/images/fototeca/f24-scrivere-auguri.webp",
+    "srcset": "/images/fototeca/f24-scrivere-auguri-360.webp 360w, /images/fototeca/f24-scrivere-auguri-720.webp 720w, /images/fototeca/f24-scrivere-auguri.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Una mano scrive con la penna nera su un biglietto color crema appoggiato al banco grigio",
+      "en": "A hand writes with the black pen on a cream card lying on the grey counter"
+    },
+    "familyIds": [
+      "auguri"
+    ],
+    "categorySlugs": [
+      "feste-e-compleanni"
+    ],
+    "corner": "top-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F26-penne-perla",
+    "src": "/images/fototeca/f26-penne-perla.webp",
+    "srcset": "/images/fototeca/f26-penne-perla-360.webp 360w, /images/fototeca/f26-penne-perla-720.webp 720w, /images/fototeca/f26-penne-perla.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Penne dai colori pastello con grandi sfere perlate nel portapenne a rete nero",
+      "en": "Pastel pens with large pearlescent tops in the black mesh holder"
+    },
+    "familyIds": [
+      "penne-perle"
+    ],
+    "categorySlugs": [
+      "cartoleria"
+    ],
+    "corner": "top-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F28-giochi-passeggio",
+    "src": "/images/fototeca/f28-giochi-passeggio.webp",
+    "srcset": "/images/fototeca/f28-giochi-passeggio-360.webp 360w, /images/fototeca/f28-giochi-passeggio-720.webp 720w, /images/fototeca/f28-giochi-passeggio.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Racchette, palline e disco colorato confezionati fra i giochi appesi in negozio",
+      "en": "Packaged paddles, balls and a colourful disc among the shop's hanging toys"
+    },
+    "familyIds": [
+      "giochi-aperto"
+    ],
+    "categorySlugs": [
+      "giochi-e-giocattoli"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F29-mappamondi",
+    "src": "/images/fototeca/f29-mappamondi.webp",
+    "srcset": "/images/fototeca/f29-mappamondi-360.webp 360w, /images/fototeca/f29-mappamondi-720.webp 720w, /images/fototeca/f29-mappamondi.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Due mappamondi decorativi fumé e nero oro sul ripiano scuro del negozio",
+      "en": "Two decorative globes in smoky and black-gold finishes on the shop's dark shelf"
+    },
+    "familyIds": [
+      "mappamondi"
+    ],
+    "categorySlugs": [
+      "idee-regalo"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F31-liquirizia-gomme",
+    "src": "/images/fototeca/f31-liquirizia-gomme.webp",
+    "srcset": "/images/fototeca/f31-liquirizia-gomme-360.webp 360w, /images/fototeca/f31-liquirizia-gomme-720.webp 720w, /images/fototeca/f31-liquirizia-gomme.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Espositore giallo di liquirizia confezionata e bustine di caramelle sul banco chiaro",
+      "en": "Yellow packaged-liquorice display and sweet pouches on the light counter"
+    },
+    "familyIds": [
+      "liquirizia-gatos",
+      "fishermans-friend",
+      "caramelle"
+    ],
+    "categorySlugs": [
+      "dolciumi"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F30-nani-salvadanai",
+    "src": "/images/fototeca/f30-nani-salvadanai.webp",
+    "srcset": "/images/fototeca/f30-nani-salvadanai-360.webp 360w, /images/fototeca/f30-nani-salvadanai-720.webp 720w, /images/fototeca/f30-nani-salvadanai.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Tre salvadanai a forma di nano con finiture lucide sul ripiano scuro",
+      "en": "Three glossy dwarf-shaped money boxes on the dark shelf"
+    },
+    "familyIds": [
+      "salvadanai-nani"
+    ],
+    "categorySlugs": [
+      "idee-regalo"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F33-sorprese-ingresso",
+    "src": "/images/fototeca/f33-sorprese-ingresso.webp",
+    "srcset": "/images/fototeca/f33-sorprese-ingresso-360.webp 360w, /images/fototeca/f33-sorprese-ingresso-720.webp 720w, /images/fototeca/f33-sorprese-ingresso.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Distributore rosso di sorprese in capsule a forma di cabina telefonica accanto all’ingresso",
+      "en": "Red telephone-box-shaped toy-capsule dispenser beside the entrance"
+    },
+    "familyIds": [
+      "stitch-e-giochi-sorpresa"
+    ],
+    "categorySlugs": [
+      "giochi-e-giocattoli"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "02-raptus",
+    "src": "/images/fototeca/02-raptus.webp",
+    "srcset": "/images/fototeca/02-raptus-360.webp 360w, /images/fototeca/02-raptus-720.webp 720w, /images/fototeca/02-raptus.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Spray e diffusore rosa per ambiente e tessuti nel display Raptus",
+      "en": "Pink room-and-fabric spray and diffuser in the Raptus display"
+    },
+    "familyIds": [],
+    "categorySlugs": [],
+    "sectionIds": [
+      "raptus-ambienti-tessuti"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "F36-labbra-capelli",
+    "src": "/images/fototeca/f36-labbra-capelli.webp",
+    "srcset": "/images/fototeca/f36-labbra-capelli-360.webp 360w, /images/fototeca/f36-labbra-capelli-720.webp 720w, /images/fototeca/f36-labbra-capelli.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Balsami labbra, gel per capelli e fermagli su cartoncini bianchi nella vetrinetta",
+      "en": "Lip balms, hair gel and clips on white cards in the glass cabinet"
+    },
+    "familyIds": [
+      "labbra",
+      "capelli"
+    ],
+    "categorySlugs": [
+      "piccole-necessita"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "06-cura",
+    "src": "/images/fototeca/06-cura.webp",
+    "srcset": "/images/fototeca/06-cura-360.webp 360w, /images/fototeca/06-cura-720.webp 720w, /images/fototeca/06-cura.webp 1440w",
+    "width": 1440,
+    "height": 1080,
+    "alt": {
+      "it": "Piccoli articoli confezionati per la cura personale sui ripiani in vetro",
+      "en": "Packaged personal-care essentials on the glass shelves"
+    },
+    "familyIds": [
+      "labbra",
+      "capelli"
+    ],
+    "categorySlugs": [
+      "piccole-necessita"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "07-dettaglio-carta",
+    "src": "/images/fototeca/07-dettaglio-carta.webp",
+    "srcset": "/images/fototeca/07-dettaglio-carta-360.webp 360w, /images/fototeca/07-dettaglio-carta-720.webp 720w, /images/fototeca/07-dettaglio-carta.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Quaderni a spirale e penne colorate in un portapenne a rete sui ripiani bianchi",
+      "en": "Spiral notebooks and coloured pens in a mesh holder on the white shelves"
+    },
+    "familyIds": [
+      "quaderni",
+      "penne",
+      "evidenziatori"
+    ],
+    "categorySlugs": [
+      "cartoleria"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "09-bologna",
+    "src": "/images/fototeca/09-bologna.webp",
+    "srcset": "/images/fototeca/09-bologna-360.webp 360w, /images/fototeca/09-bologna-720.webp 720w, /images/fototeca/09-bologna.webp 1122w",
+    "width": 1122,
+    "height": 1402,
+    "alt": {
+      "it": "Pannello con calamite colorate ispirate alle torri, ai portici e ai simboli di Bologna",
+      "en": "Panel of colourful magnets inspired by Bologna's towers, porticoes and symbols"
+    },
+    "familyIds": [
+      "calamite"
+    ],
+    "categorySlugs": [
+      "souvenir-bologna"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  },
+  {
+    "id": "11-cervia",
+    "src": "/images/fototeca/11-cervia.webp",
+    "srcset": "/images/fototeca/11-cervia-360.webp 360w, /images/fototeca/11-cervia-720.webp 720w, /images/fototeca/11-cervia.webp 1440w",
+    "width": 1440,
+    "height": 960,
+    "alt": {
+      "it": "Sale di Cervia in sacchetto e vasetti su un supporto chiaro in legno",
+      "en": "Cervia salt in a bag and jars on a light wooden display"
+    },
+    "familyIds": [
+      "salina-cervia"
+    ],
+    "categorySlugs": [
+      "sale-di-cervia"
+    ],
+    "corner": "bottom-right",
+    "role": "editorial",
+    "generated": true
+  }
+]

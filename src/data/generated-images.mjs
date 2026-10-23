@@ -1,4 +1,5 @@
-/** Explicit inventory from the ImageGen production manifests, 8–15 October 2026.
+import fototeca from './fototeca-assets.json' with {type:'json'};
+/** Explicit inventory from the ImageGen production manifests, 8–23 October 2026.
  * Only registered files receive a disclosure. Unknown files and future uploads are not inferred to be AI.
  * Sources: docs/identita/{editorial-production-manifest,catalog-photography-2026-10-14,shooting-2026-10-15,cigar-photography-manifest,visual-pack-v1-manifest,visual-pack-v2-manifest}.json
  */
@@ -274,11 +275,21 @@ const generatedImagePaths = new Set([
   "/images/studies/travel-bologna-map.webp"
 ]);
 
+for(const photo of fototeca){
+ if(photo.generated===false)continue;
+ generatedImagePaths.add(photo.src);
+ for(const variant of (photo.srcset||'').split(',')){
+  const path=variant.trim().split(/\s+/,1)[0];
+  if(path)generatedImagePaths.add(path);
+ }
+}
+
 export function isGeneratedImage(src){
  return typeof src==='string'&&generatedImagePaths.has(src.split(/[?#]/,1)[0]);
 }
 
 export function imageDisclosure(lang='it',src=''){
+ if(typeof src==='string'&&src.includes('/images/fototeca/'))return lang==='en'?'Editorial photograph reworked with AI from the shop’s real spaces':'Fotografia editoriale rielaborata con IA dagli ambienti reali del negozio';
  const illustrative=typeof src==='string'&&src.includes('/catalogo/profumi-raptus');
  return illustrative?(lang==='en'?'Illustrative composition generated with AI':'Composizione illustrativa generata con IA'):(lang==='en'?'AI-generated image':'Immagine generata con IA');
 }

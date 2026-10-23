@@ -1,0 +1,10 @@
+---
+const {corner='top-right'}=Astro.props as {corner?:string};
+---
+<span class="photo-brand-stamp" data-photo-brand data-corner={corner} aria-hidden="true"></span>
+<style>
+ .photo-brand-stamp{position:absolute;z-index:2;right:clamp(8px,2.2%,18px);top:clamp(8px,2.2%,18px);width:clamp(34px,21%,148px);aspect-ratio:2.5;background:#f8f8f3f5 url('/brand/guerrazzi-logo.webp') center/88% auto no-repeat;border:1px solid #ffffffb3;border-bottom:2px solid #0645c0;border-radius:1px 1px 12px 1px;box-shadow:0 3px 14px #11192718;pointer-events:none}
+ .photo-brand-stamp[data-corner='top-left']{left:clamp(8px,2.2%,18px);right:auto}
+ .photo-brand-stamp[data-corner='bottom-right']{top:auto;bottom:44px}
+ .photo-brand-stamp[data-corner='bottom-left']{top:auto;left:clamp(8px,2.2%,18px);right:auto;bottom:clamp(8px,2.2%,18px)}
+</style>

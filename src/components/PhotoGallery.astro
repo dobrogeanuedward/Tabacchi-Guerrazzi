@@ -1,0 +1,40 @@
+---
+import {randomUUID} from 'node:crypto';
+import DisclosedImage from './DisclosedImage.astro';
+import {text,type Lang} from '../data/shop';
+import type {Photo} from '../data/fototeca';
+const {photos,lang='it',eager=false,caption=true,label=text(lang,'Immagini del negozio','Shop images')}=Astro.props as {photos:Photo[];lang?:Lang;eager?:boolean;caption?:boolean;label?:string};
+const galleryId=`photographs-${randomUUID()}`;
+---
+<div class="photo-gallery" data-photo-gallery data-ai-disclosure-group aria-label={label}>
+ <div class="photo-gallery-stage">{photos.map((photo,index)=><div class="photo-gallery-panel" id={`${galleryId}-${index}`} data-photo-panel hidden={index!==0} role="group" aria-label={`${index+1} / ${photos.length}`}>
+  <DisclosedImage lang={lang} src={photo.src} srcset={photo.srcset} sizes="(max-width: 720px) calc(100vw - 40px), 55vw" width={photo.width} height={photo.height} alt={photo.alt[lang]} loading={index===0&&eager?'eager':'lazy'} fetchpriority={index===0&&eager?'high':'auto'}/>
+ </div>)}</div>
+ {photos.length>1&&<div class="photo-gallery-thumbnails" role="group" aria-label={text(lang,'Scegli una fotografia','Choose a photograph')}>{photos.map((photo,index)=><button type="button" data-photo-select={index} aria-controls={`${galleryId}-${index}`} aria-pressed={index===0} aria-label={`${text(lang,'Immagine','Image')} ${index+1}: ${photo.alt[lang]}`}><img src={photo.src} srcset={photo.srcset} sizes="90px" width={photo.width} height={photo.height} alt="" loading="lazy"/></button>)}</div>}
+ {caption&&<p class="photo-gallery-caption">{text(lang,'Fotografie rielaborate a partire dagli ambienti reali del negozio. Assortimento e varianti da verificare in negozio.','Photographs reworked from the shop’s real spaces. Check the current range and variants in store.')}</p>}
+</div>
+<script>
+ document.querySelectorAll<HTMLElement>('[data-photo-gallery]').forEach(gallery=>{
+  const panels=[...gallery.querySelectorAll<HTMLElement>('[data-photo-panel]')];
+  const buttons=[...gallery.querySelectorAll<HTMLButtonElement>('[data-photo-select]')];
+  const show=(index:number)=>{panels.forEach((panel,i)=>panel.hidden=i!==index);buttons.forEach((button,i)=>button.setAttribute('aria-pressed',String(i===index)));};
+  buttons.forEach((button,index)=>{
+   button.addEventListener('click',()=>show(index));
+   button.addEventListener('keydown',event=>{
+    let next=index;
+    if(event.key==='ArrowRight')next=(index+1)%buttons.length;
+    else if(event.key==='ArrowLeft')next=(index-1+buttons.length)%buttons.length;
+    else if(event.key==='Home')next=0;
+    else if(event.key==='End')next=buttons.length-1;
+    else return;
+    event.preventDefault();show(next);buttons[next].focus();
+   });
+  });
+ });
+</script>
+<style>
+ .photo-gallery{min-width:0;width:100%}.photo-gallery-stage{border-radius:2px 24px 2px 2px;overflow:hidden;background:#eeeae2;border:1px solid #d7d4ca}
+ .photo-gallery-panel[hidden]{display:none}.photo-gallery-panel :global(.disclosed-image){width:fit-content;max-width:100%;margin-inline:auto}.photo-gallery-panel :global(.disclosed-image>img){display:block;width:auto;max-width:100%;height:auto;max-height:610px;object-fit:contain;margin-inline:auto}
+ .photo-gallery-thumbnails{display:flex;gap:9px;overflow-x:auto;padding:13px 3px 6px;scrollbar-width:thin}.photo-gallery-thumbnails button{flex:0 0 74px;width:74px;padding:3px;border:1px solid #c6cbd2;background:#f8f8f3;cursor:pointer;border-radius:2px}.photo-gallery-thumbnails img{display:block;width:100%;height:54px;object-fit:cover}.photo-gallery-thumbnails button[aria-pressed='true']{border:2px solid #0645c0;padding:2px}.photo-gallery-thumbnails button:focus-visible{outline:3px solid #0645c0;outline-offset:2px}.photo-gallery-caption{font:400 .78rem/1.65 var(--sans);color:#566174;margin:9px 0 0;max-width:65ch}
+ @media(max-width:720px){.photo-gallery-panel :global(.disclosed-image>img){max-height:530px}.photo-gallery-thumbnails button{flex-basis:66px;width:66px}.photo-gallery-thumbnails img{height:48px}}
+</style>

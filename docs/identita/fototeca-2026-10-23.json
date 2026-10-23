@@ -1,0 +1,1899 @@
+{
+  "updated": "2026-10-23",
+  "scope": "Fototeca editoriale ricostruita da fotografie autentiche recuperate. Non inventario né catalogo di SKU esatti.",
+  "rules": [
+    "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+    "Volti di persone, scarti e F27-calamite-ricette esclusi. Le immagini stampate su giocattoli o confezioni non sono persone presenti.",
+    "Originali del logo usati soltanto nel layout del sito; nessun marchio del negozio rigenerato dentro la fotografia."
+  ],
+  "excluded": [
+    {
+      "id": "07-gesto-carta",
+      "reason": "Scartata dal cliente; sostituita con dettaglio privo di mani."
+    },
+    {
+      "id": "F16-costruzioni-meccanica",
+      "reason": "Nessun output utilizzabile prodotto."
+    },
+    {
+      "id": "F27-calamite-ricette",
+      "reason": "Testo della ricetta ricostruito inesatto; esclusa da ogni uso."
+    },
+    {
+      "id": "F32-nuby-primi-giochi",
+      "reason": "Nessun output utilizzabile prodotto."
+    },
+    {
+      "id": "F34-candele-rose",
+      "reason": "Soggetti reinterpretati in modo non fedele; esclusa da ogni uso."
+    }
+  ],
+  "assets": [
+    {
+      "id": "F13-vetrina-giochi",
+      "path": "fototeca/shooting/F13-vetrina-giochi.png",
+      "title": "La vetrina dei giochi",
+      "category": "giochi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5492.jpeg",
+        "sorgenti/lotto-02/IMG_5494(1).jpeg",
+        "sorgenti/lotto-02/IMG_5495(1).jpeg"
+      ],
+      "scene_ids": [
+        "E14",
+        "E15"
+      ],
+      "famiglie_associate": [
+        "giochi"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Inquadratura di insieme: nessuna identificazione di singolo set, codice, età o contenuto delle scatole."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Vetrina dei giochi con scatole, modellini e piccoli passatempi sugli scaffali scuri",
+        "en": "Toy window with boxes, model cars and little games on dark shelves"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f13-vetrina-giochi.webp",
+        "srcset": "/images/fototeca/f13-vetrina-giochi-360.webp 360w, /images/fototeca/f13-vetrina-giochi-720.webp 720w, /images/fototeca/f13-vetrina-giochi.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "giochi-e-giocattoli",
+          "il-negozio"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f13-vetrina-giochi-360.webp",
+            "width": 360,
+            "bytes": 32116
+          },
+          {
+            "src": "/images/fototeca/f13-vetrina-giochi-720.webp",
+            "width": 720,
+            "bytes": 111416
+          },
+          {
+            "src": "/images/fototeca/f13-vetrina-giochi.webp",
+            "width": 1440,
+            "bytes": 352042
+          }
+        ]
+      }
+    },
+    {
+      "id": "F19-raptus-persona",
+      "path": "fototeca/shooting/F19-raptus-persona.png",
+      "title": "Raptus, la collezione per la persona",
+      "category": "profumi",
+      "sources": [
+        "sorgenti/lotto-02/WhatsApp Image 2026-10-11 at 20.03.20.jpeg"
+      ],
+      "scene_ids": [
+        "E11"
+      ],
+      "famiglie_associate": [
+        "profumi-raptus"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "La fotografia non documenta note olfattive, composizioni, quantità o disponibilità; i numeri visibili sono dettagli editoriali ricostruiti."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Flaconi tester Raptus e confezioni colorate sul ripiano chiaro del negozio",
+        "en": "Raptus tester bottles and coloured cartons on the shop's light wooden shelf"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f19-raptus-persona.webp",
+        "srcset": "/images/fototeca/f19-raptus-persona-360.webp 360w, /images/fototeca/f19-raptus-persona-720.webp 720w, /images/fototeca/f19-raptus-persona.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "profumi-raptus"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f19-raptus-persona-360.webp",
+            "width": 360,
+            "bytes": 18510
+          },
+          {
+            "src": "/images/fototeca/f19-raptus-persona-720.webp",
+            "width": 720,
+            "bytes": 57942
+          },
+          {
+            "src": "/images/fototeca/f19-raptus-persona.webp",
+            "width": 1440,
+            "bytes": 167702
+          }
+        ]
+      }
+    },
+    {
+      "id": "03-cartoleria",
+      "path": "shooting/03-cartoleria.png",
+      "title": "Carta, colori, idee",
+      "category": "cartoleria",
+      "sources": [
+        "sorgenti/IMG_5261.jpeg"
+      ],
+      "scene_ids": [
+        "E02",
+        "E03"
+      ],
+      "famiglie_associate": [
+        "quaderni",
+        "penne",
+        "evidenziatori",
+        "cartelline"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Confezioni, rigature e singole etichette reinterpretate; non prova di marca o formato specifico."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Quaderni, penne e articoli di cartoleria nei moduli bianchi a vani arrotondati",
+        "en": "Notebooks, pens and stationery in rounded white display compartments"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/03-cartoleria.webp",
+        "srcset": "/images/fototeca/03-cartoleria-360.webp 360w, /images/fototeca/03-cartoleria-720.webp 720w, /images/fototeca/03-cartoleria.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "cartoleria"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/03-cartoleria-360.webp",
+            "width": 360,
+            "bytes": 49586
+          },
+          {
+            "src": "/images/fototeca/03-cartoleria-720.webp",
+            "width": 720,
+            "bytes": 156288
+          },
+          {
+            "src": "/images/fototeca/03-cartoleria.webp",
+            "width": 1122,
+            "bytes": 297312
+          }
+        ]
+      }
+    },
+    {
+      "id": "04-auguri",
+      "path": "shooting/04-auguri.png",
+      "title": "Una parola, prima del regalo",
+      "category": "feste",
+      "sources": [
+        "sorgenti/IMG_5262.jpeg"
+      ],
+      "scene_ids": [
+        "E05"
+      ],
+      "famiglie_associate": [
+        "auguri"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Illustrazioni e microtesti ricostruiti: categoria editoriale, non riproduzione esatta di un biglietto."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Biglietti illustrati di compleanno con bicicletta, fiori e palloncini nell’espositore metallico",
+        "en": "Illustrated birthday cards with a bicycle, flowers and balloons in the metal rack"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/04-auguri.webp",
+        "srcset": "/images/fototeca/04-auguri-360.webp 360w, /images/fototeca/04-auguri-720.webp 720w, /images/fototeca/04-auguri.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "feste-e-compleanni"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/04-auguri-360.webp",
+            "width": 360,
+            "bytes": 35442
+          },
+          {
+            "src": "/images/fototeca/04-auguri-720.webp",
+            "width": 720,
+            "bytes": 95486
+          },
+          {
+            "src": "/images/fototeca/04-auguri.webp",
+            "width": 1122,
+            "bytes": 170480
+          }
+        ]
+      }
+    },
+    {
+      "id": "F20-telefono-ricambi",
+      "path": "fototeca/shooting/F20-telefono-ricambi.png",
+      "title": "Ricaricare, con il ricambio giusto",
+      "category": "telefono",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5498.jpeg",
+        "sorgenti/lotto-02/IMG_5499.jpeg"
+      ],
+      "scene_ids": [
+        "E13"
+      ],
+      "famiglie_associate": [
+        "cavi",
+        "power-bank"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Connettori, capacità, potenza e microtesti generati non attestano caratteristiche o compatibilità tecniche."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Cavi e accessori di ricarica confezionati sui ganci del pannello bianco",
+        "en": "Packaged charging cables and accessories on the white pegboard"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f20-telefono-ricambi.webp",
+        "srcset": "/images/fototeca/f20-telefono-ricambi-360.webp 360w, /images/fototeca/f20-telefono-ricambi-720.webp 720w, /images/fototeca/f20-telefono-ricambi.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "accessori-telefono"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f20-telefono-ricambi-360.webp",
+            "width": 360,
+            "bytes": 44746
+          },
+          {
+            "src": "/images/fototeca/f20-telefono-ricambi-720.webp",
+            "width": 720,
+            "bytes": 116466
+          },
+          {
+            "src": "/images/fototeca/f20-telefono-ricambi.webp",
+            "width": 1122,
+            "bytes": 209282
+          }
+        ]
+      }
+    },
+    {
+      "id": "F21-casa-elettrici",
+      "path": "fototeca/shooting/F21-casa-elettrici.png",
+      "title": "Piccole cose per la casa",
+      "category": "necessità",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5499.jpeg"
+      ],
+      "scene_ids": [
+        "E22",
+        "E23"
+      ],
+      "famiglie_associate": [
+        "colle",
+        "nastri",
+        "adesivi",
+        "pile-batterie",
+        "lampadine-led",
+        "guanti-spontex",
+        "colle-uhu-kores",
+        "prese-cavi-elettrici",
+        "rasoi-bic",
+        "buste"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Taglie, materiali, potenze, attacchi e avvertenze si verificano sulle confezioni reali; nessuna compatibilità deducibile."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Guanti domestici, lampadine, nastri e colle sul pannello delle piccole necessità",
+        "en": "Household gloves, bulbs, tape and glue on the everyday-essentials pegboard"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f21-casa-elettrici.webp",
+        "srcset": "/images/fototeca/f21-casa-elettrici-360.webp 360w, /images/fototeca/f21-casa-elettrici-720.webp 720w, /images/fototeca/f21-casa-elettrici.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "piccole-necessita"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f21-casa-elettrici-360.webp",
+            "width": 360,
+            "bytes": 50770
+          },
+          {
+            "src": "/images/fototeca/f21-casa-elettrici-720.webp",
+            "width": 720,
+            "bytes": 154390
+          },
+          {
+            "src": "/images/fototeca/f21-casa-elettrici.webp",
+            "width": 1122,
+            "bytes": 282474
+          }
+        ]
+      }
+    },
+    {
+      "id": "F35-candele-vetro",
+      "path": "fototeca/shooting/F35-candele-vetro.png",
+      "title": "Vetro, colore, piccoli pensieri",
+      "category": "regali",
+      "sources": [
+        "sorgenti/IMG_5250.jpeg"
+      ],
+      "scene_ids": [
+        "E08"
+      ],
+      "famiglie_associate": [
+        "piccoli-regali"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Ricostruzione di categoria: composizioni, confezioni e dettagli non corrispondono a singoli SKU verificati; nessuna attestazione di cera, fragranza o materiali."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Piccole candele in contenitori di vetro e confezioni regalo sui ripiani illuminati della vetrinetta",
+        "en": "Small candles in glass holders and gift packaging on the cabinet's illuminated shelves"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f35-candele-vetro.webp",
+        "srcset": "/images/fototeca/f35-candele-vetro-360.webp 360w, /images/fototeca/f35-candele-vetro-720.webp 720w, /images/fototeca/f35-candele-vetro.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "idee-regalo"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f35-candele-vetro-360.webp",
+            "width": 360,
+            "bytes": 20572
+          },
+          {
+            "src": "/images/fototeca/f35-candele-vetro-720.webp",
+            "width": 720,
+            "bytes": 62060
+          },
+          {
+            "src": "/images/fototeca/f35-candele-vetro.webp",
+            "width": 1440,
+            "bytes": 166594
+          }
+        ]
+      }
+    },
+    {
+      "id": "12-regali",
+      "path": "shooting/12-regali.png",
+      "title": "Piccoli pensieri in vetrina",
+      "category": "regali",
+      "sources": [
+        "sorgenti/IMG_5250.jpeg"
+      ],
+      "scene_ids": [
+        "E08"
+      ],
+      "famiglie_associate": [
+        "piccoli-regali"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Disposizione e assortimento reinterpretati; non corrisponde a uno specifico articolo."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Portachiavi e piccoli regali colorati sui ripiani in vetro della vetrinetta",
+        "en": "Keyrings and colourful little gifts on the glass cabinet shelves"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/12-regali.webp",
+        "srcset": "/images/fototeca/12-regali-360.webp 360w, /images/fototeca/12-regali-720.webp 720w, /images/fototeca/12-regali.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "idee-regalo"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/12-regali-360.webp",
+            "width": 360,
+            "bytes": 42330
+          },
+          {
+            "src": "/images/fototeca/12-regali-720.webp",
+            "width": 720,
+            "bytes": 127432
+          },
+          {
+            "src": "/images/fototeca/12-regali.webp",
+            "width": 1122,
+            "bytes": 238272
+          }
+        ]
+      }
+    },
+    {
+      "id": "F25-matite-tortellino",
+      "path": "fototeca/shooting/F25-matite-tortellino.png",
+      "title": "Bologna fra gli appunti",
+      "category": "souvenir",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5460.jpeg"
+      ],
+      "scene_ids": [
+        "E10"
+      ],
+      "famiglie_associate": [
+        "matite-tortellino"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Elemento decorativo non alimentare; forma, quantità e piccoli testi sono ricostruiti."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Matite colorate con decorazione a tortellino nei due portapenne neri a rete",
+        "en": "Coloured pencils with tortellino-shaped toppers in two black mesh cups"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f25-matite-tortellino.webp",
+        "srcset": "/images/fototeca/f25-matite-tortellino-360.webp 360w, /images/fototeca/f25-matite-tortellino-720.webp 720w, /images/fototeca/f25-matite-tortellino.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "souvenir-bologna"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f25-matite-tortellino-360.webp",
+            "width": 360,
+            "bytes": 23772
+          },
+          {
+            "src": "/images/fototeca/f25-matite-tortellino-720.webp",
+            "width": 720,
+            "bytes": 70832
+          },
+          {
+            "src": "/images/fototeca/f25-matite-tortellino.webp",
+            "width": 1440,
+            "bytes": 195000
+          }
+        ]
+      }
+    },
+    {
+      "id": "F18-sale-varianti",
+      "path": "fototeca/shooting/F18-sale-varianti.png",
+      "title": "Sale di Cervia, da vicino",
+      "category": "alimentari",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5502.jpeg"
+      ],
+      "scene_ids": [
+        "E21"
+      ],
+      "famiglie_associate": [
+        "salina-cervia"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Etichette ricostruite e annata storica 2017 visibile: non rappresenta disponibilità o annata attuale. Ingredienti e allergeni solo sull’etichetta reale."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Sacchetto e tre vasetti di sale di Cervia sul supporto chiaro in legno",
+        "en": "A bag and three Cervia salt jars on the light wooden display"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f18-sale-varianti.webp",
+        "srcset": "/images/fototeca/f18-sale-varianti-360.webp 360w, /images/fototeca/f18-sale-varianti-720.webp 720w, /images/fototeca/f18-sale-varianti.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "sale-di-cervia"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f18-sale-varianti-360.webp",
+            "width": 360,
+            "bytes": 20974
+          },
+          {
+            "src": "/images/fototeca/f18-sale-varianti-720.webp",
+            "width": 720,
+            "bytes": 66710
+          },
+          {
+            "src": "/images/fototeca/f18-sale-varianti.webp",
+            "width": 1440,
+            "bytes": 180536
+          }
+        ]
+      }
+    },
+    {
+      "id": "10-dolci",
+      "path": "shooting/10-dolci.png",
+      "title": "Una pausa a colori",
+      "category": "dolciumi",
+      "sources": [
+        "sorgenti/IMG_5241.jpeg"
+      ],
+      "scene_ids": [
+        "E20"
+      ],
+      "famiglie_associate": [
+        "gommose",
+        "lecca-lecca"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "La confezione Rotella presenta variazioni sintetiche: non è packshot esatto, fonte di ingredienti o indicazioni alimentari."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Espositori di caramelle, lecca-lecca e dolciumi confezionati sul banco",
+        "en": "Displays of sweets, lollipops and packaged treats on the counter"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/10-dolci.webp",
+        "srcset": "/images/fototeca/10-dolci-360.webp 360w, /images/fototeca/10-dolci-720.webp 720w, /images/fototeca/10-dolci.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "dolciumi"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/10-dolci-360.webp",
+            "width": 360,
+            "bytes": 29054
+          },
+          {
+            "src": "/images/fototeca/10-dolci-720.webp",
+            "width": 720,
+            "bytes": 92846
+          },
+          {
+            "src": "/images/fototeca/10-dolci.webp",
+            "width": 1440,
+            "bytes": 258294
+          }
+        ]
+      }
+    },
+    {
+      "id": "01-portico",
+      "path": "shooting/01-portico.png",
+      "title": "Ci vediamo sotto il portico",
+      "category": "luogo",
+      "sources": [
+        "sorgenti/R01_bounce_faccia_portico.jpg"
+      ],
+      "scene_ids": [
+        "E01"
+      ],
+      "famiglie_associate": [],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Piccole scritte e dettagli architettonici sono ricostruiti; dati di contatto ricavati dalla scheda canonica, non dalla fotografia."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Ingresso del negozio e portico di Via Guerrazzi, con colonne, archi e pavimento in prospettiva",
+        "en": "Shop entrance and the Via Guerrazzi portico, with columns, arches and floor in perspective"
+      },
+      "width": 1753,
+      "height": 897,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/01-portico.webp",
+        "srcset": "/images/fototeca/01-portico-360.webp 360w, /images/fototeca/01-portico-720.webp 720w, /images/fototeca/01-portico.webp 1440w",
+        "width": 1440,
+        "height": 737,
+        "categorySlugs": [
+          "contatti"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/01-portico-360.webp",
+            "width": 360,
+            "bytes": 17296
+          },
+          {
+            "src": "/images/fototeca/01-portico-720.webp",
+            "width": 720,
+            "bytes": 58262
+          },
+          {
+            "src": "/images/fototeca/01-portico.webp",
+            "width": 1440,
+            "bytes": 161156
+          }
+        ]
+      }
+    },
+    {
+      "id": "08-gesto-banco",
+      "path": "shooting/08-gesto-banco.png",
+      "title": "L’attenzione, al banco",
+      "category": "negozio",
+      "sources": [
+        "sorgenti/IMG_5265.jpeg"
+      ],
+      "scene_ids": [
+        "E25"
+      ],
+      "famiglie_associate": [],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Scena illustrativa con mani sintetiche, non una vera transazione o la documentazione di uno specifico servizio."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Mani e fogli bianchi sul banco grigio, accanto alla penna collegata al supporto",
+        "en": "Hands and blank paper on the grey counter beside its tethered pen"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/08-gesto-banco.webp",
+        "srcset": "/images/fototeca/08-gesto-banco-360.webp 360w, /images/fototeca/08-gesto-banco-720.webp 720w, /images/fototeca/08-gesto-banco.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "il-negozio",
+          "servizi"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/08-gesto-banco-360.webp",
+            "width": 360,
+            "bytes": 28468
+          },
+          {
+            "src": "/images/fototeca/08-gesto-banco-720.webp",
+            "width": 720,
+            "bytes": 102198
+          },
+          {
+            "src": "/images/fototeca/08-gesto-banco.webp",
+            "width": 1122,
+            "bytes": 208014
+          }
+        ]
+      }
+    },
+    {
+      "id": "F23-bounce-ingresso",
+      "path": "fototeca/shooting/F23-bounce-ingresso.png",
+      "title": "Bagagli, il punto di partenza",
+      "category": "bagagli",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5487.jpeg"
+      ],
+      "scene_ids": [
+        "E26"
+      ],
+      "famiglie_associate": [],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Insegna ricostruita dal riferimento; prenotazioni e orari del deposito si verificano tramite Bounce."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Cartello blu e rosa Bounce per il deposito bagagli sulla porta del negozio",
+        "en": "Blue and pink Bounce luggage-storage sign on the shop door"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f23-bounce-ingresso.webp",
+        "srcset": "/images/fototeca/f23-bounce-ingresso-360.webp 360w, /images/fototeca/f23-bounce-ingresso-720.webp 720w, /images/fototeca/f23-bounce-ingresso.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "deposito-bagagli"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f23-bounce-ingresso-360.webp",
+            "width": 360,
+            "bytes": 25554
+          },
+          {
+            "src": "/images/fototeca/f23-bounce-ingresso-720.webp",
+            "width": 720,
+            "bytes": 72044
+          },
+          {
+            "src": "/images/fototeca/f23-bounce-ingresso.webp",
+            "width": 1122,
+            "bytes": 133200
+          }
+        ]
+      }
+    },
+    {
+      "id": "F14-modellini-auto",
+      "path": "fototeca/shooting/F14-modellini-auto.png",
+      "title": "La scala del dettaglio",
+      "category": "giochi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5494(1).jpeg"
+      ],
+      "scene_ids": [
+        "E15"
+      ],
+      "famiglie_associate": [
+        "modellini-auto"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Non identifica versioni, scale, materiali o automobili precise: confronto del modello sulla scatola reale."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Modellini di auto nelle scatole blu e rosse sugli scaffali scuri della vetrina",
+        "en": "Boxed model cars in blue and red packaging on the window's dark shelves"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f14-modellini-auto.webp",
+        "srcset": "/images/fototeca/f14-modellini-auto-360.webp 360w, /images/fototeca/f14-modellini-auto-720.webp 720w, /images/fototeca/f14-modellini-auto.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "giochi-e-giocattoli"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f14-modellini-auto-360.webp",
+            "width": 360,
+            "bytes": 43202
+          },
+          {
+            "src": "/images/fototeca/f14-modellini-auto-720.webp",
+            "width": 720,
+            "bytes": 122094
+          },
+          {
+            "src": "/images/fototeca/f14-modellini-auto.webp",
+            "width": 1122,
+            "bytes": 218504
+          }
+        ]
+      }
+    },
+    {
+      "id": "F15-giochi-magnetici",
+      "path": "fototeca/shooting/F15-giochi-magnetici.png",
+      "title": "Piccoli formati da portare con sé",
+      "category": "giochi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5495(1).jpeg",
+        "sorgenti/lotto-02/IMG_5494(1).jpeg"
+      ],
+      "scene_ids": [
+        "E16"
+      ],
+      "famiglie_associate": [
+        "giochi-magnetici"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Non certifica componenti, regole, numero di giocatori o età dei singoli giochi."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Scatole di giochi magnetici da viaggio, con altri piccoli giochi nella vetrina",
+        "en": "Magnetic travel-game boxes alongside other small toys in the window"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f15-giochi-magnetici.webp",
+        "srcset": "/images/fototeca/f15-giochi-magnetici-360.webp 360w, /images/fototeca/f15-giochi-magnetici-720.webp 720w, /images/fototeca/f15-giochi-magnetici.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "giochi-e-giocattoli"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f15-giochi-magnetici-360.webp",
+            "width": 360,
+            "bytes": 44044
+          },
+          {
+            "src": "/images/fototeca/f15-giochi-magnetici-720.webp",
+            "width": 720,
+            "bytes": 130080
+          },
+          {
+            "src": "/images/fototeca/f15-giochi-magnetici.webp",
+            "width": 1122,
+            "bytes": 239382
+          }
+        ]
+      }
+    },
+    {
+      "id": "F17-collezioni",
+      "path": "fototeca/shooting/F17-collezioni.png",
+      "title": "Una collezione alla volta",
+      "category": "giochi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5497.jpeg"
+      ],
+      "scene_ids": [
+        "E17",
+        "E19"
+      ],
+      "famiglie_associate": [
+        "figurine-panini",
+        "adesivi-personaggi",
+        "palloncini-acqua"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "I volti stampati sui prodotti sono grafica della confezione, non persone presenti. Serie, annate e soggetti non attestano disponibilità attuale."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Bustine di figurine, adesivi e piccoli passatempi appesi nell’espositore",
+        "en": "Collectible packets, stickers and little pastimes hanging in the display"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f17-collezioni.webp",
+        "srcset": "/images/fototeca/f17-collezioni-360.webp 360w, /images/fototeca/f17-collezioni-720.webp 720w, /images/fototeca/f17-collezioni.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "giochi-e-giocattoli"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f17-collezioni-360.webp",
+            "width": 360,
+            "bytes": 59686
+          },
+          {
+            "src": "/images/fototeca/f17-collezioni-720.webp",
+            "width": 720,
+            "bytes": 161004
+          },
+          {
+            "src": "/images/fototeca/f17-collezioni.webp",
+            "width": 1122,
+            "bytes": 275448
+          }
+        ]
+      }
+    },
+    {
+      "id": "F22-feste-numeri",
+      "path": "fototeca/shooting/F22-feste-numeri.png",
+      "title": "Il numero della festa",
+      "category": "feste",
+      "sources": [
+        "sorgenti/IMG_5256.jpeg",
+        "sorgenti/lotto-02/IMG_5499.jpeg"
+      ],
+      "scene_ids": [
+        "E06"
+      ],
+      "famiglie_associate": [
+        "candeline",
+        "palloncini"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Numeri e forme sono illustrativi; verificare articoli, misure, colori e quantità presenti."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Candeline numeriche, palloncini e buste colorate appesi al pannello bianco",
+        "en": "Number candles, balloons and coloured bags hanging on the white board"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f22-feste-numeri.webp",
+        "srcset": "/images/fototeca/f22-feste-numeri-360.webp 360w, /images/fototeca/f22-feste-numeri-720.webp 720w, /images/fototeca/f22-feste-numeri.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "feste-e-compleanni"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f22-feste-numeri-360.webp",
+            "width": 360,
+            "bytes": 54306
+          },
+          {
+            "src": "/images/fototeca/f22-feste-numeri-720.webp",
+            "width": 720,
+            "bytes": 152318
+          },
+          {
+            "src": "/images/fototeca/f22-feste-numeri.webp",
+            "width": 1122,
+            "bytes": 267246
+          }
+        ]
+      }
+    },
+    {
+      "id": "F24-scrivere-auguri",
+      "path": "fototeca/shooting/F24-scrivere-auguri.png",
+      "title": "Due parole tue",
+      "category": "feste",
+      "sources": [
+        "sorgenti/IMG_5262.jpeg",
+        "sorgenti/IMG_5265.jpeg"
+      ],
+      "scene_ids": [
+        "E05",
+        "E25"
+      ],
+      "famiglie_associate": [
+        "auguri"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Gesto messo in scena e mano sintetica; non testimonianza di una persona, messaggio o servizio reale."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Una mano scrive con la penna nera su un biglietto color crema appoggiato al banco grigio",
+        "en": "A hand writes with the black pen on a cream card lying on the grey counter"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f24-scrivere-auguri.webp",
+        "srcset": "/images/fototeca/f24-scrivere-auguri-360.webp 360w, /images/fototeca/f24-scrivere-auguri-720.webp 720w, /images/fototeca/f24-scrivere-auguri.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "feste-e-compleanni"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f24-scrivere-auguri-360.webp",
+            "width": 360,
+            "bytes": 12860
+          },
+          {
+            "src": "/images/fototeca/f24-scrivere-auguri-720.webp",
+            "width": 720,
+            "bytes": 38802
+          },
+          {
+            "src": "/images/fototeca/f24-scrivere-auguri.webp",
+            "width": 1440,
+            "bytes": 110054
+          }
+        ]
+      }
+    },
+    {
+      "id": "F26-penne-perla",
+      "path": "fototeca/shooting/F26-penne-perla.png",
+      "title": "Scrivere, con un dettaglio in più",
+      "category": "cartoleria",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5460.jpeg"
+      ],
+      "scene_ids": [
+        "E04"
+      ],
+      "famiglie_associate": [
+        "penne-perle"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Finiture e colori ricostruiti; non identificazione di un modello, misura o assortimento attuale."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Penne dai colori pastello con grandi sfere perlate nel portapenne a rete nero",
+        "en": "Pastel pens with large pearlescent tops in the black mesh holder"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f26-penne-perla.webp",
+        "srcset": "/images/fototeca/f26-penne-perla-360.webp 360w, /images/fototeca/f26-penne-perla-720.webp 720w, /images/fototeca/f26-penne-perla.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "cartoleria"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f26-penne-perla-360.webp",
+            "width": 360,
+            "bytes": 32400
+          },
+          {
+            "src": "/images/fototeca/f26-penne-perla-720.webp",
+            "width": 720,
+            "bytes": 84492
+          },
+          {
+            "src": "/images/fototeca/f26-penne-perla.webp",
+            "width": 1122,
+            "bytes": 144380
+          }
+        ]
+      }
+    },
+    {
+      "id": "F28-giochi-passeggio",
+      "path": "fototeca/shooting/F28-giochi-passeggio.png",
+      "title": "Una pausa all’aperto",
+      "category": "giochi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5462.jpeg"
+      ],
+      "scene_ids": [
+        "E19"
+      ],
+      "famiglie_associate": [
+        "giochi-aperto"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Non certifica materiali, età, dotazione o caratteristiche di un singolo gioco."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Racchette, palline e disco colorato confezionati fra i giochi appesi in negozio",
+        "en": "Packaged paddles, balls and a colourful disc among the shop's hanging toys"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f28-giochi-passeggio.webp",
+        "srcset": "/images/fototeca/f28-giochi-passeggio-360.webp 360w, /images/fototeca/f28-giochi-passeggio-720.webp 720w, /images/fototeca/f28-giochi-passeggio.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "giochi-e-giocattoli"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f28-giochi-passeggio-360.webp",
+            "width": 360,
+            "bytes": 44362
+          },
+          {
+            "src": "/images/fototeca/f28-giochi-passeggio-720.webp",
+            "width": 720,
+            "bytes": 121442
+          },
+          {
+            "src": "/images/fototeca/f28-giochi-passeggio.webp",
+            "width": 1122,
+            "bytes": 217690
+          }
+        ]
+      }
+    },
+    {
+      "id": "F29-mappamondi",
+      "path": "fototeca/shooting/F29-mappamondi.png",
+      "title": "Due modi di guardare il mondo",
+      "category": "regali",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5469.jpeg"
+      ],
+      "scene_ids": [
+        "E07"
+      ],
+      "famiglie_associate": [
+        "mappamondi"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Grafica geografica, basi e finiture ricostruite: oggetti decorativi, non fonte cartografica o catalogo di varianti."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Due mappamondi decorativi fumé e nero oro sul ripiano scuro del negozio",
+        "en": "Two decorative globes in smoky and black-gold finishes on the shop's dark shelf"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f29-mappamondi.webp",
+        "srcset": "/images/fototeca/f29-mappamondi-360.webp 360w, /images/fototeca/f29-mappamondi-720.webp 720w, /images/fototeca/f29-mappamondi.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "idee-regalo"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f29-mappamondi-360.webp",
+            "width": 360,
+            "bytes": 17236
+          },
+          {
+            "src": "/images/fototeca/f29-mappamondi-720.webp",
+            "width": 720,
+            "bytes": 62368
+          },
+          {
+            "src": "/images/fototeca/f29-mappamondi.webp",
+            "width": 1440,
+            "bytes": 202636
+          }
+        ]
+      }
+    },
+    {
+      "id": "F31-liquirizia-gomme",
+      "path": "fototeca/shooting/F31-liquirizia-gomme.png",
+      "title": "Il dettaglio di una pausa",
+      "category": "dolciumi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5472.jpeg"
+      ],
+      "scene_ids": [
+        "E20"
+      ],
+      "famiglie_associate": [
+        "liquirizia-gatos",
+        "fishermans-friend",
+        "caramelle"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Non ricavare ingredienti, allergeni, proprietà o varianti dalle confezioni ricostruite."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Espositore giallo di liquirizia confezionata e bustine di caramelle sul banco chiaro",
+        "en": "Yellow packaged-liquorice display and sweet pouches on the light counter"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f31-liquirizia-gomme.webp",
+        "srcset": "/images/fototeca/f31-liquirizia-gomme-360.webp 360w, /images/fototeca/f31-liquirizia-gomme-720.webp 720w, /images/fototeca/f31-liquirizia-gomme.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "dolciumi"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f31-liquirizia-gomme-360.webp",
+            "width": 360,
+            "bytes": 29388
+          },
+          {
+            "src": "/images/fototeca/f31-liquirizia-gomme-720.webp",
+            "width": 720,
+            "bytes": 95332
+          },
+          {
+            "src": "/images/fototeca/f31-liquirizia-gomme.webp",
+            "width": 1440,
+            "bytes": 248702
+          }
+        ]
+      }
+    },
+    {
+      "id": "F30-nani-salvadanai",
+      "path": "fototeca/shooting/F30-nani-salvadanai.png",
+      "title": "Tre piccoli custodi",
+      "category": "regali",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5468(1).jpeg"
+      ],
+      "scene_ids": [
+        "E07"
+      ],
+      "famiglie_associate": [
+        "salvadanai-nani"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Personaggi di ceramica, non volti di persone reali; dettagli e finiture ricostruiti, non prova del singolo articolo."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Tre salvadanai a forma di nano con finiture lucide sul ripiano scuro",
+        "en": "Three glossy dwarf-shaped money boxes on the dark shelf"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f30-nani-salvadanai.webp",
+        "srcset": "/images/fototeca/f30-nani-salvadanai-360.webp 360w, /images/fototeca/f30-nani-salvadanai-720.webp 720w, /images/fototeca/f30-nani-salvadanai.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "idee-regalo"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f30-nani-salvadanai-360.webp",
+            "width": 360,
+            "bytes": 15694
+          },
+          {
+            "src": "/images/fototeca/f30-nani-salvadanai-720.webp",
+            "width": 720,
+            "bytes": 55830
+          },
+          {
+            "src": "/images/fototeca/f30-nani-salvadanai.webp",
+            "width": 1440,
+            "bytes": 165254
+          }
+        ]
+      }
+    },
+    {
+      "id": "F33-sorprese-ingresso",
+      "path": "fototeca/shooting/F33-sorprese-ingresso.png",
+      "title": "Una sorpresa all’ingresso",
+      "category": "giochi",
+      "sources": [
+        "sorgenti/lotto-02/IMG_5503.jpeg"
+      ],
+      "scene_ids": [
+        "E17"
+      ],
+      "famiglie_associate": [
+        "stitch-e-giochi-sorpresa"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Il distributore documenta il contesto delle sorprese: non prova un marchio, personaggio, contenuto o prezzo preciso."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Distributore rosso di sorprese in capsule a forma di cabina telefonica accanto all’ingresso",
+        "en": "Red telephone-box-shaped toy-capsule dispenser beside the entrance"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f33-sorprese-ingresso.webp",
+        "srcset": "/images/fototeca/f33-sorprese-ingresso-360.webp 360w, /images/fototeca/f33-sorprese-ingresso-720.webp 720w, /images/fototeca/f33-sorprese-ingresso.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "giochi-e-giocattoli"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f33-sorprese-ingresso-360.webp",
+            "width": 360,
+            "bytes": 33288
+          },
+          {
+            "src": "/images/fototeca/f33-sorprese-ingresso-720.webp",
+            "width": 720,
+            "bytes": 118482
+          },
+          {
+            "src": "/images/fototeca/f33-sorprese-ingresso.webp",
+            "width": 1122,
+            "bytes": 241110
+          }
+        ]
+      }
+    },
+    {
+      "id": "02-raptus",
+      "path": "shooting/02-raptus.png",
+      "title": "Drusilla, tra vetro e colore",
+      "category": "profumi",
+      "sources": [
+        "sorgenti/R02_raptus_ambiente_tessuti.jpg"
+      ],
+      "scene_ids": [
+        "E12"
+      ],
+      "famiglie_associate": [],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Questa scena riguarda ambiente e tessuti, non profumi per la persona. Microtesti, formati e disponibilità non certificabili."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Spray e diffusore rosa per ambiente e tessuti nel display Raptus",
+        "en": "Pink room-and-fabric spray and diffuser in the Raptus display"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/02-raptus.webp",
+        "srcset": "/images/fototeca/02-raptus-360.webp 360w, /images/fototeca/02-raptus-720.webp 720w, /images/fototeca/02-raptus.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [],
+        "variants": [
+          {
+            "src": "/images/fototeca/02-raptus-360.webp",
+            "width": 360,
+            "bytes": 23110
+          },
+          {
+            "src": "/images/fototeca/02-raptus-720.webp",
+            "width": 720,
+            "bytes": 57102
+          },
+          {
+            "src": "/images/fototeca/02-raptus.webp",
+            "width": 1122,
+            "bytes": 100296
+          }
+        ]
+      }
+    },
+    {
+      "id": "05-necessita",
+      "path": "shooting/05-necessita.png",
+      "title": "La cosa utile, quando serve",
+      "category": "necessità",
+      "sources": [
+        "sorgenti/IMG_5256.jpeg"
+      ],
+      "scene_ids": [
+        "E03",
+        "E13",
+        "E22",
+        "E23"
+      ],
+      "famiglie_associate": [],
+      "uses": [
+        "Archivio interno; esclusa dall’integrazione pubblica del sito."
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Confezioni e caratteristiche ricostruite; non usare per identificare connettori, misure, specifiche o SKU.",
+        "In alto sono presenti confezioni di spray di difesa: esclusa dall’integrazione pubblica del sito; privilegiare F21."
+      ],
+      "verdict": "archivio_interno",
+      "facesVisible": false,
+      "alt": {
+        "it": "Pannello forato con cavi, nastri adesivi, colle e piccoli accessori confezionati",
+        "en": "Pegboard with cables, tape, glue and packaged everyday accessories"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": false,
+        "src": "/images/fototeca/05-necessita.webp",
+        "srcset": "",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [],
+        "variants": []
+      }
+    },
+    {
+      "id": "F36-labbra-capelli",
+      "path": "fototeca/shooting/F36-labbra-capelli.png",
+      "title": "I dettagli della cura quotidiana",
+      "category": "necessità",
+      "sources": [
+        "sorgenti/IMG_5258.jpeg"
+      ],
+      "scene_ids": [
+        "E24"
+      ],
+      "famiglie_associate": [
+        "labbra",
+        "capelli"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Confezioni e piccoli testi ricostruiti; non prova di modello, efficacia, ingredienti, proprietà o indicazioni d’uso."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Balsami labbra, gel per capelli e fermagli su cartoncini bianchi nella vetrinetta",
+        "en": "Lip balms, hair gel and clips on white cards in the glass cabinet"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/f36-labbra-capelli.webp",
+        "srcset": "/images/fototeca/f36-labbra-capelli-360.webp 360w, /images/fototeca/f36-labbra-capelli-720.webp 720w, /images/fototeca/f36-labbra-capelli.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "piccole-necessita"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/f36-labbra-capelli-360.webp",
+            "width": 360,
+            "bytes": 26808
+          },
+          {
+            "src": "/images/fototeca/f36-labbra-capelli-720.webp",
+            "width": 720,
+            "bytes": 67772
+          },
+          {
+            "src": "/images/fototeca/f36-labbra-capelli.webp",
+            "width": 1122,
+            "bytes": 114110
+          }
+        ]
+      }
+    },
+    {
+      "id": "06-cura",
+      "path": "shooting/06-cura.png",
+      "title": "Piccole cure di ogni giorno",
+      "category": "necessità",
+      "sources": [
+        "sorgenti/IMG_5258.jpeg"
+      ],
+      "scene_ids": [
+        "E24"
+      ],
+      "famiglie_associate": [
+        "labbra",
+        "capelli"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Etichette e confezioni reinterpretate; indicazioni, materiali e avvertenze sulla confezione reale."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Piccoli articoli confezionati per la cura personale sui ripiani in vetro",
+        "en": "Packaged personal-care essentials on the glass shelves"
+      },
+      "width": 1448,
+      "height": 1086,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/06-cura.webp",
+        "srcset": "/images/fototeca/06-cura-360.webp 360w, /images/fototeca/06-cura-720.webp 720w, /images/fototeca/06-cura.webp 1440w",
+        "width": 1440,
+        "height": 1080,
+        "categorySlugs": [
+          "piccole-necessita"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/06-cura-360.webp",
+            "width": 360,
+            "bytes": 19846
+          },
+          {
+            "src": "/images/fototeca/06-cura-720.webp",
+            "width": 720,
+            "bytes": 53424
+          },
+          {
+            "src": "/images/fototeca/06-cura.webp",
+            "width": 1440,
+            "bytes": 130530
+          }
+        ]
+      }
+    },
+    {
+      "id": "07-dettaglio-carta",
+      "path": "shooting/07-dettaglio-carta.png",
+      "title": "La materia degli appunti",
+      "category": "cartoleria",
+      "sources": [
+        "sorgenti/IMG_5261.jpeg"
+      ],
+      "scene_ids": [
+        "E02",
+        "E03"
+      ],
+      "famiglie_associate": [
+        "quaderni",
+        "penne",
+        "evidenziatori"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Dettaglio editoriale senza mani. Rigature, misure, marca e assortimento non certificati."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Quaderni a spirale e penne colorate in un portapenne a rete sui ripiani bianchi",
+        "en": "Spiral notebooks and coloured pens in a mesh holder on the white shelves"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/07-dettaglio-carta.webp",
+        "srcset": "/images/fototeca/07-dettaglio-carta-360.webp 360w, /images/fototeca/07-dettaglio-carta-720.webp 720w, /images/fototeca/07-dettaglio-carta.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "cartoleria"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/07-dettaglio-carta-360.webp",
+            "width": 360,
+            "bytes": 35432
+          },
+          {
+            "src": "/images/fototeca/07-dettaglio-carta-720.webp",
+            "width": 720,
+            "bytes": 96716
+          },
+          {
+            "src": "/images/fototeca/07-dettaglio-carta.webp",
+            "width": 1122,
+            "bytes": 163050
+          }
+        ]
+      }
+    },
+    {
+      "id": "09-bologna",
+      "path": "shooting/09-bologna.png",
+      "title": "Un ricordo di Bologna",
+      "category": "souvenir",
+      "sources": [
+        "sorgenti/IMG_5241.jpeg"
+      ],
+      "scene_ids": [
+        "E09"
+      ],
+      "famiglie_associate": [
+        "calamite"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Diverse scritte delle calamite sono deformate. Uso di atmosfera e categoria, mai per identificare o vendere il singolo modello."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Pannello con calamite colorate ispirate alle torri, ai portici e ai simboli di Bologna",
+        "en": "Panel of colourful magnets inspired by Bologna's towers, porticoes and symbols"
+      },
+      "width": 1122,
+      "height": 1402,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/09-bologna.webp",
+        "srcset": "/images/fototeca/09-bologna-360.webp 360w, /images/fototeca/09-bologna-720.webp 720w, /images/fototeca/09-bologna.webp 1122w",
+        "width": 1122,
+        "height": 1402,
+        "categorySlugs": [
+          "souvenir-bologna"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/09-bologna-360.webp",
+            "width": 360,
+            "bytes": 64534
+          },
+          {
+            "src": "/images/fototeca/09-bologna-720.webp",
+            "width": 720,
+            "bytes": 212494
+          },
+          {
+            "src": "/images/fototeca/09-bologna.webp",
+            "width": 1122,
+            "bytes": 415440
+          }
+        ]
+      }
+    },
+    {
+      "id": "11-cervia",
+      "path": "shooting/11-cervia.png",
+      "title": "Tra legno e sale",
+      "category": "alimentari",
+      "sources": [
+        "sorgenti/IMG_5251.jpeg"
+      ],
+      "scene_ids": [
+        "E21"
+      ],
+      "famiglie_associate": [
+        "salina-cervia"
+      ],
+      "uses": [
+        "Introduzione editoriale di categoria e contesto del negozio",
+        "Copertine, post, storie e sezioni del sito coerenti con i soggetti visibili"
+      ],
+      "limits": [
+        "Ricostruzione editoriale AI basata su fotografie del negozio: non fotografia autentica, prova di stock, prezzo, etichetta o articolo esatto. Verificare i dettagli del singolo prodotto sulla confezione reale.",
+        "Etichette e numero dei vasetti reinterpretati: mantenere come variante editoriale secondaria, non packshot fedele."
+      ],
+      "verdict": "utilizzabile_editoriale_con_limiti",
+      "facesVisible": false,
+      "alt": {
+        "it": "Sale di Cervia in sacchetto e vasetti su un supporto chiaro in legno",
+        "en": "Cervia salt in a bag and jars on a light wooden display"
+      },
+      "width": 1536,
+      "height": 1024,
+      "website": {
+        "included": true,
+        "src": "/images/fototeca/11-cervia.webp",
+        "srcset": "/images/fototeca/11-cervia-360.webp 360w, /images/fototeca/11-cervia-720.webp 720w, /images/fototeca/11-cervia.webp 1440w",
+        "width": 1440,
+        "height": 960,
+        "categorySlugs": [
+          "sale-di-cervia"
+        ],
+        "variants": [
+          {
+            "src": "/images/fototeca/11-cervia-360.webp",
+            "width": 360,
+            "bytes": 19684
+          },
+          {
+            "src": "/images/fototeca/11-cervia-720.webp",
+            "width": 720,
+            "bytes": 62806
+          },
+          {
+            "src": "/images/fototeca/11-cervia.webp",
+            "width": 1440,
+            "bytes": 174088
+          }
+        ]
+      }
+    }
+  ]
+}

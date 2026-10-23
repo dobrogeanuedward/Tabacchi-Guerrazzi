@@ -1,5 +1,7 @@
 ---
 import AiDisclosure from './AiDisclosure.astro';
+import PhotoBrand from './PhotoBrand.astro';
+import {categoryPhotoFor} from '../data/fototeca';
 import {isGeneratedImage} from '../data/generated-images.mjs';
 import {assortmentImage} from '../data/assortment-images';
 import {assortmentPages} from '../data/assortment';
@@ -12,8 +14,14 @@ const fundamental=[
  {slug:'pipe-e-tabacchi-da-pipa',label:['Pipe e tabacchi da pipa','Pipes and pipe tobacco'],image:'',description:['Area informativa 18+','18+ information area'],adult:true},
 ];
 const entries=[...(!slugs?fundamental:[]),...(slugs?slugs.map(s=>assortmentPages.find(p=>p.slug===s)).filter(Boolean):assortmentPages.filter(p=>!['ricevitoria','accendini-e-accessori','deposito-bagagli'].includes(p.slug))).map(p=>({slug:p!.slug,label:p!.label,image:p!.slug==='sale-di-cervia'?'/images/collection/salina-cervia-360.webp':p!.art?assortmentImage(({ 'souvenir-bologna':'souvenir','feste-e-compleanni':'feste','accessori-telefono':'telefono','piccole-necessita':'necessita'} as Record<string,string>)[p!.slug]||p!.slug):'',description:[0,1].map(l=>p!.groups[0]?.items.slice(0,2).map(item=>item[l]).join(', ')||text(l===0?'it':'en','Scopri le informazioni','Read the information')),adult:['ricevitoria','accendini-e-accessori'].includes(p!.slug)}))];
+for(const entry of entries){const photo=categoryPhotoFor(entry.slug);if(photo&&!entry.adult)entry.image=photo.src;}
 ---
 <section data-ai-disclosure-group class:list={['assortment-nav',compact?'compact':'']} aria-label={text(lang,'Esplora l’assortimento','Explore the range')}>
  <div class="section-opening"><h2>{text(lang,'Le categorie del negozio.','Shop categories.')}</h2><p>{text(lang,'Dai regali alle necessità di ogni giorno, orientati nel negozio.','From gifts to everyday essentials, find your way around the shop.')}{entries.some(entry=>isGeneratedImage(entry.image))&&<AiDisclosure inline lang={lang} message={text(lang,'Immagini illustrative generate con IA','Illustrative images generated with AI')}/>}</p></div>
- <div class="assortment-paths">{entries.map(p=><a href={pathFor(p.slug,lang)}>{p.image?<img src={p.image} width="320" height="320" loading="lazy" alt="" aria-hidden="true"/>:p.adult&&<span class="category-information" aria-hidden="true">18+</span>}<div><span class="card-kind">{p.adult?text(lang,'Area informativa · 18+','Information area · 18+'):text(lang,'Categoria','Category')}</span><h3>{p.label[lang==='it'?0:1]}{p.adult&&<small class="category-age">18+</small>}</h3><p>{p.description[lang==='it'?0:1]}</p><span class="card-open">{p.adult?text(lang,'Apri le informazioni','Read the information'):text(lang,'Esplora la categoria','Explore this category')}</span></div></a>)}</div>
+ <div class="assortment-paths">{entries.map(p=><a href={pathFor(p.slug,lang)}>{p.image?<span class="category-thumbnail"><img src={p.image} srcset={categoryPhotoFor(p.slug)?.srcset} sizes="100px" width="320" height="320" loading="lazy" alt="" aria-hidden="true"/>{categoryPhotoFor(p.slug)&&<PhotoBrand corner={categoryPhotoFor(p.slug)?.corner}/>}</span>:p.adult&&<span class="category-information" aria-hidden="true">18+</span>}<div><span class="card-kind">{p.adult?text(lang,'Area informativa · 18+','Information area · 18+'):text(lang,'Categoria','Category')}</span><h3>{p.label[lang==='it'?0:1]}{p.adult&&<small class="category-age">18+</small>}</h3><p>{p.description[lang==='it'?0:1]}</p><span class="card-open">{p.adult?text(lang,'Apri le informazioni','Read the information'):text(lang,'Esplora la categoria','Explore this category')}</span></div></a>)}</div>
 </section>
+
+<style>
+ .category-thumbnail{display:block;position:relative;width:100px;height:100px;flex-shrink:0;overflow:hidden;border-radius:3px 18px 3px 3px}.category-thumbnail>img{display:block;width:100%;height:100%;object-fit:cover}.category-thumbnail :global(.photo-brand-stamp){width:30%;min-width:30px;right:5px;top:5px;border-bottom-width:1px;border-radius:1px 1px 4px 1px}
+ @media(max-width:960px){.category-thumbnail{width:72px;height:72px}.category-thumbnail :global(.photo-brand-stamp){min-width:25px;right:3px;top:3px}}
+</style>
